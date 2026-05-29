@@ -1,0 +1,17 @@
+# 原始资料不提交(体积大、版权;wiki 已从中编译,溯源见 log.md)
+raw/
+
+# 系统/编辑器
+.DS_Store
+.obsidian/
+
+# 批量 ingest 的过程产物
+wave.js
+gen_wave.py
+.lint*.py
+.ingest_todo.txt
+.ingest_state.json
+out.txt
+
+# 误建的空 Obsidian vault(真正的 wiki 在 wiki/)
+LLM_wiki/

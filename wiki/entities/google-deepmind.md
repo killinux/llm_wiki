@@ -1,0 +1,32 @@
+---
+type: entity
+subtype: lab
+tags: [lab, ai-research, google, llm]
+created: 2026-05-29
+updated: 2026-05-29
+sources: 5
+---
+
+# Google DeepMind
+
+Google DeepMind 是 Google 旗下的人工智能研究实验室,专注于机器学习、深度学习与大语言模型等前沿 AI 技术的研究与开发。
+
+## 在本 wiki 中的出现
+
+- [[2023-self-debugging]]:该论文提出 SELF-DEBUGGING 方法,通过 few-shot prompting 让 LLM 执行并解释自己生成的代码,从而在没有人工反馈的情况下实现自我调试。Google DeepMind 在此工作中作为相关研究机构出现。
+- [[2023-llms-cannot-self-correct-reasoning-yet]]:本文证明在无外部反馈的"内在自我纠正"设定下,LLM 无法纠正自身推理错误,性能反而往往下降。
+- [[2023-timesfm-time-series-foundation-model]]:Google Research 的 TimesFM:一个在 O(100B) 时间点真实+合成时序上预训练的 decoder-only 时序预测基础模型,zero-shot 表现接近全监督 SOTA。
+- [[2023-concordia-generative-agent-based-modeling]]:Google DeepMind 提出的库 Concordia,用 LLM 驱动的生成式 agent 在物理/社会/数字空间中扎根交互,通过 Game Master 控制环境,支持 Generative Agent-Based Modeling 的社会仿真与数字服务评估。
+- [[2024-v-star-verifiers-for-self-taught-reasoners]]:V-STaR 在自我提升迭代中复用正确与错误的模型生成解,用 DPO 训练 verifier 在测试时对候选解排序,使 LLaMA2 在数学推理上绝对提升 6%~17%、代码生成 4%~12%。
+
+## 相关
+
+- [[google-brain]]
+- [[denny-zhou]]
+- [[self-debugging]]
+- [[code-generation]]
+- [[few-shot-prompting]]
+- [[llm-reasoning]]
+- [[self-correction]]
+- [[time-series-forecasting]]
+- [[generative-agents]]

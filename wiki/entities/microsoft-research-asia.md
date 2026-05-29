@@ -1,0 +1,29 @@
+---
+type: entity
+subtype: lab
+tags: [research-lab, industry, microsoft]
+created: 2026-05-29
+updated: 2026-05-29
+sources: 2
+---
+
+# Microsoft Research Asia
+
+Microsoft Research Asia (MSRA) 是 Microsoft 设在亚洲的基础研究机构,专注于人工智能、自然语言处理、机器学习等方向的前沿研究。
+
+## 在本 wiki 中的出现
+
+- [[2023-critic]]:作为提出 CRITIC 框架的研究机构之一。CRITIC 让 LLM 通过与搜索引擎、代码解释器、PERSPECTIVE API 等外部工具交互来自我验证并迭代修正输出,证明外部反馈对自我改进至关重要。
+- [[2023-recommender-ai-agent-interec]]:提出 InteRecAgent,以 LLM 为大脑、传统推荐模型为工具,通过候选总线记忆、plan-first 执行与 actor-critic 反思构建交互式对话推荐 agent,并蒸馏出 7B 的 RecLlama。
+
+## 相关
+
+- [[critic]]
+- [[microsoft]]
+- [[large-language-model]]
+- [[tool-use]]
+- [[self-correction]]
+- [[interecagent]]
+- [[recllama]]
+- [[llm-agent]]
+- [[conversational-recommendation]]

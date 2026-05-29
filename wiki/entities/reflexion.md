@@ -1,0 +1,24 @@
+---
+type: entity
+subtype: model
+tags: [llm-agent, self-reflection, reinforcement-learning, decision-making]
+created: 2026-05-29
+updated: 2026-05-29
+sources: 1
+---
+
+# Reflexion
+
+Reflexion 是一种让 LLM Agent 通过对自身行为产生的反馈进行语言化反思(self-reflection)、并将反思结果存入记忆以改进后续决策的框架,无需更新模型参数。
+
+## 在本 wiki 中的出现
+
+- [[2023-expel]]:作为对比与思想来源出现。ExpeL 沿用了"不更新参数、依靠自然语言经验改进 Agent"的思路,让 LLM Agent 从跨任务经验中自主抽取自然语言洞见(insights),并召回相似的成功轨迹来提升决策表现。
+
+## 相关
+
+- [[react]]
+- [[llm-agent]]
+- [[2023-expel]]
+- [[in-context-learning]]
+- [[self-reflection]]

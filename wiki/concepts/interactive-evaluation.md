@@ -1,0 +1,23 @@
+---
+type: concept
+subtype: method
+tags: [evaluation, interaction, agents, social-intelligence]
+created: 2026-05-29
+updated: 2026-05-29
+sources: 1
+---
+
+# Interactive Evaluation
+
+交互式评测(Interactive Evaluation)指通过让模型在动态环境或多轮交互场景中行动,根据其交互过程与结果来评估模型能力的评测方法,区别于基于静态数据集的单轮打分。
+
+## 在本 wiki 中的出现
+
+- [[2023-sotopia-social-intelligence-evaluation]]:SOTOPIA 提出一个开放式社交互动模拟环境与多维评测框架 SOTOPIA-EVAL,交互式地评估 LLM 智能体在目标导向社交场景中的社会智能,发现 GPT-4 在最难子集上的目标完成率显著低于人类。
+
+## 相关
+
+- [[social-intelligence]]
+- [[llm-agents]]
+- [[evaluation-framework]]
+- [[goal-oriented-dialogue]]

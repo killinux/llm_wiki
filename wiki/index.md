@@ -1,0 +1,651 @@
+# Wiki 索引 (Index)
+
+wiki 中所有页面的目录,按类别分组;每行是一个链接加一句话摘要。每次 ingest、以及把查询结果
+归档时,LLM 都会更新本文件。
+
+## 主题 (Topics)
+<!-- 跨多份资料的综述与演化中的论点 -->
+_(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能体两分支:任务求解 vs 社会模拟";③ "推荐系统去偏:因果推断与 Doubly Robust 家族";④ "短视频推荐中的强化学习:留存/时长/多目标";⑤ "LLM 自我改进:反思、调试、辩论与工具反馈";⑥ "LLM 驱动的社会模拟与生成式 ABM:可信度与验证";⑦ "推荐系统中的 LLM 智能体:模拟器、对话推荐与多智能体";⑧ "公平性与多边福利:用户/创作者/提供方";⑨ "Transformer/图神经网络在推荐中的融合")_
+
+## 实体 (Entities)
+<!-- 模型 · 实验室/机构 · 人物 · 数据集 · benchmark · 产品 -->
+### 模型
+- [[autoint]] —— 用多头自注意力自动学习特征高阶交互的 CTR 预测模型
+- [[bard]] —— Google 推出的对话式大语言模型产品
+- [[bart]] —— 基于 Transformer 的 seq2seq 去噪自编码预训练模型
+- [[bcq]] —— 约束策略只取数据内动作的 offline RL 算法,缓解 OOD 外推误差
+- [[belle]] —— 开源大语言模型,被用作底层对话模型
+- [[bpr]] —— 贝叶斯个性化排序,隐式反馈下成对优化的推荐基线
+- [[chatglm]] —— 基于 GLM 的中英双语对话大模型
+- [[claude]] —— Anthropic 的"有用·诚实·无害"大模型助手
+- [[claude-2]] —— Anthropic 推出的大模型,常作基准评测对比对象
+- [[clip]] —— 图文对比预训练的多模态表示模型
+- [[codex]] —— OpenAI 在公开代码上微调的代码生成模型
+- [[cql]] —— 对 OOD 动作压低 Q 值的保守 offline RL 算法
+- [[criticgpt]] —— OpenAI 训练的辅助发现代码错误的 GPT-4 批评模型
+- [[decision-transformer]] —— 把 RL 重构为条件序列建模的 Transformer
+- [[deconf-mf]] —— 用浅层 Poisson 矩阵分解推断 substitute confounders 的去混杂推荐模型
+- [[deconfounder]] —— 在未观测混杂下建模混杂以估计无偏因果效应的方法
+- [[deep-deconf]] —— 用深度 VAE 推断 substitute confounders 的因果去混杂推荐模型
+- [[deepfm]] —— FM 与 DNN 共享 embedding、同建低/高阶交互的 CTR 模型
+- [[dorl]] —— 在悲观惩罚外加熵惩罚缓解马太效应的 model-based offline RL 推荐
+- [[dpr]] —— 双编码器稠密向量段落检索模型,用于开放域问答
+- [[drivemlm]] —— 对齐多模态 LLM 决策与 AD 行为规划的自动驾驶模型
+- [[dupn]] —— 结合 MTL+attention+RNN 学共享用户表示的多任务推荐模型
+- [[esmm]] —— 在全曝光空间联合建模 CTR/CVR、缓解样本选择偏差的多任务模型
+- [[expel]] —— 不更新参数、从跨任务经验抽取自然语言洞见的 LLM Agent
+- [[fm]] —— 用特征隐向量内积建模二阶交互的因子分解机
+- [[gfn4rec]] —— 基于 GFlowNet 的生成式列表推荐模型,兼顾质量与多样性
+- [[gpt-3]] —— OpenAI 175B 自回归大模型,以 few-shot/ICL 著称
+- [[gpt-3-5]] —— GPT-3 的指令微调改进版系列
+- [[gpt-3-5-turbo]] —— 低成本低延迟的指令微调对话模型,常作智能体基座
+- [[gpt-4]] —— OpenAI 大规模多模态大模型,广泛用作智能体/推理研究基座
+- [[gpt-4o-mini]] —— OpenAI 轻量多模态模型,常作低成本智能体/模拟基座
+- [[gpt-j]] —— 开源自回归 Transformer 语言模型,常作可微调基座
+- [[gru4rec]] —— 基于 GRU 的会话序列推荐经典模型
+- [[idcf]] —— 借代理变量与近端因果推断保证可识别性的去混杂推荐方法
+- [[instructgpt]] —— 用 RLHF 对齐 GPT-3 的指令遵循模型
+- [[ivae]] —— 引入辅助变量获得潜变量可识别性的 VAE
+- [[lamda]] —— Google 面向对话应用的大模型系列
+- [[llama]] —— Meta 的开放权重大模型系列,常作智能体/微调基座
+- [[llama-2]] —— Meta 的开源大模型系列,含对话微调版本
+- [[llama-3]] —— Meta 新一代开源大模型系列
+- [[mamba]] —— 选择性状态空间序列模型,线性复杂度替代 attention
+- [[mercatran]] —— Mercari C2C 场景下的推荐/检索 Transformer 模型
+- [[mistral-7b]] —— Mistral 的高效开源 7B 大模型
+- [[mmoe]] —— 多 expert 共享+任务独立 gate 的多任务学习模型
+- [[mopo]] —— 用模型不确定性悲观惩罚约束策略的 model-based offline RL
+- [[p5]] —— 把多种推荐任务统一为自然语言序列建模的预训练+个性化提示范式
+- [[palm]] —— Google 最大 540B 的 dense Transformer 大模型,涌现能力代表
+- [[ple]] —— 区分共享/专属专家、渐进分层缓解负迁移的多任务模型
+- [[pythia]] —— EleutherAI 可复现训练动态研究的开源 LLM 套件
+- [[react-reasoning-and-acting]] —— 交替生成推理轨迹与行动的 LLM 范式(ReAct 实体页)
+- [[recllama]] —— 由 InteRecAgent 蒸馏得到的 7B 推荐 LLM
+- [[recmamba]] —— 基于 Mamba 状态空间模型的终身序列推荐模型
+- [[reflexion]] —— 通过语言化自我反思改进决策、不更新参数的 LLM Agent
+- [[rlur]] —— 用强化学习直接最小化累计回访时间的留存优化推荐方法
+- [[sasrec]] —— 基于自注意力的序列推荐模型
+- [[star]] —— STaR,自生成 rationale 反复微调 bootstrap 推理的方法/模型
+- [[starcoder]] —— 面向代码生成的开源 code LLM
+- [[t5]] —— 把各类 NLP 任务统一为 text-to-text 的编码器-解码器模型
+- [[td3]] —— 双 Q+延迟更新+目标平滑改进 DDPG 的连续动作 actor-critic
+- [[text-davinci-003]] —— 基于 GPT-3 的指令微调模型(InstructGPT 系列)
+- [[timesfm]] —— Google 的 decoder-only 时序预测基础模型,zero-shot 强
+- [[ul2]] —— 混合多种去噪目标(MoD)的统一预训练语言模型
+- [[vicuna]] —— 基于 LLaMA、用对话数据指令微调的开源对话模型
+- [[vit]] —— 把图像切块当 token 的 Vision Transformer
+- [[voyager]] —— GPT-4 驱动、在 Minecraft 中终身学习的具身智能体
+### 人物
+- [[aleksandrs-slivkins]] —— 在线学习与多臂赌博机研究者
+- [[an-zhang]] —— 推荐系统与因果/鲁棒性研究者
+- [[anima-anandkumar]] —— 机器学习/具身智能体研究者,参与 Voyager
+- [[antonio-torralba]] —— 计算机视觉与机器学习研究者
+- [[bingsheng-he]] —— 高性能计算与数据系统研究者
+- [[brendan-lucier]] —— 算法博弈论与机制设计研究者
+- [[chen-qian]] —— ChatDev 作者之一,研究 LLM 多智能体与自动化软件开发
+- [[chongming-gao]] —— 推荐系统去偏与交互式推荐研究者
+- [[denny-zhou]] —— LLM 推理与 prompting 研究者,参与 CoT
+- [[douwe-kiela]] —— NLP 研究者,RAG 论文作者之一
+- [[eric-zelikman]] —— LLM 推理研究者,STaR 提出者之一
+- [[fajie-yuan]] —— 推荐系统与序列建模研究者
+- [[gao-huang]] —— 机器学习研究者,参与 LLM Agent 经验学习工作
+- [[graham-neubig]] —— NLP 与语言智能体研究者
+- [[hao-zhu]] —— 社会智能与交互式 LLM 智能体研究者(SOTOPIA)
+- [[igor-mordatch]] —— 从事 LLM 推理与多智能体协作的研究者
+- [[ilya-sutskever]] —— 深度学习核心研究者,OpenAI 联合创始人与前首席科学家
+- [[ion-stoica]] —— 分布式系统研究者,Berkeley 教授
+- [[jan-leike]] —— AI 对齐与安全研究者,曾在 OpenAI 领导对齐工作
+- [[jared-kaplan]] —— Anthropic 联合创始人,scaling laws 与 AI 安全研究者
+- [[jason-wei]] —— LLM 研究者,chain-of-thought prompting 提出者
+- [[jason-weston]] —— NLP 研究者,对话系统与 CoVe 相关工作
+- [[ji-rong-wen]] —— 信息检索与推荐系统研究者,涉 LLM agent 推荐
+- [[jiawei-chen]] —— 推荐系统去偏与因果推断研究者
+- [[jiawei-han]] —— 数据挖掘与文本挖掘研究者
+- [[jianxun-lian]] —— 推荐系统与 LLM agent 推荐研究者
+- [[jifeng-dai]] —— 计算机视觉与多模态研究者
+- [[joon-sung-park]] —— Generative Agents 第一作者
+- [[joshua-tenenbaum]] —— MIT 认知科学与计算研究者
+- [[julian-mcauley]] —— 机器学习研究者,推荐系统与个性化方向
+- [[jun-xu]] —— 信息检索与推荐系统研究者
+- [[jurgen-schmidhuber]] —— 深度学习先驱,LSTM 共同提出者
+- [[karl-cobbe]] —— OpenAI 研究者,过程监督研究合著者
+- [[kun-gai]] —— 推荐系统与强化学习交叉领域研究者(多篇快手论文)
+- [[lei-wang]] —— RecAgent 作者之一,LLM agent 模拟用户行为
+- [[linxi-fan]] —— 具身智能体与基础模型驱动智能体研究者
+- [[long-ouyang]] —— InstructGPT 第一作者,RLHF 对齐
+- [[luke-zettlemoyer]] —— NLP 研究者,语义解析与大模型
+- [[maarten-sap]] —— NLP 与社会智能/常识推理研究者
+- [[maik-larooij]] —— 计算社会科学/社会模拟研究者
+- [[maosong-sun]] —— NLP 与人工智能研究者(孙茂松)
+- [[min-zhang]] —— 信息检索与推荐系统研究者
+- [[nicole-immorlica]] —— 算法博弈论与经济学研究者
+- [[noah-goodman]] —— 斯坦福语言/推理/认知建模教授,bootstrapping 推理工作
+- [[patrick-lewis]] —— NLP 研究者,RAG 提出者
+- [[peng-cui]] —— 机器学习/推荐/数据异质性建模研究者
+- [[peng-jiang]] —— 推荐系统与 embedding-based retrieval 研究者(快手落地)
+- [[petter-tornberg]] —— 计算社会科学研究者,LLM 社会模拟
+- [[qingpeng-cai]] —— 强化学习与推荐系统研究者,短视频留存优化
+- [[qingyao-ai]] —— 信息检索与推荐研究者
+- [[sean-welleck]] —— LLM 推理与生成研究者
+- [[shunyu-yao]] —— LLM 智能体与推理研究者,ReAct/ToT 第一作者
+- [[tat-seng-chua]] —— 多媒体与推荐系统研究者(NUS)
+- [[wanjun-zhong]] —— LLM 研究者,MemoryBank 相关工作
+- [[weizhi-ma]] —— 信息检索与推荐系统研究者
+- [[xiang-wang]] —— 推荐系统与图学习/因果研究者
+- [[xiangnan-he]] —— 推荐系统/信息检索/去偏研究者
+- [[xiangyu-zhao]] —— 多任务深度推荐系统(MTDRS)研究者
+- [[xing-xie]] —— 推荐系统/数据挖掘研究者(MSRA)
+- [[xiuqiang-he]] —— 推荐系统与广告 CTR 研究者
+- [[yang-liu-ucsc]] —— 可信机器学习与公平性研究者(UCSC)
+- [[yaochen-zhu]] —— 推荐系统与因果推断研究者
+- [[yiling-chen]] —— 经济学与计算/机制设计研究者
+- [[yiming-yang]] —— 文本挖掘与机器学习研究者(CMU)
+- [[yilun-du]] —— 多智能体 LLM 协作与推理研究者
+- [[yongfeng-zhang]] —— 推荐系统/信息检索/机器学习研究者
+- [[yuntao-bai]] —— Anthropic 对齐与无害性研究者,Constitutional AI 第一作者
+- [[zhefan-wang]] —— 推荐系统研究者
+- [[zhenzhong-chen]] —— 研究者,推荐系统因果推断论文作者
+- [[zhiqing-sun]] —— LLM 对齐与自我改进研究者
+- [[zhiyuan-liu]] —— NLP 与大模型研究者,参与 ChatDev
+### 机构 (Labs)
+- [[anthropic]] —— 以 AI 安全与对齐为核心的人工智能实验室
+- [[artificial-intelligence-review]] —— 综述类学术期刊(Springer)
+- [[bytedance-research]] —— 字节跳动研究机构,机器学习/推荐/因果推断
+- [[carnegie-mellon-university]] —— 卡内基梅隆大学
+- [[facebook-ai-research]] —— Meta(FAIR)基础研究实验室,NLP/检索增强生成
+- [[google-brain]] —— Google 深度学习研究团队,大模型与 prompting
+- [[google-deepmind]] —— Google 人工智能研究实验室
+- [[huawei-noahs-ark-lab]] —— 华为 AI 与决策推理研究实验室
+- [[kaust]] —— 阿卜杜拉国王科技大学,CAMEL 研究发起机构
+- [[lg-ai-research]] —— LG AI 研究院
+- [[microsoft-research]] —— 微软研究机构,计算机科学基础与应用研究
+- [[microsoft-research-asia]] —— 微软亚洲研究院(MSRA)
+- [[mila]] —— 蒙特利尔学习算法研究所
+- [[national-university-of-singapore]] —— 新加坡国立大学
+- [[nvidia]] —— GPU 公司及其 AI 研究部门,发表 LLM/具身智能体研究
+- [[openai]] —— GPT 系列及对齐/推理方法研究实验室
+- [[openbmb]] —— 聚焦大模型开源生态的实验室/社区
+- [[renmin-university-of-china]] —— 中国人民大学,LLM agent 与推荐研究
+- [[robotics-at-google]] —— Google 机器人学习与具身智能团队
+- [[shandong-university]] —— 山东大学
+- [[stanford-university]] —— 斯坦福大学,LLM 推理等方向研究
+- [[tencent]] —— 腾讯,产业界 AI/推荐研究与落地
+- [[tencent-ai-lab]] —— 腾讯 AI 研究机构,ML/NLP/LLM
+- [[thudm]] —— 清华大学数据挖掘组,大模型与 LLM Agent
+- [[tsinghua-nlp]] —— 清华大学 NLP 研究团队
+- [[tsinghua-university]] —— 清华大学,多项 LLM Agent 研究机构
+- [[university-of-amsterdam]] —— 阿姆斯特丹大学
+- [[university-of-michigan]] —— 密歇根大学
+- [[university-of-science-and-technology-of-china]] —— 中国科学技术大学
+- [[university-of-windsor]] —— 温莎大学
+- [[westlake-university]] —— 西湖大学
+- [[zhejiang-university]] —— 浙江大学,相关论文研究机构
+### 数据集
+- [[ali-ccp]] —— 阿里电商 CTR/CVR 多任务推荐数据集
+- [[amazon-book]] —— Amazon 图书评分子集,推荐基准
+- [[amazon-reviews]] —— Amazon 商品评论与评分数据集,推荐基准
+- [[coat]] —— 含有偏自选与无偏随机曝光评分的去偏推荐基准
+- [[eeg-svrec]] —— 含 EEG 情感参与信号的短视频推荐数据集
+- [[freebase]] —— 大规模结构化知识图谱知识库
+- [[kuairand]] —— 快手随机插入视频收集的百万级无偏序列推荐数据集
+- [[kuairand-pure]] —— KuaiRand 中随机曝光场景采集的无偏反馈子集
+- [[kuairec]] —— 快手短视频推荐数据集,去偏与离线研究常用
+- [[lfm-1b]] —— Last.fm 约十亿条音乐收听记录数据集
+- [[merrec]] —— Mercari C2C 电商大规模推荐数据集
+- [[microlens]] —— 含 10 亿交互与原始内容的内容驱动微视频推荐数据集
+- [[ml-causal]] —— 因果推断式推荐研究数据集
+- [[movielens]] —— GroupLens 电影评分数据集,推荐基准
+- [[movielens-1m]] —— 约百万条评分的 MovieLens 子集,推荐基准
+- [[open-bandit-dataset]] —— 已知日志策略下交互日志,用于 off-policy 评估
+- [[prm800k]] —— OpenAI 开源的约 80 万条步骤级标注,用于训练 PRM
+- [[retailrocket]] —— 电商浏览/加购/购买日志,多任务推荐评测
+- [[rl4rs]] —— 面向推荐的强化学习基准数据集与环境
+- [[sharegpt]] —— 用户分享的 ChatGPT 对话集,常作指令微调语料
+- [[srdd]] —— 软件需求描述数据集,评估端到端软件开发
+- [[steam-dataset]] —— Steam 游戏交互数据集,序列推荐基准
+- [[vg-causal]] —— 推荐系统因果推断研究数据集
+- [[wechat-channels-dataset]] —— 微信视频号视频推荐数据集,含观看时长
+- [[yahoo-r3]] —— 含有偏 MNAR 训练与无偏 MCAR 测试的去偏推荐标准基准
+- [[yelp-dataset]] —— Yelp 商户评论与评分公开数据集,推荐基准
+### Benchmark
+- [[agentbench]] —— 首个系统评估 LLM-as-Agent 的多维基准(8 个交互环境)
+- [[alfworld]] —— 文本化交互式具身任务基准
+- [[ambignq]] —— 聚焦歧义问题的开放域问答基准
+- [[big-bench]] —— 社区协作的大规模多任务语言模型评测基准
+- [[blocksworld]] —— 经典积木重排规划基准
+- [[commongen]] —— 生成式常识推理的约束文本生成基准
+- [[commonsenseqa]] —— 常识推理多项选择问答基准
+- [[fever]] —— 事实核查基准(SUPPORTED/REFUTED/NEI)
+- [[game-of-24]] —— 24 点数学推理游戏基准
+- [[gsm8k]] —— 小学水平数学应用题基准,多步数学推理
+- [[hotpotqa]] —— 基于 Wikipedia 的多跳问答基准
+- [[humaneval]] —— Python 代码生成基准,pass@k 指标
+- [[math-benchmark]] —— 竞赛风格数学题的多步推理基准
+- [[math-dataset]] —— 带分步解答的竞赛级数学题基准
+- [[mbpp]] —— 入门级 Python 编程问题代码生成基准
+- [[mind2web]] —— 通用网页智能体真实网站任务基准
+- [[minedojo]] —— 基于 Minecraft 的开放式具身智能体框架与基准
+- [[mini-crosswords]] —— 5×5 小型纵横填字推理基准
+- [[mmlu]] —— 多学科多选题基准,衡量广泛知识与综合理解
+- [[prontoqa]] —— 本体生成的可控演绎多步逻辑推理问答基准
+- [[realtoxicityprompts]] —— 衡量续写毒性倾向的安全性基准
+- [[saycan]] —— 结合语义可用性与可执行性价值函数的具身规划方法/基准
+- [[sotopia]] —— 开放式社交互动模拟环境与社会智能评测基准
+- [[sotopia-eval]] —— SOTOPIA 多维社会智能评测框架
+- [[spider]] —— 跨领域 text-to-SQL 语义解析基准
+- [[steam]] —— 基于 Steam 的序列推荐评测基准
+- [[strategyqa]] —— 隐式多步推理是/否问答基准
+- [[svamp]] —— 小学算术应用题变体测试基准
+- [[tabmwp]] —— 表格数学应用题多步推理基准
+- [[transcoder]] —— 编程语言间代码翻译基准
+- [[triviaqa]] —— 大规模琐事类开放域问答基准
+- [[truthfulqa]] —— 衡量回答真实性、考察是否复述常见错误信念
+- [[webarena]] —— 真实可复现网站上的网页智能体任务基准
+- [[webshop]] —— 模拟在线购物的网页导航基准(ReAct +10%;LATS 75.9)
+### 产品
+- [[agentcf]] —— 把用户与物品都建模为 LLM agent 的协同推荐框架/系统
+- [[ai-assistant-agent]] —— 角色扮演框架中扮演"助手"的 LLM 智能体
+- [[ai-user-agent]] —— CAMEL 中下达指令、扮演"用户"的 LLM 智能体
+- [[apollo-ad]] —— 百度 Apollo 自动驾驶系统(对比基线)
+- [[autogen]] —— 微软开源多 agent 框架,可对话 agent 会话编程
+- [[autogpt]] —— 基于 GPT-4 的开源自主智能体框架
+- [[carla]] —— 开源自动驾驶仿真器,闭环驾驶评测平台
+- [[chat-rec]] —— 用 LLM 做交互式对话推荐的框架
+- [[chatdev]] —— 多 LLM 角色化软件智能体组成的虚拟软件公司
+- [[chatgpt]] —— OpenAI 对话式 AI 产品
+- [[easyrl4rec]] —— 面向推荐的强化学习易用开源库与基准
+- [[everyday-robots]] —— Google X 移动操作机器人平台,具身智能实验载体
+- [[gpt-engineer]] —— 由自然语言需求自动生成整个代码库的 LLM 工具
+- [[interecagent]] —— 以 LLM 为大脑、传统推荐模型为工具的交互式对话推荐 agent
+- [[kuaishou]] —— 快手短视频/直播平台,推荐研究工业场景与数据来源
+- [[langchain]] —— 构建 LLM 应用的开源框架(链式调用/工具/agent 编排)
+- [[linrec]] —— 线性注意力高效长序列推荐框架
+- [[lusifer]] —— 基于 LLM 的用户模拟器框架
+- [[macrec]] —— 面向推荐的多智能体 LLM 协作框架
+- [[megaagent]] —— 无需 SOP 的大规模多智能体自治框架
+- [[mercari]] —— Mercari C2C 二手电商平台,推荐数据/场景来源
+- [[metagpt]] —— 把 SOP 编码进 prompt 的 LLM 多智能体软件开发框架
+- [[perspective-api]] —— 评估文本毒性的在线服务,常作外部反馈来源
+- [[recagent]] —— 基于 LLM-agent 的用户行为模拟器(沙盒)
+- [[recsim]] —— 推荐系统可配置仿真平台,支持 RL 推荐研究
+- [[replicantlife]] —— LLM 驱动的生成式社会模拟环境/平台
+- [[siliconfriend]] —— 基于 MemoryBank 长期记忆的情感陪伴聊天机器人
+
+## 概念 (Concepts)
+<!-- 方法与思想:attention、RLHF、MoE、scaling law、量化…… -->
+### LLM 智能体与推理
+- [[llm-agents]] —— LLM 智能体枢纽页;分"任务求解+搜索"与"社会模拟"两分支
+- [[llm-agent]] —— 以 LLM 为核心、具推理/规划/记忆/工具能力的智能体
+- [[llm-based-agents]] —— 以 LLM 为决策核心、感知环境并行动的智能体
+- [[autonomous-agents]] —— LLM 驱动、最少人工干预下自主规划决策的智能体
+- [[llm-planning]] —— 用 LLM 分解任务、生成与调整行动计划
+- [[reasoning]] —— 多步逻辑推导/分解组合信息以解决复杂问题的能力
+- [[chain-of-thought]] —— 思维链:few-shot 中显式生成中间推理步骤
+- [[zero-shot-cot]] —— 用"一步步思考"触发的零样本思维链
+- [[react]] —— 交替生成推理痕迹与行动,与外部环境交互
+- [[tree-of-thoughts]] —— 把推理建模为"思考"树搜索(前瞻/回溯)
+- [[tree-search]] —— 树状状态空间中扩展评估节点的搜索(DFS/BFS/MCTS)
+- [[monte-carlo-tree-search]] —— 选择→扩展→模拟→回传的树搜索;LATS 基础
+- [[language-agent-tree-search]] —— MCTS 统一推理/行动/反思的语言智能体框架
+- [[reasoning-via-planning-rap]] —— 把 LLM 当推理智能体+世界模型,用 MCTS 规划
+- [[reflection-on-search-trees]] —— 在搜索树上反思以指导后续探索
+- [[rebase]] —— 基于奖励平衡的树搜索推理(compute-optimal inference)
+- [[plan-and-solve-prompting]] —— 先制定计划再执行的零样本提示
+- [[least-to-most-prompting]] —— 把复杂问题由易到难分解再依次求解
+- [[self-consistency]] —— 多条推理路径采样+多数投票
+- [[input-output-prompting]] —— 直接输入输出的最朴素提示,常作对照基线
+- [[few-shot-prompting]] —— prompt 内给少量示例的 in-context learning
+- [[in-context-learning]] —— 仅凭 prompt 示例不更新参数完成新任务
+- [[prompt-engineering]] —— 设计优化提示以引导期望输出
+- [[program-of-thought]] —— 把推理表达为可执行程序,分离推理与计算
+- [[pal]] —— 让 LLM 生成程序交解释器执行来求解推理
+- [[context-aware-guidelines]] —— 从经验中归纳上下文相关指南指导智能体决策
+- [[world-model]] —— 学习环境动态、预测状态转移用于规划
+- [[grounding]] —— 把模型输出与环境/动作/事实关联以符合可行性
+- [[embodied-reasoning]] —— 结合物理环境反馈的闭环推理与规划
+- [[closed-loop-feedback]] —— 持续接收反馈调整决策的"行动-感知-再规划"闭环
+- [[lifelong-learning]] —— agent 持续习得、积累并复用新技能而不遗忘
+- [[length-generalization]] —— 把短实例上的能力推广到更长更复杂实例
+- [[compute-optimal-inference]] —— 在固定算力下优化推理时搜索/采样策略
+- [[test-time-scaling]] —— 推理阶段增加计算预算提升表现
+- [[test-time-compute]] —— 推理阶段投入更多计算提升输出质量
+### 多智能体
+- [[multi-agent-systems]] —— 多个能感知/决策/交互的智能体协作或竞争系统
+- [[llm-multi-agent]] —— 多个 LLM 智能体分工对话协作完成复杂任务
+- [[multi-agent-collaboration]] —— 多智能体分工对话协调完成复杂任务
+- [[multi-agent-debate]] —— 多智能体各自作答并多轮互相批评辩论
+- [[agent-orchestration]] —— 协调调度编排多个 LLM agent
+- [[role-playing]] —— 为 LLM 智能体分配角色身份引导协作/模拟
+- [[role-playing-agent]] —— 被赋予角色设定、按角色目标对话的 LLM 智能体
+- [[inception-prompting]] —— CAMEL 让两 agent 维持角色自主对话的提示技术
+- [[chat-chain]] —— 复杂任务沿流程拆为顺序子任务的多智能体协作
+- [[standard-operating-procedure]] —— 把最佳实践编码为结构化流程规范多 agent 协作
+- [[communicative-dehallucination]] —— agent 间主动沟通发现纠正彼此幻觉
+- [[user-simulation]] —— 用模型模拟用户交互行为以训练/评估系统
+- [[generative-agents]] —— 用记忆流+反思+规划模拟可信人类行为
+- [[social-simulation]] —— 用 LLM 智能体模拟社会互动与群体行为
+- [[social-intelligence]] —— 智能体在社交目标下感知/推断/协作的能力
+- [[agent-based-modeling]] —— 自下而上以个体 agent 规则模拟系统涌现行为
+- [[metacognition]] —— 智能体观察反思自身思考与行动并调整策略
+### 记忆
+- [[agent-memory]] —— agent 不更新参数地存储并召回过往经验的机制
+- [[memory-module]] —— 为 agent 提供存储/更新/检索历史的组件
+- [[memory-stream]] —— Generative Agents 完整记录经历并按近因/重要性/相关性检索
+- [[memorybank]] —— 存储对话+按遗忘曲线更新+检索的 LLM 长期记忆机制
+- [[llm-long-term-memory]] —— 突破上下文窗口的 LLM 外部长期记忆
+- [[ebbinghaus-forgetting-curve]] —— 记忆按指数衰减的心理学规律,用于更新记忆强度
+### 自我改进
+- [[self-improvement]] —— 用自身生成数据/反馈反复迭代提升能力
+- [[self-correction]] —— LLM 检查并修正自身输出错误
+- [[intrinsic-self-correction]] —— 无外部反馈下 LLM 自我纠错(常致性能下降)
+- [[self-critique]] —— LLM 对自身输出生成批评性反馈
+- [[self-reflection]] —— 把尝试与反馈转化为语言反思存入记忆
+- [[reflection]] —— 智能体对过往轨迹的反思总结
+- [[self-refine]] —— 同一 LLM 测试时"自我反馈→自我修正"迭代
+- [[reflexion]] —— 对失败做言语化自我反思,作为上下文学习
+- [[self-debugging]] —— LLM 执行并解释自身代码以发现修复错误
+- [[rubber-duck-debugging]] —— 逐行解释代码发现错误的调试法
+- [[critic]] —— LLM 借外部工具验证并迭代修正自身输出
+- [[degeneration-of-thought]] —— 自我反思中过度自信难再生成新思路的退化现象
+- [[bootstrapping]] —— 用自身生成数据反复迭代增强能力
+- [[star-self-taught-reasoner]] —— 自生成 rationale 保留答对者反复微调 bootstrap 推理
+- [[rationalization]] —— STaR 中给定答案反向补全推理过程的技术
+- [[expert-iteration]] —— 交替"搜索生成专家解"与"模仿训练策略"的自提升
+- [[rejection-sampling-fine-tuning]] —— 只保留通过验证的采样输出来微调
+- [[experiential-learning]] —— 不更新参数从经验抽取自然语言洞见并复用
+- [[self-instruct]] —— 用模型自生成指令数据微调自身
+- [[self-inspiring]] —— RecMind 保留所有已探索状态增强规划的算法
+### 工具与代码
+- [[tool-use]] —— LLM 调用外部工具扩展能力
+- [[toolformer]] —— 自监督让 LLM 学会何时如何调用 API
+- [[code-generation]] —— LLM 根据描述/反馈自动生成可执行代码
+- [[code-execution]] —— 生成代码并在真实环境运行获取反馈
+- [[execution-based-selection]] —— 执行候选方案依运行结果筛选最优解
+- [[reward-design]] —— 用编码 LLM/进化搜索自动生成奖励函数
+- [[evolutionary-search]] —— 进化式变异/选择搜索优化候选解
+- [[vqa]] —— 视觉问答:理解图像并回答自然语言问题
+- [[open-domain-qa]] —— 无指定上下文从知识源检索并生成答案
+- [[rag]] —— 生成前检索外部知识作上下文,补充缺失/过时知识
+- [[retrieval-augmented-generation]] —— 参数化生成+可检索非参数化知识的框架
+- [[dense-passage-retrieval]] —— 双编码器稠密向量做检索的开放域问答方法
+- [[approximate-nearest-neighbor-search]] —— 高维向量近似最近邻快速检索
+- [[faiss]] —— 高效相似向量检索库
+- [[hallucination]] —— 模型生成看似合理但与事实/输入不符的内容
+- [[chain-of-verification]] —— 先草稿再自我验证以降低幻觉
+### 对齐与安全
+- [[alignment]] —— 训练使模型行为符合人类意图与价值偏好
+- [[ai-alignment]] —— 让 AI 行为目标与人类意图价值安全规范一致
+- [[ai-safety]] —— 让 AI 行为无害诚实对齐、降低危害风险
+- [[rlhf]] —— 用人类偏好训奖励模型再 RL 对齐语言模型
+- [[rlaif]] —— 用 AI 反馈替代人类标签训奖励模型并对齐
+- [[direct-preference-optimization]] —— 不显式建奖励模型直接用偏好优化策略
+- [[constitutional-ai]] —— 用明文原则引导自我批评修订、AI 反馈训练无害助手
+- [[reward-model]] —— 从偏好学习给输出打分以指导 RL 对齐
+- [[instruction-tuning]] —— 用指令-响应样本微调使模型遵循指令
+- [[human-in-the-loop]] —— 在训练/决策中引入人类反馈与干预
+- [[scalable-oversight]] —— 模型能力接近人类时如何有效监督
+- [[llm-as-judge]] —— 用 LLM 充当评估者打分或比较输出
+- [[emergent-abilities]] —— 规模超阈值后突然显著出现的能力
+- [[foundation-models]] —— 大规模预训练、可适配多下游任务的大型模型
+- [[large-language-models]] —— 海量文本预训练、强语言理解生成的大模型
+- [[transformer]] —— 基于自注意力的序列建模主干架构
+- [[state-space-model]] —— 用状态空间递推线性复杂度建模长序列
+- [[deep-neural-network]] —— 多层非线性变换堆叠、端到端学多层特征
+- [[lstm]] —— 带门控缓解梯度消失、擅长长期依赖的 RNN
+- [[adversarial-robustness]] —— 抵御对抗扰动保持稳定预测的能力
+### 训练与推理范式
+- [[fine-tuning]] —— 用任务数据继续训练调整预训练模型参数
+- [[lora]] —— 注入可训练低秩矩阵的参数高效微调
+- [[prompt-tuning]] —— 只学少量连续提示向量的参数高效微调
+- [[mixture-of-experts]] —— 门控稀疏选择组合专家子网络扩容控算
+- [[lottery-ticket-hypothesis]] —— 稠密网中存在可单独训练达原性能的稀疏子网
+- [[outcome-supervision]] —— 仅依据最终答案正误提供训练信号
+- [[process-supervision]] —— 对推理每步提供正误反馈训练
+- [[outcome-reward-model]] —— 仅按最终答案打分的奖励模型(ORM)
+- [[process-reward-model]] —— 对推理每步打分的奖励模型(PRM)
+### 强化学习
+- [[reinforcement-learning]] —— 与环境交互依奖励学最大化累积回报策略
+- [[markov-decision-process]] —— 状态/动作/转移/奖励刻画序列决策的框架
+- [[constrained-mdp]] —— 在奖励最大化外加累积代价约束的 MDP
+- [[constrained-optimization]] —— 在约束条件下求最优解的优化
+- [[lagrangian-relaxation]] —— 用拉格朗日乘子把约束并入目标
+- [[actor-critic]] —— actor 输出动作、critic 评估价值的 RL 方法
+- [[ppo]] —— 裁剪目标限制更新幅度的 on-policy 策略梯度
+- [[ddpg]] —— 连续动作的确定性策略梯度 off-policy actor-critic
+- [[sac]] —— 最大熵框架的 off-policy actor-critic
+- [[rcpo]] —— 用拉格朗日乘子把约束纳入奖励的约束 RL
+- [[behavior-cloning]] —— 监督模仿专家动作的策略学习
+- [[offline-rl]] —— 仅从固定历史数据学策略、训练不交互
+- [[model-based-rl]] —— 先学环境动态再借模型规划/生成经验
+- [[multi-agent-reinforcement-learning]] —— 多智能体在共享环境中联合学习策略
+- [[off-policy-evaluation]] —— 用历史日志估计新策略表现而不在线部署
+- [[delayed-reward]] —— 动作效果延迟体现导致归因困难
+- [[cross-entropy-method]] —— 迭代采样精英更新分布的黑箱优化
+- [[random-network-distillation]] —— 用预测随机网络误差作好奇心内在奖励
+- [[monte-carlo-dropout]] —— 推理时保持 dropout 多次采样近似不确定性
+- [[latent-action-space]] —— 用低维连续表示刻画大动作空间以高效搜索
+- [[gflownet]] —— 学流使采样概率正比奖励的生成式概率模型
+### 推荐系统
+- [[recommender-system]] —— 据用户兴趣行为个性化筛选推荐内容的系统
+- [[recommender-systems]] —— 建模用户偏好与物品特征个性化推荐
+- [[llm-for-recommendation]] —— 用 LLM 做推荐(标签/对话/agent/重排等)
+- [[collaborative-filtering]] —— 分析用户-物品交互发现相似用户/物品做预测
+- [[matrix-factorization]] —— 把交互矩阵分解为低维隐向量内积预测偏好
+- [[factorization-machines]] —— 用特征隐向量内积建模二阶交互
+- [[multi-task-learning]] —— 共享模型同学多个相关任务提升泛化效率
+- [[aitm]] —— 自适应信息迁移的多任务排序模型(转化漏斗)
+- [[sequential-recommendation]] —— 据历史行为时间序列预测下一交互物品
+- [[long-term-recommendation]] —— 优化长期用户价值/留存而非即时点击
+- [[listwise-recommendation]] —— 把整个推荐列表作整体建模优化
+- [[personalized-ranking]] —— 按个体偏好对候选排序
+- [[candidate-generation]] —— 召回阶段从海量物料快速筛相关候选集
+- [[embedding-based-retrieval]] —— 映射到同一向量空间用 ANN 召回物料
+- [[hard-negative-mining]] —— 选与正样本相似但不相关的难负例提升判别
+- [[ctr]] —— 点击率预估
+- [[ndcg]] —— 衡量排序质量的归一化折损累积增益指标
+- [[cold-start]] —— 新用户/新物品缺乏交互的冷启动问题
+- [[data-sparsity]] —— 交互稀疏导致建模困难
+- [[interactive-recommendation]] —— 多轮交互中动态适应用户反馈
+- [[context-aware-recommendation]] —— 利用上下文情境信息做推荐
+- [[situation-aware-recommendation]] —— 显式/隐式建模场景的多场景推荐
+- [[situation-aware-recommender-enhancer]] —— 增强场景感知能力的推荐增强器
+- [[personalized-situation-fusion]] —— 个性化融合多场景信息
+- [[user-conditioned-preference-encoder]] —— 以用户为条件编码偏好
+- [[conditioning-neural-network]] —— 条件化建模的神经网络组件
+- [[recommendation-diversity]] —— 提升推荐结果多样性
+- [[recommendation-with-negative-feedback]] —— 利用负反馈改进推荐
+- [[recommendation-editing]] —— 在不重训下编辑修正推荐行为
+- [[recommendation-simulator]] —— 推荐系统的用户/环境模拟器
+- [[rl-based-recsys]] —— 用强化学习优化推荐序列决策
+- [[interactive-evaluation]] —— 交互式在线/仿真评估推荐
+- [[user-retention]] —— 用户一段时间后仍持续使用的留存指标
+- [[matthew-effect]] —— 热门愈热、长尾愈冷的"强者愈强"现象
+- [[filter-bubble]] —— 推荐窄化兴趣形成的信息茧房
+- [[watch-time]] —— 视频推荐中以观看时长衡量用户兴趣
+- [[duration-bias]] —— 观看时长受视频时长影响产生的系统性偏差
+- [[noisy-watching]] —— 观看时长含误点/挂机等与兴趣无关噪声
+- [[conditional-quantile-estimation]] —— 分位数估计建模 watch-time 分布
+- [[quantile-regression]] —— 估计条件分位数的回归
+- [[d2co]] —— 同时矫正时长偏差与噪声观看的因果方法
+- [[d2q]] —— 按时长分组+分位数建模的 watch-time 去偏
+- [[wtg]] —— 相对基准衡量观看时长净增益的指标
+- [[affective-engagement]] —— 用生理/情感信号衡量内容参与度
+- [[eeg-signal]] —— 脑电信号,用作情感参与度反馈
+- [[hyper-actor-critic]] —— 解耦 hyper-action 推断+effect-action 选择的 RL 推荐
+### 因果推断与去偏
+- [[causal-inference]] —— 从观测数据估计因果效应而非相关的方法论
+- [[causal-discovery]] —— 从观测数据自动推断因果结构(DAG/方向)
+- [[counterfactual-reasoning]] —— 推断条件改变后"本会发生什么"的因果推断
+- [[structural-causal-model]] —— 用结构方程与因果图刻画生成机制
+- [[do-calculus]] —— 把含 do(·) 因果效应改写为可估表达式的规则
+- [[backdoor-adjustment]] —— 阻断后门路径估计因果效应
+- [[potential-outcome-framework]] —— Rubin 因果模型,用潜在结果定义因果效应
+- [[proximal-causal-inference]] —— 借代理变量在隐藏混杂下识别因果效应
+- [[identifiability]] —— 目标参数/因果效应能被唯一确定的性质
+- [[confounding-bias]] —— 同时影响处理与结果的混杂导致的偏差
+- [[deconfounding]] —— 识别消除混杂偏差以得无偏因果效应
+- [[multi-cause-confounders]] —— 多因推断中同时影响多处理与结果的混杂
+- [[selection-bias]] —— 非随机选择/曝光使数据不代表真实分布
+- [[exposure-bias]] —— 仅观测被曝光物品反馈导致的系统性偏差
+- [[debiasing]] —— 用因果/加权/插补消除观测数据系统性偏差
+- [[missing-at-random]] —— 缺失概率仅依赖已观测变量的缺失机制
+- [[inverse-propensity-score]] —— 用倾向得分倒数加权校正曝光/选择偏差
+- [[inverse-propensity-scoring]] —— 按倾向得分倒数加权校正选择偏差
+- [[doubly-robust]] —— 结合倾向加权与插补、其一正确即无偏
+- [[conservative-doubly-robust]] —— 审查插补均值方差过滤毒性插补的 DR 去偏
+- [[poisonous-imputation]] —— DR 中不准插补反而放大偏差方差的现象
+- [[dr-bias]] —— 控制插补误差降低偏差的 DR 去偏
+- [[dr-jl]] —— 联合学插补与预测模型的 DR 去偏
+- [[mrdr]] —— 用更小方差目标增强稳健性的 DR 去偏
+- [[tdr]] —— 在 DR 基础上进一步增强稳健性的三重稳健去偏
+- [[eib]] —— 对预测误差插补缓解 MNAR 偏差的去偏
+- [[data-heterogeneity]] —— 子群体预测机制/协变量分布的系统性差异
+- [[invariant-learning]] —— 寻找跨环境稳定预测关系提升鲁棒泛化
+- [[invariant-risk-minimization]] —— 学跨环境最优不变表示提升分布外泛化
+- [[distributionally-robust-optimization]] —— 在分布不确定集上最小化最坏风险
+- [[performative-prediction]] —— 预测本身改变所预测分布的设定
+- [[variational-autoencoder]] —— (页面)用于因果/表示学习的变分自编码器
+- [[disentangled-representation-learning]] —— 学习解耦各因子的表示
+### 公平性与社会经济
+- [[provider-fairness]] —— 保障内容提供方/创作者的曝光公平
+- [[two-sided-fairness-reranking]] —— 兼顾用户与提供方公平的重排
+- [[minimum-exposure-guarantee]] —— 为提供方保证最低曝光量
+- [[content-creator-incentive]] —— 创作者激励与生态健康
+- [[dual-influence]] —— 用户与创作者间的双向影响
+- [[polarization]] —— 推荐/反馈循环导致的兴趣或观点极化
+- [[dimensional-collapse]] —— 表示坍缩到低维子空间的退化
+- [[bankruptcy-problem]] —— 资源分配的破产问题(博弈论)
+- [[talmud-rule]] —— 破产问题的塔木德分配规则
+- [[billp]] —— 流量波动下的预算/曝光分配方法(BankFair)
+- [[margin-maximization]] —— 最大化决策间隔提升鲁棒性
+- [[graph-contrastive-learning]] —— 图上对比学习自监督表示
+- [[rgcl]] —— 鲁棒图对比学习(决策边界视角)
+- [[lightgcn]] —— 轻量图卷积协同过滤模型
+### 其他
+- [[active-learning]] —— 主动挑选高信息样本交标注以省标注成本
+- [[benchmark]] —— 标准化任务集合与评测协议
+- [[evaluation]] —— 模型/系统评测的方法与协议
+- [[model-validation]] —— 模型/模拟结果的有效性验证
+- [[systematic-literature-review]] —— 系统性文献综述方法
+- [[model-editing]] —— 不重训定向修改模型知识/行为
+- [[differential-entropy]] —— 连续分布的微分熵
+- [[multi-embedding]] —— 多套 embedding 提升表达能力
+- [[cirs]] —— 因果干预缓解过滤气泡的交互式推荐方法
+- [[pareto]] —— 多目标优化的权衡前沿与最优解集
+- [[pareto-optimality]] —— 无法不损一目标改进其他目标的状态
+
+## 资料 (Sources)
+<!-- 每份已 ingest 的原始资料一页,以年份为前缀 -->
+- [[2020-rag]] —— Lewis 等 2020,RAG;参数化 seq2seq+可检索 Wikipedia 稠密索引,知识密集型 NLP 多项 SOTA
+- [[2022-chain-of-thought]] —— Wei 等 2022,CoT prompting;few-shot 中间推理步骤,推理增益随规模涌现
+- [[2022-constitutional-ai]] —— Bai 等 2022,Constitutional AI;用原则替代有害性标注,自我批评+RLAIF
+- [[2022-deep-causal-reasoning-for-recommendations]] —— Deep-Deconf;深度 VAE 推断 substitute confounders 做 MCMO 因果去混杂
+- [[2022-inner-monologue]] —— Inner Monologue;注入环境反馈形成"内心独白",闭环具身推理
+- [[2022-instructgpt]] —— Ouyang 等 2022,InstructGPT;RLHF 对齐 GPT-3,1.3B 胜 175B
+- [[2022-kuairand]] —— KuaiRand;快手随机插入视频的无偏序列推荐数据集
+- [[2022-react-reasoning-and-acting]] —— Yao 等 2022,ReAct;推理+行动交替(arXiv 2210.03629)
+- [[2022-star-self-taught-reasoner]] —— STaR;自生成 rationale 保留答对者反复微调 bootstrap 推理
+- [[2023-agentbench]] —— AgentBench;8 环境系统评估 LLM-as-Agent,揭示商业/开源差距
+- [[2023-agentcf-collaborative-learning-agents-recsys]] —— AgentCF;把用户与物品都建模为 LLM agent,自主交互+协同反思做无梯度协同过滤
+- [[2023-agenttuning]] —— AgentTuning;AgentInstruct 轨迹+通用指令混合微调赋予开源模型可泛化 agent 能力
+- [[2023-autogen]] —— AutoGen;可对话多 agent 会话编程构建 LLM 应用
+- [[2023-camel-communicative-agents]] —— CAMEL;角色扮演+inception prompting 让两 agent 自主协作
+- [[2023-causal-inference-for-recommendation]] —— 因果推断引入推荐的系统综述
+- [[2023-chain-of-verification]] —— CoVe;先草稿再自我验证核查事实,显著降低幻觉
+- [[2023-chatdev]] —— ChatDev;多 LLM 软件智能体虚拟公司,瀑布式完成开发周期
+- [[2023-collaboration-transition-multi-query-self-attention]] —— MQSA-TED;多查询自注意力建协同+蒸馏全局转移做序列推荐
+- [[2023-concordia-generative-agent-based-modeling]] —— Concordia;DeepMind 用 Game Master 控环境的生成式 ABM 库
+- [[2023-conservative-doubly-robust]] —— CDR;审查插补均值方差过滤毒性插补的 DR 去偏
+- [[2023-critic]] —— CRITIC;借搜索/代码/API 等工具自我验证迭代修正
+- [[2023-d2co-watch-time-debias]] —— D²Co;统一因果视角同矫时长偏差与噪声观看
+- [[2023-data-heterogeneity-recommendation]] —— BHE;双层聚类挖掘预测机制与协变量异质性去偏
+- [[2023-divide-and-conquer-ebr]] —— 召回 EBR 拆分聚类+簇内并行+合并,Recall 最高 +40%
+- [[2023-dorl-matthew-effect-offline-rl-recommendation]] —— DORL;悲观惩罚加熵惩罚缓解离线 RL 推荐马太效应
+- [[2023-drivemlm-autonomous-driving]] —— DriveMLM;多模态 LLM 决策对齐 AD 行为规划,CARLA Town05 Long DS 76.1
+- [[2023-expel]] —— ExpeL;不更新参数从跨任务经验抽洞见、召回成功轨迹
+- [[2023-fireact-language-agent-fine-tuning]] —— FireAct;多任务多 prompting 轨迹微调 backbone 构建语言智能体
+- [[2023-generative-agents]] —— Park 等 2023,Generative Agents(arXiv 2304.03442,UIST 2023)
+- [[2023-gflownet-listwise-recommendation]] —— GFN4Rec;GFlowNet 流匹配做 listwise 推荐提多样性
+- [[2023-hierrec-scenario-aware-hierarchical-dynamic-network]] —— HierRec;分层 dynamic-weight 同建显式与隐式场景的多场景 CTR
+- [[2023-hyper-actor-critic-recommendation]] —— HAC;hyper-action 推断+effect-action 选择稳定大动作 RL 推荐
+- [[2023-idcf-debiasing-recommendation]] —— iDCF;代理变量+近端因果推断保证可识别性去混杂
+- [[2023-kuaisim-recommender-simulator]] —— KuaiSim;multi-behavior/cross-session 反馈,统一三层 RL 推荐任务的用户模拟器
+- [[2023-lats-language-agent-tree-search]] —— Zhou 等 2023,LATS;MCTS 用于 LLM 智能体(arXiv 2310.04406)
+- [[2023-lets-verify-step-by-step]] —— OpenAI;过程监督优于结果监督,开源 PRM800K
+- [[2023-llms-cannot-self-correct-reasoning-yet]] —— 论证内在自我纠正下 LLM 无法纠正推理错误,性能反降
+- [[2023-memgpt-llms-as-operating-systems]] —— MemGPT;借 OS 分层内存与分页用函数调用造"无限上下文"
+- [[2023-memorybank]] —— MemoryBank;类人长期记忆+遗忘曲线,实现 SiliconFriend
+- [[2023-metagpt]] —— MetaGPT;把 SOP 编码进 prompt 的多智能体软件框架
+- [[2023-microlens-micro-video-recommendation-dataset]] —— MicroLens;10 亿交互含原始内容的内容驱动微视频推荐数据集
+- [[2023-multi-agent-debate]] —— MAD;多 agent 针锋相对辩论+裁判,缓解 DoT
+- [[2023-multi-task-deep-recommender-systems-survey]] —— MTDRS 综述;任务关系与方法论两维分类
+- [[2023-multi-task-recommendations-with-rl]] —— RMTL;actor-critic 按 session 动态加权多任务损失
+- [[2023-multiagent-debate]] —— 多 LLM 实例多轮辩论提升推理与事实性
+- [[2023-plan-and-solve-prompting]] —— PS/PS+;零样本先计划再执行改进 Zero-shot-CoT
+- [[2023-reasoning-via-planning-rap]] —— RAP;LLM 当推理智能体+世界模型,用 MCTS 规划
+- [[2023-recagent-user-behavior-simulation]] —— RecAgent;LLM-agent 沙盒模拟用户行为研究信息茧房/从众
+- [[2023-recmind-llm-agent-for-recommendation]] —— RecMind;LLM 驱动自主推荐 agent,Self-Inspiring 规划保留已探索状态
+- [[2023-recommender-ai-agent-interec]] —— InteRecAgent;LLM 为脑+推荐模型为工具的对话推荐 agent,蒸馏 RecLlama
+- [[2023-reflexion]] —— Reflexion;语言反馈而非梯度更新强化语言智能体
+- [[2023-rlur-user-retention-short-video]] —— RLUR;请求级 MDP 用 RL 最小化累计回访时间,快手上线
+- [[2023-self-debugging]] —— SELF-DEBUGGING;few-shot 让 LLM 执行解释自身代码自调试
+- [[2023-self-rag]] —— Self-RAG;reflection token 实现按需检索与自我反思批判
+- [[2023-self-refine]] —— SELF-REFINE;测试时自我反馈→自我修正,7 任务平均 +20%
+- [[2023-shepherd-critic-for-lm-generation]] —— Shepherd;7B LLaMA critic 精确批判 LLM 输出,win-rate 媲美 ChatGPT
+- [[2023-sotopia-social-intelligence-evaluation]] —— SOTOPIA;开放式社交模拟环境+多维社会智能评测,GPT-4 难集逊于人类
+- [[2023-timesfm-time-series-foundation-model]] —— TimesFM;O(100B) 时序预训练 decoder-only 时序预测基础模型
+- [[2023-tree-of-thoughts]] —— ToT;思考树搜索,24 点 GPT-4 4%→74%
+- [[2023-ts-llm-tree-search-decoding-training]] —— TS-LLM;AlphaZero 式树搜索同导 LLM 解码与迭代训练,搜索深度达 64
+- [[2023-two-stage-constrained-actor-critic]] —— TSCAC;两阶段约束 actor-critic 平衡 WatchTime 与稀疏交互
+- [[2023-uncertain-random-geometric-programming]] —— 几何规划含不确定+随机系数的线性正态框架(运筹/优化,非 LLM)
+- [[2023-video-length-debiasing-microvideo-rec]] —— VLDRec;play-progress 去偏+长度条件采样+多任务缓解视频长度偏差
+- [[2023-voyager]] —— VOYAGER;GPT-4 驱动 Minecraft 终身学习具身智能体
+- [[2024-autoguide-context-aware-guidelines]] —— AutoGuide;从经验自动归纳上下文相关指南指导智能体
+- [[2024-bankfair-fluctuating-traffic-reranking]] —— BankFair;借破产问题/塔木德规则在波动流量下保提供方公平的重排
+- [[2024-compute-optimal-inference]] —— 研究推理时算力最优的搜索/采样策略(REBASE)
+- [[2024-conditional-quantile-estimation-watch-time]] —— CQE;条件分位数估计建模 watch-time 分布
+- [[2024-counterfactual-watch-time]] —— 反事实视角建模 watch-time 去偏
+- [[2024-crocodile-cross-experts-covariance]] —— CroCoDiL;跨专家协方差建模的多任务推荐
+- [[2024-deconfound-release-interval-bias]] —— 去混杂发布时间间隔偏差的推荐方法
+- [[2024-dfei-large-scale-multi-domain-recommendation]] —— DFEI;大规模多域推荐特征/专家交互方法
+- [[2024-easyrl4rec]] —— EasyRL4Rec;面向推荐的 RL 易用库与统一基准
+- [[2024-edt4rec-max-entropy-decision-transformer]] —— EDT4Rec;最大熵决策 Transformer 做推荐
+- [[2024-eeg-svrec-eeg-affective-engagement-dataset]] —— EEG-SVRec;含 EEG 情感参与信号的短视频推荐数据集
+- [[2024-eureka-reward-design-via-coding-llms]] —— Eureka;编码 LLM 零样本生成奖励+进化反思,达人类级奖励设计
+- [[2024-fairness-recommendation-missing-labels]] —— 缺失标签下的推荐公平性研究
+- [[2024-feature-level-bias-ctr]] —— 特征级偏差视角的 CTR 去偏
+- [[2024-future-impact-decomposition-request-level-recommendation]] —— 请求级推荐中分解未来影响的方法
+- [[2024-generative-agents-in-recommendation]] —— Agent4Rec;1000 个生成式 agent 构电影推荐用户模拟器,复现茧房/流行度偏差
+- [[2024-generative-ai-as-economic-agents]] —— 把生成式 AI 作为经济智能体的研究
+- [[2024-hiagent-hierarchical-working-memory]] —— HiAgent;分层工作记忆管理提升长程智能体
+- [[2024-llm-critics-help-catch-llm-bugs]] —— OpenAI CriticGPT;LLM critic 帮助发现 LLM 代码错误
+- [[2024-llm-learnable-planners-long-term-recommendation]] —— 用可学习 LLM planner 做长期推荐
+- [[2024-llm-tags-vs-classical-text-features]] —— 对照 LLM 语义标签与 TF-IDF/LDA/BERT 用于短视频兴趣建模
+- [[2024-llm4rerank-auto-reranking-recommendation]] —— LLM4Rerank;LLM 自动重排推荐
+- [[2024-lusifer-llm-user-simulation]] —— LUSIFER;基于 LLM 的用户模拟器
+- [[2024-macrec-multi-agent-recommendation]] —— MACRec;多智能体 LLM 协作推荐框架
+- [[2024-megaagent-large-scale-mas-without-sop]] —— MegaAgent;无 SOP 的大规模多智能体自治系统
+- [[2024-merrec-mercari-c2c-recommendation-dataset]] —— MerRec;Mercari C2C 大规模推荐数据集
+- [[2024-metacognition-generative-agents]] —— 为生成式 agent 引入元认知模块反思自身思考行动
+- [[2024-model-based-multi-agent-short-video-recommender]] —— 基于模型的多智能体短视频推荐
+- [[2024-quiet-star]] —— Quiet-STaR;让 LM 为每个 token 生成内部 rationale 提升推理
+- [[2024-recmamba-lifelong-sequential-recommendation]] —— RecMamba;Mamba 做终身序列推荐
+- [[2024-recommendation-editing]] —— 不重训定向编辑修正推荐行为
+- [[2024-recursive-introspection-rise]] —— RISE;递归自省微调让模型多轮自我纠错
+- [[2024-reflection-on-search-trees]] —— 在搜索树上反思以改进规划/推理
+- [[2024-robust-recommendation-decision-boundary-gcl]] —— 决策边界视角的鲁棒图对比学习推荐(RGCL)
+- [[2024-roler-reward-shaping-offline-rl-recsys]] —— RoLeR;离线 RL 推荐的奖励塑形
+- [[2024-self-reflection-llm-agents]] —— 系统研究 LLM 智能体的自我反思机制
+- [[2024-sigformer-sign-aware-graph-transformer]] —— SIGformer;符号感知图 Transformer(含负反馈)做推荐
+- [[2024-situation-aware-recommender-enhancer]] —— 场景感知推荐增强器
+- [[2024-sotopia-pi-social-agents]] —— SOTOPIA-π;改进社交智能体的社会智能
+- [[2024-touch-the-core-hybrid-targets-recommendation]] —— 混合目标的推荐优化
+- [[2024-tree-search-for-language-model-agents]] —— 为语言模型智能体设计的树搜索方法
+- [[2024-unex-rl-multi-stage-recommender]] —— UNEX-RL;多智能体 RL 联合优化多阶段推荐,Kwai 时长 +0.953%
+- [[2024-user-creator-feature-polarization]] —— 用户-创作者反馈循环导致的特征极化研究
+- [[2024-v-star-verifiers-for-self-taught-reasoners]] —— V-STaR;为自学推理器训练验证器
+- [[2024-when-can-llms-correct-mistakes]] —— 系统分析 LLM 何时能借反馈纠错
+- [[2025-drivemlm-autonomous-driving]] —— DriveMLM;多模态 LLM 对齐 AD 行为规划,CARLA 闭环 DS 76.1、MPI 0.96
+- [[2025-llm-multi-agent-swarm-intelligence]] —— 用 GPT-4o 驱动 agent 在蚁群觅食/鸟群 flocking 复现涌现集体行为
+- [[2026-generative-social-simulation-validation]] —— AI Review 2026 综述;论证 LLM 加剧而非缓解生成式 ABM 的验证难题
+- [[2026-transformers-graph-recommender-survey]] —— 首篇 transformer 引入图推荐综述;提 GTRS 定义与四类分类体系
