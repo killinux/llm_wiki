@@ -15,7 +15,7 @@ DORL 是一种基于模型的离线强化学习(model-based offline RL)推荐方
 - [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
 - [[popularity-bias]]
 - [[offline-reinforcement-learning]]
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[hierarchical-reinforcement-learning]]
 - [[recommendation-fairness]]
 - [[2024-easyrl4rec]]:面向 RL-based 推荐系统的易用代码库,基于五个公开数据集构建轻量 RL 环境,提供四个核心模块与面向长期收益的统一训练/评测流程,并给出经典与近期 RL 方法的对照实验。

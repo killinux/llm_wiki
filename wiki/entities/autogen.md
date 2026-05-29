@@ -21,7 +21,7 @@ AutoGen 是微软提出的开源多 agent 框架,通过可定制、可对话的 
 
 ## 相关
 
-- [[multi-agent]]
+- [[multi-agent-systems|multi-agent]]
 - [[agent]]
 - [[llm-application]]
 - [[microsoft]]

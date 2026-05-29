@@ -33,6 +33,6 @@ Code Generation 指由 LLM 根据自然语言描述、上下文或环境反馈�
 - [[verifier]]
 - [[reward-design]]
 - [[scalable-oversight]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[test-time-scaling]]
 - [[multi-agent-collaboration]]

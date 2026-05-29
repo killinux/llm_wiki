@@ -20,7 +20,7 @@ Jiawei Chen 是一位从事推荐系统研究的学者,方向涵盖去偏(debias
 ## 相关
 
 - [[doubly-robust]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[causal-inference]]
 - [[2023-conservative-doubly-robust]]
 - [[sign-aware-recommendation]]

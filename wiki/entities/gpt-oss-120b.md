@@ -18,5 +18,5 @@ GPT-OSS-120B 是一款约 1200 亿参数规模的开放权重大语言模型,常
 ## 相关
 
 - [[orgagent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[open-weight-models]]

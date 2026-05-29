@@ -18,7 +18,7 @@ Google Brain 是 Google 旗下的深度学习研究团队,在大语言模型、p
 ## 相关
 
 - [[palm]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[google]]
 - [[few-shot-prompting]]
 - [[emergent-abilities]]

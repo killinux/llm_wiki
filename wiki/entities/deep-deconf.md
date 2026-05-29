@@ -21,7 +21,7 @@ Deep-Deconf 是一个面向推荐系统的因果去混杂模型,通过深度 VAE
 ## 相关
 
 - [[variational-autoencoder]]
-- [[substitute-confounder]]
+- [[substitute-confounders|substitute-confounder]]
 - [[causal-inference]]
 - [[recommender-systems|recommendation-system]]
 - [[confounding-bias]]

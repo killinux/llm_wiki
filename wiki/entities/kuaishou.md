@@ -63,7 +63,7 @@ Kuaishou(快手)是中国领先的短视频与直播平台,其推荐系统是大
 - [[embedding-based-retrieval]]
 - [[multi-task-learning]]
 - [[gflownet]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[wechat]]
 - [[item-cold-start]]
 - [[generative-recommendation]]

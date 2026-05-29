@@ -13,7 +13,7 @@ RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环�
 
 ## 在本 wiki 中的出现
 - [[2026-ab-agent-recsys-evaluation]]:A/B Agent,一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 评估推荐模型并做数据增强。
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[user-simulation]]
 - [[recommender-system]]
 - [[ab-testing]]

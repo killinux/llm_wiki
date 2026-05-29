@@ -21,7 +21,7 @@ sources: 4
 ## 相关
 
 - [[llm-agents|llm-agent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[recommender-systems|recommendation-system]]
 - [[debiased-recommendation]]
 - [[generative-agent-based-modeling]]

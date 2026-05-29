@@ -20,5 +20,5 @@ sources: 2
 
 - [[social-simulation]]
 - [[llm-agents|llm-agent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[large-scale-simulation]]

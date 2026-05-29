@@ -30,4 +30,4 @@ Prompt Engineering 指通过精心设计输入提示(prompt)的内容与结构,�
 - [[in-context-learning]]
 - [[few-shot-prompting]]
 - [[reasoning]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]

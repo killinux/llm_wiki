@@ -48,4 +48,4 @@ Agent 记忆指 LLM Agent 在不更新模型参数的前提下,把过往交互�
 - [[in-context-learning]]
 - [[retrieval-augmented-generation]]
 - [[self-reflection]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

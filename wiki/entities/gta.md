@@ -20,4 +20,4 @@ GTA(General Tool Agents)是一个评测 LLM 智能体真实场景下多工具调
 - [[toolbench]]
 - [[tool-use]]
 - [[llm-agents|llm-agent]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]

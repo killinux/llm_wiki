@@ -19,6 +19,6 @@ ToolBench 是用于评测大语言模型(LLM)智能体工具调用与多工具�
 ## 相关
 
 - [[gta]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[tool-use]]
 - [[llm-agents|llm-agent]]

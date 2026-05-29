@@ -54,4 +54,4 @@ Self-Improvement 指 LLM(或基于 LLM 的 Agent)在很少甚至不依赖额外�
 - [[reflection]]
 - [[tree-search]]
 - [[self-evolving-agents]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]

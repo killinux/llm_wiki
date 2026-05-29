@@ -19,7 +19,7 @@ StrategyQA 是一个隐式多步推理(multi-hop / implicit reasoning)问答基�
 
 ## 相关
 
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[plan-and-solve-prompting]]
 - [[multi-hop-reasoning]]
 - [[gsm8k]]

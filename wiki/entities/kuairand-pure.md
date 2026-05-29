@@ -25,7 +25,7 @@ KuaiRand-Pure 是用于推荐系统去偏研究的公开数据集,其中包含�
 
 - [[2023-conservative-doubly-robust]]
 - [[doubly-robust]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[2023-kuaisim-recommender-simulator]]
 - [[user-simulator]]
 - [[decision-transformer]]

@@ -24,12 +24,12 @@ GPT-3 是 OpenAI 推出的 175B 参数自回归大语言模型,以强大的 few-
 ## 相关
 
 - [[instructgpt]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[few-shot-learning]]
 - [[in-context-learning]]
 - [[rlhf]]
 - [[palm]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[openai]]
 - [[zero-shot-cot]]
 - [[plan-and-solve-prompting]]

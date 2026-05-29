@@ -19,7 +19,7 @@ Codex 是 OpenAI 基于 GPT 系列在大量公开代码上微调而成的代码�
 
 ## 相关
 
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[self-refine]]
 - [[self-debugging]]
 - [[code-generation]]

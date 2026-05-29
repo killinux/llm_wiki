@@ -22,7 +22,7 @@ Microsoft Research Asia (MSRA) 是 Microsoft 设在亚洲的基础研究机构,�
 
 - [[critic]]
 - [[microsoft]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[tool-use]]
 - [[self-correction]]
 - [[interecagent]]

@@ -21,5 +21,5 @@ ChatGLM 是基于 GLM 架构的中英双语对话大语言模型,常被用作对
 
 - [[memorybank]]
 - [[siliconfriend]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[long-term-memory]]

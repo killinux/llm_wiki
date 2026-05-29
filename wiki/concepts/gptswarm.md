@@ -17,6 +17,6 @@ GPTSwarm 是一种将 LLM agent 系统建模为可优化计算图的方法,把�
 
 ## 相关
 
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[agent-communication-topology]]
 - [[2025-agentsnet-multi-agent-reasoning]]

@@ -21,7 +21,7 @@ CommonsenseQA 是一个以常识推理为核心的多项选择问答(multiple-ch
 
 ## 相关
 
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[in-context-learning]]
 - [[commonsense-reasoning]]
 - [[gsm8k]]

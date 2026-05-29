@@ -18,6 +18,6 @@ Claude 3.5 Sonnet 是 Anthropic 发布的大语言模型,常被用作多智能�
 ## 相关
 
 - [[anthropic]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[multi-agent-systems]]
 - [[yerkes-dodson-law]]

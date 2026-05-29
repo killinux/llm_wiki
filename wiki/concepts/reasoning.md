@@ -38,6 +38,6 @@ sources: 13
 - [[tree-of-thoughts]]
 - [[self-correction]]
 - [[self-reflection]]
-- [[multi-agent]]
+- [[multi-agent-systems|multi-agent]]
 - [[reinforcement-learning]]
 - [[memory]]

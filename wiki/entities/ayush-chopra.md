@@ -18,4 +18,4 @@ sources: 1
 ## 相关
 
 - [[llm-archetypes]]
-- [[agent-based-models]]
+- [[generative-agent-based-modeling|agent-based-models]]

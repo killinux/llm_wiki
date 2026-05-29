@@ -23,7 +23,7 @@ KAUST(King Abdullah University of Science and Technology,阿卜杜拉国王科�
 - [[role-playing]]
 - [[inception-prompting]]
 - [[llm-agents|llm-agent]]
-- [[multi-agent]]
+- [[multi-agent-systems|multi-agent]]
 - [[social-simulation]]
 - [[abliteration]]
 - [[model-safety]]

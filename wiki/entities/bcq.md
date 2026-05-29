@@ -14,7 +14,7 @@ BCQ(Batch-Constrained deep Q-learning)是一种 offline / batch reinforcement le
 ## 在本 wiki 中的出现
 - [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
 - [[hierarchical-rl]]
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[recommendation-fairness]]
 - [[2024-easyrl4rec]]:面向 RL-based 推荐系统的易用代码库,基于五个公开数据集构建轻量 RL 环境,提供四个核心模块与面向长期收益的统一训练/评测流程,并给出经典与近期 RL 方法(含 BCQ 类离线方法)的对照实验。
 - [[2024-llm-learnable-planners-long-term-recommendation]]:提出 BiLLP 双层可学习 LLM 规划框架(Planner/Reflector 宏观 + Actor/Critic 微观),在稀疏推荐数据上以 LLM 规划能力做长期推荐,Len 与累积奖励超越从零训练的 RL 与现有 LLM agent 基线。

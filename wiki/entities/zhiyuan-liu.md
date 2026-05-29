@@ -19,6 +19,6 @@ Zhiyuan Liu 是一位 NLP 与大语言模型领域的研究者,参与了多智�
 ## 相关
 
 - [[chatdev]]
-- [[multi-agent-system]]
-- [[large-language-model]]
+- [[multi-agent-systems|multi-agent-system]]
+- [[large-language-models|large-language-model]]
 - [[software-development-agent]]

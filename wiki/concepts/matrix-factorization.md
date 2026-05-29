@@ -46,7 +46,7 @@ Matrix Factorization 是协同过滤推荐中的经典方法,通过将用户-物
 - [[collaborative-filtering]]
 - [[neural-factorization-machine]]
 - [[doubly-robust]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[ndcg]]
 - [[2023-data-heterogeneity-recommendation]]
 - [[2023-conservative-doubly-robust]]

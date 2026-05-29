@@ -20,8 +20,8 @@ Microsoft Research 是 Microsoft 旗下的研究机构,从事计算机科学及�
 ## 相关
 
 - [[autogen]]
-- [[multi-agent]]
-- [[llm]]
+- [[multi-agent-systems|multi-agent]]
+- [[large-language-models|llm]]
 - [[dpo]]
 - [[verifier]]
 - [[generative-ai]]

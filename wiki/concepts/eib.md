@@ -21,4 +21,4 @@ EIB(Error Imputation Based)是一类去偏方法,通过为缺失/未观测反馈
 - [[ips]]
 - [[2023-conservative-doubly-robust]]
 - [[selection-bias]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]

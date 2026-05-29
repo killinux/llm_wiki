@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[llm]]
+- [[large-language-models|llm]]
 - [[agent]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[ab-testing]]

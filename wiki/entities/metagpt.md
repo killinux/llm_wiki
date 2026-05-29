@@ -23,7 +23,7 @@ MetaGPT 是一个将人类标准作业程序(SOP)编码进 prompt 的 LLM 多智
 
 - [[chatdev]]
 - [[megaagent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[llm-agents|llm-agent]]
 - [[standard-operating-procedure]]
 - [[code-generation]]

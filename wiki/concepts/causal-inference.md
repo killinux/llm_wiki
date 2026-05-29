@@ -32,7 +32,7 @@ Causal Inference(因果推断)是一类从观测数据中估计变量间因果�
 
 - [[confounding-bias]]
 - [[counterfactual-inference]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[proximal-causal-inference]]
 - [[variational-autoencoder]]
 - [[uplift-modeling]]

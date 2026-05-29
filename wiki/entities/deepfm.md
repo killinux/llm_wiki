@@ -19,7 +19,7 @@ DeepFM 是一种用于 CTR 预测的推荐模型,将 Factorization Machine (FM) 
 - [[2024-bi-level-user-modeling-deep-recommenders]]:GPRec 提出即插即用的双层用户建模:用可学习分类器与双向(正/负)群体嵌入做群体建模,从 ID 类特征提炼个体偏好并以正交损失解耦,在 ML1M/TenRec/KuaiRand 上稳定提升各类 DRS 主干(含 DeepFM 等)的 CTR 预测。
 - [[2025-causality-constraint-debiasing-recommender]]:LCDR 用 identifiable VAE (iVAE) 作为因果约束去对齐标准 VAE 的潜在表征,即使 proxy variable 低质/有噪声也能恢复 latent confounder,从而缓解推荐系统中的潜在混杂偏差。
 - [[nfm]]
-- [[microvideo-recommendation]]
+- [[short-video-recommendation|microvideo-recommendation]]
 - [[2024-bi-level-user-modeling-deep-recommenders]]
 - [[2025-causality-constraint-debiasing-recommender]]
 

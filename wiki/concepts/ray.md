@@ -19,4 +19,4 @@ Ray 是一个用于构建分布式应用的开源框架,常被用作大规模多
 
 - [[distributed-computing]]
 - [[large-scale-social-simulation]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]

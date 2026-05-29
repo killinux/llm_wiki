@@ -12,6 +12,10 @@ sources: 2
 扩散模型是一类生成模型,通过逐步向数据添加噪声的前向过程与学习逐步去噪的反向过程来建模数据分布,从而能够从噪声中生成或重建目标样本。
 
 ## 在本 wiki 中的出现
+- [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
+- [[denoising]]
+- [[hierarchical-reinforcement-learning]]
+- [[recommender-systems|recommendation-system]]
 - [[2026-diffusion-models-in-recommendation-survey]]:以"推荐任务为本"的三正交轴 taxonomy 系统综述扩散模型在推荐系统中的应用,覆盖 188 篇论文,涵盖协同过滤、序列推荐、数据模态/领域与可信目标。
 - [[2025-reward-balancing-revisited]]:提出 R3S,用 diffusion world model 显式建模 reward 不确定性并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 偏差与策略多样性,在 Coat/Yahoo/KuaiRand 上超越 DORL、ROLeR 等 11 个 baseline。
 - [[recommender-systems|recommendation-system]]

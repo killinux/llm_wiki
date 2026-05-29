@@ -20,4 +20,4 @@ MuSiQue 是一个面向多跳问答(multi-hop QA)的基准数据集,通过组合
 - [[multi-hop-qa]]
 - [[hotpotqa]]
 - [[orgagent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]

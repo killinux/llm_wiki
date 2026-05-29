@@ -38,7 +38,7 @@ GPT-3.5-turbo 是 OpenAI 推出的指令微调对话大语言模型,因低成本
 
 - [[gpt-4]]
 - [[openai]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[llm-agents|llm-agent]]
 - [[instruction-tuning]]
 - [[in-context-learning]]

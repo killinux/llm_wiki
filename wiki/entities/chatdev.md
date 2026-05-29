@@ -21,7 +21,7 @@ ChatDev 是一个由多个 LLM 驱动的角色化软件智能体组成的虚拟�
 ## 相关
 
 - [[2023-metagpt]] / [[metagpt]]:同为基于 LLM 多智能体的软件开发框架,定位与方法可对比。
-- [[multi-agent-system]]:ChatDev 是 LLM 多智能体系统的代表性应用。
+- [[multi-agent-systems|multi-agent-system]]:ChatDev 是 LLM 多智能体系统的代表性应用。
 - [[llm-agents|llm-agent]]:ChatDev 中每个角色都是一个 LLM 智能体。
 - [[waterfall-model]]:ChatDev 的开发流程组织方式。
 - [[code-generation]]:ChatDev 的核心任务场景之一。

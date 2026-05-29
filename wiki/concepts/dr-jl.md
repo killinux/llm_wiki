@@ -21,4 +21,4 @@ DR-JL(Doubly Robust Joint Learning)是一种推荐系统去偏方法,通过联�
 - [[2023-conservative-doubly-robust]]
 - [[propensity-score]]
 - [[imputation]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]

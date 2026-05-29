@@ -17,6 +17,6 @@ MuSR(Multistep Soft Reasoning)是一个面向大语言模型的多步软推理�
 
 ## 相关
 
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[orgagent]]
 - [[reasoning-benchmark]]

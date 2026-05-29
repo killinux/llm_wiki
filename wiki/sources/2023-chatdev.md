@@ -10,7 +10,7 @@ authors: [Chen Qian, Wei Liu, Hongzhan Lin, Nuo Chen, Yufan Dang, Jiahao Li, Che
 year: 2023
 ---
 
-ChatDev 提出一个由多个 [[llm]] 驱动的“软件智能体”组成的虚拟软件公司框架,通过自然语言对话沿瀑布式流程协作完成设计、编码、测试、文档撰写的完整软件开发生命周期。
+ChatDev 提出一个由多个 [[large-language-models|llm]] 驱动的“软件智能体”组成的虚拟软件公司框架,通过自然语言对话沿瀑布式流程协作完成设计、编码、测试、文档撰写的完整软件开发生命周期。
 
 ## 问题
 

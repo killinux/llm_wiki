@@ -20,5 +20,5 @@ TDR(Toxic-imputation Doubly Robust,毒性插补 Doubly Robust)指 Doubly Robust 
 - [[doubly-robust]]
 - [[conservative-doubly-robust]]
 - [[selection-bias]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[imputation]]

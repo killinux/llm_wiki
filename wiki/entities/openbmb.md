@@ -18,6 +18,6 @@ OpenBMB(Open Lab for Big Model Base)是一个聚焦大模型(Big Model)开源生
 ## 相关
 
 - [[chatdev]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[llm-agents|llm-agent]]
 - [[software-engineering-agent]]

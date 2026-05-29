@@ -19,4 +19,4 @@ Claude Opus 4.5 是 Anthropic 发布的 Claude 系列大语言模型之一,属�
 
 - [[anthropic]]
 - [[claude]]
-- [[llm]]
+- [[large-language-models|llm]]

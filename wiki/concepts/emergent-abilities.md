@@ -22,7 +22,7 @@ Emergent Abilities 指某些能力在小模型上几乎不存在,但当模型规
 ## 相关
 
 - [[2022-chain-of-thought]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[scaling-laws]]
 - [[few-shot-prompting]]
 - [[palm]]

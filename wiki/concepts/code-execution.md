@@ -20,5 +20,5 @@ Code Execution 指让 LLM 或 agent 生成代码并在真实运行环境(如 Pyt
 
 - [[2023-autogen]]
 - [[tool-use]]
-- [[multi-agent]]
+- [[multi-agent-systems|multi-agent]]
 - [[llm-agents|llm-agent]]

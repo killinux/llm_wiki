@@ -23,5 +23,5 @@ Qwen2.5 是阿里巴巴推出的开放权重大语言模型系列,常被用作�
 - [[llm-agents]]
 - [[human-behavior-simulation]]
 - [[tool-planning]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[generative-recommendation]]

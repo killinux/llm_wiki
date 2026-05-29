@@ -19,6 +19,6 @@ sources: 1
 
 - [[reinforcement-learning]]
 - [[diffusion-models]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]
 - [[fairness]]
 - [[popularity-bias]]

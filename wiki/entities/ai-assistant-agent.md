@@ -28,5 +28,5 @@ sources: 2
 - [[role-playing]]
 - [[inception-prompting]]
 - [[llm-agents|llm-agent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[instruction-tuning-data]]

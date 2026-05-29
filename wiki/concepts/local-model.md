@@ -18,7 +18,7 @@ LOCAL 模型是分布式计算中的经典理论模型,指网络中每个节点(
 ## 相关
 
 - [[distributed-computing]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[leader-election]]
 - [[consensus]]
 - [[communication-topology]]

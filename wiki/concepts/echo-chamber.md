@@ -18,7 +18,7 @@ sources: 1
 ## 相关
 
 - [[social-simulation]]
-- [[llm-agent]]
-- [[recommendation-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommendation-system]]
 - [[contextual-bandit]]
 - [[polarization]]

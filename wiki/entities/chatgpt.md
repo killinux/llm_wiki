@@ -34,7 +34,7 @@ ChatGPT 是 OpenAI 发布的基于大语言模型的对话式 AI 产品,通过�
 - [[openai]]
 - [[rlhf]]
 - [[ppo]]
-- [[llm]]
+- [[large-language-models|llm]]
 - [[multi-agent-debate]]
 - [[memorybank]]
 - [[siliconfriend]]

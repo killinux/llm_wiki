@@ -20,4 +20,4 @@ sources: 1
 - [[graphrag]]
 - [[inverse-reinforcement-learning]]
 - [[retrieval-augmented-generation]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

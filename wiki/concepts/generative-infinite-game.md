@@ -21,4 +21,4 @@ sources: 1
 - [[block-drop]]
 - [[knowledge-distillation]]
 - [[text-to-image]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]

@@ -19,6 +19,6 @@ Igor Mordatch 是一位机器学习研究者,从事大语言模型推理、多�
 
 - [[2023-multi-agent-debate|2023-multiagent-debate]]
 - [[multi-agent-debate]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[chain-of-thought]]
 - [[self-consistency]]

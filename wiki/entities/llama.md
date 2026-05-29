@@ -27,9 +27,9 @@ LLaMA 是 Meta 推出的一系列开放权重大语言模型(Large Language Mode
 ## 相关
 
 - [[meta]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[instruction-tuning]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[world-model]]
 - [[ai-agent]]
 - [[shepherd]]

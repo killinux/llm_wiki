@@ -20,4 +20,4 @@ sources: 1
 - [[two-tower]]
 - [[retrieval]]
 - [[cascade-ranking]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

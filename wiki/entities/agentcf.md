@@ -13,8 +13,8 @@ AgentCF 是一种基于 LLM agent 的协同过滤推荐方法,将用户和物品
 
 ## 在本 wiki 中的出现
 - [[2026-trirec-tri-party-agent-recommendation]]:TriRec 是首个用户—物品—平台 tri-party LLM-agent 推荐框架,让物品 agent 主动个性化自我推销,再由平台做曝光感知的多目标重排,在精度、公平与物品效用上同时提升。
-- [[llm-agent]]
-- [[recommendation-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommendation-system]]
 - [[2025-agentcf-plus-plus]]:通过双层记忆架构、两步融合机制与兴趣组共享记忆增强 AgentCF 用户模拟器,在跨域推荐中减少无关信息并显式建模流行度因素。
 - [[llm-based-recommendation]]
 - [[agent-memory]]

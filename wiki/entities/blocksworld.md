@@ -19,7 +19,7 @@ Blocksworld 是一个经典的规划(planning)基准任务,要求智能体通过
 ## 相关
 
 - [[reasoning-via-planning-rap]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[world-model]]
 - [[llm-reasoning]]
 - [[planning]]

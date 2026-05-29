@@ -18,6 +18,6 @@ Conservative Doubly Robust (CDR) 是一种用于推荐系统去偏的方法,它�
 ## 相关
 
 - [[doubly-robust]]:CDR 在 DR 估计量基础上构建,是对其的保守化改进。
-- [[recommendation-debiasing]]:CDR 所要解决的总体问题领域。
+- [[debiasing-recommendation|recommendation-debiasing]]:CDR 所要解决的总体问题领域。
 - [[inverse-propensity-scoring]]:DR/去偏推荐中与插补互补的另一类估计手段。
 - [[variance-reduction]]:CDR 的核心收益之一来自对估计量方差的控制。

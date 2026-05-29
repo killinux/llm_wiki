@@ -17,7 +17,7 @@ DriveMLM 是一种将多模态大语言模型(multi-modal LLM)对齐到自动驾
 
 ## 相关
 
-- [[multi-modal-llm]]
+- [[multimodal-llm|multi-modal-llm]]
 - [[autonomous-driving]]
 - [[carla]]
 - [[closed-loop-driving]]

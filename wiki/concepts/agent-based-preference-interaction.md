@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[multi-agent-system]]
-- [[llm-agent]]
-- [[recommendation-system]]
+- [[multi-agent-systems|multi-agent-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommendation-system]]
 - [[multi-objective-reranking]]

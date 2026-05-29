@@ -19,4 +19,4 @@ BELLE 是一个开源的大语言模型(LLM),在本 wiki 涉及的研究中被�
 
 - [[memorybank]]
 - [[siliconfriend]]
-- [[llm]]
+- [[large-language-models|llm]]

@@ -18,6 +18,6 @@ THUDM (Tsinghua University Data Mining group) 是清华大学的研究团队，�
 ## 相关
 
 - [[agent]]
-- [[llm-as-agent]]
+- [[llm-agents|llm-as-agent]]
 - [[benchmark]]
 - [[2023-agentbench]]

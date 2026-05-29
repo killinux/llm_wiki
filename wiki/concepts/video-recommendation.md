@@ -20,4 +20,4 @@ sources: 1
 - [[video-embedding]]
 - [[self-attention]]
 - [[vision-foundation-model]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

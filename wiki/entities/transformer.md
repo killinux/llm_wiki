@@ -31,7 +31,7 @@ Transformer 是一种基于自注意力(self-attention)机制的序列建模架�
 - [[self-attention]]
 - [[generative-recommendation]]
 - [[sequential-recommendation]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[positional-encoding]]
 
 - [[2024-generative-regression-watch-time-prediction]]:提出 Generative Regression (GR),把短视频 watch time 预测从 ordinal regression 重构为 token 序列生成任务,配合 dynamic quantile 词表与 CLEM(curriculum learning + embedding mixup),在 KuaiRec/CIKM16/工业数据集及 Kuaishou 线上 A/B 上超过 SOTA,并可迁移到 LTV 预测。

@@ -22,7 +22,7 @@ LLM Agents 指以大语言模型为核心决策器、并通过记忆、规划、
 - [[2026-self-evolving-multi-agent-rts]]:SEMA 用结构熵驱动观测剪枝 + 闭环自演化的 LLM 多智能体框架,在 StarCraft II 上实现高胜率与低延迟的实时策略决策。
 - [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为:多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
 - [[agent-memory]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[planning]]
 - [[agentic-recommendation]]
 - [[game-theory]]
@@ -81,7 +81,7 @@ LLM Agents 指以大语言模型为核心决策器、并通过记忆、规划、
 - [[self-improvement]] —— 智能体从经验中改进
 - [[reinforcement-learning]] —— 智能体决策的另一类训练范式
 - [[tool-use]] —— 智能体调用外部工具(页面或待建)
-- [[multi-agent-system]] —— 多智能体协作(页面或待建)
+- [[multi-agent-systems|multi-agent-system]] —— 多智能体协作(页面或待建)
 - [[agent-memory]] —— 智能体的长期记忆(页面或待建)
 - [[social-simulation]] —— 大规模社会模拟(页面或待建)
 - [[user-simulation]] —— 用户行为模拟(页面或待建)

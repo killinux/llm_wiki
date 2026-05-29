@@ -26,7 +26,7 @@ In-Context Learning (ICL) 指大模型在不更新自身参数的前提下,仅�
 ## 相关
 
 - [[few-shot-learning]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[prompting]]
 - [[emergent-abilities]]
 - [[llm-agents|llm-agent]]

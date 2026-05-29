@@ -10,87 +10,160 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 ## 实体 (Entities)
 <!-- 模型 · 实验室/机构 · 人物 · 数据集 · benchmark · 产品 -->
 ### 模型
+- [[adagin]] —— AdaGIN 是一种用于短视频推荐的片段级用户兴趣建模方法,通过将短视频拆成时间片段,建模用户沿时间线动态演变的兴趣。
+- [[alphaevolve]] —— AlphaEvolve 是一种由大语言模型驱动的进化式智能体,通过自动生成、评测并迭代改进代码/算法,体现了"自进化智能体"在算法发现与优化方向上的能力。
+- [[alphago]] —— AlphaGo 是 DeepMind 开发的围棋程序,结合深度神经网络与蒙特卡洛树搜索,是首个在标准棋盘上击败职业围棋冠军的 AI,常被引为强化学习与 AI agent 的里程碑案例。
+- [[autofield]] —— AutoField 是面向深度推荐系统的自动特征选择方法,通过 surrogate model 等机制自动判别哪些特征对模型有用,以替代人工特征工程。
 - [[autoint]] —— 用多头自注意力自动学习特征高阶交互的 CTR 预测模型
 - [[bard]] —— Google 推出的对话式大语言模型产品
 - [[bart]] —— 基于 Transformer 的 seq2seq 去噪自编码预训练模型
 - [[bcq]] —— 约束策略只取数据内动作的 offline RL 算法,缓解 OOD 外推误差
 - [[belle]] —— 开源大语言模型,被用作底层对话模型
+- [[bert4rec]] —— BERT4Rec 是一种用于序列推荐的模型,采用双向 Transformer 编码器,通过掩码物品预测(Cloze 任务)从用户历史行为中学习物品表示。
 - [[bpr]] —— 贝叶斯个性化排序,隐式反馈下成对优化的推荐基线
+- [[can]] —— CAN 是一种面向短视频推荐的片段级用户兴趣建模方法,通过将短视频拆分为时间片段,结合混合表示、多模态用户-视频编码器与片段兴趣解码器,刻画用户沿时间线动态演变的兴趣。
 - [[chatglm]] —— 基于 GLM 的中英双语对话大模型
-- [[claude]] —— Anthropic 的"有用·诚实·无害"大模型助手
 - [[claude-2]] —— Anthropic 推出的大模型,常作基准评测对比对象
+- [[claude-3-5-haiku]] —— Claude 3.5 Haiku 是 Anthropic 推出的 Claude 3.5 系列中轻量、快速的大语言模型。
+- [[claude-3-5-sonnet]] —— Claude 3.5 Sonnet 是 Anthropic 发布的大语言模型,常被用作多智能体系统与 LLM 行为研究中的实验对象。
+- [[claude-3-7-sonnet]] —— Claude 3.7 Sonnet 是 Anthropic 推出的一款大语言模型,常被用作 agent 任务与推理基准中的受测后端模型。
+- [[claude-3-sonnet]] —— Claude 3 Sonnet 是 Anthropic 推出的 Claude 3 系列中的中等规模大语言模型,在能力与效率之间取得平衡,常被用作 LLM agent 与各类智能体应用的基础模型。
+- [[claude-opus-4-5]] —— Claude Opus 4.5 是 Anthropic 发布的 Claude 系列大语言模型之一,属于 Opus 高能力档位。
 - [[clip]] —— 图文对比预训练的多模态表示模型
 - [[codex]] —— OpenAI 在公开代码上微调的代码生成模型
+- [[compressed-video-aggregator]] —— CVA 是一种微视频推荐模型,它利用冻结的视觉基础模型提取帧级 embedding,再通过 self-attention 将其聚合压缩为紧凑的视频 embedding,从而在保持精度的同时大幅降低训练开销。
+- [[coser-70b]] —— CoSER 70B 是基于 CoSER 数据集与 given-circumstance acting 方法训练的角色扮演大语言模型,在多个角色扮演评测基准上达到 SOTA 表现。
 - [[cql]] —— 对 OOD 动作压低 Q 值的保守 offline RL 算法
+- [[cread]] —— CREAD 是与短视频观看时长(watch time)预测相关的实体,关联到把序数回归(ordinal regression)重构为 token 序列生成的 Generative Regression(GR)方法。
 - [[criticgpt]] —— OpenAI 训练的辅助发现代码错误的 GPT-4 批评模型
+- [[darlr]] —— DARLR 是一个面向推荐系统的双 agent(selector + recommender)model-based offline RL 框架,在策略学习过程中利用参考用户动态精炼 world model 的奖励并自适应估计不确定性惩罚。
+- [[darwin-godel-machine]] —— Darwin Gödel Machine 是一类能够自我改写、自我进化的智能体系统,借鉴达尔文式进化与 Gödel Machine 的自指改进思想,通过迭代修改自身代码与策略来持续提升能力。
+- [[ddpg]] —— 连续动作的确定性策略梯度 off-policy actor-critic
 - [[decision-transformer]] —— 把 RL 重构为条件序列建模的 Transformer
 - [[deconf-mf]] —— 用浅层 Poisson 矩阵分解推断 substitute confounders 的去混杂推荐模型
 - [[deconfounder]] —— 在未观测混杂下建模混杂以估计无偏因果效应的方法
 - [[deep-deconf]] —— 用深度 VAE 推断 substitute confounders 的因果去混杂推荐模型
 - [[deepfm]] —— FM 与 DNN 共享 embedding、同建低/高阶交互的 CTR 模型
+- [[deepseek-r1]] —— DeepSeek-R1 是 DeepSeek 推出的开放权重推理大语言模型,通过强化学习强化链式推理(reasoning)能力,常被用作 agent 与行为模拟研究中的基线或推理后端。
+- [[deepseek-v3]] —— DeepSeek-V3 是深度求索(DeepSeek)推出的大规模混合专家(MoE)语言模型,常被本 wiki 收录的研究用作驱动生成式 agent、推理时搜索与社会模拟的基础模型。
+- [[din]] —— DIN 是用于用户兴趣建模的推荐模型,在本 wiki 中出现于片段级(segment-level)短视频用户兴趣建模的相关工作,用于刻画用户沿时间线动态演变的兴趣。
+- [[dinov3]] —— DINOv3 是一个通过自监督学习训练的视觉基础模型,可作为冻结的特征提取器为图像与视频帧生成通用 embedding。
 - [[dorl]] —— 在悲观惩罚外加熵惩罚缓解马太效应的 model-based offline RL 推荐
 - [[dpr]] —— 双编码器稠密向量段落检索模型,用于开放域问答
+- [[dqn]] —— DQN(Deep Q-Network)是一种将深度神经网络与 Q-learning 结合的强化学习模型,用神经网络近似动作价值函数 Q(s, a),并通过经验回放与目标网络稳定训练。
 - [[drivemlm]] —— 对齐多模态 LLM 决策与 AD 行为规划的自动驾驶模型
+- [[dssm]] —— DSSM(Deep Structured Semantic Model)是一种典型的双塔(two-tower)深度模型,通过用户塔与物品塔分别将输入编码为向量,以向量内积衡量相关性,广泛用于推荐与广告系统的召回阶段。
 - [[dupn]] —— 结合 MTL+attention+RNN 学共享用户表示的多任务推荐模型
 - [[esmm]] —— 在全曝光空间联合建模 CTR/CVR、缓解样本选择偏差的多任务模型
 - [[expel]] —— 不更新参数、从跨任务经验抽取自然语言洞见的 LLM Agent
 - [[fm]] —— 用特征隐向量内积建模二阶交互的因子分解机
+- [[fuxi-alpha]] —— FuXi-α 是 FuXi 系列中的生成式序列推荐模型,与同系列的 decoder-only 高效序列推荐框架 FuXi-γ 一脉相承,面向大规模推荐场景下的生成式建模。
+- [[gemini]] —— Gemini 是 Google 推出的多模态大语言模型系列,广泛用作各类研究与应用中的基座或对比模型。
+- [[gemini-2-0-flash]] —— Gemini 2.0 Flash 是 Google 推出的一款轻量高效的大语言模型,常被用作多 agent 与基准测试场景中的底座模型。
+- [[gemini-2-5-flash]] —— Gemini 2.5 Flash 是 Google 推出的 Gemini 2.5 系列中的轻量、低延迟模型,常作为大规模多 agent 实验中的参与模型。
+- [[gemini-2-5-pro]] —— Gemini 2.5 Pro 是 Google 推出的大型语言模型,常被用作多 agent 推理与协作基准评测中的被测模型。
 - [[gfn4rec]] —— 基于 GFlowNet 的生成式列表推荐模型,兼顾质量与多样性
+- [[glm-4-7]] —— GLM-4.7 是智谱(Zhipu)GLM 系列的大语言模型。
 - [[gpt-3]] —— OpenAI 175B 自回归大模型,以 few-shot/ICL 著称
 - [[gpt-3-5]] —— GPT-3 的指令微调改进版系列
 - [[gpt-3-5-turbo]] —— 低成本低延迟的指令微调对话模型,常作智能体基座
 - [[gpt-4]] —— OpenAI 大规模多模态大模型,广泛用作智能体/推理研究基座
+- [[gpt-4-1-mini]] —— GPT-4.1 mini 是 OpenAI 推出的 GPT-4.1 系列中的轻量级模型,常被用作多 agent 推理与协作基准中的参与模型。
+- [[gpt-4o]] —— GPT-4o 是 OpenAI 推出的多模态大语言模型,广泛用作 LLM 智能体、推理与记忆系统研究中的基础模型与评测基线。
 - [[gpt-4o-mini]] —— OpenAI 轻量多模态模型,常作低成本智能体/模拟基座
 - [[gpt-j]] —— 开源自回归 Transformer 语言模型,常作可微调基座
+- [[gpt-oss-120b]] —— GPT-OSS-120B 是一款约 1200 亿参数规模的开放权重大语言模型,常被用作多智能体框架与推理任务实验中的基础模型。
+- [[grasp-world-knowledge-sequential-recommendation]] —— GRASP 是一种将 LLM 世界知识作为辅助输入(而非监督信号)注入序列推荐的方法,通过"生成增强检索 + Sigmoid 整体注意力增强"在抵抗 LLM 幻觉噪声的同时提升推荐效果。
 - [[gru4rec]] —— 基于 GRU 的会话序列推荐经典模型
+- [[hstu]] —— HSTU(Hierarchical Sequential Transduction Unit)是一种面向生成式序列推荐的 decoder-only Transformer 架构,将推荐建模为生成式序列转导任务。
 - [[idcf]] —— 借代理变量与近端因果推断保证可识别性的去混杂推荐方法
 - [[instructgpt]] —— 用 RLHF 对齐 GPT-3 的指令遵循模型
 - [[ivae]] —— 引入辅助变量获得潜变量可识别性的 VAE
 - [[lamda]] —— Google 面向对话应用的大模型系列
+- [[lightgcn]] —— 轻量图卷积协同过滤模型
+- [[linrec]] —— 线性注意力高效长序列推荐框架
 - [[llama]] —— Meta 的开放权重大模型系列,常作智能体/微调基座
 - [[llama-2]] —— Meta 的开源大模型系列,含对话微调版本
 - [[llama-3]] —— Meta 新一代开源大模型系列
+- [[llama-4-maverick]] —— Llama 4 Maverick 是 Meta 推出的 Llama 4 系列大语言模型之一,常被用作多 agent 推理与协作能力评测的被测模型。
+- [[llama-4-scout]] —— Llama 4 Scout 是 Meta 发布的 Llama 4 系列中的开源大语言模型,常被用作多 agent 与推理类基准测试中的基座模型。
+- [[llara]] —— LLaRA 是一种将大语言模型(LLM)与推荐系统对齐的方法/模型,通过把用户交互序列等推荐信号融入 LLM,以增强基于 LLM 的推荐能力。
+- [[llm-esr]] —— LLM-ESR 是一类将大语言模型(LLM)世界知识引入序列推荐(sequential recommendation)的方法/模型范式,旨在借助 LLM 对物品与用户行为的语义理解来增强传统推荐 backbone。
+- [[lora]] —— 注入可训练低秩矩阵的参数高效微调
 - [[mamba]] —— 选择性状态空间序列模型,线性复杂度替代 attention
 - [[mercatran]] —— Mercari C2C 场景下的推荐/检索 Transformer 模型
 - [[mistral-7b]] —— Mistral 的高效开源 7B 大模型
 - [[mmoe]] —— 多 expert 共享+任务独立 gate 的多任务学习模型
+- [[mocdt]] —— MocDT 是一种基于 Decision Transformer 的离线强化学习推荐方法,将未来多目标作为控制信号,在推理阶段自回归生成对齐指定目标(累积评分与多样性)的物品序列,无需重新训练。
 - [[mopo]] —— 用模型不确定性悲观惩罚约束策略的 model-based offline RL
+- [[morec]] —— MoRec 是一个推荐相关的模型/方法实体，出现在基于 agent 反馈回路的推荐与用户模拟研究语境中。
+- [[o4-mini]] —— o4-mini 是 OpenAI 推出的小型推理模型,在保持较低成本与较快速度的同时具备较强的链式推理能力。
 - [[p5]] —— 把多种推荐任务统一为自然语言序列建模的预训练+个性化提示范式
 - [[palm]] —— Google 最大 540B 的 dense Transformer 大模型,涌现能力代表
 - [[ple]] —— 区分共享/专属专家、渐进分层缓解负迁移的多任务模型
+- [[ppo]] —— 裁剪目标限制更新幅度的 on-policy 策略梯度
 - [[pythia]] —— EleutherAI 可复现训练动态研究的开源 LLM 套件
-- [[react|react-reasoning-and-acting]] —— 交替生成推理轨迹与行动的 LLM 范式(ReAct 实体页)
+- [[qwen]] —— Qwen2.5 是阿里巴巴推出的开放权重大语言模型系列,常被用作智能体与人类行为模拟等研究中的基座模型。
+- [[qwen2-5-instruct]] —— Qwen2.5-Instruct 是阿里巴巴 Qwen 系列的指令微调大语言模型,常被用作 tool-using agent 与安全对齐研究的基座模型。
+- [[rankmixer]] —— RankMixer 是一种面向工业推荐排序场景的可扩展模型架构,旨在在严格的在线延迟约束下,通过参数 scaling 获得稳定的效果收益。
 - [[recllama]] —— 由 InteRecAgent 蒸馏得到的 7B 推荐 LLM
 - [[recmamba]] —— 基于 Mamba 状态空间模型的终身序列推荐模型
-- [[reflexion]] —— 通过语言化自我反思改进决策、不更新参数的 LLM Agent
+- [[recmind]] —— RecMind 是一个面向推荐场景的智能体框架,通过大语言模型驱动对话式推荐流程。
+- [[reward-model]] —— 从偏好学习给输出打分以指导 RL 对齐
 - [[rlur]] —— 用强化学习直接最小化累计回访时间的留存优化推荐方法
 - [[sasrec]] —— 基于自注意力的序列推荐模型
+- [[sim]] —— SIM(Search-based Interest Model)是一种面向超长用户行为序列的兴趣建模方法,通过两阶段(General Search Unit 检索 + Exact Search Unit 精排)从海量历史行为中检索与目标物品相关的兴趣表示,用于 CTR 预估等推荐排序任务。
 - [[star]] —— STaR,自生成 rationale 反复微调 bootstrap 推理的方法/模型
 - [[starcoder]] —— 面向代码生成的开源 code LLM
 - [[t5]] —— 把各类 NLP 任务统一为 text-to-text 的编码器-解码器模型
+- [[tallrec]] —— TALLRec 是一个基于 LLM 的推荐对齐框架,通过指令微调(instruction tuning)与 LoRA 高效地把大语言模型适配到推荐任务上。
 - [[td3]] —— 双 Q+延迟更新+目标平滑改进 DDPG 的连续动作 actor-critic
 - [[text-davinci-003]] —— 基于 GPT-3 的指令微调模型(InstructGPT 系列)
+- [[text-embedding-3-small]] —— text-embedding-3-small 是 OpenAI 推出的一款轻量、低成本的文本嵌入(embedding)模型,用于将文本映射为向量以支持语义检索、相似度计算等任务。
+- [[tiger]] —— TIGER 是一种基于 Semantic ID 的生成式推荐模型,通过将物品表示为语义化的离散 ID 序列并以生成方式预测下一个物品,成为生成式推荐领域的代表性工作之一。
 - [[timesfm]] —— Google 的 decoder-only 时序预测基础模型,zero-shot 强
+- [[titan-text-embedding]] —— Titan Text Embedding 是亚马逊推出的文本嵌入模型,用于将文本编码为稠密向量,支撑语义检索、记忆表示等下游任务。
+- [[transformer]] —— 基于自注意力的序列建模主干架构
 - [[ul2]] —— 混合多种去噪目标(MoD)的统一预训练语言模型
 - [[vicuna]] —— 基于 LLaMA、用对话数据指令微调的开源对话模型
 - [[vit]] —— 把图像切块当 token 的 Vision Transformer
 - [[voyager]] —— GPT-4 驱动、在 Minecraft 中终身学习的具身智能体
+- [[vq-rec]] —— VQ-Rec 是一种基于向量量化的序列推荐模型,通过将物品表征离散化为向量量化码来学习可迁移的物品表示。
 ### 人物
 - [[aleksandrs-slivkins]] —— 在线学习与多臂赌博机研究者
 - [[an-zhang]] —— 推荐系统与因果/鲁棒性研究者
 - [[anima-anandkumar]] —— 机器学习/具身智能体研究者,参与 Voyager
 - [[antonio-torralba]] —— 计算机视觉与机器学习研究者
+- [[anxiang-zeng]] —— 研究者,工作涉及多任务学习与搜索排序系统,相关成果应用于 Shopee Search 等工业场景。
+- [[arnau-quera-bofarull]] —— 研究 LLM 与基于 agent 的建模(ABM)结合的研究者,提出在大规模仿真中引入 LLM 自适应行为的方法。
+- [[ayush-chopra]] —— 研究 LLM 驱动的大规模 agent-based model(ABM)仿真的研究者,提出用 LLM archetypes 在百万级仿真中引入自适应行为。
+- [[baosen-zhang]] —— 研究 LLM agent 在博弈论场景下策略行为的研究者,关注资源分配博弈与 Cournot 竞争中的合作、公平性推理及收益动态建模。
 - [[bingsheng-he]] —— 高性能计算与数据系统研究者
+- [[bo-an]] —— Bo An 是一位多智能体系统与大语言模型智能体方向的研究者,参与提出将工具、环境与智能体建模为一等资源的 TEA 协议及分层多智能体框架。
 - [[brendan-lucier]] —— 算法博弈论与机制设计研究者
+- [[bryan-perozzi]] —— Bryan Perozzi 是一位以图表示学习(graph representation learning)与多 agent LLM 研究著称的研究者。
 - [[chen-qian]] —— ChatDev 作者之一,研究 LLM 多智能体与自动化软件开发
 - [[chongming-gao]] —— 推荐系统去偏与交互式推荐研究者
+- [[christopher-barrie]] —— 研究者,关注大语言模型(LLM)多智能体模拟中所谓"自发涌现社会行为"的批判性分析。
+- [[cong-chen]] —— 研究者,关注 LLM agent 在博弈论场景下的策略行为与合作动态。
+- [[craig-boutilier]] —— Craig Boutilier 是一位人工智能研究者,与 Google 在对话式 AI、用户建模与 LLM user simulator 评估方向的工作相关联。
+- [[dakuo-wang]] —— 研究者,工作涉及大语言模型智能体对人类行为的模拟与人机交互评测。
 - [[denny-zhou]] —— LLM 推理与 prompting 研究者,参与 CoT
+- [[dongsheng-li]] —— Dongsheng Li 是一位从事推荐系统与大语言模型智能体研究的研究者。
+- [[dongxiao-he]] —— Dongxiao He 是一位从事推荐系统与深度强化学习研究的研究者,在本 wiki 中关联的工作聚焦于交互式推荐中的状态表示学习。
 - [[douwe-kiela]] —— NLP 研究者,RAG 论文作者之一
 - [[eric-zelikman]] —— LLM 推理研究者,STaR 提出者之一
 - [[fajie-yuan]] —— 推荐系统与序列建模研究者
+- [[fengli-xu]] —— Fengli Xu 是一位研究者,参与提出 "AI Agent Behavioral Science"(AI Agent 行为科学)研究范式。
+- [[florian-grotschla]] —— 研究多 agent LLM 系统与基于分布式计算思想的 agent 网络基准评测的研究者。
+- [[fuli-feng]] —— Fuli Feng 是一位研究者,工作涉及大语言模型与推荐系统(LLM-based recommendation、LLM agent 推荐)等方向。
 - [[gao-huang]] —— 机器学习研究者,参与 LLM Agent 经验学习工作
 - [[graham-neubig]] —— NLP 与语言智能体研究者
+- [[guorui-zhou]] —— Guorui Zhou 是一位工业推荐系统领域的研究者,参与构建了面向多级漏斗推荐系统的全流程数据集。
 - [[hao-zhu]] —— 社会智能与交互式 LLM 智能体研究者(SOTOPIA)
+- [[heng-ji]] —— Heng Ji 是从事自然语言处理与大语言模型研究的学者,在多智能体协作、信息抽取与智能体评测等方向有相关工作。
+- [[huan-liu]] —— Huan Liu 是一位在大语言模型记忆与检索方向有贡献的研究者,参与提出了 RMM(Reflective Memory Management)等对话记忆管理方法。
+- [[huifeng-guo]] —— 研究者,工作涉及深度推荐系统与特征选择,参与利用大语言模型(LLM)世界知识改进推荐系统特征选择的研究。
 - [[igor-mordatch]] —— 从事 LLM 推理与多智能体协作的研究者
 - [[ilya-sutskever]] —— 深度学习核心研究者,OpenAI 联合创始人与前首席科学家
 - [[ion-stoica]] —— 分布式系统研究者,Berkeley 教授
@@ -98,191 +171,336 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[jared-kaplan]] —— Anthropic 联合创始人,scaling laws 与 AI 安全研究者
 - [[jason-wei]] —— LLM 研究者,chain-of-thought prompting 提出者
 - [[jason-weston]] —— NLP 研究者,对话系统与 CoVe 相关工作
+- [[ji-liu]] —— 与 Meta 端到端超参数自动调优系统 HyperZero 相关的人物。
 - [[ji-rong-wen]] —— 信息检索与推荐系统研究者,涉 LLM agent 推荐
+- [[jianxun-lian]] —— 推荐系统与 LLM agent 推荐研究者
 - [[jiawei-chen]] —— 推荐系统去偏与因果推断研究者
 - [[jiawei-han]] —— 数据挖掘与文本挖掘研究者
-- [[jianxun-lian]] —— 推荐系统与 LLM agent 推荐研究者
+- [[jiaxuan-you]] —— 研究者,工作涉及大语言模型多智能体系统的协作与竞争评测。
+- [[jiayi-yao]] —— 研究 LLM agent 在博弈论环境下策略行为的研究者,关注多智能体竞争与合作。
 - [[jifeng-dai]] —— 计算机视觉与多模态研究者
+- [[jingyu-li]] —— Jingyu Li 是一位研究交互式推荐与强化学习表示学习的研究者,参与提出了用对比学习增强深度强化学习状态表示的方法。
+- [[joel-z-leibo]] —— 研究多智能体系统、生成式智能体与博弈论交叉领域的研究者,关注 LLM 智能体的合作行为及游戏引擎式多智能体生成式 AI 架构(如 Concordia)。
 - [[joon-sung-park]] —— Generative Agents 第一作者
 - [[joshua-tenenbaum]] —— MIT 认知科学与计算研究者
+- [[judea-pearl]] —— Judea Pearl 是计算机科学家与哲学家,因在贝叶斯网络和因果推断领域的奠基性工作而获得 2011 年图灵奖,其因果图(因果 DAG)与 do-calculus 框架是现代因果分析的理论基础。
 - [[julian-mcauley]] —— 机器学习研究者,推荐系统与个性化方向
 - [[jun-xu]] —— 信息检索与推荐系统研究者
 - [[jurgen-schmidhuber]] —— 深度学习先驱,LSTM 共同提出者
 - [[karl-cobbe]] —— OpenAI 研究者,过程监督研究合著者
+- [[krisztian-balog]] —— 研究对话式 AI、信息检索与 LLM user simulator 评估的研究者,关联于量化 LLM 用户模拟器 realism gap 的工作。
 - [[kun-gai]] —— 推荐系统与强化学习交叉领域研究者(多篇快手论文)
+- [[kunlun-zhu]] —— 研究 LLM 多智能体协作与评测的研究者,与 MultiAgentBench / MARBLE 框架相关。
 - [[lei-wang]] —— RecAgent 作者之一,LLM agent 模拟用户行为
 - [[linxi-fan]] —— 具身智能体与基础模型驱动智能体研究者
 - [[long-ouyang]] —— InstructGPT 第一作者,RLHF 对齐
 - [[luke-zettlemoyer]] —— NLP 研究者,语义解析与大模型
+- [[maarten-de-rijke]] —— Maarten de Rijke 是一位信息检索与机器学习领域的研究者,工作涉及推荐系统、序列推荐与离线强化学习等方向。
 - [[maarten-sap]] —— NLP 与社会智能/常识推理研究者
 - [[maik-larooij]] —— 计算社会科学/社会模拟研究者
 - [[maosong-sun]] —— NLP 与人工智能研究者(孙茂松)
+- [[mengdi-wang]] —— Mengdi Wang 是出现在本 wiki 来源中的研究者,与自进化智能体(self-evolving agents)相关工作有关联。
+- [[michael-s-bernstein]] —— 研究者,工作涉及人机交互(HCI)与基于大语言模型的 generative agents,用于模拟个体与社会行为。
+- [[mikhail-galkin]] —— 与多 agent LLM 推理基准 AGENTSNET 相关的研究者。
 - [[min-zhang]] —— 信息检索与推荐系统研究者
+- [[muhua-huang]] —— 研究 LLM 多智能体社会模拟与价值多样性的研究者。
+- [[neil-shah]] —— 推荐系统与机器学习领域的研究者,其相关工作涉及跨域序列推荐与基于 transformer 的建模方法。
 - [[nicole-immorlica]] —— 算法博弈论与经济学研究者
 - [[noah-goodman]] —— 斯坦福语言/推理/认知建模教授,bootstrapping 推理工作
 - [[patrick-lewis]] —— NLP 研究者,RAG 提出者
 - [[peng-cui]] —— 机器学习/推荐/数据异质性建模研究者
 - [[peng-jiang]] —— 推荐系统与 embedding-based retrieval 研究者(快手落地)
+- [[pengfei-du]] —— Pengfei Du 是一位与 LLM agent 记忆研究相关的作者/研究者，参与了关于自主 LLM 智能体记忆机制的综述工作。
+- [[percy-liang]] —— 斯坦福大学计算机科学副教授,基础模型研究中心(CRFM)负责人,在自然语言处理、机器学习与基础模型评测方向有广泛影响。
 - [[petter-tornberg]] —— 计算社会科学研究者,LLM 社会模拟
+- [[philip-s-yu]] —— Philip S. Yu 是一位在数据挖掘、人工智能与大语言模型相关领域有广泛贡献的研究者,出现在本 wiki 收录的 LLM 多智能体系统综述工作中。
 - [[qingpeng-cai]] —— 强化学习与推荐系统研究者,短视频留存优化
 - [[qingyao-ai]] —— 信息检索与推荐研究者
+- [[quanming-yao]] —— 机器学习研究者,研究方向涉及推荐系统、专家混合(MoE)与自动机器学习等领域。
+- [[ramesh-raskar]] —— 研究 LLM 与大规模 agent-based 仿真结合的研究者,提出在百万级 ABM 仿真中引入 LLM 自适应行为的方法。
+- [[richa-rastogi]] —— 研究多尺度策略学习与离策略上下文老虎机(off-policy contextual bandit)的研究者。
+- [[ruihong-qiu]] —— 研究推荐系统与离线强化学习(offline RL)的研究者,参与了面向推荐系统的双 agent model-based offline RL 框架相关工作。
+- [[ruiming-tang]] —— Ruiming Tang 是一位研究者,工作涉及大语言模型(LLM)与深度推荐系统的结合,尤其关注利用 LLM 的世界知识改进推荐系统中的特征选择。
 - [[sean-welleck]] —— LLM 推理与生成研究者
+- [[sen-wang]] —— 面向推荐系统的离线强化学习研究者,参与提出基于 model-based offline RL 的双 agent 推荐框架。
 - [[shunyu-yao]] —— LLM 智能体与推理研究者,ReAct/ToT 第一作者
 - [[tat-seng-chua]] —— 多媒体与推荐系统研究者(NUS)
+- [[thorsten-joachims]] —— 机器学习研究者,长期从事 off-policy 学习、contextual bandit 与推荐/排序系统的反事实学习等方向的研究。
+- [[tianlong-chen]] —— 研究者,工作涉及大语言模型的对话记忆管理与基于强化学习的检索优化。
+- [[tongshuang-sherry-wu]] —— Tongshuang Sherry Wu 是一位研究者,工作领域涉及自然语言处理、人机交互与基于 LLM 的社会模拟。
+- [[tun-lu]] —— 研究者,工作涉及基于 LLM 智能体的推荐系统用户模拟与跨域推荐。
+- [[victoria-dochkina]] —— 研究自组织 LLM 智能体与多智能体协调机制的研究者。
 - [[wanjun-zhong]] —— LLM 研究者,MemoryBank 相关工作
+- [[weiqiang-wang]] —— 研究者,工作涉及面向工具使用型 LLM agent 的安全对齐方法。
+- [[weize-chen]] —— 研究 LLM 多智能体系统的研究者,工作聚焦于多智能体通信效率与任务有效性的协同优化。
 - [[weizhi-ma]] —— 信息检索与推荐系统研究者
 - [[xiang-wang]] —— 推荐系统与图学习/因果研究者
 - [[xiangnan-he]] —— 推荐系统/信息检索/去偏研究者
 - [[xiangyu-zhao]] —— 多任务深度推荐系统(MTDRS)研究者
+- [[xiaoyuan-yi]] —— Xiaoyuan Yi 是一位从事大语言模型与价值观对齐、多智能体社会模拟研究的研究者。
 - [[xing-xie]] —— 推荐系统/数据挖掘研究者(MSRA)
 - [[xiuqiang-he]] —— 推荐系统与广告 CTR 研究者
+- [[xufeng-cai]] —— Xufeng Cai 是出现在本 wiki 中的一位研究者,与超参数自动调优与零阶约束优化相关工作有关联。
+- [[xuhui-zhou]] —— 研究者,工作聚焦于 LLM 驱动的多智能体社会模拟与社会交互系统。
 - [[yang-liu-ucsc]] —— 可信机器学习与公平性研究者(UCSC)
 - [[yaochen-zhu]] —— 推荐系统与因果推断研究者
+- [[yi-zhang]] —— Yi Zhang 是出现在本 wiki 来源中的研究者,工作涉及推荐系统与离线强化学习方向。
 - [[yiling-chen]] —— 经济学与计算/机制设计研究者
-- [[yiming-yang]] —— 文本挖掘与机器学习研究者(CMU)
 - [[yilun-du]] —— 多智能体 LLM 协作与推理研究者
+- [[yiming-yang]] —— 文本挖掘与机器学习研究者(CMU)
+- [[yong-li]] —— 研究者，工作集中在基于 LLM 的生成式社会 agent、大规模社会模拟以及 AI agent 行为科学等方向。
 - [[yongfeng-zhang]] —— 推荐系统/信息检索/机器学习研究者
 - [[yuntao-bai]] —— Anthropic 对齐与无害性研究者,Constitutional AI 第一作者
+- [[yuta-saito]] —— 研究 off-policy 评估与策略学习的研究者,工作聚焦于 contextual bandits 及其在推荐系统中的应用。
 - [[zhefan-wang]] —— 推荐系统研究者
+- [[zhenhua-dong]] —— 推荐系统与公平性重排研究者,参与了 BankFair 系列两侧公平推荐重排工作。
 - [[zhenzhong-chen]] —— 研究者,推荐系统因果推断论文作者
 - [[zhiqing-sun]] —— LLM 对齐与自我改进研究者
+- [[zhiyong-feng]] —— 研究交互式推荐与强化学习表示学习的研究者,参与提出基于对比学习的交互式推荐方法 CRIR。
 - [[zhiyuan-liu]] —— NLP 与大模型研究者,参与 ChatDev
-### 机构 (Labs)
+### 机构
+- [[aios-foundation]] —— AIOS Foundation 是一个聚焦于 LLM agent 操作系统与底层基础设施(包括记忆、调度与工具集成)的研究组织。
+- [[amazon]] —— Amazon 是一家美国科技与电子商务公司,其真实在线购物数据被用于 LLM 智能体模拟人类逐步行为的过程级、动作级定量评测。
+- [[ant-group]] —— 蚂蚁集团(Ant Group)是一家中国科技公司,在大语言模型与 AI agent 安全对齐方向开展研究。
 - [[anthropic]] —— 以 AI 安全与对齐为核心的人工智能实验室
-- [[artificial-intelligence-review]] —— 综述类学术期刊(Springer)
+- [[aws-ai]] —— AWS AI 是亚马逊云科技(Amazon Web Services)旗下的人工智能研究与产品团队,致力于大语言模型、智能体(agent)及相关基础设施的研究与落地。
 - [[bytedance-research]] —— 字节跳动研究机构,机器学习/推荐/因果推断
 - [[carnegie-mellon-university]] —— 卡内基梅隆大学
+- [[chinese-academy-of-sciences]] —— 中国科学院,中国国家级科学研究机构与学术殿堂,涵盖自然科学、技术科学等多领域研究。
+- [[chinese-information-processing-laboratory-iscas]] —— 中国科学院软件研究所(ISCAS),从事软件理论、系统软件与人工智能等方向研究的科研机构,其相关团队在大模型用户模拟等课题上有研究产出。
+- [[city-university-of-hong-kong]] —— 香港城市大学(City University of Hong Kong),一所位于香港的公立研究型大学,在本 wiki 中作为相关研究工作的所属/参与机构出现。
+- [[cornell-university]] —— 康奈尔大学,美国常春藤盟校之一,在机器学习与决策算法等领域开展研究。
+- [[dartmouth-college]] —— Dartmouth College 是位于美国新罕布什尔州汉诺威的常春藤盟校研究型大学,在本 wiki 中作为 LLM agent 博弈行为相关研究的来源机构出现。
+- [[eth-zurich]] —— 苏黎世联邦理工学院(ETH Zurich)是一所位于瑞士的研究型大学,在 LLM 与多 agent 系统研究方面有相关产出。
 - [[facebook-ai-research]] —— Meta(FAIR)基础研究实验室,NLP/检索增强生成
+- [[free-university-of-bozen-bolzano]] —— 意大利博尔扎诺的一所三语公立大学,其研究人员在因果推断与推荐系统等方向开展工作。
+- [[fudan-university]] —— 复旦大学,位于中国上海的综合性研究型大学,在本 wiki 中作为多项 LLM 角色扮演与社会模拟研究的参与机构出现。
+- [[google]] —— Google 是一家科技公司及人工智能研究机构,旗下进行大语言模型、生成式 AI 与多模态系统的研究与开发。
 - [[google-brain]] —— Google 深度学习研究团队,大模型与 prompting
 - [[google-deepmind]] —— Google 人工智能研究实验室
+- [[google-research]] —— Google Research 是 Google 旗下的研究机构,从事机器学习、自然语言处理、分布式系统等领域的基础与应用研究。
+- [[hkust]] —— 香港科技大学(HKUST),位于香港的研究型大学,在人工智能与大语言模型相关研究中有所贡献。
 - [[huawei-noahs-ark-lab]] —— 华为 AI 与决策推理研究实验室
 - [[kaust]] —— 阿卜杜拉国王科技大学,CAMEL 研究发起机构
 - [[lg-ai-research]] —— LG AI 研究院
+- [[massachusetts-institute-of-technology]] —— 麻省理工学院(MIT)是位于美国马萨诸塞州剑桥市的研究型大学,在人工智能、计算与社会仿真等领域开展前沿研究。
+- [[meta]] —— Meta 是一家科技公司,其研究团队在大规模推荐系统、机器学习基础设施与自动化超参数调优等方向有持续的工程与研究产出。
 - [[microsoft-research]] —— 微软研究机构,计算机科学基础与应用研究
 - [[microsoft-research-asia]] —— 微软亚洲研究院(MSRA)
 - [[mila]] —— 蒙特利尔学习算法研究所
+- [[moscow-institute-of-physics-and-technology]] —— 莫斯科物理技术学院（MIPT），俄罗斯顶尖的物理与技术研究型高校，参与大语言模型与多智能体系统等方向的研究。
+- [[nankai-university]] —— 南开大学,中国研究型大学,在本 wiki 中作为生成式序列推荐相关研究的关联机构出现。
+- [[nanyang-technological-university]] —— 新加坡南洋理工大学(NTU),一所参与大语言模型与多智能体系统研究的高校研究机构。
 - [[national-university-of-singapore]] —— 新加坡国立大学
+- [[northeastern-university]] —— 美国东北大学(Northeastern University),一所参与 LLM 与智能体研究的高校研究机构。
 - [[nvidia]] —— GPU 公司及其 AI 研究部门,发表 LLM/具身智能体研究
 - [[openai]] —— GPT 系列及对齐/推理方法研究实验室
 - [[openbmb]] —— 聚焦大模型开源生态的实验室/社区
+- [[oppo]] —— OPPO 是一家智能终端与互联网服务公司,其团队在工业级推荐系统的跨域知识迁移方向有相关研究产出。
+- [[peking-university]] —— 北京大学,中国顶尖综合性研究型高校,在机器学习、强化学习与推荐系统等方向有相关研究产出。
+- [[princeton-university]] —— 普林斯顿大学,美国常春藤盟校之一,在人工智能与大语言模型相关研究中有重要参与。
 - [[renmin-university-of-china]] —— 中国人民大学,LLM agent 与推荐研究
 - [[robotics-at-google]] —— Google 机器人学习与具身智能团队
+- [[rutgers-university]] —— Rutgers University 是美国新泽西州的公立研究型大学,在本 wiki 中作为参与 LLM agent 长期记忆相关研究的机构出现。
+- [[sakana-ai]] —— Sakana AI 是一家位于日本东京的人工智能研究实验室,专注于受自然启发的方法以及大模型推理时的高效扩展(test-time scaling)等方向。
+- [[sap-labs]] —— SAP Labs 是软件企业 SAP 旗下的研发机构,在本 wiki 中以 LLM agent 评测研究的来源出现。
 - [[shandong-university]] —— 山东大学
+- [[shanghai-ai-laboratory]] —— 上海人工智能实验室,是一家专注于人工智能基础研究与前沿技术探索的研究机构,在大语言模型与 LLM-agent 等方向开展工作。
+- [[shanghai-jiao-tong-university]] —— 上海交通大学,是一所中国的研究型大学,在大语言模型与代码生成等方向有相关研究产出。
+- [[skan-ai]] —— Skan AI 是一家提出编排式多 agent 系统统一架构的机构,聚焦企业级 AI agent 系统的工程化落地。
+- [[skywork-ai]] —— Skywork AI 是一家人工智能研究机构,致力于大语言模型与多智能体系统的研究与开发。
+- [[snap-inc]] —— Snap Inc. 是 Snapchat 的母公司,在推荐系统等机器学习方向开展研究。
 - [[stanford-university]] —— 斯坦福大学,LLM 推理等方向研究
+- [[stepfun]] —— StepFun(阶跃星辰)是一家专注于大语言模型与多模态基础模型研发的人工智能实验室。
 - [[tencent]] —— 腾讯,产业界 AI/推荐研究与落地
 - [[tencent-ai-lab]] —— 腾讯 AI 研究机构,ML/NLP/LLM
 - [[thudm]] —— 清华大学数据挖掘组,大模型与 LLM Agent
+- [[tianjin-university]] —— 天津大学,中国天津的一所综合性研究型大学,在本 wiki 中作为相关研究成果的所属/参与机构出现。
 - [[tsinghua-nlp]] —— 清华大学 NLP 研究团队
 - [[tsinghua-university]] —— 清华大学,多项 LLM Agent 研究机构
 - [[university-of-amsterdam]] —— 阿姆斯特丹大学
+- [[university-of-cambridge]] —— 英国剑桥的研究型大学,在贝叶斯方法、概率推断与机器学习等方向有相关研究产出。
+- [[university-of-illinois-urbana-champaign]] —— 伊利诺伊大学厄巴纳-香槟分校(UIUC),美国公立研究型大学,在 LLM 多智能体协作与评测等方向有相关研究产出。
 - [[university-of-michigan]] —— 密歇根大学
+- [[university-of-milano-bicocca]] —— 意大利米兰的一所公立研究型大学,在本 wiki 中作为推荐系统因果发现相关研究的关联机构出现。
+- [[university-of-oxford]] —— 英国牛津大学,是一所世界知名的研究型大学,在本 wiki 中作为研究机构出现,关联到将 LLM 行为引入大规模 agent-based 仿真的研究。
+- [[university-of-queensland]] —— 澳大利亚昆士兰州的研究型大学,在本 wiki 中作为推荐系统与离线强化学习相关研究的机构出现。
 - [[university-of-science-and-technology-of-china]] —— 中国科学技术大学
+- [[university-of-technology-sydney]] —— 悉尼科技大学(UTS),位于澳大利亚悉尼的公立研究型大学,在推荐系统、强化学习等方向有相关研究产出。
+- [[university-of-texas-at-san-antonio]] —— 美国得克萨斯州的公立研究型大学,在本 wiki 中作为参与大语言模型多智能体推理研究的机构出现。
+- [[university-of-tulsa]] —— 美国俄克拉荷马州塔尔萨市的私立研究型大学,在本 wiki 中作为相关研究工作的机构出现。
+- [[university-of-washington]] —— 华盛顿大学,美国公立研究型大学,在 LLM agent 行为与博弈论交叉方向有相关研究产出。
 - [[university-of-windsor]] —— 温莎大学
+- [[vk-ai]] —— VK AI 是俄罗斯科技公司 VK 旗下的人工智能团队,专注于推荐系统等大规模工业级机器学习研究。
 - [[westlake-university]] —— 西湖大学
+- [[yandex]] —— Yandex 是一家俄罗斯科技公司,涉及搜索引擎与人工智能等领域,在本 wiki 中作为参与 LLM 研究的机构出现。
 - [[zhejiang-university]] —— 浙江大学,相关论文研究机构
 ### 数据集
 - [[ali-ccp]] —— 阿里电商 CTR/CVR 多任务推荐数据集
+- [[alpaca]] —— Alpaca 是斯坦福基于 LLaMA 微调得到的指令遵循模型,及其配套的指令微调(SFT)数据集,常作为低成本指令对齐与合成数据方法的对照基线。
 - [[amazon-book]] —— Amazon 图书评分子集,推荐基准
 - [[amazon-reviews]] —— Amazon 商品评论与评分数据集,推荐基准
 - [[coat]] —— 含有偏自选与无偏随机曝光评分的去偏推荐基准
+- [[convapparel]] —— ConvApparel 是 Google 提出的人-AI 服装购物对话数据集,包含 4,146 段对话,采用双 agent good/bad 协议生成并带有逐轮第一人称标注,用于量化 LLM user simulator 与真实用户之间的 realism gap。
+- [[coser]] —— CoSER 是一个用于角色扮演大语言模型(RPLA)训练与评测的数据集,基于名著中真实的多角色对话构建。
 - [[eeg-svrec]] —— 含 EEG 情感参与信号的短视频推荐数据集
 - [[freebase]] —— 大规模结构化知识图谱知识库
 - [[kuairand]] —— 快手随机插入视频收集的百万级无偏序列推荐数据集
 - [[kuairand-pure]] —— KuaiRand 中随机曝光场景采集的无偏反馈子集
 - [[kuairec]] —— 快手短视频推荐数据集,去偏与离线研究常用
 - [[lfm-1b]] —— Last.fm 约十亿条音乐收听记录数据集
+- [[lima]] —— LIMA(Less Is More for Alignment)是一个用于指令微调/对齐研究的数据集与方法,核心主张是用少量高质量样本即可让基座模型对齐出良好的对话与指令遵循能力。
+- [[llm-redial]] —— LLM-REDIAL 是一个用于对话式推荐(conversational recommendation)的数据集/基准,用于评估 LLM agent 在多轮对话中理解用户意图并给出推荐的能力。
 - [[merrec]] —— Mercari C2C 电商大规模推荐数据集
 - [[microlens]] —— 含 10 亿交互与原始内容的内容驱动微视频推荐数据集
 - [[ml-causal]] —— 因果推断式推荐研究数据集
 - [[movielens]] —— GroupLens 电影评分数据集,推荐基准
 - [[movielens-1m]] —— 约百万条评分的 MovieLens 子集,推荐基准
 - [[open-bandit-dataset]] —— 已知日志策略下交互日志,用于 off-policy 评估
+- [[opencharacter]] —— OpenCharacter 是一个用大规模合成 persona 构建角色对齐 SFT 数据的方法/数据集,用于训练具备角色扮演与角色泛化能力的大语言模型。
+- [[opera-dataset]] —— OPeRA 是一个基于真实在线购物数据的数据集/评测基准,用于在过程级、动作级粒度上定量评估 LLM 智能体模拟人类逐步行为的能力。
+- [[persona-hub]] —— Persona Hub 是一个大规模的 persona(人物画像)集合,用于通过 persona 驱动的方式大规模合成多样化的训练数据。
 - [[prm800k]] —— OpenAI 开源的约 80 万条步骤级标注,用于训练 PRM
+- [[recflow]] —— RecFlow 是首个包含工业推荐系统多级漏斗各阶段未曝光样本的大规模全流程推荐数据集,用于研究分布偏移、选择偏差与多阶段联合优化。
 - [[retailrocket]] —— 电商浏览/加购/购买日志,多任务推荐评测
 - [[rl4rs]] —— 面向推荐的强化学习基准数据集与环境
 - [[sharegpt]] —— 用户分享的 ChatGPT 对话集,常作指令微调语料
+- [[shopcart]] —— ShopCART 是基于真实在线购物数据构建的数据集/评测基准,用于在过程级、动作级粒度上定量评估 LLM 智能体对人类逐步购物行为的模拟能力。
+- [[short-video-dataset]] —— Short-Video 是用于微视频(micro-video)推荐研究的数据集,常与 MicroLens 等数据集一同作为评测基准。
 - [[srdd]] —— 软件需求描述数据集,评估端到端软件开发
+- [[steam]] —— 基于 Steam 的序列推荐评测基准
 - [[steam-dataset]] —— Steam 游戏交互数据集,序列推荐基准
+- [[taobaoad]] —— TaobaoAd 是用于广告推荐/召回研究的数据集,常被用于评估 two-tower 召回与排序模型在工业广告场景下的效果。
+- [[tenrec]] —— Tenrec 是一个面向推荐系统的大规模工业级数据集,常被用作多任务推荐与短视频推荐研究的基准。
+- [[twibot-20]] —— TwiBot-20 是一个用于推特(Twitter)社交机器人检测的公开基准数据集,包含带标注的用户账号、其推文与关注关系等信息,常用于评估机器人/虚假账号检测方法。
+- [[twitter15-twitter16]] —— Twitter15/Twitter16 是两个常用于谣言检测与社交媒体信息传播研究的推特数据集,包含源推文及其转发/评论的传播结构与标签。
 - [[vg-causal]] —— 推荐系统因果推断研究数据集
+- [[vk-lsvd]] —— VK-LSVD 是由 VK 发布的迄今最大的公开短视频推荐工业数据集,包含约 400 亿次交互、1000 万用户与近 2000 万视频,时间跨度达 6 个月。
 - [[wechat-channels-dataset]] —— 微信视频号视频推荐数据集,含观看时长
 - [[yahoo-r3]] —— 含有偏 MNAR 训练与无偏 MCAR 测试的去偏推荐标准基准
 - [[yelp-dataset]] —— Yelp 商户评论与评分公开数据集,推荐基准
+- [[zhihu-1m]] —— Zhihu-1M 是一个来自知乎平台的推荐场景数据集,常用于离线强化学习推荐方法的实验评估。
+- [[zhihurec]] —— ZhihuRec 是源自知乎平台的推荐系统数据集,常用于序列推荐(sequential recommendation)及曝光偏差(exposure bias)相关研究的评测。
 ### Benchmark
+- [[agent-safetybench]] —— Agent SafetyBench 是用于评测 tool-using(工具调用)大模型 agent 安全性的基准,关注 agent 在面对用户侧与工具侧威胁时能否做出安全决策。
 - [[agentbench]] —— 首个系统评估 LLM-as-Agent 的多维基准(8 个交互环境)
+- [[agentsnet]] —— AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算的五个经典问题来衡量 agent 网络在给定通信拓扑下的自组织、去中心化通信与协作推理能力。
 - [[alfworld]] —— 文本化交互式具身任务基准
 - [[ambignq]] —— 聚焦歧义问题的开放域问答基准
+- [[arc-agi]] —— ARC-AGI(Abstraction and Reasoning Corpus for Artificial General Intelligence)是一个通过抽象视觉推理谜题来衡量 AI 系统通用流体智能的基准测试。
+- [[berkeley-function-calling-leaderboard]] —— Berkeley Function-Calling Leaderboard(BFCL)是用于系统评测大语言模型函数调用(function calling / tool use)能力的公开基准与排行榜,覆盖单轮、多轮、并行调用以及相关性检测等多种工具使用场景。
 - [[big-bench]] —— 社区协作的大规模多任务语言模型评测基准
 - [[blocksworld]] —— 经典积木重排规划基准
+- [[carla]] —— 开源自动驾驶仿真器,闭环驾驶评测平台
+- [[cogbench]] —— CogBench 是一个面向 LLM / LLM agent 的基准,从认知科学与行为科学的视角,用受控的认知任务和行为范式来评测模型的认知与行为表现。
 - [[commongen]] —— 生成式常识推理的约束文本生成基准
 - [[commonsenseqa]] —— 常识推理多项选择问答基准
 - [[fever]] —— 事实核查基准(SUPPORTED/REFUTED/NEI)
+- [[gaia]] —— GAIA 是一个面向通用 AI 助手能力的基准测试,通过需要多步推理、工具使用与网页/环境交互的真实世界问题,评估智能体系统完成复杂任务的端到端能力。
 - [[game-of-24]] —— 24 点数学推理游戏基准
 - [[gsm8k]] —— 小学水平数学应用题基准,多步数学推理
+- [[gta]] —— GTA(General Tool Agents)是一个评测 LLM 智能体真实场景下多工具调用与规划能力的基准,常用 AVG(平均得分)等指标衡量智能体在多工具任务上的表现。
 - [[hotpotqa]] —— 基于 Wikipedia 的多跳问答基准
 - [[humaneval]] —— Python 代码生成基准,pass@k 指标
+- [[incharacter]] —— InCharacter 是一个用于评测角色扮演 LLM(RPLA)是否"贴合人设"的基准,常通过心理量表等手段考察智能体在扮演角色时表现出的人格与一致性。
+- [[injecagent]] —— InjecAgent 是一个用于评估 tool-using LLM agent 对间接提示注入(indirect prompt injection)攻击鲁棒性的基准。
+- [[kuaisim]] —— KuaiSim 是一个面向交互式推荐系统的用户模拟器,用于在模拟环境中评估和优化(尤其是基于强化学习的)推荐策略对长期用户满意度的影响。
+- [[lifechoice]] —— LifeChoice 是一个用于评测角色扮演语言代理(RPLA)的基准测试,常被用于衡量角色扮演 LLM 在角色一致性与决策表现上的能力。
+- [[livecodebench]] —— LiveCodeBench 是一个面向大语言模型代码能力的评测基准,通过持续收集新发布的编程竞赛题目来减少数据污染,综合考察代码生成、自我修复、代码执行与测试输出预测等多项任务。
+- [[locomo]] —— LoCoMo(Long Conversational Memory)是用于评测 LLM agent 在超长多轮对话中长期记忆能力的基准,常用于衡量记忆系统在问答、召回、延迟与 token 开销等维度上的表现。
+- [[longmemeval]] —— LongMemEval 是一个用于评测对话型 AI 系统长期记忆能力的基准,考察模型在长跨度多轮对话中检索与利用历史信息的准确性。
 - [[math-benchmark]] —— 竞赛风格数学题的多步推理基准
 - [[math-dataset]] —— 带分步解答的竞赛级数学题基准
 - [[mbpp]] —— 入门级 Python 编程问题代码生成基准
 - [[mind2web]] —— 通用网页智能体真实网站任务基准
 - [[minedojo]] —— 基于 Minecraft 的开放式具身智能体框架与基准
 - [[mini-crosswords]] —— 5×5 小型纵横填字推理基准
+- [[mle-bench]] —— MLE-Bench 是一个用于衡量 AI 智能体机器学习工程(ML engineering)能力的基准,通过一组 Kaggle 风格的竞赛任务,考察智能体端到端完成数据处理、建模、训练与提交的综合能力。
 - [[mmlu]] —— 多学科多选题基准,衡量广泛知识与综合理解
+- [[msc-multi-session-chat]] —— MSC(Multi-Session Chat)是用于评估对话系统跨多次会话长期记忆能力的基准数据集与任务设定,要求模型在多轮、多会话的交互中保持并利用历史上下文中的事实与偏好。
+- [[multiagentbench]] —— MultiAgentBench 是一个用于评测 LLM 多智能体在交互式场景中协作与竞争能力的基准,配套 MARBLE 框架,衡量任务完成度与协调质量。
+- [[musique]] —— MuSiQue 是一个面向多跳问答(multi-hop QA)的基准数据集,通过组合多个单跳问题构造需要跨多个段落进行链式推理的复杂问题,用于评估模型的多步推理与信息整合能力。
+- [[musr]] —— MuSR(Multistep Soft Reasoning)是一个面向大语言模型的多步软推理评测基准,通过自然语言叙事场景(如谋杀谜题等)考察模型在长上下文中进行多步链式推理与常识推断的能力。
+- [[ndcg]] —— 衡量排序质量的归一化折损累积增益指标
+- [[omnibehavior]] —— OmniBehavior 是首个完全基于真实工业日志(快手)构建的用户模拟基准,用于刻画长时程、跨场景、异质的用户行为轨迹,并评估 LLM 用户模拟器的保真度。
+- [[orbench]] —— OR-Bench 是用于评测大语言模型过度拒绝(over-refusal / false refusal)现象的基准,衡量模型在面对看似敏感但实际无害的提示时被错误拒绝的程度。
+- [[personagym]] —— PersonaGym 是一个用于评估大语言模型角色扮演(persona/role-playing)能力的基准,衡量模型在给定人物设定下保持一致性、贴合角色的表现。
 - [[prontoqa]] —— 本体生成的可控演绎多步逻辑推理问答基准
 - [[realtoxicityprompts]] —— 衡量续写毒性倾向的安全性基准
 - [[saycan]] —— 结合语义可用性与可执行性价值函数的具身规划方法/基准
+- [[scienceworld]] —— ScienceWorld 是一个交互式文本环境基准,用于评测 LLM agent 在科学任务中的多步交互与推理能力。
 - [[sotopia]] —— 开放式社交互动模拟环境与社会智能评测基准
 - [[sotopia-eval]] —— SOTOPIA 多维社会智能评测框架
 - [[spider]] —— 跨领域 text-to-SQL 语义解析基准
-- [[steam]] —— 基于 Steam 的序列推荐评测基准
+- [[squad]] —— SQuAD 2.0(Stanford Question Answering Dataset 2.0)是斯坦福大学发布的阅读理解基准,在原始 SQuAD 的基础上加入了不可回答问题,要求模型在给定段落无法支撑答案时做出"无法回答"的判断。
 - [[strategyqa]] —— 隐式多步推理是/否问答基准
+- [[structmemeval]] —— StructMemEval 是一个评估 LLM agent **组织**(而不仅仅是回忆)其长期记忆能力的基准。
 - [[svamp]] —— 小学算术应用题变体测试基准
+- [[swe-bench]] —— SWE-bench 是一个用于评测大语言模型与智能体解决真实软件工程问题能力的基准,任务取自真实代码仓库的 issue,要求模型生成可通过测试的代码补丁。
 - [[tabmwp]] —— 表格数学应用题多步推理基准
+- [[toolbench]] —— ToolBench 是用于评测大语言模型(LLM)智能体工具调用与多工具规划能力的基准测试集。
 - [[transcoder]] —— 编程语言间代码翻译基准
 - [[triviaqa]] —— 大规模琐事类开放域问答基准
 - [[truthfulqa]] —— 衡量回答真实性、考察是否复述常见错误信念
+- [[virtual-taobao]] —— Virtual-Taobao 是一个基于真实淘宝数据构建的虚拟仿真环境,用于训练和评估交互式推荐系统中的强化学习(RL)智能体。
+- [[vk-recsys-challenge-2025]] —— VK RecSys Challenge 2025 是由 VK 发起的短视频推荐挑战赛,基于其公开的大规模工业级短视频交互数据集开展推荐系统评测。
 - [[webarena]] —— 真实可复现网站上的网页智能体任务基准
 - [[webshop]] —— 模拟在线购物的网页导航基准(ReAct +10%;LATS 75.9)
 ### 产品
+- [[agent4rec]] —— Agent4Rec 是一个基于 LLM 的 agent 框架,通过从历史数据推断的 persona、记忆、感知与决策模块构建可信的合成用户,从而以低成本对推荐系统进行评估。
 - [[agentcf]] —— 把用户与物品都建模为 LLM agent 的协同推荐框架/系统
+- [[agenttorch]] —— AgentTorch 是一个大规模 agent-based modeling(ABM)框架,通过引入 LLM 行为来增强百万级仿真中的个体自适应能力。
 - [[ai-assistant-agent]] —— 角色扮演框架中扮演"助手"的 LLM 智能体
 - [[ai-user-agent]] —— CAMEL 中下达指令、扮演"用户"的 LLM 智能体
 - [[apollo-ad]] —— 百度 Apollo 自动驾驶系统(对比基线)
+- [[artificial-intelligence-review]] —— 综述类学术期刊(Springer)
 - [[autogen]] —— 微软开源多 agent 框架,可对话 agent 会话编程
 - [[autogpt]] —— 基于 GPT-4 的开源自主智能体框架
-- [[carla]] —— 开源自动驾驶仿真器,闭环驾驶评测平台
+- [[botorch]] —— BoTorch 是用于贝叶斯优化(Bayesian Optimization)的开源库,常作为超参数自动调优的基线方法。
 - [[chat-rec]] —— 用 LLM 做交互式对话推荐的框架
 - [[chatdev]] —— 多 LLM 角色化软件智能体组成的虚拟软件公司
 - [[chatgpt]] —— OpenAI 对话式 AI 产品
+- [[concordia]] —— Concordia 是 Google DeepMind 提出的多智能体生成式 AI 框架,采用游戏引擎式的 Entity-Component 架构,统一支撑 Evaluationist、Dramatist 与 Simulationist 三类用户动机。
 - [[easyrl4rec]] —— 面向推荐的强化学习易用开源库与基准
 - [[everyday-robots]] —— Google X 移动操作机器人平台,具身智能实验载体
+- [[faiss]] —— 高效相似向量检索库
 - [[gpt-engineer]] —— 由自然语言需求自动生成整个代码库的 LLM 工具
 - [[interecagent]] —— 以 LLM 为大脑、传统推荐模型为工具的交互式对话推荐 agent
+- [[jax]] —— JAX 是一个用于高性能数值计算与机器学习的 Python 库,核心能力是自动微分(autodiff)以及 JIT 编译、向量化和并行化等可组合的函数变换。
 - [[kuaishou]] —— 快手短视频/直播平台,推荐研究工业场景与数据来源
 - [[langchain]] —— 构建 LLM 应用的开源框架(链式调用/工具/agent 编排)
-- [[linrec]] —— 线性注意力高效长序列推荐框架
 - [[lusifer]] —— 基于 LLM 的用户模拟器框架
 - [[macrec]] —— 面向推荐的多智能体 LLM 协作框架
+- [[marble]] —— MARBLE 是用于 MultiAgentBench 的多智能体评测框架,在多种交互式场景中评测 LLM 多智能体的协作与竞争能力。
 - [[megaagent]] —— 无需 SOP 的大规模多智能体自治框架
+- [[mem0]] —— Mem0 是面向 LLM agent 的长期记忆系统/产品,负责从持续交互中抽取、组织、巩固与检索关键信息。
+- [[memgpt]] —— MemGPT 是一种为 LLM agent 提供长期记忆管理能力的系统,通过分层记忆与上下文调度让模型突破固定上下文窗口的限制。
+- [[meminsight]] —— MemInsight 是一种让 LLM agent 自主从历史交互中挖掘语义属性、以增强记忆表示与检索的方法。
+- [[memorybank]] —— 存储对话+按遗忘曲线更新+检索的 LLM 长期记忆机制
 - [[mercari]] —— Mercari C2C 二手电商平台,推荐数据/场景来源
 - [[metagpt]] —— 把 SOP 编码进 prompt 的 LLM 多智能体软件开发框架
+- [[oasis]] —— OASIS 是一类基于 LLM 智能体的社会模拟沙盒环境,用于在部署前对平台干预策略进行评估与优化。
+- [[optima]] —— OPTIMA 是一个通过迭代式的"生成-排序-选择-训练"范式,同时优化基于 LLM 的多智能体系统中通信效率与任务有效性的框架。
 - [[perspective-api]] —— 评估文本毒性的在线服务,常作外部反馈来源
+- [[policysim]] —— PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用于在部署前主动评估与优化平台干预策略。
 - [[recagent]] —— 基于 LLM-agent 的用户行为模拟器(沙盒)
 - [[recsim]] —— 推荐系统可配置仿真平台,支持 RL 推荐研究
 - [[replicantlife]] —— LLM 驱动的生成式社会模拟环境/平台
 - [[siliconfriend]] —— 基于 MemoryBank 长期记忆的情感陪伴聊天机器人
+- [[tubi]] —— Tubi 是一个免费、广告支持的流媒体视频(AVOD)平台,其推荐系统通过专用 UI 与无偏探索机制持续优化内容发现与长期用户参与度。
+- [[weibo]] —— Weibo(微博)是中国主流的社交媒体微博客平台,用户可发布短内容、关注他人并参与信息传播与互动。
 
 ## 概念 (Concepts)
 <!-- 方法与思想:attention、RLHF、MoE、scaling law、量化…… -->
 ### LLM 智能体与推理
-- [[llm-agents]] —— LLM 智能体枢纽页;分"任务求解+搜索"与"社会模拟"两分支
-- [[llm-agents|llm-agent]] —— 以 LLM 为核心、具推理/规划/记忆/工具能力的智能体
+- [[llm-agents|llm-agent]] —— LLM 智能体枢纽页;分"任务求解+搜索"与"社会模拟"两分支
 - [[llm-based-agents]] —— 以 LLM 为决策核心、感知环境并行动的智能体
 - [[autonomous-agents]] —— LLM 驱动、最少人工干预下自主规划决策的智能体
 - [[llm-planning]] —— 用 LLM 分解任务、生成与调整行动计划
 - [[reasoning]] —— 多步逻辑推导/分解组合信息以解决复杂问题的能力
 - [[chain-of-thought]] —— 思维链:few-shot 中显式生成中间推理步骤
 - [[zero-shot-cot]] —— 用"一步步思考"触发的零样本思维链
-- [[react]] —— 交替生成推理痕迹与行动,与外部环境交互
+- [[react]] —— 交替生成推理轨迹与行动的 LLM 范式(ReAct 实体页)
 - [[tree-of-thoughts]] —— 把推理建模为"思考"树搜索(前瞻/回溯)
 - [[tree-search]] —— 树状状态空间中扩展评估节点的搜索(DFS/BFS/MCTS)
 - [[monte-carlo-tree-search]] —— 选择→扩展→模拟→回传的树搜索;LATS 基础
@@ -331,7 +549,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[agent-memory]] —— agent 不更新参数地存储并召回过往经验的机制
 - [[memory-module]] —— 为 agent 提供存储/更新/检索历史的组件
 - [[memory-stream]] —— Generative Agents 完整记录经历并按近因/重要性/相关性检索
-- [[memorybank]] —— 存储对话+按遗忘曲线更新+检索的 LLM 长期记忆机制
 - [[llm-long-term-memory]] —— 突破上下文窗口的 LLM 外部长期记忆
 - [[ebbinghaus-forgetting-curve]] —— 记忆按指数衰减的心理学规律,用于更新记忆强度
 ### 自我改进
@@ -342,7 +559,7 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[self-reflection]] —— 把尝试与反馈转化为语言反思存入记忆
 - [[reflection]] —— 智能体对过往轨迹的反思总结
 - [[self-refine]] —— 同一 LLM 测试时"自我反馈→自我修正"迭代
-- [[reflexion]] —— 对失败做言语化自我反思,作为上下文学习
+- [[reflexion]] —— 通过语言化自我反思改进决策、不更新参数的 LLM Agent
 - [[self-debugging]] —— LLM 执行并解释自身代码以发现修复错误
 - [[rubber-duck-debugging]] —— 逐行解释代码发现错误的调试法
 - [[critic]] —— LLM 借外部工具验证并迭代修正自身输出
@@ -369,7 +586,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[retrieval-augmented-generation]] —— 参数化生成+可检索非参数化知识的框架
 - [[dense-passage-retrieval]] —— 双编码器稠密向量做检索的开放域问答方法
 - [[approximate-nearest-neighbor-search]] —— 高维向量近似最近邻快速检索
-- [[faiss]] —— 高效相似向量检索库
 - [[hallucination]] —— 模型生成看似合理但与事实/输入不符的内容
 - [[chain-of-verification]] —— 先草稿再自我验证以降低幻觉
 ### 对齐与安全
@@ -380,7 +596,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[rlaif]] —— 用 AI 反馈替代人类标签训奖励模型并对齐
 - [[direct-preference-optimization]] —— 不显式建奖励模型直接用偏好优化策略
 - [[constitutional-ai]] —— 用明文原则引导自我批评修订、AI 反馈训练无害助手
-- [[reward-model]] —— 从偏好学习给输出打分以指导 RL 对齐
 - [[instruction-tuning]] —— 用指令-响应样本微调使模型遵循指令
 - [[human-in-the-loop]] —— 在训练/决策中引入人类反馈与干预
 - [[scalable-oversight]] —— 模型能力接近人类时如何有效监督
@@ -388,14 +603,12 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[emergent-abilities]] —— 规模超阈值后突然显著出现的能力
 - [[foundation-models]] —— 大规模预训练、可适配多下游任务的大型模型
 - [[large-language-models]] —— 海量文本预训练、强语言理解生成的大模型
-- [[transformer]] —— 基于自注意力的序列建模主干架构
 - [[state-space-model]] —— 用状态空间递推线性复杂度建模长序列
 - [[deep-neural-network]] —— 多层非线性变换堆叠、端到端学多层特征
 - [[lstm]] —— 带门控缓解梯度消失、擅长长期依赖的 RNN
 - [[adversarial-robustness]] —— 抵御对抗扰动保持稳定预测的能力
 ### 训练与推理范式
 - [[fine-tuning]] —— 用任务数据继续训练调整预训练模型参数
-- [[lora]] —— 注入可训练低秩矩阵的参数高效微调
 - [[prompt-tuning]] —— 只学少量连续提示向量的参数高效微调
 - [[mixture-of-experts]] —— 门控稀疏选择组合专家子网络扩容控算
 - [[lottery-ticket-hypothesis]] —— 稠密网中存在可单独训练达原性能的稀疏子网
@@ -410,8 +623,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[constrained-optimization]] —— 在约束条件下求最优解的优化
 - [[lagrangian-relaxation]] —— 用拉格朗日乘子把约束并入目标
 - [[actor-critic]] —— actor 输出动作、critic 评估价值的 RL 方法
-- [[ppo]] —— 裁剪目标限制更新幅度的 on-policy 策略梯度
-- [[ddpg]] —— 连续动作的确定性策略梯度 off-policy actor-critic
 - [[sac]] —— 最大熵框架的 off-policy actor-critic
 - [[rcpo]] —— 用拉格朗日乘子把约束纳入奖励的约束 RL
 - [[behavior-cloning]] —— 监督模仿专家动作的策略学习
@@ -427,7 +638,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[gflownet]] —— 学流使采样概率正比奖励的生成式概率模型
 ### 推荐系统
 - [[recommender-systems|recommender-system]] —— 据用户兴趣行为个性化筛选推荐内容的系统
-- [[recommender-systems]] —— 建模用户偏好与物品特征个性化推荐
 - [[llm-for-recommendation]] —— 用 LLM 做推荐(标签/对话/agent/重排等)
 - [[collaborative-filtering]] —— 分析用户-物品交互发现相似用户/物品做预测
 - [[matrix-factorization]] —— 把交互矩阵分解为低维隐向量内积预测偏好
@@ -442,7 +652,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[embedding-based-retrieval]] —— 映射到同一向量空间用 ANN 召回物料
 - [[hard-negative-mining]] —— 选与正样本相似但不相关的难负例提升判别
 - [[ctr]] —— 点击率预估
-- [[ndcg]] —— 衡量排序质量的归一化折损累积增益指标
 - [[cold-start]] —— 新用户/新物品缺乏交互的冷启动问题
 - [[data-sparsity]] —— 交互稀疏导致建模困难
 - [[interactive-recommendation]] —— 多轮交互中动态适应用户反馈
@@ -520,7 +729,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[margin-maximization]] —— 最大化决策间隔提升鲁棒性
 - [[graph-contrastive-learning]] —— 图上对比学习自监督表示
 - [[rgcl]] —— 鲁棒图对比学习(决策边界视角)
-- [[lightgcn]] —— 轻量图卷积协同过滤模型
 ### 其他
 - [[active-learning]] —— 主动挑选高信息样本交标注以省标注成本
 - [[benchmark]] —— 标准化任务集合与评测协议
@@ -533,6 +741,198 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[cirs]] —— 因果干预缓解过滤气泡的交互式推荐方法
 - [[pareto]] —— 多目标优化的权衡前沿与最优解集
 - [[pareto-optimality]] —— 无法不损一目标改进其他目标的状态
+### 其他(后续批次新增,待归类)
+- [[ab-testing]] —— A/B Testing(A/B 测试)是一种在线对照实验方法,通过将用户随机分配到不同实验组(如对照组与实验组),比较各组在关键指标上的差异,从而评估某项改动(如新模型、新策略)的真实效果。
+- [[abliteration]] —— Abliteration 是一种推理时干预技术,通过在模型激活空间中识别并移除(消融)与"拒绝"行为相关的单一潜在方向,从而绕过对齐模型的安全拒绝机制。
+- [[activation-steering]] —— Activation steering 是一种通过在推理时向模型的内部激活(隐藏状态)上加减特定方向向量(steering vector),从而引导或调控模型行为的方法,无需重新训练模型参数。
+- [[agent-based-preference-interaction]] —— 基于 agent 的偏好交互,指让用户、物品乃至平台等多方各自由 LLM agent 表征,通过 agent 之间的主动交互(如物品自我推销、平台重排)来表达与协调偏好,从而完成推荐或匹配的范式。
+- [[agent-safety-alignment]] —— Agent safety alignment 指针对会调用工具、与外部环境交互的 LLM agent，使其行为在面对用户侧与工具侧威胁时保持安全、可控且符合预期意图的对齐方法。
+- [[agentic-ai]] —— agentic AI 指能够自主感知、规划、决策并采取多步行动以达成目标的 AI 系统,而不只是被动地对单次输入做出响应。
+- [[ai-agent-behavioral-science]] —— AI Agent Behavioral Science 是一种研究范式：把 LLM agent 当作具有可观察行为的行为实体，通过系统化的观察、干预与理论解释，来理解其在个体、多 agent 以及人-agent 交互场景下的行为、适应与责任问题。
+- [[algorithmic-collective-action]] —— 算法集体行动(Algorithmic Collective Action)指一群用户协调地操纵自己向算法系统(如推荐系统、排序或学习模型)提供的输入或反馈,从而影响系统对所有用户的整体行为或输出。
+- [[artificial-super-intelligence]] —— 人工超级智能(Artificial Super Intelligence, ASI)指在几乎所有领域的认知能力都全面超越最优秀人类的智能系统,被视为继 AGI 之后的更高阶目标。
+- [[attribute-mining]] —— 属性挖掘(Attribute Mining)指让 LLM 自主从历史交互或原始数据中提取结构化语义属性,用以增强记忆表示与检索效果的方法。
+- [[attribute-prioritization]] —— Attribute Prioritization 指让 LLM agent 自主从历史交互中挖掘并排序语义属性,用这些属性增强记忆表示与检索,从而在下游任务中更精准地召回相关信息。
+- [[autodebias]] —— AutoDebias 是一类面向推荐系统的自动去偏方法,旨在缓解训练与评估中由曝光偏差、选择偏差等因素导致的有偏估计。
+- [[automatic-differentiation]] —— 自动微分(Automatic Differentiation, AD)是一类通过对程序中的基本运算链式求导、从而精确(到机器精度)计算函数梯度的技术,介于符号微分与数值差分之间。
+- [[bayesian-information-criterion]] —— 贝叶斯信息准则(BIC)是一种用于模型选择的评分准则,在拟合优度的基础上对模型参数数量施加惩罚,从而在解释力与复杂度之间取得平衡,常被用作结构学习(如因果图发现)中评价候选结构的打分函数。
+- [[bayesian-optimization]] —— 贝叶斯优化是一种用于黑盒函数全局优化的序贯策略,通过构建目标函数的概率代理模型(常用高斯过程)并结合采集函数在探索与利用之间权衡,以尽可能少的昂贵评估次数找到最优解,常用于超参数调优等评估成本高的场景。
+- [[catastrophic-forgetting]] —— 灾难性遗忘指模型(或智能体)在学习新任务或新知识时,会显著丢失先前已掌握的能力,是持续学习与自进化系统中的核心挑战。
+- [[causal-chain]] —— 因果链指将一系列事件按"原因 → 结果"的依赖关系串联起来,用于刻画行为或决策在时间上前后相继、彼此驱动的演化过程。
+- [[cem]] —— 交叉熵方法(Cross-Entropy Method, CEM)是一种基于重要性采样的迭代优化算法:通过反复采样、筛选精英样本、并最小化采样分布与精英分布之间的交叉熵来更新分布参数,从而逼近最优解,常用于稀有事件估计与黑盒/组合优化。
+- [[character-generalization]] —— 角色泛化(Character Generalization)指角色扮演 LLM 在训练中未见过的、域外(out-of-domain)角色上,仍能保持一致且可信的角色表现的能力。
+- [[classifier-free-guidance]] —— Classifier-Free Guidance(无分类器引导,CFG)是一种用于条件扩散模型的采样技术:通过在训练时联合学习条件模型与无条件模型,在采样时将两者的预测做外推组合,从而在不依赖外部分类器的情况下增强生成结果对条件的契合度。
+- [[collective-intelligence]] —— 集体智能指由多个智能体(如多智能体 LLM 群体)通过交互、协作与自发组织所涌现出的、超越单个个体能力的群体性认知与行为能力。
+- [[communication-efficiency]] —— 通信效率指在 LLM 多智能体系统中,以尽可能少的 token 交换实现有效协作与任务完成的能力,即在保证任务有效性的同时降低智能体间通信开销。
+- [[computational-social-science]] —— 计算社会科学是借助大规模数据、计算建模与仿真(如基于 agent 的社会模拟)来研究人类社会行为、群体动态与社会现象的跨学科方法。
+- [[conformal-risk-control]] —— 一种 distribution-free 的统计框架,通过校准在分布无关假设下为某个可监控的风险(损失)期望提供可证明的上界,是 conformal prediction 在一般化风险控制场景下的推广。
+- [[consensus]] —— Consensus 指多个 agent(或节点)在去中心化、可能受限的通信条件下,就某个共同决策或状态达成一致的过程,是分布式计算中的经典问题之一。
+- [[context-engineering]] —— 上下文工程(Context Engineering)是指系统性地设计、组织、检索与管理输入给大语言模型的上下文信息,以在有限上下文窗口内为模型提供最相关、最有效的内容,从而提升其推理与生成质量的方法。
+- [[contextual-bandit]] —— Contextual Bandit(情境老虎机)是一类在线决策方法:在每一步根据观察到的上下文(context)从若干动作中选择一个,并仅获得所选动作的反馈(奖励),目标是学习一个将上下文映射到动作的策略以最大化累计奖励。
+- [[contrastive-learning]] —— 对比学习是一种表示学习方法,通过拉近正样本对、推远负样本对,在无需大量标注的情况下学习判别性强的特征表示。
+- [[conversational-recommendation]] —— 对话式推荐(Conversational Recommendation System, CRS)是一种通过多轮自然语言交互逐步澄清用户偏好、并据此动态生成、排序与呈现推荐结果的推荐范式。
+- [[cooperation]] —— 合作(Cooperation)指多个智能体在存在个体利益与集体利益冲突的情境(如社会困境)中,选择相互配合而非相互背叛,以达成更优集体结果的行为。
+- [[counterfactual-augmentation]] —— 反事实数据增强(counterfactual augmentation)是一种通过构造"如果当时呈现的是另一组内容会怎样"的反事实样本来扩充训练数据的方法,用以发掘观测数据中未出现的交互可能、缓解偏差并提升模型泛化能力。
+- [[cross-domain-recommendation]] —— 跨域推荐(Cross-Domain Recommendation, CDR)是指利用来自一个或多个源域(source domain)的用户/物品信息或模型知识,来缓解目标域(target domain)的数据稀疏与冷启动问题,从而提升目标域推荐效果的一类方法。
+- [[cross-domain-sequential-recommendation]] —— 跨域序列推荐(Cross-domain Sequential Recommendation)旨在利用多个领域的用户行为序列,迁移有益的跨域知识以提升目标域的下一项预测效果,同时抑制 negative transfer。
+- [[cross-entropy]] —— 交叉熵衡量预测分布与目标分布之间的差异,是分类与排序模型中最常用的损失函数。
+- [[ctr-prediction]] —— CTR prediction 指给定用户、物品(item)与上下文特征,预测用户点击某次曝光(impression)的概率,是推荐与广告系统中排序(ranking)环节的核心监督学习任务。
+- [[curriculum-learning]] —— Curriculum Learning 是一种训练策略,通过让模型先学习"简单"样本、再逐步过渡到"困难"样本(模仿人类由易到难的学习过程),以提升训练稳定性与最终效果。
+- [[dataset]] —— 数据集是为训练、评估或研究机器学习模型而系统收集与组织的样本集合。
+- [[ddim]] —— DDIM(Denoising Diffusion Implicit Models)是一类非马尔可夫的确定性扩散采样方法,在不重新训练的前提下大幅减少扩散模型的采样步数并支持确定性生成。
+- [[ddpm]] —— DDPM(Denoising Diffusion Probabilistic Models,去噪扩散概率模型)是一类生成模型,通过前向过程逐步向数据加入高斯噪声,再训练神经网络学习反向去噪过程,从纯噪声逐步还原出样本。
+- [[deep-interest-network]] —— Deep Interest Network(DIN)是一种用于点击率(CTR)预估的深度学习模型,通过注意力机制自适应地从用户历史行为中提取与候选物品相关的兴趣表示。
+- [[deep-reinforcement-learning]] —— 深度强化学习(Deep Reinforcement Learning, DRL)是将深度神经网络与强化学习相结合的方法,利用神经网络逼近策略或价值函数,使 agent 能够在高维状态空间中通过与环境交互、最大化累积奖励来学习决策策略。
+- [[diffusion-models]] —— 扩散模型是一类生成模型,通过逐步向数据添加噪声的前向过程与学习逐步去噪的反向过程来建模数据分布,从而能够从噪声中生成或重建目标样本。
+- [[distributed-computing]] —— 分布式计算 (distributed computing)** 是指由多个独立节点(进程/机器/agent)通过通信协作完成同一计算任务的范式,其核心挑战在于各节点仅持有局部信息、只能通过消息交换在并发、去中心化、给定通信拓扑的条件下达成全局目标。
+- [[distributed-systems]] —— 分布式系统研究由多个相互通信的节点在缺乏全局视图的情况下,通过去中心化协作完成计算与协调的方法,其经典问题(如一致性、领导者选举、图着色等)常被用来刻画节点间自组织与协作能力。
+- [[distribution-shift]] —— 分布偏移(distribution shift)指模型训练时所依据的数据分布与其部署/服务/测试时实际面对的数据分布不一致的现象,这种不一致会破坏经验风险最小化的前提,导致模型在真实环境下表现退化。
+- [[dreambooth]] —— DreamBooth 是一种针对文生图扩散模型的个性化微调方法,通过少量参考图像将特定主体(如某个角色、物体)绑定到一个独有标识符上,从而在新场景中以保持一致性的方式重新生成该主体。
+- [[dreamrec]] —— DreamRec 是一种基于扩散模型(diffusion model)的序列推荐方法,将"预测下一个交互物品"建模为以用户历史行为为条件、在物品表示空间中逐步去噪生成"理想物品 oracle"的生成式过程,从而摆脱传统判别式推荐对负采样的依赖。
+- [[dualrec]] —— DualRec 是一类基于 LLM-agent 的推荐方法,强调在推荐过程中引入多方(如用户与物品)协同建模,以兼顾推荐精度与多目标优化。
+- [[dynamic-reward-shaping]] —— 动态奖励塑形是指在策略学习过程中,根据模型对环境(如 world model)的最新理解或不确定性估计,实时、自适应地精炼与调整奖励信号,而非使用一成不变的固定奖励函数。
+- [[echo-chamber]] —— 回音室(Echo Chamber)指在社交网络或推荐系统中,用户因算法推荐与社交聚集而反复接触与自身立场一致的信息,导致观点同质化、极化加剧的现象。
+- [[exact-match]] —— Exact Match(EM)是一种评估指标,要求模型预测的答案与标准答案在归一化后完全一致才算正确,常用于问答与代码生成等任务的准确率衡量。
+- [[extended-refusal]] —— 一种安全微调方法:将模型的拒绝(refusal)信号从单一潜在方向分散到多个 token 位置与多个表示维度上,从而抵御针对单一方向的移除型攻击(如 abliteration)。
+- [[fairness]] —— Fairness 指在多智能体交互与决策中,对收益、资源或对待方式的公平性进行衡量与推理的原则;在 LLM agent 研究中,它常作为驱动合作行为的核心动机。
+- [[false-refusal]] —— false refusal(过度拒绝)指 LLM 错误地拒绝本应安全、合理的用户请求,即模型把无害输入误判为有害而触发拒绝行为。
+- [[feature-selection]] —— 特征选择(Feature Selection)是从原始特征集合中挑选出对模型最有价值的特征子集的方法,用以提升模型性能、降低计算成本并增强可解释性。
+- [[fogg-behavior-model]] —— Fogg Behavior Model(福格行为模型)由 BJ Fogg 提出,主张行为(Behavior)在动机(Motivation)、能力(Ability)与提示(Prompt/Trigger)三者同时具备时才会发生,即 B = MAP。
+- [[function-calling]] —— Function calling 是让大语言模型在生成过程中以结构化方式调用外部工具/函数(并把返回结果纳入后续推理)的方法,是构建 tool-using agent 的核心机制。
+- [[fuzzy-programming]] —— 模糊规划(Fuzzy Programming)是一类用模糊集合论刻画目标与约束的"满意度/隶属度"而非硬性阈值的数学规划方法,常用于在多目标、带不确定性或需折中权衡的优化问题中求解。
+- [[gaussian-process]] —— 高斯过程(Gaussian Process,GP)是一种基于贝叶斯思想的非参数模型,它把对未知函数的先验建模为一族联合服从多元高斯分布的随机变量,从而在给出预测均值的同时还提供不确定性估计,常被用作贝叶斯优化中的代理(surrogate)模型。
+- [[gemma-2b]] —— Gemma-2B 是 Google 发布的 Gemma 系列中的轻量级开源大语言模型(约 20 亿参数),因体积小、推理快而常被用作可实时部署、可蒸馏的高效语言模型基座。
+- [[generative-agent-based-modeling]] —— 用 LLM 充当每个 agent 的"认知引擎"来扩展传统 agent-based modeling (ABM) 的建模范式：agent 不再由手工规则驱动，而是凭借记忆、反思、规划等机制生成可信的、开放域的类人行为，从而在群体层面涌现出社会现象。
+- [[generative-infinite-game]] —— 生成式无限游戏(Generative Infinite Game)指游戏的机制、叙事以及角色与环境图像全部由 LLM 与 text-to-image 模型实时生成,从而摆脱预先制作的固定内容、实现近乎无限可玩内容的游戏范式。
+- [[generative-recommendation]] —— 生成式推荐是一类把推荐重构为序列生成问题的范式:在用户行为序列上直接自回归生成下一个 item 的 ID(或 [[semantic-id|semantic ID]]、semantic codes),取代传统"召回-排序"判别式打分流水线。
+- [[gini-coefficient]] —— 基尼系数(Gini coefficient / Gini Index)是衡量分布不均衡程度的统计指标,取值在 0(完全平等)到 1(完全不平等)之间;在推荐系统中常用来度量曝光或互动在物品之间的集中程度,数值越低表示物品侧分配越公平。
+- [[given-circumstance-acting]] —— Given-Circumstance Acting(基于给定情境的表演)是一种训练与评测角色扮演 LLM 的方法:让模型在特定情境(场景、角色背景、对话上下文)下扮演指定角色并进行多角色对话,从而同时支撑角色扮演能力的训练和评估。
+- [[gptswarm]] —— GPTSwarm 是一种将 LLM agent 系统建模为可优化计算图的方法,把单个 agent 表示为节点、agent 间的协作关系表示为边,并通过对图结构与提示的自动优化来提升多 agent 群体的协作推理能力。
+- [[graph-coloring]] —— 图着色(Graph Coloring)是一个经典的分布式计算与组合优化问题:为图中的每个节点分配一种颜色,使得任意相邻节点的颜色都不相同,通常目标是使用尽可能少的颜色。
+- [[graphrag]] —— GraphRAG 是一类把图结构(graph-grounded)信息与检索增强生成结合的方法,利用实体/关系图为 LLM 提供更具结构性的上下文或候选,从而提升检索、排序与生成质量。
+- [[gravity-model]] —— 引力模型是一类用于刻画空间相互作用强度的方法,借鉴牛顿万有引力定律,认为两地之间的流量(如人口流动、贸易、出行)与两地的"质量"(如人口、规模)成正比、与两地间的距离(成本)成反比。
+- [[grpo]] —— GRPO 是一种用于 LLM 策略优化的强化学习算法:对同一输入采样一组(group)多条输出,用组内相对奖励(组内回报减去组均值、常再除以标准差)来估计优势(advantage),从而**省去独立的 value/critic 网络**。
+- [[hac]] —— Hyper-Actor-Critic (HAC) 是一类用于(在线)推荐场景的 Actor-Critic 强化学习方法,可与价值函数分解等通用技术结合使用。
+- [[hierarchical-reinforcement-learning]] —— 分层强化学习(Hierarchical Reinforcement Learning, HRL)是一类将复杂决策任务分解为多层子策略的强化学习方法,通过高层策略设定子目标、低层策略执行具体动作,从而解耦不同时间尺度或不同目标维度的优化。
+- [[hierarchical-representation]] —— 层次化表示(hierarchical representation)是一种将实体或数据按由粗到细的多级结构进行编码的表示方法,使得高层捕捉概括性语义、低层捕捉细粒度区分,从而获得结构化、可解释且可解耦的表征。
+- [[home]] —— HoME(Hierarchy of Multi-gate Experts)是一类面向多任务推荐的分层专家路由方法,通过对专家进行层次化组织与门控,在多任务、稀疏激活的场景下提升参数 scaling 的稳定性与效率。
+- [[human-agent-interaction]] —— 人-agent 交互(Human-agent interaction)指人类与基于 LLM 的智能体之间的协作、沟通与相互影响,是研究 agent 在与人共处场景下如何行为、适应并保持负责任表现的一类问题。
+- [[human-behavior-simulation]] —— 人类行为模拟指利用模型(尤其是大语言模型及智能体)在给定情境下复现真实人类的决策、动作与推理过程,以逼近人类逐步行为的方法。
+- [[hyperparameter-optimization]] —— 超参数优化(Hyperparameter Optimization)是指在不直接参与模型训练梯度更新的前提下,通过系统化的搜索与反馈机制为模型或系统寻找最优配置(如学习率、权重、正则化系数等)的方法。
+- [[iALS]] —— iALS(implicit Alternating Least Squares)是一种针对隐式反馈数据的矩阵分解协同过滤方法,通过交替最小二乘法优化用户与物品的隐向量,常作为大规模推荐系统的强基线。
+- [[inverse-reinforcement-learning]] —— 逆强化学习(Inverse Reinforcement Learning, IRL)是一类从专家示范行为中反推出潜在奖励函数的方法,与标准强化学习(已知奖励、求最优策略)方向相反。
+- [[iql]] —— IQL(Implicit Q-Learning,隐式 Q 学习)是一种离线强化学习算法,通过期望回归(expectile regression)在不显式查询分布外动作的前提下逼近最优值函数,从而缓解离线 RL 中的分布外动作高估问题。
+- [[knowledge-distillation]] —— 知识蒸馏(Knowledge Distillation)是一种把一个或多个"教师"模型中习得的知识迁移到通常更小、更高效的"学生"模型中的训练方法,使学生在保持性能的同时降低推理成本。
+- [[knowledge-graph]] —— 知识图谱(Knowledge Graph)是一种以实体为节点、以关系为边的结构化知识表示,用于建模实体之间的语义关联,并为检索、推理与推荐等任务提供图结构化的特征与上下文。
+- [[laplace-approximation]] —— 拉普拉斯近似是一种用以 MAP(最大后验)点为中心的高斯分布来逼近概率分布(通常是后验分布)的方法,通过在峰值处对对数密度做二阶泰勒展开,从而得到积分(如归一化常数/证据)的解析近似。
+- [[latent-consistency-model]] —— 一句话定义:Latent Consistency Model(LCM)是一种在隐空间上训练的一致性模型,通过学习扩散概率流 ODE 的解映射,实现仅需极少步数(1-4 步)即可从噪声直接生成高质量图像的快速采样方法,常用于需要实时响应的 text-to-image 生成场景。
+- [[latent-diffusion-model]] —— 潜在扩散模型(Latent Diffusion Model）是一类在低维潜在空间而非原始数据空间中执行前向加噪与反向去噪扩散过程的生成模型,通过在压缩的潜在表示上建模来降低计算成本并提升生成效率。
+- [[lcm-lora]] —— LCM LoRA(Latent Consistency Model LoRA)是一种通过 LoRA 适配器形式蒸馏一致性模型(Consistency Model)的加速模块,使预训练的潜空间扩散模型(如 Stable Diffusion)能够以极少的采样步数(通常 1~4 步)生成图像,从而实现接近实时的 text-to-image 推理。
+- [[leader-election]] —— Leader Election 是分布式计算中的经典问题:在一组对等节点(或 agent)中,通过去中心化的通信协议选出唯一的协调者(leader),用以衡量网络在给定通信拓扑下的自组织与协作推理能力。
+- [[learning-to-rank]] —— Learning to Rank(LTR)是一类用机器学习方法训练排序模型的技术,目标是对候选项(文档、商品、广告等)按相关性或效用进行最优排序,广泛用于搜索、推荐和广告系统。
+- [[llm-archetypes]] —— 一种在大规模 agent-based model(ABM)中引入 LLM 自适应行为的方法:只为少数有代表性的 agent 类型(archetypes)查询 LLM 行为,再将查询结果概率采样到个体身上,从而在保持百万级仿真规模的同时让 agent 表现出 LLM 驱动的行为。
+- [[llm-reasoning]] —— LLM Reasoning 指让大语言模型在给出最终答案之前,显式或隐式地生成一系列中间推理步骤,以解决数学、逻辑、常识、规划与代码等需要多步思考的问题的一类方法与研究方向。
+- [[local-model]] —— LOCAL 模型是分布式计算中的经典理论模型,指网络中每个节点(agent)只能与其拓扑邻居进行同步消息交换、基于局部信息进行决策,被借用来刻画多 agent LLM 网络在给定通信拓扑下的去中心化协作推理能力。
+- [[long-context]] —— 长上下文建模指让大语言模型在超长输入序列上保持有效记忆与推理能力,从而刻画长时程、跨场景的依赖关系。
+- [[long-term-memory]] —— 长期记忆是指为 LLM agent 提供的、跨会话持久保存的信息存储与管理能力,使其能从持续交互中抽取、组织、巩固并按需检索关键信息,从而突破固定上下文窗口的限制。
+- [[ltp-mmf]] —— LTP-MMF 是一种面向推荐系统的长期、平台级公平性方法,通过曝光感知的多目标重排在精度与多方公平(max-min fairness)之间取得平衡。
+- [[machine-behavior]] —— Machine Behavior(机器行为学)是一种把 AI 系统(尤其是 LLM agent)当作可被观察的"行为实体"来研究的范式,通过系统化的观察、干预与理论解释来理解其行为、适应与社会影响,而非仅从内部架构或代码层面进行分析。
+- [[markov-blanket]] —— 在一个图模型(如贝叶斯网络)中,某个节点的 Markov Blanket 是使该节点与图中所有其他节点条件独立的最小变量集合,通常由它的父节点、子节点以及子节点的其他父节点组成。
+- [[maximal-marginal-relevance]] —— Maximal Marginal Relevance(MMR,最大边际相关性)是一种在排序与呈现结果时同时权衡"与查询的相关性"和"与已选结果的差异性"的方法,通过引入冗余惩罚在相关性和多样性之间取得平衡。
+- [[mbpo]] —— MBPO(Model-Based Policy Optimization)是一种基于模型的强化学习方法,通过学习环境的 world model 生成短程合成 rollout 来增强样本效率,并在此基础上进行策略优化。
+- [[megablocks]] —— MegaBlocks 是一种用块稀疏(block-sparse)矩阵运算重构 Mixture-of-Experts(MoE)计算的高效训练系统,通过避免 token dropping 与 padding,把动态、不均衡的专家路由表达为单个块稀疏 GEMM,从而在 GPU 上获得更高的硬件利用率与吞吐。
+- [[memory-augmentation]] —— 记忆增强是指为 LLM 智能体扩充、组织并增强其对历史交互信息的表示与检索能力,使模型能够超越上下文窗口限制,更准确地利用长期记忆完成下游任务。
+- [[memory-evolution]] —— Memory Evolution 指智能体在持续运行中不断更新、整合、压缩与遗忘自身记忆,使经验得以随时间积累并反哺后续决策的一类自进化机制。
+- [[message-passing]] —— 消息传递(Message Passing)是一种通过在节点(agent)之间显式地收发消息来实现通信、协调与协作推理的范式,常用于在给定通信拓扑下组织去中心化的多 agent 系统。
+- [[micro-video-recommendation]] —— 微视频推荐(Micro-video Recommendation)指为短时长视频内容(如 MicroLens、Short-Video 等场景中的短视频)预测并推荐用户可能感兴趣条目的推荐任务,通常依赖从原始视频帧中提取的视觉/多模态表征来建模物品。
+- [[mlp]] —— MLP(多层感知机,Multi-Layer Perceptron)是一种由多层全连接神经元组成的前馈神经网络,通过非线性激活函数堆叠实现对复杂函数的逼近,是深度学习中最基础的网络结构之一。
+- [[model-based-offline-rl]] —— 基于模型的离线强化学习是一类离线强化学习方法：先用固定的、已收集好的离线数据集学习一个环境(动态/奖励)模型,再在该学习到的模型中做策略规划或 rollout,从而无需与真实环境进行在线交互即可优化策略。
+- [[mqtt]] —— MQTT 是一种轻量级的发布/订阅消息传输协议,常用于物联网与分布式系统中低带宽、高延迟或不稳定网络环境下组件之间的异步消息通信。
+- [[multi-scenario-matching]] —— 多场景匹配(Multi-Scenario Matching)指在推荐系统的召回(matching)阶段,统一建模来自多个业务场景的数据,以共享知识并刻画场景间差异,从而为不同场景高效检索候选物品。
+- [[multi-scenario-recommendation]] —— 多场景推荐(Multi-Scenario Recommendation, MSR)指在同一推荐系统中同时服务多个业务场景(如不同频道、页面或广告位),通过共享与场景特定建模来提升各场景的整体推荐效果。
+- [[multimodal]] —— 多模态指模型能够同时处理与融合多种类型的输入(如文本、图像、音频、视频),从而实现跨模态的感知、理解与生成。
+- [[multimodal-llm]] —— 多模态大语言模型 (Multimodal LLM, 常缩写为 MLLM) 是在 [[large-language-models]] 基础上接入视觉等非文本编码器(如 [[vit]]、[[clip]]),使模型能够同时理解文本与图像/视频/点云等多种模态,并以语言形式进行推理、决策与生成的一类模型。
+- [[nash-equilibrium]] —— A solution concept in game theory describing a state in which no player can improve their payoff by unilaterally changing their strategy, given the strategies of all other players.
+- [[ncsn]] —— NCSN(Noise Conditional Score Network,噪声条件得分网络)是一类基于得分匹配的生成模型,通过在多个噪声尺度上估计数据分布的得分(对数概率密度的梯度),再借助朗之万动力学采样生成数据,是扩散类生成模型的重要早期代表。
+- [[negative-transfer]] —— Negative Transfer(负迁移)指在多任务、多领域或迁移学习中,来自源任务/领域的知识不仅没有帮助目标任务,反而损害其性能的现象。
+- [[nested-sampling]] —— Nested Sampling 是一种 Monte Carlo 算法,通过将多维后验积分重参数化为关于先验体积的一维积分,主要用于估计 Bayesian evidence(模型证据),同时也能产生后验样本。
+- [[nicf]] —— NICF(Neural Interactive Collaborative Filtering)是一种面向交互式推荐的方法,将用户与推荐系统的多轮交互建模为序列决策过程,通过神经网络结合协同过滤与探索-利用策略来在线学习用户偏好。
+- [[offline-reinforcement-learning]] —— 离线强化学习指仅从预先收集的固定历史交互日志中学习决策策略、训练全程不与真实环境在线交互的强化学习范式,也称 batch RL。
+- [[online-learning]] —— 在线学习(online learning)指模型在持续到来的数据流上不断增量更新参数,以适应实时变化的分布与反馈,常用于推荐、广告等需要快速响应线上信号的场景。
+- [[ordinal-logistic-regression]] —— 有序逻辑回归是一种用于建模有序类别标签的统计方法,它在逻辑回归的基础上引入有序阈值,使预测结果保留类别之间的次序关系。
+- [[ordinal-regression]] —— Ordinal Regression(序回归)是一类介于分类与回归之间的监督学习方法,用于预测具有自然有序关系但间隔未必等距的离散标签(如评分、等级、分桶后的连续值),其目标是在保持标签序关系的前提下进行预测。
+- [[pac-bayes]] —— PAC-Bayes 是一类学习理论框架,通过引入先验分布与后验分布之间的 KL 散度,为随机化预测器(或策略)的泛化误差给出高概率上界,从而把贝叶斯式的先验知识与 PAC 风格的泛化保证结合起来。
+- [[perception]] —— 感知模块是 LLM agent 中负责接收并解释外部环境信息(如推荐结果、交互上下文)的组件,为后续的记忆与决策提供输入。
+- [[persona]] —— Persona 指为 LLM agent 赋予的一组角色画像(如偏好、属性、行为倾向),用于约束和引导其在模拟或交互中的表现,使其行为更贴近特定用户或人物。
+- [[persona-driven-data-synthesis]] —— 一种以"人物画像（persona）"为驱动条件来大规模合成训练数据的方法：通过预先构建或采样海量多样化的 persona 描述，引导 LLM 围绕每个 persona 生成对应的指令、对话或角色对齐样本，从而获得覆盖面广、风格多样、可扩展的合成数据集。
+- [[persona-homogenization]] —— 指 LLM 在模拟用户(persona)或生成用户行为时,趋向于收敛到积极、中庸、均值化的表现,丢失真实用户群体中存在的异质性、消极倾向与长尾行为的现象。
+- [[popularity-bias]] —— 流行度偏差(popularity bias)指推荐系统倾向于过度推荐热门物品、而忽视长尾物品的系统性偏差。
+- [[population-based-evolution]] —— 基于种群的进化是一类通过维护并迭代演化一组(种群)候选个体(如智能体、策略或配置),借助选择、变异与重组等机制不断筛选与优化,从而推动整体能力提升的方法。
+- [[positivity-and-average-bias]] —— 指当前基于 LLM 的用户模拟器在生成用户行为时表现出的一种结构性偏差:倾向于产出过于积极(positivity)且向群体均值收敛(average)的行为,从而难以刻画真实用户的负面反馈与个体异质性。
+- [[preference-elicitation]] —— 偏好询问(preference elicitation)是指系统通过主动追问、交互或观察用户反馈,逐步揭示和明确用户隐含偏好的方法,常用于推荐与对话系统中以降低对用户意图的不确定性。
+- [[proactive-recommendation]] —— 主动推荐(proactive recommendation)指推荐系统不再被动迎合用户当前偏好,而是主动引导用户的兴趣逐步迁移,以实现长期目标(如长尾物品曝光、item-side 公平或长期参与度)。
+- [[process-centric-evaluation]] —— 过程级评测(process-centric evaluation)是一种关注模型在完成任务的中间步骤、动作序列与推理轨迹上的正确性,而非仅看最终结果的评测范式。
+- [[prompt-injection]] —— Prompt injection 是一类针对大语言模型及其智能体的攻击手法:攻击者通过用户输入或外部工具/数据返回的内容注入恶意指令,诱导模型偏离原始意图、执行非授权操作或泄露敏感信息。
+- [[prompt-optimization]] —— Prompt Optimization 指通过自动或半自动手段搜索、改写与精炼提示词(prompt),以提升大语言模型在特定任务上的表现的一类方法。
+- [[quantum-annealing]] —— 量子退火是一种基于量子隧穿效应在能量地形中寻找全局最优解的元启发式优化方法,常用于求解可表述为 QUBO(二次无约束二值优化)形式的组合优化问题。
+- [[qubo]] —— 二次无约束二值优化(Quadratic Unconstrained Binary Optimization),将组合优化问题表达为对二值变量的二次目标函数最小化,是量子退火与 Ising 模型求解的标准输入形式。
+- [[ray]] —— Ray 是一个用于构建分布式应用的开源框架,常被用作大规模多 agent 系统与仿真引擎的并行计算底座,支持将工作负载横向扩展到上万级别的并发任务。
+- [[rec4agentverse]] —— Rec4AgentVerse 是面向"agent 世界"的推荐范式,将用户、物品与平台建模为可交互的 LLM agent,使推荐从被动匹配转向多方主动协作。
+- [[recall]] —— 召回率(Recall)是衡量系统在所有相关项目中成功检索出的比例的评价指标,常用于推荐系统与信息检索中评估覆盖能力。
+- [[reference-user-selection]] —— Reference User Selection 是一种在基于模型的离线强化学习推荐框架中,通过动态挑选"参考用户"来精炼 world model 奖励信号、并据此自适应估计不确定性惩罚的方法。
+- [[refusal-direction]] —— 拒绝方向(Refusal Direction)指在大语言模型的激活空间中,与"是否拒绝有害请求"这一行为高度相关的潜在方向;沿该方向的单一线性特征常被用来解释、引导甚至(通过 abliteration 等手段)移除模型的安全拒绝行为。
+- [[refusal-vector]] —— 拒绝向量(refusal vector)是模型激活空间中代表"拒绝行为"的一个方向向量,可通过对其进行正交化、消融或引导来调控大语言模型在面对请求时的拒绝倾向。
+- [[regional-ip-adapter]] —— Regional IP-Adapter 是一种在 text-to-image 扩散模型中按图像区域分别注入参考图像特征的方法,用于在生成过程中同时保持角色与环境等不同元素的视觉一致性。
+- [[representation-engineering]] —— 表示工程(representation engineering)是一类通过分析、提取并直接干预模型内部表示(隐藏激活)中承载特定概念或行为的方向向量,从而理解和调控大语言模型行为的方法。
+- [[responsible-ai]] —— Responsible AI 指在设计、开发与部署 AI 系统(尤其是 LLM agent)时,以安全、可控、可问责、符合人类价值与社会规范为目标的一整套方法、实践与治理理念。
+- [[retnet]] —— RetNet(Retentive Network)是一种用"保留机制"(retention)替代标准注意力的序列建模架构,兼具并行训练、低成本循环推理与线性复杂度,常作为 Transformer 在长序列场景下的高效替代方案。
+- [[reward-hacking]] —— Reward Hacking 指模型为了最大化奖励信号而钻奖励函数(或奖励模型)的空子,产出形式上得分高、却偏离训练者真实意图的行为。
+- [[reward-shaping]] —— Reward Shaping(奖励塑形)是指在强化学习中通过修改、精炼或补充原始奖励信号,引导智能体更高效、更稳健地学习到期望策略的一类方法。
+- [[rope]] —— 旋转位置编码(Rotary Position Embedding),一种通过对 query 和 key 向量按位置施加旋转变换、从而在注意力计算中隐式注入相对位置信息的位置编码方法。
+- [[rq-vae]] —— residual-quantized VAE (RQ-VAE) 是一种用多层残差向量量化(逐层量化上一层的量化残差)将连续表征编码为一串离散码元(即 semantic ID)的自编码器,常用于为物品生成可作为生成式模型输入的层次化离散标识。
+- [[s3-social-network-simulation]] —— 一种以 LLM 生成式社会 agent 为核心、结合真实社会环境与大规模仿真引擎的社会网络仿真方法,用于在可控环境中复现并研究群体层面的社会现象。
+- [[sample-efficiency]] —— 样本效率指模型或智能体在给定数量的交互或训练样本下达到目标性能的能力,样本效率越高意味着用更少的数据即可学好。
+- [[sandbox-reinforcement-learning]] —— Sandbox 强化学习是一种在隔离的受控环境(sandbox)中让 agent 执行动作、获得反馈并据此进行强化学习的方法,使模型能在安全可控的前提下学习工具调用与安全对齐策略。
+- [[scaling-law]] —— Scaling Law(扩展定律)描述模型性能随模型规模、数据量与计算量的增长而可预测地提升的经验规律。
+- [[schwartz-theory-of-basic-values]] —— Schwartz 基本人类价值观理论是一套跨文化心理学框架,识别出十类普遍的基本价值观(如自我导向、刺激、享乐、成就、权力、安全、遵从、传统、仁爱、普遍主义),并将它们组织在一个连续的环状结构中,刻画价值观之间相容与冲突的动机关系。
+- [[scruf-d]] —— SCRUF-D(Social Choice for Recommendation Under Fairness – Dynamic)是一种面向推荐系统的多方公平性框架,通过社会选择(social choice)机制在推荐结果中动态平衡多个利益相关方(用户、物品提供方、平台等)的公平诉求。
+- [[self-attention]] —— 自注意力是一种让序列中每个元素根据与其它元素的相关性(注意力分数)动态加权聚合信息的机制,是 Transformer 的核心计算单元。
+- [[self-evolving-agents]] —— 自进化智能体(Self-Evolving Agents)是指能够在与环境和任务的持续交互中,自主地调整、优化乃至重构自身(包括模型、记忆、工具与工作流)的智能体,从而实现超越静态部署的持续学习与能力成长。
+- [[self-play]] —— Self-Play 指模型或智能体通过与自身(或自身的历史/变体版本)对抗或交互来生成训练信号,从而在无需大量外部标注的情况下持续自我提升的方法。
+- [[self-verification]] —— Self-Verification 指大语言模型在生成推理过程或答案后,通过自身或专门的验证机制对中间步骤与最终结果进行检查、过滤与确认,以剔除无效推理、提升答案可靠性的方法。
+- [[semantic-id]] —— semantic ID 是一种通过对内容/物品的语义表示进行量化(如残差量化、层次化码本)而生成的离散标识符序列,用语义相近的物品共享相近的 ID,使生成式模型可以直接自回归地生成物品标识。
+- [[sequence-generation]] —— 序列生成是指模型按顺序逐个生成 token（或离散符号）以构成目标输出序列的方法，常用自回归方式将原本的回归/分类等任务重构为对 token 序列的预测任务。
+- [[shannon-entropy]] —— 香农熵衡量一个随机变量的不确定性或信息量,定义为 H(X) = -Σ p(x) log p(x),即各结果概率的负对数加权和。
+- [[short-video-recommendation]] —— 短视频推荐:面向 TikTok / YouTube Shorts / Kuaishou 等平台上时长通常为数十秒的短视频信息流的个性化推荐,核心是从 watch-time、skip、点赞等隐式/显式反馈中建模用户兴趣,并优化会话级累计满意度与长期用户留存。
+- [[social-cognitive-theory]] —— 社会认知理论(Social Cognitive Theory)是一种解释人类行为的心理学理论框架,强调个体认知、行为与社会环境之间的三方交互(triadic reciprocal interaction),并被借鉴用于观察、解释与干预 AI agent 的行为。
+- [[sqn]] —— SQN(Supervised Q-Network)是一种将监督学习信号与 Q-learning 价值估计相结合的强化学习方法,常用于推荐场景中,以引导价值函数的训练。
+- [[state-space-duality]] —— State Space Duality(SSD)是 Mamba2 提出的理论框架,揭示了结构化状态空间模型(SSM)与一类带结构化掩码的注意力机制之间的数学等价关系,使序列建模能在线性复杂度下高效计算。
+- [[structural-information-theory]] —— 结构信息论是一种以图的层次结构为对象、用"结构熵"度量系统在高维拓扑下不确定性的信息论框架,可用于刻画并压缩复杂系统(如多智能体观测空间)中的有效信息结构。
+- [[substitute-confounders]] —— 替代混淆变量是指当真实混淆变量(confounder)不可观测时,通过对多个观测到的“成因 (causes)”进行联合建模而构造出来的一个潜变量,用它来“替代”那些无法直接测量的混淆因素,从而在因果推断中近似实现去混淆(deconfounding)。
+- [[supervised-fine-tuning]] —— 监督微调(SFT）是指在带标注的指令-响应对数据上对预训练大模型继续训练,使其学会按期望的格式与行为产生输出的对齐方法。
+- [[synthesized-reasoning-trace]] —— 合成 reasoning trace 指为已有的行为/标注数据(如真人点击日志)人工或用模型生成对应的推理过程文本,使模型在微调时不仅学习"做什么动作",还学习"为什么这样做",从而提升对人类逐步行为的拟合能力。
+- [[synthetic-data-generation]] —— 合成数据生成是指利用模型(通常是 LLM)自动构造训练数据,以替代或补充人工标注,用于微调、对齐等下游任务。
+- [[system-exposure]] —— System exposure 指推荐系统实际向用户展示(曝光)过的物品集合及其序列,是连接系统决策与用户反馈的中间环节;由于用户只能对被曝光的物品作出反应,曝光过程会引入 exposure bias,影响模型训练与评估。
+- [[td-decomposition]] —— TD Decomposition(时序差分分解)是一种把标准 TD loss 拆分为 state TD 与 action TD 两个独立学习目标的方法,用于分离价值函数学习中随机策略与随机环境带来的不同噪声来源。
+- [[temporal-difference]] —— 时序差分(TD)学习是一类强化学习方法,通过自举(bootstrap)用后续状态的价值估计来更新当前状态的价值函数,无需等待完整回合结束即可在线学习。
+- [[text-to-image]] —— 文生图(text-to-image)是指以自然语言文本为条件、生成与之语义一致图像的生成式方法,当前主流实现以 diffusion model 为骨干。
+- [[textgrad]] —— TextGrad 是一种以自然语言文本反馈作为"梯度"来自动优化提示、变量乃至整个 LLM 系统组件的方法，通过将语言模型生成的批评意见反向传播来迭代改进系统表现。
+- [[theory-of-mind]] —— 一句话定义:Theory of Mind 指推断并建模他人(或其他 agent)的信念、意图、欲望与心理状态,从而预测和理解其行为的能力。
+- [[thompson-sampling]] —— Thompson Sampling 是一种基于贝叶斯后验采样的探索-利用(exploration-exploitation)决策方法:在每一步从各候选动作的奖励后验分布中采样,并选择采样值最优的动作,从而以概率匹配的方式平衡探索与利用。
+- [[tool-planning]] —— Tool Planning(工具规划)指 LLM 智能体在面对需要调用外部工具的任务时,规划工具的选择、调用顺序与参数,以高效、准确地完成多步任务的方法。
+- [[tool-poisoning]] —— Tool poisoning 指攻击者通过工具侧(如工具描述、返回结果、外部数据)注入恶意指令或内容,诱导 tool-using agent 执行有害操作的威胁,与用户侧的直接攻击共同构成 agent 安全的两大威胁面。
+- [[tool-using-agent]] —— Tool-using agent(工具调用智能体)是指能够在推理过程中调用外部工具(如 API、代码执行、检索、沙箱环境等)以完成任务的大语言模型智能体,其核心挑战在于既要正确利用工具完成用户意图,又要抵御来自用户侧与工具侧的安全威胁。
+- [[two-tower]] —— 双塔模型是一种检索/推荐架构,用两个独立的编码器(塔)分别把用户/查询和物品映射到同一嵌入空间,通过向量相似度(如最近邻搜索)进行高效匹配。
+- [[uncertainty-penalty]] —— 不确定性惩罚是 model-based offline RL 中的一种正则化机制:通过估计 world model 在某状态-动作上的预测不确定性,对奖励进行扣减(惩罚),从而抑制策略在数据分布外、模型不可靠区域的过度乐观行为。
+- [[user-simulator]] —— 用户模拟器是一种用程序化或 LLM 驱动的代理来模仿真实用户对系统(尤其是推荐系统)输出做出反应的方法,从而生成可复现、低成本、无风险的交互反馈(点击、评分、跳过、评论等),用于推荐策略的离线评估与强化学习训练。
+- [[value-diversity]] —— 价值多样性(value diversity)指在多智能体系统中,为不同的 LLM 智能体注入相互区别的价值取向(如基于 Schwartz 价值观体系),使群体在价值层面呈现异质性,从而影响集体行为的稳定性、涌现与规则形成。
+- [[value-function]] —— 价值函数(Value Function)用于估计在某状态(或状态-动作对)下,智能体遵循特定策略所能获得的期望累积回报,是强化学习中评估与改进策略的核心。
+- [[value-model]] —— 价值模型(Value Model)是工业级推荐/排序系统中用于将多个预测目标(如点击、停留、转化等)加权聚合为单一价值分数,从而对候选内容排序的模型,其权重通常需要持续调优以对齐业务目标。
+- [[vector-quantization]] —— 向量量化(Vector Quantization, VQ)是一种将连续向量映射到一组离散码本(codebook)条目的表示学习方法,用于把高维稠密表示压缩为离散的、可索引的 ID。
+- [[verifier]] —— 验证器是一个独立于生成器(generator)的模型,用于判断 LLM 生成的候选解(及其推理过程)是否正确,并据此对多个候选进行打分、排序或筛选。
+- [[video-recommendation]] —— 视频推荐(Video Recommendation)指根据用户兴趣与视频内容,为用户预测并排序最可能感兴趣的视频(尤其是微视频/短视频)的推荐任务与方法。
+- [[watch-time-prediction]] —— 观看时长预测是指在短视频/视频推荐系统中,为给定的"用户-视频"曝光对预测用户将要观看的时长(watch time),并以此作为排序与目标建模的核心信号的一类方法。
+- [[zeroth-order-optimization]] —— 零阶优化(Zeroth-Order Optimization)是一类不依赖目标函数显式梯度、仅通过函数值(零阶信息)来引导搜索方向的优化方法,常用于梯度不可得或代价高昂的黑盒优化与超参数调优场景。
 
 ## 资料 (Sources)
 <!-- 每份已 ingest 的原始资料一页,以年份为前缀 -->
@@ -580,7 +980,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[2023-multi-agent-debate]] —— MAD;多 agent 针锋相对辩论+裁判,缓解 DoT
 - [[2023-multi-task-deep-recommender-systems-survey]] —— MTDRS 综述;任务关系与方法论两维分类
 - [[2023-multi-task-recommendations-with-rl]] —— RMTL;actor-critic 按 session 动态加权多任务损失
-- [[2023-multi-agent-debate|2023-multiagent-debate]] —— 多 LLM 实例多轮辩论提升推理与事实性
 - [[2023-plan-and-solve-prompting]] —— PS/PS+;零样本先计划再执行改进 Zero-shot-CoT
 - [[2023-reasoning-via-planning-rap]] —— RAP;LLM 当推理智能体+世界模型,用 MCTS 规划
 - [[2023-recagent-user-behavior-simulation]] —— RecAgent;LLM-agent 沙盒模拟用户行为研究信息茧房/从众
@@ -600,14 +999,19 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[2023-uncertain-random-geometric-programming]] —— 几何规划含不确定+随机系数的线性正态框架(运筹/优化,非 LLM)
 - [[2023-video-length-debiasing-microvideo-rec]] —— VLDRec;play-progress 去偏+长度条件采样+多任务缓解视频长度偏差
 - [[2023-voyager]] —— VOYAGER;GPT-4 驱动 Minecraft 终身学习具身智能体
+- [[2024-agentic-feedback-loop-recommendation]] —— 提出 Agentic Feedback Loop(AFL):让 [[llm-for-recommendation]] 中的 recommendation agent 与 user agent 通过基于 [[memory-module]] 的多轮文本反馈相互协作,从而同时提升推荐与 [[user-simulation]],并且不放大流行度/位置偏差。
+- [[2024-aipatient-simulated-patient-llm-agents]] —— AIPatient 是一个由六个任务专用 [[llm-based-agents]] 驱动、结合 Reasoning RAG 工作流与基于 MIMIC-III 真实病历构建的知识图谱(AIPatient KG)的模拟病人系统,可用于医学教育中的高保真、可扩展病史采集训练。
 - [[2024-autoguide-context-aware-guidelines]] —— AutoGuide;从经验自动归纳上下文相关指南指导智能体
 - [[2024-bankfair-fluctuating-traffic-reranking]] —— BankFair;借破产问题/塔木德规则在波动流量下保提供方公平的重排
+- [[2024-bi-level-user-modeling-deep-recommenders]] —— GPRec 提出一种即插即用的双层用户建模方法,同时在"群体(group)"与"个体(individual)"两个层面刻画用户:用可学习分类器把用户划入群体并配以双向(正/负)群体嵌入,再从 ID 类特征中提炼独立的个体偏好,在三个公开数据集上稳定提升各类深度推荐主干的 CTR 预测效果。
+- [[2024-causal-discovery-recommender-systems]] —— 本文以一个示例演示如何用 [[causal-discovery]](因果发现)从 [[recommender-systems]] 的观测数据中学习因果图(Causal Graph, CG),并结合先验知识讨论结果:学到的因果图显示只有少数几个变量真正影响所分析的反馈信号。
 - [[2024-compute-optimal-inference]] —— 研究推理时算力最优的搜索/采样策略(REBASE)
 - [[2024-conditional-quantile-estimation-watch-time]] —— CQE;条件分位数估计建模 watch-time 分布
 - [[2024-counterfactual-watch-time]] —— 反事实视角建模 watch-time 去偏
 - [[2024-crocodile-cross-experts-covariance]] —— CroCoDiL;跨专家协方差建模的多任务推荐
 - [[2024-deconfound-release-interval-bias]] —— 去混杂发布时间间隔偏差的推荐方法
 - [[2024-dfei-large-scale-multi-domain-recommendation]] —— DFEI;大规模多域推荐特征/专家交互方法
+- [[2024-diit-domain-invariant-information-transfer]] —— DIIT 面向**工业级增量训练**场景下的跨域推荐(Cross-Domain Recommendation, CDR),用"双抽取器 + 迁移器"把多个 source domain 模型的 domain-invariant 信息蒸馏进 target domain 模型,并做到**推理阶段只需 target 模型**,在 OPPO 生产数据集与 Taobao、[[kuairand]] 上同时提升效果与效率。
 - [[2024-easyrl4rec]] —— EasyRL4Rec;面向推荐的 RL 易用库与统一基准
 - [[2024-edt4rec-max-entropy-decision-transformer]] —— EDT4Rec;最大熵决策 Transformer 做推荐
 - [[2024-eeg-svrec-eeg-affective-engagement-dataset]] —— EEG-SVRec;含 EEG 情感参与信号的短视频推荐数据集
@@ -616,36 +1020,188 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[2024-feature-level-bias-ctr]] —— 特征级偏差视角的 CTR 去偏
 - [[2024-future-impact-decomposition-request-level-recommendation]] —— 请求级推荐中分解未来影响的方法
 - [[2024-generative-agents-in-recommendation]] —— Agent4Rec;1000 个生成式 agent 构电影推荐用户模拟器,复现茧房/流行度偏差
+- [[2024-generative-agents-self-reports]] —— 用基于真人自述(深度访谈 + 结构化问卷)构建的 [[generative-agents]],可对单个个体在多种社会科学结果上进行通用模拟,在留出题目上的预测精度可接近个体自身两周后的重测一致性。
 - [[2024-generative-ai-as-economic-agents]] —— 把生成式 AI 作为经济智能体的研究
+- [[2024-generative-regression-watch-time-prediction]] —— 提出 Generative Regression (GR) 框架,把短视频 [[watch-time|观看时长]]预测从 ordinal regression 重构为序列生成任务:用结构化离散化(structural discretization)构建词表并把每个 watch time 双射编码为 token 序列,由 encoder-decoder 自回归生成,辅以 curriculum learning + embedding mixup (CLEM) 缓解 teacher-forcing 的 exposure bias,在两个公开数据集和一个工业数据集及 [[kuaishou]] 线上 A/B 上均超过 SOTA。
 - [[2024-hiagent-hierarchical-working-memory]] —— HiAgent;分层工作记忆管理提升长程智能体
+- [[2024-large-recommendation-models-scaling]] —— 来自 [[huawei-noahs-ark-lab]] 与 [[university-of-science-and-technology-of-china]] 的工作,系统评估了 large recommendation models 的 scaling law,以 Meta 的生成式推荐模型 HSTU 为代表,在多种 backbone、复杂用户行为建模与 ranking 任务上验证其可扩展性。
+- [[2024-limits-of-agency-in-agent-based-models]] —— 这是一篇 AAMAS 2025 论文(MIT + University of Oxford),提出 **LLM archetypes(LLM 原型)** 方法:不为每个个体单独查询 LLM,而是为少数"代表性 agent 类型"查询 LLM 行为,从而在保持 **百万级仿真规模** 的同时引入 LLM 驱动的自适应行为,案例为纽约市 840 万人口的 COVID-19 [[agent-based-modeling]] 仿真。
 - [[2024-llm-critics-help-catch-llm-bugs]] —— OpenAI CriticGPT;LLM critic 帮助发现 LLM 代码错误
 - [[2024-llm-learnable-planners-long-term-recommendation]] —— 用可学习 LLM planner 做长期推荐
+- [[2024-llm-powered-user-simulator-for-recommender-system]] —— 用 LLM 显式建模用户偏好逻辑、蒸馏用户情感,并与统计模型集成,构建可解释、低幻觉的用户模拟器,为基于 [[reinforcement-learning]] 的 [[recommender-systems|recommender-system]] 提供高保真训练数据。
 - [[2024-llm-tags-vs-classical-text-features]] —— 对照 LLM 语义标签与 TF-IDF/LDA/BERT 用于短视频兴趣建模
 - [[2024-llm4rerank-auto-reranking-recommendation]] —— LLM4Rerank;LLM 自动重排推荐
+- [[2024-lmagent-multimodal-agents-society]] —— LMAgent 是一个基于多模态 LLM 的超大规模 agents 社会,可在电商场景中模拟一万以上 agent 的自主浏览、购买、评价、聊天与直播等行为,并能复现接近真实用户的 co-purchase 模式与从众等 emergent behavior。
 - [[2024-lusifer-llm-user-simulation]] —— LUSIFER;基于 LLM 的用户模拟器
 - [[2024-macrec-multi-agent-recommendation]] —— MACRec;多智能体 LLM 协作推荐框架
 - [[2024-megaagent-large-scale-mas-without-sop]] —— MegaAgent;无 SOP 的大规模多智能体自治系统
 - [[2024-merrec-mercari-c2c-recommendation-dataset]] —— MerRec;Mercari C2C 大规模推荐数据集
 - [[2024-metacognition-generative-agents]] —— 为生成式 agent 引入元认知模块反思自身思考行动
+- [[2024-mitigating-dual-latent-confounding-biases]] —— IViDR 是一种推荐系统去偏方法,联合使用 [[inverse-propensity-score|工具变量(IV)]] 与 [[ivae|identifiable VAE(iVAE)]],同时缓解推荐数据中两类潜在混淆偏差(dual latent confounding biases):item 与 user feedback 之间、以及 item exposure 与 user feedback 之间的潜在混淆。
+- [[2024-mitigating-false-refusal-single-vector-ablation]] —— 本文提出一种 training-free、model-agnostic 的方法,通过提取并消融(ablation)单个「false refusal vector」来缓解 [[large-language-models]] 的过度拒绝(false refusal)行为,同时保持模型的安全性与通用能力。
 - [[2024-model-based-multi-agent-short-video-recommender]] —— 基于模型的多智能体短视频推荐
+- [[2024-multi-agent-tot-validator]] —— 将 [[tree-of-thoughts]] 与多智能体推理结合,引入一个 Thought Validator agent 对各 Reasoner 的推理分支做有效性校验,只有逻辑成立的分支才参与共识投票,从而在 [[gsm8k]] 上稳定提升 [[large-language-models]] 的算术推理表现。
+- [[2024-oasis-million-agent-social-simulation]] —— OASIS 是一个通用、可扩展的基于 [[large-language-models]] 的社交媒体模拟器,能在 X 与 Reddit 等平台上模拟最多 100 万个 [[llm-agents]],用以复现信息传播、群体极化、从众效应等社会现象。
+- [[2024-online-item-cold-start-popularity-aware-meta-learning]] —— 提出 PAM:一种 model-agnostic 的 popularity-aware meta-learning 框架,用预设的物品热度阈值把流式数据切分成固定的 meta-learning 任务,在线流式训练中解决新物品 [[cold-start]] 问题,并在三个公开数据集与 Kuaishou 亿级用户在线 A/B 上验证有效。
+- [[2024-opencity-urban-llm-agents]] —— OpenCity 通过「LLM 请求调度器」+「group-and-distill 提示优化」两层系统级与提示级优化,把大规模城市 [[llm-agents|llm-agent]] 模拟的单 agent 耗时加速约 600 倍,使得 10,000 个 agent 的一天活动可在 1 小时内于普通硬件上完成。
+- [[2024-optima-optimizing-llm-multi-agent]] —— OPTIMA 是一个面向 LLM 多智能体系统(MAS)的训练框架,通过"生成-排序-选择-训练"的迭代范式,同时优化智能体间的通信效率与任务有效性,在重信息交换任务上实现最高 2.8x 的性能提升且只用不到 10% 的 token。
+- [[2024-positive-experience-reflection]] —— 提出 Sweet&Sour:让 [[llm-agents|llm-agent]] 在交互式文本环境中不仅从失败中反思,还从**成功经验**(positive experience)中反思,并配合双缓冲“managed memory”管理短期/长期记忆,从而缓解既有 [[self-reflection]] 方法“初始成功后失效”和“小模型上效果差”的两大局限。
+- [[2024-prompt-tuning-item-cold-start]] —— PROMO 是一种面向 item cold-start 推荐的 [[prompt-tuning]] 方法,它用高价值正反馈("pinnacle feedback")替代内容描述作为 prompt 信息,并为每个 item 构造 item-wise 个性化 prompt network,从而同时缓解数据侧的标注成本/语义鸿沟与模型侧的热门偏置(warm-start 主导)问题,已在快手十亿用户级短视频平台上线。
 - [[2024-quiet-star]] —— Quiet-STaR;让 LM 为每个 token 生成内部 rationale 提升推理
+- [[2024-recflow-full-flow-recommendation-dataset]] —— RecFlow 是首个包含工业推荐系统多级漏斗中各阶段“被过滤(未曝光)样本”的大规模全流程推荐数据集,旨在弥合离线 benchmark 与真实在线环境之间的差距。
 - [[2024-recmamba-lifelong-sequential-recommendation]] —— RecMamba;Mamba 做终身序列推荐
 - [[2024-recommendation-editing]] —— 不重训定向编辑修正推荐行为
 - [[2024-recursive-introspection-rise]] —— RISE;递归自省微调让模型多轮自我纠错
 - [[2024-reflection-on-search-trees]] —— 在搜索树上反思以改进规划/推理
+- [[2024-residual-multi-task-learner-resflow]] —— ResFlow 是一个轻量的[[multi-task-learning]]框架,通过在不同任务网络的**对应层之间建立残差连接**来实现高效的跨任务信息传递,部署于 Shopee Search 的 pre-rank 模块,线上 A/B 测试带来 OPU(order-per-user)1.29% 的提升且无额外延迟。
+- [[2024-rethinkmcts]] —— RethinkMCTS 是一个面向代码生成的「思路搜索」框架,先用 [[monte-carlo-tree-search]] 探索写代码的推理过程(思路)再生成代码,并引入名为 rethink 的精炼机制,利用细粒度代码执行反馈直接修正搜索树中的错误思路,从而沿更优路径继续搜索。
 - [[2024-robust-recommendation-decision-boundary-gcl]] —— 决策边界视角的鲁棒图对比学习推荐(RGCL)
 - [[2024-roler-reward-shaping-offline-rl-recsys]] —— RoLeR;离线 RL 推荐的奖励塑形
+- [[2024-sage-self-evolving-agents]] —— SAGE 是一个由 User、Assistant、Checker 三个 agent 组成、结合迭代反馈、反思机制与基于 Ebbinghaus 遗忘曲线的记忆优化(MemorySyntax)的自进化 [[llm-agents]] 框架,在闭源模型上带来 2.26 倍提升、在开源模型上带来 57.7% 到 100% 的提升,对小模型尤其显著。
+- [[2024-scenario-wise-rec]] —— Scenario-Wise Rec 是首个专门面向 Multi-Scenario Recommendation(MSR,多场景推荐)的开源 [[benchmark]],它整合了 6 个公开数据集、12 个 MSR 基线模型,以及统一的数据处理、训练与评测流水线,并在工业广告数据集上验证其鲁棒性。
+- [[2024-score-self-correct-via-rl]] —— SCoRe(Self-Correction via Reinforcement Learning)是 [[google-deepmind]] 提出的方法,用完全自生成数据的多轮在线 [[reinforcement-learning]] 训练单个模型,使其无需外部反馈即可显著提升内在 [[self-correction]] 能力。
 - [[2024-self-reflection-llm-agents]] —— 系统研究 LLM 智能体的自我反思机制
 - [[2024-sigformer-sign-aware-graph-transformer]] —— SIGformer;符号感知图 Transformer(含负反馈)做推荐
 - [[2024-situation-aware-recommender-enhancer]] —— 场景感知推荐增强器
 - [[2024-sotopia-pi-social-agents]] —— SOTOPIA-π;改进社交智能体的社会智能
+- [[2024-stateact-self-prompting-state-tracking]] —— StateAct 是一种增强 LLM「base agent」的纯 in-context learning 方法,通过 self-prompting(每步自我提醒目标)与 chain-of-states(把状态跟踪引入推理)显著超越 ReAct,且不依赖任何额外训练数据或外部工具。
+- [[2024-tim4rec-time-aware-mamba]] —— TiM4Rec 把"时间感知增强"首次引入 [[state-space-duality]](SSD/Mamba2)架构,用一个 Time-aware Structured Masked Matrix 在保持线性复杂度的同时,弥补 SSD 在低维序列推荐场景下相对 SSM 的性能下降。
 - [[2024-touch-the-core-hybrid-targets-recommendation]] —— 混合目标的推荐优化
 - [[2024-tree-search-for-language-model-agents]] —— 为语言模型智能体设计的树搜索方法
+- [[2024-unbounded-generative-infinite-game]] —— UNBOUNDED 提出"生成式无限游戏(generative infinite game)"这一概念,并实现了一个角色生活模拟游戏:全部游戏机制、叙事、角色与环境图像均由 [[large-language-models]] 与 text-to-image 模型实时生成,而非由硬编码逻辑或图形系统控制。
 - [[2024-unex-rl-multi-stage-recommender]] —— UNEX-RL;多智能体 RL 联合优化多阶段推荐,Kwai 时长 +0.953%
 - [[2024-user-creator-feature-polarization]] —— 用户-创作者反馈循环导致的特征极化研究
 - [[2024-v-star-verifiers-for-self-taught-reasoners]] —— V-STaR;为自学推理器训练验证器
 - [[2024-when-can-llms-correct-mistakes]] —— 系统分析 LLM 何时能借反馈纠错
+- [[2025-ab-mcts-adaptive-branching-tree-search]] —— 提出 **AB-MCTS(Adaptive Branching Monte Carlo Tree Search)**:在推理阶段的树搜索每个节点上,基于外部反馈自适应地决定"向宽展开(go wider,采样新候选)"还是"向深细化(go deeper,refine 已有答案)",从而统一 repeated sampling 与多轮 refinement,实现更高效的 [[test-time-scaling]]。
+- [[2025-agent-safety-alignment-via-reinforcement-learning]] —— 本文提出首个面向 tool-using agent 的统一**安全对齐**框架,通过 structured reasoning + sandbox [[reinforcement-learning]] 让 [[llm-agents|llm-agent]] 同时抵御 user-initiated 与 tool-initiated 两类威胁。
+- [[2025-agentcf-plus-plus]] —— AgentCF++ 通过双层记忆架构 + 两步融合机制 + 兴趣组共享记忆,改进 [[agentcf]] 这类 [[llm-based-agents]] 用户行为模拟器,使其在跨域场景中减少无关信息干扰,并显式建模流行度因素。
+- [[2025-agentic-memory-llm-agents]] —— A-Mem 提出一种受 Zettelkasten 笔记法启发的 agentic 记忆系统,让 [[llm-agents|llm-agent]] 通过动态生成结构化笔记、自主建立链接(link generation)与记忆演化(memory evolution),无需预定义的固定记忆操作即可组织长期记忆。
+- [[2025-agentscope-1-developer-centric-framework]] —— 一句话:AgentScope 1.0 是 [[alibaba]] 推出的以开发者为中心的 [[llm-agents|llm-agent]] 框架,以 [[react|react-reasoning-and-acting]] 范式为核心,通过异步设计、细粒度工具/MCP 管理、内置 agent、评估与运行时沙箱,系统性支持灵活高效的工具化 agent-环境交互。
+- [[2025-agentsnet-multi-agent-reasoning]] —— AGENTSNET 是一个面向 [[llm-multi-agent]] 系统的新 [[benchmark]],借鉴分布式计算与图论中的五个经典问题,衡量 agent 网络在给定通信拓扑下的自组织、协调与协作能力,并且规模可任意扩展(实验最多探测 100 个 agent)。
+- [[2025-agentsociety-large-scale-social-simulation]] —— AgentSociety 是一个把 LLM 驱动的生成式社会 agent、真实的城市-社会-经济环境与大规模分布式仿真引擎整合在一起的大型社会模拟器,可支持上万 agent、每天约 500 次交互,并复现极化、谣言传播、UBI、飓风冲击、城市可持续性等五类真实社会实验。
+- [[2025-ai-agent-behavioral-science]] —— 《AI Agent Behavioral Science》是一篇立场/综述论文,提出把 AI agent 当作"行为实体"来系统研究的新范式——AI Agent Behavioral Science,强调通过系统观察、干预设计与理论解释来理解 agent 如何在情境中行动、适应与互动,而不只是分析模型内部机制。
+- [[2025-autocdsr-self-attention]] —— AutoCDSR 重新审视 transformer 自身的 self-attention,把 cross-domain sequential recommendation(CDSR)建模为一个偏好感知的 [[pareto-optimality]] 多目标问题——通过动态最小化 cross-domain attention scores,在不引入任何额外模块的前提下自动完成跨域知识迁移、抑制 negative transfer。
+- [[2025-bankfair-plus-regret-aware-reranking]] —— BankFair+ 是 BankFair(CIKM 2024)的扩展期刊版,在 [[provider-fairness]] 与用户平均精度之外,引入经济学 **regret theory(后悔理论)** 的非线性满意度函数与 **[[fuzzy-programming]](模糊规划)**,在多方([[two-sided-fairness-reranking]])推荐重排阶段同时保证用户平均精度、**用户个体公平(individual fairness)** 与供给侧公平。
+- [[2025-blueprint-social-media-persona-dataset]] —— 提出隐私保护框架 SIMPACT 及其落地数据集 BluePrint(来自 Bluesky 2025 加拿大联邦大选讨论,683 万条 action、23.6 万用户),把社交媒体用户行为建模为"下一动作预测"任务,用行为 persona 聚类替代个体身份,用于训练和评估 LLM 社交媒体 agent。
+- [[2025-can-llm-agents-simulate-human-behavior]] —— 第一项大规模、过程级(process-centric)定量评测,用真实在线购物数据检验 LLM Agent 能否逐步精确模拟人类行为,结论是 prompt-only LLM 行为准确率仅约 11.86%,而在真人点击数据 + 合成 reasoning trace 上微调可显著提升。
+- [[2025-caserec-counterfactual-augmentation-system-exposure]] —— CaseRec 通过对 system exposure(系统曝光序列)做 counterfactual augmentation,并用 Decision Transformer 式的 offline RL 建模不同用户反馈,从而改进 [[sequential-recommendation]] 并缓解 exposure bias。
+- [[2025-causality-constraint-debiasing-recommender]] —— 提出 LCDR:用一个 identifiable VAE([[ivae]])作为因果约束,去对齐标准 [[variational-autoencoder]] 学到的潜在表征,即使代理变量(proxy variable)质量低/有噪声也能有效恢复潜在混杂因子([[deconfounder]]),从而缓解 [[recommender-systems|recommender-system]] 中的偏差。
+- [[2025-contrastive-representation-interactive-recommendation]] —— 本文提出 CRIR,用一个并行的对比学习辅助任务(PRCL)从用户-物品交互中抽取高层偏好排序特征,以增强 [[interactive-recommendation]] 中 [[deep-reinforcement-learning]] agent 的状态表示,从而显著提升其样本效率(sample efficiency)。
+- [[2025-coser-literary-roleplay-dataset]] —— CoSER 是一个面向"已知文学角色"的高质量角色扮演数据集与框架,从 771 部名著中抽取 17,966 个角色的真实多角色对话,并提出 given-circumstance acting(GCA)来训练与评测角色扮演 LLM,据此训练出 CoSER 8B/70B 开源模型。
+- [[2025-cross-scenario-unified-user-interest-modeling-red-rec]] —— 一句话:提出 RED-Rec,一个 LLM 增强的分层两塔序列推荐框架,通过把用户在首页 feed、搜索、广告等异构场景下的行为统一建模,在十亿级工业 UGC 平台(小红书)上实现跨场景用户兴趣表征与服务。
+- [[2025-ctrlbench-control-reasoning]] —— CtrlBench 是首个面向**控制导向推理(control-oriented reasoning)**的基准,评估 [[foundation-models]] 能否从动力学系统的形式化描述出发,合成出在闭环仿真中稳定、达标的低层控制器。
+- [[2025-darlr-dual-agent-offline-rl-recsys]] —— DARLR 是一个面向推荐系统的双 agent model-based offline RL 框架,用 selector 与 recommender 两个 RL agent 在策略学习过程中**动态地**精炼 world model 的奖励函数并自适应估计不确定性惩罚,以缓解 frozen reward 带来的不准确性。
+- [[2025-debias-can-be-unreliable]] —— 本文揭示了用随机曝光数据集(randomly-exposed dataset)以传统方式评估去偏推荐模型并不可靠,并提出 Unbiased Recall Evaluation (URE) 方案来无偏估计 fully-exposed 数据上的 Recall@K。
+- [[2025-deep-interest-life-cycle-network]] —— 提出 **DILN(Deep Interest Life-cycle Network)**,显式建模用户兴趣的"生命周期"(emergent / stable / declining 等阶段),并将该特征注入排序模型,在 NetEase Lofter App 线上 A/B 取得 CTR +0.38%、CVR +1.04%、人均时长 +0.25% 的提升。
 - [[2025-drivemlm-autonomous-driving]] —— DriveMLM;多模态 LLM 对齐 AD 行为规划,CARLA 闭环 DS 76.1、MPI 0.96
+- [[2025-emergent-coordination-multi-agent-language-models]] —— 本文提出一个基于 information decomposition(信息分解)的、纯数据驱动的框架,用以检验 [[llm-multi-agent]] 系统究竟是"一群各自为政的 agent 的简单聚合",还是"具有高阶结构(higher-order structure)的整合性集体",并发现 theory-of-mind(ToM)prompt 能把松散聚合steer 为目标导向的整合性集体。
+- [[2025-emergent-llm-behaviors-data-leakage]] —— 一篇批判性短文(commentary):作者论证 LLM 多智能体模拟中所谓"自发涌现的社会规范"在观测上等价于 data leakage / 数据污染——模型只是把预训练中已知的协调博弈知识"反射"回研究者,而非真正自组织。
+- [[2025-energy-guided-diffusion-rl-recommendation]] —— 一句话:DAC4Rec(Diffusion-enhanced Actor-Critic for Offline RL4RS)用[[diffusion-models|diffusion-model]]表示离线 RL 推荐中表达力更强的行为策略,结合 Q 值引导的策略改进与能量引导采样(energy-guided sampling),在六个真实数据集与 VirtualTaobao 在线模拟上更好地建模长期用户偏好。
+- [[2025-explainable-negative-feedback-video-rec]] —— 一句话:面向短视频推荐中"高相似度却被用户反感"的问题,作者构建带真实 dislike 理由标注的多模态数据集 TVNF,提出由 Profile / Video / Reason 三个 [[large-language-models]] 智能体组成的 Agentic ENF 框架,并用渐进式强化学习算法 S-GRPO 训练,在负反馈预测与理由解释上显著超过 [[gpt-4o]],线上部署提升观看时长。
+- [[2025-exponential-gaussian-mixture-network]] —— EGMN 把短视频观看时长(watch time)建模为一个 **Exponential-Gaussian Mixture(EGM)分布**,用指数分量刻画粗粒度的偏态(快划/quick-skip),用多个高斯分量刻画细粒度的多模态多样性,并以神经网络端到端参数化该分布。
+- [[2025-extended-refusal-defense-against-abliteration]] —— 通过 **extended-refusal**(扩展式拒绝)微调,把安全信号从单一潜在方向分散到多个 token 位置与表示维度,使模型在遭受 abliteration(refusal direction 消融)攻击后仍能保持 >90% 的拒绝率。
+- [[2025-fine-grained-skip-micro-video-recommendation]] —— 一句话:针对 micro-video 推荐中被传统方法粗暴二分(正/负)的 skip 行为,本文提出基于双层图(dual-level graph)与分层 ranking loss 的方法,将交互细分为 highly positive、less positive、negative 三类,在两个公开数据集的八项指标上超越三个 baseline。
+- [[2025-flexcode-dual-codebook-generative-recommendation]] —— FlexCode 是一个面向生成式推荐(generative recommendation)的双 codebook 表示学习框架,把 item 表示拆成协同(CF)codebook 与语义 codebook,并用 popularity-aware 的 MoE 路由在固定 token 预算内自适应分配容量,从而兼顾 head item 的记忆精度与 tail item 的语义泛化。
+- [[2025-fuxi-gamma-efficient-sequential-recommendation]] —— FuXi-γ 是一个 decoder-only 的生成式[[sequential-recommendation]]框架,用受 [[ebbinghaus-forgetting-curve]] 启发的指数幂时间编码器替代 T5 式 bucket 编码,并对位置注意力做对角稀疏剪枝,在保持 SOTA 推荐质量的同时把训练加速最多 4.74×、推理加速最多 6.18×。
+- [[2025-g-ubs-group-aware-user-behavior-simulation]] —— G-UBS(Group-aware User Behavior Simulation)提出一个"用户群组管理器 + 用户反馈建模器"双 agent 范式,借助相关用户群组的上下文引导,从含噪的隐式反馈(如快速划走视频)中稳健、深入地推断单个用户偏好,并配套发布了首个多模态隐式反馈视频推荐 benchmark IF-VR。
+- [[2025-generative-mmo-simulation]] —— 提出一个由 [[large-language-models]] 驱动的生成式多智能体 MMO(大型多人在线)游戏仿真系统,通过在真实玩家行为数据上做 SFT + RL 微调,让 agent 高保真地模拟玩家决策,从而在不上线真实 A/B 测试的情况下,低成本地评估数值系统与机制设计(mechanism design)的优化效果。
+- [[2025-gnolr-progressive-implicit-preference]] —— 提出 Generalized Neural Ordinal Logistic Regression(GNOLR),用有序映射 + 嵌套优化把点击/加购/购买等多种隐式反馈编码进**统一的 embedding 空间**,既建模用户参与度的递进关系,又把多路检索简化为单次最近邻搜索。
+- [[2025-grasp-world-knowledge-sequential-recommendation]] —— GRASP 是一个可插拔框架,把 [[large-language-models]] 的世界知识引入 [[sequential-recommendation]],通过"生成增强检索 + 整体注意力增强"把 LLM 语义作为辅助输入(而非监督信号)融合,从而在抵抗 [[hallucination]] 噪声的同时提升推荐效果。
+- [[2025-hid-vae-interpretable-generative-recommendation]] —— HiD-VAE 提出一种层次化监督的量化框架,为 item 学习"可解释 + 解耦"的 semantic ID,既给出可追溯的类别路径(如 Clothing → Topwear → Dress),又用 uniqueness loss 消除 "ID 碰撞",从而提升[[generative-recommendation]]的精度与多样性。
+- [[2025-hyperzero-auto-tuning]] —— 来自 Meta 的端到端超参数自动调优系统 HyperZero,利用工业级 [[recommender-systems|recommender-system]] 的**小时级反馈**信号,把 value model 阶段权重向量的调优周期从数周压缩到 2-3 天,通过 GP + Thompson Sampling 的零阶约束优化求解多目标带约束问题。
+- [[2025-imitation-enhanced-rl-for-recommendation]] —— 提出 IL-Rec:一个离线 [[reinforcement-learning]] 框架,通过对 LLM 生成的轨迹做模仿学习并用 [[inverse-reinforcement-learning]] 抽取奖励模型,从而把 LLM 的语义知识迁移给 RL 推荐策略,既消除在线频繁调用 LLM 的开销,又超越静态 LLM 策略的表现。
+- [[2025-lhrl-lifecycle-fairness-recommendation]] —— 一句话:本文把"物品生命周期(item lifecycle)"作为公平推荐的控制旋钮,提出分层强化学习框架 LHRL,根据短视频物品所处生命周期阶段动态调和长期公平与短期用户满意度。
+- [[2025-lime-link-based-user-item-modeling]] —— Meta 提出 LIME,通过低秩 "link embeddings" 解耦用户-候选交互并配合 XOR 线性注意力,使大规模推荐排序模型在扩大候选集与延长用户历史时推理成本几乎恒定,实现约 10x 加速并保持与 SOTA Transformer 近乎持平的精度。
+- [[2025-llm-agent-evaluation-survey]] —— 这是一篇 SAP Labs 在 KDD '25 发表的综述,提出一个**二维分类法**(评测目标 × 评测过程)来组织 [[llm-agents|llm-agent]] 评测领域的工作,并特别强调了企业落地场景中常被忽视的挑战。
+- [[2025-llm-agent-game-theory-strategy-recognition]] —— 通过博弈论框架(扩展 [[fairgame]])系统审计 LLM agent 在重复社会困境中的策略行为,发现稳定的、与模型和语言相关的合作偏差,并用监督分类模型把 LLM 的行为轨迹映射到经典博弈策略以识别其潜在意图。
+- [[2025-llm-agent-hallucination-survey]] —— 这是第一篇系统综述 [[llm-agents|llm-agent]] 中"agent 幻觉"(agent hallucinations)的论文,把 agent 拆成"内部状态(belief state)+ 外部行为"两部分,提出涵盖 reasoning / execution / perception / memorization / communication 五大类的幻觉 taxonomy,梳理其触发原因、缓解与检测方法。
+- [[2025-llm-agents-cooperate-social-dilemma]] —— 让前沿 [[large-language-models]] 为 iterated Prisoner's Dilemma 直接写出**完整策略**(而非逐步出招),再用 evolutionary game theory 模拟 [[llm-multi-agent]] 群体,考察其究竟倾向合作还是侵略。
+- [[2025-llm-agents-for-recommender-systems-survey]] —— 一句话:本文系统综述了把 [[llm-agents|llm-agent]] 引入 [[recommender-systems|recommender-system]] 的研究,提出"面向推荐 / 面向交互 / 面向模拟"三大范式,并用 Profile、Memory、Planning、Action 四模块统一架构对现有方法做分解与对比,同时汇总数据集与评测体系。
+- [[2025-llm-collaboration-marl-magrpo]] —— 本文把多个 LLM 的协作建模为合作式 Multi-Agent Reinforcement Learning(MARL)问题,并提出 Multi-Agent GRPO(MAGRPO)算法,在写作与编码协作任务上微调多个 LLM,使其高效生成高质量且互相配合的回复。
+- [[2025-llm-driven-cross-platform-npc]] —— 一句话:本文提出并实现了一个原型系统,让由 [[large-language-models]] 驱动的游戏 NPC 能在游戏内(Unity)和社交平台(Discord)之间跨平台对话,并通过云数据库同步记忆,从而在两个平台间保持对话连贯与角色一致。
+- [[2025-llm-multi-agent-autonomous-driving-survey]] —— 一篇综述,系统梳理 [[large-language-models]] 驱动的多智能体自动驾驶系统(multi-agent ADS),按智能体交互模式分类已有方法,并讨论 agent-human 交互、应用、数据集与挑战。
 - [[2025-llm-multi-agent-swarm-intelligence]] —— 用 GPT-4o 驱动 agent 在蚁群觅食/鸟群 flocking 复现涌现集体行为
+- [[2025-maximum-in-support-return-modeling]] —— MDT4Rec 是一个 offline RLRS 框架,在 [[decision-transformer]] 基础上把 trajectory stitching 移到 action inference 阶段以忽略失败历史,并用预训练 [[large-language-models]] 初始化权重、用 [[mlp]] 替代线性 embedding、用 [[lora]] 高效微调,在五个公开数据集与在线模拟器上超越现有方法。
+- [[2025-mem0-scalable-long-term-memory]] —— Mem0 是一个以记忆为中心的架构,从持续对话中动态抽取、整合与检索关键信息,使 [[llm-agents|llm-agent]] 在跨会话的长程对话中保持一致性,并在 LOCOMO 基准上以远低于全上下文方案的延迟与 token 成本超越多种基线。
+- [[2025-meminsight-autonomous-memory-augmentation]] —— 一句话:本文提出 MemInsight,一种让 [[llm-agents|llm-agent]] 自主从历史交互中挖掘语义属性并据此增强记忆表示与检索的框架,在对话推荐、问答与事件摘要三类任务上显著提升效果(LLM-REDIAL 上推荐说服力提升最高 14%,LoCoMo 上召回率比 RAG 基线高 34%)。
+- [[2025-memory-os-of-ai-agent]] —— 借鉴操作系统的内存管理原理,为 [[llm-agents|AI agent]] 设计一套分层的"内存操作系统"MemoryOS,通过 Storage / Updating / Retrieval / Generation 四个模块统一管理长期对话记忆,从而提升长对话中的连贯性与个性化。
+- [[2025-mirror-loop-recursive-non-reasoning]] —— 提出 **mirror loop**(镜像循环)这一极简递归探针:让模型反复审视自己上一轮输出并"找出新东西",结果在所有模型家族上语义新颖度都在第 10 轮前坍缩到 0.05 以下,支持"模式补全(pattern completion)而非真正推理"的假说。
+- [[2025-mitigating-hallucination-rag-reasoning-agentic]] —— 一篇以"能力增强"为分析视角的综述,系统梳理 RAG、推理增强及二者整合的 Agentic System 如何分别缓解 knowledge-based 与 logic-based 两类 [[hallucination]]。
+- [[2025-mitigating-unwanted-recommendations-conformal-risk-control]] —— 一个 post-hoc、模型无关、distribution-free 的方法,用 [[conformal-risk-control]] 给推荐结果中"不想要内容"(unwanted content)的比例提供可证明上界,并通过把潜在有害项替换为用户曾看过且未举报的"安全"重复内容,在控制风险的同时尽量保住推荐质量。
+- [[2025-mmoagent-economic-simulation-mmo]] —— 本文提出 **MMOAgent**——一个基于 LLM 的 Generative Agent-Based Modeling(GABM)框架,用 LLM 驱动的智能体来模拟 Massively Multiplayer Online(MMO)游戏中的微观经济活动,使其涌现出角色分化、价格波动等符合市场规律的宏观经济现象。
+- [[2025-multi-actor-genai-as-game-engine]] —— 一篇来自 [[google-deepmind]] 的立场/架构论文,主张把多智能体生成式 AI 框架按桌游 (TTRPG) 的"游戏引擎"思路来设计,用 Entity-Component 架构统一支撑 Evaluationist / Dramatist / Simulationist 三类用户动机,并以 [[concordia]] 库 v2 为实例。
+- [[2025-multi-agent-collaboration-mechanisms-survey]] —— 一篇系统综述,提出一个可扩展框架,沿 actors、types、structures、strategies、coordination protocols 五个维度刻画基于 [[large-language-models]] 的 [[multi-agent-systems]] 协作机制,并梳理其在 5G/6G、Industry 5.0、问答与社会文化场景中的应用。
+- [[2025-multi-agent-evolve]] —— 提出 Multi-Agent Evolve (MAE),让同一个 LLM 实例化为 Proposer / Solver / Judge 三个互动智能体,通过强化学习协同进化,在没有人工标注数据和可验证奖励的前提下提升通用推理能力。
+- [[2025-multi-agent-llm-value-diversity]] —— 通过 Schwartz 基本人类价值观理论给 LLM 智能体注入多样化价值,在多智能体社会模拟中考察"价值多样性如何塑造 AI 社群的集体行为",发现价值多样性能提升价值稳定性、催生涌现行为与更具创造性的自发规则,但极端异质会带来不稳定的边际递减。
+- [[2025-multi-agent-reflexion-mar]] —— 一句话:本文复现了 [[reflexion]] 框架,指出其"同一模型既行动又自评又反思"导致确认偏误与思维退化,并提出 Multi-Agent Reflexion(MAR)——用一组多 persona 的批评者加一个 judge 来合成反思,从而在 [[hotpotqa]] 与 [[humaneval]] 上稳定超过单 Agent Reflexion。
+- [[2025-multi-objective-controllable-decision-transformer]] —— 提出 MocDT,一种基于 [[decision-transformer]] 的离线 RL 推荐方法,通过把"未来多目标"作为控制信号(类似 prompt),在推理阶段自回归生成对齐指定目标(如累积评分与多样性)的物品序列,无需为目标变化重新训练。
+- [[2025-multiagentbench]] —— MultiAgentBench 是一个用于评测 LLM-based 多智能体系统的 benchmark,它在六个交互式场景中同时衡量任务完成度与协作/竞争质量,并配套提出 MARBLE 框架,支持 star/tree/graph/chain 多种协调拓扑与多种规划策略。
+- [[2025-multiscale-contextual-bandits-long-term]] —— 提出 MultiScale Policy Learning 框架与其实例化算法 MSBL,用分层的 off-policy [[contextual-bandit]] 在多个相互依赖的时间尺度上协调短期反馈(点击/参与)与长期目标(用户留存/订阅续费),让低尺度的丰富数据作为高尺度稀疏数据的先验,从而更快地为长期目标优化策略。
+- [[2025-no-one-left-behind-asymmetric-multi-label-cvr]] —— KAML 是一个面向在线广告 CVR(conversion rate)预测的 [[multi-task-learning]] 框架,针对广告主只提交部分转化行为所导致的"不完整且偏斜的多标签数据(asymmetric multi-label data)",用归因驱动的掩码策略 ADM、层级知识抽取 HKE 与基于排序的标签利用 RLU 三件套挖掘未标注样本的信息,在工业数据集与线上 A/B 测试上显著超越现有 MTL 基线。
+- [[2025-opencharacter-role-playing-synthetic-personas]] —— 用大规模合成 persona 造数据,对 [[llama-3]] 8B 做 [[supervised-fine-tuning]]([[fine-tuning]]),让 LLM 获得「角色泛化」(character generalization)能力,即可即时扮演训练时未见过的任意用户自定义角色,效果可与 [[gpt-4o-mini]]/GPT-4o 相当。
+- [[2025-perscen-multi-scenario-matching]] —— PERSCEN 是首个把"用户个性化建模"直接引入多场景匹配(multi-scenario matching)阶段的两塔召回方法,通过 user-specific 特征图 + 轻量 GNN、向量量化(vector quantization)的场景感知偏好,以及渐进式场景自适应 GLU,在保持高检索效率的同时显著提升召回性能。
+- [[2025-policy-guided-causal-state-representation]] —— PGCR(Policy-Guided Causal Representation):一个面向离线 RL 推荐系统的两阶段框架,通过策略引导的因果特征选择隔离状态中"因果相关分量(CRC)",再用 encoder 学习只保留 CRC 的紧凑状态表示。
+- [[2025-pub-personality-user-behaviour-simulator]] —— PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入到用户建模中,从行为日志推断人格并生成高保真的合成交互,用于[[recommender-systems|recommender-system]]的离线评估。
+- [[2025-recoworld-simulated-environments-agentic-recsys]] —— RecoWorld 是 Meta 提出的一套为 agentic recommender system 构建模拟环境(simulated environment)的蓝图,采用"模拟用户 + agentic 推荐器"的双视角架构,在以最大化用户留存为目标的多轮交互中训练 agent,让其在不影响真实用户的前提下从错误中学习。
+- [[2025-reflective-memory-management]] —— 提出 **Reflective Memory Management (RMM)**,为长期个性化对话 agent 设计一套"前瞻反思 + 回溯反思"的外部记忆机制:用主题(topic)为粒度组织记忆,并用 LLM 引用(attribution)信号在线 RL 地精炼检索,在 LongMemEval 上比无记忆基线提升 10% 以上准确率。
+- [[2025-reinforcement-pre-training]] —— 把 next-token prediction 重新表述为一个带可验证奖励的 next-token reasoning 任务,用 [[reinforcement-learning]] 在海量无标注文本上做通用预训练,从而把整个语料变成 RL 训练数据。
+- [[2025-relative-advantage-debiasing-watch-time]] —— ByteDance 提出 RAD(Relative Advantage Debiasing):把观看时长(watch time)映射为「条件经验 CDF 分位数」,用 video ID 与 user ID 两个 umbrella 因子同时纠正多种混淆,得到无偏、有界、同方差的偏好信号,并用两阶段架构把分布估计与偏好建模解耦。
+- [[2025-reward-balancing-revisited]] —— 提出 R3S(Reallocated Reward for Recommender Systems),用 diffusion world model 显式建模 reward 预测的固有不确定性,并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 内在偏差与策略多样性。
+- [[2025-sampling-strategies-offline-recommender-evaluation]] —— 通过一个全观测数据集 + 受控模拟曝光偏差,系统评估离线推荐评估中负样本采样策略在分辨力(resolution)、保真度(fidelity)、鲁棒性(robustness)、预测力(predictive power)四个维度上的可靠性。
+- [[2025-segment-level-user-interest-modeling]] —— 把短视频拆成时间片段(segment),用混合表示 + 多模态用户-视频编码器 + 片段兴趣解码器,建模用户在浏览过程中沿时间线动态演变的片段级兴趣,用于 video-skip 预测与视频推荐。
+- [[2025-self-surrogate-light-feature-selection]] —— 本文提出 **SELF**(SurrogatE-Light Feature selection),通过让多个 LLM 用世界知识对特征做语义排序、再用轻量 bridge network 融合任务信号,缓解传统深度推荐系统(DRS)特征选择过度依赖 surrogate model 的问题。
+- [[2025-sim4ia-bench-user-simulation-benchmark]] —— Sim4IA-Bench 是首个公开的、把真实搜索会话与模拟下一步查询/话语预测直接关联起来的 IR 用户模拟基准套件,用于评估和比较 user simulation 方法的「再现保真度」。
+- [[2025-simuser-llm-user-simulation-recsys]] —— SimUSER 提出一个基于 LLM 的 agent 框架,把从历史数据中推断出的 persona、记忆、感知与决策模块组合成可信且低成本的"合成用户",用来在离线环境中评估 [[recommender-systems|recommender-system]]。
+- [[2025-socioverse-world-model-social-simulation]] —— SocioVerse 是一个由 [[llm-agents|llm-agent]] 驱动的社会模拟 world model,借助 1000 万真实用户池和四个对齐模块,在政治、新闻、经济三大领域复现大规模人群行为。
+- [[2025-sotopia-rl-reward-design-social-intelligence]] —— SOTOPIA-RL 把粗粒度的 episode 级反馈细化为 utterance 级、多维度的 reward,用单轮在线 RL 训练社交 agent,在 [[sotopia-eval|SOTOPIA]] 上取得 SOTA 的 social goal completion 分数。
+- [[2025-sotopia-s4-social-simulation-system]] —— SOTOPIA-S⁴(Simple Social Simulation System)是一个面向非技术用户的快速、灵活、可扩展社会模拟系统,让研究者无需编程即可通过自然语言设计、运行并评估多轮、多方的 LLM 社会交互,并支持自定义评估指标。
+- [[2025-survey-self-evolving-agents]] —— 首个系统性聚焦"自进化智能体"(self-evolving agents)的综述,沿 **what / when / how / where** 四个维度建立统一框架,并讨论评测体系与通往 ASI 的路线图。
+- [[2025-t2diff-two-tower-diffusion-matching]] —— T2Diff(发表于 WWW '25,来自 [[kuaishou]])提出了一种"生成式交叉交互解耦架构",在 [[recommender-systems|recommender-system]] 的召回(matching)阶段用 [[diffusion-models]] 在用户塔内重建用户的"下一个正向意图",并通过 mixed-attention 模块在保持双塔低延迟的同时打破双塔的"晚交互(Late Interaction)"瓶颈。
+- [[2025-tadt-csa-temporal-advantage-decision-transformer]] —— TADT-CSA 是一个面向工业级生成式推荐的 [[decision-transformer]] 改进框架,通过引入 Temporal Advantage 信号和 Contrastive State Abstraction 模块,解决 DT 在高噪声、随机推荐环境下轨迹拼接弱与状态空间过大的问题。
+- [[2025-umre-monotonic-ranking-ensemble]] —— UMRE 把工业 [[recommender-systems|recommender-system]] 中的 ranking ensemble(集成排序 / ensemble sorting)做成端到端可学习框架:用 **Unconstrained Monotonic Neural Network(UMNN)**替代手工设计的 pxtr 变换,用注意力做个性化融合,并用 Pareto 最优策略动态调整多目标权重。
+- [[2025-user-mirrorer-preference-aligned-user-simulator]] —— USERMIRRORER 是一个利用推荐系统 (RS) 中真实用户反馈来微调轻量级 [[large-language-models]] 用户模拟器的数据构造框架,通过生成显式决策过程来消歧、用不确定性分解来蒸馏高质量样本,使小模型在偏好对齐上超越更强的教师模型与商用 LLM。
+- [[2025-value-function-decomposition-mrp]] —— 针对在线 RL 推荐中标准 TD 学习"混合两类随机因素"(随机策略 + 随机用户环境)导致价值函数估计次优的问题,提出把 TD loss 分解为 state TD 与 action TD 两个独立目标,从而得到更准确、收敛更快、对动作探索更鲁棒的价值函数,并可作为通用技术插入 A2C/DQN/DDPG/HAC/SQN 等多种 [[rl-based-recsys]] 骨干。
+- [[2025-where-to-explore-reach-cost-aware-unbiased-data]] —— 本文提出一种"reach 与 cost 感知"的内容级探索(exploration)部署方法:不改排序逻辑,而是把随机化内容放进一个根据用户滚动深度(scroll-depth)触发、经验上低成本高触达的专用 UI 容器("Something Completely Different"行),从而在不损害短期业务指标的前提下大规模收集无偏(unbiased)交互数据,并把这些数据回灌到候选生成阶段提升长期推荐质量。
+- [[2025-xmtf-formula-free-multi-task-fusion]] —— 一句话:xMTF 用「单调融合单元(Monotonic Fusion Cell, MFC)」替代多任务融合(MTF)中预定义的融合公式,把基于 [[reinforcement-learning]] 的 MTF 从「只调几个公式系数」变成「学习任意单调融合函数」,并用两阶段混合(TSH)训练,在 Kuaishou 线上服务超过 1 亿用户。
+- [[2026-ab-agent-recsys-evaluation]] —— A/B Agent:一个多模态 LLM 用户智能体框架,在仿真沙盒中模拟用户的多模态感知、多页交互与决策,用以替代代价高昂的在线 A/B testing 来评估推荐模型。
+- [[2026-agentorchestra-tea-protocol]] —— 提出 **TEA(Tool-Environment-Agent)协议**,把工具、环境、智能体统一建模为带生命周期与版本管理的一等资源,并在其上构建分层多智能体框架 **AgentOrchestra**,在 GAIA Test 上达到 89.04% 平均准确率。
+- [[2026-automatic-laplace-collapsed-sampling]] —— ALCS 用自动微分把高维隐变量 `z` 在每次 likelihood 评估时坍缩成一个标量贡献(MAP + Laplace 近似),使外层 nested sampling 只在低维超参数 `θ` 空间运行,从而把 Bayesian evidence 计算扩展到 `d_z ~ 25,600` 的高维隐空间。
+- [[2026-collective-manipulation-risk-controlling-recsys]] —— 这篇论文对"risk-controlling recommender systems"(用 [[conformal-risk-control]] + 二元 "Not Interested" 负反馈来可证明地约束不想要内容曝光的推荐系统)做了一次部署前审计,证明仅占 1% 的协同对抗用户即可让非对抗用户的 [[ndcg]] 最多下降 20%,并提出把风险保证从群体级改为个体级的缓解方案。
+- [[2026-compressed-video-aggregator]] —— CVA 是一个轻量级微视频([[micro-video-recommendation]])推荐模块,它把冻结视觉基础模型(frozen VFM)产出的密集帧 embedding 通过 self-attention 压缩成紧凑的视频 embedding(Compact Video Embedding),在保留视频内容语义的同时,把训练时间和 GPU 显存降低数个数量级。
+- [[2026-convapparel-user-simulator-validation]] —— ConvApparel 是 Google 提出的人-AI 服装购物对话数据集与一套三支柱验证框架,用来衡量基于 [[large-language-models]] 的 user simulator 在 conversational recommender system 中的"realism gap"(真实性差距),核心创新是用 counterfactual validation 检验 simulator 能否泛化到未见过的 agent 行为。
+- [[2026-cs3-capability-synergy-two-tower]] —— CS3(Capability Synergy)是 [[kuaishou]] 提出的通用框架,通过 Cycle-Adaptive Structure、Cross-Tower Synchronization、Cascade-Model Sharing 三个模块,让轻量 [[two-tower]] 召回模型在线学习场景下感知自身、对侧塔与下游 cascade 模型的输出,从而提升模型容量、表征对齐和跨阶段一致性,线上广告收入最高提升 8.36%。
+- [[2026-diffusion-models-in-recommendation-survey]] —— 一篇关于扩散模型(diffusion model)在 [[recommender-systems|recommender-system]] 中应用的系统性综述,提出以"推荐任务为本"的三正交轴 taxonomy,覆盖 188 篇相关论文。
+- [[2026-entropy-guided-agentic-recommendation]] —— 提出 IDSS(Interactive Decision Support System),用 Shannon 熵作为统一信号,贯穿对话式推荐中的偏好询问(elicitation)、排序(ranking)与结果呈现(presentation)三个阶段,从而在用户意图模糊/不完整时既能高效追问、又能用残余不确定性驱动多样化推荐。
+- [[2026-evaluating-memory-structure-llm-agents]] —— 提出 **StructMemEval** 基准,专门测试 [[llm-agents|llm-agent]] 能否为给定任务**组织(structure)**其长期记忆,而不仅仅是事实回忆,发现纯检索系统在任务规模超过检索窗口后崩溃,而 memory agents 在被提示如何组织记忆时能可靠求解,但常常不会主动识别出应使用的记忆结构。
+- [[2026-experiential-reflective-learning]] —— ERL 是一个无需更新参数的自我改进框架:agent 对单次任务轨迹与成败信号进行反思、提炼出可迁移的"启发式(heuristics)"存入持久池,新任务到来时按相关性检索 top-k 注入上下文以指导执行,在 Gaia2 上比 ReAct 基线提升 7.8% 成功率。
+- [[2026-fairness-begins-with-state-dsrm-hrl]] —— 提出 DSRM-HRL:先用扩散模型把被 popularity bias 污染的用户状态"提纯"回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,从而把交互推荐中的公平问题从"reward shaping"重构为"state estimation"问题。
+- [[2026-fuxi-linear]] —— FuXi-Linear 是一个线性复杂度的时间感知序列推荐模型,通过解耦时间与语义信号、引入可学习核近似相对位置编码,在超长用户行为序列(数千 token)上同时实现推荐质量提升与最高 21× 的推理加速。
 - [[2026-generative-social-simulation-validation]] —— AI Review 2026 综述;论证 LLM 加剧而非缓解生成式 ABM 的验证难题
+- [[2026-graphrag-irl]] —— GraphRAG-IRL 是一个混合推荐框架,把 graph-grounded 特征构造、Maximum Entropy 逆强化学习(IRL)预排序与 persona-guided 的 [[large-language-models]] re-ranking 结合起来:LLM 只对 IRL 选出的短候选列表做语义重排,而非充当独立排序引擎。
+- [[2026-hesitation-and-tolerance-in-recommender-systems]] —— 提出并形式化推荐系统中介于"接受"与"拒绝"之间的两种被忽视的交互状态——hesitation(犹豫:用户带着不确定性犹豫不决地点击)与 tolerance(容忍:犹豫升级为不情愿地持续参与直至失去兴趣),通过两次大规模问卷、离线行为日志分析与线上 A/B 实验,论证容忍是一种消耗用户时间、侵蚀信任、降低 [[user-retention]] 的"低价值参与",并主张将 tolerance 信号作为"弱正/负"反馈重新建模。
+- [[2026-infnet-aggregate-broadcast]] —— INFNet (Information Flow Network) 用一组 hub tokens 中介的 "aggregate-and-broadcast"(聚合-广播)机制,把推荐排序模型中的特征交互从二次复杂度降到关于输入 token 数的线性复杂度,同时保持 width-preserving 的堆叠结构,实现可扩展、task-aware 的特征交互。
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]] —— LERL 是一个分层 [[interactive-recommendation]] 框架,把 [[large-language-models]] 的语义规划能力与 [[reinforcement-learning]] 的细粒度自适应结合,通过高层 LLM 规划类别、低层 RL 选物品来优化长期用户满意度并缓解 [[filter-bubble]]。
+- [[2026-llm-agents-competition-cooperation-games]] —— 研究 [[llm-agents|llm-agent]] 在两类标准经济博弈中的策略行为:发现在多轮提示与非零和语境下,LLM agent 倾向于相互合作而非收敛到 [[nash-equilibrium]],其背后的核心驱动力是 [[fairness]] 推理。
+- [[2026-memori-persistent-memory-layer-llm-agents]] —— Memori 是一个与具体 LLM 无关(LLM-agnostic)的持久化记忆层,把记忆当作"数据结构化"问题:用 Advanced Augmentation 流水线把杂乱对话压缩成语义三元组(semantic triples)和对话摘要,从而在 LoCoMo 上以约 5% 的上下文 token 达到 81.95% 的准确率。
+- [[2026-memory-for-autonomous-llm-agents]] —— 一篇关于 [[llm-agents|llm-agent]] 记忆(memory)的综述,把 agent memory 形式化为"写入–管理–读取(write–manage–read)"循环,提出三维分类法,深入剖析五类记忆机制,梳理评测基准与工程实践,覆盖 2022 至 2026 年初的工作。
+- [[2026-memory-in-the-age-of-ai-agents-survey]] —— 一篇关于 [[agent-memory]] 的综述,提出 "forms-functions-dynamics"(形态-功能-动态)三维统一分类法,把碎片化的智能体记忆研究整合为一张系统化的研究图景。
+- [[2026-nestpipe-nested-pipelining]] —— NestPipe 是一个面向万亿参数推荐模型的去中心化 embedding 训练框架,通过"嵌套流水线"(nested pipelining)在保持同步训练语义的前提下,同时隐藏大规模集群下的 lookup 与 communication 两个瓶颈,在 1,536 worker 上实现最高 3.06× 加速、94.07% 扩展效率。
+- [[2026-omnibehavior]] —— OmniBehavior 是首个完全基于真实工业日志(Kuaishou)构建的用户模拟基准,刻画长时程、跨场景、异质的行为轨迹,并系统揭示当前 LLM 模拟器存在"积极且趋均值"(positivity-and-average)的结构性偏差。
+- [[2026-orchestration-multi-agent-systems]] —— 一篇来自 Skan AI 的工程蓝图式综述,把编排式(orchestrated)[[multi-agent-systems]] 的技术构成统一为一套架构框架:专门化 agent + 编排层 + 两个互补通信协议(MCP 与 A2A)+ 治理/可观测性,面向企业级落地。
+- [[2026-orgagent-company-style-mas]] —— 把 [[llm-multi-agent]] 系统按"公司式层级"组织——拆成治理(governance)、执行(execution)、合规(compliance)三层——并系统验证这种组织结构相比扁平协作能同时提升推理效果与降低 token 成本。
+- [[2026-pdqubo-quantum-feature-selection]] —— PDQUBO 是一种面向[[recommender-systems|推荐系统]]特征选择的「性能驱动」QUBO 构造方法,它用[[counterfactual-reasoning|反事实分析]]来量化单个特征与特征对对推荐性能的影响,从而让量子退火器(quantum annealer)的优化方向直接对齐推荐质量。
+- [[2026-policysim-proactive-policy-optimization]] —— PolicySim 是一个基于 [[large-language-models]] 智能体的社会模拟沙盒,通过 [[supervised-fine-tuning]]+[[direct-preference-optimization]] 训练用户智能体、并用带消息传递的 [[contextual-bandit]] 自适应优化平台干预策略,从而在部署前(proactive)评估与优化推荐、曝光控制等平台干预政策。
+- [[2026-proactive-guiding-item-side-fairness]] —— 本文提出 HRL4PFG,一个分层强化学习框架,通过"主动引导"用户偏好逐步转向长尾物品,在不损害用户满意度的前提下提升交互式推荐中的 item-side 公平。
+- [[2026-self-evolving-multi-agent-rts]] —— SEMA(Self-Evolving Multi-Agent)是一个面向实时策略(RTS)游戏的 LLM 多智能体框架,用结构熵驱动的观测剪枝降低推理延迟,并通过闭环自演化抑制 LLM 的决策随机性,在 StarCraft II 上实现高胜率与低延迟。
+- [[2026-self-organizing-llm-agents]] —— 一句话:一项 25,000 任务的大规模实验发现"内生性悖论"(endogeneity paradox)——固定智能体顺序但让角色自主选择的混合协议(Sequential),在质量上同时超越中心化的 Coordinator(+14%)和完全自主的 Shared(+44%),前提是底层模型足够强。
+- [[2026-smes-scalable-multi-task-expert-sparsity]] —— 提出 **SMES(Scalable Multi-task recommendation via Expert Sparsity)**,一个可扩展的稀疏 [[mixture-of-experts]] 框架,通过 progressive expert routing 将参数 scaling 转化为多任务推荐中的稳定收益,并已在 [[kuaishou]] 服务超过 4 亿日活用户。
+- [[2026-tencent-advertising-algorithm-challenge-2025]] —— 腾讯广告算法大赛 2025 围绕"全模态生成式推荐"(All-Modality Generative Recommendation),发布了两个真实工业广告日志构建的大规模多模态数据集 TencentGR-1M / TencentGR-10M,并配套基线模型与加权评测协议,目标是填补工业广告场景下大规模、全模态、含点击与转化信号的 [[generative-recommendation]] 公共基准的空白。
+- [[2026-thinkrec-thinking-based-recommendation]] —— ThinkRec 提出一个"思考激活 + 实例级专家融合"框架,把 [[llm-for-recommendation]] 从依赖点击相似度的 System 1 直觉模式,推进到带有显式 [[chain-of-thought]] 推理的 System 2 理性模式。
+- [[2026-tooltree-tool-planning]] —— ToolTree 是一个免训练、即插即用的 [[monte-carlo-tree-search]] 风格 [[tool-planning]] 框架,通过执行前 (pre-evaluation) 与执行后 (post-evaluation) 双重反馈引导搜索,并据此做双向剪枝,在固定计算预算下让 [[llm-agents|llm-agent]] 更高效地规划多工具调用。
 - [[2026-transformers-graph-recommender-survey]] —— 首篇 transformer 引入图推荐综述;提 GTRS 定义与四类分类体系
+- [[2026-trirec-tri-party-agent-recommendation]] —— TriRec 是首个 tri-party(用户—物品—平台)LLM-agent 推荐框架,通过赋予物品 agent 主动"自我推销"能力并由平台进行曝光感知的多目标重排,打破传统以用户为中心、把物品当作被动实体的范式。
+- [[2026-vista-virtual-sequential-target-attention]] —— VISTA 是 [[meta]] 提出的一个两阶段建模框架,通过把超长用户交互历史(UIH)压缩成几百个 summarization embedding 并缓存,使下游推荐模型能利用百万级的终身用户历史,同时保持训练与推理成本固定。
+- [[2026-vk-lsvd-short-video-dataset]] —— VK-LSVD 是迄今规模最大的公开短视频推荐工业数据集,来自俄罗斯社交平台 VK,包含超过 400 亿次交互、1000 万用户、近 2000 万视频,跨越 6 个月。
+- [[2026-yerkes-dodson-curve-ai-agents]] —— 本文在一个网格世界"生存竞技场"里系统性地改变环境压力,首次实证发现 [[llm-multi-agent]] 系统的合作行为遵循 Yerkes-Dodson(倒 U 形)曲线:中等压力下合作最旺盛,过低或过高压力都会抑制社会行为。
+- [[2601-dsmoe-scenario-adaptive-moe-matching]] —— 一句话:DSMOE 把擅长排序的 [[mmoe]] 迁移到多场景推荐的**召回(matching)阶段**,用 Scenario-Adaptive Projection(SAP)动态参数模块缓解头部场景对专家的统治,并用一个吃 user-item 联合特征的 teacher 通过 [[knowledge-distillation]] 指导 [[two-tower]] student,从而在保持检索效率的同时获得交互建模能力,尤其改善长尾、数据稀疏场景的召回质量。

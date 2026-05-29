@@ -25,7 +25,7 @@ Agent Orchestration 指对多个 LLM agent 进行协调、调度与编排,使它
 
 ## 相关
 
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[llm-agents|llm-agent]]
 - [[conversation-programming]]
 - [[2023-autogen]]

@@ -18,7 +18,7 @@ Large Language Models(LLM)是在大规模文本语料上训练的深度神经网
 - [[tree-search]]
 - [[prompting]]
 - [[reasoning]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 
 - [[2023-recagent-user-behavior-simulation]]:该工作将 LLM 用作驱动 agent 的核心。它提出 RecAgent,以 LLM-based agent 在沙盒环境中近乎零样本(near zero-shot)地模拟用户的推荐与社交行为,并借此研究信息茧房(filter bubble)与从众(conformity)等现象。在此 LLM 充当用户行为模拟器的"大脑",负责感知、决策与行动生成。
 - [[2026-generative-social-simulation-validation]]:系统性文献综述(AI Review 2026, 59:15),论证将 LLM 引入生成式 Agent-Based Models 进行社会模拟,因黑箱性、文化偏见与随机性而加剧而非缓解了 ABM 长期的"验证"难题。

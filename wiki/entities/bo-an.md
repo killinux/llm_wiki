@@ -20,4 +20,4 @@ Bo An 是一位多智能体系统与大语言模型智能体方向的研究者,�
 - [[tea-protocol]]
 - [[agentorchestra]]
 - [[gaia-benchmark]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]

@@ -20,4 +20,4 @@ Chat-Rec 指以大语言模型为核心、通过对话交互完成推荐的会�
 - [[interec-agent]]
 - [[recllama]]
 - [[conversational-recommendation]]
-- [[llm-as-agent]]
+- [[llm-agents|llm-as-agent]]

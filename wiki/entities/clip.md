@@ -25,6 +25,6 @@ CLIP(Contrastive Language-Image Pre-training)是一种通过对比学习在大�
 
 ## 相关
 
-- [[multi-modal-llm]]
+- [[multimodal-llm|multi-modal-llm]]
 - [[vision-language-model]]
 - [[drivemlm]]

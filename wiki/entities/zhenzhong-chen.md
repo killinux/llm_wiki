@@ -19,7 +19,7 @@ Zhenzhong Chen 是一位研究者,在本 wiki 中作为推荐系统因果推断�
 
 - [[deep-causal-reasoning-for-recommendations]]
 - [[deconfounder]]
-- [[substitute-confounder]]
+- [[substitute-confounders|substitute-confounder]]
 - [[variational-autoencoder]]
 - [[causal-inference]]
 - [[recommender-systems|recommendation-system]]

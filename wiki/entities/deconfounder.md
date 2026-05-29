@@ -28,5 +28,5 @@ Deconfounder 是一类用于在存在未观测混杂变量(unobserved confounder
 - [[unobserved-confounder]]
 - [[proxy-variable]]
 - [[counterfactual-feedback]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[causal-inference]]

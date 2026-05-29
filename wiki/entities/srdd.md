@@ -19,6 +19,6 @@ SRDD (Software Requirement Description Dataset) 是用于评估端到端软件�
 
 - [[chatdev]]
 - [[llm-agents|llm-agent]]
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[software-development]]
 - [[waterfall-model]]

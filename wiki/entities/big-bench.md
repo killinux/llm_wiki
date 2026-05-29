@@ -20,6 +20,6 @@ BIG-Bench(Beyond the Imitation Game Benchmark)是一个由社区协作构建的�
 - [[mmlu]]
 - [[gsm8k]]
 - [[multiagent-debate]]
-- [[llm]]
+- [[large-language-models|llm]]
 - [[benchmark]]
 - [[reasoning]]

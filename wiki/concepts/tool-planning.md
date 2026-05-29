@@ -18,6 +18,6 @@ Tool Planning(工具规划)指 LLM 智能体在面对需要调用外部工具的
 ## 相关
 
 - [[tool-use]]
-- [[mcts]]
-- [[llm-agent]]
+- [[monte-carlo-tree-search|mcts]]
+- [[llm-agents|llm-agent]]
 - [[tool-selection]]

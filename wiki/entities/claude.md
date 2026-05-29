@@ -27,7 +27,7 @@ Claude 是 Anthropic 开发的大语言模型助手,以"有用、诚实、无害
 - [[constitutional-ai]]
 - [[rlaif]]
 - [[rlhf]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[ai-assistant]]
 - [[llm-agents|llm-agent]]
 - [[self-reflection]]

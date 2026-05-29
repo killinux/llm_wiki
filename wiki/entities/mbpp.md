@@ -23,5 +23,5 @@ MBPP(Mostly Basic Python Problems)是一个用于评估代码生成能力的基�
 
 - [[humaneval]]
 - [[code-generation]]
-- [[llm]]
+- [[large-language-models|llm]]
 - [[few-shot-prompting]]

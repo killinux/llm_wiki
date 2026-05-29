@@ -18,7 +18,7 @@ PrOntoQA 是一个用于评估 LLM 多步逻辑推理能力的合成问答基准
 ## 相关
 
 - [[2023-reasoning-via-planning-rap]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[world-model]]
 - [[logical-reasoning]]
 - [[chain-of-thought]]

@@ -24,6 +24,6 @@ Doubly Robust (DR) Learning 是一类去偏估计方法,它同时结合倾向性
 - [[propensity-score]]
 - [[inverse-propensity-scoring]]
 - [[imputation-model]]
-- [[recommendation-debiasing]]
+- [[debiasing-recommendation|recommendation-debiasing]]
 - [[2023-conservative-doubly-robust]]
 - [[2024-edt4rec-max-entropy-decision-transformer]]

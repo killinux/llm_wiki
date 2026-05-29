@@ -19,7 +19,7 @@ Everyday Robots 是源自 Google X 的移动操作机器人平台,配备机械�
 
 - [[2022-inner-monologue]]
 - [[saycan]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[embodied-ai]]
 - [[robot-manipulation]]
 - [[google-deepmind]]

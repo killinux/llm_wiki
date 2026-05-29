@@ -19,5 +19,5 @@ Freebase 是一个大规模、协作构建的结构化知识库,以实体及其�
 
 - [[knowledge-graph]]
 - [[knowledge-base]]
-- [[llm-as-agent]]
+- [[llm-agents|llm-as-agent]]
 - [[2023-agentbench]]

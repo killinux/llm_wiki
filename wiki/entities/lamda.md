@@ -20,7 +20,7 @@ LaMDA(Language Models for Dialog Applications)是 Google 推出的面向对话�
 ## 相关
 
 - [[palm]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[google]]
 - [[dialogue-systems]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]

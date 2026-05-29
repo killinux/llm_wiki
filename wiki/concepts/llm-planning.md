@@ -39,5 +39,5 @@ LLM Planning 指利用大语言模型(LLM)将高层目标分解为可执行的�
 - [[working-memory]]
 - [[multi-agent-systems]]
 - [[tool-planning]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[tool-use]]

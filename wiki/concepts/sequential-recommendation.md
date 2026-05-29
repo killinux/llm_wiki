@@ -53,7 +53,7 @@ Sequential Recommendation 是一类推荐方法,它将用户的历史交互建�
 - [[implicit-feedback]]
 - [[transformer]]
 - [[state-space-model]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[multi-task-learning]]
 - [[reranking]]
 - [[generative-recommendation]]

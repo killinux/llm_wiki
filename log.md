@@ -158,3 +158,63 @@ concept 页面并入既有索引(保留原有分组结构与候选主题,未丢�
 对应真实文件——index 共 615 个唯一 slug,与磁盘完全一致(无虚列、无遗漏;部分 slug 同时作为实体与
 概念存在如 reflexion/recagent/sasrec 故唯一数小于三类之和)。既有正确条目均保留;主题候选区补充了
 社会模拟/LLM 推荐/公平性等候选。
+
+## [2026-05-29] ingest(batch) | 续批 39 篇
+
+本波继续批量 ingest,并**以磁盘实际文件为准**重写 `wiki/index.md`,把新增/更新页面**并入**既有
+索引(保留主题 / 实体[模型·人物·机构·数据集·benchmark·产品] / 概念 / 资料 的分组结构与既有正确条目,
+未丢弃已有内容)。`{sources,entities,concepts}/CLAUDE.md` 为说明文件,均不计入索引。
+
+当前磁盘实际页面统计(`ls wiki/{sources,entities,concepts}/*.md`,排除 CLAUDE.md):
+- 资料 (sources):**269 篇**(`2020-rag` 至 `2601-dsmoe-scenario-adaptive-moe-matching`)。
+- 实体 (entities):**474 个**(模型 119 · 人物 128 · 机构/labs 76 · 数据集 45 · benchmark 64 · 产品 42)。
+- 概念 (concepts):**428 个**。
+
+本波新增 source 概况(约 39 篇,沿用既有两大方向):
+- 推荐系统(LLM 世界知识 / 生成式序列 / 多任务 / 召回 / 公平 / 长期价值):
+  GRASP(LLM 世界知识注入序列推荐,线上 GMV +1.71%)、FuXi-γ(decoder-only 生成式序列推荐,
+  受 Ebbinghaus 启发的时间编码+对角稀疏剪枝,训练加速 4.74×/推理 6.18×)、FuXi-Linear
+  (线性复杂度时间感知序列推荐,最高 21× 推理加速)、KAML(非对称多标签 CVR,RPM +12.11%)、
+  DSMOE(多场景召回 MMOE+低秩 SAP+蒸馏)、SMES(Kuaishou 可扩展稀疏 MoE 多任务)、
+  LERL(LLM 高层语义规划 + RL 低层选品的长期推荐)、HRL4PFG(分层 RL 主动引导 item-side 公平)、
+  DSRM-HRL(扩散提纯用户状态 + 分层 RL 公平/参与 Pareto)、Where-to-Explore
+  (低成本无偏探索 UI 行,Gini 0.203 vs 0.494)、IDSS(Shannon 熵贯穿对话推荐三阶段)、
+  TriRec(用户-物品-平台 tri-party LLM-agent 推荐)。
+- LLM 智能体(推荐评估 / 模拟器验证 / 社会模拟 / 多智能体编排 / 工具规划 / 记忆 / 自我改进):
+  A/B Agent(多模态 LLM 用户智能体替代在线 A/B)、ConvApparel(Google 服装购物对话数据集 +
+  realism-gap 验证三支柱,平均 HLS 0.004)、PolicySim(LLM 智能体社会模拟沙盒 + contextual bandit
+  主动优化平台策略)、Orchestration-MAS / Skan AI 编排式多 agent 统一架构、ToolTree
+  (免训练 MCTS 工具规划,GTA 66.95 / ToolBench 69.04)、SEMA(结构熵剪枝 + 闭环自演化 RTS 多智能体)、
+  MAR(多 persona 辩论 Reflexion,HotPotQA EM 44→47、HumanEval 76.4→82.6)、ERL(经验式反思学习,
+  Gaia2 +7.8%)、生成式 MMO 仿真(SFT+GRPO 微调玩家 agent)、多智能体价值多样性社会模拟
+  (Schwartz 价值观)、Yerkes-Dodson 倒 U 形合作曲线(中等压力 upkeep=5 合作峰值 29 次)。
+- 记忆方向综述/系统:Memory-in-the-Age-of-AI-Agents 综述(forms-functions-dynamics 三维分类法)、
+  Memory-for-Autonomous-LLM-Agents 综述(POMDP 写-管-读循环)、StructMemEval
+  (评测 agent 组织记忆而非仅回忆)、Memori(LLM-agnostic 持久记忆层,LoCoMo 81.95%、约 5% token)。
+- 数据集:VK-LSVD(VK 迄今最大公开短视频工业数据集,400 亿交互 / 1000 万用户 / 近 2000 万视频)。
+
+实体 / 概念增量(随本波 source 落盘):
+- 实体新增以推荐模型与 LLM-agent 系统/数据集为主,如 grasp-world-knowledge-sequential-recommendation、
+  fuxi-* 、dsmoe(及相关)、convapparel、policysim、tooltree、skan-ai、vk-lsvd、structmemeval、
+  memori 等;人物与机构按各论文作者/单位补全(模型 119 · 人物 128 · 机构 76 · 数据集 45 · benchmark 64 · 产品 42)。
+- 概念新增覆盖记忆(memory-augmentation/evolution、long-context、context-engineering)、自我改进/自演化
+  (self-evolving-agents、self-play、self-verification)、工具与编排(tool-planning、agent-orchestration、
+  function-calling)、多智能体与社会模拟(value-diversity、collective-intelligence、structural-information-theory、
+  schwartz-theory-of-basic-values 等)、推荐(generative-recommendation、multi-scenario-* 、proactive-recommendation、
+  preference-elicitation、conformal-risk-control、popularity-bias 等)。本波及历批尚未归入既有子群的概念
+  统一暂列于概念区"其他(后续批次新增,待归类)"分节,待后续 lint 细分。
+
+校验:脚本逐一比对磁盘 .md 与 index 链接 —— sources 269 / entities 474 / concepts 428 **全部**对应真实文件,
+无虚列、无遗漏、无类内重复;跨类同名 slug(如 reflexion/recsim/mmoe/transformer 等既为实体又为概念)按既有惯例
+两类各列一次。既有正确条目与主题候选区均保留。
+
+## [2026-05-29] lint(大规模) | 全库去重 + 枢纽页 + 链接重写
+
+269 篇 source 全部 ingest 完成后执行大 lint：
+- 合并 83 组跨目录重复页(同 slug 在 concepts/ 与 entities/ 各一份 → 保留一份,按实体/概念类型归入合适目录)
+- 合并单复数变体页(diffusion-model(s)、recommender-system(s)、llm-agent(s) 等)
+- 新建 19 个高频枢纽概念页(generative-recommendation、offline-reinforcement-learning、GRPO、CTR-prediction、long-term-memory、multimodal-llm 等)
+- 重写 ~650 个文件的变体链接到 canonical slug(recommendation-system→recommender-systems、mcts→monte-carlo-tree-search、chain-of-thought-prompting→chain-of-thought 等)
+- 重建 index.md（基于磁盘实际文件）
+最终：269 source · 429 concept · 475 entity = 1173+ 页；跨目录重复 0；接地 269/269 ✓。
+长尾悬空链接(引用 <8 次)保留为"待写"标记,符合 Karpathy 模式设计。

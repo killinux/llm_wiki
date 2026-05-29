@@ -19,4 +19,4 @@ Jason Weston 是一位知名的 NLP 与机器学习研究者,长期从事大语�
 
 - [[chain-of-verification]]
 - [[hallucination]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]

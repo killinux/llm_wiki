@@ -20,4 +20,4 @@ GraphRAG 是一类把图结构(graph-grounded)信息与检索增强生成结合�
 - [[inverse-reinforcement-learning]]
 - [[llm-reranking]]
 - [[retrieval-augmented-generation]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]

@@ -18,6 +18,6 @@ RecLlama 是从 InteRecAgent 框架中蒸馏得到的 7B 推荐对话模型,用�
 ## 相关
 
 - [[interecagent]]
-- [[llm-as-agent]]
+- [[llm-agents|llm-as-agent]]
 - [[conversational-recommendation]]
 - [[knowledge-distillation]]

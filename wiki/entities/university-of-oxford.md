@@ -17,5 +17,5 @@ sources: 1
 
 ## 相关
 
-- [[agent-based-models]]
+- [[generative-agent-based-modeling|agent-based-models]]
 - [[llm-archetypes]]

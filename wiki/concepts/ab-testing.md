@@ -17,7 +17,7 @@ A/B Testing(A/B 测试)是一种在线对照实验方法,通过将用户随机�
 
 ## 相关
 
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[llm-user-agent]]
 - [[offline-evaluation]]
 - [[data-augmentation]]

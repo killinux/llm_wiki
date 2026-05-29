@@ -18,6 +18,6 @@ LiveCodeBench 是一个面向大语言模型代码能力的评测基准,通过�
 ## 相关
 
 - [[test-time-scaling]]
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[thompson-sampling]]
 - [[code-generation]]

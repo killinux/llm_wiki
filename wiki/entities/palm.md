@@ -20,11 +20,11 @@ PaLM(Pathways Language Model)是 Google 提出的大规模 dense Transformer 语
 
 ## 相关
 
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[tree-of-thoughts]]
 - [[emergent-abilities]]
 - [[gsm8k]]
 - [[gpt-4]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[transformer]]
 - [[google]]

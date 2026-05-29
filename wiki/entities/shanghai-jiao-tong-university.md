@@ -18,7 +18,7 @@ sources: 2
 
 ## 相关
 
-- [[mcts]]
+- [[monte-carlo-tree-search|mcts]]
 - [[code-generation]]
 - [[llm-for-recommendation]]
 - [[sequential-recommendation]]

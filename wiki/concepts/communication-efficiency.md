@@ -18,7 +18,7 @@ sources: 2
 
 ## 相关
 
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[task-effectiveness]]
 - [[token-efficiency]]
 - [[pipeline-parallelism]]

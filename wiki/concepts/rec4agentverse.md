@@ -17,6 +17,6 @@ Rec4AgentVerse 是面向"agent 世界"的推荐范式,将用户、物品与平�
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[recommender-system]]
 - [[multi-objective-reranking]]

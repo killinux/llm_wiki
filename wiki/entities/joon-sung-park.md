@@ -25,7 +25,7 @@ sources: 5
 
 - [[generative-agents]]
 - [[2023-generative-agents]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[ai-agent]]
 
 > 占位页(stub)——补充机构、主页、其他相关工作待资料。

@@ -20,4 +20,4 @@ CARLA 是一个开源的自动驾驶仿真平台,提供城市道路、车辆、�
 
 - [[carla-town05-long]]
 - [[2025-drivemlm-autonomous-driving]]
-- [[multi-modal-llm]]
+- [[multimodal-llm|multi-modal-llm]]

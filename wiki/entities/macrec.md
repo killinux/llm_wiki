@@ -13,8 +13,8 @@ MACRec 是清华大学提出的一个基于大语言模型的多 agent 协作推
 
 ## 在本 wiki 中的出现
 - [[2026-trirec-tri-party-agent-recommendation]]:TriRec 是首个用户—物品—平台 tri-party LLM-agent 推荐框架,让物品 agent 主动个性化自我推销,再由平台做曝光感知的多目标重排,在精度、公平与物品效用上同时提升。
-- [[llm-agent]]
-- [[recommendation-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommendation-system]]
 - [[multi-agent-collaboration]]
 
 - [[2024-macrec-multi-agent-recommendation]]:清华提出的多 agent 协作推荐框架(SIGIR'24 demo),用 Manager、Analyst、Reflector、Searcher、Task Interpreter 等角色各异的 LLM agent 直接协作完成评分预测、序列推荐、解释生成与对话推荐。
@@ -23,7 +23,7 @@ MACRec 是清华大学提出的一个基于大语言模型的多 agent 协作推
 
 ## 相关
 
-- [[multi-agent-system]]
+- [[multi-agent-systems|multi-agent-system]]
 - [[llm-recommendation]]
 - [[recommender-systems|recommender-system]]
 - [[llm-agents|llm-agent]]

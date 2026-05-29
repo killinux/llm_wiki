@@ -19,5 +19,5 @@ Claude 2 是 Anthropic 推出的大型语言模型,作为商业闭源模型在�
 
 - [[anthropic]]
 - [[gpt-4]]
-- [[llm-as-agent]]
+- [[llm-agents|llm-as-agent]]
 - [[2023-agentbench]]

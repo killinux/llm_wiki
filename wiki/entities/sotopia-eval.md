@@ -22,7 +22,7 @@ SOTOPIA-EVAL 是用于评估 LLM 驱动的社交智能体在交互式社会情�
 
 ## 相关
 
-- [[agent-based-models]]
+- [[generative-agent-based-modeling|agent-based-models]]
 - [[generative-social-simulation]]
 - [[llm-evaluation]]
 - [[social-intelligence]]

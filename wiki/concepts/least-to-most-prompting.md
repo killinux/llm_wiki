@@ -20,7 +20,7 @@ Least-to-Most Prompting 是一种提示策略：先将一个复杂问题分解�
 
 - [[2022-chain-of-thought]]
 - [[2023-plan-and-solve-prompting]]
-- [[chain-of-thought-prompting]]
+- [[chain-of-thought|chain-of-thought-prompting]]
 - [[plan-and-solve-prompting]]
 - [[zero-shot-cot]]
 - [[problem-decomposition]]

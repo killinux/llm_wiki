@@ -19,5 +19,5 @@ sources: 1
 
 - [[2023-multi-agent-debate|2023-multiagent-debate]]
 - [[multiagent-debate]]
-- [[large-language-model]]
+- [[large-language-models|large-language-model]]
 - [[chain-of-thought]]
