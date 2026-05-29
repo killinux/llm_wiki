@@ -4,7 +4,7 @@ subtype: method
 tags: [causal-inference, counterfactual, recommendation, explainability, fairness]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 5
+sources: 6
 ---
 
 # Counterfactual Reasoning
@@ -18,6 +18,7 @@ Counterfactual Reasoning 是一种因果推断方式,关注"在反事实条件�
 - [[2024-limits-of-agency-in-agent-based-models]]:提出 LLM archetypes——为少数代表性 agent 类型查询 LLM 行为再概率采样到个体,从而在百万级 ABM 仿真(NYC 840 万人 COVID-19)中保持规模的同时引入 LLM 自适应行为。
 - [[2026-pdqubo-quantum-feature-selection]]:PDQUBO 用反事实分析量化单特征与特征对的推荐性能影响,构造性能驱动的 QUBO 系数矩阵,在量子退火器上做模型无关、指标无关的推荐系统特征选择。
 - [[2025-causality-constraint-debiasing-recommender]]:LCDR 用 identifiable VAE (iVAE) 作为因果约束去对齐标准 VAE 的潜在表征,即使 proxy variable 低质/有噪声也能恢复 latent confounder,从而缓解推荐系统中的潜在混杂偏差。
+- [[2026-convapparel-user-simulator-validation]]:Google 提出 ConvApparel(4,146 段人-AI 服装购物对话、双 agent good/bad 协议、逐轮第一人称标注)及 PLSA+HLS+counterfactual validation 三支柱框架;counterfactual validation 用于系统量化 LLM user simulator 的 realism gap,评估发现所有 simulator 平均 HLS 仅 0.004,但 ICL/SFT 在反事实泛化上优于纯 prompting。
 
 ## 相关
 

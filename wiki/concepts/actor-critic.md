@@ -4,7 +4,7 @@ subtype: method
 tags: [reinforcement-learning, actor-critic, policy-gradient, recommendation]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 12
+sources: 14
 ---
 
 # Actor-Critic
@@ -25,6 +25,8 @@ Actor-Critic 是一类强化学习方法,由负责输出动作的 actor(策略)�
 - [[2025-llm-agents-for-recommender-systems-survey]]:系统综述 LLM 驱动 agent 在推荐系统中的应用,提出"面向推荐/交互/模拟"三范式,并用 Profile-Memory-Planning-Action 四模块统一架构对比 23 个方法、汇总数据集与评测。
 - [[2025-xmtf-formula-free-multi-task-fusion]]:xMTF 用可学习的单调融合单元(MFC)替代多任务融合中的预定义公式,配合 RL 外层 + 监督内层的两阶段混合训练,离线 Total Watch Time 1279.7s 超越全部基线,线上 Daily Watch Time +0.833%,Kuaishou 全量部署服务超 1 亿用户。
 - [[2025-reward-balancing-revisited]]:提出 R3S,用 diffusion world model 显式建模 reward 不确定性并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 偏差与策略多样性,在 Coat/Yahoo/KuaiRand 上超越 DORL、ROLeR 等 11 个 baseline。
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]]:分层框架 LERL 用 LLM 做高层语义类别规划、用 RL(PPO)做低层细粒度物品选择,在 KuaiSim 模拟器上优化交互式推荐的长期用户满意度并缓解 filter bubble。
+- [[2026-proactive-guiding-item-side-fairness]]:HRL4PFG 用分层强化学习"主动引导"用户偏好逐步转向长尾物品,在 KuaiRec/KuaiRand 上同时取得最高累积奖励、最长交互长度与最低 Gini Index,在不牺牲满意度的前提下提升 item-side 公平。
 
 ## 相关
 
@@ -39,3 +41,4 @@ Actor-Critic 是一类强化学习方法,由负责输出动作的 actor(策略)�
 - [[llm-agents|llm-agent]]
 - [[reward-shaping]]
 - [[model-based-rl]]
+- [[hierarchical-reinforcement-learning]]

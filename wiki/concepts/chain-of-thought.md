@@ -4,7 +4,7 @@ subtype: method
 tags: [prompting, reasoning, in-context-learning, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 38
+sources: 41
 ---
 
 # Chain-of-Thought Prompting
@@ -51,6 +51,9 @@ Chain-of-Thought (CoT) Prompting 是一种提示方法,通过引导大语言模�
 - [[2026-thinkrec-thinking-based-recommendation]]:ThinkRec 通过思考激活(推理数据合成+联合训练)与实例级 LoRA 专家融合,把 LLM 推荐从 System 1 直觉匹配推进到 System 2 推理,在 ML1M/Yelp/Book 上 AUC 平均超 SOTA 7.96%。
 - [[2025-mmoagent-economic-simulation-mmo]]:提出 MMOAgent，一个基于 LLM 的 Generative Agent-Based Modeling 框架，用具备 profile/感知/推理/记忆/行动的 LLM 智能体模拟 MMO 游戏经济，涌现出角色分化与符合供需规律的价格波动。
 - [[2025-agentsnet-multi-agent-reasoning]]:AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算的五个经典问题(coloring、vertex cover、matching、leader election、consensus)来衡量 agent 网络在给定通信拓扑下的自组织、去中心化通信与协作推理能力,实验最多探测 100 个 agent。
+- [[2025-multi-agent-reflexion-mar]]:把 Reflexion 的单 Agent 自我批评换成多 persona 辩论加 judge 合成反思,在 HotPotQA(EM 44→47)与 HumanEval(pass@1 76.4→82.6)上超过单 Agent Reflexion。
+- [[2026-policysim-proactive-policy-optimization]]:PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用 SFT+DPO 训练用户智能体、用带消息传递的 contextual bandit 自适应优化推荐与曝光控制等平台干预策略,实现部署前的主动评估与优化。
+- [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为:多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
 
 ## 相关
 

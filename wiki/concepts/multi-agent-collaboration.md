@@ -4,7 +4,7 @@ subtype: method
 tags: [multi-agent, collaboration, agent, LLM, software-engineering]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 11
+sources: 15
 ---
 
 # 多智能体协作
@@ -24,6 +24,10 @@ sources: 11
 - [[2025-agentsnet-multi-agent-reasoning]]:AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算的五个经典问题(coloring、vertex cover、matching、leader election、consensus)来衡量 agent 网络在给定通信拓扑下的自组织、去中心化通信与协作推理能力,实验最多探测 100 个 agent。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
 - [[2025-llm-collaboration-marl-magrpo]]:把多 LLM 协作建模为合作式 MARL(Dec-POMDP)并提出 Multi-Agent GRPO(MAGRPO),在写作与编码协作上微调多个 LLM;TLDR/arXiv return 达 94.5%/93.1%,HumanEval/CoopHumanEval return 达 86.7%/88.5%。
+- [[2026-orchestration-multi-agent-systems]]:Skan AI 提出的编排式多 agent 系统统一架构:专门化 agent + 四单元编排层 + MCP/A2A 双通信协议 + 治理与可观测性,面向企业落地的工程蓝图综述。
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论":固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
+- [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为:多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
+- [[2026-orgagent-company-style-mas]]:提出公司式层级多智能体框架 OrgAgent(治理/执行/合规三层),实证表明层级组织在多数推理任务上同时提升效果并大幅降低 token 成本。
 
 ## 相关
 
@@ -39,3 +43,5 @@ sources: 11
 - [[coordination-protocol]]:多 agent 协作中约束通信与协调的协议(如 graph/star/chain)。
 - [[multi-agent-reinforcement-learning]]:把多 LLM 协作建模为合作式 MARL 的视角。
 - [[agent-evaluation]]:衡量多智能体协作质量的评测方法与基准。
+- [[agent-orchestration]]:对专门化 agent 进行编排与调度的层级机制。
+- [[hierarchical-agent-systems]]:公司式/层级化组织的多智能体结构。

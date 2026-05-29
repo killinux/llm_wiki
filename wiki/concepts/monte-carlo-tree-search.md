@@ -4,7 +4,7 @@ subtype: method
 tags: [search, planning, reasoning, rl]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 9
 ---
 
 # Monte-Carlo Tree Search
@@ -21,6 +21,7 @@ Monte-Carlo Tree Search (MCTS) 是一种启发式搜索算法,通过反复执行
 - [[2024-rethinkmcts]]:面向代码生成的思路搜索框架,用 MCTS 探索写代码的推理过程,并通过 rethink 机制利用块级代码执行反馈直接精炼搜索树中的错误思路。
 - [[2024-optima-optimizing-llm-multi-agent]]:OPTIMA 通过生成-排序-选择-训练的迭代范式同时优化 LLM 多智能体系统的通信效率与任务有效性,在重信息交换任务上达成 2.8x 性能提升且 token 用量不到 10%。
 - [[2025-ab-mcts-adaptive-branching-tree-search]]:提出 AB-MCTS,在推理时树搜索中用 Thompson sampling 自适应决定"向宽采样新候选"还是"向深用外部反馈细化已有答案",统一 repeated sampling 与多轮 refinement,实现更高效的 test-time scaling。
+- [[2026-tooltree-tool-planning]]:免训练的 MCTS 工具规划框架,用执行前/执行后双反馈引导搜索并双向剪枝,在固定预算下提升 LLM 智能体多工具规划的准确率与效率(GTA 66.95 AVG,ToolBench 69.04 AVG)。
 
 ## 相关
 

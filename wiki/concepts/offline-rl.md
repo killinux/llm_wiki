@@ -4,7 +4,7 @@ subtype: method
 tags: [reinforcement-learning, offline-rl, recommendation]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 10
+sources: 11
 ---
 
 # Offline RL
@@ -23,6 +23,7 @@ Offline RL(离线强化学习)是一类不与环境实时交互、仅依赖预�
 - [[2025-caserec-counterfactual-augmentation-system-exposure]]:CaseRec 用 Decision Transformer 式 offline RL 建模完整 system exposure 序列,并通过 user simulator 驱动的反事实数据增强发掘未见用户兴趣,改进 sequential recommendation 并缓解 exposure bias。
 - [[2025-reward-balancing-revisited]]:提出 R3S,用 diffusion world model 显式建模 reward 不确定性并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 偏差与策略多样性,在 Coat/Yahoo/KuaiRand 上超越 DORL、ROLeR 等 11 个 baseline。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
+- [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
 
 ## 相关
 
@@ -37,3 +38,6 @@ Offline RL(离线强化学习)是一类不与环境实时交互、仅依赖预�
 - [[conservative-q-learning]]
 - [[world-model]]
 - [[user-simulation]]
+- [[hierarchical-rl]]
+- [[diffusion-models]]
+- [[recommendation-fairness]]

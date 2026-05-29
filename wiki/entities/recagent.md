@@ -12,6 +12,12 @@ sources: 6
 RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环境中近乎零样本地模拟用户的推荐与社交行为。
 
 ## 在本 wiki 中的出现
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent,一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 评估推荐模型并做数据增强。
+- [[llm-agent]]
+- [[user-simulation]]
+- [[recommender-system]]
+- [[ab-testing]]
+- [[multimodal-llm]]
 - [[2023-agentcf-collaborative-learning-agents-recsys]]:把推荐系统中的用户和物品都建模为 LLM agent,通过自主交互与协同反思实现无梯度的协同过滤式优化。
 - [[2025-agentcf-plus-plus]]:通过双层记忆架构、两步融合机制与兴趣组共享记忆增强 AgentCF 用户模拟器,在跨域推荐中减少无关信息并显式建模流行度因素。
 - [[llm-agents|llm-agent]]

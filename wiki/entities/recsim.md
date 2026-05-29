@@ -12,6 +12,11 @@ sources: 5
 RecSim 是一个用于推荐系统的可配置仿真平台,用于在可控的环境中模拟用户与推荐系统的序列化交互,从而支持(尤其是基于强化学习的)推荐算法的研究与评估。
 
 ## 在本 wiki 中的出现
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent 一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 评估推荐模型并做数据增强。
+- [[recsys-evaluation]]
+- [[llm-user-agent]]
+- [[ab-testing]]
+- [[recommendation-system]]
 
 - [[2023-recagent-user-behavior-simulation]]:该论文提出 RecAgent,主张用 LLM-based agent 在沙盒环境中近乎零样本地模拟用户的推荐与社交行为,并研究信息茧房(information cocoons)与从众(conformity)等现象。在这一脉络中,RecSim 作为更早期、基于预设规则/参数化模型的用户行为仿真器,是 LLM-based 用户模拟方法所对照与区别的传统仿真范式之一。
 - [[2023-kuaisim-recommender-simulator]]:面向推荐系统的综合性用户模拟器,提供 multi-behavior 与 cross-session 反馈,统一支持 request 级 list-wise、whole-session 级 sequential 与 cross-session 级 retention 三类 RL 推荐任务并配套 benchmark。

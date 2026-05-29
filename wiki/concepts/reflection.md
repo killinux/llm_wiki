@@ -4,7 +4,7 @@ subtype: method
 tags: [reflection, prompting, llm, reasoning, self-improvement]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 10
 ---
 
 # Reflection
@@ -21,6 +21,8 @@ Reflection 是指让 LLM 回顾自身或他人过往的推理 / 行动经验,从
 - [[2025-simuser-llm-user-simulation-recsys]]:基于 LLM 的 agent 框架,用从历史数据推断的 persona、记忆、感知与决策模块构建可信合成用户来低成本评估推荐系统。
 - [[2025-mmoagent-economic-simulation-mmo]]:提出 MMOAgent,一个基于 LLM 的 Generative Agent-Based Modeling 框架,用具备 profile/感知/推理/记忆/行动的 LLM 智能体模拟 MMO 游戏经济,涌现出角色分化与符合供需规律的价格波动。
 - [[2025-multi-actor-genai-as-game-engine]]:Google DeepMind 的立场/架构论文,主张用游戏引擎式的 Entity-Component 架构统一支撑 Evaluationist/Dramatist/Simulationist 三类多智能体生成式 AI 用户动机,以 Concordia v2 为实例。
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]]:分层框架 LERL 用 LLM 做高层语义类别规划、用 RL(PPO)做低层细粒度物品选择,在 KuaiSim 模拟器上优化交互式推荐的长期用户满意度并缓解 filter bubble。
+- [[2026-self-evolving-multi-agent-rts]]:SEMA 用结构熵驱动观测剪枝 + 闭环自演化的 LLM 多智能体框架,在 StarCraft II 上实现高胜率与低延迟的实时策略决策。
 
 ## 相关
 

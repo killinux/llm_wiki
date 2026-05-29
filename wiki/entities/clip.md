@@ -12,6 +12,11 @@ sources: 4
 CLIP(Contrastive Language-Image Pre-training)是一种通过对比学习在大规模图文对上联合训练图像编码器与文本编码器的视觉-语言模型,可将图像与文本映射到统一的表示空间。
 
 ## 在本 wiki 中的出现
+- [[2026-compressed-video-aggregator]]:CVA 用冻结视觉基础模型的帧 embedding 加 self-attention 压缩成紧凑视频 embedding,在 MicroLens 与 Short-Video 上提升微视频推荐精度,同时把训练时间与 GPU 显存降低数个数量级。
+- [[contrastive-learning]]
+- [[clip-loss]]
+- [[embedding]]
+- [[frozen-foundation-model]]
 
 - [[2025-drivemlm-autonomous-driving]]:DriveMLM 将 multi-modal LLM 对齐到自动驾驶行为规划模块的离散决策状态,使语言输出可转为车辆控制,在 CARLA Town05 Long 上实现闭环驾驶并取得 DS 76.1、MPI 0.96。
 - [[2024-unbounded-generative-infinite-game]]:实现"生成式无限游戏"的角色生活模拟系统,游戏机制、叙事与图像由 LLM 与 text-to-image 模型实时生成,核心创新为带 Block Drop 的 regional IP-Adapter(保证角色与环境一致性)及将多 LLM 协作能力蒸馏进 Gemma-2B 的实时游戏引擎。

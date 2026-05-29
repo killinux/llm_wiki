@@ -12,6 +12,10 @@ sources: 6
 PPO(Proximal Policy Optimization,近端策略优化)是一种通过裁剪目标函数限制策略更新幅度的强化学习算法,广泛用于策略优化与 RLHF 训练。
 
 ## 在本 wiki 中的出现
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]]:分层框架 LERL 用 LLM 做高层语义类别规划、用 RL(PPO)做低层细粒度物品选择,在 KuaiSim 模拟器上优化交互式推荐的长期用户满意度并缓解 filter bubble。
+- [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
+- [[hierarchical-reinforcement-learning]]
+- [[interactive-recommendation]]
 - [[2022-instructgpt]]:作为 RLHF 三阶段流程(SFT → 奖励模型 → PPO)中的最后一环,PPO 被用来根据奖励模型给出的偏好信号微调策略模型,使 GPT-3 与人类偏好对齐。借助这一流程,1.3B 的 InstructGPT 模型在人类偏好评测上胜过 175B 的 GPT-3,同时更真实、毒性更低。
 - [[2024-easyrl4rec]]:面向 RL-based 推荐系统的易用代码库,基于五个公开数据集构建轻量 RL 环境,提供四个核心模块与面向长期收益的统一训练/评测流程,PPO 作为经典 RL 方法之一被纳入对照实验。
 - [[2024-llm-critics-help-catch-llm-bugs]]:OpenAI 用 RLHF(其中以 PPO 进行策略优化)训练 GPT-4 级别的 critic 模型 CriticGPT,让 LLM 写自然语言批评指出代码 bug,以可扩展监督方式帮助人类更准确评估模型生成的代码。

@@ -4,7 +4,7 @@ subtype: method
 tags: [reinforcement-learning, sequential-decision-making, recommendation, mdp]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 20
+sources: 22
 ---
 
 # Markov Decision Process
@@ -33,6 +33,8 @@ Markov Decision Process(MDP)是描述序列决策问题的数学框架,由状态
 - [[2025-xmtf-formula-free-multi-task-fusion]]:xMTF 用可学习的单调融合单元(MFC)替代多任务融合中的预定义公式,配合 RL 外层 + 监督内层的两阶段混合训练,离线 Total Watch Time 1279.7s 超越全部基线,线上 Daily Watch Time +0.833%,Kuaishou 全量部署服务超 1 亿用户。
 - [[2025-reward-balancing-revisited]]:提出 R3S,用 diffusion world model 显式建模 reward 不确定性并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 偏差与策略多样性,在 Coat/Yahoo/KuaiRand 上超越 DORL、ROLeR 等 11 个 baseline。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
+- [[2026-trirec-tri-party-agent-recommendation]]:TriRec 是首个用户—物品—平台 tri-party LLM-agent 推荐框架,让物品 agent 主动个性化自我推销,再由平台做曝光感知的多目标重排,在精度、公平与物品效用上同时提升。
+- [[2026-self-evolving-multi-agent-rts]]:SEMA 用结构熵驱动观测剪枝 + 闭环自演化的 LLM 多智能体框架,在 StarCraft II 上实现高胜率与低延迟的实时策略决策。
 
 ## 相关
 

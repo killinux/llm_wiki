@@ -4,7 +4,7 @@ subtype: method
 tags: [AI safety, alignment, harmlessness, RLHF, RLAIF]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 9
 ---
 
 # AI safety
@@ -21,6 +21,7 @@ AI safety 是指通过技术与方法手段,让 AI 系统的行为保持无害(h
 - [[2025-extended-refusal-defense-against-abliteration]]:通过 extended-refusal 微调把安全信号从单一潜在方向分散到多 token 位置与多维度,使模型在 abliteration 攻击后仍保持 >90% 拒绝率,同时通用性能几乎不变。
 - [[2025-mitigating-unwanted-recommendations-conformal-risk-control]]:一个 post-hoc、模型无关、distribution-free 的方法,用 conformal risk control 给推荐中"不想要内容"的比例提供可证明上界,并以用户曾看过的安全重复内容替换有害项以保住推荐质量。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2026-collective-manipulation-risk-controlling-recsys]]:审计基于 conformal risk control 与二元 Not Interested 负反馈的推荐系统,证明仅 1% 协同对抗用户即可让非对抗用户 nDCG 最多降 20%,并提出个体级阈值校准作为缓解。
 
 ## 相关
 

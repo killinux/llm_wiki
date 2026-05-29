@@ -4,7 +4,7 @@ subtype: method
 tags: [retrieval, embedding, recommendation, recall, ANN]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 6
 ---
 
 # Embedding-based retrieval
@@ -17,6 +17,8 @@ Embedding-based retrieval(EBR)是一种把 query 与候选物料映射到同一�
 - [[2025-t2diff-two-tower-diffusion-matching]]:T2Diff 在双塔召回的用户塔内用扩散模型重建用户"下一个正向意图",并以 mixed-attention 实现交叉交互,在保持低延迟的同时打破双塔的 Late Interaction 瓶颈,离线/在线均显著超越 SOTA。
 - [[2025-meminsight-autonomous-memory-augmentation]]:MemInsight 让 LLM agent 自主从历史交互挖掘语义属性以增强记忆表示与检索,在对话推荐、问答、事件摘要上显著提升(推荐说服力最高 +14%,LoCoMo 召回比 RAG 基线高 34%)。
 - [[2025-gnolr-progressive-implicit-preference]]:GNOLR 用有序标签映射加嵌套优化把多种隐式反馈编码进统一 embedding 空间,既建模用户参与度递进,又把多路检索简化为单次最近邻搜索。
+- [[2601-dsmoe-scenario-adaptive-moe-matching]]:DSMOE 将 MMOE 迁移到多场景推荐召回阶段,用低秩场景自适应投影(SAP)缓解头部场景统治专家,并用 user-item 联合特征 teacher 蒸馏指导双塔 student,在保持检索效率的同时显著提升长尾稀疏场景的召回质量。
+- [[2026-nestpipe-nested-pipelining]]:NestPipe 通过两层嵌套流水线(inter-batch 的 Dual-Buffer Pipelining 与 intra-batch 的 Frozen-Window Pipelining)在保持同步训练语义下隐藏大规模推荐 embedding 训练的 lookup 与 All2All 通信瓶颈,在 1,536 worker 上实现 3.06× 加速、94.07% 扩展效率。
 
 ## 相关
 

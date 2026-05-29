@@ -4,7 +4,7 @@ subtype: method
 tags: [user-retention, recommendation, reinforcement-learning, short-video, mdp]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 9
 ---
 
 # User Retention
@@ -21,6 +21,7 @@ User Retention(用户留存)指用户在一段时间后持续回访并继续使�
 - [[2025-multiscale-contextual-bandits-long-term]]:提出 MultiScale Policy Learning 框架与 MSBL 算法,用分层 off-policy contextual bandit 在多个时间尺度上协调短期反馈与长期目标,让低尺度数据作为高尺度稀疏数据的 PAC-Bayes 先验。
 - [[2025-xmtf-formula-free-multi-task-fusion]]:xMTF 用可学习的单调融合单元(MFC)替代多任务融合中的预定义公式,配合 RL 外层 + 监督内层的两阶段混合训练,离线 Total Watch Time 1279.7s 超越全部基线,线上 Daily Watch Time +0.833%,Kuaishou 全量部署服务超 1 亿用户。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
+- [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
 
 ## 相关
 
@@ -36,3 +37,6 @@ User Retention(用户留存)指用户在一段时间后持续回访并继续使�
 - [[decision-transformer]]
 - [[multi-task-fusion]]
 - [[contextual-bandits]]
+- [[popularity-bias]]
+- [[hierarchical-reinforcement-learning]]
+- [[recommendation-fairness]]

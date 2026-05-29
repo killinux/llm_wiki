@@ -4,7 +4,7 @@ subtype: method
 tags: [agent, tool-use, reasoning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 14
+sources: 16
 ---
 
 # 工具使用
@@ -27,6 +27,8 @@ sources: 14
 - [[2024-agentic-feedback-loop-recommendation]]:提出 AFL,让 recommendation agent 与 user agent 通过基于 memory 的多轮文本反馈回路相互协作,同时提升推荐(平均 +11.52%)与用户模拟(平均 +21.12%),且不放大流行度/位置偏差。
 - [[2026-agentorchestra-tea-protocol]]:提出 TEA 协议将工具/环境/智能体建模为带生命周期与版本的一等资源,并构建分层多智能体框架 AgentOrchestra,在 GAIA Test 上达到 89.04% 平均准确率。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2026-orchestration-multi-agent-systems]]:Skan AI 提出的编排式多 agent 系统统一架构,专门化 agent + 四单元编排层 + MCP/A2A 双通信协议 + 治理与可观测性,面向企业落地的工程蓝图综述,其中工具/agent 调用是编排层的核心环节。
+- [[2026-tooltree-tool-planning]]:免训练的 MCTS 工具规划框架,用执行前/执行后双反馈引导搜索并双向剪枝,在固定预算下提升 LLM 智能体多工具规划的准确率与效率(GTA 66.95 AVG,ToolBench 69.04 AVG)。
 
 ## 相关
 
@@ -35,3 +37,4 @@ sources: 14
 - [[multi-agent-systems]] — AutoGen 中工具使用是多 agent 协作完成任务的能力之一
 - [[self-critique]] — CRITIC 中通过工具反馈实现自我验证
 - [[agent-evaluation]] — LLM agent 评测中工具调用能力是关键评测维度
+- [[tool-planning]] — ToolTree 用搜索算法对多工具调用序列进行规划

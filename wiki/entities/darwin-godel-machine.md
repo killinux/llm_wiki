@@ -12,6 +12,10 @@ sources: 1
 Darwin Gödel Machine 是一类能够自我改写、自我进化的智能体系统,借鉴达尔文式进化与 Gödel Machine 的自指改进思想,通过迭代修改自身代码与策略来持续提升能力。
 
 ## 在本 wiki 中的出现
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论":固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
+- [[self-improving-agents]]
+- [[llm-agent-coordination]]
+- [[multi-agent-systems]]
 
 - [[2025-survey-self-evolving-agents]]:首个系统聚焦自进化智能体的综述,沿 what/when/how/where 四维建立统一框架并梳理评测体系与通往 ASI 的路线图。
 

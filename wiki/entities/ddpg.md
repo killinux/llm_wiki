@@ -12,6 +12,8 @@ sources: 7
 DDPG(Deep Deterministic Policy Gradient)是一种面向连续动作空间的无模型 actor-critic 强化学习算法,通过确定性策略梯度结合深度神经网络、经验回放与目标网络来学习策略。
 
 ## 在本 wiki 中的出现
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]]:分层框架 LERL 用 LLM 做高层语义类别规划、用 RL(PPO)做低层细粒度物品选择,在 KuaiSim 模拟器上优化交互式推荐的长期用户满意度并缓解 filter bubble。
+- [[policy-gradient]]
 - [[2023-hyper-actor-critic-recommendation]]：该工作提出 Hyper-Actor Critic（HAC）框架，将推荐列表生成解耦为 hyper-action 推断与 effect-action 选择两步，并用对齐与监督模块在大动作空间下稳定 RL 推荐策略的学习。DDPG 在这一脉络中代表了将 actor-critic 与连续/高维动作表示相结合的经典思路，HAC 可视为对这类 actor-critic 方法在推荐列表生成这一巨大动作空间场景下的扩展与改造。
 - [[2023-kuaisim-recommender-simulator]]：面向推荐系统的综合性用户模拟器，提供 multi-behavior 与 cross-session 反馈，统一支持 request 级 list-wise、whole-session 级 sequential 与 cross-session 级 retention 三类 RL 推荐任务并配套 benchmark。
 - [[2024-easyrl4rec]]：面向 RL-based 推荐系统的易用代码库，基于五个公开数据集构建轻量 RL 环境，提供四个核心模块与面向长期收益的统一训练/评测流程，并给出经典与近期 RL 方法的对照实验。

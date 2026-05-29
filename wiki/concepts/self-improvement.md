@@ -4,7 +4,7 @@ subtype: method
 tags: [self-improvement, bootstrapping, reasoning, agent, in-context-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 11
+sources: 14
 ---
 
 # Self-Improvement
@@ -34,6 +34,12 @@ Self-Improvement 指 LLM(或基于 LLM 的 Agent)在很少甚至不依赖额外�
 - [[2026-agentorchestra-tea-protocol]]:提出 TEA 协议将工具/环境/智能体建模为带生命周期与版本的一等资源,并构建分层多智能体框架 AgentOrchestra,在 GAIA Test 上达到 89.04% 平均准确率。
 
 - [[2025-survey-self-evolving-agents]]:首个系统聚焦自进化智能体的综述,沿 what/when/how/where 四维建立统一框架并梳理评测体系与通往 ASI 的路线图。
+
+- [[2026-self-evolving-multi-agent-rts]]:SEMA 用结构熵驱动观测剪枝 + 闭环自演化的 LLM 多智能体框架,在 StarCraft II 上实现高胜率与低延迟的实时策略决策。
+
+- [[2026-experiential-reflective-learning]]:ERL,agent 反思单次任务轨迹与成败信号、提炼可迁移启发式存入持久池,新任务时按相关性检索 top-k 注入上下文,无需更新参数即可自我改进,在 Gaia2 上比 ReAct 基线提升 7.8% 成功率。
+
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论":固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
 
 ## 相关
 

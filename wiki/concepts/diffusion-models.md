@@ -4,7 +4,7 @@ subtype: method
 tags: [diffusion-models, generative-models, recommendation, retrieval]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 1
+sources: 2
 ---
 
 # Diffusion Models
@@ -20,6 +20,8 @@ sources: 1
 - [[generative-model]]
 
 - [[2025-t2diff-two-tower-diffusion-matching]]:T2Diff 在双塔召回的用户塔内用扩散模型重建用户"下一个正向意图",并以 mixed-attention 实现交叉交互,在保持低延迟的同时打破双塔的 Late Interaction 瓶颈,离线/在线均显著超越 SOTA。
+
+- [[2026-cs3-capability-synergy-two-tower]]:CS3 是快手提出的通用框架,通过 Cycle-Adaptive Structure、Cross-Tower Synchronization、Cascade-Model Sharing 三个模块让 two-tower 召回模型感知自身、对侧塔与下游 cascade 模型,提升容量与跨阶段一致性,线上广告收入最高提升 8.36%。
 
 ## 相关
 

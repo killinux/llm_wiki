@@ -4,7 +4,7 @@ subtype: method
 tags: [multi-agent, agents, llm, collaboration, framework]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 17
+sources: 22
 ---
 
 # Multi-Agent Systems
@@ -30,6 +30,11 @@ Multi-Agent Systems 指由多个基于 LLM 的自主智能体(agent)通过相互
 - [[2025-agentsnet-multi-agent-reasoning]]:AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算的五个经典问题(coloring、vertex cover、matching、leader election、consensus)来衡量 agent 网络在给定通信拓扑下的自组织、去中心化通信与协作推理能力,实验最多探测 100 个 agent。
 - [[2025-multi-actor-genai-as-game-engine]]:Google DeepMind 的立场/架构论文,主张用游戏引擎式的 Entity-Component 架构统一支撑 Evaluationist/Dramatist/Simulationist 三类多智能体生成式 AI 用户动机,以 Concordia v2 为实例。
 - [[2025-llm-collaboration-marl-magrpo]]:把多 LLM 协作建模为合作式 MARL(Dec-POMDP)并提出 Multi-Agent GRPO(MAGRPO),在写作与编码协作上微调多个 LLM;TLDR/arXiv return 达 94.5%/93.1%,HumanEval/CoopHumanEval return 达 86.7%/88.5%。
+- [[2026-orchestration-multi-agent-systems]]:Skan AI 提出的编排式多 agent 系统统一架构——专门化 agent + 四单元编排层 + MCP/A2A 双通信协议 + 治理与可观测性,面向企业落地的工程蓝图综述。
+- [[2026-yerkes-dodson-curve-ai-agents]]:在网格世界生存竞技场中系统改变环境压力,首次实证发现 LLM 多智能体系统的合作行为遵循 Yerkes-Dodson 倒 U 形曲线——中等压力(upkeep=5)合作交易峰值达 29 次,过低或过高压力都抑制社会行为,且性选择压力可在不致死的前提下消除攻击。
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论"——固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
+- [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为——多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
+- [[2026-orgagent-company-style-mas]]:提出公司式层级多智能体框架 OrgAgent(治理/执行/合规三层),实证表明层级组织在多数推理任务上同时提升效果并大幅降低 token 成本。
 
 ## 相关
 
@@ -44,3 +49,6 @@ Multi-Agent Systems 指由多个基于 LLM 的自主智能体(agent)通过相互
 - [[generative-agents]]
 - [[swarm-intelligence]]
 - [[social-simulation]]
+- [[agent-orchestration]]
+- [[agent-communication-protocols]]
+- [[cooperation-and-competition]]
