@@ -18,5 +18,5 @@ Dongsheng Li 是一位从事推荐系统与大语言模型智能体研究的研�
 ## 相关
 
 - [[agentcf]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]
 - [[llm-agents]]

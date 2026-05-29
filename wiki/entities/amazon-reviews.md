@@ -4,7 +4,7 @@ subtype: dataset
 tags: [recommendation, dataset, product-reviews]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 15
+sources: 16
 ---
 
 # Amazon Reviews
@@ -28,15 +28,17 @@ sources: 15
 - [[2025-autocdsr-self-attention]]:AutoCDSR 把跨域序列推荐建模为偏好感知的 Pareto 最优多目标问题,通过动态最小化 cross-domain attention scores,仅优化 transformer 内在 self-attention 即可自动迁移有益跨域知识并抑制 negative transfer。
 - [[2025-pub-personality-user-behaviour-simulator]]:PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入用户建模,从行为日志推断人格并生成高保真合成交互,用于推荐系统的离线评估。
 - [[2025-hid-vae-interpretable-generative-recommendation]]:HiD-VAE 用层次化监督量化 + uniqueness loss 学习可解释、解耦的 semantic ID,消除 ID 碰撞并显著提升生成式推荐性能。
+- [[2026-convapparel-user-simulator-validation]]:Google 提出 ConvApparel(4,146 段人-AI 服装购物对话、双 agent good/bad 协议、逐轮第一人称标注)及 PLSA+HLS+counterfactual validation 三支柱框架,系统量化 LLM user simulator 的 realism gap,发现所有 simulator 平均 HLS 仅 0.004,但 ICL/SFT 在反事实泛化上优于纯 prompting。
 
 ## 相关
 
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[multi-task-learning]]
 - [[movielens]]
 - [[collaborative-filtering]]
 - [[sequential-recommendation]]
 - [[conversational-recommendation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[graph-based-recommendation]]
 - [[merrec-dataset]]
+- [[user-simulator]]

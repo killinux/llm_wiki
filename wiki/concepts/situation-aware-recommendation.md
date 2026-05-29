@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[context-aware-recommendation]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[personalization]]
 - [[plug-in-module]]

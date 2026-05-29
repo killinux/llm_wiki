@@ -51,4 +51,4 @@ InteRecAgent 以 LLM 为大脑、推荐模型为工具,核心由三部分组成�
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] 与 [[recommender-system]] 交叉方向的代表工作,把 [[tool-use]]、[[agent-memory]]、[[llm-planning]] 等 agent 技术落地到交互式推荐。其 plan-first execution 与 [[react]] 形成对比(降低 API 调用与延迟),反思机制承接 [[reflexion]] / [[self-refine]] / [[actor-critic]] 思路。与同样名为 RecAgent 的 [[recagent]](用户模拟)、[[p5]] 等 LLM4Rec 工作可对照阅读;RecLlama 展示了用 [[gpt-4]] 蒸馏数据微调 [[llama-2]] 小模型充当 agent 大脑的路径。作者来自 [[university-of-science-and-technology-of-china]] 与 [[microsoft-research-asia]]。
+本文是 [[llm-agents|llm-agent]] 与 [[recommender-systems|recommender-system]] 交叉方向的代表工作,把 [[tool-use]]、[[agent-memory]]、[[llm-planning]] 等 agent 技术落地到交互式推荐。其 plan-first execution 与 [[react]] 形成对比(降低 API 调用与延迟),反思机制承接 [[reflexion]] / [[self-refine]] / [[actor-critic]] 思路。与同样名为 RecAgent 的 [[recagent]](用户模拟)、[[p5]] 等 LLM4Rec 工作可对照阅读;RecLlama 展示了用 [[gpt-4]] 蒸馏数据微调 [[llama-2]] 小模型充当 agent 大脑的路径。作者来自 [[university-of-science-and-technology-of-china]] 与 [[microsoft-research-asia]]。

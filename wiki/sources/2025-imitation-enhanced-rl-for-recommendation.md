@@ -16,7 +16,7 @@ year: 2025
 
 ## 问题
 
-LLM 凭借强泛化与上下文理解能力为 [[recommender-system]] 带来潜力,但把 LLM 直接当作推荐策略部署面临几大挑战:
+LLM 凭借强泛化与上下文理解能力为 [[recommender-systems|recommender-system]] 带来潜力,但把 LLM 直接当作推荐策略部署面临几大挑战:
 
 - **高计算成本与高延迟**:在线推荐需要低延迟响应,而每步都调用 LLM API 会带来持续的高延迟与算力开销。
 - **幻觉与偏差**:LLM 输出易出现 [[hallucination]] 与 [[popularity-bias]],倾向重复表面关联、强化高频项,降低推荐多样性(图 1 中 "Godfather" 子串匹配的例子)。

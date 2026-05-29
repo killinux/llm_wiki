@@ -24,7 +24,7 @@ year: 2024
 
 作者提出一种 **best-first tree search**,在实际环境空间内运行(grounded in the actual environment space),并与多数 SOTA agent 互补。这是据作者所知首个在真实 web 任务上展现有效性的 LM agent 树搜索算法。
 
-- **Agent backbone**:任意 prompt-based 的(multimodal)LM agent $f_\phi$,以当前 observation 预测下一动作,可结合 [[react-reasoning-and-acting]]、RCI、[[chain-of-thought]] 等 prompting 技术。本方法无需重训或微调 $f_\phi$。
+- **Agent backbone**:任意 prompt-based 的(multimodal)LM agent $f_\phi$,以当前 observation 预测下一动作,可结合 [[react|react-reasoning-and-acting]]、RCI、[[chain-of-thought]] 等 prompting 技术。本方法无需重训或微调 $f_\phi$。
 - **Value function**:用 best-first 启发式,value function $f_v$ 估计当前状态 $s_t$ 的期望 reward $\mathbb{E}[R(s_t)] \in [0,1]$,以 task instruction $I$ 与历史 observation 为条件:$v_t = f_v(I, \{o_1,...,o_t\})$。实现上用一个 multimodal LM(GPT-4o)接收 task instruction 与 observation 截图,被指示输出当前状态是 success/failure/在通往成功的轨迹上,分别赋值 1/0/0.5。借鉴 [[self-consistency]],用 CoT 采样 20 条 reasoning path 并取平均,得到细粒度可靠分数。
 - **Search algorithm**:loosely 受 A* search 启发的 best-first search。超参为 depth $d$、branching factor $b$、search budget $c$。维护一个 frontier $\mathcal{F}$(max priority queue)。每次迭代从 frontier 弹出得分最高的状态 $s_p$,用 value function 算分 $v_p$;若 $v_p$ 超过当前最佳则更新最佳状态 $\hat{s}_t$。若 $v_p \geq \theta$(可能找到 goal)或 $s \geq c$(预算耗尽)则终止并导航到 $\hat{s}_t$;否则在深度允许下用 $f_\phi$ 生成 $b$ 个候选动作,执行后把结果状态加入 frontier,并通过 backtracking 重复。动作通过 nucleus sampling(温度 1.0,top-p 0.95)采样,每步生成 20 个 CoT 输出并取计数最高的 top-$b$ 动作分支。
 
@@ -44,4 +44,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文把经典 [[tree-search]] / best-first search(及 A*、[[monte-carlo-tree-search]] 思想)引入 [[llm-agent]] 的 web 自动化场景,是 [[test-time-scaling]] / [[test-time-compute]] 在 agent 领域的代表性工作。它与 [[tree-of-thoughts]]、[[reasoning-via-planning-rap]]、[[language-agent-tree-search]] 等"LLM + 搜索"路线相关,但区别在于直接在真实环境空间(而非纯文本推理空间)中搜索并利用环境反馈。方法与 [[react-reasoning-and-acting]]、[[reflexion]] 等基座 agent 互补,在 [[webarena]] / VisualWebArena 等 benchmark 上评测,基座用 [[gpt-4]](GPT-4o)与 [[llama]] (Llama-3-70B)。出自 Carnegie Mellon University。
+本文把经典 [[tree-search]] / best-first search(及 A*、[[monte-carlo-tree-search]] 思想)引入 [[llm-agents|llm-agent]] 的 web 自动化场景,是 [[test-time-scaling]] / [[test-time-compute]] 在 agent 领域的代表性工作。它与 [[tree-of-thoughts]]、[[reasoning-via-planning-rap]]、[[language-agent-tree-search]] 等"LLM + 搜索"路线相关,但区别在于直接在真实环境空间(而非纯文本推理空间)中搜索并利用环境反馈。方法与 [[react|react-reasoning-and-acting]]、[[reflexion]] 等基座 agent 互补,在 [[webarena]] / VisualWebArena 等 benchmark 上评测,基座用 [[gpt-4]](GPT-4o)与 [[llama]] (Llama-3-70B)。出自 Carnegie Mellon University。

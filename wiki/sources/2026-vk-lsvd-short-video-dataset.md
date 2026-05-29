@@ -47,4 +47,4 @@ VK-LSVD 从 VK 短视频服务的匿名交互日志构建,作为一个 [[dataset
 
 ## 在本 wiki 中的位置
 
-本文是一个 [[recommender-system]] 领域的工业级 [[dataset]] 资源,可用于 [[sequential-recommendation]]、[[cold-start]]、context-aware 与 hybrid 推荐研究。它与同类短视频推荐数据集 [[kuairand]]、[[kuairec]]、[[microlens]]、[[recflow]]、[[tenrec]]、[[movielens]] 形成对比,主要补足了平台多样性(来自 Kuaishou 之外的 VK 生态)与规模(400 亿交互)。其基准方法 [[iALS]] 与 [[ndcg]] 评估指标是推荐系统研究的标准工具。
+本文是一个 [[recommender-systems|recommender-system]] 领域的工业级 [[dataset]] 资源,可用于 [[sequential-recommendation]]、[[cold-start]]、context-aware 与 hybrid 推荐研究。它与同类短视频推荐数据集 [[kuairand]]、[[kuairec]]、[[microlens]]、[[recflow]]、[[tenrec]]、[[movielens]] 形成对比,主要补足了平台多样性(来自 Kuaishou 之外的 VK 生态)与规模(400 亿交互)。其基准方法 [[iALS]] 与 [[ndcg]] 评估指标是推荐系统研究的标准工具。

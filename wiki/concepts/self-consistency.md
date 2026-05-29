@@ -17,7 +17,7 @@ Self-Consistency 是一种解码与推理策略：对同一道题用 chain-of-th
 
 - [[2023-tree-of-thoughts]]：将 LLM 推理建模为在「思考」树上的搜索（可前瞻、自评估、回溯），在 24 点上把 GPT-4 成功率从 CoT 的 4% 提升到 74%。相对于 Self-Consistency 对完整答案做事后投票，ToT 提供了更结构化的搜索式探索方案，可视为对「多路径推理」思路的进一步扩展。
 
-- [[2023-multiagent-debate]]：让多个 LLM 实例多轮辩论、互相批评彼此答案，在推理（GSM8K 77%→85%）与事实性（MMLU 63.9%→71.1%）任务上显著提升。与 Self-Consistency 同属「利用多条/多份输出来提升可靠性」的范式，但用交互式辩论与批评取代了独立采样后的静态投票。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]：让多个 LLM 实例多轮辩论、互相批评彼此答案，在推理（GSM8K 77%→85%）与事实性（MMLU 63.9%→71.1%）任务上显著提升。与 Self-Consistency 同属「利用多条/多份输出来提升可靠性」的范式，但用交互式辩论与批评取代了独立采样后的静态投票。
 
 - [[2023-plan-and-solve-prompting]]：提出零样本 Plan-and-Solve (PS/PS+) 提示，让 LLM 先制定计划再执行子任务，显著改进 Zero-shot-CoT 的多步推理。它改进的是单条推理链的质量，与 Self-Consistency 改进的是「如何聚合多条推理链」相互正交、可叠加使用。
 

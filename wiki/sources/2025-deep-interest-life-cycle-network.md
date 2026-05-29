@@ -73,4 +73,4 @@ DILN 包含两个核心组件:
 
 ## 在本 wiki 中的位置
 
-本文属于工业界 [[recommender-system]] / [[ctr]] 排序方向,与基于搜索单元建模终身行为序列的 [[sim]]、长短期兴趣融合的 [[sequential-recommendation]] 方法一脉相承,但创新点在于显式建模"兴趣生命周期"并用 VQ 聚类离散化阶段。技术上结合了 [[mmoe]] 多任务架构、VQ-VAE 式离散表示([[variational-autoencoder]])与 [[multi-task-learning]],评测用到公开数据集 [[kuairand]]。可与本 wiki 中其他兴趣演化/兴趣去偏(如 [[debiasing]]、[[duration-bias]])、长期推荐([[long-term-recommendation]])相关条目互参。
+本文属于工业界 [[recommender-systems|recommender-system]] / [[ctr]] 排序方向,与基于搜索单元建模终身行为序列的 [[sim]]、长短期兴趣融合的 [[sequential-recommendation]] 方法一脉相承,但创新点在于显式建模"兴趣生命周期"并用 VQ 聚类离散化阶段。技术上结合了 [[mmoe]] 多任务架构、VQ-VAE 式离散表示([[variational-autoencoder]])与 [[multi-task-learning]],评测用到公开数据集 [[kuairand]]。可与本 wiki 中其他兴趣演化/兴趣去偏(如 [[debiasing]]、[[duration-bias]])、长期推荐([[long-term-recommendation]])相关条目互参。

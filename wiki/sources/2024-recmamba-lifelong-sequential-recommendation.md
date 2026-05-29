@@ -40,4 +40,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是 [[mamba]] / [[state-space-model]] 在 [[recommender-system]] 领域的早期落地工作之一,与同期的 Mamba4Rec 并列,主张用线性复杂度的 SSM 解决 [[sequential-recommendation]] 中长序列的效率与长程依赖难题。它与 wiki 中 [[sasrec]]、[[lifelong-learning]] 以及 [[kuairand]]、[[lfm-1b]] 等推荐数据集条目直接相关,可作为"序列推荐的高效长序列建模"这一脉络的参考。
+本文是 [[mamba]] / [[state-space-model]] 在 [[recommender-systems|recommender-system]] 领域的早期落地工作之一,与同期的 Mamba4Rec 并列,主张用线性复杂度的 SSM 解决 [[sequential-recommendation]] 中长序列的效率与长程依赖难题。它与 wiki 中 [[sasrec]]、[[lifelong-learning]] 以及 [[kuairand]]、[[lfm-1b]] 等推荐数据集条目直接相关,可作为"序列推荐的高效长序列建模"这一脉络的参考。

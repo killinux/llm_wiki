@@ -26,7 +26,7 @@ Matthew Effect(马太效应)指"强者愈强、弱者愈弱"的累积优势现�
 
 ## 相关
 
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[sequential-recommendation]]
 - [[debiasing]]
 - [[exposure-bias]]

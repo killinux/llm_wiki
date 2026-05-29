@@ -62,4 +62,4 @@ LLM 越来越多地作为自主决策者部署在交互式与多智能体系统�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[ai-agent-behavioral-science]] / [[machine-behavior]] 方向,把 [[game-theory]] 与 [[social-simulation]] 用作审计 [[llm-agent]] 策略行为的统一方法论。它直接扩展 [[fairgame]] 基准,使用 [[iterated-prisoners-dilemma]] 与 Public Goods Game 这两个经典 [[cooperation]] 困境,与同样研究 LLM 多智能体合作/博弈行为的工作(如 [[cogbench]]、[[sotopia]]、[[oasis]])相关。其用监督分类器(含 [[lstm]])从行为轨迹反推 [[tit-for-tat]] 等经典策略的做法,是把 [[multi-agent-systems]] 安全审计与 [[ai-alignment]]、AI governance 联系起来的一条路径,呼应 [[generative-agents]] 与 [[human-behavior-simulation]] 中关于模型对齐如何塑造策略的讨论。
+本文属于 [[ai-agent-behavioral-science]] / [[machine-behavior]] 方向,把 [[game-theory]] 与 [[social-simulation]] 用作审计 [[llm-agents|llm-agent]] 策略行为的统一方法论。它直接扩展 [[fairgame]] 基准,使用 [[iterated-prisoners-dilemma]] 与 Public Goods Game 这两个经典 [[cooperation]] 困境,与同样研究 LLM 多智能体合作/博弈行为的工作(如 [[cogbench]]、[[sotopia]]、[[oasis]])相关。其用监督分类器(含 [[lstm]])从行为轨迹反推 [[tit-for-tat]] 等经典策略的做法,是把 [[multi-agent-systems]] 安全审计与 [[ai-alignment]]、AI governance 联系起来的一条路径,呼应 [[generative-agents]] 与 [[human-behavior-simulation]] 中关于模型对齐如何塑造策略的讨论。

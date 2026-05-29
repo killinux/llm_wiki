@@ -16,7 +16,7 @@ year: 2024
 
 ## 问题
 
-传统 [[recommender-system]] 主要靠扩大稀疏参数(如 embedding table,可达数十 TB)来提升规模,但 dense 网络参数往往在千万到亿级就出现瓶颈,难以从更多参数中持续获益。受 [[large-language-models]] 成功启发,出现了通过创新结构扩展 dense 参数的 large recommendation models,其中 Meta 的生成式推荐模型 HSTU 把参数扩展到数千亿、展示了推荐系统的 [[scaling-law]]。但 large recommendation models 的 scaling 仍研究不足:scaling law 是否跨不同 backbone 架构成立?它源自哪些组件?HSTU 在复杂行为建模与 ranking 任务上的表现如何?本文旨在系统回答这些问题。
+传统 [[recommender-systems|recommender-system]] 主要靠扩大稀疏参数(如 embedding table,可达数十 TB)来提升规模,但 dense 网络参数往往在千万到亿级就出现瓶颈,难以从更多参数中持续获益。受 [[large-language-models]] 成功启发,出现了通过创新结构扩展 dense 参数的 large recommendation models,其中 Meta 的生成式推荐模型 HSTU 把参数扩展到数千亿、展示了推荐系统的 [[scaling-law]]。但 large recommendation models 的 scaling 仍研究不足:scaling law 是否跨不同 backbone 架构成立?它源自哪些组件?HSTU 在复杂行为建模与 ranking 任务上的表现如何?本文旨在系统回答这些问题。
 
 ## 方法
 
@@ -38,4 +38,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是把 [[scaling-law]] 从 [[large-language-models]] 引入 [[recommender-system]] 的代表性综述加实证工作,核心研究对象是生成式推荐范式下的 large recommendation model(以 HSTU 为代表)。它与 wiki 中 [[llm-for-recommendation]]、[[sequential-recommendation]]、[[sasrec]]、[[movielens]]/[[amazon-reviews]]/[[kuairand]] 等条目相连,提供了推荐侧 scaling、ablation 与 ranking 可扩展性的系统证据,可作为理解“推荐模型如何 scale”的入口。
+本文是把 [[scaling-law]] 从 [[large-language-models]] 引入 [[recommender-systems|recommender-system]] 的代表性综述加实证工作,核心研究对象是生成式推荐范式下的 large recommendation model(以 HSTU 为代表)。它与 wiki 中 [[llm-for-recommendation]]、[[sequential-recommendation]]、[[sasrec]]、[[movielens]]/[[amazon-reviews]]/[[kuairand]] 等条目相连,提供了推荐侧 scaling、ablation 与 ranking 可扩展性的系统证据,可作为理解“推荐模型如何 scale”的入口。

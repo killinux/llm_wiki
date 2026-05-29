@@ -46,4 +46,4 @@ year: 2026
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 与 HCI 交叉方向,核心关切是 [[user-retention]] 与对 [[ctr]]、[[watch-time]] 等表层指标的反思,与 [[duration-bias]]、[[noisy-watching]]、[[debiasing]] 等"重新解读隐式反馈"的工作一脉相承(参见 [[2023-d2co-watch-time-debias]])。其离线分析使用了 [[kuairand]] 数据集,线上实验在 [[kuaishou]] 类短视频平台上进行。不同于面向长期奖励的 [[rl-based-recsys]]/[[long-term-recommendation]],本文主张通过轻量级的标签重定义(把 tolerance 当作弱正/负样本)来兼顾用户时间成本与平台留存。
+本文属于 [[recommender-systems|recommender-system]] 与 HCI 交叉方向,核心关切是 [[user-retention]] 与对 [[ctr]]、[[watch-time]] 等表层指标的反思,与 [[duration-bias]]、[[noisy-watching]]、[[debiasing]] 等"重新解读隐式反馈"的工作一脉相承(参见 [[2023-d2co-watch-time-debias]])。其离线分析使用了 [[kuairand]] 数据集,线上实验在 [[kuaishou]] 类短视频平台上进行。不同于面向长期奖励的 [[rl-based-recsys]]/[[long-term-recommendation]],本文主张通过轻量级的标签重定义(把 tolerance 当作弱正/负样本)来兼顾用户时间成本与平台留存。

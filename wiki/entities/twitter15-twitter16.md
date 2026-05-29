@@ -19,4 +19,4 @@ Twitter15/Twitter16 是两个常用于谣言检测与社交媒体信息传播研
 
 - [[social-media-simulation]]
 - [[rumor-detection]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

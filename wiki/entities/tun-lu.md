@@ -20,4 +20,4 @@ sources: 1
 - [[agentcf]]
 - [[recsys-simulation]]
 - [[user-behavior-simulation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

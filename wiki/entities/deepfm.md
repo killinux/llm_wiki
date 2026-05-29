@@ -4,7 +4,7 @@ subtype: model
 tags: [recommendation, ctr-prediction, factorization-machine, deep-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 12
+sources: 13
 ---
 
 # DeepFM
@@ -12,6 +12,13 @@ sources: 12
 DeepFM 是一种用于 CTR 预测的推荐模型,将 Factorization Machine (FM) 与深度神经网络结合在共享 embedding 之上,同时建模低阶与高阶特征交互。
 
 ## 在本 wiki 中的出现
+- [[2023-video-length-debiasing-microvideo-rec]]:VLDRec 通过 play-progress 去偏标注、视频长度条件采样与多任务学习缓解微视频推荐中长视频被偏好的 video-length bias,以 NFM 为基座在 View_Time@120 上较最佳基线提升 1.81%(Kuaishou)与 11.32%(WeChat)。
+- [[2024-bi-level-user-modeling-deep-recommenders]]:GPRec 提出即插即用的双层用户建模:用可学习分类器与双向(正/负)群体嵌入做群体建模,从 ID 类特征提炼个体偏好并以正交损失解耦,在 ML1M/TenRec/KuaiRand 上稳定提升各类 DRS 主干(含 DeepFM 等)的 CTR 预测。
+- [[2025-causality-constraint-debiasing-recommender]]:LCDR 用 identifiable VAE (iVAE) 作为因果约束去对齐标准 VAE 的潜在表征,即使 proxy variable 低质/有噪声也能恢复 latent confounder,从而缓解推荐系统中的潜在混杂偏差。
+- [[nfm]]
+- [[microvideo-recommendation]]
+- [[2024-bi-level-user-modeling-deep-recommenders]]
+- [[2025-causality-constraint-debiasing-recommender]]
 
 - [[2023-dorl-matthew-effect-offline-rl-recommendation]]:该论文提出 DORL,在 model-based offline RL 的悲观惩罚上加入熵惩罚以缓解推荐中的马太效应,提升交互式推荐的用户长期满意度;DeepFM 作为推荐场景中的相关模型出现。
 - [[2023-d2co-watch-time-debias]]:该论文提出 D²Co,从统一因果视角同时矫正视频推荐中观看时长的时长偏差与噪声观看,以还原用户真实兴趣;DeepFM 作为推荐场景中的相关模型出现。
@@ -25,11 +32,12 @@ DeepFM 是一种用于 CTR 预测的推荐模型,将 Factorization Machine (FM) 
 - [[2026-pdqubo-quantum-feature-selection]]:PDQUBO 用反事实分析量化单特征与特征对的推荐性能影响,构造性能驱动的 QUBO 系数矩阵,在量子退火器上做模型无关、指标无关的推荐系统特征选择。
 - [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
 - [[2024-prompt-tuning-item-cold-start]]:PROMO 用高价值正反馈(pinnacle feedback)替代内容描述作 prompt,并为每个 item 构造个性化 prompt network,同时缓解 item cold-start 推荐的数据成本与热门偏置,已在快手十亿用户级平台部署。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent——一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 来评估推荐模型(如 DeepFM)并做数据增强。
 
 ## 相关
 
 - [[factorization-machine]]
 - [[ctr-prediction]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[wide-and-deep]]
 - [[feature-selection]]

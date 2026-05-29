@@ -4,7 +4,7 @@ subtype: dataset
 tags: [dataset, recommendation, movielens, benchmark]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 21
+sources: 22
 ---
 
 # MovieLens-1M
@@ -34,12 +34,13 @@ MovieLens-1M 是由 GroupLens 发布的电影评分数据集,包含约 100 万�
 - [[2025-t2diff-two-tower-diffusion-matching]]:T2Diff 在双塔召回的用户塔内用扩散模型重建用户"下一个正向意图"并以 mixed-attention 实现交叉交互,在保持低延迟的同时打破双塔的 Late Interaction 瓶颈,离线/在线均显著超越 SOTA。
 - [[2026-thinkrec-thinking-based-recommendation]]:ThinkRec 通过思考激活(推理数据合成+联合训练)与实例级 LoRA 专家融合,把 LLM 推荐从 System 1 直觉匹配推进到 System 2 推理,在 ML1M/Yelp/Book 上 AUC 平均超 SOTA 7.96%。
 - [[2025-gnolr-progressive-implicit-preference]]:提出 GNOLR,用有序标签映射加嵌套优化把多种隐式反馈编码进统一 embedding 空间,既建模用户参与度递进又把多路检索简化为单次最近邻搜索。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent 是一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 来评估推荐模型并做数据增强;MovieLens-1M 作为推荐场景的数据来源/评测基准。
 
 ## 相关
 
 - [[movielens]]
 - [[yelp]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[ndcg]]
 - [[reinforcement-learning-for-recommendation]]
 - [[sequential-recommendation]]

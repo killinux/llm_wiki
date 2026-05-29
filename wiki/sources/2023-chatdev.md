@@ -25,7 +25,7 @@ ChatDev 是一个 chat-powered 的软件开发框架,核心机制包括:
 - **记忆(memory)**:区分短期记忆(short-term memory,维持单阶段内对话连续性)与长期记忆(long-term memory,仅传递各阶段的解决方案以跨阶段保持上下文,避免信息过载)。
 - **沟通式去幻觉(communicative dehallucination)**:通过“角色反转”,让助手在给出正式回复前主动向指令者索取更具体的信息(如外部依赖的精确名称),再进行精确优化,以缓解编码幻觉。
 
-底层模型(backbone)使用 ChatGPT-3.5(gpt-3.5-turbo),temperature 设为 0.2,集成 Python-3.11.4 提供反馈。子任务在连续两次代码无修改、或达到 10 轮沟通后终止。这一范式无需为每个阶段训练专门模型。相关概念见 [[multi-agent-collaboration]]、[[role-playing-agent]]、[[chat-chain]]、[[communicative-dehallucination]]、[[llm-agent]]。
+底层模型(backbone)使用 ChatGPT-3.5(gpt-3.5-turbo),temperature 设为 0.2,集成 Python-3.11.4 提供反馈。子任务在连续两次代码无修改、或达到 10 轮沟通后终止。这一范式无需为每个阶段训练专门模型。相关概念见 [[multi-agent-collaboration]]、[[role-playing-agent]]、[[chat-chain]]、[[communicative-dehallucination]]、[[llm-agents|llm-agent]]。
 
 ## 结果
 
@@ -38,4 +38,4 @@ ChatDev 是一个 chat-powered 的软件开发框架,核心机制包括:
 
 ## 在本 wiki 中的位置
 
-本文是 LLM 多智能体协作(multi-agent)在软件工程领域的代表性工作,与 [[role-playing-agent]]、[[llm-agent]] 等 LLM 智能体方向密切相关,可与 [[chain-of-thought]] 等推理增强方法以及 MetaGPT、GPT-Engineer 等自动化代码生成研究对照阅读。由 [[tsinghua-nlp]] 等团队提出,开源于 [[openbmb]] 的 ChatDev 项目。
+本文是 LLM 多智能体协作(multi-agent)在软件工程领域的代表性工作,与 [[role-playing-agent]]、[[llm-agents|llm-agent]] 等 LLM 智能体方向密切相关,可与 [[chain-of-thought]] 等推理增强方法以及 MetaGPT、GPT-Engineer 等自动化代码生成研究对照阅读。由 [[tsinghua-nlp]] 等团队提出,开源于 [[openbmb]] 的 ChatDev 项目。

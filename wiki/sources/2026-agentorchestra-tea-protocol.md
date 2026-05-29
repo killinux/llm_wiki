@@ -16,7 +16,7 @@ year: 2026
 
 ## 问题
 
-现有 [[llm-agent]] 系统在复杂、长时程任务上表现强劲,但已有的 agent 协议(如 Google 的 A2A、[[anthropic]] 的 MCP)在协议层面存在三大缺口:
+现有 [[llm-agents|llm-agent]] 系统在复杂、长时程任务上表现强劲,但已有的 agent 协议(如 Google 的 A2A、[[anthropic]] 的 MCP)在协议层面存在三大缺口:
 
 1. **生命周期与上下文管理割裂**:没有协议标准化跨 agent 组件的、一致且带版本的执行上下文(context 散落在 prompt 和 log 中)。
 2. **协议层不支持 self-evolution**:prompt 与资源被当作外部维护的资产,而非可在执行反馈下被可追溯地版本化、持续改进的组件。

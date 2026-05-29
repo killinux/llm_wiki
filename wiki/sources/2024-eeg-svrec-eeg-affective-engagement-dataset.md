@@ -25,7 +25,7 @@ year: 2024
 
 # EEG-SVRec: An EEG Dataset with User Multidimensional Affective Engagement Labels in Short Video Recommendation
 
-EEG-SVRec 是首个在真实短视频观看场景下采集 EEG(脑电)信号、并配以多维情感参与度标注(MAES)与用户行为日志的数据集,用于探索短视频[[recommender-system]]中用户的情感体验与认知活动。
+EEG-SVRec 是首个在真实短视频观看场景下采集 EEG(脑电)信号、并配以多维情感参与度标注(MAES)与用户行为日志的数据集,用于探索短视频[[recommender-systems|recommender-system]]中用户的情感体验与认知活动。
 
 ## 问题
 
@@ -66,6 +66,6 @@ EEG-SVRec 是首个在真实短视频观看场景下采集 EEG(脑电)信号、�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 与用户建模方向的数据集论文,其特色是把脑机接口/情感计算引入推荐:用 EEG 信号补充传统[[user-simulation]]之外的真实生理反馈,提供超越点赞/[[watch-time]]的人本评估维度。
+本文属于 [[recommender-systems|recommender-system]] 与用户建模方向的数据集论文,其特色是把脑机接口/情感计算引入推荐:用 EEG 信号补充传统[[user-simulation]]之外的真实生理反馈,提供超越点赞/[[watch-time]]的人本评估维度。
 
 可与本 wiki 中其它推荐场景数据集对照:同为短视频/快手系数据集的 [[kuairand]]、[[kuairec]];以及推荐工具与模型谱系中的 [[deepfm]]、[[factorization-machines]]([[fm]])、[[autoint]] 等(本文 benchmark 即在 FM/DeepFM/AFM 等[[ctr]]模型上验证 EEG 特征的增益)。作者团队来自 [[tsinghua-university]],与 [[qingyao-ai]]、[[min-zhang]] 等信息检索研究者相关。

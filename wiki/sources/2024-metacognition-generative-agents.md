@@ -49,4 +49,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] / [[generative-agents]] 方向,把 [[self-reflection]]、[[self-improvement]] 的思想抽象为更高阶的 metacognition(元认知)能力,与 [[reflexion]]、[[self-refine]] 等自我改进方法相关,并直接建立在 [[joon-sung-park]] 的 generative agents 工作之上。其记忆机制依赖 [[retrieval-augmented-generation]] 与 [[memory-stream]],评估采用 [[llm-as-judge]]。文中也引用了 [[chen-qian]] 等人的 [[chatdev]] 式多 agent 软件开发作为应用案例。
+本文属于 [[llm-agents|llm-agent]] / [[generative-agents]] 方向,把 [[self-reflection]]、[[self-improvement]] 的思想抽象为更高阶的 metacognition(元认知)能力,与 [[reflexion]]、[[self-refine]] 等自我改进方法相关,并直接建立在 [[joon-sung-park]] 的 generative agents 工作之上。其记忆机制依赖 [[retrieval-augmented-generation]] 与 [[memory-stream]],评估采用 [[llm-as-judge]]。文中也引用了 [[chen-qian]] 等人的 [[chatdev]] 式多 agent 软件开发作为应用案例。

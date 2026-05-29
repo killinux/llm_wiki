@@ -20,4 +20,4 @@ Chen Qian 是 ChatDev 论文的作者之一,研究方向涉及基于 LLM 的多�
 
 - [[2023-chatdev]]
 - [[multi-agent-collaboration]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

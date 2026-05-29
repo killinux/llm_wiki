@@ -21,6 +21,6 @@ MACRec 是清华大学提出的一个基于大语言模型的多 agent 协作推
 
 - [[multi-agent-system]]
 - [[llm-recommendation]]
-- [[recommender-system]]
-- [[llm-agent]]
+- [[recommender-systems|recommender-system]]
+- [[llm-agents|llm-agent]]
 - [[user-simulation]]

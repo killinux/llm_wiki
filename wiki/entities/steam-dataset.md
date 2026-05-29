@@ -22,7 +22,7 @@ Steam dataset 是源自 Steam 游戏平台的用户与物品交互数据,常用�
 ## 相关
 
 - [[generative-agents]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[user-simulation]]
 - [[sequential-recommendation]]
 - [[exposure-bias]]

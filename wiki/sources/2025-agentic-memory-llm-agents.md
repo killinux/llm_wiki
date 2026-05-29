@@ -12,7 +12,7 @@ year: 2025
 
 # A-Mem: Agentic Memory for LLM Agents
 
-A-Mem 提出一种受 Zettelkasten 笔记法启发的 agentic 记忆系统,让 [[llm-agent]] 通过动态生成结构化笔记、自主建立链接(link generation)与记忆演化(memory evolution),无需预定义的固定记忆操作即可组织长期记忆。
+A-Mem 提出一种受 Zettelkasten 笔记法启发的 agentic 记忆系统,让 [[llm-agents|llm-agent]] 通过动态生成结构化笔记、自主建立链接(link generation)与记忆演化(memory evolution),无需预定义的固定记忆操作即可组织长期记忆。
 
 ## 问题
 
@@ -39,4 +39,4 @@ A-Mem 的存储分为三部分,外加检索:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 长期记忆([[llm-long-term-memory]]、[[agent-memory]])方向,可与 [[memorybank]]、[[memgpt]]、[[generative-agents]] 的 [[memory-stream]] 等记忆机制对照。其检索基于 [[retrieval-augmented-generation]] 思路但强调记忆结构的自主演化,区别于 agentic RAG。评测使用 [[locomo]] 等 [[benchmark]],作者来自 [[rutgers-university]] / [[aios-foundation]],可关联 [[yongfeng-zhang]]。
+本文属于 [[llm-agents|llm-agent]] 长期记忆([[llm-long-term-memory]]、[[agent-memory]])方向,可与 [[memorybank]]、[[memgpt]]、[[generative-agents]] 的 [[memory-stream]] 等记忆机制对照。其检索基于 [[retrieval-augmented-generation]] 思路但强调记忆结构的自主演化,区别于 agentic RAG。评测使用 [[locomo]] 等 [[benchmark]],作者来自 [[rutgers-university]] / [[aios-foundation]],可关联 [[yongfeng-zhang]]。

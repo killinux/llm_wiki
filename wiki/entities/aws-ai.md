@@ -17,6 +17,6 @@ AWS AI 是亚马逊云科技(Amazon Web Services)旗下的人工智能研究与�
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[memory-augmentation]]
 - [[retrieval-augmented-generation]]

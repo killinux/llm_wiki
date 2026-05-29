@@ -21,5 +21,5 @@ Steam 是 Valve 的数字游戏分发平台,其用户与游戏交互数据常被
 - [[interecagent]]
 - [[billp]]
 - [[recllama]]
-- [[recommender-system]]
-- [[llm-agent]]
+- [[recommender-systems|recommender-system]]
+- [[llm-agents|llm-agent]]

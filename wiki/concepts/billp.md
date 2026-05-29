@@ -19,5 +19,5 @@ BiLLP(Bi-level Learnable LLM Planner)是一种用于长期推荐的双层可学�
 
 - [[planner]]
 - [[long-term-recommendation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reinforcement-learning]]

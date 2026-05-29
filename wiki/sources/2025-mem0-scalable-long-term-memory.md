@@ -23,7 +23,7 @@ year: 2025
 
 # Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory
 
-Mem0 是一个以记忆为中心的架构,从持续对话中动态抽取、整合与检索关键信息,使 [[llm-agent]] 在跨会话的长程对话中保持一致性,并在 LOCOMO 基准上以远低于全上下文方案的延迟与 token 成本超越多种基线。
+Mem0 是一个以记忆为中心的架构,从持续对话中动态抽取、整合与检索关键信息,使 [[llm-agents|llm-agent]] 在跨会话的长程对话中保持一致性,并在 LOCOMO 基准上以远低于全上下文方案的延迟与 token 成本超越多种基线。
 
 ## 问题
 
@@ -57,4 +57,4 @@ Mem0 是一个以记忆为中心的架构,从持续对话中动态抽取、整�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[agent-memory]] 与 [[llm-long-term-memory]] 方向,为生产级 [[llm-agent]] 提供可扩展的持久记忆基建。其核心机制可与 [[retrieval-augmented-generation]] 对比(把整段历史做 RAG 是其主要基线之一),并以 [[gpt-4o-mini]] 为推理引擎、Neo4j 为图存储。与同类记忆系统 MemGPT、MemoryBank([[memorybank]])、A-Mem、Zep、LangMem 形成横向比较;评测主指标采用 [[llm-as-judge]]。图记忆变体延续了知识图谱式的实体-关系建模思路,可与本 wiki 中 [[generative-agents]] 的 [[memory-stream]] 等记忆机制相互参照。
+本文属于 [[agent-memory]] 与 [[llm-long-term-memory]] 方向,为生产级 [[llm-agents|llm-agent]] 提供可扩展的持久记忆基建。其核心机制可与 [[retrieval-augmented-generation]] 对比(把整段历史做 RAG 是其主要基线之一),并以 [[gpt-4o-mini]] 为推理引擎、Neo4j 为图存储。与同类记忆系统 MemGPT、MemoryBank([[memorybank]])、A-Mem、Zep、LangMem 形成横向比较;评测主指标采用 [[llm-as-judge]]。图记忆变体延续了知识图谱式的实体-关系建模思路,可与本 wiki 中 [[generative-agents]] 的 [[memory-stream]] 等记忆机制相互参照。

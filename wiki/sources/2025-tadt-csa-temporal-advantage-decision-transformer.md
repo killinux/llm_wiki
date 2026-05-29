@@ -28,7 +28,7 @@ TADT-CSA 是一个面向工业级生成式推荐的 [[decision-transformer]] 改
 
 ## 问题
 
-在工业 [[recommender-system]] 中,序列推荐常被建模为无限时域的 [[markov-decision-process]],并用 [[reinforcement-learning]] 求解。传统基于 [[temporal-difference]] / TD 误差 bootstrapping 的方法在真实 RS 环境中面临两大困难:数据分布波动剧烈(尤其流量高峰到低谷的过渡),采集到的 $(s_t, a_t, r_t, s_{t+1})$ 样本高噪声、强随机,使 RL agent 难以学到准确的 Q 值估计。
+在工业 [[recommender-systems|recommender-system]] 中,序列推荐常被建模为无限时域的 [[markov-decision-process]],并用 [[reinforcement-learning]] 求解。传统基于 [[temporal-difference]] / TD 误差 bootstrapping 的方法在真实 RS 环境中面临两大困难:数据分布波动剧烈(尤其流量高峰到低谷的过渡),采集到的 $(s_t, a_t, r_t, s_{t+1})$ 样本高噪声、强随机,使 RL agent 难以学到准确的 Q 值估计。
 
 [[decision-transformer]](DT)作为一种 return-conditioned 的序列建模方法被引入生成式推荐(如 DT4Rec、CDT4Rec、DT4IER),相比 [[large-language-models]] 更轻量、推理开销低,适合工业部署(如自动出价场景)。但 DT 本身存在两个缺陷:
 
@@ -66,4 +66,4 @@ TADT-CSA 是一个面向工业级生成式推荐的 [[decision-transformer]] 改
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-for-recommendation]] / 生成式推荐与 [[offline-rl]] 交叉方向,是把 [[decision-transformer]] 应用到工业 [[recommender-system]] 的延续工作,直接对标 DT4Rec、CDT4Rec、DT4IER 等 DT-based 推荐模型,并改进其 [[behavior-cloning]] 局限(类似 QT、ACT、QDT 等给 DT 注入策略改进的思路)。其状态压缩借鉴 VQ-VAE([[variational-autoencoder]])与 [[graph-contrastive-learning]] 式对比学习。来自 [[kuaishou]] 团队,与该团队在 [[user-retention]]、[[watch-time]] 优化方向上的工作(如强化用户留存的短视频推荐)一脉相承。
+本文属于 [[llm-for-recommendation]] / 生成式推荐与 [[offline-rl]] 交叉方向,是把 [[decision-transformer]] 应用到工业 [[recommender-systems|recommender-system]] 的延续工作,直接对标 DT4Rec、CDT4Rec、DT4IER 等 DT-based 推荐模型,并改进其 [[behavior-cloning]] 局限(类似 QT、ACT、QDT 等给 DT 注入策略改进的思路)。其状态压缩借鉴 VQ-VAE([[variational-autoencoder]])与 [[graph-contrastive-learning]] 式对比学习。来自 [[kuaishou]] 团队,与该团队在 [[user-retention]]、[[watch-time]] 优化方向上的工作(如强化用户留存的短视频推荐)一脉相承。

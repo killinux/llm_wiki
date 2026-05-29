@@ -20,4 +20,4 @@ sources: 1
 - [[hyperzero]]
 - [[bayesian-optimization]]
 - [[thompson-sampling]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]

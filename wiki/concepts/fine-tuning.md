@@ -28,5 +28,5 @@ sources: 9
 - [[in-context-learning]]
 - [[prompt-engineering]]
 - [[retrieval-augmented-generation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reinforcement-learning]]

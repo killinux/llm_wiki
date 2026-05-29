@@ -1,10 +1,10 @@
 ---
 type: entity
 subtype: person
-tags: [recommendation-system, reinforcement-learning, kuaishou, short-video, author]
+tags: [recommendation-system, reinforcement-learning, kuaishou, short-video, author, moe]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 7
+sources: 8
 ---
 
 # Kun Gai
@@ -20,6 +20,7 @@ Kun Gai 是一位活跃于推荐系统与强化学习交叉领域的研究者,�
 - [[2023-kuaisim-recommender-simulator]]:面向推荐系统的综合性用户模拟器,提供 multi-behavior 与 cross-session 反馈,统一支持 request 级 list-wise、whole-session 级 sequential 与 cross-session 级 retention 三类 RL 推荐任务并配套 benchmark。
 - [[2024-future-impact-decomposition-request-level-recommendation]]:提出 ItemA2C 框架,在 request-level MDP 下将 list-wise reward 分解为 item-wise 信用并用 actor-critic 优化每个 item 的长期未来影响,提升推荐长期效果。
 - [[2024-recflow-full-flow-recommendation-dataset]]:首个包含工业推荐系统多级漏斗各阶段未曝光样本的大规模全流程数据集,用于研究分布偏移、选择偏差与多阶段联合优化。
+- [[2026-smes-scalable-multi-task-expert-sparsity]]:SMES 是 Kuaishou 提出的可扩展稀疏 MoE 多任务推荐框架,用 progressive expert routing 与 multi-task load-balancing 解决多任务稀疏路由的 exploded activation 与 load skew,使参数 scaling 在工业延迟约束下带来稳定收益。
 
 ## 相关
 
@@ -31,3 +32,4 @@ Kun Gai 是一位活跃于推荐系统与强化学习交叉领域的研究者,�
 - [[embedding-based-retrieval]]:divide-and-conquer 召回工作所属的技术方向。
 - [[gflownet]]:GFN4Rec 所基于的生成式建模框架。
 - [[user-simulator]]:KuaiSim 所属的推荐系统模拟器方向。
+- [[mixture-of-experts]]:SMES 所基于的稀疏 MoE 多任务建模方向。

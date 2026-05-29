@@ -4,7 +4,7 @@ subtype: method
 tags: [multi-task-learning, recommendation, cvr, ctr]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 5
 ---
 
 # ESMM
@@ -17,6 +17,7 @@ ESMM(Entire Space Multi-task Model)是一种推荐系统中的多任务学习方
 - [[2024-residual-multi-task-learner-resflow]]:ResFlow 轻量多任务学习框架,通过跨任务网络对应层的残差连接高效传递信息;部署于 Shopee Search pre-rank,线上 OPU 提升 1.29% 且无额外延迟。
 - [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
 - [[2025-multi-objective-controllable-decision-transformer]]:提出 MocDT,一种基于 Decision Transformer 的离线 RL 推荐方法,把未来多目标作为控制信号,在推理阶段自回归生成对齐指定目标(累积评分与多样性)的物品序列,无需重训。
+- [[2025-no-one-left-behind-asymmetric-multi-label-cvr]]:KAML 框架针对广告主只上报部分转化行为导致的非对称多标签数据,用归因掩码 ADM、层级知识抽取 HKE 与排序标签利用 RLU 改进 MMoE 基座,工业数据与线上 A/B(RPM +12.11%、CVR +0.92%)均超越现有 MTL 基线的 CVR 预测方法。
 
 ## 相关
 

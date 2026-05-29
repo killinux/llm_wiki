@@ -22,7 +22,7 @@ DriveMLM 框架包含三个关键设计:
 
 - **行为规划状态对齐(Behavioral Planning States Alignment)**:把 LLM 的语言决策输出与 CARLA Apollo 系统行为规划模块的决策阶段对齐。决策分为两类:速度决策状态 [KEEP, ACCELERATE, DECELERATE, STOP] 与路径决策状态 [FOLLOW, LEFT_CHANGE, RIGHT_CHANGE, LEFT_BORROW, RIGHT_BORROW]。这样 LLM 输出可即插即用(plug-and-play)转成控制信号。
 
-- **MLLM Planner**:由多模态 tokenizer 与 MLLM decoder 组成。tokenizer 处理三类输入:(1) 时序多视角图像,用 CLIP/[[vit]] 视觉编码器 + Temporal QFormer 处理;(2) LiDAR 点云,用 single-stride sparse transformer (SST) 编码,并通过 image-lidar CLIP 模型把点云特征对齐到图像特征空间;(3) 系统消息 M 与用户指令 U,用 LLM 的 token embedding 层编码。decoder 基于 [[llama]](LLaMA-7B,husky 模型)生成决策状态 S 与对应的自然语言解释 E。属于 [[tool-use]] 之外的 embodied 决策范式,可看作面向驾驶的 [[llm-agent]]。
+- **MLLM Planner**:由多模态 tokenizer 与 MLLM decoder 组成。tokenizer 处理三类输入:(1) 时序多视角图像,用 CLIP/[[vit]] 视觉编码器 + Temporal QFormer 处理;(2) LiDAR 点云,用 single-stride sparse transformer (SST) 编码,并通过 image-lidar CLIP 模型把点云特征对齐到图像特征空间;(3) 系统消息 M 与用户指令 U,用 LLM 的 token embedding 层编码。decoder 基于 [[llama]](LLaMA-7B,husky 模型)生成决策状态 S 与对应的自然语言解释 E。属于 [[tool-use]] 之外的 embodied 决策范式,可看作面向驾驶的 [[llm-agents|llm-agent]]。
 
 - **高效数据引擎(Efficient Data Engine)**:在 CARLA 采集 280 小时驾驶数据(50k 路线,30 个驾驶场景,8 张地图),由专家司机/agent 驾驶并记录;速度与路径决策由手工规则从轨迹自动标注,解释标注由规则生成后经人工与 [[gpt-3-5]] 精炼,以低成本生成决策状态 + 解释数据。
 
@@ -38,4 +38,4 @@ DriveMLM 框架包含三个关键设计:
 
 ## 在本 wiki 中的位置
 
-DriveMLM 是把 [[large-language-models]] 与多模态感知应用到 **自动驾驶闭环控制** 的代表性工作,可视为面向具身/驾驶场景的 [[llm-agent]]。它把 LLM 决策与传统行为规划状态对齐,连接了语言推理与车辆控制,与本 wiki 中 [[embodied-reasoning]]、[[grounding]]、[[saycan]] 等"语言模型驱动具身/物理动作"的条目同属一脉;作者来自 [[tsinghua-university]] 与 Shanghai AI Lab,模型构建在 [[llama]] 与 [[vit]] 之上,可作为理解 MLLM 在物理世界决策落地的入口。
+DriveMLM 是把 [[large-language-models]] 与多模态感知应用到 **自动驾驶闭环控制** 的代表性工作,可视为面向具身/驾驶场景的 [[llm-agents|llm-agent]]。它把 LLM 决策与传统行为规划状态对齐,连接了语言推理与车辆控制,与本 wiki 中 [[embodied-reasoning]]、[[grounding]]、[[saycan]] 等"语言模型驱动具身/物理动作"的条目同属一脉;作者来自 [[tsinghua-university]] 与 Shanghai AI Lab,模型构建在 [[llama]] 与 [[vit]] 之上,可作为理解 MLLM 在物理世界决策落地的入口。

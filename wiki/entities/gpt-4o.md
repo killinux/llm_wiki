@@ -4,7 +4,7 @@ subtype: model
 tags: [llm, model, openai, multimodal, gpt]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 7
 ---
 
 # GPT-4o
@@ -17,11 +17,17 @@ GPT-4o 是 OpenAI 推出的多模态大语言模型,广泛用作 LLM 智能体�
 - [[2024-positive-experience-reflection]]:提出 Sweet&Sour:让 LLM agent 在交互式文本环境中不仅从失败、也从成功经验做反思,并配合双缓冲 managed memory,缓解 self-reflection 在初始成功与小模型上失效的问题;ScienceWorld 上 GPT-4o 平均 54.6、Llama 8B 32.5 均超 Reflexion。
 - [[2025-agentic-memory-llm-agents]]:受 Zettelkasten 启发的 agentic 记忆系统,通过结构化笔记、自主链接生成与记忆演化为 LLM agent 提供可持续演化的长期记忆。
 - [[2025-ab-mcts-adaptive-branching-tree-search]]:提出 AB-MCTS:在推理时树搜索中用 Thompson sampling 自适应决定"向宽采样新候选"还是"向深用外部反馈细化已有答案",统一 repeated sampling 与多轮 refinement,实现更高效的 test-time scaling。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent 构建了一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 来评估推荐模型并进行数据增强。
+- [[2026-tooltree-tool-planning]]:ToolTree 是一个免训练的 MCTS 工具规划框架,通过执行前/执行后双反馈引导搜索并双向剪枝,在固定预算下提升 LLM 智能体多工具规划的准确率与效率(GTA 66.95 AVG,ToolBench 69.04 AVG)。
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论":固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
 
 ## 相关
 
 - [[openai]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reasoning-rag]]
 - [[test-time-scaling]]
 - [[llama]]
+- [[multimodal-llm]]
+- [[tool-planning]]
+- [[multi-agent-systems]]

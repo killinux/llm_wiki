@@ -20,4 +20,4 @@ Zhihu-1M 是一个来自知乎平台的推荐场景数据集,常用于离线强�
 - [[multi-objective-controllable-decision-transformer]]
 - [[decision-transformer]]
 - [[offline-reinforcement-learning]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

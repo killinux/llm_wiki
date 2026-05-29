@@ -55,4 +55,4 @@ FlexCode(论文中也称 Dynamic Dual-Codebook Learning)由以下部分组成:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中 [[generative-recommendation]] / [[semantic-id]] 路线,直接对话 [[tiger]]、[[lc-rec]]、[[vq-rec]] 等单 codebook 方法,核心贡献是把 [[rq-vae]] 量化、[[mixture-of-experts]] 路由与 [[contrastive-learning]] 对齐组合成"双 codebook + popularity-aware 分配",针对 [[cold-start]] 与 [[popularity-bias]] / 长尾问题。与 [[cobra]] 等"协同+语义融合"工作思路相邻,可与 [[sasrec]]、[[bert4rec]]、[[sequential-recommendation]] 等序列推荐基线对照阅读。
+本文属于 [[recommender-systems|recommender-system]] 中 [[generative-recommendation]] / [[semantic-id]] 路线,直接对话 [[tiger]]、[[lc-rec]]、[[vq-rec]] 等单 codebook 方法,核心贡献是把 [[rq-vae]] 量化、[[mixture-of-experts]] 路由与 [[contrastive-learning]] 对齐组合成"双 codebook + popularity-aware 分配",针对 [[cold-start]] 与 [[popularity-bias]] / 长尾问题。与 [[cobra]] 等"协同+语义融合"工作思路相邻,可与 [[sasrec]]、[[bert4rec]]、[[sequential-recommendation]] 等序列推荐基线对照阅读。

@@ -20,5 +20,5 @@ FEVER(Fact Extraction and VERification)是一个事实核查基准:给定一条�
 - [[expel]]
 - [[hotpotqa]]
 - [[fact-verification]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[wikipedia]]

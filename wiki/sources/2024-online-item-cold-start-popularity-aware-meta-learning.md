@@ -29,7 +29,7 @@ year: 2024
 
 ## 问题
 
-在线 [[recommender-system]](短视频、电商、流媒体)需要在严格时延约束下、以单 epoch 流式训练持续更新模型并分发新物品。新物品的 [[cold-start]] 问题(交互稀疏)持续损害推荐效果,且面临两大挑战:
+在线 [[recommender-systems|recommender-system]](短视频、电商、流媒体)需要在严格时延约束下、以单 epoch 流式训练持续更新模型并分发新物品。新物品的 [[cold-start]] 问题(交互稀疏)持续损害推荐效果,且面临两大挑战:
 
 - **[[matthew-effect]](马太效应)**:线上线下数据由热门物品主导,模型对热门越来越准、对冷门越来越差,热门数据占比随时间增大,加剧冷启动。
 - **流式约束下旧方法失效**:传统冷启动方案(基于 fine-tuning / 知识迁移 / side-information)多在离线表现好;但在流式数据管线上,因训练方式、计算开销与时延限制,无法为每个新物品实时生成个性化参数。
@@ -63,4 +63,4 @@ PAM 由三部分组成,基座是一个 model-agnostic 的 dual-tower(双塔)模�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / [[cold-start]] 方向,核心手段是 meta-learning 而非 LLM。它把 [[matthew-effect]] 视为在线冷启动的根因,用"按热度固定切分任务 + 跨任务共享 meta-knowledge"在流式约束下解决新物品冷启动,可与同主题的 [[2024-prompt-tuning-item-cold-start]] 互为对照(后者侧重 prompt-tuning 思路的物品冷启动)。出品方为 [[kuaishou]] 与北京大学,使用了 [[movielens]]、[[yelp-dataset]] 等常见推荐数据集,评测指标用 [[ndcg]]。与本 wiki 中大量 LLM-for-recommendation 工作相比,本文提供了一个"工业级在线流式 + meta-learning"的非 LLM 基线视角。
+本文属于 [[recommender-systems|recommender-system]] / [[cold-start]] 方向,核心手段是 meta-learning 而非 LLM。它把 [[matthew-effect]] 视为在线冷启动的根因,用"按热度固定切分任务 + 跨任务共享 meta-knowledge"在流式约束下解决新物品冷启动,可与同主题的 [[2024-prompt-tuning-item-cold-start]] 互为对照(后者侧重 prompt-tuning 思路的物品冷启动)。出品方为 [[kuaishou]] 与北京大学,使用了 [[movielens]]、[[yelp-dataset]] 等常见推荐数据集,评测指标用 [[ndcg]]。与本 wiki 中大量 LLM-for-recommendation 工作相比,本文提供了一个"工业级在线流式 + meta-learning"的非 LLM 基线视角。

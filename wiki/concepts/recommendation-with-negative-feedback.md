@@ -19,5 +19,5 @@ sources: 2
 ## 相关
 
 - [[model-editing]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[bpr-loss]]

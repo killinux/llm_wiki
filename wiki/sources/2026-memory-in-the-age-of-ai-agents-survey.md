@@ -32,7 +32,7 @@ year: 2026
 
 ## 问题
 
-随着 [[llm-agent]] 的能力快速扩张,memory 已成为支撑长程推理、持续适应与复杂环境交互的核心能力。但该领域日益碎片化:不同工作对 "agent memory" 的动机、实现、假设和评测协议差异巨大,而 declarative / episodic / semantic / parametric memory 等术语的泛滥进一步模糊了概念边界。作者指出传统的 long/short-term memory 分类已不足以刻画当代智能体记忆系统的多样性与动态性,且既有综述(如 Zhang et al. 2025s、Wu et al. 2025g)未能覆盖 2025 年涌现的新方向(如从过往经验蒸馏可复用工具、记忆增强的 test-time scaling)。本文围绕五个关键问题展开:agent memory 的定义及其与 [[large-language-models]] memory、[[retrieval-augmented-generation]]、[[context-engineering]] 的关系;记忆的 forms、functions、dynamics;以及未来研究前沿。
+随着 [[llm-agents|llm-agent]] 的能力快速扩张,memory 已成为支撑长程推理、持续适应与复杂环境交互的核心能力。但该领域日益碎片化:不同工作对 "agent memory" 的动机、实现、假设和评测协议差异巨大,而 declarative / episodic / semantic / parametric memory 等术语的泛滥进一步模糊了概念边界。作者指出传统的 long/short-term memory 分类已不足以刻画当代智能体记忆系统的多样性与动态性,且既有综述(如 Zhang et al. 2025s、Wu et al. 2025g)未能覆盖 2025 年涌现的新方向(如从过往经验蒸馏可复用工具、记忆增强的 test-time scaling)。本文围绕五个关键问题展开:agent memory 的定义及其与 [[large-language-models]] memory、[[retrieval-augmented-generation]]、[[context-engineering]] 的关系;记忆的 forms、functions、dynamics;以及未来研究前沿。
 
 ## 方法
 

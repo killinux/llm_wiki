@@ -14,7 +14,7 @@ RecFlow 是首个包含工业推荐系统多级漏斗中各阶段“被过滤(�
 
 ## 问题
 
-工业 [[recommender-system]] 依赖多级漏斗 pipeline(retrieval → pre-ranking → ranking → re-ranking)在效果与效率间取得平衡。现有公开 RS 数据集(如 [[movielens]]、[[amazon-reviews]]、[[kuairec]]、[[kuairand]] 等)几乎只采集**曝光空间(exposure space)**的样本,带来两个核心缺陷:
+工业 [[recommender-systems|recommender-system]] 依赖多级漏斗 pipeline(retrieval → pre-ranking → ranking → re-ranking)在效果与效率间取得平衡。现有公开 RS 数据集(如 [[movielens]]、[[amazon-reviews]]、[[kuairec]]、[[kuairand]] 等)几乎只采集**曝光空间(exposure space)**的样本,带来两个核心缺陷:
 
 1. **分布偏移(distribution shift)**:模型在曝光空间训练,但在线服务时要对海量**未曝光**候选打分,训练与服务空间不一致,导致 [[selection-bias]] 与次优表现。
 2. **多阶段交互被忽视**:各阶段模型独立训练评估,但实际需作为统一系统协作;缺乏对后续阶段信息的建模会损害如 retrieval 等前序阶段的在线表现。
@@ -41,4 +41,4 @@ RecFlow 是首个包含工业推荐系统多级漏斗中各阶段“被过滤(�
 
 ## 在本 wiki 中的位置
 
-RecFlow 是一个面向 [[recommender-system]] 的工业级 [[dataset]] 与 [[benchmark]],来自 [[kuaishou]]。它的独特价值在于显式记录多级漏斗的未曝光阶段样本,因而成为研究 [[selection-bias]]、[[debiasing]]、分布偏移与多阶段联合优化的基础设施,可与 [[kuairec]]、[[kuairand]] 等同源数据集对照。在方法层面它连接了 [[hard-negative-mining]]、[[sasrec]]、[[dssm]]、[[bpr]]、[[ndcg]] 等检索/粗排技术。作者包括 [[guorui-zhou]]、[[kun-gai]] 等,机构涵盖 [[university-of-science-and-technology-of-china]]、[[kuaishou]]、[[tsinghua-university]]。
+RecFlow 是一个面向 [[recommender-systems|recommender-system]] 的工业级 [[dataset]] 与 [[benchmark]],来自 [[kuaishou]]。它的独特价值在于显式记录多级漏斗的未曝光阶段样本,因而成为研究 [[selection-bias]]、[[debiasing]]、分布偏移与多阶段联合优化的基础设施,可与 [[kuairec]]、[[kuairand]] 等同源数据集对照。在方法层面它连接了 [[hard-negative-mining]]、[[sasrec]]、[[dssm]]、[[bpr]]、[[ndcg]] 等检索/粗排技术。作者包括 [[guorui-zhou]]、[[kun-gai]] 等,机构涵盖 [[university-of-science-and-technology-of-china]]、[[kuaishou]]、[[tsinghua-university]]。

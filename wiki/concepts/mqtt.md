@@ -20,4 +20,4 @@ MQTT 是一种轻量级的发布/订阅消息传输协议,常用于物联网与�
 - [[publish-subscribe]]
 - [[distributed-simulation]]
 - [[large-scale-social-simulation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

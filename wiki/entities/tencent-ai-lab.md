@@ -26,7 +26,7 @@ Tencent AI Lab 是腾讯旗下的企业人工智能研究机构,研究方向涵�
 - [[large-language-model]]
 - [[multi-agent-system]]
 - [[self-reflection]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[multi-domain-recommendation]]
 - [[collaborative-filtering]]
 - [[persona-hub]]

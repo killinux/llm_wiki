@@ -12,7 +12,7 @@ year: 2025
 
 # SocioVerse: A World Model for Social Simulation Powered by LLM Agents and A Pool of 10 Million Real-World Users
 
-SocioVerse 是一个由 [[llm-agent]] 驱动的社会模拟 world model,借助 1000 万真实用户池和四个对齐模块,在政治、新闻、经济三大领域复现大规模人群行为。
+SocioVerse 是一个由 [[llm-agents|llm-agent]] 驱动的社会模拟 world model,借助 1000 万真实用户池和四个对齐模块,在政治、新闻、经济三大领域复现大规模人群行为。
 
 ## 问题
 
@@ -27,7 +27,7 @@ SocioVerse 是一个由 [[llm-agent]] 驱动的社会模拟 world model,借助 1
 
 SocioVerse 框架由四个对齐模块组成(见论文 Figure 2):
 
-- **Social Environment(社会环境)**:注入实时事件与情境知识,分为 social structure(人口分布、文化规范等知识库)、social dynamics(持续抓取带时间戳与事件标签的新闻)、personalized context(借鉴 [[recommender-system]] 思路为 agent 推送个性化内容)。
+- **Social Environment(社会环境)**:注入实时事件与情境知识,分为 social structure(人口分布、文化规范等知识库)、social dynamics(持续抓取带时间戳与事件标签的新闻)、personalized context(借鉴 [[recommender-systems|recommender-system]] 思路为 agent 推送个性化内容)。
 - **User Engine(用户引擎)**:核心是 **1000 万真实用户池**,从 X 与小红书(Rednote)收集真实社媒数字足迹,过滤广告与 bot 数据。用户池规模为 X 1,006,517 用户/30,195,510 帖,Rednote 9,158,404 用户/40,963,735 帖,合计约 1000 万人(媲美匈牙利或希腊全国人口)。配套 **demographic annotation 系统**:多个 LLM 作初始标注、人工评估精炼、再训练专用分类器实现低成本大规模标注,覆盖 15 个人口学维度(age、gender、vocation、race、income、education、settlement type、region、employment、marital status、religious、party、ideology、BigFive personality、hobbies)。
 - **Scenario Engine(场景引擎)**:将真实社会情境抽象为四类模板——questionnaire(1-to-N)、in-depth interview(1-to-1)、behavior experiment(1-to-N 或 N-to-N)、social media interaction(N-to-N),并按用户池人口分布采样以放大单次模拟。
 - **Behavior Engine(行为引擎)**:整合用户历史、交互机制与社会情境来预测个体行为,可由 traditional [[agent-based-modeling]](规则/数学模型,适合海量边缘用户)与 LLM agent(general/expert/domain LLM,通过非参 prompting 或参数化训练激活角色扮演能力)共同驱动。
@@ -47,4 +47,4 @@ SocioVerse 框架由四个对齐模块组成(见论文 Figure 2):
 
 ## 在本 wiki 中的位置
 
-本文属于 [[social-simulation]] / [[llm-agent]] 方向,把社会模拟封装为 [[world-model]],强调真实用户池驱动的 [[user-simulation]]。与 [[generative-agents]]、[[recagent]]、[[social-simulation]] 类工作相比,SocioVerse 的差异点在于 1000 万真实社媒用户池 + 人口学分类器对齐,以及统一的四模块框架。它结合了 [[agent-based-modeling]] 与 LLM agent 两种行为引擎,并触及 [[recommender-system]] 的个性化内容机制。评测中使用的 [[deepseek-v3]]、[[gpt-4o-mini]] 等模型可作为模拟 backbone 的参照。研究由 [[fudan-university]] 等机构完成,可与 [[role-playing]]、[[social-intelligence]] 等概念互链。
+本文属于 [[social-simulation]] / [[llm-agents|llm-agent]] 方向,把社会模拟封装为 [[world-model]],强调真实用户池驱动的 [[user-simulation]]。与 [[generative-agents]]、[[recagent]]、[[social-simulation]] 类工作相比,SocioVerse 的差异点在于 1000 万真实社媒用户池 + 人口学分类器对齐,以及统一的四模块框架。它结合了 [[agent-based-modeling]] 与 LLM agent 两种行为引擎,并触及 [[recommender-systems|recommender-system]] 的个性化内容机制。评测中使用的 [[deepseek-v3]]、[[gpt-4o-mini]] 等模型可作为模拟 backbone 的参照。研究由 [[fudan-university]] 等机构完成,可与 [[role-playing]]、[[social-intelligence]] 等概念互链。

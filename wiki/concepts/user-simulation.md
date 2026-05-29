@@ -35,7 +35,7 @@ User Behavior Simulation 是指用计算模型(尤其是 LLM-based agent)在虚�
 
 ## 相关
 
-- [[llm-agent]]:实现 User Behavior Simulation 的常用技术基础。
+- [[llm-agents|llm-agent]]:实现 User Behavior Simulation 的常用技术基础。
 - [[recommender-systems]]:User Behavior Simulation 的典型应用场景之一。
 - [[social-simulation]]:更广义的社会行为模拟,与用户行为模拟密切相关。
 - [[information-cocoon]]:可通过用户行为模拟研究的社会现象。

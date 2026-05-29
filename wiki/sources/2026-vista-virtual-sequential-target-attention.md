@@ -14,7 +14,7 @@ VISTA 是 [[meta]] 提出的一个两阶段建模框架,通过把超长用户交
 
 ## 问题
 
-工业级 [[recommender-system]] 依赖用户交互历史序列来提升性能。把历史扩展到超长(10k 到 100k 甚至百万级 item)通常能提升模型效果,但在工业系统中带来严重的延迟、QPS(每秒查询数)和 GPU 成本问题。
+工业级 [[recommender-systems|recommender-system]] 依赖用户交互历史序列来提升性能。把历史扩展到超长(10k 到 100k 甚至百万级 item)通常能提升模型效果,但在工业系统中带来严重的延迟、QPS(每秒查询数)和 GPU 成本问题。
 
 现有两类 [[sequential-recommendation]] 方法各有局限:
 
@@ -49,4 +49,4 @@ VISTA(VIrtual Sequential Target Attention)把传统 target attention 拆成两�
 
 ## 在本 wiki 中的位置
 
-VISTA 属于工业级 [[sequential-recommendation]] 与 [[recommender-system]] 的 long-term 用户行为建模方向,直接对标全序列方法 [[hstu]] 和 target-specific 方法 SIM/TWIN。它把 [[linear-attention]] / [[katharopoulos-et-al-2020]] 的思路与门控非线性结合成 QLA,并借鉴 [[variational-autoencoder]] 的重建思想做摘要 token 的信息保留。与 [[sasrec]]、[[din]] 等经典模型相比,VISTA 的核心创新在于训练/推理解耦的两阶段缓存设计。出自 [[meta]],已部署于服务数十亿用户的工业推荐平台。
+VISTA 属于工业级 [[sequential-recommendation]] 与 [[recommender-systems|recommender-system]] 的 long-term 用户行为建模方向,直接对标全序列方法 [[hstu]] 和 target-specific 方法 SIM/TWIN。它把 [[linear-attention]] / [[katharopoulos-et-al-2020]] 的思路与门控非线性结合成 QLA,并借鉴 [[variational-autoencoder]] 的重建思想做摘要 token 的信息保留。与 [[sasrec]]、[[din]] 等经典模型相比,VISTA 的核心创新在于训练/推理解耦的两阶段缓存设计。出自 [[meta]],已部署于服务数十亿用户的工业推荐平台。

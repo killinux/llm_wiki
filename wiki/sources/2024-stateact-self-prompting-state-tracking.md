@@ -14,7 +14,7 @@ StateAct 是一种增强 LLM「base agent」的纯 in-context learning 方法,�
 
 ## 问题
 
-基于 [[large-language-models]] 的智能体在交互式环境(家务机器人、在线购物、网页导航等)中越来越常用,其性能取决于底层的「base agent」(基础智能体)。当前最强的 base agent 是 [[react-reasoning-and-acting]](ReAct),它把 acting 与 [[chain-of-thought]] 结合;几乎所有 SOTA 方法(ActRe、AutoGuide、ADaPT 等)都构建在 ReAct 之上。
+基于 [[large-language-models]] 的智能体在交互式环境(家务机器人、在线购物、网页导航等)中越来越常用,其性能取决于底层的「base agent」(基础智能体)。当前最强的 base agent 是 [[react|react-reasoning-and-acting]](ReAct),它把 acting 与 [[chain-of-thought]] 结合;几乎所有 SOTA 方法(ActRe、AutoGuide、ADaPT 等)都构建在 ReAct 之上。
 
 但现有改进路线大多资源密集:有的需要人工标注规则,有的需要 code-execution 环境与代码化 prompt,有的需要额外训练数据做 [[fine-tuning]] 或 [[retrieval-augmented-generation]](RAG),有的需要 test-time scaling。作者指出两个根本痛点:
 1. LLM 智能体在较长交互中**无法持续遵循原始指令和目标**(goal adherence)。
@@ -43,7 +43,7 @@ StateAct 是工作在预训练 LLM 之上的 base agent:接收环境的文本 ob
 
 ## 在本 wiki 中的位置
 
-- 直接对标与替换对象:[[react-reasoning-and-acting]](ReAct),StateAct 定位为新的更强 base agent。
+- 直接对标与替换对象:[[react|react-reasoning-and-acting]](ReAct),StateAct 定位为新的更强 base agent。
 - 所属范式:[[llm-agents]] / [[autonomous-agents]],纯 [[in-context-learning]],不依赖 [[fine-tuning]] 或 [[retrieval-augmented-generation]]。
 - 关键技术:扩展自 [[chain-of-thought]](chain-of-states),与 self-prompting 协同应对长程推理与目标遵循。
 - 评测基准:[[alfworld]]、[[webshop]]、Textcraft。

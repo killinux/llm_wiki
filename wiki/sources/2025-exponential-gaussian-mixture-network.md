@@ -16,7 +16,7 @@ EGMN 把短视频观看时长(watch time)建模为一个 **Exponential-Gaussian 
 
 ## 问题
 
-在 TikTok、KuaiShou、小红书等短视频平台上,观看时长是衡量用户满意度的核心指标,准确预测它对 [[recommender-system]] 的推荐质量至关重要。作者通过对真实工业数据的系统分析,发现观看时长分布存在两个跨粒度难题:
+在 TikTok、KuaiShou、小红书等短视频平台上,观看时长是衡量用户满意度的核心指标,准确预测它对 [[recommender-systems|recommender-system]] 的推荐质量至关重要。作者通过对真实工业数据的系统分析,发现观看时长分布存在两个跨粒度难题:
 
 - **粗粒度偏态(coarse-grained skewness)**:大量 quick-skip(用户快速划走)导致观看时长在 0 附近高度集中、强偏态。
 - **细粒度多样性(fine-grained diversity)**:不同用户(挑剔型 vs 包容型)和不同视频(美妆视频呈双峰、影视合集呈多峰)的观看时长分布形态差异巨大,呈现多模态。
@@ -57,4 +57,4 @@ $p(t)=\omega_0 f_{exp}(t\mid\lambda)+\sum_{k=1}^{K}\omega_k f_{gauss}(t\mid\mu_k
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中 watch-time 预测方向,直接对标并改进 [[wtg]]、[[d2q]]、[[cread]]、[[tpm]]、[[d2co]] 等观看时长建模方法,关联 [[kuairec]] 等 RecSys 数据集与 [[mse]]、[[transformer]] 等基础组件。它将观看时长回归重构为概率分布(混合密度网络思路)建模,可与本 wiki 中 [[watch-time]]、[[duration-bias]]、[[debiasing]] 等条目互参。
+本文属于 [[recommender-systems|recommender-system]] 中 watch-time 预测方向,直接对标并改进 [[wtg]]、[[d2q]]、[[cread]]、[[tpm]]、[[d2co]] 等观看时长建模方法,关联 [[kuairec]] 等 RecSys 数据集与 [[mse]]、[[transformer]] 等基础组件。它将观看时长回归重构为概率分布(混合密度网络思路)建模,可与本 wiki 中 [[watch-time]]、[[duration-bias]]、[[debiasing]] 等条目互参。

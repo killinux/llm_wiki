@@ -12,7 +12,7 @@ year: 2025
 
 # AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications
 
-一句话:AgentScope 1.0 是 [[alibaba]] 推出的以开发者为中心的 [[llm-agent]] 框架,以 [[react-reasoning-and-acting]] 范式为核心,通过异步设计、细粒度工具/MCP 管理、内置 agent、评估与运行时沙箱,系统性支持灵活高效的工具化 agent-环境交互。
+一句话:AgentScope 1.0 是 [[alibaba]] 推出的以开发者为中心的 [[llm-agents|llm-agent]] 框架,以 [[react|react-reasoning-and-acting]] 范式为核心,通过异步设计、细粒度工具/MCP 管理、内置 agent、评估与运行时沙箱,系统性支持灵活高效的工具化 agent-环境交互。
 
 ## 问题
 
@@ -25,7 +25,7 @@ year: 2025
 
 ## 方法
 
-AgentScope 1.0 围绕 [[react-reasoning-and-acting]] 范式构建,分四层:
+AgentScope 1.0 围绕 [[react|react-reasoning-and-acting]] 范式构建,分四层:
 
 - **Foundational Components(基础组件)**:抽象为 message、model、memory、tool 四个强解耦模块。message 用 `ContentBlock`(文本/图像/音频/视频/tool_use/tool_result/thinking)统一多模态;model 基于 `ChatModelBase` 统一 OpenAI、DeepSeek、vLLM、DashScope、[[anthropic]]、[[gemini]]、Ollama 等 provider,支持流式、异步调用、统一 `ChatResponse`、usage 追踪与 `@trace_llm` 分布式 tracing;memory 分短期(`InMemoryMemory`)与长期([[agent-memory]],`LongTermMemoryBase`,并给出基于 Mem0 的 `Mem0LongTermMemory` 实现);tool 以 `Toolkit` 统一注册/执行函数与 MCP,提供 stateful/stateless MCP client 与 **group-wise tool management**(按需激活工具组以缩小选择空间)。
 - **Agent-level Infrastructure**:ReAct agent 提供 Reply / Observe / Handle Interrupt 三大功能;支持基于 asyncio cancellation 的 **real-time steering**(把中断当作可观测事件存入 memory)、**parallel tool calling**(单步多工具并发)、**dynamic tool provisioning**(`reset_equipped_tools` 动态激活工具组)、基于 `StateModule` 的状态持久化,以及非侵入式 hook 系统(reply/observe/reasoning/acting/print 的前后钩子)。内置三类 agent:Deep Research Agent([[deep-research-agent]],query 扩展/[[reflection]]/总结)、Browser-use Agent(基于 Playwright MCP 的网页自动化)、Meta Planner([[agent-orchestration]],分层任务分解 + 动态 worker agent 调度)。
@@ -46,4 +46,4 @@ AgentScope 1.0 围绕 [[react-reasoning-and-acting]] 范式构建,分四层:
 
 ## 在本 wiki 中的位置
 
-AgentScope 1.0 属于 [[llm-agent]] / [[multi-agent-systems]] 的 agent 框架一脉,与 [[autogen]]、[[metagpt]]、[[langchain]]、[[aios-foundation]] 等 [[agent-orchestration]] 框架并列,核心采用 [[react-reasoning-and-acting]] 范式并深度整合 [[tool-use]]、[[function-calling]] 与 MCP。其 memory 设计关联 [[agent-memory]] / [[memory-module]] / [[llm-long-term-memory]],内置 [[deep-research-agent]] 与浏览器 agent 关联 [[webarena]]/[[mind2web]] 类网页智能体研究,Meta Planner 关联 [[llm-planning]]。出品方 [[alibaba]] 同系工作还包括 AgentScope 早期版本(very large-scale multi-agent simulation,Pan et al.)与 Kimas/[[concordia]] 等多智能体系统。
+AgentScope 1.0 属于 [[llm-agents|llm-agent]] / [[multi-agent-systems]] 的 agent 框架一脉,与 [[autogen]]、[[metagpt]]、[[langchain]]、[[aios-foundation]] 等 [[agent-orchestration]] 框架并列,核心采用 [[react|react-reasoning-and-acting]] 范式并深度整合 [[tool-use]]、[[function-calling]] 与 MCP。其 memory 设计关联 [[agent-memory]] / [[memory-module]] / [[llm-long-term-memory]],内置 [[deep-research-agent]] 与浏览器 agent 关联 [[webarena]]/[[mind2web]] 类网页智能体研究,Meta Planner 关联 [[llm-planning]]。出品方 [[alibaba]] 同系工作还包括 AgentScope 早期版本(very large-scale multi-agent simulation,Pan et al.)与 Kimas/[[concordia]] 等多智能体系统。

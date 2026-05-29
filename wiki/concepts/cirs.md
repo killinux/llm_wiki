@@ -22,6 +22,6 @@ CIRS(Causal Inference for Recommendation Systems / 因果干预推荐方法)是�
 - [[model-based-offline-rl]]
 - [[world-model]]
 - [[uncertainty-penalty]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[agentic-feedback-loop]]
 - [[user-simulation]]

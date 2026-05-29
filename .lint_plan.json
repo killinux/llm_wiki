@@ -1,0 +1,554 @@
+{
+ "rewrite": {
+  "recommendation-system": "recommender-systems",
+  "large-language-model": "large-language-models",
+  "multi-agent": "multi-agent-systems",
+  "multi-agent-system": "multi-agent-systems",
+  "recommendation-systems": "recommender-systems",
+  "list-wise-recommendation": "listwise-recommendation",
+  "contextual-bandits": "contextual-bandit",
+  "generative-agent": "generative-agents",
+  "chain-of-thought-prompting": "chain-of-thought",
+  "multiagent-debate": "multi-agent-debate",
+  "artificial-superintelligence": "artificial-super-intelligence",
+  "RLAIF": "rlaif",
+  "RLHF": "rlhf",
+  "llm-based-agent": "llm-based-agents",
+  "scaling-laws": "scaling-law",
+  "foundation-model": "foundation-models",
+  "factorization-machine": "factorization-machines",
+  "program-of-thoughts": "program-of-thought",
+  "role-playing-agents": "role-playing-agent",
+  "mcts": "monte-carlo-tree-search",
+  "ORBench": "orbench",
+  "llm": "large-language-models",
+  "iDCF": "idcf",
+  "Christopher Barrie": "christopher-barrie",
+  "watchtime": "watch-time",
+  "memory-bank": "memorybank",
+  "OpenAI": "openai",
+  "GPT-3": "gpt-3",
+  "InstructGPT": "instructgpt",
+  "interec-agent": "interecagent",
+  "autonomous-agent": "autonomous-agents",
+  "llama2": "llama-2",
+  "PaLM": "palm",
+  "GSM8K": "gsm8k"
+ },
+ "hubs": [
+  {
+   "count": 36,
+   "aliases": [
+    "generative-recommendation"
+   ],
+   "canonical": "generative-recommendation"
+  },
+  {
+   "count": 19,
+   "aliases": [
+    "offline-reinforcement-learning"
+   ],
+   "canonical": "offline-reinforcement-learning"
+  },
+  {
+   "count": 18,
+   "aliases": [
+    "debiasing-recommendation",
+    "recommendation-debiasing"
+   ],
+   "canonical": "debiasing-recommendation"
+  },
+  {
+   "count": 15,
+   "aliases": [
+    "ctr-prediction"
+   ],
+   "canonical": "ctr-prediction"
+  },
+  {
+   "count": 15,
+   "aliases": [
+    "generative-agent-based-modeling",
+    "agent-based-models"
+   ],
+   "canonical": "generative-agent-based-modeling"
+  },
+  {
+   "count": 13,
+   "aliases": [
+    "watch-time-prediction"
+   ],
+   "canonical": "watch-time-prediction"
+  },
+  {
+   "count": 13,
+   "aliases": [
+    "short-video-recommendation"
+   ],
+   "canonical": "short-video-recommendation"
+  },
+  {
+   "count": 13,
+   "aliases": [
+    "distributed-computing"
+   ],
+   "canonical": "distributed-computing"
+  },
+  {
+   "count": 12,
+   "aliases": [
+    "long-term-memory"
+   ],
+   "canonical": "long-term-memory"
+  },
+  {
+   "count": 10,
+   "aliases": [
+    "grpo"
+   ],
+   "canonical": "grpo"
+  },
+  {
+   "count": 9,
+   "aliases": [
+    "distribution-shift"
+   ],
+   "canonical": "distribution-shift"
+  },
+  {
+   "count": 9,
+   "aliases": [
+    "user-simulator"
+   ],
+   "canonical": "user-simulator"
+  },
+  {
+   "count": 9,
+   "aliases": [
+    "multimodal-llm",
+    "multi-modal-llm"
+   ],
+   "canonical": "multi-modal-llm"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "model-based-offline-rl"
+   ],
+   "canonical": "model-based-offline-rl"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "text-to-image"
+   ],
+   "canonical": "text-to-image"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "verifier"
+   ],
+   "canonical": "verifier"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "llm-reasoning"
+   ],
+   "canonical": "llm-reasoning"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "microvideo-recommendation",
+    "micro-video-recommendation"
+   ],
+   "canonical": "micro-video-recommendation"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "substitute-confounder",
+    "substitute-confounders"
+   ],
+   "canonical": "substitute-confounders"
+  },
+  {
+   "count": 8,
+   "aliases": [
+    "conversational-recommendation"
+   ],
+   "canonical": "conversational-recommendation"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "ip-adapter"
+   ],
+   "canonical": "ip-adapter"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "implicit-feedback"
+   ],
+   "canonical": "implicit-feedback"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "best-of-n"
+   ],
+   "canonical": "best-of-n"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "inference-scaling-laws"
+   ],
+   "canonical": "inference-scaling-laws"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "sft"
+   ],
+   "canonical": "sft"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "planning"
+   ],
+   "canonical": "planning"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "dense-retrieval"
+   ],
+   "canonical": "dense-retrieval"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "reranking"
+   ],
+   "canonical": "reranking"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "vae"
+   ],
+   "canonical": "vae"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "multi-objective-optimization"
+   ],
+   "canonical": "multi-objective-optimization"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "llm-as-agent"
+   ],
+   "canonical": "llm-as-agent"
+  },
+  {
+   "count": 7,
+   "aliases": [
+    "seq2seq"
+   ],
+   "canonical": "seq2seq"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "agent-evaluation"
+   ],
+   "canonical": "agent-evaluation"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "a2c"
+   ],
+   "canonical": "a2c"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "multi-domain-recommendation"
+   ],
+   "canonical": "multi-domain-recommendation"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "safety-alignment"
+   ],
+   "canonical": "safety-alignment"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "inner-monologue"
+   ],
+   "canonical": "inner-monologue"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "graph-neural-network",
+    "graph-neural-networks"
+   ],
+   "canonical": "graph-neural-networks"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "personalization"
+   ],
+   "canonical": "personalization"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "agent"
+   ],
+   "canonical": "agent"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "video-recommendation"
+   ],
+   "canonical": "video-recommendation"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "offline-evaluation"
+   ],
+   "canonical": "offline-evaluation"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "uplift-modeling"
+   ],
+   "canonical": "uplift-modeling"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "two-tower-model"
+   ],
+   "canonical": "two-tower-model"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "reinforcement-learning-for-recommendation"
+   ],
+   "canonical": "reinforcement-learning-for-recommendation"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "representation-learning"
+   ],
+   "canonical": "representation-learning"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "embodied-agent"
+   ],
+   "canonical": "embodied-agent"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "llm-multi-agent-system",
+    "llm-multi-agent-systems"
+   ],
+   "canonical": "llm-multi-agent-systems"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "hyperparameter-tuning"
+   ],
+   "canonical": "hyperparameter-tuning"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "lc-rec"
+   ],
+   "canonical": "lc-rec"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "fairgame"
+   ],
+   "canonical": "fairgame"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "llm-benchmark"
+   ],
+   "canonical": "llm-benchmark"
+  },
+  {
+   "count": 6,
+   "aliases": [
+    "llm-recommendation"
+   ],
+   "canonical": "llm-recommendation"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "feedback-loop",
+    "feedback-loops"
+   ],
+   "canonical": "feedback-loops"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "online-learning"
+   ],
+   "canonical": "online-learning"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "unobserved-confounders",
+    "unobserved-confounder"
+   ],
+   "canonical": "unobserved-confounder"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "memory"
+   ],
+   "canonical": "memory"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "embedding"
+   ],
+   "canonical": "embedding"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "transfer-learning"
+   ],
+   "canonical": "transfer-learning"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "synthetic-data"
+   ],
+   "canonical": "synthetic-data"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "generative-social-simulation"
+   ],
+   "canonical": "generative-social-simulation"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "multi-task-fusion"
+   ],
+   "canonical": "multi-task-fusion"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "role-playing-language-agent",
+    "role-playing-language-agents"
+   ],
+   "canonical": "role-playing-language-agents"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "evolutionary-game-theory"
+   ],
+   "canonical": "evolutionary-game-theory"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "user-behavior-simulation"
+   ],
+   "canonical": "user-behavior-simulation"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "tea-protocol"
+   ],
+   "canonical": "tea-protocol"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "multi-agent-llm"
+   ],
+   "canonical": "multi-agent-llm"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "lifelong-sequential-recommendation"
+   ],
+   "canonical": "lifelong-sequential-recommendation"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "self-reinforcement"
+   ],
+   "canonical": "self-reinforcement"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "dpo"
+   ],
+   "canonical": "dpo"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "agentic-memory"
+   ],
+   "canonical": "agentic-memory"
+  },
+  {
+   "count": 5,
+   "aliases": [
+    "zettelkasten"
+   ],
+   "canonical": "zettelkasten"
+  }
+ ]
+}

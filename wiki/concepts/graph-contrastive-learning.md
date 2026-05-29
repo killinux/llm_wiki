@@ -22,4 +22,4 @@ Graph Contrastive Learning(图对比学习)是一种自监督表示学习方法,
 - [[graph-neural-networks]]
 - [[self-supervised-learning]]
 - [[adversarial-perturbation]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]

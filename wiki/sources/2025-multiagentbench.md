@@ -24,7 +24,7 @@ MultiAgentBench 是一个用于评测 LLM-based 多智能体系统的 benchmark,
 
 - **框架模块**:核心是 Coordination Engine(协调引擎),负责初始化与同步各模块,区分 planner(规划者)与 actor(执行者)两类角色。
   - **Agent Graph 模块**:把配置数据转为结构化图 G=(A,E),边为三元组 (ai, r, aj),关系 r 含 collaborates / supervises / negotiates,确保通信仅发生在显式定义关系的智能体之间。
-  - **Cognitive Module(认知模块)**:维护并更新每个 agent 的 persona、智能体间关系与推理策略(如 [[chain-of-thought]]、[[react-reasoning-and-acting]]),融合 theory-of-mind 与 [[social-intelligence]] 元素。
+  - **Cognitive Module(认知模块)**:维护并更新每个 agent 的 persona、智能体间关系与推理策略(如 [[chain-of-thought]]、[[react|react-reasoning-and-acting]]),融合 theory-of-mind 与 [[social-intelligence]] 元素。
   - 记忆机制包含 short-term memory、shared memory 与带 [[retrieval-augmented-generation]] 的 long-term memory。
 - **四种协调协议(coordination protocols)**(参考 [[chatdev]] 团队 Qian et al. 2025):集中式的 star、tree;去中心化的 graph-mesh、chain。
 - **四种规划策略**:vanilla prompting、CoT、group discussion(群组讨论)、cognitive self-evolving planning(认知自演化规划,思路类似 [[reflexion]],生成预期结果存入记忆并与实际表现对比迭代)。

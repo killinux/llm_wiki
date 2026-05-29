@@ -68,4 +68,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于[[recommender-system]]离线[[evaluation]]方法学研究,聚焦负样本[[sampling]]策略的可靠性。它与[[exposure-bias]]、[[selection-bias]]、[[popularity-bias]]、[[debiasing]]等偏差主题相关,缓解手段上呼应[[inverse-propensity-scoring]]、[[doubly-robust]]等思路。评估指标层面使用 [[ndcg]]、Kendall's τ、[[recall]]、precision 与 tie rate。与 [[krichene-rendle]] 关于采样指标不可靠的经典论点一脉相承(本文将其扩展到偏差曝光维度)。数据集上依赖 [[kuairec]]/[[kuairand]] 这类带曝光日志的稠密测试集;评测的推荐模型涵盖 [[bpr]]、[[lightfm]]、[[matrix-factorization]] 等。与本 wiki 中 LLM-for-recommendation、[[recommendation-simulator]] 等条目共同构成推荐系统评估生态的一部分。
+本文属于[[recommender-systems|recommender-system]]离线[[evaluation]]方法学研究,聚焦负样本[[sampling]]策略的可靠性。它与[[exposure-bias]]、[[selection-bias]]、[[popularity-bias]]、[[debiasing]]等偏差主题相关,缓解手段上呼应[[inverse-propensity-scoring]]、[[doubly-robust]]等思路。评估指标层面使用 [[ndcg]]、Kendall's τ、[[recall]]、precision 与 tie rate。与 [[krichene-rendle]] 关于采样指标不可靠的经典论点一脉相承(本文将其扩展到偏差曝光维度)。数据集上依赖 [[kuairec]]/[[kuairand]] 这类带曝光日志的稠密测试集;评测的推荐模型涵盖 [[bpr]]、[[lightfm]]、[[matrix-factorization]] 等。与本 wiki 中 LLM-for-recommendation、[[recommendation-simulator]] 等条目共同构成推荐系统评估生态的一部分。

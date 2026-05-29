@@ -4,7 +4,7 @@ subtype: lab
 tags: [industry-research, huawei, recommender-systems]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 10
+sources: 15
 ---
 
 # Huawei Noah's Ark Lab
@@ -23,6 +23,11 @@ sources: 10
 - [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
 - [[2024-scenario-wise-rec]]:首个面向多场景推荐(MSR)的开源 benchmark,整合 6 个公开数据集、12 个基线模型与统一的数据处理/训练/评测流水线,并在工业广告数据集上验证。
 - [[2025-bankfair-plus-regret-aware-reranking]]:BankFair+(BankFair 的扩展期刊版)把 regret theory 的非线性满意度函数与 fuzzy programming 引入推荐重排,在保证供给侧最低曝光公平与用户平均精度的同时,显著提升被忽视的用户个体公平(KuaiRand-1K 上 MMR 0.741 vs BankFair 0.493)。
+- [[2025-fuxi-gamma-efficient-sequential-recommendation]]:decoder-only 生成式序列推荐框架,用受 Ebbinghaus 遗忘曲线启发的指数幂时间编码器与对角稀疏位置剪枝,在 SOTA 推荐质量下把训练加速最多 4.74×、推理 6.18×。
+- [[2025-no-one-left-behind-asymmetric-multi-label-cvr]]:KAML 框架针对广告主只上报部分转化行为导致的非对称多标签数据,用归因掩码 ADM、层级知识抽取 HKE 与排序标签利用 RLU 改进 MMoE 基座,工业数据与线上 A/B(RPM +12.11%、CVR +0.92%)均超越现有 MTL 基线的 CVR 预测方法。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent:一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 评估推荐模型并做数据增强。
+- [[2026-fuxi-linear]]:线性复杂度的时间感知序列推荐模型,解耦时间与语义信号、用可学习核近似相对位置编码,在数千 token 长序列上提升推荐质量并实现最高 21× 推理加速。
+- [[2026-nestpipe-nested-pipelining]]:NestPipe 通过两层嵌套流水线(inter-batch 的 Dual-Buffer Pipelining 与 intra-batch 的 Frozen-Window Pipelining)在保持同步训练语义下隐藏大规模推荐 embedding 训练的 lookup 与 All2All 通信瓶颈,在 1,536 worker 上实现 3.06× 加速、94.07% 扩展效率。
 
 ## 相关
 
@@ -37,3 +42,8 @@ sources: 10
 - [[code-generation]] —— RethinkMCTS 所属的代码生成方向
 - [[large-recommendation-models]] —— scaling law 工作研究的对象
 - [[feature-selection]] —— SELF 关注的深度推荐特征选择问题
+- [[generative-recommendation]] —— FuXi-Gamma 等生成式序列推荐方向
+- [[sequential-recommendation]] —— FuXi-Gamma / FuXi-Linear 所属的序列推荐方向
+- [[conversion-rate-prediction]] —— KAML 关注的 CVR 预测问题
+- [[llm-agents|llm-agent]] —— A/B Agent 代表的 LLM 智能体方向
+- [[recommendation-system-training]] —— NestPipe 关注的大规模训练系统问题

@@ -12,11 +12,11 @@ year: 2025
 
 # T2Diff:基于扩散模型的双塔交叉交互大规模召回
 
-T2Diff(发表于 WWW '25,来自 [[kuaishou]])提出了一种"生成式交叉交互解耦架构",在 [[recommender-system]] 的召回(matching)阶段用 [[diffusion-models]] 在用户塔内重建用户的"下一个正向意图",并通过 mixed-attention 模块在保持双塔低延迟的同时打破双塔的"晚交互(Late Interaction)"瓶颈。
+T2Diff(发表于 WWW '25,来自 [[kuaishou]])提出了一种"生成式交叉交互解耦架构",在 [[recommender-systems|recommender-system]] 的召回(matching)阶段用 [[diffusion-models]] 在用户塔内重建用户的"下一个正向意图",并通过 mixed-attention 模块在保持双塔低延迟的同时打破双塔的"晚交互(Late Interaction)"瓶颈。
 
 ## 问题
 
-工业级 [[recommender-system]] 通常采用两阶段架构:召回(matching)阶段从数十亿候选语料中快速筛选,排序(ranking)阶段再精排。召回阶段对延迟和吞吐要求极高,因此 two-tower(双塔)模型成为主流 [[embedding-based-retrieval]] 范式——用户塔与物品塔独立编码为低维 embedding,再做内积打分以支持高效 top-k 检索。
+工业级 [[recommender-systems|recommender-system]] 通常采用两阶段架构:召回(matching)阶段从数十亿候选语料中快速筛选,排序(ranking)阶段再精排。召回阶段对延迟和吞吐要求极高,因此 two-tower(双塔)模型成为主流 [[embedding-based-retrieval]] 范式——用户塔与物品塔独立编码为低维 embedding,再做内积打分以支持高效 top-k 检索。
 
 但双塔的解耦导致两塔在最后一刻之前都无法利用用户-物品的交叉特征/交互,即所谓"Late Interaction(晚交互)"问题。已有解决思路存在权衡困境:
 
@@ -45,4 +45,4 @@ T2Diff 在用户塔内部引入两个核心模块,实现完整的交叉交互,�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 召回阶段与 [[embedding-based-retrieval]] 方向,把 [[diffusion-models]] 用于序列推荐中的目标物品/意图重建,与 [[diffurec]] 一脉相承但改用 KL 损失、指数噪声调度并显式建模兴趣漂移。它针对双塔模型固有的 [[candidate-generation]] 效率-效果权衡,可与 [[sasrec]]、[[gru4rec]]、[[recmamba]] 等 [[sequential-recommendation]] 方法对照;实验依托 [[kuairand]]、[[movielens-1m]] 数据集,来自工业界 [[kuaishou]]。
+本文属于 [[recommender-systems|recommender-system]] 召回阶段与 [[embedding-based-retrieval]] 方向,把 [[diffusion-models]] 用于序列推荐中的目标物品/意图重建,与 [[diffurec]] 一脉相承但改用 KL 损失、指数噪声调度并显式建模兴趣漂移。它针对双塔模型固有的 [[candidate-generation]] 效率-效果权衡,可与 [[sasrec]]、[[gru4rec]]、[[recmamba]] 等 [[sequential-recommendation]] 方法对照;实验依托 [[kuairand]]、[[movielens-1m]] 数据集,来自工业界 [[kuaishou]]。

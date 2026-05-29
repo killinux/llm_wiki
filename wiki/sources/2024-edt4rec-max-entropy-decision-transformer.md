@@ -24,7 +24,7 @@ EDT4Rec 是一个面向动态推荐的 offline RL 模型,通过给 [[decision-tr
 
 ## 问题
 
-基于 RL 的 [[recommender-system]](RLRS)能利用用户反馈作为 reward 持续优化推荐策略,但在线 RL 存在数据效率低、依赖仿真环境的问题。Offline RL 用预收集数据训练可缓解此问题,[[decision-transformer]](DT)是其中代表,已有 CDT4Rec([[causal-inference]] 估计 reward)、DT4Rec 等实现。但直接把 DT 用于推荐有两个核心缺陷:
+基于 RL 的 [[recommender-systems|recommender-system]](RLRS)能利用用户反馈作为 reward 持续优化推荐策略,但在线 RL 存在数据效率低、依赖仿真环境的问题。Offline RL 用预收集数据训练可缓解此问题,[[decision-transformer]](DT)是其中代表,已有 CDT4Rec([[causal-inference]] 估计 reward)、DT4Rec 等实现。但直接把 DT 用于推荐有两个核心缺陷:
 
 1. **缺乏 stitching 能力**:推荐场景 offline 数据高度稀疏,可能没有足够的 expert(最优且 dense)轨迹。vanilla DT 无法从 sub-optimal 轨迹中学习,即无法把多条次优轨迹拼接(stitching)成更优轨迹。例如三条点击序列轨迹,reward 为 0 的轨迹被视为次优,但其中片段可与正 reward 片段组合成新的高 reward 轨迹。
 2. **在线探索不足**:DT 认为 offline 数据已覆盖所有可能,在 fine-tuning 在线环境时会放弃探索;而用户兴趣是动态变化的,offline 数据无法完整反映用户意图,需要持续探索。
@@ -51,4 +51,4 @@ EDT4Rec 以 causal [[decision-transformer]] 为骨干,受 SAC([[reinforcement-le
 
 ## 在本 wiki 中的位置
 
-本文属于 [[offline-rl]] 与 [[recommender-system]] 的交叉工作,把 [[decision-transformer]] 范式扩展到动态推荐。它与同系列的 CDT4Rec(用 [[causal-inference]] 估 reward)、DT4Rec(vanilla DT 用于推荐)、研究 [[matthew-effect]] 的工作同属 RLRS 方向。其核心技术借鉴了 [[sac]] 的最大熵思想与 [[cql]] 的保守 Q-learning 下界,reward relabeling 思路与 [[off-policy-evaluation]] / [[doubly-robust]] 等 debiasing/value 估计方法相关。stitching 与 sub-optimal trajectory 学习是 [[offline-rl]] 的经典议题。
+本文属于 [[offline-rl]] 与 [[recommender-systems|recommender-system]] 的交叉工作,把 [[decision-transformer]] 范式扩展到动态推荐。它与同系列的 CDT4Rec(用 [[causal-inference]] 估 reward)、DT4Rec(vanilla DT 用于推荐)、研究 [[matthew-effect]] 的工作同属 RLRS 方向。其核心技术借鉴了 [[sac]] 的最大熵思想与 [[cql]] 的保守 Q-learning 下界,reward relabeling 思路与 [[off-policy-evaluation]] / [[doubly-robust]] 等 debiasing/value 估计方法相关。stitching 与 sub-optimal trajectory 学习是 [[offline-rl]] 的经典议题。

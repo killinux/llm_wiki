@@ -17,6 +17,6 @@ sources: 1
 
 ## 相关
 
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[personalization]]
 - [[user-item-interaction]]

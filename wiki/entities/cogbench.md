@@ -18,6 +18,6 @@ CogBench 是一个面向 LLM / LLM agent 的基准,从认知科学与行为科�
 ## 相关
 
 - [[ai-agent-behavioral-science]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[benchmark]]
 - [[cognitive-science-llm-evaluation]]

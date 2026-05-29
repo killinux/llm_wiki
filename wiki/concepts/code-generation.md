@@ -26,7 +26,7 @@ Code Generation 指由 LLM 根据自然语言描述、上下文或环境反馈�
 
 - [[self-debugging]]
 - [[few-shot-prompting]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[self-verification]]
 - [[skill-library]]
 - [[verifier]]

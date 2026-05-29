@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[social-simulation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-system]]
 - [[large-scale-simulation]]

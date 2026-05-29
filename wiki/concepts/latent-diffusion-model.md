@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[generative-model]]
 - [[denoising-diffusion-probabilistic-model]]
 - [[variational-autoencoder]]

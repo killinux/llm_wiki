@@ -45,4 +45,4 @@ benchmark 提供四个组件:
 
 ## 在本 wiki 中的位置
 
-本文是 [[recommender-system]] 方向下多场景/多域推荐子领域的 [[benchmark]] 工作,核心任务为 [[ctr]] 预测。它系统地整合并复现了 [[mmoe]]、[[ple]] 等基于 [[mixture-of-experts]] 与 [[multi-task-learning]] 的代表性模型,使用 [[movielens]]、[[kuairand]]、[[ali-ccp]]、[[amazon-reviews]] 等本 wiki 中已有的推荐数据集进行 [[evaluation]]。作者通讯作者 [[xiangyu-zhao]] 与合作机构 [[huawei-noahs-ark-lab]] 在本 wiki 推荐系统脉络中多次出现。论文在结论处展望了将 [[large-language-models]] 引入 MSR 的方向,与本 wiki 中 [[llm-for-recommendation]] 等条目形成衔接。在评测基础设施层面,它可与 [[easyrl4rec]] 等推荐评测/工具类条目互为补充。
+本文是 [[recommender-systems|recommender-system]] 方向下多场景/多域推荐子领域的 [[benchmark]] 工作,核心任务为 [[ctr]] 预测。它系统地整合并复现了 [[mmoe]]、[[ple]] 等基于 [[mixture-of-experts]] 与 [[multi-task-learning]] 的代表性模型,使用 [[movielens]]、[[kuairand]]、[[ali-ccp]]、[[amazon-reviews]] 等本 wiki 中已有的推荐数据集进行 [[evaluation]]。作者通讯作者 [[xiangyu-zhao]] 与合作机构 [[huawei-noahs-ark-lab]] 在本 wiki 推荐系统脉络中多次出现。论文在结论处展望了将 [[large-language-models]] 引入 MSR 的方向,与本 wiki 中 [[llm-for-recommendation]] 等条目形成衔接。在评测基础设施层面,它可与 [[easyrl4rec]] 等推荐评测/工具类条目互为补充。

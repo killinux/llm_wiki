@@ -16,7 +16,7 @@ ERL 是一个无需更新参数的自我改进框架:agent 对单次任务轨迹
 
 ## 问题
 
-基于 [[large-language-models]] 的 [[llm-agent]] 虽能完成多步规划、推理与工具调用,但难以适应不熟悉工具与领域约定的专门环境,且每遇新任务都"从零开始",不利用已积累经验。[[fine-tuning]] 可实现适应但成本高、对闭源模型不可行、且不支持持续学习。已有的经验型记忆方法各有短板:
+基于 [[large-language-models]] 的 [[llm-agents|llm-agent]] 虽能完成多步规划、推理与工具调用,但难以适应不熟悉工具与领域约定的专门环境,且每遇新任务都"从零开始",不利用已积累经验。[[fine-tuning]] 可实现适应但成本高、对闭源模型不可行、且不支持持续学习。已有的经验型记忆方法各有短板:
 
 - [[expel]](ExpeL)对比成功/失败轨迹抽取洞见,但把抽取结果不分相关性地拼进每个测试 prompt,随经验积累扩展性差;并需要对每个任务用 [[reflexion]] 反复 rollout 直到成功来构造对比轨迹对。
 - AutoGuide 通过对比配对轨迹生成 context-aware 指南,但在每个 agent turn 都做检索、开销大,且当前状态匹配不到任何已存上下文时无指导。
@@ -48,4 +48,4 @@ ERL(Experiential Reflective Learning)由两部分组成:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 的 [[self-improvement]] / [[agent-memory]] 方向,与 [[expel]]、[[reflexion]] 同属"经验型 in-context 学习"路线,但用 [[retrieval-augmented-generation]] 式的选择性检索替代全量拼接,并强调单次轨迹反思(无需重试)。可与 [[in-context-learning]]、[[self-reflection]]、[[react]] 交叉链接;评测主依托 [[gaia]] 的 Gaia2 基准。属于 ICLR 2026 MemAgents Workshop 的会议论文。
+本文属于 [[llm-agents|llm-agent]] 的 [[self-improvement]] / [[agent-memory]] 方向,与 [[expel]]、[[reflexion]] 同属"经验型 in-context 学习"路线,但用 [[retrieval-augmented-generation]] 式的选择性检索替代全量拼接,并强调单次轨迹反思(无需重试)。可与 [[in-context-learning]]、[[self-reflection]]、[[react]] 交叉链接;评测主依托 [[gaia]] 的 Gaia2 基准。属于 ICLR 2026 MemAgents Workshop 的会议论文。

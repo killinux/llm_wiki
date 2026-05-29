@@ -19,5 +19,5 @@ sources: 1
 
 - [[interecagent]]
 - [[recllama]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[conversational-recommendation]]

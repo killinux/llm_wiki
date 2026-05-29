@@ -23,7 +23,7 @@ sources: 6
 ## 相关
 
 - [[reinforcement-learning]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[planning]]
 - [[decision-transformer]]
 - [[contextual-bandits]]

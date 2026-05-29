@@ -19,5 +19,5 @@ RGCL(Robust Graph Contrastive Learning)是一种用决策边界感知的对抗�
 
 - [[graph-contrastive-learning]]
 - [[adversarial-perturbation]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[decision-boundary]]

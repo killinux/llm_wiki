@@ -21,7 +21,7 @@ updated: 2026-05-29
 
 # Measuring Fairness in Large-Scale Recommendation Systems with Missing Labels
 
-一句话:针对大规模 [[recommender-system]] 中"缺失标签"导致公平性指标无法识别的问题,本文证明仅靠默认曝光日志无法准确估计 Ranking-based Equal Opportunity (REO),并提出用一小部分 random traffic(随机流量)来无偏估计公平性指标,给出估计误差的理论上界,同时首次公开来自 TikTok 的公平性研究数据集。
+一句话:针对大规模 [[recommender-systems|recommender-system]] 中"缺失标签"导致公平性指标无法识别的问题,本文证明仅靠默认曝光日志无法准确估计 Ranking-based Equal Opportunity (REO),并提出用一小部分 random traffic(随机流量)来无偏估计公平性指标,给出估计误差的理论上界,同时首次公开来自 TikTok 的公平性研究数据集。
 
 ## 问题
 
@@ -51,4 +51,4 @@ updated: 2026-05-29
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 公平性 / 去偏方向,与 wiki 中关于 [[selection-bias]]、[[exposure-bias]]、[[debiasing]]、[[missing-at-random]] 的因果/统计去偏工作密切相关:它把"未被推荐即标签缺失"这一推荐场景特有的偏差,用随机流量(等价于一种 [[inverse-propensity-scoring]] 之外的均匀探测策略)加以校正,并强调 [[identifiability]] 在公平性测量中的核心地位。与 KuaiRand 等含随机曝光的推荐数据集(见 [[kuairand]]、[[kuairec]])类似,本文也通过引入随机流量来支持无偏评估,但首次将其用于 creator 侧群体公平性(REO)的估计与基准。来自 [[bytedance-research]] / TikTok。
+本文属于 [[recommender-systems|recommender-system]] 公平性 / 去偏方向,与 wiki 中关于 [[selection-bias]]、[[exposure-bias]]、[[debiasing]]、[[missing-at-random]] 的因果/统计去偏工作密切相关:它把"未被推荐即标签缺失"这一推荐场景特有的偏差,用随机流量(等价于一种 [[inverse-propensity-scoring]] 之外的均匀探测策略)加以校正,并强调 [[identifiability]] 在公平性测量中的核心地位。与 KuaiRand 等含随机曝光的推荐数据集(见 [[kuairand]]、[[kuairec]])类似,本文也通过引入随机流量来支持无偏评估,但首次将其用于 creator 侧群体公平性(REO)的估计与基准。来自 [[bytedance-research]] / TikTok。

@@ -19,6 +19,6 @@ dual influence(双向影响)指推荐系统在运行中同时塑造用户与创�
 
 - [[polarization]]
 - [[feedback-loop]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[top-k-truncation]]
 - [[diversity-promotion]]

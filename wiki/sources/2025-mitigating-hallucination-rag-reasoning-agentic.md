@@ -27,7 +27,7 @@ year: 2025
 综述围绕三条能力增强路径展开,核心原则是"不改架构、不加正则,而是通过外部知识 grounding 与逻辑一致性约束增强可靠性":
 
 - **[[retrieval-augmented-generation]](RAG)缓解 knowledge-based 幻觉**:沿检索 pipeline(pre-retrieval / retrieval / post-retrieval)梳理关键技术。pre-retrieval 包括 query rewrite、辅助模型、多轮对话、检索反馈以增强意图理解;retrieval 涵盖 sparse / dense / hybrid 三类 retriever(BM25、[[dense-passage-retrieval]]、ColBERT)、检索粒度、[[learning-to-rank]] 与神经 reranking、文档预处理(如 [[longllmlingua]] 压缩);post-retrieval 涉及知识整合方式(input/intermediate/output-level integration)、知识冲突处理、post-hoc checking、traceability。进一步分为 **Precise Retrieval**([[graphrag]]、KG-RAG 如 [[gnn-rag]]、Hybrid RAG)与 **Broad Retrieval**(cross-domain 泛化、长上下文理解、AIGC 内容识别、[[web-search]]、multi-modal RAG 如 MuRAG/VisRAG)。
-- **推理增强缓解 logic-based 幻觉**:对比三种 test-time 推理范式——[[chain-of-thought]](CoT,含 [[self-consistency]]、Natural Program、reasoning path supervision)、[[tool-use]]/Tool-augmented Reasoning(如 [[react-reasoning-and-acting]]、[[toolformer]]、[[program-of-thought]] PoT)、Symbolic Reasoning(神经符号,如 ChatLogic、Logic-LM、SymbCoT)。
+- **推理增强缓解 logic-based 幻觉**:对比三种 test-time 推理范式——[[chain-of-thought]](CoT,含 [[self-consistency]]、Natural Program、reasoning path supervision)、[[tool-use]]/Tool-augmented Reasoning(如 [[react|react-reasoning-and-acting]]、[[toolformer]]、[[program-of-thought]] PoT)、Symbolic Reasoning(神经符号,如 ChatLogic、Logic-LM、SymbCoT)。
 - **Agentic System 整合**:将 agentic system 定义为"至少配备推理能力与检索模块的 LLM",通过 retrieval 做 factual grounding + 结构化推理做逻辑一致性,统一缓解 **composite hallucination**。代表系统包括 Agentic Reasoning(Mind-Map Agent + Web-Search Agent)、MA-RAG(多智能体)、HM-RAG(层次化多模态)、[[swe-bench]] 类的 SWE-agent、AI Scientist-v2(Agentic Tree Search)。
 
 ## 结果
@@ -42,4 +42,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文是 [[hallucination]] 缓解领域的综述类 source,横跨 [[retrieval-augmented-generation]]、[[chain-of-thought]]、[[tool-use]]、symbolic reasoning 与 [[llm-agent]]/agentic system 多个方向,可作为连接"事实性增强(RAG)"与"推理增强(CoT/工具/符号)"两条线索的总览节点。其提出的 knowledge-based vs logic-based vs composite 幻觉三分法,以及对应的 benchmark 清单([[truthfulqa]]、[[prontoqa]]、[[agentbench]] 等),为本 wiki 中 [[evaluation]] 与 [[ai-safety]] 相关条目提供分类与索引参考。
+本文是 [[hallucination]] 缓解领域的综述类 source,横跨 [[retrieval-augmented-generation]]、[[chain-of-thought]]、[[tool-use]]、symbolic reasoning 与 [[llm-agents|llm-agent]]/agentic system 多个方向,可作为连接"事实性增强(RAG)"与"推理增强(CoT/工具/符号)"两条线索的总览节点。其提出的 knowledge-based vs logic-based vs composite 幻觉三分法,以及对应的 benchmark 清单([[truthfulqa]]、[[prontoqa]]、[[agentbench]] 等),为本 wiki 中 [[evaluation]] 与 [[ai-safety]] 相关条目提供分类与索引参考。

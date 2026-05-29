@@ -53,4 +53,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文从经济学/博弈论视角讨论 [[llm-agent]] 与 [[ai-alignment]]:它把"AI agent 的偏好可能与用户错位"形式化为收益函数只依赖通信 transcript 而非真实结果的建模选择,与 wiki 中关于 agent 自主性、[[autonomous-agents]]、[[ai-assistant-agent]] 以及对齐/激励的讨论互补。作者来自 [[microsoft-research]]。
+本文从经济学/博弈论视角讨论 [[llm-agents|llm-agent]] 与 [[ai-alignment]]:它把"AI agent 的偏好可能与用户错位"形式化为收益函数只依赖通信 transcript 而非真实结果的建模选择,与 wiki 中关于 agent 自主性、[[autonomous-agents]]、[[ai-assistant-agent]] 以及对齐/激励的讨论互补。作者来自 [[microsoft-research]]。

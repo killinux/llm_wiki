@@ -60,7 +60,7 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-这是一篇把"自进化/自我改进"作为一等研究范式的总纲性综述,可作为本 wiki 中 [[self-improvement]] 与 [[llm-agent]] 主题的顶层索引。它把多条已有线索整合进统一框架:
+这是一篇把"自进化/自我改进"作为一等研究范式的总纲性综述,可作为本 wiki 中 [[self-improvement]] 与 [[llm-agents|llm-agent]] 主题的顶层索引。它把多条已有线索整合进统一框架:
 
 - **方法侧**:[[star-self-taught-reasoner]]、[[reflexion]]、[[self-refine]]、[[voyager]]、[[expel]] 等被归入不同进化位点与方法族;[[reinforcement-learning]]、[[direct-preference-optimization]]、[[process-reward-model]]、[[monte-carlo-tree-search]] 是其 how-to-evolve 的核心机制。
 - **记忆侧**:与 [[agent-memory]]、[[llm-long-term-memory]]、[[memory-module]] 相关页互补,提供 memory evolution 的方法分类。

@@ -46,4 +46,4 @@ FuXi-Linear 由多个堆叠的 FuXi-Linear Block 组成,每个 Block 内输入�
 
 ## 在本 wiki 中的位置
 
-FuXi-Linear 来自 [[university-of-science-and-technology-of-china|中科大]] 与 [[huawei-noahs-ark-lab|华为]] 团队(作者含 [[defu-lian]]、[[enhong-chen]]、[[wei-guo]] 等),延续 FuXi-α / FuXi-β 系列,是将 [[linrec|线性注意力]]、[[retnet|RetNet]]、[[mamba|状态空间模型]] 等高效序列建模技术引入 [[sequential-recommendation|序列推荐]] 的代表工作。它与 [[hstu|HSTU]]、[[sasrec|SASRec]] 等生成式/注意力推荐模型形成对比,核心贡献在于解耦时间与语义信号、用可学习核近似相对位置编码,并首次在 [[recommender-system|推荐]] 领域验证千长度尺度的幂律 [[scaling-law|scaling]] 性质。评测数据集 [[kuairand]]、[[kuairec]]、[[movielens]] 均为本 wiki 已收录的推荐基准。
+FuXi-Linear 来自 [[university-of-science-and-technology-of-china|中科大]] 与 [[huawei-noahs-ark-lab|华为]] 团队(作者含 [[defu-lian]]、[[enhong-chen]]、[[wei-guo]] 等),延续 FuXi-α / FuXi-β 系列,是将 [[linrec|线性注意力]]、[[retnet|RetNet]]、[[mamba|状态空间模型]] 等高效序列建模技术引入 [[sequential-recommendation|序列推荐]] 的代表工作。它与 [[hstu|HSTU]]、[[sasrec|SASRec]] 等生成式/注意力推荐模型形成对比,核心贡献在于解耦时间与语义信号、用可学习核近似相对位置编码,并首次在 [[recommender-systems|推荐]] 领域验证千长度尺度的幂律 [[scaling-law|scaling]] 性质。评测数据集 [[kuairand]]、[[kuairec]]、[[movielens]] 均为本 wiki 已收录的推荐基准。

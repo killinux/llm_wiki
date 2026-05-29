@@ -54,4 +54,4 @@ UNBOUNDED 在视觉与语言两个领域分别提出技术创新。
 
 ## 在本 wiki 中的位置
 
-本文把 [[llm-agent]] / [[llm-multi-agent]] 的世界模拟思路(world model + user model 协作)与 text-to-image 个性化生成结合,落到"生成式游戏引擎"这一新应用。它与 [[generative-agents]] 类社会/角色模拟相邻,但强调实时图像生成与游戏机制;在视觉侧延续 [[dreambooth]]、[[lora]]、[[regional-ip-adapter]]、[[clip]] 等个性化与一致性技术;在语言侧体现了用大模型合成数据蒸馏到小模型([[gemma-2b]])以换取交互速度的范式,与 [[user-simulation]]、[[llm-as-judge]] 等评估方法相关。出自 [[google]] 与 University of North Carolina at Chapel Hill。
+本文把 [[llm-agents|llm-agent]] / [[llm-multi-agent]] 的世界模拟思路(world model + user model 协作)与 text-to-image 个性化生成结合,落到"生成式游戏引擎"这一新应用。它与 [[generative-agents]] 类社会/角色模拟相邻,但强调实时图像生成与游戏机制;在视觉侧延续 [[dreambooth]]、[[lora]]、[[regional-ip-adapter]]、[[clip]] 等个性化与一致性技术;在语言侧体现了用大模型合成数据蒸馏到小模型([[gemma-2b]])以换取交互速度的范式,与 [[user-simulation]]、[[llm-as-judge]] 等评估方法相关。出自 [[google]] 与 University of North Carolina at Chapel Hill。

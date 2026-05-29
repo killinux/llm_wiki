@@ -46,4 +46,4 @@ LIME(Link-based user-item Interaction Modeling for Efficient inference)针对 [[
 
 ## 在本 wiki 中的位置
 
-这是一篇高效推荐排序架构论文,核心是用解耦注意力 + 线性化(XOR mask)在 [[recommender-system]] 排序中弥合 [[two-tower]] 的效率与 cross-attention 的表达力。它与 [[sasrec]]、[[din]]、[[hstu]] 等序列推荐模型,以及 [[ctr]] 预测、长序列建模、[[approximate-nearest-neighbor-search]]/[[faiss]] 缓存等条目相关,可作为理解推荐系统中 test-time scaling 与高效注意力的入口。
+这是一篇高效推荐排序架构论文,核心是用解耦注意力 + 线性化(XOR mask)在 [[recommender-systems|recommender-system]] 排序中弥合 [[two-tower]] 的效率与 cross-attention 的表达力。它与 [[sasrec]]、[[din]]、[[hstu]] 等序列推荐模型,以及 [[ctr]] 预测、长序列建模、[[approximate-nearest-neighbor-search]]/[[faiss]] 缓存等条目相关,可作为理解推荐系统中 test-time scaling 与高效注意力的入口。

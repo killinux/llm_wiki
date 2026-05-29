@@ -45,4 +45,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 在游戏与社交场景的应用,具体是 [[role-playing-agent]] 与 [[generative-agents]] 思路在跨平台 NPC 上的工程化落地。其记忆稀释问题与缓解方向直接关联 [[agent-memory]]、[[llm-long-term-memory]] 与 [[retrieval-augmented-generation]];使用 [[deepseek-r1]] 作为对话生成模型。可与 [[generative-agents]]、[[siliconfriend]] 等"持久陪伴 / 类人记忆"工作对照阅读。
+本文属于 [[llm-agents|llm-agent]] 在游戏与社交场景的应用,具体是 [[role-playing-agent]] 与 [[generative-agents]] 思路在跨平台 NPC 上的工程化落地。其记忆稀释问题与缓解方向直接关联 [[agent-memory]]、[[llm-long-term-memory]] 与 [[retrieval-augmented-generation]];使用 [[deepseek-r1]] 作为对话生成模型。可与 [[generative-agents]]、[[siliconfriend]] 等"持久陪伴 / 类人记忆"工作对照阅读。

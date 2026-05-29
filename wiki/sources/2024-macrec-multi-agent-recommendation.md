@@ -16,7 +16,7 @@ MACRec 是一个由清华大学提出的、用多个角色各异的 LLM agent �
 
 ## 问题
 
-[[recommender-system]] 在电商、社交媒体等领域至关重要。[[large-language-models]] 催生的 [[llm-agent]] 具备语义理解、规划与决策能力,为更细粒度、上下文感知的推荐打开了空间。作者指出当前研究存在两条主线及其不足:
+[[recommender-systems|recommender-system]] 在电商、社交媒体等领域至关重要。[[large-language-models]] 催生的 [[llm-agents|llm-agent]] 具备语义理解、规划与决策能力,为更细粒度、上下文感知的推荐打开了空间。作者指出当前研究存在两条主线及其不足:
 
 - **模拟导向(simulation-oriented)**:如 [[recagent]]、Agent4Rec、[[agentcf]] 等,用 agent 模拟用户行为或用户-物品交互以辅助评估,但难以真正集成进推荐系统本身。
 - **推荐导向(recommender-oriented)**:如 InteRecAgent、RecMind,主要用**单个** agent 配合规划、记忆与工具(如搜索引擎)来构建推荐器;但推荐场景中存在多种复杂决策任务,单 agent 表现不佳。已有的多 agent 推荐框架 RAH 又只有有限的 agent 类型且协作模式固定,且无公开代码/demo。
@@ -46,4 +46,4 @@ MACRec 提供可定制的、由 LLM 驱动并配备工具的多类型 agent,通�
 
 ## 在本 wiki 中的位置
 
-本文把 [[multi-agent-collaboration]] 引入 [[recommender-system]],是 [[llm-agent]] 应用于推荐的代表性框架。其设计复用了 [[react]] 的 Thought-Action-Observation 循环、[[self-reflection]] 的反思机制与 [[tool-use]];在多 agent 系统脉络上与 [[autogen]]、[[chatdev]]、[[metagpt]] 等通信式协作框架相呼应,但聚焦推荐这一垂直场景。与 [[recagent]]、[[agentcf]] 等"用 agent 做 [[user-simulation]]"的路线形成对照——MACRec 直接用 agent 充当推荐器。
+本文把 [[multi-agent-collaboration]] 引入 [[recommender-systems|recommender-system]],是 [[llm-agents|llm-agent]] 应用于推荐的代表性框架。其设计复用了 [[react]] 的 Thought-Action-Observation 循环、[[self-reflection]] 的反思机制与 [[tool-use]];在多 agent 系统脉络上与 [[autogen]]、[[chatdev]]、[[metagpt]] 等通信式协作框架相呼应,但聚焦推荐这一垂直场景。与 [[recagent]]、[[agentcf]] 等"用 agent 做 [[user-simulation]]"的路线形成对照——MACRec 直接用 agent 充当推荐器。

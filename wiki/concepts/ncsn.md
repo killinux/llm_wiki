@@ -17,7 +17,7 @@ NCSN(Noise Conditional Score Network,噪声条件得分网络)是一类基于得
 
 ## 相关
 
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[score-matching]]
 - [[langevin-dynamics]]
 - [[ddpm]]

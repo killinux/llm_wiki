@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[social-simulation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[spatial-interaction-model]]
 - [[urban-mobility]]

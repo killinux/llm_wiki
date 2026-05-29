@@ -22,4 +22,4 @@ Zhenzhong Chen 是一位研究者,在本 wiki 中作为推荐系统因果推断�
 - [[substitute-confounder]]
 - [[variational-autoencoder]]
 - [[causal-inference]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

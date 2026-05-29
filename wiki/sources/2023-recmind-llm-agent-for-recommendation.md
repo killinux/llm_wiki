@@ -16,7 +16,7 @@ RecMind 是一个由 LLM 驱动的自主推荐 agent,通过规划、记忆与外
 
 ## 问题
 
-[[large-language-models]] 在多种任务上表现出色,但直接用于推荐任务面临挑战:LLM 训练于通用语料,缺乏推荐所需的领域知识;难以获取最新信息与外部知识;在个性化推荐所需的复杂推理与规划上能力不足。与此同时,传统基于 [[deep-neural-network]] 的 [[recommender-system]] 通常只针对特定任务训练,缺乏泛化到新的、未见过的推荐任务的能力。本文旨在构建一个能利用外部工具与知识、无需任务专门训练即可完成多种推荐任务的 [[llm-agent]]。
+[[large-language-models]] 在多种任务上表现出色,但直接用于推荐任务面临挑战:LLM 训练于通用语料,缺乏推荐所需的领域知识;难以获取最新信息与外部知识;在个性化推荐所需的复杂推理与规划上能力不足。与此同时,传统基于 [[deep-neural-network]] 的 [[recommender-systems|recommender-system]] 通常只针对特定任务训练,缺乏泛化到新的、未见过的推荐任务的能力。本文旨在构建一个能利用外部工具与知识、无需任务专门训练即可完成多种推荐任务的 [[llm-agents|llm-agent]]。
 
 ## 方法
 
@@ -52,4 +52,4 @@ RecMind 借鉴了 [[react]]、[[reflexion]]、[[toolformer]] 等 LLM 自主 agen
 
 ## 在本 wiki 中的位置
 
-本文处于 [[llm-agent]] 与 [[recommender-system]] 的交叉点,是将 [[llm-based-agents]] 范式(planning + [[memory-module]] + [[tool-use]])迁移到推荐任务的代表性工作。其 Self-Inspiring 规划可与 [[chain-of-thought]]、[[tree-of-thoughts]]、[[react]] 等推理/规划方法对照阅读;在 [[llm-for-recommendation]] 方向上,可与全量训练的 [[p5]] 范式形成对比。
+本文处于 [[llm-agents|llm-agent]] 与 [[recommender-systems|recommender-system]] 的交叉点,是将 [[llm-based-agents]] 范式(planning + [[memory-module]] + [[tool-use]])迁移到推荐任务的代表性工作。其 Self-Inspiring 规划可与 [[chain-of-thought]]、[[tree-of-thoughts]]、[[react]] 等推理/规划方法对照阅读;在 [[llm-for-recommendation]] 方向上,可与全量训练的 [[p5]] 范式形成对比。

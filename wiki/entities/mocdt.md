@@ -20,4 +20,4 @@ MocDT 是一种基于 Decision Transformer 的离线强化学习推荐方法,将
 - [[decision-transformer]]
 - [[offline-reinforcement-learning]]
 - [[multi-objective-optimization]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

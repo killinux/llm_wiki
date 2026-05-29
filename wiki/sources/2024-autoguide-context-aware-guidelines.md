@@ -16,7 +16,7 @@ AUTOGUIDE 从离线经验中自动生成并按当前情境检索"上下文感知
 
 ## 问题
 
-[[llm-agent]] 在序列决策任务中主要依赖 demonstration-based [[in-context-learning]],即把示范轨迹作为 in-context 示例。但在 web navigation 等 LLM 缺乏先验知识的目标领域,这种范式效果有限:成功率低,且把全部离线经验当作示范又会受 context 长度限制、prompt 敏感性以及复杂推理困难的影响。论文要解决的核心挑战是:如何有效地从离线数据中抽取出隐含的可执行知识,以指导智能体决策。
+[[llm-agents|llm-agent]] 在序列决策任务中主要依赖 demonstration-based [[in-context-learning]],即把示范轨迹作为 in-context 示例。但在 web navigation 等 LLM 缺乏先验知识的目标领域,这种范式效果有限:成功率低,且把全部离线经验当作示范又会受 context 长度限制、prompt 敏感性以及复杂推理困难的影响。论文要解决的核心挑战是:如何有效地从离线数据中抽取出隐含的可执行知识,以指导智能体决策。
 
 ## 方法
 
@@ -43,4 +43,4 @@ AUTOGUIDE 把离线轨迹中的隐含知识压缩为简洁的自然语言指引,
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 通过经验学习提升决策的方向,与 [[expel]](从离线经验抽取指引但非上下文感知)和 [[reflexion]](测试时 intra-task 自反馈)形成对照与互补,基座方法为 [[react]]。评测覆盖 [[alfworld]]、[[webshop]]、[[webarena]] 等智能体 benchmark,可与 [[self-reflection]]、[[experiential-learning]]、[[in-context-learning]] 等概念页互相参照。作者来自 [[university-of-michigan]] 与 [[lg-ai-research]]。
+本文属于 [[llm-agents|llm-agent]] 通过经验学习提升决策的方向,与 [[expel]](从离线经验抽取指引但非上下文感知)和 [[reflexion]](测试时 intra-task 自反馈)形成对照与互补,基座方法为 [[react]]。评测覆盖 [[alfworld]]、[[webshop]]、[[webarena]] 等智能体 benchmark,可与 [[self-reflection]]、[[experiential-learning]]、[[in-context-learning]] 等概念页互相参照。作者来自 [[university-of-michigan]] 与 [[lg-ai-research]]。

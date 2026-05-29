@@ -20,4 +20,4 @@ sources: 1
 - [[outcome-based-evaluation]]
 - [[human-behavior-simulation]]
 - [[reasoning-trace]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

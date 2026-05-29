@@ -28,7 +28,7 @@ year: 2025
 
 ## 问题
 
-[[reflexion]](Shinn et al. 2023)是一种无需更新参数的轻量级"语言强化"方法:[[llm-agent]] 在失败后用自然语言反思错误,把反思作为 episodic memory([[memory-stream]] 式记忆)指导下一次尝试。它在多跳问答与代码生成上相对 baseline 有明显提升。
+[[reflexion]](Shinn et al. 2023)是一种无需更新参数的轻量级"语言强化"方法:[[llm-agents|llm-agent]] 在失败后用自然语言反思错误,把反思作为 episodic memory([[memory-stream]] 式记忆)指导下一次尝试。它在多跳问答与代码生成上相对 baseline 有明显提升。
 
 但作者在复现中发现 Reflexion 的单 Agent 设计存在系统性缺陷:Actor(行动)、Evaluator(评估)、Self-Reflector(反思)是同一个模型,导致:
 

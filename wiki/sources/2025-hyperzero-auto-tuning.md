@@ -12,11 +12,11 @@ year: 2025
 
 # HyperZero: A Customized End-to-End Auto-Tuning System for Recommendation with Hourly Feedback
 
-来自 Meta 的端到端超参数自动调优系统 HyperZero,利用工业级 [[recommender-system]] 的**小时级反馈**信号,把 value model 阶段权重向量的调优周期从数周压缩到 2-3 天,通过 GP + Thompson Sampling 的零阶约束优化求解多目标带约束问题。
+来自 Meta 的端到端超参数自动调优系统 HyperZero,利用工业级 [[recommender-systems|recommender-system]] 的**小时级反馈**信号,把 value model 阶段权重向量的调优周期从数周压缩到 2-3 天,通过 GP + Thompson Sampling 的零阶约束优化求解多目标带约束问题。
 
 ## 问题
 
-现代 [[recommender-system]] 分两阶段:ranking stage 预测各类用户互动概率(p(click)、p(share)、p(follow)、watch time 等),value model (VM) stage 把这些预测通过一个函数(常为线性组合,score = θ0·p(click) + θ1·p(share) + θ2·p(follow) + …)聚合成单一价值分数用于最终排序。第二阶段的权重向量 θ 如何系统化优化此前缺乏研究。
+现代 [[recommender-systems|recommender-system]] 分两阶段:ranking stage 预测各类用户互动概率(p(click)、p(share)、p(follow)、watch time 等),value model (VM) stage 把这些预测通过一个函数(常为线性组合,score = θ0·p(click) + θ1·p(share) + θ2·p(follow) + …)聚合成单一价值分数用于最终排序。第二阶段的权重向量 θ 如何系统化优化此前缺乏研究。
 
 传统调优依赖**日级**系统反馈、靠工程团队经验,需要 **2-3 周**才能找到合理平衡。但配置参数常需随业务需求快速调整(如上新界面时需在多约束下同时提升长视频曝光)。改用**小时级**反馈做自动调优面临三大挑战:
 
@@ -56,4 +56,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-这是一篇 [[recommender-system]] 工业系统论文,核心是把 [[hyperparameter-optimization]] / [[bayesian-optimization]] 适配到 value model 权重调优这一长期缺乏系统研究的场景。方法上属 [[zeroth-order-optimization]] + [[constrained-optimization]],技术栈是 [[gaussian-process]] 估计 + [[thompson-sampling]] 选择,与通用 BO 框架([[bayesian-optimization]])形成对比——后者因 non-i.i.d. 小时反馈和任意形式约束不能直接套用。与本 wiki 中偏 RL/causal 的 recsys 调优路线不同,HyperZero 走的是在线 A/B test bed + 零阶优化路线,关键创新是 semi-i.i.d. delta 信号与异步并行。作者来自 [[bytedance-research]] 之外的 Meta(论文未涵盖的实体),实验含合成与生产两类。论文用开源数据集 [[kuairand]] 作小时 view count 波动的示意(Figure 2)。
+这是一篇 [[recommender-systems|recommender-system]] 工业系统论文,核心是把 [[hyperparameter-optimization]] / [[bayesian-optimization]] 适配到 value model 权重调优这一长期缺乏系统研究的场景。方法上属 [[zeroth-order-optimization]] + [[constrained-optimization]],技术栈是 [[gaussian-process]] 估计 + [[thompson-sampling]] 选择,与通用 BO 框架([[bayesian-optimization]])形成对比——后者因 non-i.i.d. 小时反馈和任意形式约束不能直接套用。与本 wiki 中偏 RL/causal 的 recsys 调优路线不同,HyperZero 走的是在线 A/B test bed + 零阶优化路线,关键创新是 semi-i.i.d. delta 信号与异步并行。作者来自 [[bytedance-research]] 之外的 Meta(论文未涵盖的实体),实验含合成与生产两类。论文用开源数据集 [[kuairand]] 作小时 view count 波动的示意(Figure 2)。

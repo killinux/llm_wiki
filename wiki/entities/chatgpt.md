@@ -15,7 +15,7 @@ ChatGPT 是 OpenAI 发布的基于大语言模型的对话式 AI 产品,通过�
 
 - [[2022-instructgpt]]:作为 ChatGPT 的技术前身与方法基础。该工作用 RLHF(SFT → 奖励模型 → PPO)对齐 GPT-3,使 1.3B 的 InstructGPT 在人类偏好上胜过 175B 的 GPT-3,并更真实、毒性更低;这套对齐范式正是 ChatGPT 的核心训练思路。
 - [[2023-memorybank]]:将 ChatGPT 作为可接入长期记忆机制的 LLM 之一。MemoryBank 为 LLM 设计类人长期记忆(存储与分层摘要历史对话、按 Ebbinghaus 遗忘曲线更新记忆、检索相关记忆并构建用户画像),并据此实现情感陪伴机器人 SiliconFriend。
-- [[2023-multiagent-debate]]:将 ChatGPT 作为参与多智能体辩论的 LLM 实例。让多个 LLM 实例多轮辩论、互相批评彼此答案,在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:将 ChatGPT 作为参与多智能体辩论的 LLM 实例。让多个 LLM 实例多轮辩论、互相批评彼此答案,在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
 - [[2023-multi-agent-debate]]:将 ChatGPT 用作辩论框架中的智能体与/或裁判。该工作提出 Multi-Agent Debate(MAD)框架,用多个 LLM 智能体"针锋相对"辩论加裁判仲裁,缓解自我反思的 Degeneration-of-Thought 问题并激发发散性思维。
 - [[2023-shepherd-critic-for-lm-generation]]:Meta AI 用约 8K 高质量社区+人工反馈数据微调出 7B 的 LLaMA critic 模型 Shepherd,能精确批判 LLM 输出并给改进建议,GPT-4 评估 win-rate 53-87%,与 ChatGPT 媲美。
 - [[2023-recmind-llm-agent-for-recommendation]]:RecMind 是一个由 LLM 驱动的自主推荐 agent,通过规划、记忆与外部工具实现 zero-shot 个性化推荐,并提出 Self-Inspiring 规划算法保留所有已探索状态以增强规划能力。

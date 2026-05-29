@@ -25,7 +25,7 @@ DARLR 是一个面向推荐系统的双 agent model-based offline RL 框架,用 
 
 ## 问题
 
-Model-based [[offline-rl]] 在 [[recommender-system]] 中很有前景:先用稀疏的离线交互日志训练 [[world-model]](含奖励函数,常用 [[deepfm]] 这类监督模型),再在该 world model 中训练推荐策略。但 world model 的奖励函数往往不准确,尤其对离线日志中罕见的交互。
+Model-based [[offline-rl]] 在 [[recommender-systems|recommender-system]] 中很有前景:先用稀疏的离线交互日志训练 [[world-model]](含奖励函数,常用 [[deepfm]] 这类监督模型),再在该 world model 中训练推荐策略。但 world model 的奖励函数往往不准确,尤其对离线日志中罕见的交互。
 
 已有 model-based offline RL for RecSys(如 [[dorl]]、[[rlur]] 即 ROLeR)存在两个主要局限:
 1. **deterministic / frozen reward 的直接使用**:把奖励函数当作静态 look-up table,在策略学习中冻结,导致不准确性被放大——高估的 item 在训练中被优先推荐却在测试时不满足用户期望;低估的 item 则被忽略。

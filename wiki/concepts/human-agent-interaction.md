@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[ai-agent-behavioral-science]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-interaction]]
 - [[responsible-ai]]

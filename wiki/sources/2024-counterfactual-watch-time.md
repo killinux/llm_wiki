@@ -48,4 +48,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 方向中针对隐式反馈偏差的去偏研究,聚焦视频推荐特有的 duration bias 与 watch time 建模。其方法论根植于 [[causal-inference]] / [[counterfactual-reasoning]] 中的 [[debiasing]] 与 [[selection-bias]] 思路,与处理 position bias、popularity bias 的 counterfactual information retrieval 工作一脉相承。与本 wiki 中关于 watch time 去偏的相关概念 [[watch-time]]、[[duration-bias]]、[[d2q]] 直接相关,数据集层面涉及 [[kuairand]]、[[wechat-channels-dataset]]。作者团队来自 [[renmin-university-of-china]] 与 [[huawei-noahs-ark-lab]],相关研究者包括 [[jun-xu]]、[[ji-rong-wen]]、[[zhenhua-dong]]、[[jieming-zhu]]。
+本文属于 [[recommender-systems|recommender-system]] 方向中针对隐式反馈偏差的去偏研究,聚焦视频推荐特有的 duration bias 与 watch time 建模。其方法论根植于 [[causal-inference]] / [[counterfactual-reasoning]] 中的 [[debiasing]] 与 [[selection-bias]] 思路,与处理 position bias、popularity bias 的 counterfactual information retrieval 工作一脉相承。与本 wiki 中关于 watch time 去偏的相关概念 [[watch-time]]、[[duration-bias]]、[[d2q]] 直接相关,数据集层面涉及 [[kuairand]]、[[wechat-channels-dataset]]。作者团队来自 [[renmin-university-of-china]] 与 [[huawei-noahs-ark-lab]],相关研究者包括 [[jun-xu]]、[[ji-rong-wen]]、[[zhenhua-dong]]、[[jieming-zhu]]。

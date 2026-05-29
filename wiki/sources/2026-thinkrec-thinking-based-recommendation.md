@@ -58,4 +58,4 @@ ThinkRec 基于 [[llama]]-3-8B,主要由三部分组成(见论文 Figure 2):
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-for-recommendation]] 方向,把 [[large-language-models]] 的 [[reasoning]] 能力(System 2 / [[chain-of-thought]] 风格)引入 [[recommender-system]],与 [[tallrec]]、[[p5]] 等 LLM4Rec 工作以及 [[sasrec]]、[[lightgcn]]、[[matrix-factorization]] 等传统推荐方法构成对比。技术上结合了 [[lora]] 个性化、[[mixture-of-experts]] 思想的实例级专家融合、[[collaborative-filtering]] embedding 注入,以及用强推理模型(QwQ-32B)做的推理数据合成与蒸馏,与 [[reflection]]、[[self-improvement]] 等推理增强范式相关。由 [[zhejiang-university]] 与 Ant Group 合作完成。
+本文属于 [[llm-for-recommendation]] 方向,把 [[large-language-models]] 的 [[reasoning]] 能力(System 2 / [[chain-of-thought]] 风格)引入 [[recommender-systems|recommender-system]],与 [[tallrec]]、[[p5]] 等 LLM4Rec 工作以及 [[sasrec]]、[[lightgcn]]、[[matrix-factorization]] 等传统推荐方法构成对比。技术上结合了 [[lora]] 个性化、[[mixture-of-experts]] 思想的实例级专家融合、[[collaborative-filtering]] embedding 注入,以及用强推理模型(QwQ-32B)做的推理数据合成与蒸馏,与 [[reflection]]、[[self-improvement]] 等推理增强范式相关。由 [[zhejiang-university]] 与 Ant Group 合作完成。

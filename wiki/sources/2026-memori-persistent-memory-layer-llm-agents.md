@@ -16,7 +16,7 @@ Memori 是一个与具体 LLM 无关(LLM-agnostic)的持久化记忆层,把记�
 
 ## 问题
 
-随着 [[large-language-models]] 演化为自主 [[llm-agent]],跨会话、跨模型的持久化记忆成为实现 context-aware 行为的关键。现有做法有两大缺陷:
+随着 [[large-language-models]] 演化为自主 [[llm-agents|llm-agent]],跨会话、跨模型的持久化记忆成为实现 context-aware 行为的关键。现有做法有两大缺陷:
 
 - 厂商锁定(vendor lock-in),记忆绑定在特定 LLM 平台;
 - 把大量原始对话直接注入 prompt,导致 token 成本飙升、上下文膨胀,并出现 "context rot"(相关信息存在但模型用不上)和 "lost in the middle" [[hallucination]]。

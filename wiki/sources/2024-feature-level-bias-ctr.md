@@ -25,7 +25,7 @@ year: 2024
 
 ## 问题
 
-[[recommender-system]] 中的 CTR(click-through rate)预测模型常表现出 **feature-level bias**:针对某个特征字段(如电影 genre、video tag),模型会对不同 item group 过度推荐或推荐不足,导致 item-side 不公平,并扭曲用户真实偏好。
+[[recommender-systems|recommender-system]] 中的 CTR(click-through rate)预测模型常表现出 **feature-level bias**:针对某个特征字段(如电影 genre、video tag),模型会对不同 item group 过度推荐或推荐不足,导致 item-side 不公平,并扭曲用户真实偏好。
 
 已有方法主要通过调整 CTR 模型的**学习过程**来缓解,如 regularization、adversarial training、causal [[inverse-propensity-score]] 等,但都未回答一个关键问题:**bias 是如何从原始训练数据中产生的,CTR 模型的哪个组件主要导致了 feature-level bias?**
 
@@ -59,4 +59,4 @@ CTR 模型预测可抽象为 `ŷ = w0 + Σ wi·xi + fθ(x)`,即 **linear part**(
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的 **bias & fairness** 方向,聚焦 CTR 预测。与基于 causal inference 的去偏方法(如 [[inverse-propensity-score]]、deconfounding 系列)不同,它从模型组件分解角度定位 [[factorization-machines]] 线性部分为 feature-level bias 主因,提出 post-training 的极简调权策略,无需重训。可与 wiki 中 [[selection-bias]]、[[exposure-bias]]、[[debiasing]]、[[matthew-effect]] 等推荐去偏概念互相参照;数据集 [[kuairand]] 与 backbone [[fm]] 已在本 wiki 出现。
+本文属于 [[recommender-systems|recommender-system]] 的 **bias & fairness** 方向,聚焦 CTR 预测。与基于 causal inference 的去偏方法(如 [[inverse-propensity-score]]、deconfounding 系列)不同,它从模型组件分解角度定位 [[factorization-machines]] 线性部分为 feature-level bias 主因,提出 post-training 的极简调权策略,无需重训。可与 wiki 中 [[selection-bias]]、[[exposure-bias]]、[[debiasing]]、[[matthew-effect]] 等推荐去偏概念互相参照;数据集 [[kuairand]] 与 backbone [[fm]] 已在本 wiki 出现。

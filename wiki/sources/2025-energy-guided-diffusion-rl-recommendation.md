@@ -12,7 +12,7 @@ year: 2025
 
 # DAC4Rec:面向长期用户行为预测的能量引导扩散采样(RL 推荐)
 
-一句话:DAC4Rec(Diffusion-enhanced Actor-Critic for Offline RL4RS)用[[diffusion-model]]表示离线 RL 推荐中表达力更强的行为策略,结合 Q 值引导的策略改进与能量引导采样(energy-guided sampling),在六个真实数据集与 VirtualTaobao 在线模拟上更好地建模长期用户偏好。
+一句话:DAC4Rec(Diffusion-enhanced Actor-Critic for Offline RL4RS)用[[diffusion-models|diffusion-model]]表示离线 RL 推荐中表达力更强的行为策略,结合 Q 值引导的策略改进与能量引导采样(energy-guided sampling),在六个真实数据集与 VirtualTaobao 在线模拟上更好地建模长期用户偏好。
 
 ## 问题
 
@@ -44,4 +44,4 @@ DAC4Rec 建立在 [[actor-critic]] 结构上,核心由三部分组成:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[rl-based-recsys]] / [[offline-rl]] 与 [[diffusion-model]] 交叉方向,延续 [[kuaisim-recommender-simulator]]、DT4Rec/CDT4Rec/EDT4Rec 等离线 RL4RS 研究,但用扩散策略替代 [[decision-transformer]] 的行为建模,以增强表达力并缓解 [[behavior-cloning]] 导致的次优收敛。其能量引导采样与 [[classifier-free-guidance]]、score-based 引导相关,是 [[diffusion-models-in-recommendation-survey]] 所综述方向在 RL 推荐中的具体实例,聚焦 [[long-term-recommendation]] 与 [[user-retention]] 目标。
+本文属于 [[rl-based-recsys]] / [[offline-rl]] 与 [[diffusion-models|diffusion-model]] 交叉方向,延续 [[kuaisim-recommender-simulator]]、DT4Rec/CDT4Rec/EDT4Rec 等离线 RL4RS 研究,但用扩散策略替代 [[decision-transformer]] 的行为建模,以增强表达力并缓解 [[behavior-cloning]] 导致的次优收敛。其能量引导采样与 [[classifier-free-guidance]]、score-based 引导相关,是 [[diffusion-models-in-recommendation-survey]] 所综述方向在 RL 推荐中的具体实例,聚焦 [[long-term-recommendation]] 与 [[user-retention]] 目标。

@@ -19,4 +19,4 @@ Darwin Gödel Machine 是一类能够自我改写、自我进化的智能体系�
 
 - [[self-evolving-agents]]
 - [[godel-machine]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

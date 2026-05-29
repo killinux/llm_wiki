@@ -17,6 +17,6 @@ DreamRec 是一种基于扩散模型(diffusion model)的序列推荐方法,将"�
 
 ## 相关
 
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[sequential-recommendation]]
 - [[generative-recommendation]]

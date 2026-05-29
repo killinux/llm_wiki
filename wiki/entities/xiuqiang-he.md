@@ -18,5 +18,5 @@ sources: 1
 ## 相关
 
 - [[multi-task-learning]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[htlnet]]

@@ -27,6 +27,6 @@ sources: 10
 ## 相关
 
 - [[reinforcement-learning]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[long-term-reward]]
 - [[rl-environment-simulation]]

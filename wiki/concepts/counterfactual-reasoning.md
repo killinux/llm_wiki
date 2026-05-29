@@ -26,4 +26,4 @@ Counterfactual Reasoning 是一种因果推断方式,关注"在反事实条件�
 - [[treatment-effect]]
 - [[uplift-modeling]]
 - [[selection-bias]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

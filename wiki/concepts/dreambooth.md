@@ -19,5 +19,5 @@ DreamBooth 是一种针对文生图扩散模型的个性化微调方法,通过�
 
 - [[ip-adapter]]
 - [[text-to-image]]
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[subject-consistency]]

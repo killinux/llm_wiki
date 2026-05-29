@@ -20,6 +20,6 @@ Mind2Web 是一个面向通用网页智能体(generalist web agent)的基准,用
 ## 相关
 
 - [[web-agent]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[agentbench]]
 - [[tool-use]]

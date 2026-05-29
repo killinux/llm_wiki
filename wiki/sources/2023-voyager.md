@@ -24,7 +24,7 @@ VOYAGER 通过黑盒查询 [[gpt-4]],由三个核心组件构成:
 - **技能库(Skill Library)**:把每个技能表示为一段可执行代码(从一个状态转移到另一个状态),由 GPT-4 生成;每个技能以其描述的 embedding 建立索引,便于在相似情境下检索复用。技能具有时序延展、可解释、可组合的特点,缓解灾难性遗忘。
 - **迭代提示机制(Iterative Prompting)**:把代码当作动作空间(code as action space),结合三类反馈进行自我改进——环境反馈、执行错误、以及由独立 GPT-4 智能体执行的自我验证(self-verification),用以判断任务是否成功并驱动程序迭代。
 
-实验环境基于 [[minedojo]] 框架与 Mineflayer JavaScript API 控制智能体;除技能检索使用 text-embedding-ada-002 外,所有组件均使用 gpt-4-0314。这是一种典型的 [[llm-agent]] 与 [[code-generation]] 结合的范式。
+实验环境基于 [[minedojo]] 框架与 Mineflayer JavaScript API 控制智能体;除技能检索使用 text-embedding-ada-002 外,所有组件均使用 gpt-4-0314。这是一种典型的 [[llm-agents|llm-agent]] 与 [[code-generation]] 结合的范式。
 
 ## 结果
 
@@ -36,4 +36,4 @@ VOYAGER 通过黑盒查询 [[gpt-4]],由三个核心组件构成:
 
 ## 在本 wiki 中的位置
 
-VOYAGER 是 [[llm-agent]] 方向的代表性工作,展示了"代码即动作 + 技能库 + 自我验证"的[[lifelong-learning]]范式。它与 [[react]]、[[reflexion]]、[[autogpt]] 等智能体框架同属一个谱系,但强调无需微调、依靠 in-context 持续学习与技能复用。可与 [[gpt-4]] 作为基座模型、[[code-generation]] 作为动作表示、[[minedojo]] 作为评测环境等条目互相参照。
+VOYAGER 是 [[llm-agents|llm-agent]] 方向的代表性工作,展示了"代码即动作 + 技能库 + 自我验证"的[[lifelong-learning]]范式。它与 [[react]]、[[reflexion]]、[[autogpt]] 等智能体框架同属一个谱系,但强调无需微调、依靠 in-context 持续学习与技能复用。可与 [[gpt-4]] 作为基座模型、[[code-generation]] 作为动作表示、[[minedojo]] 作为评测环境等条目互相参照。

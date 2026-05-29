@@ -19,7 +19,7 @@ year: 2024
 
 # Self-Reflection in LLM Agents: Effects on Problem-Solving Performance
 
-通过把 self-reflection 拆解成 8 种类型并在 9 个 LLM、1000 道多选题上做对照实验,本文证明所有类型的自我反思都能显著提升 [[llm-agent]] 的解题准确率。
+通过把 self-reflection 拆解成 8 种类型并在 9 个 LLM、1000 道多选题上做对照实验,本文证明所有类型的自我反思都能显著提升 [[llm-agents|llm-agent]] 的解题准确率。
 
 ## 问题
 
@@ -64,4 +64,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是 [[self-reflection]] / [[self-correction]] 主题的实证基准研究,把抽象的"自我反思"细化为可量化的 8 种反馈类型,与 [[reflexion]]、[[self-refine]]、[[self-critique]] 等方法形成对照,也呼应 [[self-correction]] 关于"LLM 能否独立纠错"的争论(本文反思依赖正确答案作为外部信号)。它在 [[gpt-4]]、[[claude]]、[[llama-2]] 等多个 [[large-language-models]] 上验证,可作为评估 [[llm-agent]] 元认知能力的参考。作者来自 Johns Hopkins University。
+本文是 [[self-reflection]] / [[self-correction]] 主题的实证基准研究,把抽象的"自我反思"细化为可量化的 8 种反馈类型,与 [[reflexion]]、[[self-refine]]、[[self-critique]] 等方法形成对照,也呼应 [[self-correction]] 关于"LLM 能否独立纠错"的争论(本文反思依赖正确答案作为外部信号)。它在 [[gpt-4]]、[[claude]]、[[llama-2]] 等多个 [[large-language-models]] 上验证,可作为评估 [[llm-agents|llm-agent]] 元认知能力的参考。作者来自 Johns Hopkins University。

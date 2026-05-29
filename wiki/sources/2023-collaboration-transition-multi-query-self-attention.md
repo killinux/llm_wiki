@@ -47,4 +47,4 @@ MQSA-TED 包含两个主要模块:
 
 ## 在本 wiki 中的位置
 
-本文属于"self-attention 序列推荐 + 知识蒸馏"方向,直接改进 [[sasrec]],与 wiki 中的 [[sequential-recommendation]]、[[recommender-system]]、[[matrix-factorization]] 等主题相连,展示了如何用 multi-query attention 与 transition distillation 在协同信号与转移信号之间解耦并平衡,可与图卷积推荐(如 [[recommender-system]] 下的 LightGCN 路线)互为参照。
+本文属于"self-attention 序列推荐 + 知识蒸馏"方向,直接改进 [[sasrec]],与 wiki 中的 [[sequential-recommendation]]、[[recommender-systems|recommender-system]]、[[matrix-factorization]] 等主题相连,展示了如何用 multi-query attention 与 transition distillation 在协同信号与转移信号之间解耦并平衡,可与图卷积推荐(如 [[recommender-systems|recommender-system]] 下的 LightGCN 路线)互为参照。

@@ -23,7 +23,7 @@ year: 2026
 
 # Performance-Driven QUBO for Recommender Systems on Quantum Annealers
 
-PDQUBO 是一种面向[[recommender-system|推荐系统]]特征选择的「性能驱动」QUBO 构造方法,它用[[counterfactual-reasoning|反事实分析]]来量化单个特征与特征对对推荐性能的影响,从而让量子退火器(quantum annealer)的优化方向直接对齐推荐质量。
+PDQUBO 是一种面向[[recommender-systems|推荐系统]]特征选择的「性能驱动」QUBO 构造方法,它用[[counterfactual-reasoning|反事实分析]]来量化单个特征与特征对对推荐性能的影响,从而让量子退火器(quantum annealer)的优化方向直接对齐推荐质量。
 
 ## 问题
 
@@ -62,4 +62,4 @@ PDQUBO 是一种面向[[recommender-system|推荐系统]]特征选择的「性�
 
 ## 在本 wiki 中的位置
 
-这是一篇把 [[counterfactual-reasoning|反事实分析]] 用作 [[causal-inference|因果推断]] 工具来构造组合优化目标、并在量子退火硬件上做 [[recommender-system|推荐系统]] 特征选择的工作,核心创新是让 QUBO 的优化方向显式对齐下游推荐性能(performance-driven),概念上属于 wrapper 式特征选择。它使用 [[ndcg|nDCG]] 与 [[recall|Recall]] 作为推荐评估指标,base model 覆盖 [[collaborative-filtering|协同过滤]]、[[deepfm|DeepFM]] 等,数据集包含 [[kuairec|KuaiRec]]、[[kuairand|KuaiRand]]。与本 wiki 中以 LLM/RL 为主的推荐研究不同,本文代表了「量子计算 + 推荐系统」这一相对小众但新颖的交叉方向。
+这是一篇把 [[counterfactual-reasoning|反事实分析]] 用作 [[causal-inference|因果推断]] 工具来构造组合优化目标、并在量子退火硬件上做 [[recommender-systems|推荐系统]] 特征选择的工作,核心创新是让 QUBO 的优化方向显式对齐下游推荐性能(performance-driven),概念上属于 wrapper 式特征选择。它使用 [[ndcg|nDCG]] 与 [[recall|Recall]] 作为推荐评估指标,base model 覆盖 [[collaborative-filtering|协同过滤]]、[[deepfm|DeepFM]] 等,数据集包含 [[kuairec|KuaiRec]]、[[kuairand|KuaiRand]]。与本 wiki 中以 LLM/RL 为主的推荐研究不同,本文代表了「量子计算 + 推荐系统」这一相对小众但新颖的交叉方向。

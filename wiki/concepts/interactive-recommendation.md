@@ -23,6 +23,6 @@ sources: 6
 ## 相关
 
 - [[long-term-recommendation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reinforcement-learning]]
 - [[planning]]

@@ -12,7 +12,7 @@ year: 2026
 
 # Evaluating Memory Structure in LLM Agents
 
-提出 **StructMemEval** 基准,专门测试 [[llm-agent]] 能否为给定任务**组织(structure)**其长期记忆,而不仅仅是事实回忆,发现纯检索系统在任务规模超过检索窗口后崩溃,而 memory agents 在被提示如何组织记忆时能可靠求解,但常常不会主动识别出应使用的记忆结构。
+提出 **StructMemEval** 基准,专门测试 [[llm-agents|llm-agent]] 能否为给定任务**组织(structure)**其长期记忆,而不仅仅是事实回忆,发现纯检索系统在任务规模超过检索窗口后崩溃,而 memory agents 在被提示如何组织记忆时能可靠求解,但常常不会主动识别出应使用的记忆结构。
 
 ## 问题
 
@@ -62,4 +62,4 @@ year: 2026
 
 ## 在本 wiki 中的位置
 
-本文属于 [[agent-memory]] / [[llm-long-term-memory]] 的评测脉络,是继 [[memgpt]]([[memory-module]] 工具化)、[[mem0]] 等 agentic memory 框架之后的诊断性 [[benchmark]]。它与 [[locomo]]、[[longmemeval]] 形成对照:后两者考验事实回忆与 multi-hop,而 StructMemEval 专门考验记忆的**组织/结构化**能力,弥补了简单 [[retrieval-augmented-generation]] 基线即可刷高分的评测空白。方法上用 [[llm-as-judge]] 评分、用 [[hallucination]] 与结构错误作为失败模式分类,可与 [[llm-agent]] 的记忆设计与训练改进相互参照。
+本文属于 [[agent-memory]] / [[llm-long-term-memory]] 的评测脉络,是继 [[memgpt]]([[memory-module]] 工具化)、[[mem0]] 等 agentic memory 框架之后的诊断性 [[benchmark]]。它与 [[locomo]]、[[longmemeval]] 形成对照:后两者考验事实回忆与 multi-hop,而 StructMemEval 专门考验记忆的**组织/结构化**能力,弥补了简单 [[retrieval-augmented-generation]] 基线即可刷高分的评测空白。方法上用 [[llm-as-judge]] 评分、用 [[hallucination]] 与结构错误作为失败模式分类,可与 [[llm-agents|llm-agent]] 的记忆设计与训练改进相互参照。

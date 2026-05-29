@@ -42,4 +42,4 @@ PGCR(Policy-Guided Causal Representation):一个面向离线 RL 推荐系统的�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[causal-inference]] 与 [[offline-rl]] 在 [[recommender-system]] 交叉处的工作,核心是 [[state-representation]] 学习。它与 [[deep-deconf]]、[[idcf]] 等推荐去偏(debiasing)工作共享因果视角,但聚焦点是离线 RLRS 的状态表示而非 [[selection-bias]] 校正。方法上依赖 [[structural-causal-model]]、[[do-calculus]]、[[potential-outcome-framework]] 的可识别性论证,并借鉴 bisimulation([[world-model]] 式状态抽象)思路但用 Wasserstein 因果效应度量替代。相关工作包括 InvRec、CDT4Rec、CIDS(并发工作,用 conditional mutual information 做在线 RLRS 因果状态学习)及 [[matthew-effect]] 缓解的 counterfactual exploration。可作为 [[easyrl4rec]] 基准生态下的因果增强方法参考。
+本文属于 [[causal-inference]] 与 [[offline-rl]] 在 [[recommender-systems|recommender-system]] 交叉处的工作,核心是 [[state-representation]] 学习。它与 [[deep-deconf]]、[[idcf]] 等推荐去偏(debiasing)工作共享因果视角,但聚焦点是离线 RLRS 的状态表示而非 [[selection-bias]] 校正。方法上依赖 [[structural-causal-model]]、[[do-calculus]]、[[potential-outcome-framework]] 的可识别性论证,并借鉴 bisimulation([[world-model]] 式状态抽象)思路但用 Wasserstein 因果效应度量替代。相关工作包括 InvRec、CDT4Rec、CIDS(并发工作,用 conditional mutual information 做在线 RLRS 因果状态学习)及 [[matthew-effect]] 缓解的 counterfactual exploration。可作为 [[easyrl4rec]] 基准生态下的因果增强方法参考。

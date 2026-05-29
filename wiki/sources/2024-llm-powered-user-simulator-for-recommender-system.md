@@ -12,7 +12,7 @@ year: 2024
 
 # LLM-Powered User Simulator for Recommender System
 
-用 LLM 显式建模用户偏好逻辑、蒸馏用户情感,并与统计模型集成,构建可解释、低幻觉的用户模拟器,为基于 [[reinforcement-learning]] 的 [[recommender-system]] 提供高保真训练数据。
+用 LLM 显式建模用户偏好逻辑、蒸馏用户情感,并与统计模型集成,构建可解释、低幻觉的用户模拟器,为基于 [[reinforcement-learning]] 的 [[recommender-systems|recommender-system]] 提供高保真训练数据。
 
 ## 问题
 

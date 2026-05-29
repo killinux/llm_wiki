@@ -21,7 +21,7 @@ year: 2024
 
 # Positive Experience Reflection for Agents in Interactive Text Environments
 
-提出 Sweet&Sour:让 [[llm-agent]] 在交互式文本环境中不仅从失败中反思,还从**成功经验**(positive experience)中反思,并配合双缓冲“managed memory”管理短期/长期记忆,从而缓解既有 [[self-reflection]] 方法“初始成功后失效”和“小模型上效果差”的两大局限。
+提出 Sweet&Sour:让 [[llm-agents|llm-agent]] 在交互式文本环境中不仅从失败中反思,还从**成功经验**(positive experience)中反思,并配合双缓冲“managed memory”管理短期/长期记忆,从而缓解既有 [[self-reflection]] 方法“初始成功后失效”和“小模型上效果差”的两大局限。
 
 ## 问题
 
@@ -57,4 +57,4 @@ text-based games(TBGs,文本冒险游戏)是评测智能体 [[reasoning]]、适�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 的 [[self-reflection]] / [[agent-memory]] 方向,可与 [[reflexion]](仅从失败跨 attempt 反思)、[[react]](reasoning+acting 基线)、[[self-refine]] 对照阅读。其核心论点——反思应同时强化成功经验、并用结构化记忆管理——延伸了 verbal reinforcement 一脉;评测基准 [[scienceworld]] 优先于更简单的 [[alfworld]]。涉及模型 [[gpt-4o]]、[[llama-3]] 与 Mistral Large 2。
+本文属于 [[llm-agents|llm-agent]] 的 [[self-reflection]] / [[agent-memory]] 方向,可与 [[reflexion]](仅从失败跨 attempt 反思)、[[react]](reasoning+acting 基线)、[[self-refine]] 对照阅读。其核心论点——反思应同时强化成功经验、并用结构化记忆管理——延伸了 verbal reinforcement 一脉;评测基准 [[scienceworld]] 优先于更简单的 [[alfworld]]。涉及模型 [[gpt-4o]]、[[llama-3]] 与 Mistral Large 2。

@@ -14,7 +14,7 @@ KAML 是一个面向在线广告 CVR(conversion rate)预测的 [[multi-task-lear
 
 ## 问题
 
-在线广告中,广告主有多样化的获客目标(activation、re-engagement、registration、payment、retention 等),业界常用 [[multi-task-learning]] 训练统一模型来预测这些目标的 [[ctr]] / CVR(参见 [[recommender-system]]、[[esmm]] 等转化建模工作)。
+在线广告中,广告主有多样化的获客目标(activation、re-engagement、registration、payment、retention 等),业界常用 [[multi-task-learning]] 训练统一模型来预测这些目标的 [[ctr]] / CVR(参见 [[recommender-systems|recommender-system]]、[[esmm]] 等转化建模工作)。
 
 但实践中存在一个核心难题:出于隐私和商业机密考虑,**广告主只提交一部分用户转化行为**,导致多任务标签不完整,作者称之为 **asymmetric multi-label data(非对称多标签数据)**。具体表现:
 
@@ -49,4 +49,4 @@ KAML(Knowledge transfer framework for Asymmetric Multi-Label data)在一个 [[mm
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / 在线广告中的 [[ctr]] / CVR 多任务建模主题,基座沿用 [[mmoe]] / [[ple]] 等 [[multi-task-learning]] 架构,与 [[esmm]] 等转化建模工作相关,但聚焦"广告主部分上报"导致的非对称多标签这一新问题,用归因掩码 + 层级知识抽取 + 排序损失利用未标注样本,可与 [[multi-scenario-recommendation]]、[[negative-transfer]]、[[learning-to-rank]] 等条目互相参照。作者来自 [[huawei-noahs-ark-lab]] 与 [[peking-university]]。
+本文属于 [[recommender-systems|recommender-system]] / 在线广告中的 [[ctr]] / CVR 多任务建模主题,基座沿用 [[mmoe]] / [[ple]] 等 [[multi-task-learning]] 架构,与 [[esmm]] 等转化建模工作相关,但聚焦"广告主部分上报"导致的非对称多标签这一新问题,用归因掩码 + 层级知识抽取 + 排序损失利用未标注样本,可与 [[multi-scenario-recommendation]]、[[negative-transfer]]、[[learning-to-rank]] 等条目互相参照。作者来自 [[huawei-noahs-ark-lab]] 与 [[peking-university]]。

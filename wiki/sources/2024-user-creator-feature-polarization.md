@@ -16,7 +16,7 @@ year: 2024
 
 ## 问题
 
-[[recommender-system]] 同时服务两端:把相关内容推给用户,也帮助创作者(creator)触达目标受众。这种双向性意味着用户与创作者都不是静态实体——推荐既会改变用户偏好(exposure 影响兴趣),也会激励创作者调整内容风格以吸引更多用户。以往关于 filter bubble 与 polarization 的研究、以及多样性提升(diversity-boosting)方法,大多假设平台内容固定、只考虑单侧影响。作者提出核心疑问:在用户与创作者偏好共同演化的双向影响下,这些多样性提升设计是否仍然有效?系统的长期多样性会走向何方?
+[[recommender-systems|recommender-system]] 同时服务两端:把相关内容推给用户,也帮助创作者(creator)触达目标受众。这种双向性意味着用户与创作者都不是静态实体——推荐既会改变用户偏好(exposure 影响兴趣),也会激励创作者调整内容风格以吸引更多用户。以往关于 filter bubble 与 polarization 的研究、以及多样性提升(diversity-boosting)方法,大多假设平台内容固定、只考虑单侧影响。作者提出核心疑问:在用户与创作者偏好共同演化的双向影响下,这些多样性提升设计是否仍然有效?系统的长期多样性会走向何方?
 
 ## 方法
 
@@ -40,4 +40,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的长期动力学与社会影响研究,与 [[matthew-effect]]、[[selection-bias]] 等"系统自身造成的偏差"主题相关,也与 [[user-simulation]]、[[recsim]]、[[kuaisim-recommender-simulator]] 等用仿真研究推荐生态的工作呼应。其"双向影响"视角与 performative prediction 一脉相承,理论工具(absorbing Markov chain、单位球面上的 opinion dynamics)区别于本 wiki 中常见的 [[offline-rl]]/[[reinforcement-learning]] 推荐方法。结论上,它对 [[active-learning]] 式的探索流量与多样性目标提出告诫:在 creator 也会响应推荐的生态中,静态多样性优化可能损害长期 [[recommender-systems]] 健康度。数据集层面使用了 [[movielens]]。
+本文属于 [[recommender-systems|recommender-system]] 的长期动力学与社会影响研究,与 [[matthew-effect]]、[[selection-bias]] 等"系统自身造成的偏差"主题相关,也与 [[user-simulation]]、[[recsim]]、[[kuaisim-recommender-simulator]] 等用仿真研究推荐生态的工作呼应。其"双向影响"视角与 performative prediction 一脉相承,理论工具(absorbing Markov chain、单位球面上的 opinion dynamics)区别于本 wiki 中常见的 [[offline-rl]]/[[reinforcement-learning]] 推荐方法。结论上,它对 [[active-learning]] 式的探索流量与多样性目标提出告诫:在 creator 也会响应推荐的生态中,静态多样性优化可能损害长期 [[recommender-systems]] 健康度。数据集层面使用了 [[movielens]]。

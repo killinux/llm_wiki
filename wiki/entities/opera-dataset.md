@@ -17,7 +17,7 @@ OPeRA 是一个基于真实在线购物数据的数据集/评测基准,用于在
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[human-behavior-simulation]]
 - [[online-shopping]]
 - [[reasoning-trace]]

@@ -58,4 +58,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是 [[reinforcement-learning]]-based [[recommender-system]] 方向的工作,聚焦 [[listwise-recommendation]] 在 [[markov-decision-process]] 下的建模不一致问题。其 backbone 是 [[actor-critic]],与 [[ppo]] 类方法及 list 表示方法 HAC 同属一脉。它强调 item-level 的长期价值估计与未来影响分解,与本 wiki 中关注 [[watch-time]]、[[user-retention]] 的快手系推荐工作([[kuairand]]、KuaiSim、[[qingpeng-cai]]、[[peng-jiang]]、[[kun-gai]] 等作者)相承接。实验数据集涉及 [[movielens-1m]] 与 [[kuairand]]。
+本文是 [[reinforcement-learning]]-based [[recommender-systems|recommender-system]] 方向的工作,聚焦 [[listwise-recommendation]] 在 [[markov-decision-process]] 下的建模不一致问题。其 backbone 是 [[actor-critic]],与 [[ppo]] 类方法及 list 表示方法 HAC 同属一脉。它强调 item-level 的长期价值估计与未来影响分解,与本 wiki 中关注 [[watch-time]]、[[user-retention]] 的快手系推荐工作([[kuairand]]、KuaiSim、[[qingpeng-cai]]、[[peng-jiang]]、[[kun-gai]] 等作者)相承接。实验数据集涉及 [[movielens-1m]] 与 [[kuairand]]。

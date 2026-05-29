@@ -20,6 +20,6 @@ sources: 3
 ## 相关
 
 - [[in-context-learning]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[memory]]
 - [[self-reflection]]

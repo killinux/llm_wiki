@@ -54,4 +54,4 @@ DBP 用两个 HBM buffer(Active / Prefetch)构成 producer-consumer 模式,在�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的大规模分布式训练系统工作,与 [[scaling-law]] 在推荐序列模型(HSTU)上的延续相关。它聚焦 [[embedding-based-retrieval]] 之外的 sparse embedding table 训练系统,核心贡献是用 pipeline parallelism 隐藏 [[communication-efficiency]] 与 lookup 两类数据移动开销,同时严格保持同步训练一致性——这与以 staleness 换吞吐的异步训练、以精度换通信的 embedding 压缩形成对照。作者来自 [[bytedance-research]] 之外的 JD.com 与 [[huawei-noahs-ark-lab]] 之外的 Huawei(Ascend NPU 硬件)。可与 wiki 中关于推荐序列建模、[[sequential-recommendation]] 的工作互为系统侧与算法侧的补充。
+本文属于 [[recommender-systems|recommender-system]] 的大规模分布式训练系统工作,与 [[scaling-law]] 在推荐序列模型(HSTU)上的延续相关。它聚焦 [[embedding-based-retrieval]] 之外的 sparse embedding table 训练系统,核心贡献是用 pipeline parallelism 隐藏 [[communication-efficiency]] 与 lookup 两类数据移动开销,同时严格保持同步训练一致性——这与以 staleness 换吞吐的异步训练、以精度换通信的 embedding 压缩形成对照。作者来自 [[bytedance-research]] 之外的 JD.com 与 [[huawei-noahs-ark-lab]] 之外的 Huawei(Ascend NPU 硬件)。可与 wiki 中关于推荐序列建模、[[sequential-recommendation]] 的工作互为系统侧与算法侧的补充。

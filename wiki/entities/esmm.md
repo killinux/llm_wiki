@@ -4,7 +4,7 @@ subtype: model
 tags: [multi-task-learning, recommendation, ctr, cvr, deep-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 3
+sources: 5
 ---
 
 # ESMM
@@ -12,6 +12,14 @@ sources: 3
 ESMM(Entire Space Multi-Task Model)是一种用于推荐系统的多任务深度模型,通过在完整曝光样本空间上联合建模 CTR 与 CVR,并借助 CTCVR 这一辅助任务,缓解传统 CVR 估计中的样本选择偏差(sample selection bias)与数据稀疏问题。
 
 ## 在本 wiki 中的出现
+- [[2025-no-one-left-behind-asymmetric-multi-label-cvr]]:KAML 框架针对广告主只上报部分转化行为导致的非对称多标签数据,用归因掩码 ADM、层级知识抽取 HKE 与排序标签利用 RLU 改进 MMoE 基座,工业数据与线上 A/B(RPM +12.11%、CVR +0.92%)均超越现有 MTL 基线的 CVR 预测方法。
+- [[2024-touch-the-core-hybrid-targets-recommendation]]:首次研究"离散转化任务 + 连续核心目标(如 watch time)"的 hybrid targets 多任务学习,提出 HTLNet 用 label embedding 显式传递任务依赖并设计梯度调整策略稳定优化。
+- [[2024-residual-multi-task-learner-resflow]]:ResFlow 轻量多任务学习框架,通过跨任务网络对应层的残差连接高效传递信息;部署于 Shopee Search pre-rank,线上 OPU 提升 1.29% 且无额外延迟。
+- [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
+- [[2025-multi-objective-controllable-decision-transformer]]:提出 MocDT,一种基于 Decision Transformer 的离线 RL 推荐方法,把未来多目标作为控制信号,在推理阶段自回归生成对齐指定目标(累积评分与多样性)的物品序列,无需重训。
+- [[ctr-prediction]]
+- [[cvr-prediction]]
+- [[htlnet]]
 
 - [[2023-multi-task-deep-recommender-systems-survey]]:作为级联(cascaded)任务关系的代表模型。ESMM 共享 embedding,在全空间(entire space)上按 impression→click→conversion 的行为序列建模,利用 CTCVR = CTR × CVR 的依赖关系解决样本选择偏差(SSB)与数据稀疏(DS),并被列入综述 Table 1 的级联模型清单(与 ESM²、AITM、ESCM² 等并列)。
 - [[2024-merrec-mercari-c2c-recommendation-dataset]]:首个面向 C2C 电商的大规模推荐数据集 MerRec,来自 Mercari,含约 556 万用户、8307 万商品、12.7 亿交互,配套 CTR/SBR/MLR/IAR 四类任务基准与三塔模型 Mercatran。

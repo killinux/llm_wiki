@@ -12,7 +12,7 @@ year: 2025
 
 # LLM-based Agents Suffer from Hallucinations: A Survey of Taxonomy, Methods, and Directions
 
-这是第一篇系统综述 [[llm-agent]] 中"agent 幻觉"(agent hallucinations)的论文,把 agent 拆成"内部状态(belief state)+ 外部行为"两部分,提出涵盖 reasoning / execution / perception / memorization / communication 五大类的幻觉 taxonomy,梳理其触发原因、缓解与检测方法。
+这是第一篇系统综述 [[llm-agents|llm-agent]] 中"agent 幻觉"(agent hallucinations)的论文,把 agent 拆成"内部状态(belief state)+ 外部行为"两部分,提出涵盖 reasoning / execution / perception / memorization / communication 五大类的幻觉 taxonomy,梳理其触发原因、缓解与检测方法。
 
 ## 问题
 
@@ -55,6 +55,6 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文是 [[ai-safety]] / [[agent-safety-alignment]] 视角下对 [[llm-agent]] 可靠性问题的总览,把单体 LLM 的 [[hallucination]] 概念扩展到完整 agent pipeline 与 [[multi-agent-systems]]。它串联了本 wiki 中大量 agent 模块与方法条目:推理([[chain-of-thought]]、[[tree-of-thoughts]])、工具使用([[tool-use]])、记忆([[agent-memory]])、自我验证([[self-reflection]]、[[self-consistency]])、以及缓解范式([[reinforcement-learning]]、[[contrastive-learning]]、[[curriculum-learning]]、[[causal-inference]]、[[model-editing]]、[[world-model]])。POMDP 形式化与多智能体通信拓扑视角,可与 [[multi-agent-collaboration]]、[[llm-multi-agent]] 等条目互参。
+本文是 [[ai-safety]] / [[agent-safety-alignment]] 视角下对 [[llm-agents|llm-agent]] 可靠性问题的总览,把单体 LLM 的 [[hallucination]] 概念扩展到完整 agent pipeline 与 [[multi-agent-systems]]。它串联了本 wiki 中大量 agent 模块与方法条目:推理([[chain-of-thought]]、[[tree-of-thoughts]])、工具使用([[tool-use]])、记忆([[agent-memory]])、自我验证([[self-reflection]]、[[self-consistency]])、以及缓解范式([[reinforcement-learning]]、[[contrastive-learning]]、[[curriculum-learning]]、[[causal-inference]]、[[model-editing]]、[[world-model]])。POMDP 形式化与多智能体通信拓扑视角,可与 [[multi-agent-collaboration]]、[[llm-multi-agent]] 等条目互参。
 
 主要来自 [[chinese-academy-of-sciences]] 信息工程研究所等机构,合作单位包括 [[nanyang-technological-university]]、[[renmin-university-of-china]] 等。

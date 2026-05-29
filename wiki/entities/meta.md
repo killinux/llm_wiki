@@ -20,4 +20,4 @@ Meta 是一家科技公司,其研究团队在大规模推荐系统、机器学�
 - [[hyperzero]]
 - [[bayesian-optimization]]
 - [[thompson-sampling]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

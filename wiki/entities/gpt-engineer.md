@@ -19,6 +19,6 @@ GPT-Engineer 是一个由 LLM 驱动的开源工具,用户用自然语言描述�
 
 - [[2023-chatdev]]
 - [[chatdev]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[code-generation]]
 - [[autonomous-software-agent]]

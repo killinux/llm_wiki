@@ -52,4 +52,4 @@ HierRec 是一个分层结构,包含一个显式场景导向层与多个并行�
 
 ## 在本 wiki 中的位置
 
-HierRec 属于 [[recommender-system]] 中的 multi-scenario / multi-domain CTR 建模方向,与多任务模型 [[mmoe]]、[[ple]] 以及多场景模型 [[star]] 同属一脉,但用 dynamic weight 思路同时建模显式与隐式场景。它在 [[ali-ccp]] 与 [[kuairand]] 上评测,后者是本 wiki 已收录的无偏序列推荐数据集。作者来自 [[huawei-noahs-ark-lab]]。本文与 wiki 中以 LLM 为主的 agent/reasoning 主线相对独立,代表传统深度推荐模型(deep CTR)的分支。
+HierRec 属于 [[recommender-systems|recommender-system]] 中的 multi-scenario / multi-domain CTR 建模方向,与多任务模型 [[mmoe]]、[[ple]] 以及多场景模型 [[star]] 同属一脉,但用 dynamic weight 思路同时建模显式与隐式场景。它在 [[ali-ccp]] 与 [[kuairand]] 上评测,后者是本 wiki 已收录的无偏序列推荐数据集。作者来自 [[huawei-noahs-ark-lab]]。本文与 wiki 中以 LLM 为主的 agent/reasoning 主线相对独立,代表传统深度推荐模型(deep CTR)的分支。

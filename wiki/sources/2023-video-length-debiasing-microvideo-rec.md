@@ -44,4 +44,4 @@ VLDRec 把任务形式化为 learn-to-rank(基于 BPR 损失 L_BPR),不直接用
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的 [[debiasing]] 方向,聚焦微视频场景下以 [[watch-time]] 为目标的 video-length bias,可与 duration bias 相关工作(如 [[d2q]]、[[d2co]]、本文基线 DVR/[[wtg]])及 [[selection-bias]]/[[inverse-propensity-scoring]]、[[deconfounding]] 等通用去偏方法对照。其用 [[multi-task-learning]] 联合有偏/去偏样本、并以 [[deepfm]]/[[autoint]] 等为可替换基座的思路,体现了"从较少偏置反馈中学习内在偏好"的正则化范式;数据集 [[kuairand]]/[[kuairec]] 系列与本文 Kuaishou 数据同源。
+本文属于 [[recommender-systems|recommender-system]] 的 [[debiasing]] 方向,聚焦微视频场景下以 [[watch-time]] 为目标的 video-length bias,可与 duration bias 相关工作(如 [[d2q]]、[[d2co]]、本文基线 DVR/[[wtg]])及 [[selection-bias]]/[[inverse-propensity-scoring]]、[[deconfounding]] 等通用去偏方法对照。其用 [[multi-task-learning]] 联合有偏/去偏样本、并以 [[deepfm]]/[[autoint]] 等为可替换基座的思路,体现了"从较少偏置反馈中学习内在偏好"的正则化范式;数据集 [[kuairand]]/[[kuairec]] 系列与本文 Kuaishou 数据同源。

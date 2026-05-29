@@ -1,0 +1,170 @@
+{
+ "hubs_top": [
+  {
+   "slug": "recommendation-system",
+   "count": 77,
+   "variants": [
+    "recommendation-system",
+    "recommendation-systems"
+   ]
+  },
+  {
+   "slug": "generative-recommendation",
+   "count": 36,
+   "variants": [
+    "generative-recommendation"
+   ]
+  },
+  {
+   "slug": "offline-reinforcement-learning",
+   "count": 18,
+   "variants": [
+    "offline-reinforcement-learning"
+   ]
+  },
+  {
+   "slug": "short-video-recommendation",
+   "count": 15,
+   "variants": [
+    "short-video-recommendation"
+   ]
+  },
+  {
+   "slug": "ctr-prediction",
+   "count": 14,
+   "variants": [
+    "ctr-prediction"
+   ]
+  },
+  {
+   "slug": "distributed-computing",
+   "count": 13,
+   "variants": [
+    "distributed-computing"
+   ]
+  },
+  {
+   "slug": "watch-time-prediction",
+   "count": 12,
+   "variants": [
+    "watch-time-prediction"
+   ]
+  },
+  {
+   "slug": "agent-based-model",
+   "count": 12,
+   "variants": [
+    "agent-based-model",
+    "agent-based-models"
+   ]
+  },
+  {
+   "slug": "long-term-memory",
+   "count": 12,
+   "variants": [
+    "long-term-memory"
+   ]
+  },
+  {
+   "slug": "recommendation-debiasing",
+   "count": 11,
+   "variants": [
+    "recommendation-debiasing"
+   ]
+  },
+  {
+   "slug": "grpo",
+   "count": 10,
+   "variants": [
+    "grpo"
+   ]
+  },
+  {
+   "slug": "chain-of-thought-prompting",
+   "count": 10,
+   "variants": [
+    "chain-of-thought-prompting"
+   ]
+  },
+  {
+   "slug": "distribution-shift",
+   "count": 9,
+   "variants": [
+    "distribution-shift"
+   ]
+  },
+  {
+   "slug": "verifier",
+   "count": 9,
+   "variants": [
+    "verifier"
+   ]
+  },
+  {
+   "slug": "multimodal-llm",
+   "count": 9,
+   "variants": [
+    "multi-modal-llm",
+    "multimodal-llm"
+   ]
+  },
+  {
+   "slug": "mcts",
+   "count": 9,
+   "variants": [
+    "mcts"
+   ]
+  },
+  {
+   "slug": "model-based-offline-rl",
+   "count": 8,
+   "variants": [
+    "model-based-offline-rl"
+   ]
+  },
+  {
+   "slug": "text-to-image",
+   "count": 8,
+   "variants": [
+    "text-to-image"
+   ]
+  },
+  {
+   "slug": "user-simulator",
+   "count": 8,
+   "variants": [
+    "user-simulator"
+   ]
+  },
+  {
+   "slug": "llm-reasoning",
+   "count": 8,
+   "variants": [
+    "llm-reasoning"
+   ]
+  },
+  {
+   "slug": "microvideo-recommendation",
+   "count": 8,
+   "variants": [
+    "micro-video-recommendation",
+    "microvideo-recommendation"
+   ]
+  },
+  {
+   "slug": "substitute-confounder",
+   "count": 8,
+   "variants": [
+    "substitute-confounder",
+    "substitute-confounders"
+   ]
+  },
+  {
+   "slug": "conversational-recommendation",
+   "count": 8,
+   "variants": [
+    "conversational-recommendation"
+   ]
+  }
+ ]
+}

@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[in-context-learning]]
 - [[retrieval-augmented-generation]]
 - [[sequential-decision-making]]

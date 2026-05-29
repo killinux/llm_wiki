@@ -16,7 +16,7 @@ SELF-REFINE 是一种无需额外训练的测试时方法:用同一个 LLM 对�
 - [[2023-self-refine]]:提出 SELF-REFINE 本身。用同一个 LLM 在测试时迭代"自我反馈→自我修正",无需训练即可在 7 个任务上取得平均约 20% 的提升,是该方法的来源论文。
 - [[2023-self-debugging]]:提出 SELF-DEBUGGING,可视为 SELF-REFINE 思想在代码领域的实例。通过 few-shot prompting 让 LLM 执行并解释自己生成的代码,实现无人工反馈的自我调试。
 - [[2023-critic]]:CRITIC 是对 SELF-REFINE 一类纯自我反馈方法的补充与质疑。它让 LLM 通过与搜索引擎、代码解释器、PERSPECTIVE API 等外部工具交互来自我验证并迭代修正输出,论证外部反馈对自我改进至关重要。
-- [[2023-multiagent-debate]]:让多个 LLM 实例多轮辩论、互相批评彼此答案,是单模型自我修正之外的另一条改进路径。在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:让多个 LLM 实例多轮辩论、互相批评彼此答案,是单模型自我修正之外的另一条改进路径。在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
 - [[2023-multi-agent-debate]]:提出 Multi-Agent Debate(MAD)框架,用多个 LLM 智能体"针锋相对"辩论加裁判仲裁,明确旨在缓解自我反思(self-reflection)中的 Degeneration-of-Thought 问题并激发发散性思维,可视作对 SELF-REFINE 局限的回应。
 - [[2023-shepherd-critic-for-lm-generation]]:Meta AI 用约 8K 高质量社区+人工反馈数据微调出 7B 的 LLaMA critic 模型 Shepherd,能精确批判 LLM 输出并给改进建议,GPT-4 评估 win-rate 53-87%,与 ChatGPT 媲美。
 - [[2023-chain-of-verification]]:Chain-of-Verification (CoVe) 让 LLM 先生成草稿,再独立回答自我规划的验证问题来核查事实,显著降低幻觉。
@@ -32,7 +32,7 @@ SELF-REFINE 是一种无需额外训练的测试时方法:用同一个 LLM 对�
 - [[2023-self-refine]]
 - [[2023-self-debugging]]
 - [[2023-critic]]
-- [[2023-multiagent-debate]]
+- [[2023-multi-agent-debate|2023-multiagent-debate]]
 - [[2023-multi-agent-debate]]
 - [[2023-shepherd-critic-for-lm-generation]]
 - [[2023-chain-of-verification]]

@@ -19,5 +19,5 @@ sources: 1
 
 - [[precision]]
 - [[feature-selection]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[evaluation-metrics]]

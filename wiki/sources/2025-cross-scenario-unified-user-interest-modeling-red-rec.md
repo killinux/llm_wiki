@@ -49,10 +49,10 @@ RED-Rec(Recommender Engine for Diversified scenarios)采用**分层两塔架构*
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中的 [[cross-domain-recommendation]] / [[multi-scenario-recommendation]] 方向,并把 [[llm-for-recommendation]] 推进到十亿级工业部署。
+本文属于 [[recommender-systems|recommender-system]] 中的 [[cross-domain-recommendation]] / [[multi-scenario-recommendation]] 方向,并把 [[llm-for-recommendation]] 推进到十亿级工业部署。
 
 - 架构上是 [[two-tower]] + [[sequential-recommendation]],与 [[sasrec]]、[[bert4rec]]、HSTU、HLLM 等同源但用 LLM 骨干增强语义,可与 [[tallrec]]、[[llara]]、[[p5]] 等 LLM4Rec 工作对照;
 - 多模态 item 编码用 [[vit]] / [[clip]],延续 MLLM4Rec 一类思路;
 - 用 [[contrastive-learning]](NCE)+ [[disentangled-representation-learning]] 做多兴趣建模,与多兴趣推荐线相承;
 - 数据集 RED-MMU 可与 [[kuairand]]、[[microlens]]、[[amazon-reviews]] 等推荐数据集并列参考;
-- 出自 [[peking-university]]、[[fudan-university]] 与小红书(Xiaohongshu / RedNote)合作,属工业级 [[recommender-system]] 部署案例。
+- 出自 [[peking-university]]、[[fudan-university]] 与小红书(Xiaohongshu / RedNote)合作,属工业级 [[recommender-systems|recommender-system]] 部署案例。

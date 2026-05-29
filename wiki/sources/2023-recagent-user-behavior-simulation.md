@@ -44,4 +44,4 @@ year: 2023
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 与 [[user-simulation]] 交叉方向的代表性工作,是 [[generative-agents]]("斯坦福小镇")思路在推荐与社交仿真场景的延伸。其 [[memory-module]](感觉/短期/长期记忆 + self-reflection)设计与 generative agents 一脉相承。可与基于 LLM 的推荐研究、社会模拟类 agent 工作交叉参照。
+本文属于 [[llm-agents|llm-agent]] 与 [[user-simulation]] 交叉方向的代表性工作,是 [[generative-agents]]("斯坦福小镇")思路在推荐与社交仿真场景的延伸。其 [[memory-module]](感觉/短期/长期记忆 + self-reflection)设计与 generative agents 一脉相承。可与基于 LLM 的推荐研究、社会模拟类 agent 工作交叉参照。

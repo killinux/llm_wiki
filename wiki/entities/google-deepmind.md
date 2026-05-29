@@ -4,7 +4,7 @@ subtype: lab
 tags: [lab, ai-research, google, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 9
+sources: 10
 ---
 
 # Google DeepMind
@@ -22,6 +22,7 @@ Google DeepMind 是 Google 旗下的人工智能研究实验室,专注于机器�
 - [[2024-generative-agents-self-reports]]:用基于真人深度访谈与问卷自述构建的 generative agents,可对单个个体在多种社会科学结果上做通用模拟,留出题目预测精度接近个体两周后的重测一致性。
 - [[2025-reflective-memory-management]]:提出 RMM(Reflective Memory Management):用主题粒度的前瞻反思组织对话记忆,并用 LLM 引用信号在线 RL 精炼检索 reranker,在 LongMemEval 上比无记忆基线提升 10%+ 准确率。
 - [[2025-multi-actor-genai-as-game-engine]]:Google DeepMind 的立场/架构论文,主张用游戏引擎式的 Entity-Component 架构统一支撑 Evaluationist/Dramatist/Simulationist 三类多智能体生成式 AI 用户动机,以 Concordia v2 为实例。
+- [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为:多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
 
 ## 相关
 
@@ -38,3 +39,5 @@ Google DeepMind 是 Google 旗下的人工智能研究实验室,专注于机器�
 - [[memory-management]]
 - [[multi-agent-systems]]
 - [[concordia]]
+- [[game-theory]]
+- [[nash-equilibrium]]

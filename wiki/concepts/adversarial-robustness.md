@@ -20,7 +20,7 @@ Adversarial Robustness 指模型在面对刻意构造的对抗扰动输入时仍
 ## 相关
 
 - [[graph-contrastive-learning]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]
 - [[adversarial-perturbation]]
 - [[decision-boundary]]
 - [[domain-invariant-representation]]

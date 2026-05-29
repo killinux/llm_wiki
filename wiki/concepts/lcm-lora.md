@@ -21,4 +21,4 @@ LCM LoRA(Latent Consistency Model LoRA)是一种通过 LoRA 适配器形式蒸�
 - [[lora]]
 - [[ip-adapter]]
 - [[text-to-image]]
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]

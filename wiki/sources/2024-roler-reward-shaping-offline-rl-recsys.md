@@ -16,7 +16,7 @@ ROLeR 提出一种非参数(基于聚类/kNN)的 reward shaping 方法与解耦�
 
 ## 问题
 
-[[offline-rl]] 是为真实 [[recommender-system]] 建模用户动态兴趣的有效工具。主流做法是 model-based RL:先从离线日志数据学一个 [[world-model]],再让推荐策略与该 model 交互来学习。但这类方法的效果受限于两点:reward model 估计的准确性,以及 model 的不确定性。根本原因是离线日志数据与真实在线用户交互之间存在巨大分布差异。
+[[offline-rl]] 是为真实 [[recommender-systems|recommender-system]] 建模用户动态兴趣的有效工具。主流做法是 model-based RL:先从离线日志数据学一个 [[world-model]],再让推荐策略与该 model 交互来学习。但这类方法的效果受限于两点:reward model 估计的准确性,以及 model 的不确定性。根本原因是离线日志数据与真实在线用户交互之间存在巨大分布差异。
 
 作者在 [[kuairec]] 上展示:SOTA 方法 [[dorl]] 的 reward 预测误差在所有 reward 区间都偏高(论文 Figure 1)。在 reward 估计不准的情况下,无论策略保守还是鼓励探索都难以从离线数据中学好。此外,现有方法的不确定性估计通常依赖 [[world-model]] 的 ensemble,把 world model 学习与不确定性惩罚不必要地绑定在一起。
 
@@ -42,4 +42,4 @@ ROLeR 沿用 [[dorl]] 的两阶段 model-based 流程(world model 学习 + 在�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[reinforcement-learning]] × [[recommender-system]] 交叉方向,具体是 model-based [[offline-rl]] for RecSys 这一支。它直接改进自 SOTA 方法 [[dorl]],与 [[cirs]]、[[mopo]]、[[bcq]]、[[cql]] 等 [[offline-rl]] 方法同属一个评测谱系,并大量使用 [[kuairec]]、[[kuairand]]、[[coat]]、[[yahoo-r3]] 等推荐 benchmark。其核心思想——用基于聚类/kNN 的非参数方法修正 [[world-model]] reward 估计、并用聚类质量替代 ensemble 做不确定性度量——与 wiki 中关于 [[world-model]]、不确定性估计与 reward model 的概念相关,可作为离线 RL 推荐方向中"reward 准确性比策略保守/探索更关键"这一观点的代表性论据。
+本文属于 [[reinforcement-learning]] × [[recommender-systems|recommender-system]] 交叉方向,具体是 model-based [[offline-rl]] for RecSys 这一支。它直接改进自 SOTA 方法 [[dorl]],与 [[cirs]]、[[mopo]]、[[bcq]]、[[cql]] 等 [[offline-rl]] 方法同属一个评测谱系,并大量使用 [[kuairec]]、[[kuairand]]、[[coat]]、[[yahoo-r3]] 等推荐 benchmark。其核心思想——用基于聚类/kNN 的非参数方法修正 [[world-model]] reward 估计、并用聚类质量替代 ensemble 做不确定性度量——与 wiki 中关于 [[world-model]]、不确定性估计与 reward model 的概念相关,可作为离线 RL 推荐方向中"reward 准确性比策略保守/探索更关键"这一观点的代表性论据。

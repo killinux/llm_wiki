@@ -54,4 +54,4 @@ OASIS 建立在传统社交媒体平台结构之上,由五个核心组件构成:
 
 ## 在本 wiki 中的位置
 
-OASIS 属于 [[social-simulation]] / [[generative-agents]] 谱系,与 [[recagent]]、[[agentcf]] 等 [[user-simulation]] 工作相邻,但目标不同:OASIS 强调跨平台**通用性**与**百万级可扩展性**,而非单一推荐场景。它把 [[recommender-system]] 显式嵌入 [[multi-agent-systems]] 社会模拟,并用 [[agent-based-modeling]] 视角研究信息传播、群体极化、从众等宏观现象。在评估侧,它复用 [[llm-as-judge]](GPT-4o-mini + Safe-RLHF)判定意见的极端度与帮助度。其"规模带来涌现"的观察呼应了 [[emergent-abilities]] 在社会模拟语境下的体现。由 [[bytedance-research]] 之外的 Shanghai AI Lab、[[kaust]]、Oxford 等机构合作完成,代码以开源形式发布(camel-ai/oasis)。
+OASIS 属于 [[social-simulation]] / [[generative-agents]] 谱系,与 [[recagent]]、[[agentcf]] 等 [[user-simulation]] 工作相邻,但目标不同:OASIS 强调跨平台**通用性**与**百万级可扩展性**,而非单一推荐场景。它把 [[recommender-systems|recommender-system]] 显式嵌入 [[multi-agent-systems]] 社会模拟,并用 [[agent-based-modeling]] 视角研究信息传播、群体极化、从众等宏观现象。在评估侧,它复用 [[llm-as-judge]](GPT-4o-mini + Safe-RLHF)判定意见的极端度与帮助度。其"规模带来涌现"的观察呼应了 [[emergent-abilities]] 在社会模拟语境下的体现。由 [[bytedance-research]] 之外的 Shanghai AI Lab、[[kaust]]、Oxford 等机构合作完成,代码以开源形式发布(camel-ai/oasis)。

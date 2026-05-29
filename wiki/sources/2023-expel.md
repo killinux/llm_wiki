@@ -17,7 +17,7 @@ ExpeL(Experiential Learning)是一种让 LLM Agent 在**不更新参数**的前�
 把 LLM 用于决策任务有两条主流路径,各有缺陷:
 
 - **微调**(finetuning)需要大量环境交互或人工标注数据,计算成本高,且会损害模型原有的泛化能力;
-- **prompt-based 规划**(如 [[react-reasoning-and-acting]])只用少量 in-context 示例,但受限于上下文窗口,Agent 对已经历过的任务"没有记忆",无法在 demonstration 之外做任何学习。
+- **prompt-based 规划**(如 [[react|react-reasoning-and-acting]])只用少量 in-context 示例,但受限于上下文窗口,Agent 对已经历过的任务"没有记忆",无法在 demonstration 之外做任何学习。
 
 此外,GPT-4、Claude 等最强模型的参数是闭源的、无法微调。因此需要一种新范式:让 Agent 从**经验**中学习,而不依赖参数更新。论文还指出,像 [[reflexion]] 这类自我改进方法只能在**同一任务内**反复重试改进(intra-task),缺乏**跨任务**(inter-task)的记忆与迁移能力。
 
@@ -25,7 +25,7 @@ ExpeL(Experiential Learning)是一种让 LLM Agent 在**不更新参数**的前�
 
 ExpeL 分三个阶段(对应类比:学生反复做练习题、考前总结心得、考试时调用记忆):
 
-1. **经验收集(Experience Gathering)**:以 [[reflexion]] 为基础,Agent 用 [[react-reasoning-and-acting]] 作为底层规划算法,对每个训练任务最多重试 Z 次;失败时做 self-reflect 再重试。所有成功与失败轨迹存入 experience pool。
+1. **经验收集(Experience Gathering)**:以 [[reflexion]] 为基础,Agent 用 [[react|react-reasoning-and-acting]] 作为底层规划算法,对每个训练任务最多重试 Z 次;失败时做 self-reflect 再重试。所有成功与失败轨迹存入 experience pool。
 
 2. **洞见抽取(Insight Extraction)**:把经验池分两种方式利用——对比"同一任务"的失败 vs 成功轨迹找出错误模式;在一组成功轨迹中识别共性"最佳实践"。让 instruction-following LLM 对一个洞见列表执行 `ADD` / `EDIT` / `UPVOTE` / `DOWNVOTE` 四种操作并维护 importance count(计数归零则删除),从而提炼出泛化的、高层级的自然语言规则。默认用 `gpt-4-0613` 做抽取(实验证明优于 `gpt-3.5-turbo`)。
 
@@ -47,4 +47,4 @@ ExpeL 分三个阶段(对应类比:学生反复做练习题、考前总结心得
 
 ## 在本 wiki 中的位置
 
-ExpeL 把 [[reflexion]] 的单任务自反思扩展为**跨任务经验积累 + 洞见抽取 + 相似度召回**,核心机制是 [[agent-memory]] 与 [[in-context-learning]],无需 [[fine-tuning]]。它建立在 [[react-reasoning-and-acting]] 之上,召回机制本质上是一种 [[rag]]。与同期的 [[voyager]](Minecraft 技能库)、[[generative-agents]](记忆流)同属"带记忆/经验的 LLM Agent"路线;与 [[self-refine]]、[[critic]] 等 [[self-improvement]] 方法相比,ExpeL 强调的是 inter-task 的经验迁移而非单次输出精炼。
+ExpeL 把 [[reflexion]] 的单任务自反思扩展为**跨任务经验积累 + 洞见抽取 + 相似度召回**,核心机制是 [[agent-memory]] 与 [[in-context-learning]],无需 [[fine-tuning]]。它建立在 [[react|react-reasoning-and-acting]] 之上,召回机制本质上是一种 [[rag]]。与同期的 [[voyager]](Minecraft 技能库)、[[generative-agents]](记忆流)同属"带记忆/经验的 LLM Agent"路线;与 [[self-refine]]、[[critic]] 等 [[self-improvement]] 方法相比,ExpeL 强调的是 inter-task 的经验迁移而非单次输出精炼。

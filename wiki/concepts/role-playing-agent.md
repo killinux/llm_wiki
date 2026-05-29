@@ -25,7 +25,7 @@ sources: 7
 
 - [[role-playing]]
 - [[multi-agent-systems]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[chat-chain]]
 - [[inception-prompting]]
 - [[prompt-engineering]]

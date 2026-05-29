@@ -20,5 +20,5 @@ Conditional Quantile Estimation (CQE) 是一种用分位数回归(quantile regre
 - [[quantile-regression]]
 - [[pinball-loss]]
 - [[watch-time-prediction]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[conditional-distribution-modeling]]

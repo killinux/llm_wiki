@@ -17,6 +17,6 @@ DDPM(Denoising Diffusion Probabilistic Models,去噪扩散概率模型)是一类
 
 ## 相关
 
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[generative-model]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

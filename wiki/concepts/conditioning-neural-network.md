@@ -20,4 +20,4 @@ sources: 1
 - [[context-aware-recommendation]]
 - [[personalization]]
 - [[plug-and-play-module]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]

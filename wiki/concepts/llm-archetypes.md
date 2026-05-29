@@ -18,5 +18,5 @@ sources: 1
 ## 相关
 
 - [[agent-based-model]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[probabilistic-sampling]]

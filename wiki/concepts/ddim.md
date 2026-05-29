@@ -17,6 +17,6 @@ DDIM(Denoising Diffusion Implicit Models)是一类非马尔可夫的确定性扩
 
 ## 相关
 
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[ddpm]]
 - [[generative-recommendation]]

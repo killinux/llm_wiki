@@ -16,7 +16,7 @@ year: 2025
 
 ## 问题
 
-许多交互式 AI 系统([[recommender-system]]、对话系统)依赖大量收集到的**短期反馈**(点击、参与度)来训练,但过度优化短期反馈不一定能达成期望的**长期目标**([[user-retention]]、订阅续费),反而可能导致 reward hacking、用户操纵、clickbait/有毒内容等问题。
+许多交互式 AI 系统([[recommender-systems|recommender-system]]、对话系统)依赖大量收集到的**短期反馈**(点击、参与度)来训练,但过度优化短期反馈不一定能达成期望的**长期目标**([[user-retention]]、订阅续费),反而可能导致 reward hacking、用户操纵、clickbait/有毒内容等问题。
 
 核心障碍在于**时间尺度的脱节(disconnect in timescales)**:短期干预(如排序)发生在快时间尺度,而长期反馈(如每月续费)发生在慢时间尺度且更稀疏。直接用 [[markov-decision-process]] / [[reinforcement-learning]] 建模序列依赖在实践中受困于巨大状态空间、信用分配(credit-assignment)和长期反馈稀疏,难以直接应用。本文聚焦 contextual bandit 设定来解决这一脱节。
 

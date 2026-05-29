@@ -31,7 +31,7 @@ year: 2024
 
 ## 问题
 
-Reranking(重排)是 [[recommender-system]] 中的关键后处理环节:在 ranking model 生成候选列表后,reranking 进一步分析 item 间关系,从 N 个候选中选出 K 个(K < N)更优的列表。实际应用中,reranking 不仅要看 accuracy(准确率),还要兼顾 diversity(多样性)与 fairness(公平性)等多个 aspect。
+Reranking(重排)是 [[recommender-systems|recommender-system]] 中的关键后处理环节:在 ranking model 生成候选列表后,reranking 进一步分析 item 间关系,从 N 个候选中选出 K 个(K < N)更优的列表。实际应用中,reranking 不仅要看 accuracy(准确率),还要兼顾 diversity(多样性)与 fairness(公平性)等多个 aspect。
 
 现有 reranking 模型存在三个核心局限:
 
@@ -95,7 +95,7 @@ Reranking(重排)是 [[recommender-system]] 中的关键后处理环节:在 rank
 
 本文位于 **LLM 用于推荐系统 / reranking** 这一交叉脉络:
 
-- 数据集方面直接使用了本 wiki 已有的 [[kuairand]];任务对象是 [[recommender-system]] 的重排阶段,与 [[sequential-recommendation]]、[[listwise-recommendation]] 相关。
+- 数据集方面直接使用了本 wiki 已有的 [[kuairand]];任务对象是 [[recommender-systems|recommender-system]] 的重排阶段,与 [[sequential-recommendation]]、[[listwise-recommendation]] 相关。
 - 方法上把 [[chain-of-thought]] 与图结构推理引入推荐,并通过 Backward 节点体现 [[self-reflection]] 思想;LLM backbone 用 [[llama-2]],属于 [[large-language-models]] 应用。
 - 与 diversity / fairness 优化的传统 reranking(MMR、FastDPP、FairRec、DLCM、PRM)形成对比;同时以 GoT、RankGPT 等 zero-shot LLM ranking 方法为 baseline。
 - 概念上呼应推荐中的 fairness / [[debiasing]] 话题(用 MAD 度量分组公平),可与本 wiki 因果推荐类条目(如 [[deep-causal-reasoning-for-recommendations]])对照阅读。

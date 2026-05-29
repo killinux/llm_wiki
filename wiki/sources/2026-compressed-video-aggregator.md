@@ -49,4 +49,4 @@ CVA 把流程解耦为两个阶段(详见原文 Figure 2),并包含可选的语�
 
 ## 在本 wiki 中的位置
 
-CVA 属于 [[video-recommendation]]/[[micro-video-recommendation]] 中"用冻结视觉骨干 + 轻量聚合模块实现内容感知且高效"的路线,与依赖 ID 与行为信号的传统 [[recommender-system]] 互补,可缓解 [[cold-start]]。它把 [[clip]] 语义重采样、[[transformer]] self-attention 聚合与标准序列 user encoder([[sasrec]]、[[gru4rec]]、[[nextitnet]])结合,并与 Perceiver IO 等 cross-attention 压缩范式形成对照。可与 [[recommender-system]]、[[sequential-recommendation]]、[[vit]]、[[clip]]、[[cold-start]] 等页面互链。
+CVA 属于 [[video-recommendation]]/[[micro-video-recommendation]] 中"用冻结视觉骨干 + 轻量聚合模块实现内容感知且高效"的路线,与依赖 ID 与行为信号的传统 [[recommender-systems|recommender-system]] 互补,可缓解 [[cold-start]]。它把 [[clip]] 语义重采样、[[transformer]] self-attention 聚合与标准序列 user encoder([[sasrec]]、[[gru4rec]]、[[nextitnet]])结合,并与 Perceiver IO 等 cross-attention 压缩范式形成对照。可与 [[recommender-systems|recommender-system]]、[[sequential-recommendation]]、[[vit]]、[[clip]]、[[cold-start]] 等页面互链。

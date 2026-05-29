@@ -13,11 +13,11 @@ sources: 1
 
 ## 在本 wiki 中的出现
 
-- [[2023-multiagent-debate]]:作为该论文的作者之一。该工作让多个 LLM 实例在多轮辩论中互相批评彼此的答案,从而在推理任务(GSM8K 77%→85%)与事实性任务(MMLU 63.9%→71.1%)上取得显著提升。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:作为该论文的作者之一。该工作让多个 LLM 实例在多轮辩论中互相批评彼此的答案,从而在推理任务(GSM8K 77%→85%)与事实性任务(MMLU 63.9%→71.1%)上取得显著提升。
 
 ## 相关
 
-- [[2023-multiagent-debate]]
+- [[2023-multi-agent-debate|2023-multiagent-debate]]
 - [[multiagent-debate]]
 - [[large-language-model]]
 - [[chain-of-thought]]

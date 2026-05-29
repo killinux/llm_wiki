@@ -12,7 +12,7 @@ year: 2026
 
 # Diffusion Models in Recommendation Systems: A Survey
 
-一篇关于扩散模型(diffusion model)在 [[recommender-system]] 中应用的系统性综述,提出以"推荐任务为本"的三正交轴 taxonomy,覆盖 188 篇相关论文。
+一篇关于扩散模型(diffusion model)在 [[recommender-systems|recommender-system]] 中应用的系统性综述,提出以"推荐任务为本"的三正交轴 taxonomy,覆盖 188 篇相关论文。
 
 ## 问题
 
@@ -41,4 +41,4 @@ year: 2026
 
 ## 在本 wiki 中的位置
 
-本文是连接[[diffusion-model 类生成模型]]与 [[recommender-system]] 两大主题的综述性 source,可作为扩散+推荐子领域的入口索引。它与 wiki 中已有的 RL-based 推荐([[rl-based-recsys]]、[[easyrl4rec]])、[[llm-for-recommendation]]、以及生成式推荐(如 [[p5]])相互补充,共同覆盖推荐系统的不同建模范式;其涉及的 [[ddpm]]、[[ddim]]、[[latent-diffusion-model]]、[[classifier-free-guidance]] 等基础概念可与生成模型条目交叉引用。
+本文是连接[[diffusion-model 类生成模型]]与 [[recommender-systems|recommender-system]] 两大主题的综述性 source,可作为扩散+推荐子领域的入口索引。它与 wiki 中已有的 RL-based 推荐([[rl-based-recsys]]、[[easyrl4rec]])、[[llm-for-recommendation]]、以及生成式推荐(如 [[p5]])相互补充,共同覆盖推荐系统的不同建模范式;其涉及的 [[ddpm]]、[[ddim]]、[[latent-diffusion-model]]、[[classifier-free-guidance]] 等基础概念可与生成模型条目交叉引用。

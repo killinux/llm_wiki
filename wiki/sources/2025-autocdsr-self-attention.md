@@ -54,4 +54,4 @@ AutoCDSR 重新审视 transformer 自身的 self-attention,把 cross-domain sequ
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中 [[sequential-recommendation]] 与 [[cross-domain-sequential-recommendation]] 的交叉线索,与 [[sasrec]]、[[bert4rec]]、[[gru4rec]] 等 transformer/RNN 序列推荐 backbone 相关。其核心贡献是把 [[negative-transfer]] 处理转化为 [[self-attention]] 上的 [[pareto-optimality]] / [[multi-task-learning]] 优化,可与 [[two-sided-fairness-reranking]]、[[matthew-effect]] 等推荐公平/迁移议题对照阅读,作为"用模型内在机制(而非额外模块)解决跨域迁移"的代表性工作。
+本文属于 [[recommender-systems|recommender-system]] 中 [[sequential-recommendation]] 与 [[cross-domain-sequential-recommendation]] 的交叉线索,与 [[sasrec]]、[[bert4rec]]、[[gru4rec]] 等 transformer/RNN 序列推荐 backbone 相关。其核心贡献是把 [[negative-transfer]] 处理转化为 [[self-attention]] 上的 [[pareto-optimality]] / [[multi-task-learning]] 优化,可与 [[two-sided-fairness-reranking]]、[[matthew-effect]] 等推荐公平/迁移议题对照阅读,作为"用模型内在机制(而非额外模块)解决跨域迁移"的代表性工作。

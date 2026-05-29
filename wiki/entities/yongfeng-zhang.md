@@ -20,10 +20,10 @@ Yongfeng Zhang 是一位从事推荐系统、信息检索与机器学习研究�
 ## 相关
 
 - [[causal-inference]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[2023-causal-inference-for-recommendation]]
 - [[microlens]]
 - [[micro-video-recommendation]]
 - [[agentic-memory]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[zettelkasten]]

@@ -21,4 +21,4 @@ sources: 1
 - [[hyperparameter-tuning]]
 - [[bayesian-optimization]]
 - [[thompson-sampling]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

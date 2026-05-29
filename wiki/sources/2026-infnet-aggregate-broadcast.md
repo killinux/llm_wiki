@@ -14,7 +14,7 @@ INFNet (Information Flow Network) 用一组 hub tokens 中介的 "aggregate-and-
 
 ## 问题
 
-大规模 [[recommender-system]] 的排序模型中,[[feature-interaction]] 既要表达力强又要可扩展,二者难以兼得。Exhaustive 的 all-to-all 成对交互(如 AutoInt、HSTU)信息连通性强但代价是关于 token/feature 数量的二次复杂度,在线服务延迟约束(常 <30ms)下难以承受数百特征字段与多条行为序列。轻量化方案虽高效,却存在两个常见瓶颈:
+大规模 [[recommender-systems|recommender-system]] 的排序模型中,[[feature-interaction]] 既要表达力强又要可扩展,二者难以兼得。Exhaustive 的 all-to-all 成对交互(如 AutoInt、HSTU)信息连通性强但代价是关于 token/feature 数量的二次复杂度,在线服务延迟约束(常 <30ms)下难以承受数百特征字段与多条行为序列。轻量化方案虽高效,却存在两个常见瓶颈:
 
 - Early aggregation(早期聚合):对行为序列做 Sum-Pooling 或 target-attention 提前压缩,损失细粒度 item-level 信号,深层难以复用 item 级细节;
 - Late fusion(晚期融合):task 信号只在最后输出阶段注入(late task fusion),交互过程 task-agnostic,限制了多目标场景下的专业化能力。
@@ -46,4 +46,4 @@ Group-wise Tokenization & Hub 初始化(三种策略):
 
 ## 在本 wiki 中的位置
 
-本文属于工业级 [[recommender-system]] 的 [[feature-interaction]] 与排序模型方向,来自 [[kuaishou]]。它与高效交互架构 [[rankmixer]]、[[onetrans]]、序列建模 [[hstu]]/[[din]] 以及 [[multi-task-learning]] 路线(PLE/[[mmoe]])构成同一谱系,并延续推荐 [[scaling-law]] 的讨论。核心技术上用 [[cross-attention]] 实现 hub 聚合、用类 FiLM 仿射门控(BGU)做广播,数据上使用公开基准 [[kuairand]]。
+本文属于工业级 [[recommender-systems|recommender-system]] 的 [[feature-interaction]] 与排序模型方向,来自 [[kuaishou]]。它与高效交互架构 [[rankmixer]]、[[onetrans]]、序列建模 [[hstu]]/[[din]] 以及 [[multi-task-learning]] 路线(PLE/[[mmoe]])构成同一谱系,并延续推荐 [[scaling-law]] 的讨论。核心技术上用 [[cross-attention]] 实现 hub 聚合、用类 FiLM 仿射门控(BGU)做广播,数据上使用公开基准 [[kuairand]]。

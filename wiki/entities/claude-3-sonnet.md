@@ -19,5 +19,5 @@ Claude 3 Sonnet 是 Anthropic 推出的 Claude 3 系列中的中等规模大语�
 
 - [[anthropic]]
 - [[claude-3]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[2025-meminsight-autonomous-memory-augmentation]]

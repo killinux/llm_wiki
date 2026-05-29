@@ -19,5 +19,5 @@ DQN(Deep Q-Network)是一种将深度神经网络与 Q-learning 结合的强化�
 
 - [[q-learning]]
 - [[reinforcement-learning]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[2024-llm-powered-user-simulator-for-recommender-system]]

@@ -18,7 +18,7 @@ year: 2025
 
 [[large-language-models]] 为大规模模拟社交媒体动态(信息扩散、社群形成、平台干预)提供了新机会,可以替代在人类受试者身上难以开展的实验。但 LLM-based 社交媒体 [[social-simulation|模拟]] 面临三个关键缺口:
 
-- 缺乏标准化、行为基础扎实的数据资源用于微调和评估 LLM 作为真实社交媒体 [[llm-agent|agent]];现有数据集多聚焦对话生成、缺乏交互多样性。
+- 缺乏标准化、行为基础扎实的数据资源用于微调和评估 LLM 作为真实社交媒体 [[llm-agents|agent]];现有数据集多聚焦对话生成、缺乏交互多样性。
 - 缺乏一致的评估协议,使得进展难以衡量。
 - 隐私问题限制了对真实用户数据的访问,削弱了模拟的真实性。
 
@@ -46,4 +46,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[social-simulation]] / [[human-behavior-simulation]] 与 [[computational-social-science]] 交叉方向,提供面向 [[llm-agent]] 的隐私保护 [[dataset]] 与评估 [[benchmark]]。与同类社交模拟平台 [[oasis]]、[[recagent]]、[[s3-social-network-simulation]] 及 persona 建模工作 [[persona]]、[[persona-driven-data-synthesis]]、[[incharacter]] 相关,但独特之处在于结合真实 Bluesky 数据、文本与非文本动作、以及 [[pii]] 移除/时间戳混淆/伪名化等隐私保护机制。作者来自 [[mila]]、McGill University、Université de Montréal 等机构。
+本文属于 [[social-simulation]] / [[human-behavior-simulation]] 与 [[computational-social-science]] 交叉方向,提供面向 [[llm-agents|llm-agent]] 的隐私保护 [[dataset]] 与评估 [[benchmark]]。与同类社交模拟平台 [[oasis]]、[[recagent]]、[[s3-social-network-simulation]] 及 persona 建模工作 [[persona]]、[[persona-driven-data-synthesis]]、[[incharacter]] 相关,但独特之处在于结合真实 Bluesky 数据、文本与非文本动作、以及 [[pii]] 移除/时间戳混淆/伪名化等隐私保护机制。作者来自 [[mila]]、McGill University、Université de Montréal 等机构。

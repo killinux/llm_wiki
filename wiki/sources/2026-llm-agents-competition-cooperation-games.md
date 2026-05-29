@@ -12,7 +12,7 @@ year: 2026
 
 # Competition and Cooperation of LLM Agents in Games
 
-研究 [[llm-agent]] 在两类标准经济博弈中的策略行为:发现在多轮提示与非零和语境下,LLM agent 倾向于相互合作而非收敛到 [[nash-equilibrium]],其背后的核心驱动力是 [[fairness]] 推理。
+研究 [[llm-agents|llm-agent]] 在两类标准经济博弈中的策略行为:发现在多轮提示与非零和语境下,LLM agent 倾向于相互合作而非收敛到 [[nash-equilibrium]],其背后的核心驱动力是 [[fairness]] 推理。
 
 ## 问题
 
@@ -46,4 +46,4 @@ LLM agent 越来越多地被部署在竞争性的多智能体环境中(经济、
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 与 [[multi-agent-systems]] 主题下、聚焦博弈论行为与社会偏好的实证+建模研究,可与 [[multi-agent-collaboration]]、[[cooperation]]、[[theory-of-mind]]、[[chain-of-thought]] 等条目互相参照。与"算法合谋"、谈判博弈等相关工作形成对照:本文强调多轮非零和语境下 fairness 驱动的合作涌现,并给出可解析的 θ/γ 收益函数框架,可用于刻画能源、网络等工程系统中的 LLM agent 行为。
+本文属于 [[llm-agents|llm-agent]] 与 [[multi-agent-systems]] 主题下、聚焦博弈论行为与社会偏好的实证+建模研究,可与 [[multi-agent-collaboration]]、[[cooperation]]、[[theory-of-mind]]、[[chain-of-thought]] 等条目互相参照。与"算法合谋"、谈判博弈等相关工作形成对照:本文强调多轮非零和语境下 fairness 驱动的合作涌现,并给出可解析的 θ/γ 收益函数框架,可用于刻画能源、网络等工程系统中的 LLM agent 行为。

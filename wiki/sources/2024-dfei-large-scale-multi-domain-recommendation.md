@@ -12,7 +12,7 @@ year: 2024
 
 # Large-Scale Multi-Domain Recommendation: an Automatic Domain Feature Extraction and Personalized Integration Framework (DFEI)
 
-DFEI 是来自 Meituan 的大规模多域(multi-domain)[[recommender-system]] 框架,自动地把单个用户行为聚合为"域特征",并为每个用户个性化地整合来自其他域的域特征,从而在 [[multi-task-learning]] 之上显著提升多场景 CTR 预测性能。
+DFEI 是来自 Meituan 的大规模多域(multi-domain)[[recommender-systems|recommender-system]] 框架,自动地把单个用户行为聚合为"域特征",并为每个用户个性化地整合来自其他域的域特征,从而在 [[multi-task-learning]] 之上显著提升多场景 CTR 预测性能。
 
 ## 问题
 
@@ -43,4 +43,4 @@ DFEI 框架包含两个核心模块,建立在共享 Embedding、Shared Tower 与
 
 ## 在本 wiki 中的位置
 
-本文属于推荐系统中的多域/多场景建模方向,可与 [[recommender-system]]、[[multi-task-learning]]、[[mmoe]]、[[ple]] 等基础方法相互对照(DFEI 把它们作为 baseline 与组件)。其实验使用了本 wiki 已收录的 [[kuairand]] 数据集。该工作不涉及 LLM,但展示了"自动特征抽取 + 个性化整合"在大规模工业推荐中的工程范式,与 wiki 中推荐系统去偏/多任务相关条目互补。
+本文属于推荐系统中的多域/多场景建模方向,可与 [[recommender-systems|recommender-system]]、[[multi-task-learning]]、[[mmoe]]、[[ple]] 等基础方法相互对照(DFEI 把它们作为 baseline 与组件)。其实验使用了本 wiki 已收录的 [[kuairand]] 数据集。该工作不涉及 LLM,但展示了"自动特征抽取 + 个性化整合"在大规模工业推荐中的工程范式,与 wiki 中推荐系统去偏/多任务相关条目互补。

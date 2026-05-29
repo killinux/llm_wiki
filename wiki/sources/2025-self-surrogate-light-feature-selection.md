@@ -16,7 +16,7 @@ year: 2025
 
 ## 问题
 
-[[recommender-system]] 中的 feature selection 对提升模型效率与预测性能至关重要。现有方法分三类:shallow(统计算法,如 Lasso/GBDT)、gate-based(可学习 gate 向量,如 AutoField/AdaFS/OptFS/LPFS)、sensitivity-based(梯度敏感度,如 SFS/SHARK)。
+[[recommender-systems|recommender-system]] 中的 feature selection 对提升模型效率与预测性能至关重要。现有方法分三类:shallow(统计算法,如 Lasso/GBDT)、gate-based(可学习 gate 向量,如 AutoField/AdaFS/OptFS/LPFS)、sensitivity-based(梯度敏感度,如 SFS/SHARK)。
 
 作者指出,这些方法都依赖训练一个 **surrogate model** 去逼近 feature-to-label 映射,其有效性取决于 surrogate 拟合得好不好。但在真实推荐场景中 surrogate 常常失效:
 

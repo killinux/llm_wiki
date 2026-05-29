@@ -1,7 +1,7 @@
 ---
 type: entity
 subtype: product
-tags: [llm-agent, social-simulation, multi-agent, agent-based-modeling]
+tags: [llm-agent, social-simulation, sandbox]
 created: 2026-05-29
 updated: 2026-05-29
 sources: 1
@@ -9,14 +9,14 @@ sources: 1
 
 # OASIS
 
-OASIS 是一个通用、可扩展的基于 LLM-agent 的社交媒体模拟器,能够在 X 与 Reddit 等平台上模拟最多 100 万个 agent 的交互行为。
+OASIS 是一类基于 LLM 智能体的社会模拟沙盒环境,用于在部署前对平台干预策略进行评估与优化。
 
 ## 在本 wiki 中的出现
 
-- [[2024-oasis-million-agent-social-simulation]]:通用、可扩展的 LLM-agent 社交媒体模拟器,在 X 与 Reddit 上模拟最多 100 万个 agent,复现信息传播、群体极化与从众效应,并发现规模越大群体动态越丰富、意见越多样有用。
+- [[2026-policysim-proactive-policy-optimization]]:PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用 SFT+DPO 训练用户智能体、用带消息传递的 contextual bandit 自适应优化推荐与曝光控制等平台干预策略,实现部署前的主动评估与优化。
 
 ## 相关
 
-- [[llm-agent]]
+- [[policysim]]
+- [[llm-agents|llm-agent]]
 - [[social-simulation]]
-- [[multi-agent-system]]

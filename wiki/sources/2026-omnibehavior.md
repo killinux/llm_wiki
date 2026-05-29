@@ -73,4 +73,4 @@ LLM 让"通用用户模拟器"成为可能——用一个模型预测个性化�
 - 同属 LLM 作为人类/用户模拟器与 [[social-simulation]] 方向,可与 [[generative-agents]]、[[bases]] 等"LLM 作为模拟器"工作对照——本文强调它们多在受控单任务沙盒中,缺乏真实工业日志支撑。
 - 作为 [[benchmark]],它把 [[user-simulation]] 评测从孤立场景推进到跨场景、长时程、异质;与同类基准 [[sotopia]]、[[human-behavior-simulation]] 形成互补,并与 [[locomo]](长时记忆合成数据)做了直接对比。
 - 评测协议大量使用 [[llm-as-judge]],并对 [[retrieval-augmented-generation]] 与摘要式记忆管理给出在长时程用户建模中的局限证据,与 [[long-context]] 相关讨论相关。
-- 数据源 [[kuaishou]],可与 [[kuairec]]、[[kuairand]]、[[kuaisim]] 等快手系 [[recommender-system]] 数据集/模拟器并列;揭示的偏差对 [[recommendation-simulator]]、[[user-retention]] 建模有警示意义。
+- 数据源 [[kuaishou]],可与 [[kuairec]]、[[kuairand]]、[[kuaisim]] 等快手系 [[recommender-systems|recommender-system]] 数据集/模拟器并列;揭示的偏差对 [[recommendation-simulator]]、[[user-retention]] 建模有警示意义。

@@ -18,7 +18,7 @@ year: 2026
 
 # Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers
 
-一篇关于 [[llm-agent]] 记忆(memory)的综述,把 agent memory 形式化为"写入–管理–读取(write–manage–read)"循环,提出三维分类法,深入剖析五类记忆机制,梳理评测基准与工程实践,覆盖 2022 至 2026 年初的工作。
+一篇关于 [[llm-agents|llm-agent]] 记忆(memory)的综述,把 agent memory 形式化为"写入–管理–读取(write–manage–read)"循环,提出三维分类法,深入剖析五类记忆机制,梳理评测基准与工程实践,覆盖 2022 至 2026 年初的工作。
 
 ## 问题
 
@@ -46,4 +46,4 @@ year: 2026
 
 ## 在本 wiki 中的位置
 
-这是一篇 [[llm-agent]] 记忆主题的综述,串联起本 wiki 中大量已有条目:机制层面涉及 [[rag]]、[[retrieval-augmented-generation]]、[[memgpt]]、[[reflexion]]、[[generative-agents]]、[[voyager]]、[[expel]]、[[react]];方法层面把记忆嵌入 [[markov-decision-process|POMDP]] 框架,并用 [[group-relative-policy-optimization|GRPO]] 学习记忆控制策略;评测层面引入 [[locomo]] 等基准,与 [[agentbench]] 等 agent 评测互补。它可作为 [[agent-memory]]、[[llm-long-term-memory]]、[[memory-module]]、[[memory-augmentation]] 等概念的纵览入口,并与 [[multi-agent-collaboration]]、[[tool-use]] 等应用方向相连。
+这是一篇 [[llm-agents|llm-agent]] 记忆主题的综述,串联起本 wiki 中大量已有条目:机制层面涉及 [[rag]]、[[retrieval-augmented-generation]]、[[memgpt]]、[[reflexion]]、[[generative-agents]]、[[voyager]]、[[expel]]、[[react]];方法层面把记忆嵌入 [[markov-decision-process|POMDP]] 框架,并用 [[group-relative-policy-optimization|GRPO]] 学习记忆控制策略;评测层面引入 [[locomo]] 等基准,与 [[agentbench]] 等 agent 评测互补。它可作为 [[agent-memory]]、[[llm-long-term-memory]]、[[memory-module]]、[[memory-augmentation]] 等概念的纵览入口,并与 [[multi-agent-collaboration]]、[[tool-use]] 等应用方向相连。

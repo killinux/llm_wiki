@@ -52,4 +52,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中的 RL 排序方向,与 [[watch-time]] 优化、会话级 [[markov-decision-process]] 建模一脉相承。它把 [[llm-multi-agent]] 之外的另一类"多智能体"——每个偏好维度一个 RL agent 的协作 actor-critic——用于工业短视频排序,并以 [[model-based-rl]] 的反馈模拟应对 [[selection-bias]]。可与 [[qingpeng-cai]] 等人的 TSCAC、[[kuairand]] 数据集、[[peng-jiang]] / [[kuaishou]] 的工业推荐工作互参。作者来自 [[kuaishou]] / [[bytedance-research]] 之外的工业推荐团队(快手系作者署名),与 [[deepfm]]、[[pareto]] 等推荐基线形成对照。
+本文属于 [[recommender-systems|recommender-system]] 中的 RL 排序方向,与 [[watch-time]] 优化、会话级 [[markov-decision-process]] 建模一脉相承。它把 [[llm-multi-agent]] 之外的另一类"多智能体"——每个偏好维度一个 RL agent 的协作 actor-critic——用于工业短视频排序,并以 [[model-based-rl]] 的反馈模拟应对 [[selection-bias]]。可与 [[qingpeng-cai]] 等人的 TSCAC、[[kuairand]] 数据集、[[peng-jiang]] / [[kuaishou]] 的工业推荐工作互参。作者来自 [[kuaishou]] / [[bytedance-research]] 之外的工业推荐团队(快手系作者署名),与 [[deepfm]]、[[pareto]] 等推荐基线形成对照。

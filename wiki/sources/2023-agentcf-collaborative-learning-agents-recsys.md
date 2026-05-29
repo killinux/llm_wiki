@@ -16,7 +16,7 @@ AgentCF 把推荐系统里的**用户和物品都建模成 LLM agent**,通过二
 
 ## 问题
 
-现有 [[llm-agent]] 工作大多聚焦于模拟人类的**对话**(如 [[generative-agents]] 中的 Smallville),而对推荐系统中的**非语言行为**——比如用户点击/购买物品——探索不足。这类行为隐含用户偏好,但 LLM 难以理解 user-item 关系:经典协同过滤能捕捉"周五买尿布的人也倾向买啤酒"这种模式,而 LLM 会因为两件商品语义不相关而困惑。
+现有 [[llm-agents|llm-agent]] 工作大多聚焦于模拟人类的**对话**(如 [[generative-agents]] 中的 Smallville),而对推荐系统中的**非语言行为**——比如用户点击/购买物品——探索不足。这类行为隐含用户偏好,但 LLM 难以理解 user-item 关系:经典协同过滤能捕捉"周五买尿布的人也倾向买啤酒"这种模式,而 LLM 会因为两件商品语义不相关而困惑。
 
 同时,既有研究(如 [[recagent]])主要刻画**用户侧**行为,用通用 LLM 模拟用户,忽略了交互过程中的**物品侧建模**。作者认为这是单纯的 self-learning,而非真正建模二者关系的 collaborative learning。
 
@@ -44,4 +44,4 @@ AgentCF 提出**基于 agent 的协同过滤**,核心是同时优化 user agent 
 
 ## 在本 wiki 中的位置
 
-本文属于"LLM agent 用于 [[recommender-system]] / [[user-simulation]]"方向,与 [[recagent]]、[[generative-agents]] 是同类用 agent 模拟用户行为的工作,但其创新在于**把物品也建模为 agent** 并做双向协同优化,把 [[collaborative-filtering]] 思想引入 [[llm-based-agents]]。方法上依赖 [[agent-memory]]/[[memory-module]] 与 [[self-reflection]] 机制(对比 [[reflexion]]、[[react]] 的 task-focused reflection,本文强调 collaborative reflection)。其无梯度的"语义梯度"优化思路可与 [[bpr]]、[[sasrec]] 等传统模型的梯度优化对照阅读。作者来自 [[renmin-university-of-china]]、UC San Diego 与 [[tencent-ai-lab]](WeChat),通讯作者 [[ji-rong-wen]] 团队。
+本文属于"LLM agent 用于 [[recommender-systems|recommender-system]] / [[user-simulation]]"方向,与 [[recagent]]、[[generative-agents]] 是同类用 agent 模拟用户行为的工作,但其创新在于**把物品也建模为 agent** 并做双向协同优化,把 [[collaborative-filtering]] 思想引入 [[llm-based-agents]]。方法上依赖 [[agent-memory]]/[[memory-module]] 与 [[self-reflection]] 机制(对比 [[reflexion]]、[[react]] 的 task-focused reflection,本文强调 collaborative reflection)。其无梯度的"语义梯度"优化思路可与 [[bpr]]、[[sasrec]] 等传统模型的梯度优化对照阅读。作者来自 [[renmin-university-of-china]]、UC San Diego 与 [[tencent-ai-lab]](WeChat),通讯作者 [[ji-rong-wen]] 团队。

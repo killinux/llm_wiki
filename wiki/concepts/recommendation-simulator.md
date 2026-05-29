@@ -26,7 +26,7 @@ sources: 5
 ## 相关
 
 - [[generative-agent]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[filter-bubble]]
 - [[popularity-bias]]
 - [[user-simulation]]

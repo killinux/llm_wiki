@@ -29,7 +29,7 @@ year: 2025
 
 ## 问题
 
-[[recommender-system]] 中的用户-系统交互本质上是长期优化问题,可建模为 [[markov-decision-process]],作者称之为 Markov Recommendation Process(MRP):每个 context-aware 请求编码为用户状态 s_t,策略输出推荐列表(动作 a_t),用户环境给出反馈、即时奖励 r_t 并转移到下一状态。RL 方法的核心是学一个准确的 value function 来逼近长期累计奖励,主流做法是 [[temporal-difference]](TD)学习——用相邻两个状态(Value-based TD,见 [[value-function]])或相邻两个 state-action 对(Quality-based TD,即 Q)之间的差分来更新。
+[[recommender-systems|recommender-system]] 中的用户-系统交互本质上是长期优化问题,可建模为 [[markov-decision-process]],作者称之为 Markov Recommendation Process(MRP):每个 context-aware 请求编码为用户状态 s_t,策略输出推荐列表(动作 a_t),用户环境给出反馈、即时奖励 r_t 并转移到下一状态。RL 方法的核心是学一个准确的 value function 来逼近长期累计奖励,主流做法是 [[temporal-difference]](TD)学习——用相邻两个状态(Value-based TD,见 [[value-function]])或相邻两个 state-action 对(Quality-based TD,即 Q)之间的差分来更新。
 
 作者指出标准 TD 存在 **Mixing Random Factors(混合随机因素)** 的挑战:MRP 中同时存在两个随机来源——来自随机策略的动作探索(记为 Δ_π)和来自不确定用户环境的反馈(记为 Δ_u),但标准 TD(Eq.3 的 L_VTD、Eq.5 的 L_QTD)没有把二者分开建模。结果是:增大动作探索能更易跳出局部最优,却会引入大方差、破坏价值函数的稳定准确估计;限制探索能稳定估计,却牺牲了探索能力、易陷局部最优。这一 exploration-exploitation 矛盾使得在线 RL 难以得到稳定准确的价值函数。
 

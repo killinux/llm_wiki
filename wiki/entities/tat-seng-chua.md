@@ -18,6 +18,6 @@ Tat-Seng Chua 是信息检索与推荐系统领域的研究者,其参与的工�
 ## 相关
 
 - [[agent4rec]]
-- [[llm-agent]]
-- [[recommendation-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommendation-system]]
 - [[user-simulation]]

@@ -4,7 +4,7 @@ subtype: dataset
 tags: [recommendation, dataset, kuaishou, debiasing, offline-rl]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 16
+sources: 21
 ---
 
 # KuaiRec
@@ -29,6 +29,11 @@ KuaiRec 是源自快手(Kuaishou)短视频平台的推荐系统数据集,常用�
 - [[2026-diffusion-models-in-recommendation-survey]]:以"推荐任务为本"的三正交轴 taxonomy 系统综述扩散模型在推荐系统中的应用,覆盖 188 篇论文,涵盖协同过滤、序列推荐、数据模态/领域与可信目标。
 - [[2025-policy-guided-causal-state-representation]]:PGCR:面向离线 RL 推荐的两阶段因果状态表示框架,用策略引导的因果特征选择隔离因果相关分量,再用 encoder 学习紧凑状态表示。
 - [[2025-fine-grained-skip-micro-video-recommendation]]:将 micro-video 中的 skip 行为细分为 highly positive、less positive、negative 三类,用双层图与分层 BPR ranking loss 建模,在 MVA 与 KuaiRand-Pure 的八项指标上超越 FRAME/LightGT/BM3。
+- [[2026-lerl-llm-enhanced-rl-long-term-recommendation]]:分层框架 LERL 用 LLM 做高层语义类别规划、用 RL(PPO)做低层细粒度物品选择,在 KuaiSim 模拟器上优化交互式推荐的长期用户满意度并缓解 filter bubble。
+- [[2026-vk-lsvd-short-video-dataset]]:迄今最大的公开短视频推荐工业数据集,来自 VK,含 400 亿交互、1000 万用户、近 2000 万视频,跨 6 个月。
+- [[2026-fuxi-linear]]:线性复杂度的时间感知序列推荐模型,解耦时间与语义信号、用可学习核近似相对位置编码,在数千 token 长序列上提升推荐质量并实现最高 21× 推理加速。
+- [[2026-proactive-guiding-item-side-fairness]]:HRL4PFG 用分层强化学习"主动引导"用户偏好逐步转向长尾物品,在 KuaiRec/KuaiRand 上同时取得最高累积奖励、最长交互长度与最低 Gini Index,在不牺牲满意度的前提下提升 item-side 公平。
+- [[2026-fairness-begins-with-state-dsrm-hrl]]:DSRM-HRL 用扩散模型把被 popularity bias 污染的用户状态提纯回真实偏好流形,再用分层 RL 解耦长期公平与短期参与,在 KuaiRec/KuaiRand 上实现 accuracy 与 fairness 更优的 Pareto 前沿。
 
 ## 相关
 
@@ -37,6 +42,6 @@ KuaiRec 是源自快手(Kuaishou)短视频平台的推荐系统数据集,常用�
 - [[offline-reinforcement-learning]]
 - [[matthew-effect]]
 - [[debiasing]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[recflow]]
 - [[watch-time-prediction]]

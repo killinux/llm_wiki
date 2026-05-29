@@ -35,7 +35,7 @@ RecoWorld 是 Meta 提出的一套为 agentic recommender system 构建模拟环
 
 ## 问题
 
-传统 [[recommender-system]] 依赖离线指标(如 [[recall]]、[[ndcg]])与在线 A/B 测试做评估。离线评估基于历史用户行为,会引入 [[exposure-bias]],使系统强化已知模式而非发现新兴兴趣;在线 A/B 测试虽有价值,但反馈回路慢、必须谨慎对待真实用户,无法激进试错。
+传统 [[recommender-systems|recommender-system]] 依赖离线指标(如 [[recall]]、[[ndcg]])与在线 A/B 测试做评估。离线评估基于历史用户行为,会引入 [[exposure-bias]],使系统强化已知模式而非发现新兴兴趣;在线 A/B 测试虽有价值,但反馈回路慢、必须谨慎对待真实用户,无法激进试错。
 
 随着 agentic recommender system 兴起——推荐器作为自主 agent,主动接受用户指令、习得新技能、根据经验调整行为——亟需可复现真实用户反馈的模拟环境,以便在不损害用户体验的前提下大胆测试新策略。RecoWorld 旨在为这类系统提供类似 OpenAI Gym 的训练空间。
 
@@ -60,4 +60,4 @@ RecoWorld 是 Meta 提出的一套为 agentic recommender system 构建模拟环
 
 ## 在本 wiki 中的位置
 
-RecoWorld 是用 [[llm-agent]] 构建 [[recommendation-simulator]] / [[user-simulation]] 的代表性工作,与 [[kuaisim]]、[[agent4rec]]、[[agentcf]]、[[recagent]]、[[interecagent]] 等 LLM 驱动的推荐模拟器一脉相承,但更强调"用户指令 + agentic 推荐器响应"的多轮交互范式与 [[rl-based-recsys]] 训练。它把 [[long-term-recommendation]] / [[user-retention]] 作为奖励信号,可与 [[reinforcement-learning]]、[[markov-decision-process]]、[[human-behavior-simulation]] 等概念对照,也是 [[meta]] 在 agentic recommender 方向上的方法论蓝图。
+RecoWorld 是用 [[llm-agents|llm-agent]] 构建 [[recommendation-simulator]] / [[user-simulation]] 的代表性工作,与 [[kuaisim]]、[[agent4rec]]、[[agentcf]]、[[recagent]]、[[interecagent]] 等 LLM 驱动的推荐模拟器一脉相承,但更强调"用户指令 + agentic 推荐器响应"的多轮交互范式与 [[rl-based-recsys]] 训练。它把 [[long-term-recommendation]] / [[user-retention]] 作为奖励信号,可与 [[reinforcement-learning]]、[[markov-decision-process]]、[[human-behavior-simulation]] 等概念对照,也是 [[meta]] 在 agentic recommender 方向上的方法论蓝图。

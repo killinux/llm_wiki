@@ -30,4 +30,4 @@ OpenAI 推出的大型语言模型系列,是 GPT-3 的改进版本,经过指令�
 - [[gpt-4]]:同为 OpenAI 的 GPT 系列模型,GPT-4 是其后继的更强版本。
 - [[openai]]:GPT-3.5 的开发与发布方。
 - [[chatgpt]]:基于 GPT-3.5 等模型构建的对话产品。
-- [[llm-agent]]:GPT-3.5 常被用作 LLM 智能体的基础模型。
+- [[llm-agents|llm-agent]]:GPT-3.5 常被用作 LLM 智能体的基础模型。

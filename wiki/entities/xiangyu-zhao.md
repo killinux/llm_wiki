@@ -4,12 +4,12 @@ subtype: person
 tags: [researcher, recommender-systems, multi-task-learning, deep-learning, reinforcement-learning, llm, reranking, feature-selection, multi-scenario-recommendation, benchmark]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 5
+sources: 6
 ---
 
 # Xiangyu Zhao
 
-研究者,工作涉及多任务深度推荐系统(MTDRS)、强化学习推荐、用户模拟、深度推荐系统的特征选择、多场景推荐基准建设以及大语言模型在推荐(如自动重排)中的应用。
+研究者,工作涉及多任务深度推荐系统(MTDRS)、强化学习推荐、用户模拟、深度推荐系统的特征选择、多场景推荐基准建设以及大语言模型在推荐(如自动重排、推荐评估)中的应用。
 
 ## 在本 wiki 中的出现
 
@@ -18,11 +18,12 @@ sources: 5
 - [[2024-llm4rerank-auto-reranking-recommendation]]:把推荐 reranking 的 accuracy/diversity/fairness 等目标抽象为全连接图中的 node,让 LLM 以 Chain-of-Thought 多跳方式按用户给定的 "Goal" 自动综合多目标重排候选列表。
 - [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
 - [[2024-scenario-wise-rec]]:首个面向多场景推荐(MSR)的开源 benchmark,整合 6 个公开数据集、12 个基线模型与统一的数据处理/训练/评测流水线,并在工业广告数据集上验证。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent,一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 来评估推荐模型并做数据增强。
 
 ## 相关
 
 - [[multi-task-learning]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[deep-learning]]
 - [[reinforcement-learning-recommendation]]
 - [[llm-for-recommendation]]
@@ -30,3 +31,4 @@ sources: 5
 - [[user-simulator]]
 - [[feature-selection]]
 - [[multi-scenario-recommendation]]
+- [[ab-testing]]

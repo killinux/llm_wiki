@@ -58,4 +58,4 @@ Sim4IA-Bench 源自 SIGIR 2025 的 Sim4IA Micro-Shared Task,以 MIT 许可发布
 
 ## 在本 wiki 中的位置
 
-本文属于 [[user-simulation]] 与 [[recommender-system]]/IR 评估方法学交叉的资源类工作,与 wiki 中已有的 [[user-simulation]]、[[human-behavior-simulation]]、[[interactive-evaluation]]、[[evaluation]] 等概念相关。它用 [[large-language-models]](具体用到 Google 的 Gemma 系列模型生成对话回复)构建模拟器并评估其保真度,与基于 LLM 的用户/对话模拟(如 [[user-simulation]]、[[ai-user-agent]])一脉相承。方法上引入的 [[benchmark]] 与新 measure(Semantic Similarity、Redundancy、SERP Overlap、RDS)可与 wiki 中关于 [[evaluation]] 与 [[llm-as-judge]] 类评估手段对照。数据集来自学术搜索引擎 CORE,与 wiki 中其他 [[dataset]] 资源同类。
+本文属于 [[user-simulation]] 与 [[recommender-systems|recommender-system]]/IR 评估方法学交叉的资源类工作,与 wiki 中已有的 [[user-simulation]]、[[human-behavior-simulation]]、[[interactive-evaluation]]、[[evaluation]] 等概念相关。它用 [[large-language-models]](具体用到 Google 的 Gemma 系列模型生成对话回复)构建模拟器并评估其保真度,与基于 LLM 的用户/对话模拟(如 [[user-simulation]]、[[ai-user-agent]])一脉相承。方法上引入的 [[benchmark]] 与新 measure(Semantic Similarity、Redundancy、SERP Overlap、RDS)可与 wiki 中关于 [[evaluation]] 与 [[llm-as-judge]] 类评估手段对照。数据集来自学术搜索引擎 CORE,与 wiki 中其他 [[dataset]] 资源同类。

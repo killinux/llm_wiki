@@ -20,5 +20,5 @@ DARLR 是一个面向推荐系统的双 agent(selector + recommender)model-based
 - [[offline-reinforcement-learning]]
 - [[model-based-reinforcement-learning]]
 - [[world-model]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[uncertainty-penalty]]

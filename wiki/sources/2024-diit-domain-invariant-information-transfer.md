@@ -16,7 +16,7 @@ DIIT 面向**工业级增量训练**场景下的跨域推荐(Cross-Domain Recomm
 
 ## 问题
 
-大型商业平台通常包含多个域(domain),用户因不同目的被划分到不同域,造成域间数据分布漂移。已有 CDR 方法多建立在"用户兴趣短期内基本不变"的**理想静态假设**上,直接搬到工业 [[recommender-system]] 环境(各域各自维护模型、以 incremental learning 增量更新)会同时损害效果与效率。作者归纳出两个挑战:
+大型商业平台通常包含多个域(domain),用户因不同目的被划分到不同域,造成域间数据分布漂移。已有 CDR 方法多建立在"用户兴趣短期内基本不变"的**理想静态假设**上,直接搬到工业 [[recommender-systems|recommender-system]] 环境(各域各自维护模型、以 incremental learning 增量更新)会同时损害效果与效率。作者归纳出两个挑战:
 
 - **CH1(效果)**:域内信息可分为 domain-specific(只利于本域)与 domain-invariant(利于多域)。多数方法依赖域间 overlapped samples 作"桥"来传递不变信息,但工业环境因 source domain 数量大、隐私保护等原因难以获得充分重叠样本,严重伤害效果。
 - **CH2(效率)**:各域模型以增量模式训练,既有针对工业环境的方法(如 KEEP、CTNet)要么需要额外计算/存储资源,要么推理时还得保留 source domain 模型作外部信息,导致效率低下。
@@ -44,4 +44,4 @@ DIIT 是端到端、即插即用(plug-and-play)的框架,含三个模块:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / cross-domain recommendation 方向,与 wiki 中 [[ctr]] 预估、工业 [[recommender-systems]] 落地相关。其技术栈把 [[knowledge-distillation]]、adversarial 域对齐与 incremental learning 结合,可与 [[kuairand]] 等推荐数据集条目互相参照;作者来自 [[oppo]] 与 [[zhejiang-university]](Chaochao Chen)。
+本文属于 [[recommender-systems|recommender-system]] / cross-domain recommendation 方向,与 wiki 中 [[ctr]] 预估、工业 [[recommender-systems]] 落地相关。其技术栈把 [[knowledge-distillation]]、adversarial 域对齐与 incremental learning 结合,可与 [[kuairand]] 等推荐数据集条目互相参照;作者来自 [[oppo]] 与 [[zhejiang-university]](Chaochao Chen)。

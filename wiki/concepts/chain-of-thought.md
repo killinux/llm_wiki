@@ -22,7 +22,7 @@ Chain-of-Thought (CoT) Prompting 是一种提示方法,通过引导大语言模�
 - [[2023-self-debugging]]:提出 SELF-DEBUGGING,通过 few-shot prompting 让 LLM 执行并解释自己生成的代码,以链式推理实现无人工反馈的自我调试。
 - [[2023-plan-and-solve-prompting]]:提出零样本 Plan-and-Solve (PS/PS+) 提示,让 LLM 先制定计划再执行子任务,显著改进 Zero-shot-CoT 的多步推理,是对 CoT 的直接改进。
 - [[2023-tree-of-thoughts]]:将 LLM 推理从线性的 CoT 扩展为在「思考」树上的搜索(可前瞻、自评估、回溯),在 24 点上把 GPT-4 成功率从 CoT 的 4% 提升到 74%。
-- [[2023-multiagent-debate]]:让多个 LLM 实例多轮辩论、互相批评彼此的推理链,在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:让多个 LLM 实例多轮辩论、互相批评彼此的推理链,在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上显著提升。
 - [[2023-reasoning-via-planning-rap]]:RAP 把 LLM 同时当作世界模型和推理智能体,用 MCTS 在推理空间里做规划,把 CoT 式的 LLM 推理重新表述为带世界模型的规划。
 - [[2023-multi-agent-debate]]:提出 Multi-Agent Debate(MAD)框架,用多个 LLM 智能体"针锋相对"辩论加裁判仲裁,缓解自我反思链的 Degeneration-of-Thought 问题并激发发散性思维。
 - [[2023-metagpt]]:MetaGPT 把人类 SOP 编码进 prompt,用专业化角色与结构化输出构建 LLM 多智能体软件开发框架,智能体内部依赖链式推理,在 HumanEval/MBPP 上达到 SoTA。

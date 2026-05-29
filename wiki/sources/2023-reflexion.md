@@ -35,4 +35,4 @@ Reflexion 将策略优化建模为**语言**层面的自我改进,核心由三�
 
 ## 在本 wiki 中的位置
 
-Reflexion 是 LLM agent 自我改进方向的代表性工作,与 [[react]](行动+推理)互补:ReAct 解决单次试验内的推理-行动交错,Reflexion 在**试验之间**通过语言反馈迭代改进。它体现了"用自然语言代替梯度做强化学习"的思路,与 [[chain-of-thought]]、self-refine 类自我修正方法相关,是理解 [[llm-agent]] 记忆与反思机制的核心论文之一。
+Reflexion 是 LLM agent 自我改进方向的代表性工作,与 [[react]](行动+推理)互补:ReAct 解决单次试验内的推理-行动交错,Reflexion 在**试验之间**通过语言反馈迭代改进。它体现了"用自然语言代替梯度做强化学习"的思路,与 [[chain-of-thought]]、self-refine 类自我修正方法相关,是理解 [[llm-agents|llm-agent]] 记忆与反思机制的核心论文之一。

@@ -16,7 +16,7 @@ GPRec 提出一种即插即用的双层用户建模方法,同时在"群体(group
 
 ## 问题
 
-深度推荐系统([[recommender-system]] / Deep Recommender Systems, DRS)通常对所有特征一视同仁,堆叠复杂结构来增强[[factorization-machines|特征交互]]的捕捉能力,却**未充分利用用户专属特征**进行 user modeling,从而错失关键用户模式。已有 user modeling 方法又往往只聚焦单一层面:
+深度推荐系统([[recommender-systems|recommender-system]] / Deep Recommender Systems, DRS)通常对所有特征一视同仁,堆叠复杂结构来增强[[factorization-machines|特征交互]]的捕捉能力,却**未充分利用用户专属特征**进行 user modeling,从而错失关键用户模式。已有 user modeling 方法又往往只聚焦单一层面:
 
 - **个体建模(individual modeling)**:为每个用户定制结构/参数(如 [[autoint|APG]]、PEPNet),能捕捉细粒度个人偏好,但忽视用户间联系,难以利用[[collaborative-filtering|协同]]知识。
 - **群体建模(group modeling)**:先按用户特征把用户分到 G 个群体,再为各群体分配结构/参数(如 [[mmoe]]、[[ple]]、STAR、DGPM),更泛化但更粗粒度,且当群体模式与个人兴趣冲突时会误导推荐(例如偏好爵士乐的用户被归入宽泛的"音乐爱好者"群体)。
@@ -42,7 +42,7 @@ GPRec(**G**roup modeling + enhanced **P**ersonalization for **Rec**ommendation)�
 
 ## 在本 wiki 中的位置
 
-- 属于 [[recommender-system]] / [[ctr]] 预测中的 **user modeling** 方向,核心是把"群体"与"个体"两层显式建模并解耦,与单层方法形成对比:个体侧对照 [[autoint|APG]]/PEPNet 的逐用户参数化,群体侧对照 [[mmoe]]、[[ple]] 等多任务/多场景框架及 DGPM 的动态群体参数建模。
+- 属于 [[recommender-systems|recommender-system]] / [[ctr]] 预测中的 **user modeling** 方向,核心是把"群体"与"个体"两层显式建模并解耦,与单层方法形成对比:个体侧对照 [[autoint|APG]]/PEPNet 的逐用户参数化,群体侧对照 [[mmoe]]、[[ple]] 等多任务/多场景框架及 DGPM 的动态群体参数建模。
 - 作为即插即用框架,可叠加在 [[deepfm]]、DCN/GDCN、FinalMLP、DESTINE 等[[factorization-machines|特征交互]]主干之上,与本 wiki 的[[recommender-systems]]条目互为补充。
 - 方法上用 [[mixture-of-experts|Gumbel-Softmax]] 做硬性群体划分、用对比损失增强嵌入区分度、用[[disentangled-representation-learning|正交损失]]解耦表示,与表示学习/解耦表示相关条目相通。
 - 由小红书(Xiaohongshu)等工业界与 City University of Hong Kong 等高校合作产出,面向真实工业推荐场景,代码已开源。

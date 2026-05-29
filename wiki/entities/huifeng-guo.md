@@ -4,7 +4,7 @@ subtype: person
 tags: [person, researcher, recommender-systems, feature-selection, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 1
+sources: 2
 ---
 
 # Huifeng Guo
@@ -14,9 +14,12 @@ sources: 1
 ## 在本 wiki 中的出现
 
 - [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
+- [[2026-ab-agent-recsys-evaluation]]:A/B Agent——一个多模态 LLM 用户智能体,在带海报的推荐沙盒 UI 中模拟用户的多模态感知、多页交互与疲劳退出,用以替代昂贵的在线 A/B testing 来评估推荐模型并做数据增强。
 
 ## 相关
 
 - [[feature-selection]]
 - [[deep-recommender-systems]]
 - [[large-language-models]]
+- [[ab-agent]]
+- [[llm-user-agent]]

@@ -31,7 +31,7 @@ year: 2025
 
 ## 问题
 
-基于 embedding 的 [[collaborative-filtering]](CF)通常配合最近邻搜索(NNS / [[approximate-nearest-neighbor-search]])部署在大规模 [[recommender-system]] 中。现代系统会利用多种隐式反馈信号(点击、加购、购买等)来刻画用户偏好,但主流做法采用 **feedback-wise(逐反馈)建模范式**,存在三个根本缺陷:
+基于 embedding 的 [[collaborative-filtering]](CF)通常配合最近邻搜索(NNS / [[approximate-nearest-neighbor-search]])部署在大规模 [[recommender-systems|recommender-system]] 中。现代系统会利用多种隐式反馈信号(点击、加购、购买等)来刻画用户偏好,但主流做法采用 **feedback-wise(逐反馈)建模范式**,存在三个根本缺陷:
 
 1. **忽略参与度递进**:把每种反馈当成独立的二分类/排序任务,例如在购买预测中,"点击但未购买"的物品与"完全未点击"的物品被同等视为负样本,丢失了前者偏好高于后者的语义。
 2. **embedding 空间割裂**:不同任务产生互不可比(incommensurable)的 disjoint 空间,一个空间的相似度分数无法与另一个比较,导致大规模 RS 需要冗余索引/排序,且加性、乘性等融合启发式会引入精度损失。
@@ -68,4 +68,4 @@ GNOLR 包含两大组件:**映射机制**(把无结构隐式反馈转成有序�
 
 ## 在本 wiki 中的位置
 
-本文属于 **embedding-based 推荐 / 多任务建模**方向,核心贡献是用序数回归思想统一多种隐式反馈的 embedding 空间。与 [[esmm]] 等 [[multi-task-learning]] 的 [[ctr]]/CVR 建模形成对照——后者用独立预测头建模 feedback-wise,GNOLR 则强调反馈间的递进结构与统一空间,从而把多路 [[embedding-based-retrieval]] 简化为单次最近邻搜索。它把 [[ordinal-logistic-regression]] 从显式评分推进到隐式反馈,可与 [[collaborative-filtering]]、[[recommender-system]]、[[listwise-recommendation]]、[[approximate-nearest-neighbor-search]] 等条目互相参照。注:本文非 LLM 论文,属于推荐系统/CF 邻接主题。
+本文属于 **embedding-based 推荐 / 多任务建模**方向,核心贡献是用序数回归思想统一多种隐式反馈的 embedding 空间。与 [[esmm]] 等 [[multi-task-learning]] 的 [[ctr]]/CVR 建模形成对照——后者用独立预测头建模 feedback-wise,GNOLR 则强调反馈间的递进结构与统一空间,从而把多路 [[embedding-based-retrieval]] 简化为单次最近邻搜索。它把 [[ordinal-logistic-regression]] 从显式评分推进到隐式反馈,可与 [[collaborative-filtering]]、[[recommender-systems|recommender-system]]、[[listwise-recommendation]]、[[approximate-nearest-neighbor-search]] 等条目互相参照。注:本文非 LLM 论文,属于推荐系统/CF 邻接主题。

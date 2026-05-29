@@ -16,7 +16,7 @@ year: 2026
 
 ## 问题
 
-[[recommender-system]] 已是在线信息的"守门人",用户越来越多地组织协同行动(collective action),利用点赞、评分、"Not Interested" 等平台 affordance 去操控算法结果。其中一类新系统——risk-controlling recommender systems([[conformal-risk-control]] 之上构建,见 De Toni et al. 的原工作)——直接用用户的二元负反馈("Not Interested")在期望意义上约束不想要内容(unwanted content)的曝光频率,提供 distribution-free、model-free 的形式化保证。核心研究问题:如果一群用户协同地、策略性地使用 "Not Interested" 来改变推荐系统行为会发生什么?即这种把用户反馈直接接入安全保证的设计,是否反而打开了被协同对抗操控([[adversarial-robustness]] / 类似 shilling attack / crowdturfing)的新杠杆。
+[[recommender-systems|recommender-system]] 已是在线信息的"守门人",用户越来越多地组织协同行动(collective action),利用点赞、评分、"Not Interested" 等平台 affordance 去操控算法结果。其中一类新系统——risk-controlling recommender systems([[conformal-risk-control]] 之上构建,见 De Toni et al. 的原工作)——直接用用户的二元负反馈("Not Interested")在期望意义上约束不想要内容(unwanted content)的曝光频率,提供 distribution-free、model-free 的形式化保证。核心研究问题:如果一群用户协同地、策略性地使用 "Not Interested" 来改变推荐系统行为会发生什么?即这种把用户反馈直接接入安全保证的设计,是否反而打开了被协同对抗操控([[adversarial-robustness]] / 类似 shilling attack / crowdturfing)的新杠杆。
 
 ## 方法
 
@@ -38,4 +38,4 @@ year: 2026
 
 ## 在本 wiki 中的位置
 
-本文处在 [[recommender-system]] 安全、[[adversarial-robustness]] 与 [[ai-safety]] 的交叉点,核心机制是 [[conformal-risk-control]] 在推荐过滤中的应用,以及 algorithmic collective action 的对抗变体(与经典 shilling / profile-injection attack、crowdturfing 相关但只用合法 affordance)。它与 [[content-creator-incentive]]、[[provider-fairness]]、[[popularity-bias]] 等"推荐系统社会影响"议题相邻,评测指标用 [[ndcg]] 与 [[recall]],数据来自 [[kuairand]] / [[kuaishou]]。机构上来自 Fondazione Bruno Kessler 与 European Commission Joint Research Centre,属于 [[responsible-ai]] / 算法审计方向。
+本文处在 [[recommender-systems|recommender-system]] 安全、[[adversarial-robustness]] 与 [[ai-safety]] 的交叉点,核心机制是 [[conformal-risk-control]] 在推荐过滤中的应用,以及 algorithmic collective action 的对抗变体(与经典 shilling / profile-injection attack、crowdturfing 相关但只用合法 affordance)。它与 [[content-creator-incentive]]、[[provider-fairness]]、[[popularity-bias]] 等"推荐系统社会影响"议题相邻,评测指标用 [[ndcg]] 与 [[recall]],数据来自 [[kuairand]] / [[kuaishou]]。机构上来自 Fondazione Bruno Kessler 与 European Commission Joint Research Centre,属于 [[responsible-ai]] / 算法审计方向。

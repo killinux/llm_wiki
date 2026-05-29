@@ -24,5 +24,5 @@ Chat Chain(对话链)是一种将复杂任务沿预定流程拆分为一系列�
 - [[role-playing]]
 - [[inception-prompting]]
 - [[communicative-dehallucination]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[code-generation]]

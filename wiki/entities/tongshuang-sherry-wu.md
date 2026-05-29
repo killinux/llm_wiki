@@ -19,4 +19,4 @@ Tongshuang Sherry Wu 是一位研究者,工作领域涉及自然语言处理、�
 
 - [[sotopia]]
 - [[social-simulation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

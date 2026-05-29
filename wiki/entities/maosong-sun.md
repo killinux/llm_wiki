@@ -19,5 +19,5 @@ Maosong Sun(孙茂松)是一位自然语言处理与人工智能研究者,在本
 ## 相关
 
 - [[2023-chatdev]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-collaboration]]

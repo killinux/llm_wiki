@@ -17,7 +17,7 @@ BankFair+ 是 BankFair(CIKM 2024)的扩展期刊版,在 [[provider-fairness]] �
 
 ## 问题
 
-在多方([[recommender-system]])平台中,用户与供给方(provider)的利益需要被平衡。作者之前的工作 [[2024-bankfair-fluctuating-traffic-reranking]](BankFair,CIKM 2024)用 [[bankruptcy-problem]] 的 [[talmud-rule]] 在波动用户流量(user traffic)下动态分配供给方曝光,从而在保证 [[minimum-exposure-guarantee]] 供给公平的同时维持用户平均精度。
+在多方([[recommender-systems|recommender-system]])平台中,用户与供给方(provider)的利益需要被平衡。作者之前的工作 [[2024-bankfair-fluctuating-traffic-reranking]](BankFair,CIKM 2024)用 [[bankruptcy-problem]] 的 [[talmud-rule]] 在波动用户流量(user traffic)下动态分配供给方曝光,从而在保证 [[minimum-exposure-guarantee]] 供给公平的同时维持用户平均精度。
 
 但本文指出:即便平均精度达标,仍存在严重的 **用户个体不公平**——不同用户拿到的推荐精度差异很大。作者在 [[kuairand]](KuaiRand-1K)上用 BankFair 做实验:选取一个月内平均精度最高的一天(2022-04-22),按精度从高到低排序所有用户后发现,尽管平均精度超过最低精度阈值,仍有约 **41%** 的用户精度低于该阈值。并且,随着供给公平程度(provider fairness degree)从 90% 升到 100%,个体公平持续恶化(图 1c)。这种个体层面的不公平会引发用户流失与社会极化([[polarization]])。已有工作(如 TFROM、CPFair、P-MMF)大多只讨论"用户平均精度 vs 供给公平"的权衡,忽视了"供给公平 vs 用户个体公平"这条边。
 

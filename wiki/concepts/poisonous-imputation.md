@@ -21,5 +21,5 @@ Poisonous Imputation 指在 Doubly Robust 推荐去偏中,那些质量低劣、�
 - [[2023-conservative-doubly-robust]]
 - [[debiasing]]
 - [[inverse-propensity-score]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[bias-variance-tradeoff]]

@@ -18,5 +18,5 @@ SARE 是一个可插拔的推荐增强模块,它把情境(situation)视为用户
 ## 相关
 
 - [[context-aware-recommendation]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[personalization]]

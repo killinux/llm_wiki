@@ -16,7 +16,7 @@ year: 2024
 
 ## 问题
 
-短视频[[recommender-system]]靠从稀疏交互历史中推断用户兴趣来驱动 CTR/CVR 预估，而附在每个视频上的文本元数据（标题、字幕、类别）是注入语义的主要手段。但视频文本嘈杂（口号、缩写、emoji 混杂），把它蒸馏成数值特征的方式直接影响排序精度、冷启动覆盖与服务成本。
+短视频[[recommender-systems|recommender-system]]靠从稀疏交互历史中推断用户兴趣来驱动 CTR/CVR 预估，而附在每个视频上的文本元数据（标题、字幕、类别）是注入语义的主要手段。但视频文本嘈杂（口号、缩写、emoji 混杂），把它蒸馏成数值特征的方式直接影响排序精度、冷启动覆盖与服务成本。
 
 候选的四类文本特征——稀疏加权关键词、潜在主题、上下文嵌入、LLM 生成标签——通常只在单一系统或消融实验里被局部比较，缺乏在公开基准上、匹配协议下的正面对决。近期工作主张 instruction-tuned 解码器能产出比用户生成文本更干净、更可迁移的语义单元，但这类信号的成本以及相对强经典基线的边际价值在公开数据上基本没被量化。本文提出一个范围明确的实证问题：在固定下游架构、相同原始文本的前提下，哪一类文本特征在"兴趣表示质量 vs 计算成本"上权衡最优。
 
@@ -37,4 +37,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文把 [[large-language-models]] 用作[[recommender-system]]的**特征增强语义层**（而非端到端预测器），与本 wiki 中 LLM-for-recommendation、[[sequential-recommendation]] 及 [[kuairand]]/[[kuairec]] 数据集相关条目互为补充。其核心贡献是统一评估协议与"LLM 标签何时值得其成本"的成本-收益判断，提供了一个把生成式语义信号与经典文本特征做正面对比的入口。
+本文把 [[large-language-models]] 用作[[recommender-systems|recommender-system]]的**特征增强语义层**（而非端到端预测器），与本 wiki 中 LLM-for-recommendation、[[sequential-recommendation]] 及 [[kuairand]]/[[kuairec]] 数据集相关条目互为补充。其核心贡献是统一评估协议与"LLM 标签何时值得其成本"的成本-收益判断，提供了一个把生成式语义信号与经典文本特征做正面对比的入口。

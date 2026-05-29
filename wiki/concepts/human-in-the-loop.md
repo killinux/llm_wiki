@@ -19,7 +19,7 @@ Human-in-the-loop 指在自动化系统(尤其是 LLM/agent 系统)的运行过�
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[llm-multi-agent]]
 - [[tool-use]]
 - [[scalable-oversight]]

@@ -17,6 +17,6 @@ Qingyao Ai 是一位信息检索与推荐系统领域的研究者,其相关工�
 
 ## 相关
 
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[information-retrieval]]
 - [[eeg-svrec]]

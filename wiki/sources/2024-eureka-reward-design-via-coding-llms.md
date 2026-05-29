@@ -58,4 +58,4 @@ Eureka(Evolution-driven Universal REward Kit for Agent)由三个算法组件构�
 
 ## 在本 wiki 中的位置
 
-这是一篇把 [[code-generation]]、[[large-language-models]] 与 [[reinforcement-learning]] 奖励设计结合的代表性工作,属于「用 LLM 辅助/自动化奖励工程」方向。它与 [[rlhf]] 相关但提出了 gradient-free、无需模型更新的变体。方法上的 [[evolutionary-search]] / reward mutation 与 self-improvement 类 [[llm-agent]](如 [[reflexion]]、[[voyager]])的 in-context 迭代改进思路相通,文中也引用了这些工作作为可行性依据。机构上来自 [[nvidia]]、UPenn、Caltech、UT Austin,作者包括 [[linxi-fan]] 与 [[anima-anandkumar]]。
+这是一篇把 [[code-generation]]、[[large-language-models]] 与 [[reinforcement-learning]] 奖励设计结合的代表性工作,属于「用 LLM 辅助/自动化奖励工程」方向。它与 [[rlhf]] 相关但提出了 gradient-free、无需模型更新的变体。方法上的 [[evolutionary-search]] / reward mutation 与 self-improvement 类 [[llm-agents|llm-agent]](如 [[reflexion]]、[[voyager]])的 in-context 迭代改进思路相通,文中也引用了这些工作作为可行性依据。机构上来自 [[nvidia]]、UPenn、Caltech、UT Austin,作者包括 [[linxi-fan]] 与 [[anima-anandkumar]]。

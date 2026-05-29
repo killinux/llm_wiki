@@ -50,7 +50,7 @@ year: 2026
 DSRM(Denoising State Representation Module),解决 C1/C2:把 state purification 建模为 conditional generative 问题,学习算子 Π_θ: ℝ^d → M 把污染状态映射回 latent preference manifold。
 - 假设真实偏好位于低维流形 M,观测状态 s̃_t = M(s*_t) + ζ_pop(structured epistemic noise)。
 - Forward process:对编码后的 state 在 K 步内逐步注入高斯噪声(模拟极端曝光偏置下的偏好信号退化)。
-- Reverse process:用 [[diffusion-model]] 的反向去噪过程做"iterative probabilistic manifold projection",迭代恢复低熵偏好表示,得到提纯状态 ŝ_t = Π_θ(s̃_t)。
+- Reverse process:用 [[diffusion-models|diffusion-model]] 的反向去噪过程做"iterative probabilistic manifold projection",迭代恢复低熵偏好表示,得到提纯状态 ŝ_t = Π_θ(s̃_t)。
 - state 编码用 [[transformer]] 对历史交互序列(含 position/history embedding)做编码。
 
 HRL(Hierarchical Constrained Control),解决 C3:用 [[hierarchical-reinforcement-learning]] 把宏观公平调控与微观参与优化解耦。
@@ -92,6 +92,6 @@ Baselines:general RL(A2C、[[td3]]、[[bcq]])与 fairness-aware RL(MOFIR、DORL�
 本文属于 [[rl-based-recsys]] 与 [[interactive-recommendation]] 中的公平性方向,核心论点是把 [[provider-fairness]] / item-side [[exposure-bias]] 问题从 [[reward-shaping]] 重新定位到 state 表示的提纯。
 
 - 与 [[popularity-bias]]、[[matthew-effect]]、[[filter-bubble]] 等推荐偏差主题直接相关;用 negative Gini(AD)度量曝光公平,呼应 [[two-sided-fairness-reranking]] / [[minimum-exposure-guarantee]] 等公平方法,但走的是 state-purification 路线。
-- 方法上把 [[diffusion-model]] 当作 representation purifier(而非生成器),与 [[dreamrec]]、[[diffusion-models]] 在推荐中的生成式用法形成对比;state 编码用 [[transformer]]。
+- 方法上把 [[diffusion-models|diffusion-model]] 当作 representation purifier(而非生成器),与 [[dreamrec]]、[[diffusion-models]] 在推荐中的生成式用法形成对比;state 编码用 [[transformer]]。
 - RL 侧采用 [[hierarchical-reinforcement-learning]] 解耦长期/短期目标,用 [[ppo]] 训练,与 [[constrained-mdp]]、[[lagrangian-relaxation]] 等约束优化思路相关;baselines 覆盖 [[td3]]、[[bcq]] 等 [[offline-rl]] 方法。
 - 实验生态对接 [[kuaisim]] 模拟器与 [[kuairec]]、[[kuairand]] 数据集([[kuaishou]] 短视频场景),与 [[dorl]]、[[cirs]] 等同一评测体系下的 [[long-term-recommendation]] / [[user-retention]] 工作可比较。

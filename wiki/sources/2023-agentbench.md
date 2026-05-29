@@ -45,4 +45,4 @@ AgentBench 包含 **8 个不同环境**,分为三类 grounding(其中 5 个为�
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] 评估领域的奠基性 [[benchmark]],由 [[tsinghua-university]]([[thudm]])联合 Ohio State、UC Berkeley 提出。它将 [[chain-of-thought]] 与多轮交互结合,系统量化了 [[gpt-4]]、[[claude-2]]、[[gpt-3-5-turbo]] 等模型在真实环境中的智能体能力,可与 [[mmlu]] 等静态知识基准、以及 [[webshop]]、[[alfworld]]、[[mind2web]] 等单环境 agent 数据集对照阅读。其揭示的 "长程推理/决策/指令遵循是 usable agent 的主要瓶颈" 与 "代码训练双刃剑" 等结论,为后续 agent 模型(如 [[autogpt]] 类应用)训练方向提供了参考。
+本文是 [[llm-agents|llm-agent]] 评估领域的奠基性 [[benchmark]],由 [[tsinghua-university]]([[thudm]])联合 Ohio State、UC Berkeley 提出。它将 [[chain-of-thought]] 与多轮交互结合,系统量化了 [[gpt-4]]、[[claude-2]]、[[gpt-3-5-turbo]] 等模型在真实环境中的智能体能力,可与 [[mmlu]] 等静态知识基准、以及 [[webshop]]、[[alfworld]]、[[mind2web]] 等单环境 agent 数据集对照阅读。其揭示的 "长程推理/决策/指令遵循是 usable agent 的主要瓶颈" 与 "代码训练双刃剑" 等结论,为后续 agent 模型(如 [[autogpt]] 类应用)训练方向提供了参考。

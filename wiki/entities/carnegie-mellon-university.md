@@ -21,5 +21,5 @@ sources: 3
 
 - [[sotopia-eval]]
 - [[gpt-4]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reinforcement-learning]]

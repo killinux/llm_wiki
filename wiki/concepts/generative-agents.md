@@ -4,7 +4,7 @@ subtype: method
 tags: [generative-agents, llm-agent, simulation, memory]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 23
+sources: 27
 ---
 
 # Generative Agents
@@ -12,6 +12,11 @@ sources: 23
 Generative Agents 指由 LLM 驱动、能够存储与检索记忆、反思并据此自主行动的智能体,用于在交互式环境(如沙盒)中模拟可信的人类个体与群体行为。
 
 ## 在本 wiki 中的出现
+- [[2024-lmagent-multimodal-agents-society]]:基于多模态 LLM 的万级规模 agents 社会,在电商场景模拟多用户的购物、社交、直播行为,复现真实 co-purchase 模式与从众等 emergent behavior。
+- [[2025-agentsociety-large-scale-social-simulation]]:一个整合 LLM 生成式社会 agent、真实城市-社会-经济环境与大规模分布式仿真引擎的社会模拟器,支持上万 agent 并复现极化、谣言、UBI、飓风、城市可持续性五类真实社会实验。
+- [[social-simulation]]
+- [[emergent-behavior]]
+- [[multimodal-llm]]
 
 - [[2023-memorybank]]:面向 Generative Agents 所依赖的核心能力——长期记忆。该工作提出 MemoryBank 机制:存储与分层摘要历史对话、按 Ebbinghaus 遗忘曲线动态更新记忆强度、检索相关记忆并构建用户画像,从而让 agent 在长期交互中保持人格与记忆连贯,并据此实现情感陪伴机器人 SiliconFriend。
 - [[2023-recagent-user-behavior-simulation]]:Generative Agents 思路在推荐场景的具体应用。提出 RecAgent,用 LLM-based agent 在沙盒中近乎零样本地模拟用户的推荐与社交行为,并借助这种 agent 模拟研究信息茧房与从众等现象。
@@ -36,12 +41,16 @@ Generative Agents 指由 LLM 驱动、能够存储与检索记忆、反思并据
 - [[2025-mmoagent-economic-simulation-mmo]]:提出 MMOAgent,一个基于 LLM 的 Generative Agent-Based Modeling 框架,用具备 profile/感知/推理/记忆/行动的 LLM 智能体模拟 MMO 游戏经济,涌现出角色分化与符合供需规律的价格波动。
 - [[2025-memory-os-of-ai-agent]]:借鉴操作系统内存管理,为 AI agent 设计分层(STM/MTM/LPM)、heat 驱动更新的 MemoryOS,统一 Storage/Updating/Retrieval/Generation 四模块,在 LoCoMo 上 F1 平均提升 49.11%、BLEU-1 提升 46.18%。
 - [[2025-multi-actor-genai-as-game-engine]]:Google DeepMind 的立场/架构论文,主张用游戏引擎式的 Entity-Component 架构统一支撑 Evaluationist/Dramatist/Simulationist 三类多智能体生成式 AI 用户动机,以 Concordia v2 为实例。
+- [[2025-generative-mmo-simulation]]:用 LLM 驱动的生成式多智能体 MMO 游戏仿真系统:在真实玩家数据上 SFT+GRPO 微调 agent,高保真模拟玩家决策,低成本评估数值系统与机制设计的干预效果。
+- [[2025-multi-agent-llm-value-diversity]]:通过 Schwartz 价值观给 LLM 智能体注入价值多样性的多智能体社会模拟,发现价值多样性提升集体行为的价值稳定性、涌现与自发规则创造,但极端异质带来边际递减与不稳定。
+- [[2026-yerkes-dodson-curve-ai-agents]]:在网格世界生存竞技场中系统改变环境压力,首次实证发现 LLM 多智能体系统的合作行为遵循 Yerkes-Dodson 倒 U 形曲线——中等压力(upkeep=5)合作交易峰值达 29 次,过低或过高压力都抑制社会行为,且性选择压力可在不致死的前提下消除攻击。
+- [[2026-policysim-proactive-policy-optimization]]:PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用 SFT+DPO 训练用户智能体、用带消息传递的 contextual bandit 自适应优化推荐与曝光控制等平台干预策略,实现部署前的主动评估与优化。
 
 ## 相关
 
 - [[2023-generative-agents]]
 - [[memory-stream]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[autonomous-agents]]
 - [[llm-long-term-memory]]
 - [[multi-agent-systems]]

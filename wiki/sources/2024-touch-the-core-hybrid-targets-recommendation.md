@@ -52,4 +52,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中的 [[multi-task-learning]] / [[sequential-recommendation]] 方向,聚焦"离散转化 + 连续核心目标(watch time、revenue)"的 hybrid targets 建模,是对 SDMTL 路线([[esmm]]、[[aitm]])的扩展。其多专家/塔结构与 [[mmoe]]、[[ple]] 同源;[[watch-time]] 作为核心连续目标与短视频推荐场景密切相关;梯度去冲突/幅度调整属于 MTL 优化策略。作者来自 Tencent FiT 与 McGill,数据集涉及 [[kuairand]]。
+本文属于 [[recommender-systems|recommender-system]] 中的 [[multi-task-learning]] / [[sequential-recommendation]] 方向,聚焦"离散转化 + 连续核心目标(watch time、revenue)"的 hybrid targets 建模,是对 SDMTL 路线([[esmm]]、[[aitm]])的扩展。其多专家/塔结构与 [[mmoe]]、[[ple]] 同源;[[watch-time]] 作为核心连续目标与短视频推荐场景密切相关;梯度去冲突/幅度调整属于 MTL 优化策略。作者来自 Tencent FiT 与 McGill,数据集涉及 [[kuairand]]。

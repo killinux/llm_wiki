@@ -31,7 +31,7 @@ sources: 14
 ## 相关
 
 - [[react]] — ReAct 的 action 通常就是调用外部工具
-- [[llm-agent]] — 工具使用是构建 LLM agent 的核心能力
+- [[llm-agents|llm-agent]] — 工具使用是构建 LLM agent 的核心能力
 - [[multi-agent-systems]] — AutoGen 中工具使用是多 agent 协作完成任务的能力之一
 - [[self-critique]] — CRITIC 中通过工具反馈实现自我验证
 - [[agent-evaluation]] — LLM agent 评测中工具调用能力是关键评测维度

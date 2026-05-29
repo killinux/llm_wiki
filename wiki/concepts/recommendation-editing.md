@@ -18,5 +18,5 @@ Recommendation Editing 是一项在不重新训练、不访问原始训练数据
 ## 相关
 
 - [[model-editing]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[bpr-loss]]

@@ -18,7 +18,7 @@ Data Heterogeneity(数据异质性)指同一数据集中不同子群体在预测
 ## 相关
 
 - [[2023-data-heterogeneity-recommendation]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[clustering]]
 - [[debiasing]]
 - [[distribution-shift]]

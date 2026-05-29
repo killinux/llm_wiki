@@ -40,7 +40,7 @@ Self-Improvement 指 LLM(或基于 LLM 的 Agent)在很少甚至不依赖额外�
 - [[chain-of-thought]]
 - [[rationalization]]
 - [[bootstrapping]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[in-context-learning]]
 - [[experience-replay]]
 - [[self-training]]

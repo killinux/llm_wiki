@@ -12,13 +12,17 @@ sources: 18
 GSM8K 是一个由小学水平数学应用题(grade school math word problems)组成的基准数据集,常用于评测大语言模型的多步数学推理能力。
 
 ## 在本 wiki 中的出现
+- [[2023-ts-llm-tree-search-decoding-training]]:TS-LLM 用学习的 value function 的 AlphaZero 风格树搜索,同时指导 LLM 的推理解码与迭代训练,适配任意规模 LLM 并将搜索深度扩展到 64。
+- [[tree-search]]
+- [[value-function]]
+- [[mathematical-reasoning]]
 
 - [[2022-chain-of-thought]]:作为 chain-of-thought prompting 的核心评测任务之一。该工作在 few-shot 示例中加入中间推理步骤,显著提升大模型多步推理能力,且增益随模型规模涌现——PaLM 540B 在 GSM8K 上达到 57%。
 - [[2022-star-self-taught-reasoner]]:作为 STaR 的评测任务。STaR 用少量 CoT 示例让模型自己生成推理过程,只保留答对的 rationale(并用 rationalization 从答错题反向补全),反复微调自身以 bootstrap 推理能力。
 - [[2023-self-refine]]:作为 Self-Refine 评测的任务之一。该方法用同一个 LLM 在测试时迭代"自我反馈→自我修正",无需训练即在 7 个任务上平均提升约 20%。
 - [[2023-plan-and-solve-prompting]]:作为 Plan-and-Solve 提示的多步推理评测任务。该工作提出零样本 PS/PS+ 提示,让 LLM 先制定计划再执行子任务,显著改进 Zero-shot-CoT。
 - [[2023-critic]]:作为 CRITIC 的评测任务之一。CRITIC 让 LLM 通过与搜索引擎、代码解释器、PERSPECTIVE API 等外部工具交互来自我验证并迭代修正输出,证明外部反馈对自我改进的重要性。
-- [[2023-multiagent-debate]]:作为多智能体辩论的推理评测任务。让多个 LLM 实例多轮辩论互相批评彼此答案,在 GSM8K 上从 77% 提升至 85%(事实性任务 MMLU 从 63.9% 提升至 71.1%)。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:作为多智能体辩论的推理评测任务。让多个 LLM 实例多轮辩论互相批评彼此答案,在 GSM8K 上从 77% 提升至 85%(事实性任务 MMLU 从 63.9% 提升至 71.1%)。
 - [[2023-reasoning-via-planning-rap]]:作为 RAP 的评测任务之一。RAP 把 LLM 同时当作世界模型和推理智能体,用 MCTS 在推理空间里做规划,将 LLM 推理重新表述为带世界模型的规划。
 - [[2023-shepherd-critic-for-lm-generation]]:Meta AI 用约 8K 高质量社区+人工反馈数据微调出 7B 的 LLaMA critic 模型 Shepherd,能精确批判 LLM 输出并给改进建议,GPT-4 评估 win-rate 53-87%,与 ChatGPT 媲美。
 - [[2023-llms-cannot-self-correct-reasoning-yet]]:本文证明在无外部反馈的"内在自我纠正"设定下,LLM 无法纠正自身推理错误,性能反而往往下降。
@@ -41,4 +45,4 @@ GSM8K 是一个由小学水平数学应用题(grade school math word problems)�
 - [[zero-shot-cot]]
 - [[palm]]
 - [[2022-chain-of-thought]]
-- [[2023-multiagent-debate]]
+- [[2023-multi-agent-debate|2023-multiagent-debate]]

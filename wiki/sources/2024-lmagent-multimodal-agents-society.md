@@ -46,4 +46,4 @@ LMAgent 以多模态 LLM(ChatGPT 的 gpt-4-1106-preview 与 gpt-4-vision-preview
 
 ## 在本 wiki 中的位置
 
-LMAgent 属于 [[llm-multi-agent]] 与 [[social-simulation]] 方向,是把 [[generative-agents]] 的"可信代理"思路扩展到**多模态 + 超大规模(万级)+ 电商**的代表性工作。它与 [[recagent]]、[[recsim]] 等 [[recommendation-simulator]] / [[user-simulation]] 工作相关,但侧重 agent 社会的群体行为(emergent behavior)而非单纯推荐评测。方法上复用了 [[fast-memory]]、[[memory-stream]]、[[self-consistency]]、[[chain-of-thought]] 与 [[small-world-model]] 等概念,可与 [[agent-memory]]、[[llm-agent]] 相关页面互链。
+LMAgent 属于 [[llm-multi-agent]] 与 [[social-simulation]] 方向,是把 [[generative-agents]] 的"可信代理"思路扩展到**多模态 + 超大规模(万级)+ 电商**的代表性工作。它与 [[recagent]]、[[recsim]] 等 [[recommendation-simulator]] / [[user-simulation]] 工作相关,但侧重 agent 社会的群体行为(emergent behavior)而非单纯推荐评测。方法上复用了 [[fast-memory]]、[[memory-stream]]、[[self-consistency]]、[[chain-of-thought]] 与 [[small-world-model]] 等概念,可与 [[agent-memory]]、[[llm-agents|llm-agent]] 相关页面互链。

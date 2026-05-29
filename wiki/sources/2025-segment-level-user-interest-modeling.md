@@ -18,7 +18,7 @@ year: 2025
 
 现有短视频推荐普遍把整支视频当作一个整体来建模,为其分配单一的偏好分数,忽视了用户偏好在视频浏览过程中**沿时间线动态演变**的本质。短视频节奏快、场景切换频繁,不同片段会吸引不同用户;用户的注意力和兴趣在不同 segment 间漂移,常体现为"滑走/跳过下一个视频"等行为。
 
-把视频整体化处理从根本上限制了 [[recommender-system]] 的精度。建模片段级(segment-level)兴趣面临三大挑战:
+把视频整体化处理从根本上限制了 [[recommender-systems|recommender-system]] 的精度。建模片段级(segment-level)兴趣面临三大挑战:
 1. 用户兴趣沿视频时间线演变,受独立于视频内容的人类注意力模式影响;
 2. 片段级用户反馈通常是隐式且稀疏的(如滑动行为),缺乏显式标签,存在 missing segment-level label 问题;
 3. 多模态融合挑战:结合用户-物品交互信号与内容信息时如何互补。
@@ -46,4 +46,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / 短视频推荐方向,把粒度从 video-level 细化到 segment-level,与 [[kuairand]]、[[kuaishou]] 等数据集/平台线索相连;在多模态融合上使用 [[clip]],并以 [[din]]、[[can]]、[[adagin]]、[[sasrec]]、[[lightgcn]] 等为基线,可作为细粒度用户建模与多模态推荐的参考节点。作者来自 [[tsinghua-university]] 与 [[kuaishou]]。
+本文属于 [[recommender-systems|recommender-system]] / 短视频推荐方向,把粒度从 video-level 细化到 segment-level,与 [[kuairand]]、[[kuaishou]] 等数据集/平台线索相连;在多模态融合上使用 [[clip]],并以 [[din]]、[[can]]、[[adagin]]、[[sasrec]]、[[lightgcn]] 等为基线,可作为细粒度用户建模与多模态推荐的参考节点。作者来自 [[tsinghua-university]] 与 [[kuaishou]]。

@@ -12,7 +12,7 @@ year: 2024
 
 # EasyRL4Rec: An Easy-to-use Library for Reinforcement Learning Based Recommender Systems
 
-EasyRL4Rec 是一个面向 RL-based 推荐系统([[recommender-system]])的易用代码库,围绕 Environment / Policy / StateTracker / Collector 四个核心模块,基于五个公开数据集构建轻量级 RL 环境,提供面向长期收益的统一训练与评测流程,并附带在经典 RL 与近期工作上的对照实验。
+EasyRL4Rec 是一个面向 RL-based 推荐系统([[recommender-systems|recommender-system]])的易用代码库,围绕 Environment / Policy / StateTracker / Collector 四个核心模块,基于五个公开数据集构建轻量级 RL 环境,提供面向长期收益的统一训练与评测流程,并附带在经典 RL 与近期工作上的对照实验。
 
 ## 问题
 
@@ -49,4 +49,4 @@ EasyRL4Rec 用 OpenAI Gymnasium API 实现环境,扩展 Tianshou 实现策略,�
 
 ## 在本 wiki 中的位置
 
-本文是 RL-based 推荐系统的基础设施类工作,把 [[reinforcement-learning]] 与 [[recommender-system]] 的研究流程标准化,可作为 wiki 中各类 RL 推荐方法(如 [[dorl]]、[[ppo]]、[[bcq]]、[[cql]]、[[td3]]、[[ddpg]])的统一实验平台入口。其问题建模([[markov-decision-process]])、离线评测中用 [[matrix-factorization]] 补全奖励、以及用 [[deepfm]] user model + [[rlhf]] 式范式训练策略的做法,串联了 [[offline-rl]]、user simulation 与序列推荐([[sasrec]] 等)等多条线索;所用数据集 KuaiRec、KuaiRand、MovieLens-1M、YahooR3、Coat 也是 wiki 中反复出现的 [[recommender-system]] 基准。
+本文是 RL-based 推荐系统的基础设施类工作,把 [[reinforcement-learning]] 与 [[recommender-systems|recommender-system]] 的研究流程标准化,可作为 wiki 中各类 RL 推荐方法(如 [[dorl]]、[[ppo]]、[[bcq]]、[[cql]]、[[td3]]、[[ddpg]])的统一实验平台入口。其问题建模([[markov-decision-process]])、离线评测中用 [[matrix-factorization]] 补全奖励、以及用 [[deepfm]] user model + [[rlhf]] 式范式训练策略的做法,串联了 [[offline-rl]]、user simulation 与序列推荐([[sasrec]] 等)等多条线索;所用数据集 KuaiRec、KuaiRand、MovieLens-1M、YahooR3、Coat 也是 wiki 中反复出现的 [[recommender-systems|recommender-system]] 基准。

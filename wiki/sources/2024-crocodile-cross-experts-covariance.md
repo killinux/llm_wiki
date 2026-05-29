@@ -14,7 +14,7 @@ Crocodile 是一个面向多域推荐(MDL)的多嵌入(Multi-Embedding)架构,�
 
 ## 问题
 
-多域学习([[recommender-system]] 中的 Multi-Domain Learning, MDL)既要学习域间的共性,又要保留每个域的差异性(distinctiveness)。作者指出现有方法陷入一个两难:
+多域学习([[recommender-systems|recommender-system]] 中的 Multi-Domain Learning, MDL)既要学习域间的共性,又要保留每个域的差异性(distinctiveness)。作者指出现有方法陷入一个两难:
 
 - **保持域差异性 vs. 充分学习参数**。沿"Tower→Embedding"方向,各类方法逐层把 domain-aware 模块下沉:Shared-Bottom 与 STAR 在 tower 层做域专属;HiNet、M-scan、HierRec 把焦点放到 expert 层;PEPNet 进一步强调 domain-specific 的 transformed embedding。但由于 embedding 占据了模型绝大多数参数,这些 expert/transformation 网络容量有限,保持域差异性的能力存疑(Finding 1)。
 - 受单任务多嵌入(Multi-Embedding)范式启发,可为每个特征学多张 embedding 以缓解 [[dimensional-collapse]](由 Interaction-Collapse 理论引起)。多任务领域的 STEM(Shared and Task-specific EMbedding)用任务专属 embedding 保留差异性。但作者把它们迁到 MDL(得到 ME-PLE、SDEM 等基线)后发现:**domain-specific embedding 在小域上训练样本太少,学不充分,出现 dimensional collapse**(Finding 2)。例如 Kuairand1k 数据集 S0 与 S6 之间数据量相差 12 倍。
@@ -44,7 +44,7 @@ Crocodile = **Cro**ss-experts **Co**variance loss for **Di**sentangled **Le**arn
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / 多域推荐方向,核心贡献是把 [[disentangled-representation-learning]] 的 covariance 思想引入 [[multi-embedding]] 推荐架构以对抗 [[dimensional-collapse]]。
+本文属于 [[recommender-systems|recommender-system]] / 多域推荐方向,核心贡献是把 [[disentangled-representation-learning]] 的 covariance 思想引入 [[multi-embedding]] 推荐架构以对抗 [[dimensional-collapse]]。
 
 - 方法层面用 [[mixture-of-experts]] 风格的 expert/tower 结构,损失设计与 VICReg、Maximal Coding Rate Reduction 一脉相承(在 expert 之间而非单一表示内部做去相关)。
 - 与之对照的多嵌入/多任务方法包括 STEM、PLE、MMoE([[mmoe]])、[[ple]],以及多域基线 STAR、HiNet、PEPNet、AdaSparse。

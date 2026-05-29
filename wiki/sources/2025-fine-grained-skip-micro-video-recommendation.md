@@ -61,4 +61,4 @@ micro-video(通常时长不足三分钟的短视频)推荐中,用户在观看前
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / micro-video 推荐方向,与本 wiki 中已有的 micro-video 数据集与方法相邻:数据集层面与 [[2022-kuairand]]、[[2023-microlens-micro-video-recommendation-dataset]] 同源;方法层面建立在 [[lightgcn]] 的 GCN 归一化传播之上,并扩展了 [[bpr]] 损失。其核心贡献——用 watch-time / playing-time 把交互细分为多档信号——与本 wiki 中关于 watch-time debias 的工作(如 [[2023-d2co-watch-time-debias]])及 [[recommendation-with-negative-feedback]] 主题相呼应,是"细粒度反馈建模"这一脉络在 micro-video 场景的图神经网络实例。
+本文属于 [[recommender-systems|recommender-system]] / micro-video 推荐方向,与本 wiki 中已有的 micro-video 数据集与方法相邻:数据集层面与 [[2022-kuairand]]、[[2023-microlens-micro-video-recommendation-dataset]] 同源;方法层面建立在 [[lightgcn]] 的 GCN 归一化传播之上,并扩展了 [[bpr]] 损失。其核心贡献——用 watch-time / playing-time 把交互细分为多档信号——与本 wiki 中关于 watch-time debias 的工作(如 [[2023-d2co-watch-time-debias]])及 [[recommendation-with-negative-feedback]] 主题相呼应,是"细粒度反馈建模"这一脉络在 micro-video 场景的图神经网络实例。

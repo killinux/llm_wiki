@@ -36,6 +36,6 @@ Actor-Critic 是一类强化学习方法,由负责输出动作的 actor(策略)�
 - [[value-function]]
 - [[recommender-systems]]
 - [[sequential-recommendation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[reward-shaping]]
 - [[model-based-rl]]

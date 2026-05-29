@@ -12,7 +12,7 @@ year: 2025
 
 # Evaluation and Benchmarking of LLM Agents: A Survey
 
-这是一篇 SAP Labs 在 KDD '25 发表的综述,提出一个**二维分类法**(评测目标 × 评测过程)来组织 [[llm-agent]] 评测领域的工作,并特别强调了企业落地场景中常被忽视的挑战。
+这是一篇 SAP Labs 在 KDD '25 发表的综述,提出一个**二维分类法**(评测目标 × 评测过程)来组织 [[llm-agents|llm-agent]] 评测领域的工作,并特别强调了企业落地场景中常被忽视的挑战。
 
 ## 问题
 
@@ -45,4 +45,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] / [[autonomous-agents]] 评测方向的总览性 source,可作为理解 agent [[evaluation]] 与 [[benchmark]] 全景的入口。它把分散在 [[agentbench]]、[[webarena]]、[[webshop]] 等具体 benchmark 与 [[llm-as-judge]]、[[human-in-the-loop]]、[[tool-use]]、[[multi-agent-collaboration]] 等概念串联起来,并补充了企业 / [[ai-safety]] 视角(RBAC、合规、可靠性)。出自 [[sap-labs]],面向 [[llm-based-agents]] 的真实部署评估。
+本文是 [[llm-agents|llm-agent]] / [[autonomous-agents]] 评测方向的总览性 source,可作为理解 agent [[evaluation]] 与 [[benchmark]] 全景的入口。它把分散在 [[agentbench]]、[[webarena]]、[[webshop]] 等具体 benchmark 与 [[llm-as-judge]]、[[human-in-the-loop]]、[[tool-use]]、[[multi-agent-collaboration]] 等概念串联起来,并补充了企业 / [[ai-safety]] 视角(RBAC、合规、可靠性)。出自 [[sap-labs]],面向 [[llm-based-agents]] 的真实部署评估。

@@ -21,7 +21,7 @@ year: 2025
 
 # Memory OS of AI Agent (MemoryOS)
 
-借鉴操作系统的内存管理原理,为 [[llm-agent|AI agent]] 设计一套分层的"内存操作系统"MemoryOS,通过 Storage / Updating / Retrieval / Generation 四个模块统一管理长期对话记忆,从而提升长对话中的连贯性与个性化。
+借鉴操作系统的内存管理原理,为 [[llm-agents|AI agent]] 设计一套分层的"内存操作系统"MemoryOS,通过 Storage / Updating / Retrieval / Generation 四个模块统一管理长期对话记忆,从而提升长对话中的连贯性与个性化。
 
 > 注:本文件对应 raw 中的 PDF(`raw/2506.06326.pdf`),但其正文标题页与参考文献显示该工作的 arXiv 编号为 2506.06328(Memory OS of AI Agent)。frontmatter 的 arxiv 字段按论文自报编号填写。
 

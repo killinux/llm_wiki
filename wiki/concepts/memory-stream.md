@@ -32,6 +32,6 @@ Memory Stream 是一种为 LLM 智能体设计的长期记忆机制:把智能体
 - [[llm-long-term-memory]]
 - [[embedding-based-retrieval]]
 - [[user-profile]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[generative-agents]]
 - [[reflexion]]

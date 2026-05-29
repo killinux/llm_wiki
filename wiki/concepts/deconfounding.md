@@ -21,4 +21,4 @@ sources: 2
 - [[confounding]]
 - [[causal-inference]]
 - [[variational-autoencoder]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]

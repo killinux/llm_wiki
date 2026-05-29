@@ -30,7 +30,7 @@ year: 2025
 
 ## 问题
 
-传统视频 [[recommender-system]] 主要依赖 ID embedding 映射与 [[collaborative-filtering]],难以捕捉视频内容的深层语义,且常被有偏的用户行为(误点、快速划走 fast-skip)误导,导致 top 推荐反复触发原因不明的负反馈。作者把核心问题归结为三点:
+传统视频 [[recommender-systems|recommender-system]] 主要依赖 ID embedding 映射与 [[collaborative-filtering]],难以捕捉视频内容的深层语义,且常被有偏的用户行为(误点、快速划走 fast-skip)误导,导致 top 推荐反复触发原因不明的负反馈。作者把核心问题归结为三点:
 
 - 负反馈数据稀缺:显式信号(dislike、评论)信息量大但极稀疏(约占全部交互的 0.3%);隐式信号(watch time、skip)海量却噪声大、信息量低。这是一种典型的 [[selection-bias]] / [[popularity-bias]] 之外的 [[exposure-bias]]、[[noisy-watching]] 难题。
 - 负反馈的具体原因被忽视:以往方法仅靠聚类负反馈信号得到 dislike 特征后压制相似推荐,不理解"为什么 dislike",跨场景泛化差(例如用户讨厌某条美食视频,不应压制所有美食推荐)。

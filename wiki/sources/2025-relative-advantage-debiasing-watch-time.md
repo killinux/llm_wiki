@@ -48,4 +48,4 @@ ByteDance 提出 RAD(Relative Advantage Debiasing):把观看时长(watch time)�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中的 [[watch-time]] 去偏一脉,直接对话并超越 [[d2q]]、[[wtg]]、[[d2co]]、[[cwm]]、[[cread]]、[[conditional-quantile-estimation]] 等 [[duration-bias]] / [[popularity-bias]] 纠正方法。其核心工具是 [[quantile-regression]] 与 [[confounding-bias]] 框架(全方差分解、umbrella conditioning),用 [[kuairand]] 公开 benchmark 评测。作者来自 [[bytedance-research]]。文末还指出 RAD 分位标签可作为 [[reinforcement-learning]] 中奖励变换(如 GRPO)与 listwise 推荐的校准信号,为 [[reward-shaping]] 与 [[long-term-recommendation]] 提供接口。
+本文属于 [[recommender-systems|recommender-system]] 中的 [[watch-time]] 去偏一脉,直接对话并超越 [[d2q]]、[[wtg]]、[[d2co]]、[[cwm]]、[[cread]]、[[conditional-quantile-estimation]] 等 [[duration-bias]] / [[popularity-bias]] 纠正方法。其核心工具是 [[quantile-regression]] 与 [[confounding-bias]] 框架(全方差分解、umbrella conditioning),用 [[kuairand]] 公开 benchmark 评测。作者来自 [[bytedance-research]]。文末还指出 RAD 分位标签可作为 [[reinforcement-learning]] 中奖励变换(如 GRPO)与 listwise 推荐的校准信号,为 [[reward-shaping]] 与 [[long-term-recommendation]] 提供接口。

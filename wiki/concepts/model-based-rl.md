@@ -24,7 +24,7 @@ Model-based RL 是一类强化学习方法,它显式地学习一个环境模型(
 - [[reinforcement-learning]]
 - [[world-model]]
 - [[offline-rl]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[markov-decision-process]]
 - [[matthew-effect]]
 - [[tree-search]]

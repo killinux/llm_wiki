@@ -18,5 +18,5 @@ Zhefan Wang 是 MACRec 多 agent 协作推荐框架的相关研究者(清华团�
 ## 相关
 
 - [[multi-agent-recommendation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[tsinghua-university]]

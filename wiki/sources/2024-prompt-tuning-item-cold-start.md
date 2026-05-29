@@ -16,7 +16,7 @@ PROMO 是一种面向 item cold-start 推荐的 [[prompt-tuning]] 方法,它用�
 
 ## 问题
 
-item cold-start 问题(新 item 无/少交互记录,如 click、rating)决定了一个 item 能否成功转化为热门 item,是在线 [[recommender-system]] 的关键环节。已有把 [[prompt-tuning]] 引入 [[cold-start]] 推荐的工作存在两类缺陷:
+item cold-start 问题(新 item 无/少交互记录,如 click、rating)决定了一个 item 能否成功转化为热门 item,是在线 [[recommender-systems|recommender-system]] 的关键环节。已有把 [[prompt-tuning]] 引入 [[cold-start]] 推荐的工作存在两类缺陷:
 
 - **数据侧成本与鸿沟**:现有方法多依赖额外的人工标注(如候选 item 的文本描述)作为 prompt,在面对数百万/数十亿新 item 的工业场景中成本极高;且内容特征与推荐任务之间存在语义 gap,缺乏与推荐过程的端到端衔接。论文用实验(Figure 1)验证:用 positive feedback 作为 prompt 比用 content feature 在 cold-start item 上准确率显著更高(如 25 个输入时 0.62 vs 0.42)。
 - **模型侧偏置**:cold-start item 仅占在线流量的一小部分,共享模型参数主要被热门 item 优化,导致模型给 warm-start item 高分、cold-start item 低分。Figure 2 显示在 KuaiRand 上,cold-start 正样本与 warm-start 负样本的预测分布严重重叠,模型对 cold-start item 个性化不足、倾向给热门 item 打高分。
@@ -42,4 +42,4 @@ PROMO 在固定的两塔 base model(backbone 沿用 [[sasrec]],可替换为其�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-for-recommendation]] 与 [[recommender-system]] 中 [[cold-start]] 推荐方向,把 NLP 中的 [[prompt-tuning]] / [[prompt-engineering]] 思想迁移到推荐:用 pinnacle feedback 替代 content feature 作 prompt,用 item-wise 个性化 prompt network + 两类 prompt-enhanced loss 同时治理冷启动的数据成本与热门偏置。backbone 复用序列推荐模型 [[sasrec]],并与 [[collaborative-filtering]]、[[deepfm]] 等经典方法及 prompt 类推荐方法对比。作者来自 [[kuaishou]] 与北京大学。
+本文属于 [[llm-for-recommendation]] 与 [[recommender-systems|recommender-system]] 中 [[cold-start]] 推荐方向,把 NLP 中的 [[prompt-tuning]] / [[prompt-engineering]] 思想迁移到推荐:用 pinnacle feedback 替代 content feature 作 prompt,用 item-wise 个性化 prompt network + 两类 prompt-enhanced loss 同时治理冷启动的数据成本与热门偏置。backbone 复用序列推荐模型 [[sasrec]],并与 [[collaborative-filtering]]、[[deepfm]] 等经典方法及 prompt 类推荐方法对比。作者来自 [[kuaishou]] 与北京大学。

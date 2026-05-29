@@ -27,7 +27,7 @@ year: 2024
 
 ## 问题
 
-工业级 [[recommender-system]] 普遍采用多阶段(multi-stage)结构:从数千万候选中经过 matching、pre-ranking、ranking、re-ranking 逐级筛选,以低延迟产出推荐。用 [[reinforcement-learning]] 优化用户的 long-term reward(长期回报,如总观看时长、留存)已被证明有效,但单智能体 RL 难以同时优化多个阶段——不同阶段有不同的 observation space(如各阶段候选集的预测/统计不同),无法用单个 agent 建模。
+工业级 [[recommender-systems|recommender-system]] 普遍采用多阶段(multi-stage)结构:从数千万候选中经过 matching、pre-ranking、ranking、re-ranking 逐级筛选,以低延迟产出推荐。用 [[reinforcement-learning]] 优化用户的 long-term reward(长期回报,如总观看时长、留存)已被证明有效,但单智能体 RL 难以同时优化多个阶段——不同阶段有不同的 observation space(如各阶段候选集的预测/统计不同),无法用单个 agent 建模。
 
 直接套用多智能体强化学习([[multi-agent-reinforcement-learning]])的 CTDE(centralized training with decentralized execution)范式也不行:CTDE 假设所有 agent 的 observation 在训练时从 replay buffer 同时采样,但在多阶段推荐中,上游 agent 的动作哪怕微小变化都会改变下游阶段的候选集,从而改变下游的 observation 与 action,违背 CTDE 假设,导致训练效果退化。
 
@@ -49,4 +49,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是 [[reinforcement-learning]] 应用于 [[recommender-system]] 优化长期回报方向的代表工作,由 [[kuaishou]] 提出,首次将 [[multi-agent-reinforcement-learning]] 引入工业级多阶段推荐。其用 actor-critic 与 [[ddpg]]/[[td3]] 类方法做 baseline,数据来自 [[kuairand]],并基于 [[markov-decision-process]] 建模。与同样关注短视频长期参与/留存的工作(如 ResAct、PrefRec、Two-Stage Constrained Actor-Critic)同源,可与本 wiki 中 RL 推荐、watch-time/user-retention 优化相关条目互参。
+本文是 [[reinforcement-learning]] 应用于 [[recommender-systems|recommender-system]] 优化长期回报方向的代表工作,由 [[kuaishou]] 提出,首次将 [[multi-agent-reinforcement-learning]] 引入工业级多阶段推荐。其用 actor-critic 与 [[ddpg]]/[[td3]] 类方法做 baseline,数据来自 [[kuairand]],并基于 [[markov-decision-process]] 建模。与同样关注短视频长期参与/留存的工作(如 ResAct、PrefRec、Two-Stage Constrained Actor-Critic)同源,可与本 wiki 中 RL 推荐、watch-time/user-retention 优化相关条目互参。

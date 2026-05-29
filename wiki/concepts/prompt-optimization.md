@@ -19,4 +19,4 @@ Prompt Optimization 指通过自动或半自动手段搜索、改写与精炼提
 
 - [[self-evolving-agents]]
 - [[in-context-learning]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

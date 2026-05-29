@@ -12,11 +12,11 @@ year: 2025
 
 # MemInsight:面向 LLM Agent 的自主记忆增强
 
-一句话:本文提出 MemInsight,一种让 [[llm-agent]] 自主从历史交互中挖掘语义属性并据此增强记忆表示与检索的框架,在对话推荐、问答与事件摘要三类任务上显著提升效果(LLM-REDIAL 上推荐说服力提升最高 14%,LoCoMo 上召回率比 RAG 基线高 34%)。
+一句话:本文提出 MemInsight,一种让 [[llm-agents|llm-agent]] 自主从历史交互中挖掘语义属性并据此增强记忆表示与检索的框架,在对话推荐、问答与事件摘要三类任务上显著提升效果(LLM-REDIAL 上推荐说服力提升最高 14%,LoCoMo 上召回率比 RAG 基线高 34%)。
 
 ## 问题
 
-[[llm-agent]] 依赖长期 [[agent-memory]] 来保持上下文连贯、做出个性化响应并实现自我演化。但随着交互不断累积,记忆规模迅速增长,**原始历史数据会变得嘈杂且检索困难**,尤其在长期或复杂任务中。此外,**非结构化的记忆**限制了 agent 跨任务、跨上下文整合知识的能力。已有方法大多依赖非结构化记忆或人工定义的 schema(如 A-Mem 用人工任务笔记、Mem0 提供生产级流水线),缺乏自主发现语义属性、构建结构化记忆表示的能力。因此需要一种结构化的知识表示来支撑高效检索、上下文理解与可扩展的长期记忆。
+[[llm-agents|llm-agent]] 依赖长期 [[agent-memory]] 来保持上下文连贯、做出个性化响应并实现自我演化。但随着交互不断累积,记忆规模迅速增长,**原始历史数据会变得嘈杂且检索困难**,尤其在长期或复杂任务中。此外,**非结构化的记忆**限制了 agent 跨任务、跨上下文整合知识的能力。已有方法大多依赖非结构化记忆或人工定义的 schema(如 A-Mem 用人工任务笔记、Mem0 提供生产级流水线),缺乏自主发现语义属性、构建结构化记忆表示的能力。因此需要一种结构化的知识表示来支撑高效检索、上下文理解与可扩展的长期记忆。
 
 ## 方法
 
@@ -48,4 +48,4 @@ MemInsight 包含三个核心模块(见原文 Figure 1):
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 的 [[agent-memory]] / [[llm-long-term-memory]] 方向,与 [[memorybank]]、[[memory-module]]、[[memory-stream]] 等记忆机制条目相关,并与 [[retrieval-augmented-generation]]([[rag]])、[[dense-passage-retrieval]]([[dpr]])、[[embedding-based-retrieval]]、[[faiss]] 等检索条目互为对照——MemInsight 强调用自主属性挖掘补充传统 RAG。其评测覆盖 [[interactive-recommendation]] 类的对话推荐、[[open-domain-qa]] 与摘要,可与 [[llm-for-recommendation]]、[[llm-as-judge]](G-Eval/LLM-based 指标)等条目参照。作者来自 AWS AI(Amazon)。
+本文属于 [[llm-agents|llm-agent]] 的 [[agent-memory]] / [[llm-long-term-memory]] 方向,与 [[memorybank]]、[[memory-module]]、[[memory-stream]] 等记忆机制条目相关,并与 [[retrieval-augmented-generation]]([[rag]])、[[dense-passage-retrieval]]([[dpr]])、[[embedding-based-retrieval]]、[[faiss]] 等检索条目互为对照——MemInsight 强调用自主属性挖掘补充传统 RAG。其评测覆盖 [[interactive-recommendation]] 类的对话推荐、[[open-domain-qa]] 与摘要,可与 [[llm-for-recommendation]]、[[llm-as-judge]](G-Eval/LLM-based 指标)等条目参照。作者来自 AWS AI(Amazon)。

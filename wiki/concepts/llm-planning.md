@@ -31,7 +31,7 @@ LLM Planning 指利用大语言模型(LLM)将高层目标分解为可执行的�
 - [[grounding]]
 - [[frozen-llm]]
 - [[chain-of-thought]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[hierarchical-planning]]
 - [[tree-search]]
 - [[reflection]]

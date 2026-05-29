@@ -22,6 +22,6 @@ Confounding Bias(混杂偏差)是指在因果推断中,由于存在同时影响�
 - [[substitute-confounder]]
 - [[causal-inference]]
 - [[variational-autoencoder]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[deconfounding]]
 - [[backdoor-adjustment]]

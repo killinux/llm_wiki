@@ -12,7 +12,7 @@ year: 2024
 
 # Better Late Than Never: Formulating and Benchmarking Recommendation Editing
 
-提出"recommendation editing"(推荐编辑)这一新任务:在**不重训练、不访问训练数据**的前提下,直接修正已部署 [[recommender-system]] 给出的已知且不当(unsuitable)的推荐行为,并给出形式化定义、评估指标、E-BPR 损失与综合 benchmark。
+提出"recommendation editing"(推荐编辑)这一新任务:在**不重训练、不访问训练数据**的前提下,直接修正已部署 [[recommender-systems|recommender-system]] 给出的已知且不当(unsuitable)的推荐行为,并给出形式化定义、评估指标、E-BPR 损失与综合 benchmark。
 
 ## 问题
 
@@ -54,4 +54,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文把 NLP/CV 中的 [[model-editing]] 思想迁移到 [[recommender-system]],与 [[recommendation-with-negative-feedback]] 关系密切但目标不同(快速无重训地修正已知错误,而非建模负偏好)。它提出的 E-BPR 是对经典 BPR 排序损失在编辑场景下的改造,backbone 涵盖 [[matrix-factorization]] 与图协同过滤([[collaborative-filtering]])。作者来自 [[zhejiang-university]] 等机构,[[jiawei-chen]]、[[ningyu-zhang]] 参与。
+本文把 NLP/CV 中的 [[model-editing]] 思想迁移到 [[recommender-systems|recommender-system]],与 [[recommendation-with-negative-feedback]] 关系密切但目标不同(快速无重训地修正已知错误,而非建模负偏好)。它提出的 E-BPR 是对经典 BPR 排序损失在编辑场景下的改造,backbone 涵盖 [[matrix-factorization]] 与图协同过滤([[collaborative-filtering]])。作者来自 [[zhejiang-university]] 等机构,[[jiawei-chen]]、[[ningyu-zhang]] 参与。

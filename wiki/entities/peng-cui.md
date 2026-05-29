@@ -19,6 +19,6 @@ sources: 1
 
 - [[BHE]]
 - [[data-heterogeneity]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[NFM]]
 - [[debiasing]]

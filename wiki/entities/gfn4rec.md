@@ -19,6 +19,6 @@ GFN4Rec 是一种基于 GFlowNet 的生成式列表推荐模型,通过流匹配�
 
 - [[gflownet]]
 - [[list-wise-recommendation]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[exploration-exploitation]]
 - [[generative-recommendation]]

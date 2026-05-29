@@ -10,7 +10,7 @@ authors: [Zeyang Sha, Hanling Tian, Zhuoer Xu, Shiwen Cui, Changhua Meng, Weiqia
 year: 2025
 ---
 
-本文提出首个面向 tool-using agent 的统一**安全对齐**框架,通过 structured reasoning + sandbox [[reinforcement-learning]] 让 [[llm-agent]] 同时抵御 user-initiated 与 tool-initiated 两类威胁。
+本文提出首个面向 tool-using agent 的统一**安全对齐**框架,通过 structured reasoning + sandbox [[reinforcement-learning]] 让 [[llm-agents|llm-agent]] 同时抵御 user-initiated 与 tool-initiated 两类威胁。
 
 ## 问题
 
@@ -30,7 +30,7 @@ year: 2025
   - Malicious:类别化拒绝(refuse),不调用任何工具。
   - Sensitive:本身无害但有风险,必须触发 `<tool_check>` 与用户进行 "double-check" 确认对话,获得授权后才执行。
 - **多模态数据构造**:用 [[deepseek-r1]](DeepSeek-671B)在 few-shot 模式下生成 N_U = 20000 条 user prompt 和 N_T = 5000 条 tool utterance,经静态过滤(去除已知 prompt-injection 模式、policy-violating 关键词、低多样性重复)+ 人工抽检 + 类别平衡。
-- **训练环境**:基于 [[react-reasoning-and-acting]] 思路的 ReCall framework 构建 sandbox,把环境规范解析成可调用函数嵌入 system prompt;agent 调用工具时生成暂停,sandbox 模拟执行并返回结果;需确认时 sandbox 随机回 "yes"/"no" 模拟用户回复。
+- **训练环境**:基于 [[react|react-reasoning-and-acting]] 思路的 ReCall framework 构建 sandbox,把环境规范解析成可调用函数嵌入 system prompt;agent 调用工具时生成暂停,sandbox 模拟执行并返回结果;需确认时 sandbox 随机回 "yes"/"no" 模拟用户回复。
 - **奖励函数(reward function)**:R = R_gen × R_ℓ,结构检查不通过则归零。
   - 通用奖励:EOS Compliance(以 EOS token 结尾)与 `<think>` Integrity(think 标签正确配对)。
   - 场景奖励按 threat label 设计:benign 要求 Tool-Invocation Soundness(合法 JSON 含 name/arguments)且无 double-check;malicious 要求 No Tool-Invocation + 明确拒绝,并额外训练一个 **rejection classifier** REF(a_t) 判断文本是否表示拒绝;sensitive 要求先发 `<tool_check>` 请求确认,再依 `<tool_check_result>` 的 0/1 决定是否调用。
@@ -50,4 +50,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 安全方向,把 [[ai-safety]] / [[alignment]] 从传统对话 LLM 扩展到 tool-using agent 场景。与本 wiki 中以能力评测为主的 [[agentbench]] 等 benchmark 工作不同,它是首个从安全视角提出 agent **训练**框架的工作,通过 [[reinforcement-learning]](RLHF 风格的 on-policy 优化)而非纯 prompt 防护来内化安全行为。其 sandbox + reward shaping 思路与 [[react-reasoning-and-acting]]、tool-use 训练范式相关;统一处理 user-side 与 tool-side(prompt injection)威胁的设计补充了 [[hallucination]]、prompt injection 等已有安全议题。作者来自 [[ant-group]]。
+本文属于 [[llm-agents|llm-agent]] 安全方向,把 [[ai-safety]] / [[alignment]] 从传统对话 LLM 扩展到 tool-using agent 场景。与本 wiki 中以能力评测为主的 [[agentbench]] 等 benchmark 工作不同,它是首个从安全视角提出 agent **训练**框架的工作,通过 [[reinforcement-learning]](RLHF 风格的 on-policy 优化)而非纯 prompt 防护来内化安全行为。其 sandbox + reward shaping 思路与 [[react|react-reasoning-and-acting]]、tool-use 训练范式相关;统一处理 user-side 与 tool-side(prompt injection)威胁的设计补充了 [[hallucination]]、prompt injection 等已有安全议题。作者来自 [[ant-group]]。

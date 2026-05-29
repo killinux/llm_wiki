@@ -40,4 +40,4 @@ AgentTuning 由两部分组成:
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] 训练方向的代表工作,与侧重 prompt/框架的 [[react]]、[[reflexion]]、[[tree-of-thoughts]] 不同,它通过 [[instruction-tuning]] 从根本上增强开源 LLM 的 agent 能力。评测建立在 [[agentbench]] 之上,基座为 [[llama-2]],数据生成依赖 [[gpt-4]] 与 Self-Instruct。可与 [[toolformer]]、[[fine-tuning]]、[[chain-of-thought]] 等条目互参。作者团队来自 [[tsinghua-university]] 与 Zhipu.AI,与 [[chatglm]]、[[thudm]] 同源。
+本文是 [[llm-agents|llm-agent]] 训练方向的代表工作,与侧重 prompt/框架的 [[react]]、[[reflexion]]、[[tree-of-thoughts]] 不同,它通过 [[instruction-tuning]] 从根本上增强开源 LLM 的 agent 能力。评测建立在 [[agentbench]] 之上,基座为 [[llama-2]],数据生成依赖 [[gpt-4]] 与 Self-Instruct。可与 [[toolformer]]、[[fine-tuning]]、[[chain-of-thought]] 等条目互参。作者团队来自 [[tsinghua-university]] 与 Zhipu.AI,与 [[chatglm]]、[[thudm]] 同源。

@@ -61,4 +61,4 @@ Big-5 人格(BFI-44):
 
 ## 在本 wiki 中的位置
 
-本文是 [[generative-agents]] / [[social-simulation]] / [[user-simulation]] 方向的代表作,延续了 [[joon-sung-park]]、[[michael-s-bernstein]]、[[percy-liang]] 等 [[stanford-university]] 与 [[google-deepmind]] 团队的研究线。与早期 generative agents 侧重沙盒行为不同,本文聚焦"以个体真人自述接地"以实现可评测的通用个体模拟,并引入"以个体重测一致性归一化"的评测框架。可与 [[llm-agent]]、[[role-playing-agent]]、[[interactive-evaluation]] 等条目互参。
+本文是 [[generative-agents]] / [[social-simulation]] / [[user-simulation]] 方向的代表作,延续了 [[joon-sung-park]]、[[michael-s-bernstein]]、[[percy-liang]] 等 [[stanford-university]] 与 [[google-deepmind]] 团队的研究线。与早期 generative agents 侧重沙盒行为不同,本文聚焦"以个体真人自述接地"以实现可评测的通用个体模拟,并引入"以个体重测一致性归一化"的评测框架。可与 [[llm-agents|llm-agent]]、[[role-playing-agent]]、[[interactive-evaluation]] 等条目互参。

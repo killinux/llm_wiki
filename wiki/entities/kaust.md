@@ -22,7 +22,7 @@ KAUST(King Abdullah University of Science and Technology,阿卜杜拉国王科�
 - [[2023-camel-communicative-agents]]
 - [[role-playing]]
 - [[inception-prompting]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent]]
 - [[social-simulation]]
 - [[abliteration]]

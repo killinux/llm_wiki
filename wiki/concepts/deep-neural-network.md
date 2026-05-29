@@ -20,6 +20,6 @@ sources: 3
 ## 相关
 
 - [[multi-task-learning]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[representation-learning]]
 - [[feature-embedding]]

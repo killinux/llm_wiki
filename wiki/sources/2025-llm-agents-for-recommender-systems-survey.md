@@ -23,11 +23,11 @@ year: 2025
 
 # A Survey on LLM-powered Agents for Recommender Systems
 
-一句话:本文系统综述了把 [[llm-agent]] 引入 [[recommender-system]] 的研究,提出"面向推荐 / 面向交互 / 面向模拟"三大范式,并用 Profile、Memory、Planning、Action 四模块统一架构对现有方法做分解与对比,同时汇总数据集与评测体系。
+一句话:本文系统综述了把 [[llm-agents|llm-agent]] 引入 [[recommender-systems|recommender-system]] 的研究,提出"面向推荐 / 面向交互 / 面向模拟"三大范式,并用 Profile、Memory、Planning、Action 四模块统一架构对现有方法做分解与对比,同时汇总数据集与评测体系。
 
 ## 问题
 
-传统 [[recommender-system]](从 [[matrix-factorization]] 到深度学习方法)虽能基于历史行为做个性化推荐,但有三个固有局限:难以理解超出数值交互的复杂用户意图、缺乏与用户多轮交互探索偏好的能力、推荐结果像"黑盒"缺乏可解释性。[[large-language-models]] 驱动的 [[llm-agent]] 凭借推理、自然语言交互与生成能力,有望同时缓解这三点,并通过预训练知识改善 [[cold-start]]。但该方向尚缺乏统一的分类与架构梳理,本文即为此提供系统综述。
+传统 [[recommender-systems|recommender-system]](从 [[matrix-factorization]] 到深度学习方法)虽能基于历史行为做个性化推荐,但有三个固有局限:难以理解超出数值交互的复杂用户意图、缺乏与用户多轮交互探索偏好的能力、推荐结果像"黑盒"缺乏可解释性。[[large-language-models]] 驱动的 [[llm-agents|llm-agent]] 凭借推理、自然语言交互与生成能力,有望同时缓解这三点,并通过预训练知识改善 [[cold-start]]。但该方向尚缺乏统一的分类与架构梳理,本文即为此提供系统综述。
 
 ## 方法
 
@@ -57,4 +57,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文是连接 [[llm-agent]] 与 [[recommender-system]] 两大主线的综述类 source。它把本 wiki 已有的 [[macrec]]、[[interecagent]]、[[agentcf]]、[[recagent]] 等具体系统,纳入"面向推荐/交互/模拟"三范式与 Profile-Memory-Planning-Action 四模块的统一坐标系,可作为浏览这些 LLM 推荐 agent 工作的总索引;其汇总的 [[movielens]]、[[steam-dataset]]、[[yelp-dataset]] 数据集与 [[ndcg]] 等指标,也对应本 wiki 中的推荐评测条目。
+本文是连接 [[llm-agents|llm-agent]] 与 [[recommender-systems|recommender-system]] 两大主线的综述类 source。它把本 wiki 已有的 [[macrec]]、[[interecagent]]、[[agentcf]]、[[recagent]] 等具体系统,纳入"面向推荐/交互/模拟"三范式与 Profile-Memory-Planning-Action 四模块的统一坐标系,可作为浏览这些 LLM 推荐 agent 工作的总索引;其汇总的 [[movielens]]、[[steam-dataset]]、[[yelp-dataset]] 数据集与 [[ndcg]] 等指标,也对应本 wiki 中的推荐评测条目。

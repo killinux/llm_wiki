@@ -12,7 +12,7 @@ year: 2024
 
 # OpenCity: A Scalable Platform to Simulate Urban Activities with Massive LLM Agents
 
-OpenCity 通过「LLM 请求调度器」+「group-and-distill 提示优化」两层系统级与提示级优化,把大规模城市 [[llm-agent]] 模拟的单 agent 耗时加速约 600 倍,使得 10,000 个 agent 的一天活动可在 1 小时内于普通硬件上完成。
+OpenCity 通过「LLM 请求调度器」+「group-and-distill 提示优化」两层系统级与提示级优化,把大规模城市 [[llm-agents|llm-agent]] 模拟的单 agent 耗时加速约 600 倍,使得 10,000 个 agent 的一天活动可在 1 小时内于普通硬件上完成。
 
 ## 问题
 
@@ -43,4 +43,4 @@ agent 主体采用 [[generative-agents]] 的 perception–planning–reflection 
 
 ## 在本 wiki 中的位置
 
-OpenCity 属于 [[social-simulation]] / [[multi-agent-systems]] 方向,是把 [[generative-agents]]、[[recagent]] 这类 [[llm-agent]] 模拟从十几个 agent 扩展到万级规模的关键基础设施工作。它的贡献偏「系统与提示效率」,与面向推理任务的 [[autogpt]]、[[metagpt]]、[[chatdev]] 等任务型 agent 形成互补;其首次为城市 generative agent 建立的对比 benchmark 也使 [[agent-based-modeling]] 的反事实政策分析成为可能。作者来自 [[tsinghua-university]] 与香港科技大学(广州)。
+OpenCity 属于 [[social-simulation]] / [[multi-agent-systems]] 方向,是把 [[generative-agents]]、[[recagent]] 这类 [[llm-agents|llm-agent]] 模拟从十几个 agent 扩展到万级规模的关键基础设施工作。它的贡献偏「系统与提示效率」,与面向推理任务的 [[autogpt]]、[[metagpt]]、[[chatdev]] 等任务型 agent 形成互补;其首次为城市 generative agent 建立的对比 benchmark 也使 [[agent-based-modeling]] 的反事实政策分析成为可能。作者来自 [[tsinghua-university]] 与香港科技大学(广州)。

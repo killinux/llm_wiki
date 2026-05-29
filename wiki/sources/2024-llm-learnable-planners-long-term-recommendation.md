@@ -70,4 +70,4 @@ Critic 有效性(RQ3, Figure 4):以 1000 条轨迹的蒙特卡洛估计为参照
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] 与 [[recommender-system]] 交叉的代表工作,把 [[reflexion]] 式 [[self-improvement]] 与 [[actor-critic]] 结合用于 [[long-term-recommendation]]。它延续了 [[dorl]]、CIRS 等缓解 filter bubble / [[matthew-effect]] 的交互式推荐线索,又把 [[react]]、[[reflexion]]、ExpeL、AdaPlanner 等 agent 规划范式落到推荐场景。与从零训练的 [[reinforcement-learning]] 方法相比,它展示了 LLM 在稀疏数据上的 [[llm-planning]] 优势,并用 [[experiential-learning]] / [[agent-memory]] 替代梯度更新。作者团队来自 [[university-of-science-and-technology-of-china]] / Meta AI,核心作者包括 [[xiangnan-he]]、[[chongming-gao]]。
+本文是 [[llm-agents|llm-agent]] 与 [[recommender-systems|recommender-system]] 交叉的代表工作,把 [[reflexion]] 式 [[self-improvement]] 与 [[actor-critic]] 结合用于 [[long-term-recommendation]]。它延续了 [[dorl]]、CIRS 等缓解 filter bubble / [[matthew-effect]] 的交互式推荐线索,又把 [[react]]、[[reflexion]]、ExpeL、AdaPlanner 等 agent 规划范式落到推荐场景。与从零训练的 [[reinforcement-learning]] 方法相比,它展示了 LLM 在稀疏数据上的 [[llm-planning]] 优势,并用 [[experiential-learning]] / [[agent-memory]] 替代梯度更新。作者团队来自 [[university-of-science-and-technology-of-china]] / Meta AI,核心作者包括 [[xiangnan-he]]、[[chongming-gao]]。

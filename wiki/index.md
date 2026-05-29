@@ -59,7 +59,7 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[palm]] —— Google 最大 540B 的 dense Transformer 大模型,涌现能力代表
 - [[ple]] —— 区分共享/专属专家、渐进分层缓解负迁移的多任务模型
 - [[pythia]] —— EleutherAI 可复现训练动态研究的开源 LLM 套件
-- [[react-reasoning-and-acting]] —— 交替生成推理轨迹与行动的 LLM 范式(ReAct 实体页)
+- [[react|react-reasoning-and-acting]] —— 交替生成推理轨迹与行动的 LLM 范式(ReAct 实体页)
 - [[recllama]] —— 由 InteRecAgent 蒸馏得到的 7B 推荐 LLM
 - [[recmamba]] —— 基于 Mamba 状态空间模型的终身序列推荐模型
 - [[reflexion]] —— 通过语言化自我反思改进决策、不更新参数的 LLM Agent
@@ -275,7 +275,7 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 <!-- 方法与思想:attention、RLHF、MoE、scaling law、量化…… -->
 ### LLM 智能体与推理
 - [[llm-agents]] —— LLM 智能体枢纽页;分"任务求解+搜索"与"社会模拟"两分支
-- [[llm-agent]] —— 以 LLM 为核心、具推理/规划/记忆/工具能力的智能体
+- [[llm-agents|llm-agent]] —— 以 LLM 为核心、具推理/规划/记忆/工具能力的智能体
 - [[llm-based-agents]] —— 以 LLM 为决策核心、感知环境并行动的智能体
 - [[autonomous-agents]] —— LLM 驱动、最少人工干预下自主规划决策的智能体
 - [[llm-planning]] —— 用 LLM 分解任务、生成与调整行动计划
@@ -426,7 +426,7 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[latent-action-space]] —— 用低维连续表示刻画大动作空间以高效搜索
 - [[gflownet]] —— 学流使采样概率正比奖励的生成式概率模型
 ### 推荐系统
-- [[recommender-system]] —— 据用户兴趣行为个性化筛选推荐内容的系统
+- [[recommender-systems|recommender-system]] —— 据用户兴趣行为个性化筛选推荐内容的系统
 - [[recommender-systems]] —— 建模用户偏好与物品特征个性化推荐
 - [[llm-for-recommendation]] —— 用 LLM 做推荐(标签/对话/agent/重排等)
 - [[collaborative-filtering]] —— 分析用户-物品交互发现相似用户/物品做预测
@@ -580,7 +580,7 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[2023-multi-agent-debate]] —— MAD;多 agent 针锋相对辩论+裁判,缓解 DoT
 - [[2023-multi-task-deep-recommender-systems-survey]] —— MTDRS 综述;任务关系与方法论两维分类
 - [[2023-multi-task-recommendations-with-rl]] —— RMTL;actor-critic 按 session 动态加权多任务损失
-- [[2023-multiagent-debate]] —— 多 LLM 实例多轮辩论提升推理与事实性
+- [[2023-multi-agent-debate|2023-multiagent-debate]] —— 多 LLM 实例多轮辩论提升推理与事实性
 - [[2023-plan-and-solve-prompting]] —— PS/PS+;零样本先计划再执行改进 Zero-shot-CoT
 - [[2023-reasoning-via-planning-rap]] —— RAP;LLM 当推理智能体+世界模型,用 MCTS 规划
 - [[2023-recagent-user-behavior-simulation]] —— RecAgent;LLM-agent 沙盒模拟用户行为研究信息茧房/从众

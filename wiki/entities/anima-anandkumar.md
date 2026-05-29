@@ -20,7 +20,7 @@ Anima Anandkumar 是一位机器学习领域的研究者,在深度学习与具�
 
 - [[2023-voyager]]
 - [[gpt-4]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[embodied-agent]]
 - [[lifelong-learning]]
 - [[reinforcement-learning]]

@@ -16,7 +16,7 @@ year: 2025
 
 ## 问题
 
-[[offline-rl]] 已成为真实世界 [[recommender-system]] 的主流方法,可从历史日志学习策略并捕捉用户偏好。但在 offline RL 中,reward shaping 面临核心难题:offline 静态数据集与动态学习策略之间存在分布失配(distributional mismatch)。这一失配来自两方面:(1)由于 state-action 覆盖不全、策略优化过度保守导致的 world model collapse;(2)推荐多样性不足引发的 [[matthew-effect]]。
+[[offline-rl]] 已成为真实世界 [[recommender-systems|recommender-system]] 的主流方法,可从历史日志学习策略并捕捉用户偏好。但在 offline RL 中,reward shaping 面临核心难题:offline 静态数据集与动态学习策略之间存在分布失配(distributional mismatch)。这一失配来自两方面:(1)由于 state-action 覆盖不全、策略优化过度保守导致的 world model collapse;(2)推荐多样性不足引发的 [[matthew-effect]]。
 
 既有 offline RL 方法(如 [[bcq]]、[[cql]]、[[mopo]])主要通过对未见 state-action 施加保守/悲观估计,往往忽略数据分布内在的交互关系。近期工作(如 [[dorl]]、ROLeR)虽利用 world model 提升 reward 的多样性与不确定性,但仅依赖先验经验来处理 reward shaping。论文指出关键空白:无法**同时**平衡 world model 的内在偏差与策略推荐的多样性。
 
@@ -42,4 +42,4 @@ R3S 基于 A2C(actor-critic)框架,分两阶段:(a)从 offline 日志构建 worl
 
 ## 在本 wiki 中的位置
 
-本文属于 [[rl-based-recsys]] / [[interactive-recommendation]] 方向,直接延续 Kuaishou 系工作 [[dorl]](缓解 offline RL 推荐中的 Matthew Effect)与 ROLeR 的 reward shaping 思路,创新点在于把 [[world-model]] 换成 [[diffusion-model]]([[recommendation-simulator]] 式的 DiffRec)来显式量化 reward 不确定性,并把多样性惩罚扩展为带时间衰减的 interactive penalty。与 [[model-based-rl]]([[mopo]]、[[mbpo]])、[[offline-rl]] 保守估计方法([[cql]]、[[bcq]])形成对照,评测复用 [[easyrl4rec]] 与 [[kuairand]]/[[coat]]/[[yahoo-r3]] 标准基准。作者主要来自 [[kuaishou]] 与电子科技大学(UESTC),通讯作者 [[peng-jiang]]。
+本文属于 [[rl-based-recsys]] / [[interactive-recommendation]] 方向,直接延续 Kuaishou 系工作 [[dorl]](缓解 offline RL 推荐中的 Matthew Effect)与 ROLeR 的 reward shaping 思路,创新点在于把 [[world-model]] 换成 [[diffusion-models|diffusion-model]]([[recommendation-simulator]] 式的 DiffRec)来显式量化 reward 不确定性,并把多样性惩罚扩展为带时间衰减的 interactive penalty。与 [[model-based-rl]]([[mopo]]、[[mbpo]])、[[offline-rl]] 保守估计方法([[cql]]、[[bcq]])形成对照,评测复用 [[easyrl4rec]] 与 [[kuairand]]/[[coat]]/[[yahoo-r3]] 标准基准。作者主要来自 [[kuaishou]] 与电子科技大学(UESTC),通讯作者 [[peng-jiang]]。

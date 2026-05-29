@@ -26,11 +26,11 @@ year: 2024
 
 # Towards Robust Recommendation via Decision Boundary-aware Graph Contrastive Learning (RGCL)
 
-提出 RGCL,用「决策边界感知」的对抗扰动来约束 graph contrastive learning 增强视图的探索空间,在保持语义不变性(rationality)与提升对比难度(hardness)之间取得平衡,从而构建更鲁棒的 [[recommender-system]]。
+提出 RGCL,用「决策边界感知」的对抗扰动来约束 graph contrastive learning 增强视图的探索空间,在保持语义不变性(rationality)与提升对比难度(hardness)之间取得平衡,从而构建更鲁棒的 [[recommender-systems|recommender-system]]。
 
 ## 问题
 
-graph contrastive learning(GCL)近年被广泛用于缓解 [[recommender-system]] 中由 data sparsity 引起的偏差,但现有 GCL 推荐模型存在两类局限:
+graph contrastive learning(GCL)近年被广泛用于缓解 [[recommender-systems|recommender-system]] 中由 data sparsity 引起的偏差,但现有 GCL 推荐模型存在两类局限:
 
 - **Hardness-driven 方法**(如 SGL,用 node dropout / edge dropout 构造困难视图)盲目追求样本难度,可能删掉关键节点或边,破坏 task-specific 语义。
 - **Rationality-driven 方法**(如 SimGCL,仅加入轻微特征扰动)保住了语义结构,但牺牲了引入 hard samples 带来的多样化知识。
@@ -60,4 +60,4 @@ RGCL 以 LightGCN 为 backbone(BPR loss 为推荐主目标),包含三个核心�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / [[collaborative-filtering]] 方向,核心是把 graph contrastive learning 与 adversarial robustness 结合。它与本 wiki 中的 GCL/对比学习推荐脉络相关,backbone 沿用 LightGCN,优化目标基于 BPR;数据集上用到 [[movielens-1m]](MovieLens-1M)与 Kuaishou 平台数据(参见 [[kuairand]]、[[kuairec]] 同源团队的无偏推荐数据集工作)。该工作由 [[renmin-university-of-china]] 与 [[kuaishou]] 合作完成,作者中包含 [[peng-jiang]]。它解决的 data sparsity 与长尾偏差问题,与本 wiki 中 debiasing / [[selection-bias]] / [[matthew-effect]] 等推荐去偏主题形成方法上的补充(此处走的是对抗+对比的自监督路线,而非因果/IPS 路线)。注意:与 LLM 主线关系较弱,属于推荐系统与图表示学习的支线工作。
+本文属于 [[recommender-systems|recommender-system]] / [[collaborative-filtering]] 方向,核心是把 graph contrastive learning 与 adversarial robustness 结合。它与本 wiki 中的 GCL/对比学习推荐脉络相关,backbone 沿用 LightGCN,优化目标基于 BPR;数据集上用到 [[movielens-1m]](MovieLens-1M)与 Kuaishou 平台数据(参见 [[kuairand]]、[[kuairec]] 同源团队的无偏推荐数据集工作)。该工作由 [[renmin-university-of-china]] 与 [[kuaishou]] 合作完成,作者中包含 [[peng-jiang]]。它解决的 data sparsity 与长尾偏差问题,与本 wiki 中 debiasing / [[selection-bias]] / [[matthew-effect]] 等推荐去偏主题形成方法上的补充(此处走的是对抗+对比的自监督路线,而非因果/IPS 路线)。注意:与 LLM 主线关系较弱,属于推荐系统与图表示学习的支线工作。

@@ -18,6 +18,6 @@ Gao Huang 是一位机器学习领域的研究者,参与了关于 LLM Agent 从�
 ## 相关
 
 - [[2023-expel]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[in-context-learning]]
 - [[experiential-learning]]

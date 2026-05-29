@@ -22,7 +22,7 @@ sources: 2
 - [[multi-agent-systems]]
 - [[role-playing]]
 - [[code-generation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[2023-chatdev]]
 - [[2023-autogen]]
 - [[prompt-engineering]]

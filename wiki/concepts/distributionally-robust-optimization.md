@@ -27,4 +27,4 @@ Distributionally Robust Optimization (DRO) 是一类优化方法,它不针对单
 - [[distribution-shift]]
 - [[robust-optimization]]
 - [[debiasing]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

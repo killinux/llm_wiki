@@ -20,7 +20,7 @@ NVIDIA 是一家以 GPU 为核心的半导体公司，同时设有 AI 研究部�
 
 - [[2023-voyager]]
 - [[gpt-4]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[embodied-agent]]
 - [[lifelong-learning]]
 - [[minecraft]]

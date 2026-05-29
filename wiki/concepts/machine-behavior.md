@@ -17,7 +17,7 @@ Machine Behavior(机器行为学)是一种把 AI 系统(尤其是 LLM agent)当�
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-systems]]
 - [[human-ai-interaction]]
 - [[responsible-ai]]

@@ -4,7 +4,7 @@ subtype: lab
 tags: [university, china, llm-agents, nlp, recommendation, autonomous-driving]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 17
+sources: 18
 ---
 
 # Tsinghua University
@@ -30,10 +30,11 @@ Tsinghua University 是位于中国北京的研究型大学,在本 wiki 中作�
 - [[2025-segment-level-user-interest-modeling]]:把短视频拆成时间片段,用混合表示+多模态用户-视频编码器+片段兴趣解码器建模用户沿时间线动态演变的片段级兴趣,用于 video-skip 预测与推荐。
 - [[2025-ai-agent-behavioral-science]]:立场/综述论文,提出 AI Agent Behavioral Science 范式:把 LLM agent 当作行为实体,通过系统观察、干预与理论解释来研究其在个体、多 agent、人-agent 交互三类场景下的行为、适应与 responsible AI。
 - [[2025-perscen-multi-scenario-matching]]:首个将用户个性化建模引入多场景匹配(召回)的两塔方法,用 user-specific 特征图+轻量 GNN、向量量化的场景偏好与渐进式 GLU,在 KuaiRand-Pure 与 Alimama 上以高效率刷新召回性能。
+- [[2601-dsmoe-scenario-adaptive-moe-matching]]:DSMOE 将 MMOE 迁移到多场景推荐召回阶段,用低秩场景自适应投影(SAP)缓解头部场景统治专家,并用 user-item 联合特征 teacher 蒸馏指导双塔 student,在保持检索效率的同时显著提升长尾稀疏场景的召回质量。
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-debate]]
 - [[agentbench]]
 - [[expel]]
@@ -44,8 +45,11 @@ Tsinghua University 是位于中国北京的研究型大学,在本 wiki 中作�
 - [[macrec]]
 - [[multi-agent-recommendation]]
 - [[autonomous-driving]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]
 - [[llm-multi-agent-systems]]
 - [[social-simulation]]
 - [[urban-llm-agents]]
 - [[ai-agent-behavioral-science]]
+- [[mixture-of-experts]]
+- [[multi-scenario-recommendation]]
+- [[knowledge-distillation]]

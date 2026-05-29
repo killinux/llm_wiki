@@ -12,11 +12,11 @@ year: 2025
 
 # A Novel Generative Model with Causality Constraint for Mitigating Biases in Recommender Systems (LCDR)
 
-提出 LCDR:用一个 identifiable VAE([[ivae]])作为因果约束,去对齐标准 [[variational-autoencoder]] 学到的潜在表征,即使代理变量(proxy variable)质量低/有噪声也能有效恢复潜在混杂因子([[deconfounder]]),从而缓解 [[recommender-system]] 中的偏差。
+提出 LCDR:用一个 identifiable VAE([[ivae]])作为因果约束,去对齐标准 [[variational-autoencoder]] 学到的潜在表征,即使代理变量(proxy variable)质量低/有噪声也能有效恢复潜在混杂因子([[deconfounder]]),从而缓解 [[recommender-systems|recommender-system]] 中的偏差。
 
 ## 问题
 
-准确预测反事实的用户反馈([[counterfactual-reasoning]])对构建有效的 [[recommender-system]] 至关重要。但 latent confounding bias(潜在混杂偏差)会遮蔽用户反馈与物品曝光(item exposure)之间真实的因果关系([[causal-inference]]),最终损害推荐性能。传统相关性方法([[matrix-factorization]]、[[fm]]、[[deepfm]]、DCN、DIN、[[lightgcn]] 等)依赖统计相关性,会引入 popularity bias、[[selection-bias]]、conformity bias 等估计偏差。
+准确预测反事实的用户反馈([[counterfactual-reasoning]])对构建有效的 [[recommender-systems|recommender-system]] 至关重要。但 latent confounding bias(潜在混杂偏差)会遮蔽用户反馈与物品曝光(item exposure)之间真实的因果关系([[causal-inference]]),最终损害推荐性能。传统相关性方法([[matrix-factorization]]、[[fm]]、[[deepfm]]、DCN、DIN、[[lightgcn]] 等)依赖统计相关性,会引入 popularity bias、[[selection-bias]]、conformity bias 等估计偏差。
 
 已有的因果去偏方法([[debiasing]]/[[deconfounding]])通常依赖很强、现实中难以满足的假设:
 
@@ -49,4 +49,4 @@ LCDR(Latent Causality Constraints for Debiasing representation learning in Recom
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的 [[causal-inference]] / [[deconfounding]] 去偏分支,核心贡献是用 [[ivae]] 的 [[identifiability]] 作为因果约束来增强标准 [[variational-autoencoder]] 的表征学习,处理低质量 proxy 下的 latent confounder 恢复。它直接对标并改进 [[idcf]](2023-idcf-debiasing-recommendation),与本 wiki 中 [[debiasing]]、[[selection-bias]]、[[inverse-propensity-scoring]]、[[backdoor-adjustment]]、[[doubly-robust]]、[[counterfactual-reasoning]]、[[potential-outcome-framework]] 等节点紧密相连,数据集层面关联 [[coat]]、[[yahoo-r3]]、[[kuairand]]。作者来自 Guangxi University、University of South Australia 与 Guangxi Normal University。
+本文属于 [[recommender-systems|recommender-system]] 的 [[causal-inference]] / [[deconfounding]] 去偏分支,核心贡献是用 [[ivae]] 的 [[identifiability]] 作为因果约束来增强标准 [[variational-autoencoder]] 的表征学习,处理低质量 proxy 下的 latent confounder 恢复。它直接对标并改进 [[idcf]](2023-idcf-debiasing-recommendation),与本 wiki 中 [[debiasing]]、[[selection-bias]]、[[inverse-propensity-scoring]]、[[backdoor-adjustment]]、[[doubly-robust]]、[[counterfactual-reasoning]]、[[potential-outcome-framework]] 等节点紧密相连,数据集层面关联 [[coat]]、[[yahoo-r3]]、[[kuairand]]。作者来自 Guangxi University、University of South Australia 与 Guangxi Normal University。

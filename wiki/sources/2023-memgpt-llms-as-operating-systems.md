@@ -60,6 +60,6 @@ MemGPT 依赖 LLM 的 function calling 能力(类似 [[toolformer]]),并支持 *
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agent]] 长期记忆([[llm-long-term-memory]]、[[agent-memory]])方向的代表性工作,把操作系统的分层内存抽象引入 LLM,与基于检索的 [[retrieval-augmented-generation]] 思路互补:不同于一次性把检索结果塞进上下文,MemGPT 让 agent 通过 [[tool-use]] 函数调用 **自主** 决定读写哪一层存储,并以 function chaining 实现多步检索。
+本文是 [[llm-agents|llm-agent]] 长期记忆([[llm-long-term-memory]]、[[agent-memory]])方向的代表性工作,把操作系统的分层内存抽象引入 LLM,与基于检索的 [[retrieval-augmented-generation]] 思路互补:不同于一次性把检索结果塞进上下文,MemGPT 让 agent 通过 [[tool-use]] 函数调用 **自主** 决定读写哪一层存储,并以 function chaining 实现多步检索。
 
 它与 [[generative-agents]]([[joon-sung-park]] 等的 memory stream / 反思机制,见 [[memory-stream]])、[[memorybank]]、[[reflexion]]([[shunyu-yao]])、[[voyager]] 等记忆/自我改进型 agent 工作可对照阅读;在"LLM 作为可调用工具的规划器"层面与 [[toolformer]]、[[react]] 相关。其针对的固定上下文窗口与 lost-in-the-middle 问题,也连接到长上下文模型与 [[test-time-compute]] 的讨论。作者来自 UC Berkeley([[ion-stoica]]、Joseph E. Gonzalez 等),后续演化为 Letta/MemGPT 开源框架。

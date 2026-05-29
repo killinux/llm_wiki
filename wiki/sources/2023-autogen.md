@@ -47,4 +47,4 @@ AutoGen 的核心是**可对话(conversable)且可定制(customizable)的 agent*
 
 ## 在本 wiki 中的位置
 
-本文是 [[multi-agent-systems]] 与 [[llm-agent]] 方向的代表性框架工作,把 [[agent-orchestration]] 抽象为 agent 间对话,与 [[tool-use]]、[[human-in-the-loop]]、[[code-execution]] 等概念紧密相关。它建立在 [[react]] 等单 agent 推理-行动范式之上,并常与 [[rag]] 检索增强结合使用。作为产品/框架,可与 [[langchain]] 等 LLM 应用开发栈对照阅读;由 [[microsoft-research]] 主导。
+本文是 [[multi-agent-systems]] 与 [[llm-agents|llm-agent]] 方向的代表性框架工作,把 [[agent-orchestration]] 抽象为 agent 间对话,与 [[tool-use]]、[[human-in-the-loop]]、[[code-execution]] 等概念紧密相关。它建立在 [[react]] 等单 agent 推理-行动范式之上,并常与 [[rag]] 检索增强结合使用。作为产品/框架,可与 [[langchain]] 等 LLM 应用开发栈对照阅读;由 [[microsoft-research]] 主导。

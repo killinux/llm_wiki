@@ -51,4 +51,4 @@ LERL((LLM-Enhanced Reinforcement Learning))把推荐分解为两层决策。优�
 
 ## 在本 wiki 中的位置
 
-LERL 处于 [[llm-for-recommendation]] 与 [[rl-based-recsys]] 的交叉点,采用分层 RL((actor-critic)+ [[ppo]])架构,延续 [[long-term-recommendation]] 与 [[filter-bubble]] 缓解线索(如 [[cirs]]、DNaIR)。它的"LLM 高层规划 + RL 低层执行"模式与 [[interecagent]] 等 [[llm-agent]] 推荐工作思路相关,但创新在于用 reflective language-based critic(类 [[reflexion]] 的 [[reflection]] 机制)替代标量奖励来指导高层决策。评测沿用 [[kuaisim]] 模拟器与 [[kuairand]]/[[kuairec]] 数据集,与 [[recommender-system]] 的 RL 评测生态(如 [[easyrl4rec]])一脉相承。
+LERL 处于 [[llm-for-recommendation]] 与 [[rl-based-recsys]] 的交叉点,采用分层 RL((actor-critic)+ [[ppo]])架构,延续 [[long-term-recommendation]] 与 [[filter-bubble]] 缓解线索(如 [[cirs]]、DNaIR)。它的"LLM 高层规划 + RL 低层执行"模式与 [[interecagent]] 等 [[llm-agents|llm-agent]] 推荐工作思路相关,但创新在于用 reflective language-based critic(类 [[reflexion]] 的 [[reflection]] 机制)替代标量奖励来指导高层决策。评测沿用 [[kuaisim]] 模拟器与 [[kuairand]]/[[kuairec]] 数据集,与 [[recommender-systems|recommender-system]] 的 RL 评测生态(如 [[easyrl4rec]])一脉相承。

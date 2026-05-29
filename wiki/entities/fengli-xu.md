@@ -18,5 +18,5 @@ Fengli Xu 是一位研究者,参与提出 "AI Agent Behavioral Science"(AI Agent
 ## 相关
 
 - [[ai-agent-behavioral-science]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[responsible-ai]]

@@ -35,7 +35,7 @@ Multi-Agent Systems 指由多个基于 LLM 的自主智能体(agent)通过相互
 
 - [[role-playing]]
 - [[inception-prompting]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[tool-use]]
 - [[conversation-programming]]
 - [[instruction-tuning]]

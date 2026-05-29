@@ -4,7 +4,7 @@ subtype: method
 tags: [alignment, safety, RLHF, RLAIF, supervision]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 5
 ---
 
 # AI alignment
@@ -17,6 +17,7 @@ AI alignment 指让 AI 系统(尤其是大语言模型)的行为、目标与输�
 - [[2023-lets-verify-step-by-step]]:从监督信号的角度服务于 alignment。OpenAI 比较了过程监督(PRM)与结果监督(ORM),证明在 MATH 多步数学推理上过程监督显著更优(best-of-N 达 78.2%),并开源步骤级标注数据集 PRM800K。过程监督因奖励可解释、可定位错误步骤,被视为更利于对齐与可信推理的训练方式。
 - [[2024-generative-ai-as-economic-agents]]:立场/理论论文,主张把生成式 AI 本身建模为有独立信息与(可能错位的)偏好的经济主体,并给出一个把 AI agent 嵌入博弈的形式化框架。
 - [[2024-mitigating-false-refusal-single-vector-ablation]]:提出 training-free、零推理开销的方法,通过正交化并消融单个 false refusal vector 来缓解 LLM 的过度拒绝,同时保持安全性与通用能力。
+- [[2025-multi-agent-llm-value-diversity]]:通过 Schwartz 价值观给 LLM 智能体注入价值多样性的多智能体社会模拟,发现价值多样性提升集体行为的价值稳定性、涌现与自发规则创造,但极端异质带来边际递减与不稳定。
 
 ## 相关
 
@@ -28,3 +29,5 @@ AI alignment 指让 AI 系统(尤其是大语言模型)的行为、目标与输�
 - [[process-supervision]]
 - [[scalable-oversight]]
 - [[helpfulness-and-harmlessness]]
+- [[human-values]]
+- [[multi-agent-systems]]

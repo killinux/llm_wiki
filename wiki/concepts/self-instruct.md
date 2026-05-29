@@ -19,4 +19,4 @@ Self-instruct 是一种让语言模型利用自身生成的指令-输入-输出�
 
 - [[instruction-tuning]]
 - [[knowledge-distillation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

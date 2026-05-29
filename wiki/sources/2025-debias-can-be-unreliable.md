@@ -44,4 +44,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system|推荐系统]] 中 [[debiasing|去偏]] 方向的**评估方法学**工作,与 [[off-policy-evaluation|off-policy 评估]]、[[selection-bias|选择偏差]]、[[exposure-bias|曝光偏差]] 相关。它质疑了用 [[yahoo-r3|Yahoo!R3]] 等随机曝光数据评估去偏模型的传统范式,并依赖 [[kuairec|KuaiRec]] 这一全曝光数据集作为 gold standard。所评估的方法 [[inverse-propensity-scoring|IPS]]、[[doubly-robust|DR]]、[[autodebias|AutoDebias]] 是去偏推荐的代表性基线。作者团队来自 [[university-of-science-and-technology-of-china|USTC]] 与 [[national-university-of-singapore|NUS]]。
+本文属于 [[recommender-systems|推荐系统]] 中 [[debiasing|去偏]] 方向的**评估方法学**工作,与 [[off-policy-evaluation|off-policy 评估]]、[[selection-bias|选择偏差]]、[[exposure-bias|曝光偏差]] 相关。它质疑了用 [[yahoo-r3|Yahoo!R3]] 等随机曝光数据评估去偏模型的传统范式,并依赖 [[kuairec|KuaiRec]] 这一全曝光数据集作为 gold standard。所评估的方法 [[inverse-propensity-scoring|IPS]]、[[doubly-robust|DR]]、[[autodebias|AutoDebias]] 是去偏推荐的代表性基线。作者团队来自 [[university-of-science-and-technology-of-china|USTC]] 与 [[national-university-of-singapore|NUS]]。

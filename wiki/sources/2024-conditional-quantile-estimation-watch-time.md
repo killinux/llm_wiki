@@ -61,6 +61,6 @@ CQE 还能与现有 [[duration-bias]] 去偏方法(如 [[d2q]]、[[d2co]]、[[wt
 
 ## 在本 wiki 中的位置
 
-本文是 [[kuaishou]] 出品的短视频 [[recommender-system]] 工作,聚焦 [[watch-time]] 预测,与本 wiki 中一系列 watch-time 去偏研究紧密相关:它对比并可叠加 [[d2q]](backdoor adjustment 去 [[duration-bias]])、[[d2co]](去偏去噪)、[[wtg]](Watch Time Gain)等方法,并复用 [[kuairand]]、[[kuairec]]、[[wechat-channels-dataset]] 等数据集与 [[deepfm]]、[[autoint]] 等 backbone。
+本文是 [[kuaishou]] 出品的短视频 [[recommender-systems|recommender-system]] 工作,聚焦 [[watch-time]] 预测,与本 wiki 中一系列 watch-time 去偏研究紧密相关:它对比并可叠加 [[d2q]](backdoor adjustment 去 [[duration-bias]])、[[d2co]](去偏去噪)、[[wtg]](Watch Time Gain)等方法,并复用 [[kuairand]]、[[kuairec]]、[[wechat-channels-dataset]] 等数据集与 [[deepfm]]、[[autoint]] 等 backbone。
 
 值得注意的方法学桥接:CQE 用的 [[quantile-regression]] 与 pinball loss,正是分布式 [[reinforcement-learning]](distributional RL)以及 LLM [[rlhf]] 中分布式 [[reward-model]](论文引用了 Dorka 2024 的 quantile regression for distributional reward models in RLHF)所共享的工具——把"预测一个标量"升级为"预测整个分布",从而显式建模不确定性。这条线索把推荐系统的观看时长建模与 LLM 对齐中的奖励建模联系起来。

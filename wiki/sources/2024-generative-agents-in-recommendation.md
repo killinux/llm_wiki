@@ -16,7 +16,7 @@ Agent4Rec 用 1000 个由 LLM 驱动的 [[generative-agents]] 构建电影推荐
 
 ## 问题
 
-[[recommender-system]] 的离线指标与线上表现之间存在显著鸿沟,这阻碍了学术成果落地与算法迭代。理想方案是一个可配置的仿真平台,忠实捕捉用户意图并编码人类认知机制,用于数据收集、推荐评估与算法开发。近期 [[large-language-models]] 与 [[generative-agents]] 的进展为构建这类**推荐模拟器**提供了基础,但要让模拟器忠实反映个性化用户偏好并非易事。核心研究问题(RQ1):LLM 驱动的生成式 agent 能在多大程度上真正模拟推荐系统中真实、独立人类的行为?
+[[recommender-systems|recommender-system]] 的离线指标与线上表现之间存在显著鸿沟,这阻碍了学术成果落地与算法迭代。理想方案是一个可配置的仿真平台,忠实捕捉用户意图并编码人类认知机制,用于数据收集、推荐评估与算法开发。近期 [[large-language-models]] 与 [[generative-agents]] 的进展为构建这类**推荐模拟器**提供了基础,但要让模拟器忠实反映个性化用户偏好并非易事。核心研究问题(RQ1):LLM 驱动的生成式 agent 能在多大程度上真正模拟推荐系统中真实、独立人类的行为?
 
 ## 方法
 
@@ -47,4 +47,4 @@ Agent4Rec 是基于 [[langchain]] 搭建、所有 agent 由 [[chatgpt]] 的 [[gp
 
 ## 在本 wiki 中的位置
 
-本文属于 [[generative-agents]] 与 [[recommender-system]] 的交叉,是"基于 LLM agent 的 [[user-simulation]] / 推荐模拟器"代表工作,与 [[recagent]]、[[recsim]] 等模拟器相关。其 agent 设计沿用 Park 等 [[generative-agents]] 的 profile/memory/action 思路,并引入情绪驱动的 [[self-reflection]]。其对 [[matthew-effect]] / popularity bias、filter bubble 与 [[causal-discovery]] 的探讨,可与本 wiki 中推荐去偏、[[causal-inference]] 相关条目互相参照。
+本文属于 [[generative-agents]] 与 [[recommender-systems|recommender-system]] 的交叉,是"基于 LLM agent 的 [[user-simulation]] / 推荐模拟器"代表工作,与 [[recagent]]、[[recsim]] 等模拟器相关。其 agent 设计沿用 Park 等 [[generative-agents]] 的 profile/memory/action 思路,并引入情绪驱动的 [[self-reflection]]。其对 [[matthew-effect]] / popularity bias、filter bubble 与 [[causal-discovery]] 的探讨,可与本 wiki 中推荐去偏、[[causal-inference]] 相关条目互相参照。

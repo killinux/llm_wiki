@@ -28,7 +28,7 @@ year: 2026
 
 ## 问题
 
-电商用户在搜索初期对自身偏好往往不确定,初始 query 经常模糊、不完整或弱约束(如只给出预算、模糊的品质/风格描述)。[[agentic-ai]] 式 [[recommender-system]] 被期待主动追问澄清问题并代用户行动,但现有系统存在两个失败模式:(1) 过度追问导致 question fatigue / 交互负担过大;(2) 过早把模糊意图收敛到狭窄解释,提前坍缩搜索空间、排除可行选项。同时,现有系统多把 preference elicitation、ranking、result presentation 当作独立模块,无法一致地推理不确定性在整条推荐管线中的传播。
+电商用户在搜索初期对自身偏好往往不确定,初始 query 经常模糊、不完整或弱约束(如只给出预算、模糊的品质/风格描述)。[[agentic-ai]] 式 [[recommender-systems|recommender-system]] 被期待主动追问澄清问题并代用户行动,但现有系统存在两个失败模式:(1) 过度追问导致 question fatigue / 交互负担过大;(2) 过早把模糊意图收敛到狭窄解释,提前坍缩搜索空间、排除可行选项。同时,现有系统多把 preference elicitation、ranking、result presentation 当作独立模块,无法一致地推理不确定性在整条推荐管线中的传播。
 
 ## 方法
 
@@ -57,4 +57,4 @@ IDSS 是一个对话式推荐框架,采用 information-theoretic 视角,用熵�
 
 ## 在本 wiki 中的位置
 
-这是一篇把 [[large-language-models|LLM]] 驱动的 [[conversational-recommendation|对话式推荐]]/[[interactive-recommendation|交互式推荐]] 与信息论(Shannon 熵)结合的工作,核心贡献在用熵统一 [[preference-elicitation|偏好询问]]、ranking 与 [[recommendation-diversity|推荐多样化]]。与 [[interecagent|InteRecAgent]]、[[recmind|RecMind]] 等 [[llm-agent|LLM agent]] 推荐工作同属"把 LLM 当 agent 做交互推荐"的脉络,但强调可审计的结构化管线(query → SQL filter → embedding 排序 → reranking)。多样化部分扩展了经典 [[maximal-marginal-relevance|MMR]] 与 diversity-aware reranking([[recommendation-diversity]]),把多样化直接绑定到未解析偏好的残余不确定性。评估方法学连接 review-driven [[user-simulation|用户模拟]] 与 LLM judge,可与 [[recsim|RecSim]]、[[kuaisim|KuaiSim]]、SUBER 等 [[recommendation-simulator|推荐模拟器]] 及 LLM-based 用户模拟([[llm-for-recommendation]])对照阅读。
+这是一篇把 [[large-language-models|LLM]] 驱动的 [[conversational-recommendation|对话式推荐]]/[[interactive-recommendation|交互式推荐]] 与信息论(Shannon 熵)结合的工作,核心贡献在用熵统一 [[preference-elicitation|偏好询问]]、ranking 与 [[recommendation-diversity|推荐多样化]]。与 [[interecagent|InteRecAgent]]、[[recmind|RecMind]] 等 [[llm-agents|LLM agent]] 推荐工作同属"把 LLM 当 agent 做交互推荐"的脉络,但强调可审计的结构化管线(query → SQL filter → embedding 排序 → reranking)。多样化部分扩展了经典 [[maximal-marginal-relevance|MMR]] 与 diversity-aware reranking([[recommendation-diversity]]),把多样化直接绑定到未解析偏好的残余不确定性。评估方法学连接 review-driven [[user-simulation|用户模拟]] 与 LLM judge,可与 [[recsim|RecSim]]、[[kuaisim|KuaiSim]]、SUBER 等 [[recommendation-simulator|推荐模拟器]] 及 LLM-based 用户模拟([[llm-for-recommendation]])对照阅读。

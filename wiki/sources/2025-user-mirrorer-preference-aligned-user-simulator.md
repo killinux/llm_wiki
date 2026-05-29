@@ -27,7 +27,7 @@ USERMIRRORER 是一个利用推荐系统 (RS) 中真实用户反馈来微调轻�
 
 ## 问题
 
-[[user-simulation]] 对开发与评估 [[recommender-system]] 越来越重要。传统模拟器多为基于规则或 [[reinforcement-learning]] 的方法,只关注系统内偏好,忽略外部上下文与决策推理。基于 [[large-language-models]] 的模拟器有两大缺陷:(1) 过度依赖预训练知识而不在海量用户反馈上微调,导致任务适配差;(2) 依赖强大 LLM 后端,大规模模拟成本过高。
+[[user-simulation]] 对开发与评估 [[recommender-systems|recommender-system]] 越来越重要。传统模拟器多为基于规则或 [[reinforcement-learning]] 的方法,只关注系统内偏好,忽略外部上下文与决策推理。基于 [[large-language-models]] 的模拟器有两大缺陷:(1) 过度依赖预训练知识而不在海量用户反馈上微调,导致任务适配差;(2) 依赖强大 LLM 后端,大规模模拟成本过高。
 
 RS 中的原始用户反馈本身是一种被忽视的对齐资源,但难以利用,因为它具有两个特性:
 

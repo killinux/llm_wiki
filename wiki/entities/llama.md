@@ -4,7 +4,7 @@ subtype: model
 tags: [model, llm, open-source, foundation-model]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 10
 ---
 
 # LLaMA
@@ -21,6 +21,8 @@ LLaMA 是 Meta 推出的一系列开放权重大语言模型(Large Language Mode
 - [[2023-drivemlm-autonomous-driving]]:DriveMLM 通过将多模态 LLM 的语言决策与模块化 AD 系统的行为规划状态对齐,在 CARLA 仿真器实现闭环自动驾驶,Town05 Long 上 DS 达 76.1,优于 Apollo 4.7 点。
 - [[2024-tree-search-for-language-model-agents]]:为 LLM web agent 提出 inference-time best-first tree search,在真实 web 环境中显式做探索与多步规划,把 GPT-4o 在 VisualWebArena 上成功率相对提升 39.7% 至 SOTA 26.4%,并展示 test-time compute scaling 的收益。
 - [[2024-large-recommendation-models-scaling]]:华为诺亚与 USTC 的工作,系统评估 large recommendation models 的 scaling law,以生成式推荐模型 HSTU 为代表,在多 backbone、复杂用户行为与 ranking 任务上验证可扩展性及其来源组件。
+- [[2025-fuxi-gamma-efficient-sequential-recommendation]]:decoder-only 生成式序列推荐框架,用受 Ebbinghaus 遗忘曲线启发的指数幂时间编码器与对角稀疏位置剪枝,在 SOTA 推荐质量下把训练加速最多 4.74×、推理 6.18×。
+- [[2026-tooltree-tool-planning]]:免训练的 MCTS 工具规划框架,用执行前/执行后双反馈引导搜索并双向剪枝,在固定预算下提升 LLM 智能体多工具规划的准确率与效率(GTA 66.95 AVG,ToolBench 69.04 AVG)。
 
 ## 相关
 
@@ -34,3 +36,5 @@ LLaMA 是 Meta 推出的一系列开放权重大语言模型(Large Language Mode
 - [[drivemlm]]
 - [[chain-of-verification]]
 - [[gpt-4]]
+- [[sequential-recommendation]]
+- [[tool-planning]]

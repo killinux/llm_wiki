@@ -32,7 +32,7 @@ AgentCF++ 通过双层记忆架构 + 两步融合机制 + 兴趣组共享记忆,
 
 ## 问题
 
-[[llm-for-recommendation]] 中,[[user-simulation]](用 LLM 模拟用户交互行为)被视为以隐私保护方式理解用户偏好、改进 [[recommender-system]] 的有前景方向。但现实中用户交互常具有跨域(cross-domain)特征,且个体行为常受他人交互的影响(即流行度因素 / popularity factors)。
+[[llm-for-recommendation]] 中,[[user-simulation]](用 LLM 模拟用户交互行为)被视为以隐私保护方式理解用户偏好、改进 [[recommender-systems|recommender-system]] 的有前景方向。但现实中用户交互常具有跨域(cross-domain)特征,且个体行为常受他人交互的影响(即流行度因素 / popularity factors)。
 
 作者指出 [[agentcf]] 这一将用户与物品都建模为 agent、用协同过滤式 [[agent-memory]] 传播的方法存在两个局限:
 
@@ -61,4 +61,4 @@ AgentCF++ 沿用 AgentCF 的"用户 agent + 物品 agent + 反思更新"范式,�
 
 ## 在本 wiki 中的位置
 
-本文是 [[agentcf]] 的直接增强版,属于"用 [[llm-based-agents]] 做 [[user-simulation]] 以服务 [[recommender-system]]"这一线索,与 [[recagent]]、[[agent4rec]]、[[lusifer]] 等用户行为模拟工作相关。其核心贡献围绕 [[agent-memory]] 设计([[llm-long-term-memory]] 在推荐场景的具体化)与 [[cross-domain-recommendation]]。在对待流行度的立场上,它与 [[debiasing]] / [[popularity-bias]] 方向形成对照:不消除而显式建模流行度因素。作者来自 [[microsoft-research-asia]] 与复旦大学,合作者包括 [[dongsheng-li]]、[[tun-lu]] 等。
+本文是 [[agentcf]] 的直接增强版,属于"用 [[llm-based-agents]] 做 [[user-simulation]] 以服务 [[recommender-systems|recommender-system]]"这一线索,与 [[recagent]]、[[agent4rec]]、[[lusifer]] 等用户行为模拟工作相关。其核心贡献围绕 [[agent-memory]] 设计([[llm-long-term-memory]] 在推荐场景的具体化)与 [[cross-domain-recommendation]]。在对待流行度的立场上,它与 [[debiasing]] / [[popularity-bias]] 方向形成对照:不消除而显式建模流行度因素。作者来自 [[microsoft-research-asia]] 与复旦大学,合作者包括 [[dongsheng-li]]、[[tun-lu]] 等。

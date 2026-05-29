@@ -26,7 +26,7 @@ CS3(Capability Synergy)是 [[kuaishou]] 提出的通用框架,通过 Cycle-Adapt
 
 ## 问题
 
-在多阶段 [[recommender-system]] 中,早期 [[candidate-generation]] 阶段普遍采用轻量级 [[two-tower]] 模型(如 [[dssm]])以平衡效果与效率:用户塔、物品塔分别编码,用点积/余弦相似度计算相关性,物品向量可预计算缓存并用 [[faiss]] 高效检索。但这种解耦的双塔结构带来三类固有局限:
+在多阶段 [[recommender-systems|recommender-system]] 中,早期 [[candidate-generation]] 阶段普遍采用轻量级 [[two-tower]] 模型(如 [[dssm]])以平衡效果与效率:用户塔、物品塔分别编码,用点积/余弦相似度计算相关性,物品向量可预计算缓存并用 [[faiss]] 高效检索。但这种解耦的双塔结构带来三类固有局限:
 
 1. **Model Capacity(模型容量)**:每塔独立的简单结构限制表征能力,约束了对复杂用户-物品关系的建模。
 2. **Representation Alignment(表征对齐)**:双塔在相似度计算前缺乏跨塔交互,仅靠最终 loss 难以对齐用户与物品的表征空间,在海量用户/物品和在线学习不断产生新数据的场景下尤为困难。
@@ -65,4 +65,4 @@ CS3 兼容多种双塔结构,核心是让每塔"感知"三类信息源。包含�
 
 ## 在本 wiki 中的位置
 
-本文属于工业级 [[recommender-system]] 中 [[candidate-generation]] / 召回阶段的 [[two-tower]] 模型优化脉络,与 [[dssm]]、[[learning-to-rank]]、[[matthew-effect]] 等召回排序议题相关。其用 [[knowledge-distillation]] 思路从 cascade 排序模型迁移能力的做法,以及借鉴 [[diffusion-models]] 去噪与 EMA([[temporal-difference]] 式更新)的技巧,可与 [[kuaishou]] 的其他推荐工作([[kuairand]]、[[recflow]] 等)以及 [[faiss]] 检索基础设施对照阅读。
+本文属于工业级 [[recommender-systems|recommender-system]] 中 [[candidate-generation]] / 召回阶段的 [[two-tower]] 模型优化脉络,与 [[dssm]]、[[learning-to-rank]]、[[matthew-effect]] 等召回排序议题相关。其用 [[knowledge-distillation]] 思路从 cascade 排序模型迁移能力的做法,以及借鉴 [[diffusion-models]] 去噪与 EMA([[temporal-difference]] 式更新)的技巧,可与 [[kuaishou]] 的其他推荐工作([[kuairand]]、[[recflow]] 等)以及 [[faiss]] 检索基础设施对照阅读。

@@ -23,7 +23,7 @@ Factorization Machines (FM) 是一类通用的监督学习模型,通过将特征
 ## 相关
 
 - [[neural-factorization-machine]]:FM 的神经网络扩展,本 wiki 中作为 NFM 骨干被使用。
-- [[recommender-system]]:FM 的主要应用领域。
+- [[recommender-systems|recommender-system]]:FM 的主要应用领域。
 - [[collaborative-filtering]]:FM 可视为对协同过滤的特征化推广。
 - [[ctr-prediction]]:FM 常用于点击率预测等稀疏特征交互场景。
 - [[feature-interaction]]:FM 的核心建模对象。

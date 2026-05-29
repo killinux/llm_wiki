@@ -15,7 +15,7 @@ year: 2025
 
 ## 问题
 
-[[recommender-system]] 在个性化的同时会传播 irrelevant、unwanted 乃至 harmful 的内容,助长 misinformation、radicalization 与 [[filter-bubble]],侵蚀用户信任。平台虽提供 YouTube 的 "Not Interested"、Kuaishou 的 "Don't recommend"/"Report" 等反馈机制,但这些机制效果有限、对用户反馈反应迟缓,且缺乏对系统"风险"的精确、透明、用户可控的保证。
+[[recommender-systems|recommender-system]] 在个性化的同时会传播 irrelevant、unwanted 乃至 harmful 的内容,助长 misinformation、radicalization 与 [[filter-bubble]],侵蚀用户信任。平台虽提供 YouTube 的 "Not Interested"、Kuaishou 的 "Don't recommend"/"Report" 等反馈机制,但这些机制效果有限、对用户反馈反应迟缓,且缺乏对系统"风险"的精确、透明、用户可控的保证。
 
 作者先在 [[kuaishou]] 短视频平台的 [[kuairand]] 数据集上做实证分析,得到三点关键洞见:
 
@@ -48,4 +48,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文把 [[conformal-risk-control]] 这一 distribution-free 的统计工具引入 [[recommender-system]] 的内容安全治理,与 wiki 中关注 [[debiasing]]、[[filter-bubble]]、[[recommendation-diversity]] 等推荐负面外部性的工作相承接;它使用的 [[kuairand]]/[[kuaishou]] 数据与 [[watch-time]]、negative feedback 信号,与本 wiki 多篇 RL/causal recsys 论文共享同一实证基础。与那些靠重训练 ranker 或学策略来缓解不良内容的方法不同,本文走 post-hoc、model-agnostic、带可证明保证的路线,属于推荐系统 [[ai-safety]] 与 trustworthy recommendation 方向。
+本文把 [[conformal-risk-control]] 这一 distribution-free 的统计工具引入 [[recommender-systems|recommender-system]] 的内容安全治理,与 wiki 中关注 [[debiasing]]、[[filter-bubble]]、[[recommendation-diversity]] 等推荐负面外部性的工作相承接;它使用的 [[kuairand]]/[[kuaishou]] 数据与 [[watch-time]]、negative feedback 信号,与本 wiki 多篇 RL/causal recsys 论文共享同一实证基础。与那些靠重训练 ranker 或学策略来缓解不良内容的方法不同,本文走 post-hoc、model-agnostic、带可证明保证的路线,属于推荐系统 [[ai-safety]] 与 trustworthy recommendation 方向。

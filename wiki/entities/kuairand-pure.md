@@ -4,7 +4,7 @@ subtype: dataset
 tags: [recommendation, dataset, debiasing, doubly-robust]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 6
+sources: 7
 ---
 
 # KuaiRand-Pure
@@ -19,6 +19,7 @@ KuaiRand-Pure 是用于推荐系统去偏研究的公开数据集,其中包含�
 - [[2025-multi-objective-controllable-decision-transformer]]:提出 MocDT,一种基于 Decision Transformer 的离线 RL 推荐方法,把未来多目标作为控制信号,在推理阶段自回归生成对齐指定目标(累积评分与多样性)的物品序列,无需重训。
 - [[2025-perscen-multi-scenario-matching]]:首个将用户个性化建模引入多场景匹配(召回)的两塔方法,用 user-specific 特征图+轻量 GNN、向量量化的场景偏好与渐进式 GLU,在 KuaiRand-Pure 与 Alimama 上以高效率刷新召回性能。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
+- [[2025-no-one-left-behind-asymmetric-multi-label-cvr]]:KAML 框架针对广告主只上报部分转化行为导致的非对称多标签数据,用归因掩码 ADM、层级知识抽取 HKE 与排序标签利用 RLU 改进 MMoE 基座,工业数据与线上 A/B(RPM +12.11%、CVR +0.92%)均超越现有 MTL 基线的 CVR 预测方法。
 
 ## 相关
 
@@ -31,3 +32,6 @@ KuaiRand-Pure 是用于推荐系统去偏研究的公开数据集,其中包含�
 - [[offline-reinforcement-learning]]
 - [[causal-discovery]]
 - [[alimama-dataset]]
+- [[cvr-prediction]]
+- [[multi-task-learning]]
+- [[mmoe]]

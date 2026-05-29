@@ -25,7 +25,7 @@ IViDR 是一种推荐系统去偏方法,联合使用 [[inverse-propensity-score|
 
 ## 问题
 
-[[recommender-system]] 普遍受到 [[confounding-bias]] 的困扰,尤其是当存在影响 item 与 user feedback 两侧的 [[deconfounder|潜在混淆变量(latent confounder)]] 时。已有的 [[debiasing]] 方法大多只处理单一类型的潜在混淆:
+[[recommender-systems|recommender-system]] 普遍受到 [[confounding-bias]] 的困扰,尤其是当存在影响 item 与 user feedback 两侧的 [[deconfounder|潜在混淆变量(latent confounder)]] 时。已有的 [[debiasing]] 方法大多只处理单一类型的潜在混淆:
 
 - [[deconfounder|Deconfounder]]、HCR、[[iDCF]] 等方法依赖历史数据近似潜在混淆,或借助 [[proximal-causal-inference|proximal causal inference]] 进行 [[identifiability|可识别]] 估计;但当某些潜在混淆缺乏可靠的 proxy variable(代理变量)时,这类方法难以直接从交互数据推断它们。iDCF 主要聚焦于**有 proxy variable 的潜在混淆(论文记为 C)**。
 - [[inverse-propensity-score|IV4Rec / IV4Rec+]] 利用预定义工具变量分解输入向量,处理 item 与 user feedback 之间的潜在混淆;但它们直接修改输入向量、缺乏 [[identifiability|identification guarantee]],且忽视了 item exposure 与 user feedback 之间的潜在混淆(论文记为 **B**)。
@@ -58,4 +58,4 @@ IViDR 是一种推荐系统去偏方法,联合使用 [[inverse-propensity-score|
 
 ## 在本 wiki 中的位置
 
-本文属于**因果推荐 / 推荐去偏**方向,把 [[causal-inference]] 中的 [[inverse-propensity-score|工具变量]] 与 [[ivae|可识别 VAE]] 结合用于 [[recommender-system]] 去偏。它直接延续并对比 [[iDCF]](proxy-based [[proximal-causal-inference]])与 IV4Rec 系列([[inverse-propensity-score]] 分解),其创新点是**同时**处理两类 [[deconfounder|潜在混淆]]。相关概念可参见 [[confounding-bias]]、[[selection-bias]]、[[debiasing]]、[[identifiability]]、[[potential-outcome-framework]]、[[matrix-factorization]]。
+本文属于**因果推荐 / 推荐去偏**方向,把 [[causal-inference]] 中的 [[inverse-propensity-score|工具变量]] 与 [[ivae|可识别 VAE]] 结合用于 [[recommender-systems|recommender-system]] 去偏。它直接延续并对比 [[iDCF]](proxy-based [[proximal-causal-inference]])与 IV4Rec 系列([[inverse-propensity-score]] 分解),其创新点是**同时**处理两类 [[deconfounder|潜在混淆]]。相关概念可参见 [[confounding-bias]]、[[selection-bias]]、[[debiasing]]、[[identifiability]]、[[potential-outcome-framework]]、[[matrix-factorization]]。

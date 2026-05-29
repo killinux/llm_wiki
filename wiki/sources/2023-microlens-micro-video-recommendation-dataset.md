@@ -16,7 +16,7 @@ year: 2023
 
 ## 问题
 
-微视频(short-form video)推荐对娱乐、广告、电商意义重大,但缺乏**大规模公开微视频数据集**严重制约了 [[recommender-system]] 的研究。现有视频推荐数据集存在两类局限:
+微视频(short-form video)推荐对娱乐、广告、电商意义重大,但缺乏**大规模公开微视频数据集**严重制约了 [[recommender-systems|recommender-system]] 的研究。现有视频推荐数据集存在两类局限:
 
 - [[movielens]] 等主要面向较长的电影类视频,内容类别窄,且数据来自模拟评分网站,不能真实反映观看行为。
 - [[kuairec]]、Tenrec、KuaiRand 等只提供 video ID 或从缩略图预提取的视觉特征,无法支持模型**直接从原始视频内容**学习物品表征。
@@ -45,4 +45,4 @@ year: 2023
 
 ## 在本 wiki 中的位置
 
-这是 [[recommender-system]] 主题下的**大规模多模态数据集 / benchmark**资源,定位与 [[movielens]]、[[kuairec]]、[[amazon-reviews]] 等推荐数据集同类,但首创提供原始视频内容、支持端到端内容驱动推荐。它与 [[sequential-recommendation]] 方法(尤其 [[sasrec]])直接相关,可作为评测序列与多模态推荐模型的测试床,衔接 recommender system 与视频理解两个社区。
+这是 [[recommender-systems|recommender-system]] 主题下的**大规模多模态数据集 / benchmark**资源,定位与 [[movielens]]、[[kuairec]]、[[amazon-reviews]] 等推荐数据集同类,但首创提供原始视频内容、支持端到端内容驱动推荐。它与 [[sequential-recommendation]] 方法(尤其 [[sasrec]])直接相关,可作为评测序列与多模态推荐模型的测试床,衔接 recommender system 与视频理解两个社区。

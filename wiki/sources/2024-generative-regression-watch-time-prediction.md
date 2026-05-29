@@ -57,4 +57,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于[[recommender-system|推荐系统]]中 [[watch-time|watch time 预测]]方向,是把生成式/序列建模思想引入回归任务的代表作。它直接对话并改进既有 ordinal regression 路线 [[cread|CREAD]]、TPM,以及 debiasing 路线 [[duration-bias|duration bias]] 相关工作;方法上借鉴了 [[transformer|Transformer]] 自回归语言建模与 [[curriculum-learning]],并把 [[exposure-bias]] 缓解(teacher forcing / scheduled sampling 思路)迁移到推荐场景。其通用回归范式还连接到 [[ctr|CTR/转化预测]] 与 LTV 预测等任务。
+本文属于[[recommender-systems|推荐系统]]中 [[watch-time|watch time 预测]]方向,是把生成式/序列建模思想引入回归任务的代表作。它直接对话并改进既有 ordinal regression 路线 [[cread|CREAD]]、TPM,以及 debiasing 路线 [[duration-bias|duration bias]] 相关工作;方法上借鉴了 [[transformer|Transformer]] 自回归语言建模与 [[curriculum-learning]],并把 [[exposure-bias]] 缓解(teacher forcing / scheduled sampling 思路)迁移到推荐场景。其通用回归范式还连接到 [[ctr|CTR/转化预测]] 与 LTV 预测等任务。

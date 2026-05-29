@@ -27,7 +27,7 @@ updated: 2026-05-29
 
 ## 问题
 
-工业级 [[recommender-system]] 需要优化多种用户反馈(click、like、share、watch time 等)。典型系统分两步:[[multi-task-learning]](MTL)模块预测各类反馈的概率(如 [[ctr]]、like rate),再由 **多任务融合(Multi-Task Fusion, MTF)** 模块把这些预测融合成单一排序分。MTF 直接决定推荐结果,对用户满意度至关重要。
+工业级 [[recommender-systems|recommender-system]] 需要优化多种用户反馈(click、like、share、watch time 等)。典型系统分两步:[[multi-task-learning]](MTL)模块预测各类反馈的概率(如 [[ctr]]、like rate),再由 **多任务融合(Multi-Task Fusion, MTF)** 模块把这些预测融合成单一排序分。MTF 直接决定推荐结果,对用户满意度至关重要。
 
 近年来用 [[reinforcement-learning]] 做 MTF 成为热点:把用户视作环境、推荐系统视作 agent、融合权重视作 RL 的 action,以优化 [[watch-time]] / retention 等长期回报。但**现有 RL-based MTF 全是「公式化」(formula-based)方法**:先人为定义一个融合公式 $f(o_1,\dots,o_K; a_1,\dots,a_K)$,RL 只优化其中少数系数 $a_k$。这带来两个缺陷:
 
@@ -54,7 +54,7 @@ updated: 2026-05-29
 
 ## 在本 wiki 中的位置
 
-本文位于 [[recommender-system]] 的「[[multi-task-learning]] → 多任务融合」环节,与 [[rl-based-recsys]] / [[long-term-recommendation]] 强相关:
+本文位于 [[recommender-systems|recommender-system]] 的「[[multi-task-learning]] → 多任务融合」环节,与 [[rl-based-recsys]] / [[long-term-recommendation]] 强相关:
 
 - 它把 MTF 从「公式 + 调系数」推进到「学习任意单调融合函数」,与同组的 UNEX-RL、BatchRL-MTF、TSCAC 等公式化 RL MTF 工作形成对照,基线还包括 [[cem]]、[[td3]]。
 - 训练上结合 [[actor-critic]]([[ddpg]]/[[td3]]/[[sac]] 同族)与监督 [[bpr]] 知识迁移,问题建模为 [[markov-decision-process]],以 [[watch-time]] 为长期回报,呼应 wiki 中以 [[reinforcement-learning]] 优化 [[user-retention]]/长期目标的一类推荐工作。

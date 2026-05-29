@@ -18,6 +18,6 @@ Xiang Wang 是一位研究者,工作涉及推荐系统与基于 LLM 的生成式
 ## 相关
 
 - [[agent4rec]]
-- [[llm-agent]]
-- [[recommender-system]]
+- [[llm-agents|llm-agent]]
+- [[recommender-systems|recommender-system]]
 - [[user-simulation]]

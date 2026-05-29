@@ -18,7 +18,7 @@ sources: 1
 ## 相关
 
 - [[consistency-model]]
-- [[diffusion-model]]
+- [[diffusion-models|diffusion-model]]
 - [[text-to-image]]
 - [[ip-adapter]]
 - [[knowledge-distillation]]

@@ -12,6 +12,11 @@ sources: 6
 RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环境中近乎零样本地模拟用户的推荐与社交行为。
 
 ## 在本 wiki 中的出现
+- [[2023-agentcf-collaborative-learning-agents-recsys]]:把推荐系统中的用户和物品都建模为 LLM agent,通过自主交互与协同反思实现无梯度的协同过滤式优化。
+- [[2025-agentcf-plus-plus]]:通过双层记忆架构、两步融合机制与兴趣组共享记忆增强 AgentCF 用户模拟器,在跨域推荐中减少无关信息并显式建模流行度因素。
+- [[llm-agents|llm-agent]]
+- [[collaborative-filtering]]
+- [[recommender-systems|recommendation-system]]
 
 - [[2023-recagent-user-behavior-simulation]]:提出 RecAgent,用 LLM-based agent 在沙盒中近乎零样本地模拟用户的推荐与社交行为,并以此研究信息茧房与从众现象。
 - [[2024-macrec-multi-agent-recommendation]]:清华提出的多 agent 协作推荐框架(SIGIR'24 demo),用 Manager、Analyst、Reflector、Searcher、Task Interpreter 等角色各异的 LLM agent 直接协作完成评分预测、序列推荐、解释生成与对话推荐。
@@ -24,6 +29,6 @@ RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环�
 
 - [[llm-based-agent]]
 - [[user-behavior-simulation]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[information-cocoon]]
 - [[conformity]]

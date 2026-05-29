@@ -4,7 +4,7 @@ subtype: model
 tags: [llm, openai, chat-model, instruction-tuned]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 19
+sources: 20
 ---
 
 # GPT-3.5-turbo
@@ -32,13 +32,14 @@ GPT-3.5-turbo 是 OpenAI 推出的指令微调对话大语言模型,因低成本
 - [[2024-aipatient-simulated-patient-llm-agents]]:AIPatient,一个由六个任务专用 LLM 智能体 + Reasoning RAG + 基于 MIMIC-III 真实病历构建的知识图谱驱动的模拟病人系统,EHR-QA 准确率达 94.15%、NER 知识库 F1=0.89,用户研究中匹配或优于真人模拟病人。
 - [[2025-multiagentbench]]:MultiAgentBench 与 MARBLE 框架,在六个交互式场景中评测 LLM 多智能体的协作与竞争,衡量任务完成度与协调质量,gpt-4o-mini 平均任务分最高、graph 协议在研究场景最优、认知规划使里程碑达成率提升约 3%。
 - [[2025-mmoagent-economic-simulation-mmo]]:提出 MMOAgent,一个基于 LLM 的 Generative Agent-Based Modeling 框架,用具备 profile/感知/推理/记忆/行动的 LLM 智能体模拟 MMO 游戏经济,涌现出角色分化与符合供需规律的价格波动。
+- [[2025-multi-agent-reflexion-mar]]:把 Reflexion 的单 Agent 自我批评换成多 persona 辩论加 judge 合成反思,在 HotPotQA(EM 44→47)与 HumanEval(pass@1 76.4→82.6)上超过单 Agent Reflexion。
 
 ## 相关
 
 - [[gpt-4]]
 - [[openai]]
 - [[large-language-model]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[instruction-tuning]]
 - [[in-context-learning]]
 - [[few-shot-prompting]]

@@ -38,4 +38,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文是 [[recommender-system]] 方向的**数据集 / benchmark 类**工作,填补 C2C 推荐数据空白,可与 [[movielens]]、[[amazon-reviews]]、[[retailrocket]]、[[kuairand]]、[[rl4rs]] 等本 wiki 已收录的推荐数据集/基准并列比较。其任务覆盖 CTR、[[sequential-recommendation]]、[[multi-task-learning]],基线涉及 [[deepfm]]、[[sasrec]]、[[esmm]]、[[mmoe]] 等经典推荐模型,适合作为研究 cold-start、动态物品空间、无 SKU 标识下推荐的实验平台。
+本文是 [[recommender-systems|recommender-system]] 方向的**数据集 / benchmark 类**工作,填补 C2C 推荐数据空白,可与 [[movielens]]、[[amazon-reviews]]、[[retailrocket]]、[[kuairand]]、[[rl4rs]] 等本 wiki 已收录的推荐数据集/基准并列比较。其任务覆盖 CTR、[[sequential-recommendation]]、[[multi-task-learning]],基线涉及 [[deepfm]]、[[sasrec]]、[[esmm]]、[[mmoe]] 等经典推荐模型,适合作为研究 cold-start、动态物品空间、无 SKU 标识下推荐的实验平台。

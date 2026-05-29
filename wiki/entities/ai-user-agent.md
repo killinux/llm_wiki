@@ -21,6 +21,6 @@ AI User 是 CAMEL 角色扮演框架中负责下达指令、扮演"用户/任务
 - [[camel]]
 - [[role-playing]]
 - [[inception-prompting]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[multi-agent-systems]]
 - [[instruction-data-generation]]

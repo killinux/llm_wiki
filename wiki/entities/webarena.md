@@ -1,27 +1,22 @@
 ---
 type: entity
 subtype: benchmark
-tags: [benchmark, llm-agent, web-navigation, web-agent]
+tags: [agent, benchmark, web-agent, evaluation]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 3
+sources: 1
 ---
 
 # WebArena
 
-WebArena 是一个用于评测 LLM 智能体在真实网页环境中执行多步任务能力的基准,常被用作网页导航与序列决策类任务的标准测试场景。
+WebArena 是一个用于评测大语言模型(LLM)智能体在真实可复现的网页环境中完成端到端任务能力的基准(benchmark)。
 
 ## 在本 wiki 中的出现
 
-- [[2024-autoguide-context-aware-guidelines]]:AUTOGUIDE 从离线经验中自动生成并按当前情境检索上下文感知指引,显著提升 LLM 智能体在 ALFWorld、WebShop、WebArena 等序列决策与网页导航任务上的成功率。
-- [[2024-tree-search-for-language-model-agents]]:为 LLM web agent 提出 inference-time best-first tree search,在真实 web 环境中显式做探索与多步规划,把 GPT-4o 在 VisualWebArena 上成功率相对提升 39.7% 至 SOTA 26.4%,并展示 test-time compute scaling 的收益。
-- [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2026-memory-in-the-age-of-ai-agents-survey]]:一篇关于智能体记忆的综述,提出 forms-functions-dynamics 三维统一分类法,整合碎片化的 agent memory 研究并汇总相关 benchmark 与开源框架。
 
 ## 相关
 
-- [[visualwebarena]]
-- [[webshop]]
-- [[alfworld]]
-- [[llm-agent]]
-- [[web-navigation]]
-- [[2025-llm-agent-evaluation-survey]]
+- [[agent-memory]]
+- [[benchmark]]
+- [[llm-agents|llm-agent]]

@@ -65,4 +65,4 @@ FuXi-γ 基于 FuXi-β,采用无 query-key 注意力的 decoder-only [[transform
 
 ## 在本 wiki 中的位置
 
-本文属于"生成式/自回归[[recommender-system]]的效率优化"脉络,直接承接 [[hstu]]、[[fuxi-alpha]] 与 FuXi-β 的工作线,延续 [[sasrec]]、[[bert4rec]]、[[gru4rec]]、[[tiger]] 等[[sequential-recommendation]]谱系。其贡献在于把认知科学([[ebbinghaus-forgetting-curve]])引入时间衰减建模,并把 LLM 领域常见的 block-sparse 注意力思路迁移到推荐的位置注意力上,与 [[kuairand]] 等真实工业数据集评测结合,代表了"用更便宜的架构换取可部署性"的推荐系统研究方向。作者来自 [[nankai-university]] 与 [[huawei-noahs-ark-lab]]/Huawei,发表于 KDD '26。
+本文属于"生成式/自回归[[recommender-systems|recommender-system]]的效率优化"脉络,直接承接 [[hstu]]、[[fuxi-alpha]] 与 FuXi-β 的工作线,延续 [[sasrec]]、[[bert4rec]]、[[gru4rec]]、[[tiger]] 等[[sequential-recommendation]]谱系。其贡献在于把认知科学([[ebbinghaus-forgetting-curve]])引入时间衰减建模,并把 LLM 领域常见的 block-sparse 注意力思路迁移到推荐的位置注意力上,与 [[kuairand]] 等真实工业数据集评测结合,代表了"用更便宜的架构换取可部署性"的推荐系统研究方向。作者来自 [[nankai-university]] 与 [[huawei-noahs-ark-lab]]/Huawei,发表于 KDD '26。

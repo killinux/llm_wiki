@@ -47,4 +47,4 @@ SMES 保留标准多任务架构(共享 encoder F、专家池 {f_e}、各任务 
 
 ## 在本 wiki 中的位置
 
-本文属于 **[[recommender-system]] 的 [[multi-task-learning]] / model scaling** 方向,是 [[mmoe]]、[[ple]]、[[home]] 一脉 MoE 多任务推荐的延续,核心创新在于用 expert sparsity 解决多任务稀疏路由特有的 exploded activation 与 load skew 问题,使参数 [[scaling-law]] 在工业延迟约束下可落地。可与 [[rankmixer]](稀疏 scaling 排序模型)、[[megablocks]](sparse MoE 高效 kernel)、以及 [[deepfm]]/[[din]] 等 [[ctr]] backbone 对照阅读。来自 [[kuaishou]] / [[huawei-noahs-ark-lab]] 相关研究者。
+本文属于 **[[recommender-systems|recommender-system]] 的 [[multi-task-learning]] / model scaling** 方向,是 [[mmoe]]、[[ple]]、[[home]] 一脉 MoE 多任务推荐的延续,核心创新在于用 expert sparsity 解决多任务稀疏路由特有的 exploded activation 与 load skew 问题,使参数 [[scaling-law]] 在工业延迟约束下可落地。可与 [[rankmixer]](稀疏 scaling 排序模型)、[[megablocks]](sparse MoE 高效 kernel)、以及 [[deepfm]]/[[din]] 等 [[ctr]] backbone 对照阅读。来自 [[kuaishou]] / [[huawei-noahs-ark-lab]] 相关研究者。

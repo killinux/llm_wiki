@@ -4,7 +4,7 @@ subtype: benchmark
 tags: [agent, web-agent, benchmark, e-commerce, interactive-environment]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 7
+sources: 8
 ---
 
 # WebShop
@@ -20,14 +20,15 @@ WebShop 是一个模拟在线购物网站的交互式环境与基准,要求 agen
 - [[2024-sage-self-evolving-agents]]:由 User/Assistant/Checker 三 agent 组成、结合迭代反馈、反思与基于 Ebbinghaus 遗忘曲线的记忆优化的自进化 LLM agent 框架,对小模型提升尤为显著。
 - [[2024-stateact-self-prompting-state-tracking]]:StateAct 通过 self-prompting 与 chain-of-states 状态跟踪增强 LLM base agent,纯 in-context learning 即在 Alfworld/Webshop/Textcraft 上比 ReAct 提升 7%-30%。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2026-memory-in-the-age-of-ai-agents-survey]]:一篇关于智能体记忆的综述,提出 forms-functions-dynamics 三维统一分类法,整合碎片化的 agent memory 研究并汇总相关 benchmark 与开源框架。
 
 ## 相关
 
 - [[2023-agentbench]]
 - [[2023-expel]]
-- [[react-reasoning-and-acting]]
+- [[react|react-reasoning-and-acting]]
 - [[alfworld]]
 - [[hotpotqa]]
 - [[web-agent]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[benchmark]]

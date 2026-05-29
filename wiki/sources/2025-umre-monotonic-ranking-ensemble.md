@@ -27,7 +27,7 @@ year: 2025
 
 # UMRE: A Unified Monotonic Transformation for Ranking Ensemble in Recommender Systems
 
-UMRE 把工业 [[recommender-system]] 中的 ranking ensemble(集成排序 / ensemble sorting)做成端到端可学习框架:用 **Unconstrained Monotonic Neural Network(UMNN)**替代手工设计的 pxtr 变换,用注意力做个性化融合,并用 Pareto 最优策略动态调整多目标权重。
+UMRE 把工业 [[recommender-systems|recommender-system]] 中的 ranking ensemble(集成排序 / ensemble sorting)做成端到端可学习框架:用 **Unconstrained Monotonic Neural Network(UMNN)**替代手工设计的 pxtr 变换,用注意力做个性化融合,并用 Pareto 最优策略动态调整多目标权重。
 
 ## 问题
 
@@ -58,4 +58,4 @@ UMRE 用一个全可学习的端到端框架同时替换变换函数 gk 和融�
 
 ## 在本 wiki 中的位置
 
-本文属于工业 [[recommender-system]] 的 **multi-task fusion / ranking ensemble** 方向,与 [[mmoe]]、[[ple]]、[[esmm]] 等 [[multi-task-learning]] 工作衔接:MTL 负责产出多任务 pxtr,UMRE 负责把它们个性化、保序地融合成最终排序分。它把 [[pareto-optimality]] 思想用于多目标权重的动态调度,并用 [[gru4rec]] 编码用户序列做 context-aware 融合;数据与场景上与 [[kuairand]]、[[kuaishou]]、[[watch-time]] 等短视频推荐研究密切相关。作者来自 Beijing Jiaotong University 与 [[kuaishou]]。
+本文属于工业 [[recommender-systems|recommender-system]] 的 **multi-task fusion / ranking ensemble** 方向,与 [[mmoe]]、[[ple]]、[[esmm]] 等 [[multi-task-learning]] 工作衔接:MTL 负责产出多任务 pxtr,UMRE 负责把它们个性化、保序地融合成最终排序分。它把 [[pareto-optimality]] 思想用于多目标权重的动态调度,并用 [[gru4rec]] 编码用户序列做 context-aware 融合;数据与场景上与 [[kuairand]]、[[kuaishou]]、[[watch-time]] 等短视频推荐研究密切相关。作者来自 Beijing Jiaotong University 与 [[kuaishou]]。

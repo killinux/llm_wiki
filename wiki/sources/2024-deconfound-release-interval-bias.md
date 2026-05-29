@@ -16,7 +16,7 @@ year: 2024
 
 ## 问题
 
-短视频 [[recommender-system]] 通常对"recently released"视频表现出偏置:从 [[kuaishou]] 的 KuaiRand-1K 日志看,视频曝光率与用户正反馈(watch-time、favorite rate)都随 release interval(发布至今天数)增大而下降。由于 matching model 从已有的有偏交互中学习,模型会捕捉到"短 release interval → 正反馈"的 shortcut,从而进一步放大 feedback-loop bias。
+短视频 [[recommender-systems|recommender-system]] 通常对"recently released"视频表现出偏置:从 [[kuaishou]] 的 KuaiRand-1K 日志看,视频曝光率与用户正反馈(watch-time、favorite rate)都随 release interval(发布至今天数)增大而下降。由于 matching model 从已有的有偏交互中学习,模型会捕捉到"短 release interval → 正反馈"的 shortcut,从而进一步放大 feedback-loop bias。
 
 但关键观察是:并非所有视频都会随时间过时。不同 topic 的视频对 recency 的敏感度不同(例如健身类视频长期保持相关性,而某些热点话题快速过时)。本文把这种"短 release interval 受偏好"的现象命名为 **release interval bias**,并指出现有方法(针对 popularity bias、duration bias 的去偏,以及基于 Cox 模型的 survival analysis)都未识别这一来源,且 survival analysis 依赖人工规则、需过滤未失活视频,在真实推荐中不实用。
 
@@ -48,4 +48,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 causal recommendation / 去偏方向,与 [[recommender-system]]、[[confounding-bias]]、[[selection-bias]]、[[debiasing]] 紧密相关。方法上使用 [[backdoor-adjustment]]、[[do-calculus]]、[[structural-causal-model]],与 duration-bias 去偏(DCR-MoE)、popularity bias 去偏属同一谱系,但聚焦此前被忽略的 release interval confounder。数据与场景来自 [[kuaishou]] / [[kuairand]],骨干模型涉及 [[deepfm]]。
+本文属于 causal recommendation / 去偏方向,与 [[recommender-systems|recommender-system]]、[[confounding-bias]]、[[selection-bias]]、[[debiasing]] 紧密相关。方法上使用 [[backdoor-adjustment]]、[[do-calculus]]、[[structural-causal-model]],与 duration-bias 去偏(DCR-MoE)、popularity bias 去偏属同一谱系,但聚焦此前被忽略的 release interval confounder。数据与场景来自 [[kuaishou]] / [[kuairand]],骨干模型涉及 [[deepfm]]。

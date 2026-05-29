@@ -12,7 +12,7 @@ year: 2023
 
 # FireAct: Toward Language Agent Fine-tuning
 
-FireAct 系统性地研究了对 LLM 进行 fine-tuning 以构建 [[llm-agent]] 的方向,提出用多任务、多 prompting 方法生成的 [[react]] 轨迹来微调 backbone LM,使语言智能体在性能、鲁棒性、泛化、效率与成本上全面优于仅依赖 few-shot prompting 的现成模型。
+FireAct 系统性地研究了对 LLM 进行 fine-tuning 以构建 [[llm-agents|llm-agent]] 的方向,提出用多任务、多 prompting 方法生成的 [[react]] 轨迹来微调 backbone LM,使语言智能体在性能、鲁棒性、泛化、效率与成本上全面优于仅依赖 few-shot prompting 的现成模型。
 
 ## 问题
 
@@ -40,4 +40,4 @@ FireAct 基于 [[react]] 框架(thought-action-observation 多轮循环),核心�
 
 ## 在本 wiki 中的位置
 
-本文位于 [[llm-agent]] 与 [[fine-tuning]] 的交叉点,是 [[react]]、[[chain-of-thought]]、[[reflexion]] 等推理-行动范式的延伸:它不再仅靠 prompting,而是把这些方法生成的轨迹蒸馏进更小的 backbone LM。可与同样基于 ReAct 的 [[reflexion]]、自我改进类工作对照阅读;在"何时 fine-tune vs. prompt"这一议题上提供了实证依据(prompting 适合探索/新任务,fine-tuning 适合已知任务的大规模工业落地)。作者 [[shunyu-yao]] 亦是 [[react]] 的提出者。
+本文位于 [[llm-agents|llm-agent]] 与 [[fine-tuning]] 的交叉点,是 [[react]]、[[chain-of-thought]]、[[reflexion]] 等推理-行动范式的延伸:它不再仅靠 prompting,而是把这些方法生成的轨迹蒸馏进更小的 backbone LM。可与同样基于 ReAct 的 [[reflexion]]、自我改进类工作对照阅读;在"何时 fine-tune vs. prompt"这一议题上提供了实证依据(prompting 适合探索/新任务,fine-tuning 适合已知任务的大规模工业落地)。作者 [[shunyu-yao]] 亦是 [[react]] 的提出者。

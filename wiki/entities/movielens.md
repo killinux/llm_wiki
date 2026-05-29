@@ -4,7 +4,7 @@ subtype: dataset
 tags: [recommendation, dataset, movie-rating, benchmark]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 22
+sources: 25
 ---
 
 # MovieLens
@@ -12,6 +12,12 @@ sources: 22
 MovieLens 是由 GroupLens 研究团队收集发布的电影评分数据集,广泛用作推荐系统研究的基准数据集。
 
 ## 在本 wiki 中的出现
+- [[2024-bi-level-user-modeling-deep-recommenders]]:GPRec 提出即插即用的双层用户建模,用可学习分类器与双向(正/负)群体嵌入做群体建模,从 ID 类特征提炼个体偏好并以正交损失解耦,在 ML1M/TenRec/KuaiRand 上稳定提升各类 DRS 主干的 CTR 预测。
+- [[deep-recommendation-system]]
+- [[ctr-prediction]]
+- [[user-modeling]]
+- [[kuairand]]
+- [[tenrec]]
 
 - [[2022-deep-causal-reasoning-for-recommendations]]:作为评测数据集,用于验证 Deep-Deconf 通过深度 VAE 推断 substitute confounders、将推荐建模为 MCMO 因果推断以消除混杂偏差并降低方差的效果。
 - [[2023-divide-and-conquer-ebr]]:作为公开数据集之一,用于评测将 embedding-based retrieval 拆为"物料聚类+簇内并行检索+可控合并"的方法,在公开数据集上 Recall 最高提升约 40%。
@@ -35,10 +41,13 @@ MovieLens 是由 GroupLens 研究团队收集发布的电影评分数据集,广�
 - [[2025-llm-agents-for-recommender-systems-survey]]:系统综述 LLM 驱动 agent 在推荐系统中的应用,提出"面向推荐/交互/模拟"三范式,并用 Profile-Memory-Planning-Action 四模块统一架构对比 23 个方法、汇总数据集与评测。
 - [[2025-simuser-llm-user-simulation-recsys]]:基于 LLM 的 agent 框架,用从历史数据推断的 persona、记忆、感知与决策模块构建可信合成用户来低成本评估推荐系统。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
+- [[2026-vk-lsvd-short-video-dataset]]:迄今最大的公开短视频推荐工业数据集,来自 VK,含 400 亿交互、1000 万用户、近 2000 万视频,跨 6 个月。
+- [[2026-fuxi-linear]]:线性复杂度的时间感知序列推荐模型,解耦时间与语义信号、用可学习核近似相对位置编码,在数千 token 长序列上提升推荐质量并实现最高 21× 推理加速。
+- [[2026-graphrag-irl]]:GraphRAG-IRL 把 graph-grounded 特征、Maximum Entropy 逆强化学习预排序与 persona-guided LLM 重排融合,LLM 只对 IRL 短候选列表做语义重排,在 MovieLens/KuaiRand 上 NDCG@10 比监督基线提升 15.7%/16.6%。
 
 ## 相关
 
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[embedding-based-retrieval]]
 - [[multi-task-learning]]
 - [[collaborative-filtering]]

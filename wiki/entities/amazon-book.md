@@ -19,6 +19,6 @@ Amazon-Book 是源自亚马逊图书品类的用户-物品交互数据集,常用
 
 ## 相关
 
-- [[recommendation-system]]
-- [[llm-agent]]
+- [[recommender-systems|recommendation-system]]
+- [[llm-agents|llm-agent]]
 - [[movielens]]

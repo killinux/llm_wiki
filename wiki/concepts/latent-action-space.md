@@ -21,7 +21,7 @@ Latent Action Space 指在强化学习策略中,用一个低维、连续的隐�
 - [[actor-critic]]
 - [[candidate-generation]]
 - [[closed-loop-feedback]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[latent-representation]]
 - [[action-space]]
 - [[policy-learning]]

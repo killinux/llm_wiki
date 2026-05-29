@@ -21,4 +21,4 @@ sources: 1
 - [[gaussian-process]]
 - [[thompson-sampling]]
 - [[zeroth-order-optimization]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

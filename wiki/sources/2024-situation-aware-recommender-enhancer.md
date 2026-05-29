@@ -14,7 +14,7 @@ year: 2024
 
 ## 问题
 
-用户与 [[recommender-system]] 交互时,当前情境(situation)——如时间、地点、环境、情绪、活动——会显著影响其偏好。情境是交互发生的"背景",使用户-物品关系随情境变化而动态演化。但已有 [[context-aware-recommendation]] 方法把情境与用户、物品**置于同一层级**:或像 [[factorization-machines]]、xDeepFM、DIN、DIEN 那样把情境与其他属性拼接作为输入,或单独设计模块建模情境与用户/物品属性的关系。它们只能分别建模情境与用户/物品的关联,而**忽略了情境对用户-物品关联(即用户偏好)的动态影响**;同时由于情境与用户被联合建模,情境的"个性化感知与影响"也未被充分刻画。
+用户与 [[recommender-systems|recommender-system]] 交互时,当前情境(situation)——如时间、地点、环境、情绪、活动——会显著影响其偏好。情境是交互发生的"背景",使用户-物品关系随情境变化而动态演化。但已有 [[context-aware-recommendation]] 方法把情境与用户、物品**置于同一层级**:或像 [[factorization-machines]]、xDeepFM、DIN、DIEN 那样把情境与其他属性拼接作为输入,或单独设计模块建模情境与用户/物品属性的关系。它们只能分别建模情境与用户/物品的关联,而**忽略了情境对用户-物品关联(即用户偏好)的动态影响**;同时由于情境与用户被联合建模,情境的"个性化感知与影响"也未被充分刻画。
 
 两个关键事实:(1) 用户偏好对情境敏感,情境在比用户/物品固有特征更高的层级上影响偏好;(2) 用户对情境的感知是个性化的(如 11 点对早起者很晚、对夜猫子尚早),情境带来的偏好变化也是个性化的。
 
@@ -39,4 +39,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中 [[context-aware-recommendation]] / situation-aware 方向。与把情境当作普通特征拼接的 [[factorization-machines]] 等不同,它把情境抬升为"前置条件",强调情境感知与影响的个性化建模,可与序列推荐、conditioning network 等线索对照。与 [[large-language-models]] 主线关系较弱,属于推荐系统专题的补充节点。
+本文属于 [[recommender-systems|recommender-system]] 中 [[context-aware-recommendation]] / situation-aware 方向。与把情境当作普通特征拼接的 [[factorization-machines]] 等不同,它把情境抬升为"前置条件",强调情境感知与影响的个性化建模,可与序列推荐、conditioning network 等线索对照。与 [[large-language-models]] 主线关系较弱,属于推荐系统专题的补充节点。

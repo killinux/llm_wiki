@@ -37,4 +37,4 @@ GPT-3 是 OpenAI 推出的 175B 参数自回归大语言模型,以强大的 few-
 - [[foundation-model]]
 - [[scaling-law]]
 - [[hstu]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

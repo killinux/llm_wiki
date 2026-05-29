@@ -79,4 +79,4 @@ backbone LLM 使用 [[gpt-4o]]、[[gpt-4o-mini]]、[[gemini-2-5-flash]]。
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 用于 [[recommender-system]] 评估的 [[user-simulation]] 方向,与 [[agent4rec]]、[[recagent]]、[[recsim]]、[[virtual-taobao]] 同源,但首创在带海报的 multimodal Sandbox UI 中模拟多页感知与疲劳驱动的退出行为。它把 [[clip]] 视觉编码与 [[agent-memory]] 结合,服务于替代在线 [[ab-testing]] 的离线推荐模型评估与数据增强。作者主要来自 [[city-university-of-hong-kong]] 与 [[huawei-noahs-ark-lab]],与 [[deepfm]]、[[factorization-machines]] 等 CTR 模型工作一脉相承。
+本文属于 [[llm-agents|llm-agent]] 用于 [[recommender-systems|recommender-system]] 评估的 [[user-simulation]] 方向,与 [[agent4rec]]、[[recagent]]、[[recsim]]、[[virtual-taobao]] 同源,但首创在带海报的 multimodal Sandbox UI 中模拟多页感知与疲劳驱动的退出行为。它把 [[clip]] 视觉编码与 [[agent-memory]] 结合,服务于替代在线 [[ab-testing]] 的离线推荐模型评估与数据增强。作者主要来自 [[city-university-of-hong-kong]] 与 [[huawei-noahs-ark-lab]],与 [[deepfm]]、[[factorization-machines]] 等 CTR 模型工作一脉相承。

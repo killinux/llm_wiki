@@ -40,4 +40,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文是一篇"行为科学视角"的 [[llm-agent]] 综述,可作为连接 [[multi-agent-systems]]、[[human-in-the-loop]] 人机交互、[[generative-agents]]/[[social-simulation]] 与 [[ai-safety]]/[[ai-alignment]] 的总览性入口。它把本 wiki 中分散的训练/对齐方法——[[rlhf]]、[[direct-preference-optimization]]、[[process-reward-model]]、[[prompt-engineering]]——纳入 Fogg Behavior Model(ability/motivation/trigger)的统一叙事,并把 fairness、safety、interpretability 等 responsible AI 议题重述为可测量的行为属性。与单一方法论文(如 [[react-reasoning-and-acting]]、[[reflexion]]、[[autogen]])相比,本文提供的是范式与分类骨架,适合作为 agent 行为相关条目的导航与背景参考。
+本文是一篇"行为科学视角"的 [[llm-agents|llm-agent]] 综述,可作为连接 [[multi-agent-systems]]、[[human-in-the-loop]] 人机交互、[[generative-agents]]/[[social-simulation]] 与 [[ai-safety]]/[[ai-alignment]] 的总览性入口。它把本 wiki 中分散的训练/对齐方法——[[rlhf]]、[[direct-preference-optimization]]、[[process-reward-model]]、[[prompt-engineering]]——纳入 Fogg Behavior Model(ability/motivation/trigger)的统一叙事,并把 fairness、safety、interpretability 等 responsible AI 议题重述为可测量的行为属性。与单一方法论文(如 [[react|react-reasoning-and-acting]]、[[reflexion]]、[[autogen]])相比,本文提供的是范式与分类骨架,适合作为 agent 行为相关条目的导航与背景参考。

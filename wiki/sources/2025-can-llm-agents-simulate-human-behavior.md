@@ -16,7 +16,7 @@ year: 2025
 
 ## 问题
 
-近年 [[generative-agents]] 等工作表明 [[llm-agent]] 能生成"可信(believable)"的人类行为,并被广泛用作虚拟用户做网站功能测试、自动 A/B 测试、评测 agentic AI 系统等下游应用。但现有评测只关注**主观可信度**(人类评审觉得像不像),或只看任务**最终结果**(是否购买、是否信任),从未在**过程级、动作级**上客观检验:模型逐步生成的动作序列是否真的与某个真实用户在多轮交互中的逐步行为对齐。因此领域缺乏一个回答"LLM 到底能多准地复刻人类行为"的定量基准。
+近年 [[generative-agents]] 等工作表明 [[llm-agents|llm-agent]] 能生成"可信(believable)"的人类行为,并被广泛用作虚拟用户做网站功能测试、自动 A/B 测试、评测 agentic AI 系统等下游应用。但现有评测只关注**主观可信度**(人类评审觉得像不像),或只看任务**最终结果**(是否购买、是否信任),从未在**过程级、动作级**上客观检验:模型逐步生成的动作序列是否真的与某个真实用户在多轮交互中的逐步行为对齐。因此领域缺乏一个回答"LLM 到底能多准地复刻人类行为"的定量基准。
 
 ## 方法
 
@@ -40,4 +40,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] / [[user-simulation]] 方向,与 [[generative-agents]]、[[webshop]]、[[webarena]]、[[react]] 等"可信行为 / 任务完成"范式形成对照:它把评测重心从主观 believability 与最终结果转向**过程级动作精确度**,提出 ShopCART [[benchmark]],并用 [[fine-tuning]] + 合成 [[chain-of-thought]] 式 reasoning 给出改进路径。对 [[recommender-system]]、[[user-retention]] 等领域里用 LLM 做用户/customer 模拟的工作(如 [[recagent]]、[[agentcf]]、[[lusifer]])提供了"是否真实对齐人类逐步行为"的批判性证据与可复用数据集。
+本文属于 [[llm-agents|llm-agent]] / [[user-simulation]] 方向,与 [[generative-agents]]、[[webshop]]、[[webarena]]、[[react]] 等"可信行为 / 任务完成"范式形成对照:它把评测重心从主观 believability 与最终结果转向**过程级动作精确度**,提出 ShopCART [[benchmark]],并用 [[fine-tuning]] + 合成 [[chain-of-thought]] 式 reasoning 给出改进路径。对 [[recommender-systems|recommender-system]]、[[user-retention]] 等领域里用 LLM 做用户/customer 模拟的工作(如 [[recagent]]、[[agentcf]]、[[lusifer]])提供了"是否真实对齐人类逐步行为"的批判性证据与可复用数据集。

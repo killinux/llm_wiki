@@ -17,6 +17,6 @@ sources: 1
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[social-simulation]]
 - [[multi-agent-systems]]

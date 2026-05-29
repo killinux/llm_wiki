@@ -4,7 +4,7 @@ subtype: method
 tags: [llm, agents, multi-agent, autonomy, tool-use]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 9
+sources: 11
 ---
 
 # LLM-based Agents
@@ -22,6 +22,8 @@ LLM-based Agents 是以 large language model 为推理与决策核心的自主�
 - [[2025-multi-agent-collaboration-mechanisms-survey]]:系统综述,沿 actors、types、structures、strategies、coordination protocols 五个维度刻画基于 LLM 的多 agent 系统协作机制,并梳理其跨领域应用与挑战。
 - [[2025-agentcf-plus-plus]]:通过双层记忆架构、两步融合机制与兴趣组共享记忆增强 AgentCF 用户模拟器,在跨域推荐中减少无关信息并显式建模流行度因素。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2026-memory-in-the-age-of-ai-agents-survey]]:一篇关于智能体记忆的综述,提出 forms-functions-dynamics 三维统一分类法,整合碎片化的 agent memory 研究并汇总相关 benchmark 与开源框架。
+- [[2026-policysim-proactive-policy-optimization]]:PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用 SFT+DPO 训练用户智能体、用带消息传递的 contextual bandit 自适应优化推荐与曝光控制等平台干预策略,实现部署前的主动评估与优化。
 
 ## 相关
 
@@ -40,3 +42,5 @@ LLM-based Agents 是以 large language model 为推理与决策核心的自主�
 - [[user-simulation]]
 - [[retrieval-augmented-generation]]
 - [[agent-evaluation]]
+- [[social-simulation]]
+- [[contextual-bandit]]

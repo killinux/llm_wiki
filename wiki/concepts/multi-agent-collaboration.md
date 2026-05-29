@@ -30,7 +30,7 @@ sources: 11
 - [[multi-agent-systems]]:多智能体协作所依托的系统范式。
 - [[role-playing-agent]]:为不同智能体分配角色(如 CEO、程序员、测试员)是多智能体协作的常见实现方式。
 - [[chat-chain]]:ChatDev 中组织多智能体对话顺序的结构。
-- [[llm-agent]]:多智能体协作的基本组成单元。
+- [[llm-agents|llm-agent]]:多智能体协作的基本组成单元。
 - [[communicative-dehallucination]]:ChatDev 在多智能体协作中用于缓解编码幻觉的沟通机制。
 - [[role-playing]]:角色扮演式提示,是驱动多智能体分工的常用手段。
 - [[generative-agent-based-modeling]]:用生成式 agent 群体进行社会仿真的建模范式。

@@ -19,11 +19,11 @@ year: 2025
 
 # SimUSER: Simulating User Behavior with Large Language Models for Recommender System Evaluation
 
-SimUSER 提出一个基于 LLM 的 agent 框架,把从历史数据中推断出的 persona、记忆、感知与决策模块组合成可信且低成本的"合成用户",用来在离线环境中评估 [[recommender-system]]。
+SimUSER 提出一个基于 LLM 的 agent 框架,把从历史数据中推断出的 persona、记忆、感知与决策模块组合成可信且低成本的"合成用户",用来在离线环境中评估 [[recommender-systems|recommender-system]]。
 
 ## 问题
 
-[[recommender-system]] 的核心难题是评估:离线指标(非交互)与上线后真实用户行为之间存在鸿沟。线上 A/B 测试成本高、耗时且涉及伦理问题,而真实用户数据稀缺并受隐私限制。已有的 LLM 用户模拟工作(如 RecAgent、[[interecagent]]、[[agent4rec]])存在"孤立性"问题:主要依赖模型权重内的知识,忽视外部知识与 user-item 关系;且常常忽略 user persona 与视觉信号对用户体验和情绪的影响。
+[[recommender-systems|recommender-system]] 的核心难题是评估:离线指标(非交互)与上线后真实用户行为之间存在鸿沟。线上 A/B 测试成本高、耗时且涉及伦理问题,而真实用户数据稀缺并受隐私限制。已有的 LLM 用户模拟工作(如 RecAgent、[[interecagent]]、[[agent4rec]])存在"孤立性"问题:主要依赖模型权重内的知识,忽视外部知识与 user-item 关系;且常常忽略 user persona 与视觉信号对用户体验和情绪的影响。
 
 ## 方法
 
@@ -49,4 +49,4 @@ SimUSER 分两个阶段构建合成用户:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[user-simulation]] 与 [[llm-agent]] 在 [[recommender-system]] 评估方向的工作,与 [[agent4rec]]、[[interecagent]]、[[recagent]]、[[recsim]] 等模拟器同属一脉,但通过 persona 推断、[[perception]] 视觉模块与 knowledge-graph 检索强化了可信度。方法上复用 [[chain-of-thought]]、[[memory-module]]、[[reflection]] 与 [[causal-inference]] 思想,可与 [[llm-for-recommendation]]、[[interactive-recommendation]] 等概念互相参照。
+本文属于 [[user-simulation]] 与 [[llm-agents|llm-agent]] 在 [[recommender-systems|recommender-system]] 评估方向的工作,与 [[agent4rec]]、[[interecagent]]、[[recagent]]、[[recsim]] 等模拟器同属一脉,但通过 persona 推断、[[perception]] 视觉模块与 knowledge-graph 检索强化了可信度。方法上复用 [[chain-of-thought]]、[[memory-module]]、[[reflection]] 与 [[causal-inference]] 思想,可与 [[llm-for-recommendation]]、[[interactive-recommendation]] 等概念互相参照。

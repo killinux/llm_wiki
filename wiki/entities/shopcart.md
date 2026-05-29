@@ -17,6 +17,6 @@ ShopCART 是基于真实在线购物数据构建的数据集/评测基准,用于
 
 ## 相关
 
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[human-behavior-simulation]]
 - [[online-shopping]]

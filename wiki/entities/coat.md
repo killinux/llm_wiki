@@ -31,4 +31,4 @@ Coat 是推荐系统去偏研究中常用的基准数据集,记录用户对外�
 - [[debiasing-recommendation]]
 - [[counterfactual-feedback]]
 - [[offline-rl]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]

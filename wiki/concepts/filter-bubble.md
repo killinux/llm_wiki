@@ -23,7 +23,7 @@ sources: 5
 
 - [[popularity-bias]]
 - [[polarization]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[llm-agent-simulation]]
 - [[long-term-recommendation]]
 - [[feedback-loop]]

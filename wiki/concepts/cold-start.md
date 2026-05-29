@@ -24,4 +24,4 @@ sources: 5
 - [[cold-start-recommendation]]
 - [[user-simulation]]
 - [[collaborative-filtering]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

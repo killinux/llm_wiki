@@ -4,7 +4,7 @@ subtype: method
 tags: [llm, evaluation, feedback, self-improvement, reasoning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 18
+sources: 26
 ---
 
 # LLM-as-judge
@@ -14,7 +14,7 @@ LLM-as-judge 指用一个 LLM 来评估、批评或打分另一个(或同一个)
 ## 在本 wiki 中的出现
 
 - [[2023-self-refine]]:LLM 既是生成者也是 judge——同一个 LLM 在测试时对自己的输出生成反馈(self-feedback),再据此自我修正(self-refine),迭代进行。无需额外训练即在 7 个任务上平均提升约 20%,体现了"模型自身充当评判者"这一思路。
-- [[2023-multiagent-debate]]:多个 LLM 实例在多轮辩论中互相批评、评估彼此的答案,相当于让模型群体充当彼此的 judge。该机制在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上带来显著提升。
+- [[2023-multi-agent-debate|2023-multiagent-debate]]:多个 LLM 实例在多轮辩论中互相批评、评估彼此的答案,相当于让模型群体充当彼此的 judge。该机制在推理(GSM8K 77%→85%)与事实性(MMLU 63.9%→71.1%)任务上带来显著提升。
 - [[2026-generative-social-simulation-validation]]:系统性文献综述指出,LLM 驱动的生成式 ABM 因黑箱性、文化偏见与随机性而加剧了模型"验证"难题,这直接质疑了将 LLM 作为评判与验证工具的可靠性。
 - [[2023-shepherd-critic-for-lm-generation]]:Meta AI 用约 8K 反馈数据微调 7B LLaMA critic 模型 Shepherd,精确批判 LLM 输出并给改进建议,GPT-4 评估 win-rate 53-87%,是 LLM-as-judge/critic 的典型实例。
 - [[2023-sotopia-social-intelligence-evaluation]]:SOTOPIA-EVAL 提出多维评测框架,交互式评估 LLM 智能体的社会智能,体现了用 LLM 评判开放式社交互动表现的范式。
@@ -31,6 +31,14 @@ LLM-as-judge 指用一个 LLM 来评估、批评或打分另一个(或同一个)
 - [[2025-extended-refusal-defense-against-abliteration]]:通过 extended-refusal 微调把安全信号从单一潜在方向分散到多 token 位置与多维度,使模型在 abliteration 攻击后仍保持 >90% 拒绝率,同时通用性能几乎不变。
 - [[2025-emergent-llm-behaviors-data-leakage]]:批判性短文:LLM 多智能体模拟中"自发涌现的社会约定"在观测上等价于 data leakage——模型只是复述预训练中已知的协调博弈知识,而非真正自组织。
 - [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
+- [[2025-multi-agent-llm-value-diversity]]:通过 Schwartz 价值观给 LLM 智能体注入价值多样性的多智能体社会模拟,发现价值多样性提升集体行为的价值稳定性、涌现与自发规则创造,但极端异质带来边际递减与不稳定。
+- [[2025-multi-agent-reflexion-mar]]:把 Reflexion 的单 Agent 自我批评换成多 persona 辩论加 judge 合成反思,在 HotPotQA(EM 44→47)与 HumanEval(pass@1 76.4→82.6)上超过单 Agent Reflexion。
+- [[2026-evaluating-memory-structure-llm-agents]]:提出 StructMemEval 基准,测试 LLM agent 组织(而非仅回忆)其长期记忆的能力:纯检索系统在任务规模超出检索窗口后崩溃,memory agents 在被提示如何组织记忆时可靠求解,但常不会主动识别所需的记忆结构。
+- [[2026-convapparel-user-simulator-validation]]:Google 提出 ConvApparel(4,146 段人-AI 服装购物对话、双 agent good/bad 协议、逐轮第一人称标注)及 PLSA+HLS+counterfactual validation 三支柱框架,系统量化 LLM user simulator 的 realism gap,发现所有 simulator 平均 HLS 仅 0.004,但 ICL/SFT 在反事实泛化上优于纯 prompting。
+- [[2026-tooltree-tool-planning]]:免训练的 MCTS 工具规划框架,用执行前/执行后双反馈引导搜索并双向剪枝,在固定预算下提升 LLM 智能体多工具规划的准确率与效率(GTA 66.95 AVG,ToolBench 69.04 AVG)。
+- [[2026-memori-persistent-memory-layer-llm-agents]]:Memori 是 LLM-agnostic 的持久化记忆层,用 Advanced Augmentation 把对话压缩成语义三元组+摘要,在 LoCoMo 上仅用约 5% 上下文 token(1,294/query)达到 81.95% 准确率,优于 Zep/LangMem/Mem0 且成本远低于 full-context。
+- [[2026-self-organizing-llm-agents]]:一项 25,000 任务的大规模实验发现"内生性悖论":固定智能体顺序但角色自主的混合协议(Sequential)在质量上同时超越中心化(+14%)与完全自主(+44%)协调,但仅当底层模型足够强(存在能力门槛)。
+- [[2026-omnibehavior]]:OmniBehavior 是首个完全基于真实工业日志(快手)构建的用户模拟基准,刻画长时程、跨场景、异质行为轨迹,并揭示当前 LLM 模拟器存在"积极且趋均值"的结构性偏差。
 
 ## 相关
 

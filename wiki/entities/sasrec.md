@@ -4,7 +4,7 @@ subtype: model
 tags: [recommendation, sequential-recommendation, self-attention, baseline]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 22
+sources: 25
 ---
 
 # SASRec
@@ -12,6 +12,9 @@ sources: 22
 SASRec(Self-Attentive Sequential Recommendation)是一种基于自注意力机制的序列推荐模型,通过对用户历史行为序列建模来预测下一个交互物品。
 
 ## 在本 wiki 中的出现
+- [[2024-easyrl4rec]]:面向 RL-based 推荐系统的易用代码库,基于五个公开数据集构建轻量 RL 环境,提供四个核心模块与面向长期收益的统一训练/评测流程,并给出经典与近期 RL 方法的对照实验。
+- [[2024-tim4rec-time-aware-mamba]]:TiM4Rec 用 Time-aware Structured Masked Matrix 把时间感知增强首次引入 SSD/Mamba2 架构,在线性复杂度下弥补 SSD 在低维序列推荐场景相对 SSM 的性能退化。
+- [[rl-recommendation]]
 
 - 在 [[2023-divide-and-conquer-ebr]] 中,SASRec 作为序列推荐 / embedding-based retrieval 场景下的相关基线或建模组件出现,用于在公开数据集上对比召回效果(该工作将推荐召回拆为"物料聚类 + 簇内并行检索 + 可控合并",Recall 最高提升约 40%,并已在快手线上部署)。
 - 在 [[2023-hyper-actor-critic-recommendation]] 中,SASRec 作为序列推荐建模 / 基线方法出现,与所提出的 Hyper-Actor Critic(HAC)框架相关联;HAC 将推荐列表生成解耦为 hyper-action 推断与 effect-action 选择两步,并用对齐与监督模块稳定大动作空间下的 RL 推荐策略学习。
@@ -35,6 +38,9 @@ SASRec(Self-Attentive Sequential Recommendation)是一种基于自注意力机�
 - [[2025-pub-personality-user-behaviour-simulator]]:PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入用户建模,从行为日志推断人格并生成高保真合成交互,用于推荐系统的离线评估。
 - [[2025-tadt-csa-temporal-advantage-decision-transformer]]:面向工业生成式推荐的 Decision Transformer 改进框架,用 Temporal Advantage 信号和对比式状态抽象解决 DT 的轨迹拼接弱与状态空间过大问题。
 - [[2025-hid-vae-interpretable-generative-recommendation]]:HiD-VAE 用层次化监督量化 + uniqueness loss 学习可解释、解耦的 semantic ID,消除 ID 碰撞并显著提升生成式推荐性能。
+- [[2025-grasp-world-knowledge-sequential-recommendation]]:GRASP 用"生成增强检索 + Sigmoid 整体注意力增强"把 LLM 世界知识作为辅助输入(而非监督信号)注入序列推荐,抵抗 LLM 幻觉噪声,在 Beauty/Fashion/Industry-100K 上叠加多种 backbone 均达 SOTA,并通过线上 A/B 验证 GMV +1.71%。
+- [[2025-fuxi-gamma-efficient-sequential-recommendation]]:decoder-only 生成式序列推荐框架,用受 Ebbinghaus 遗忘曲线启发的指数幂时间编码器与对角稀疏位置剪枝,在 SOTA 推荐质量下把训练加速最多 4.74×、推理 6.18×。
+- [[2026-fuxi-linear]]:线性复杂度的时间感知序列推荐模型,解耦时间与语义信号、用可学习核近似相对位置编码,在数千 token 长序列上提升推荐质量并实现最高 21× 推理加速。
 
 ## 相关
 

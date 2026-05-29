@@ -51,4 +51,4 @@ TiM4Rec 把"时间感知增强"首次引入 [[state-space-duality]](SSD/Mamba2)�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[mamba]]/[[state-space-model]] 在 [[recommender-system]] 领域的应用分支,具体面向 [[sequential-recommendation]]。它与 [[recmamba]] 同属 Mamba-for-RecSys 谱系,但聚焦 [[state-space-duality]](Mamba2)架构的低维退化问题,并把 [[transformer]] 路线上的时间感知思想(TiSASRec,基于 [[sasrec]])迁移到 SSD。可与基于注意力的 [[sasrec]]、基于 RNN 的 [[gru4rec]]、以及 [[ndcg]] 等评测指标交叉参考。
+本文属于 [[mamba]]/[[state-space-model]] 在 [[recommender-systems|recommender-system]] 领域的应用分支,具体面向 [[sequential-recommendation]]。它与 [[recmamba]] 同属 Mamba-for-RecSys 谱系,但聚焦 [[state-space-duality]](Mamba2)架构的低维退化问题,并把 [[transformer]] 路线上的时间感知思想(TiSASRec,基于 [[sasrec]])迁移到 SSD。可与基于注意力的 [[sasrec]]、基于 RNN 的 [[gru4rec]]、以及 [[ndcg]] 等评测指标交叉参考。

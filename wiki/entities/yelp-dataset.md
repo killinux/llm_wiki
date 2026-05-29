@@ -25,6 +25,6 @@ Yelp 是基于 Yelp 平台用户对商户的评论与评分构建的公开数据
 
 - [[movielens-1m]]
 - [[nfm]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]
 - [[bhe]]
 - [[ndcg]]

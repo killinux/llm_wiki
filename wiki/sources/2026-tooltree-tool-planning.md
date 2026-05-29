@@ -22,13 +22,13 @@ year: 2026
 
 # ToolTree: Efficient LLM Agent Tool Planning via Dual-Feedback Monte Carlo Tree Search and Bidirectional Pruning
 
-ToolTree 是一个免训练、即插即用的 [[monte-carlo-tree-search]] 风格 [[tool-planning]] 框架,通过执行前 (pre-evaluation) 与执行后 (post-evaluation) 双重反馈引导搜索,并据此做双向剪枝,在固定计算预算下让 [[llm-agent]] 更高效地规划多工具调用。
+ToolTree 是一个免训练、即插即用的 [[monte-carlo-tree-search]] 风格 [[tool-planning]] 框架,通过执行前 (pre-evaluation) 与执行后 (post-evaluation) 双重反馈引导搜索,并据此做双向剪枝,在固定计算预算下让 [[llm-agents|llm-agent]] 更高效地规划多工具调用。
 
 ## 问题
 
 当前 [[large-language-models]] 智能体的工具规划主要有两条路线,各有缺陷:
 
-- **贪婪式 (greedy-based)**:在每一步独立选择当下看起来最合适的工具(如 [[react-reasoning-and-acting]]、[[chain-of-thought]]),缺乏前瞻(lookahead),早期的次优选择会不可逆地传播并放大错误,且只沿单条轨迹推进、不探索备选。
+- **贪婪式 (greedy-based)**:在每一步独立选择当下看起来最合适的工具(如 [[react|react-reasoning-and-acting]]、[[chain-of-thought]]),缺乏前瞻(lookahead),早期的次优选择会不可逆地传播并放大错误,且只沿单条轨迹推进、不探索备选。
 - **搜索式 (search-based)**:扩展多个候选分支(如 [[tree-of-thoughts]]、MCTS)以引入前瞻,但工具引入后分支因子随工具类型/参数/演化状态指数级增长,导致成本高、延迟不可预测。更关键的是,许多变体评估的是假想的"想法"而非真实执行动作,排序与真实工具效用解耦,后续几步才显现的改进难以归功到早期决策上。
 
 因此需要一种既有前瞻、又以真实执行结果为依据 (outcome-grounded),同时在固定预算下保持计算高效的规划方法。
@@ -59,4 +59,4 @@ ToolTree 把工具规划建模为序贯决策过程:每个状态编码当前对�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[llm-agent]] 的 [[tool-use]] / [[tool-planning]] 方向,把 [[monte-carlo-tree-search]] 与 [[llm-planning]] 结合,可与 [[react-reasoning-and-acting]]、[[tree-of-thoughts]]、[[language-agent-tree-search]] 等推理/搜索范式对照阅读;其双向剪枝由 [[llm-as-judge]] 提供 pre/post 双信号,与 [[toolformer]]、[[toolbench]]、[[gaia]] 等工具使用与评测工作相关。评测在 [[gpt-4o]]、[[gpt-4o-mini]] 及 [[qwen]]、[[llama]] 等模型上完成。
+本文属于 [[llm-agents|llm-agent]] 的 [[tool-use]] / [[tool-planning]] 方向,把 [[monte-carlo-tree-search]] 与 [[llm-planning]] 结合,可与 [[react|react-reasoning-and-acting]]、[[tree-of-thoughts]]、[[language-agent-tree-search]] 等推理/搜索范式对照阅读;其双向剪枝由 [[llm-as-judge]] 提供 pre/post 双信号,与 [[toolformer]]、[[toolbench]]、[[gaia]] 等工具使用与评测工作相关。评测在 [[gpt-4o]]、[[gpt-4o-mini]] 及 [[qwen]]、[[llama]] 等模型上完成。

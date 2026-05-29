@@ -21,4 +21,4 @@ AITM(Adaptive Information Transfer Multi-task)是一类在多任务学习中沿�
 - [[multi-task-learning]]
 - [[task-dependency]]
 - [[gradient-adjustment]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

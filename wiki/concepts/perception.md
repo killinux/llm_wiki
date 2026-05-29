@@ -20,4 +20,4 @@ sources: 1
 - [[persona]]
 - [[memory-module]]
 - [[decision-module]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

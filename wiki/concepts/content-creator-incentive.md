@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[feedback-loop]]
 - [[content-polarization]]
 - [[user-preference-dynamics]]

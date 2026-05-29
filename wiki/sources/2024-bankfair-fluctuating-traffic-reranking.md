@@ -16,7 +16,7 @@ BankFair 是一个面向两侧平台(two-sided platform)的公平性感知 re-ra
 
 ## 问题
 
-在两侧 [[recommender-system]] 中,提供方(provider)与用户(user)的需求紧迫性不同:提供方需要相对长期的曝光(exposure)需求,可以在较长周期内被满足;而用户的需求是短期、即时的,一旦遭遇差的推荐就会长期受损(损失厌恶效应,loss aversion)。已有的公平-准确性权衡方法在真实的波动用户流量(fluctuating user traffic)下往往失效:作者基于 KuaiRand 数据的实证研究(Figure 1)显示,用户流量越低,准确性损失越大,用户体验下降得越多。
+在两侧 [[recommender-systems|recommender-system]] 中,提供方(provider)与用户(user)的需求紧迫性不同:提供方需要相对长期的曝光(exposure)需求,可以在较长周期内被满足;而用户的需求是短期、即时的,一旦遭遇差的推荐就会长期受损(损失厌恶效应,loss aversion)。已有的公平-准确性权衡方法在真实的波动用户流量(fluctuating user traffic)下往往失效:作者基于 KuaiRand 数据的实证研究(Figure 1)显示,用户流量越低,准确性损失越大,用户体验下降得越多。
 
 作者还从约束优化(constrained optimization)角度给出理论分析,回答两个问题:
 - 为什么提供方公平性会损害准确性?(Theorem 1:当准确性最优解不满足公平约束时,被迫移动到可行域内的提供方公平解,必然带来准确性损失。)
@@ -52,4 +52,4 @@ BankFair 包含两个模块(Algorithm 1):
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 公平性方向,聚焦两侧平台(two-sided platform)的提供方公平 re-ranking,与曝光公平基线 P-MMF、FairRec、TFROM 同一谱系。其特色在于用经济学的破产问题 / Talmud rule 处理流量波动下的曝光分配,并结合 Lagrangian relaxation 的在线学习。作者来自 [[renmin-university-of-china]] 与 [[huawei-noahs-ark-lab]],通讯作者 [[jun-xu]];数据集使用了 [[kuairand]] 与 Huawei-Video。
+本文属于 [[recommender-systems|recommender-system]] 公平性方向,聚焦两侧平台(two-sided platform)的提供方公平 re-ranking,与曝光公平基线 P-MMF、FairRec、TFROM 同一谱系。其特色在于用经济学的破产问题 / Talmud rule 处理流量波动下的曝光分配,并结合 Lagrangian relaxation 的在线学习。作者来自 [[renmin-university-of-china]] 与 [[huawei-noahs-ark-lab]],通讯作者 [[jun-xu]];数据集使用了 [[kuairand]] 与 Huawei-Video。

@@ -50,4 +50,4 @@ GRASP 由两个模块组成,与 SRS backbone 正交(可叠加在 [[gru4rec]]、[
 
 ## 在本 wiki 中的位置
 
-本文属于"LLM 增强推荐"方向,直接对标并改进 [[llm-esr]](把 LLM embedding 从监督信号改为可门控的辅助输入,以抵抗 [[hallucination]])。它与 [[tallrec]] 等"LLM 直接当推荐系统"范式不同,走的是把 LLM 语义理解能力注入传统 [[recommender-system]] 的路线,可叠加 [[gru4rec]]、[[bert4rec]]、[[sasrec]] 等经典 backbone。方法上结合了 [[retrieval-augmented-generation]] 思想(生成描述 + 近邻检索)与 [[self-attention]] 变体(Sigmoid 注意力)。作者来自 [[shanghai-jiao-tong-university]] 与阿里巴巴 Taobao & Tmall Group。
+本文属于"LLM 增强推荐"方向,直接对标并改进 [[llm-esr]](把 LLM embedding 从监督信号改为可门控的辅助输入,以抵抗 [[hallucination]])。它与 [[tallrec]] 等"LLM 直接当推荐系统"范式不同,走的是把 LLM 语义理解能力注入传统 [[recommender-systems|recommender-system]] 的路线,可叠加 [[gru4rec]]、[[bert4rec]]、[[sasrec]] 等经典 backbone。方法上结合了 [[retrieval-augmented-generation]] 思想(生成描述 + 近邻检索)与 [[self-attention]] 变体(Sigmoid 注意力)。作者来自 [[shanghai-jiao-tong-university]] 与阿里巴巴 Taobao & Tmall Group。

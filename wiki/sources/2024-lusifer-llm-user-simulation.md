@@ -21,7 +21,7 @@ year: 2024
 
 # Lusifer: LLM-based User Simulated Feedback Environment For online Recommender systems
 
-提出 [[lusifer]]:一个基于 LLM 的用户模拟环境,在每次交互后增量更新用户画像并给出可解释说明,为 RL-based [[recommender-system]] 生成动态、真实的用户反馈。
+提出 [[lusifer]]:一个基于 LLM 的用户模拟环境,在每次交互后增量更新用户画像并给出可解释说明,为 RL-based [[recommender-systems|recommender-system]] 生成动态、真实的用户反馈。
 
 ## 问题
 
@@ -54,4 +54,4 @@ Lusifer 用 [[movielens]] 数据集(100K 与 1M 版本)做案例研究,只抽取
 
 ## 在本 wiki 中的位置
 
-本文属于 [[user-simulation]] 与 [[llm-agent]] 在 [[recommender-system]] 中的交叉应用,与 wiki 中 [[recagent]]、[[user-simulation]]、[[llm-based-agents]] 等条目同源——都用 LLM 模拟用户行为以支撑 RL 推荐训练与评估。相关方法/概念:[[reinforcement-learning]]、[[prompt-engineering]]、[[in-context-learning]]、[[cold-start]]、[[collaborative-filtering]]、[[movielens]]、[[gpt-4o-mini]]。
+本文属于 [[user-simulation]] 与 [[llm-agents|llm-agent]] 在 [[recommender-systems|recommender-system]] 中的交叉应用,与 wiki 中 [[recagent]]、[[user-simulation]]、[[llm-based-agents]] 等条目同源——都用 LLM 模拟用户行为以支撑 RL 推荐训练与评估。相关方法/概念:[[reinforcement-learning]]、[[prompt-engineering]]、[[in-context-learning]]、[[cold-start]]、[[collaborative-filtering]]、[[movielens]]、[[gpt-4o-mini]]。

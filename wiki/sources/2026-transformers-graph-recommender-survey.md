@@ -62,4 +62,4 @@ graph-based recommender systems(GRS)将用户-物品交互建模为图结构,以
 
 ## 在本 wiki 中的位置
 
-本文位于 [[transformer]] 架构与 [[recommender-system]] 的交叉处,系统梳理了 GNN 之外的另一条 GRS 技术路线。它与 wiki 中已有的 [[recommender-system]]、[[sequential-recommendation]] 等推荐主题,以及 self-attention/transformer 架构脉络相承接,可作为"graph transformer 用于推荐"这一子领域的入口与分类索引。
+本文位于 [[transformer]] 架构与 [[recommender-systems|recommender-system]] 的交叉处,系统梳理了 GNN 之外的另一条 GRS 技术路线。它与 wiki 中已有的 [[recommender-systems|recommender-system]]、[[sequential-recommendation]] 等推荐主题,以及 self-attention/transformer 架构脉络相承接,可作为"graph transformer 用于推荐"这一子领域的入口与分类索引。

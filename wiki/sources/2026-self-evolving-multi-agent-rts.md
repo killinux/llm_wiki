@@ -76,4 +76,4 @@ SEMA 是一个无需微调的闭环自组织协作框架,包含三个阶段:
 
 ## 在本 wiki 中的位置
 
-SEMA 把 [[structural-information-theory]] 用于 [[llm-agent]] 的观测压缩,是 [[llm-multi-agent]] 在 RTS / 游戏决策上的应用,与 [[generative-agents]]、[[voyager]] 等 LLM agent 在游戏环境的工作同源,但强调实时性与 [[self-evolving-agents]] 的闭环演化。其多 agent 分工(决策/评估/策略反思)和 [[memory-module]]、[[reflection]] 机制与 [[metagpt]]、[[chatdev]]、[[reflexion]] 一脉相承。基线 HIMA 即 "Society of Mind Meets Real-Time Strategy",是直接对照。评测环境为 StarCraft II 与 SMAC,与 [[minedojo]]、[[webarena]] 等 agent benchmark 属同类交互式评测范式。
+SEMA 把 [[structural-information-theory]] 用于 [[llm-agents|llm-agent]] 的观测压缩,是 [[llm-multi-agent]] 在 RTS / 游戏决策上的应用,与 [[generative-agents]]、[[voyager]] 等 LLM agent 在游戏环境的工作同源,但强调实时性与 [[self-evolving-agents]] 的闭环演化。其多 agent 分工(决策/评估/策略反思)和 [[memory-module]]、[[reflection]] 机制与 [[metagpt]]、[[chatdev]]、[[reflexion]] 一脉相承。基线 HIMA 即 "Society of Mind Meets Real-Time Strategy",是直接对照。评测环境为 StarCraft II 与 SMAC,与 [[minedojo]]、[[webarena]] 等 agent benchmark 属同类交互式评测范式。

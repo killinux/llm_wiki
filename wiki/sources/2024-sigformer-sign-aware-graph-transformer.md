@@ -29,7 +29,7 @@ SIGformer 用 Transformer 架构替代 GNN 来做 sign-aware 推荐,通过两种
 
 ## 问题
 
-[[recommender-system]] 中的图方法(如 LightGCN)大多只用用户的正反馈(点击、高评分),而忽略了同样普遍且有价值的负反馈(低评分、点"踩"、快速划走)。把正、负反馈合成一张**带符号图**能更完整地刻画用户偏好,但现有少数 sign-aware 工作存在两个局限:
+[[recommender-systems|recommender-system]] 中的图方法(如 LightGCN)大多只用用户的正反馈(点击、高评分),而忽略了同样普遍且有价值的负反馈(低评分、点"踩"、快速划走)。把正、负反馈合成一张**带符号图**能更完整地刻画用户偏好,但现有少数 sign-aware 工作存在两个局限:
 
 1. **正负反馈被分开处理**:通常分别构建正图和负图、各自学表示再融合,无法整体利用 signed graph 中的协同信息(例如跨正负边的高阶路径)。
 2. **用 MLP / GNN 抽取负图信息可能无效**:大多数为推荐设计的 GNN(如 LightGCN)基于同质性(homophily)假设——相连节点相似,但这对负图并不成立;MLP 又难以利用图结构且在稀疏推荐数据上难训练。
@@ -57,4 +57,4 @@ SIGformer 把传统图推荐范式中的 GNN 替换为 Transformer,核心是两�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] / 图推荐方向,核心贡献是把 Transformer 引入 **sign-aware** 推荐,并用谱与路径两类 positional encoding 统一利用正负反馈。它与只用正反馈的图方法(LightGCN 等)形成对照,也区别于把正负图分开处理的 sign-aware 方法。与 [[collaborative-filtering]]、[[matrix-factorization]] 等经典协同过滤思想一脉相承,实验用到了快手系数据集 [[kuairec]]、[[kuairand]]。通讯作者为浙江大学的 [[jiawei-chen]]([[zhejiang-university]])。与本 wiki 中以 LLM 为中心的推荐/agent 工作相比,本文是纯结构化推荐模型,可作为图推荐架构演进(GNN→Transformer)的参考节点。
+本文属于 [[recommender-systems|recommender-system]] / 图推荐方向,核心贡献是把 Transformer 引入 **sign-aware** 推荐,并用谱与路径两类 positional encoding 统一利用正负反馈。它与只用正反馈的图方法(LightGCN 等)形成对照,也区别于把正负图分开处理的 sign-aware 方法。与 [[collaborative-filtering]]、[[matrix-factorization]] 等经典协同过滤思想一脉相承,实验用到了快手系数据集 [[kuairec]]、[[kuairand]]。通讯作者为浙江大学的 [[jiawei-chen]]([[zhejiang-university]])。与本 wiki 中以 LLM 为中心的推荐/agent 工作相比,本文是纯结构化推荐模型,可作为图推荐架构演进(GNN→Transformer)的参考节点。

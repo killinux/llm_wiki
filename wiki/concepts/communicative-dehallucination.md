@@ -22,4 +22,4 @@ sources: 1
 - [[hallucination]]
 - [[role-playing]]
 - [[waterfall-process]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]

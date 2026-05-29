@@ -22,7 +22,7 @@ Qingpeng Cai 是一位从事强化学习与推荐系统研究的研究者,工作
 
 - [[rlur]]
 - [[reinforcement-learning]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[user-retention]]
 - [[markov-decision-process]]
 - [[kuaishou]]

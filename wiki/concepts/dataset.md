@@ -19,4 +19,4 @@ sources: 1
 
 - [[selection-bias]]
 - [[distribution-shift]]
-- [[recommendation-system]]
+- [[recommender-systems|recommendation-system]]

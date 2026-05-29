@@ -16,7 +16,7 @@ year: 2024
 
 [[agent-based-modeling]](ABM)能刻画疫情、住房、灾害响应等复杂系统,但长期受两大限制:(1)大规模仿真与校准的高计算成本——可微 ABM(differentiable ABM)+ 向量化已部分缓解,可在消费级硬件上仿真千万级 agent;(2)更关键的是 **agent 行为缺乏表达力**,多数 ABM 仍用简单的 rule-based 启发式更新规则,无法捕捉真实个体的自适应决策。
 
-把 [[large-language-models]] 接入 ABM 可以解耦"agent 行为动态"与"环境动态",带来更真实的 [[llm-agent]] 行为。但已有 LLM 多智能体仿真(如 [[generative-agents]] 的 Smallville 25 个 agent、宏观经济 300 个 agent、Minecraft 1000 个 agent)都局限在 **几百个 agent 的小规模**:在每个时间步为每个个体查询一次 LLM,当 agent 数达百万时计算上不可行。本文目标就是弥合"个体能动性(agency)"与"仿真规模(scale)"之间的鸿沟。
+把 [[large-language-models]] 接入 ABM 可以解耦"agent 行为动态"与"环境动态",带来更真实的 [[llm-agents|llm-agent]] 行为。但已有 LLM 多智能体仿真(如 [[generative-agents]] 的 Smallville 25 个 agent、宏观经济 300 个 agent、Minecraft 1000 个 agent)都局限在 **几百个 agent 的小规模**:在每个时间步为每个个体查询一次 LLM,当 agent 数达百万时计算上不可行。本文目标就是弥合"个体能动性(agency)"与"仿真规模(scale)"之间的鸿沟。
 
 ## 方法
 
@@ -40,4 +40,4 @@ year: 2024
 
 ## 在本 wiki 中的位置
 
-本文属于 **大规模社会仿真 + LLM agent** 方向,是把 [[llm-agent]] 接入 [[agent-based-modeling]] 并扩展到百万级的代表性工作。它与 [[generative-agents]]、[[social-simulation]]、[[recagent]]、[[replicantlife]] 等小规模 LLM 社会仿真形成对照(强调 scale-agency 权衡);其可微校准与 AgentTorch 框架连接 [[deep-neural-network]] 与 ABM;counterfactual 分析与 [[counterfactual-reasoning]]、[[causal-inference]] 相关。可与同样面向 generative ABM 的 [[2023-concordia-generative-agent-based-modeling]] 对照阅读。
+本文属于 **大规模社会仿真 + LLM agent** 方向,是把 [[llm-agents|llm-agent]] 接入 [[agent-based-modeling]] 并扩展到百万级的代表性工作。它与 [[generative-agents]]、[[social-simulation]]、[[recagent]]、[[replicantlife]] 等小规模 LLM 社会仿真形成对照(强调 scale-agency 权衡);其可微校准与 AgentTorch 框架连接 [[deep-neural-network]] 与 ABM;counterfactual 分析与 [[counterfactual-reasoning]]、[[causal-inference]] 相关。可与同样面向 generative ABM 的 [[2023-concordia-generative-agent-based-modeling]] 对照阅读。

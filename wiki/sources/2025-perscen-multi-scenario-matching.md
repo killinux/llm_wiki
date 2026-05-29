@@ -42,4 +42,4 @@ PERSCEN(主要设计用户塔,物料塔结构类似)包含三个组件:
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 中的 [[candidate-generation|匹配/召回]] 方向,聚焦 multi-scenario matching,沿用 [[dpr|两塔/DSSM]] 范式并以高效率为约束。技术上融合了 [[graph-contrastive-learning|GNN]] 类特征交互(field-wise feature graph)、[[variational-autoencoder|向量量化]](VQ,与离散 codebook 思想相关)与 GLU 门控迁移。其"user-specific 个性化建模"主线与 [[personalized-ranking]]、[[cold-start]]/数据稀疏迁移议题相通;场景间共享 codebook 的迁移机制与 [[multi-task-learning]]、跨域推荐形成对照(论文强调多场景无场景间优劣层级,目标是所有场景同时提升)。作者来自[[tsinghua-university|清华大学]](Quanming Yao)、Northwestern Polytechnical University 与美团(Meituan),发表于 KDD 2025。
+本文属于 [[recommender-systems|recommender-system]] 中的 [[candidate-generation|匹配/召回]] 方向,聚焦 multi-scenario matching,沿用 [[dpr|两塔/DSSM]] 范式并以高效率为约束。技术上融合了 [[graph-contrastive-learning|GNN]] 类特征交互(field-wise feature graph)、[[variational-autoencoder|向量量化]](VQ,与离散 codebook 思想相关)与 GLU 门控迁移。其"user-specific 个性化建模"主线与 [[personalized-ranking]]、[[cold-start]]/数据稀疏迁移议题相通;场景间共享 codebook 的迁移机制与 [[multi-task-learning]]、跨域推荐形成对照(论文强调多场景无场景间优劣层级,目标是所有场景同时提升)。作者来自[[tsinghua-university|清华大学]](Quanming Yao)、Northwestern Polytechnical University 与美团(Meituan),发表于 KDD 2025。

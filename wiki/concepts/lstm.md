@@ -19,5 +19,5 @@ LSTM(Long Short-Term Memory)是一种带有门控机制(gating)的循环神经�
 
 - [[multi-task-learning]]
 - [[sequential-recommendation]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[reinforcement-learning]]

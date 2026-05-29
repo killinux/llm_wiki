@@ -16,7 +16,7 @@ year: 2024
 
 ## 问题
 
-基于 [[large-language-models]] 的 [[llm-agent]] 在推荐领域的应用主要分两类:一类是 **recommendation agent**(如 [[interecagent]] 类、RecMind、[[macrec]]),利用 LLM 的世界知识、[[tool-use]] 与 [[reasoning]] 提升推荐;另一类是 **user agent / [[user-simulation]]**(如 Agent4Rec/[[generative-agents]] 思路、RecLLM、[[recagent]]、[[agentcf]]),用 LLM 模拟用户的点赞、点踩、评论等行为,用于评测推荐系统、推断用户兴趣、生成训练数据。
+基于 [[large-language-models]] 的 [[llm-agents|llm-agent]] 在推荐领域的应用主要分两类:一类是 **recommendation agent**(如 [[interecagent]] 类、RecMind、[[macrec]]),利用 LLM 的世界知识、[[tool-use]] 与 [[reasoning]] 提升推荐;另一类是 **user agent / [[user-simulation]]**(如 Agent4Rec/[[generative-agents]] 思路、RecLLM、[[recagent]]、[[agentcf]]),用 LLM 模拟用户的点赞、点踩、评论等行为,用于评测推荐系统、推断用户兴趣、生成训练数据。
 
 以往研究**只单独优化其中一个 agent**,忽视了真实推荐场景中用户与推荐器之间的 **feedback loop(反馈回路)**:推荐器帮用户发现兴趣,用户通过多轮交互的反馈又让系统更懂自己。作者认为这种交互式、互惠的反馈回路恰好契合 LLM agent 在交互与记忆上的优势,因此提出把反馈回路引入双方的联合优化。注意真实世界的反馈回路常会放大 popularity bias 与 position bias(见 [[matthew-effect]]、[[filter-bubble]]),这是本文要规避的风险。
 

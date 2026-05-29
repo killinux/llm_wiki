@@ -43,4 +43,4 @@ DSMOE 在模型和优化两个层面改进 MMOE(见原文 Fig.1):
 
 ## 在本 wiki 中的位置
 
-本文是 [[recommender-system]] 召回方向的工作,把 [[mixture-of-experts]] / [[mmoe]] 从排序迁移到 [[two-tower]] 召回,与 [[multi-scenario-recommendation]]、[[multi-scenario-matching]]、[[multi-scenario-matching]] 主题直接相关;可与多场景排序工作 [[ple]]、[[mmoe]] 及召回基础设施 [[dssm]]、[[approximate-nearest-neighbor-search]]、[[embedding-based-retrieval]] 对照。其用 teacher→student 的 [[knowledge-distillation]] 把交互信息注入双塔,与同样在召回阶段引入新机制的 [[t2diff]]、数据集 [[recflow]] 形成方法对照。低秩动态参数思路与 [[lora]] 相通。
+本文是 [[recommender-systems|recommender-system]] 召回方向的工作,把 [[mixture-of-experts]] / [[mmoe]] 从排序迁移到 [[two-tower]] 召回,与 [[multi-scenario-recommendation]]、[[multi-scenario-matching]]、[[multi-scenario-matching]] 主题直接相关;可与多场景排序工作 [[ple]]、[[mmoe]] 及召回基础设施 [[dssm]]、[[approximate-nearest-neighbor-search]]、[[embedding-based-retrieval]] 对照。其用 teacher→student 的 [[knowledge-distillation]] 把交互信息注入双塔,与同样在召回阶段引入新机制的 [[t2diff]]、数据集 [[recflow]] 形成方法对照。低秩动态参数思路与 [[lora]] 相通。

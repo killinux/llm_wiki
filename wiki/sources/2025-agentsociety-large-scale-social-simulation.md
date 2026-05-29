@@ -36,4 +36,4 @@ AgentSociety 由三大组件构成,并用一个评测框架沿「social agents /
 
 ## 在本 wiki 中的位置
 
-本文是 [[social-simulation]] 与 [[generative-agents]] 方向的大规模工作,沿用并扩展了 [[generative-agents]](Park et al.)的「LLM agent 自驱动日常生活」范式,以及作者团队此前的 [[s3-social-network-simulation]]、EconAgent 等。它与 [[concordia-generative-agent-based-modeling]]、Sotopia、RecAgent 等 LLM 社会模拟器同属 [[agent-based-modeling]] + [[large-language-models]] 交叉领域,但强调三件事的整合:完整社会个体、真实城市-经济-社会环境、万级 [[llm-multi-agent]] 分布式引擎。其工程栈([[ray]]、[[mqtt]]、[[deepseek-v3]])与 [[llm-agent]] 系统设计相关,应用面向 [[computational-social-science]] 的政策评估、风险防控与未来人-AI 社会研究。作者团队来自 [[tsinghua-university]],[[yong-li]] 等参与。
+本文是 [[social-simulation]] 与 [[generative-agents]] 方向的大规模工作,沿用并扩展了 [[generative-agents]](Park et al.)的「LLM agent 自驱动日常生活」范式,以及作者团队此前的 [[s3-social-network-simulation]]、EconAgent 等。它与 [[concordia-generative-agent-based-modeling]]、Sotopia、RecAgent 等 LLM 社会模拟器同属 [[agent-based-modeling]] + [[large-language-models]] 交叉领域,但强调三件事的整合:完整社会个体、真实城市-经济-社会环境、万级 [[llm-multi-agent]] 分布式引擎。其工程栈([[ray]]、[[mqtt]]、[[deepseek-v3]])与 [[llm-agents|llm-agent]] 系统设计相关,应用面向 [[computational-social-science]] 的政策评估、风险防控与未来人-AI 社会研究。作者团队来自 [[tsinghua-university]],[[yong-li]] 等参与。

@@ -19,5 +19,5 @@ sources: 1
 
 - [[memory-augmentation]]
 - [[retrieval-augmented-generation]]
-- [[llm-agent]]
+- [[llm-agents|llm-agent]]
 - [[semantic-representation]]

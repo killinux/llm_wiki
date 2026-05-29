@@ -21,5 +21,5 @@ Yaochen Zhu 是从事推荐系统与因果推断研究的研究者。
 - [[substitute-confounders]]
 - [[variational-autoencoder]]
 - [[causal-inference]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]
 - [[confounding-bias]]

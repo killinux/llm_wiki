@@ -22,11 +22,11 @@ year: 2025
 
 # PUB: An LLM-Enhanced Personality-Driven User Behaviour Simulator for Recommender System Evaluation
 
-PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入到用户建模中,从行为日志推断人格并生成高保真的合成交互,用于[[recommender-system]]的离线评估。
+PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入到用户建模中,从行为日志推断人格并生成高保真的合成交互,用于[[recommender-systems|recommender-system]]的离线评估。
 
 ## 问题
 
-传统的[[recommender-system]]离线评估方法难以捕捉现代平台用户交互的动态复杂性:离线数据集普遍存在行为信号稀疏、日志含噪、缺乏细粒度行为信号以及受 confounding 变量偏置等问题,限制了对推荐系统的鲁棒优化能力。真实用户实验虽然有价值,但资源密集且涉及隐私顾虑。已有的[[user-simulation]]框架(如 [[recsim]]、[[recagent]])存在两大局限:(1) 低保真——生成的行为常偏离真实统计分布;(2) 人格建模过度简化——基于协同过滤或 Markov 决策过程的方法无法捕捉用户特质与行为之间的细致关联。论文要解决的核心问题是:如何利用 [[large-language-models]] 结合心理学上有效的 Big Five 人格特质,生成多样化且保真的用户行为以支撑可靠的推荐系统评估。
+传统的[[recommender-systems|recommender-system]]离线评估方法难以捕捉现代平台用户交互的动态复杂性:离线数据集普遍存在行为信号稀疏、日志含噪、缺乏细粒度行为信号以及受 confounding 变量偏置等问题,限制了对推荐系统的鲁棒优化能力。真实用户实验虽然有价值,但资源密集且涉及隐私顾虑。已有的[[user-simulation]]框架(如 [[recsim]]、[[recagent]])存在两大局限:(1) 低保真——生成的行为常偏离真实统计分布;(2) 人格建模过度简化——基于协同过滤或 Markov 决策过程的方法无法捕捉用户特质与行为之间的细致关联。论文要解决的核心问题是:如何利用 [[large-language-models]] 结合心理学上有效的 Big Five 人格特质,生成多样化且保真的用户行为以支撑可靠的推荐系统评估。
 
 ## 方法
 
@@ -56,4 +56,4 @@ PUB 是一个混合架构,分四个阶段运行:
 
 ## 在本 wiki 中的位置
 
-本文属于 LLM 驱动的[[user-simulation]]与[[recommendation-simulator]]方向,与 [[recagent]]、[[recsim]]、[[lusifer]] 等模拟器形成对照,但独特之处在于引入 Big Five 人格特质作为生成行为的心理学锚点。它服务于 [[recommender-system]] 的离线[[evaluation]],并与序列推荐模型([[sasrec]]、[[gru4rec]])及协同过滤模型([[matrix-factorization]]、[[bpr]]、[[lightgcn]])的对比评估相关。作者来自 RMIT,与其前作 NEST、面向 confounding 与推荐去偏的工作([[debiasing]])一脉相承。
+本文属于 LLM 驱动的[[user-simulation]]与[[recommendation-simulator]]方向,与 [[recagent]]、[[recsim]]、[[lusifer]] 等模拟器形成对照,但独特之处在于引入 Big Five 人格特质作为生成行为的心理学锚点。它服务于 [[recommender-systems|recommender-system]] 的离线[[evaluation]],并与序列推荐模型([[sasrec]]、[[gru4rec]])及协同过滤模型([[matrix-factorization]]、[[bpr]]、[[lightgcn]])的对比评估相关。作者来自 RMIT,与其前作 NEST、面向 confounding 与推荐去偏的工作([[debiasing]])一脉相承。

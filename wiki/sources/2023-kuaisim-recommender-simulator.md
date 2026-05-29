@@ -25,11 +25,11 @@ year: 2023
 
 # KuaiSim: A Comprehensive Simulator for Recommender Systems
 
-KuaiSim 是一个面向 [[recommender-system]] 的综合性 [[user-simulation]] 环境,提供 multi-behavior 与 cross-session 的用户反馈,统一支持 request 级 list-wise 推荐、whole-session 级 sequential 推荐与 cross-session 级 retention 优化三类任务,并配套 baseline 与 benchmark。
+KuaiSim 是一个面向 [[recommender-systems|recommender-system]] 的综合性 [[user-simulation]] 环境,提供 multi-behavior 与 cross-session 的用户反馈,统一支持 request 级 list-wise 推荐、whole-session 级 sequential 推荐与 cross-session 级 retention 优化三类任务,并配套 baseline 与 benchmark。
 
 ## 问题
 
-基于 [[reinforcement-learning]] 的 [[recommender-system]] 能学到最优推荐策略、最大化长期用户回报,但直接在线上部署 RL 模型并通过 A/B test 产生真实数据代价高、风险大(未训练好的模型会损害用户体验)。User simulator 作为 pre-online 验证手段应运而生,但现有模拟器存在若干局限:
+基于 [[reinforcement-learning]] 的 [[recommender-systems|recommender-system]] 能学到最优推荐策略、最大化长期用户回报,但直接在线上部署 RL 模型并通过 A/B test 产生真实数据代价高、风险大(未训练好的模型会损害用户体验)。User simulator 作为 pre-online 验证手段应运而生,但现有模拟器存在若干局限:
 
 1. **反馈过于简化**:多数只模拟单一即时反馈,而真实 web 服务中用户反馈是 multi-behavior 的(短视频场景下用户可 click、like、forward、download)。
 2. **缺乏长期/延迟行为建模**:用户可能离开 app 后再回来,产生 leave 信号与 retention 信号,而 retention 与 DAU(daily active users)这一核心指标紧密相关,却被严重低估。
@@ -67,4 +67,4 @@ KuaiSim 把 RL 推荐建模为 recommender system(agent)与用户(environment)�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-system]] 的 [[user-simulation]] 与 [[offline-rl]] 评估方向,与 [[recsim]]、[[rl4rs]] 等模拟器形成对照,首次统一覆盖 request/whole-session/cross-session 三层任务并强调 [[user-retention]] 优化。其用到的 [[kuairand]]/[[kuairand-pure]] 数据集、HAC/[[td3]]/[[ddpg]] 等 RL 方法,以及对 [[listwise-recommendation]] 与 [[sequential-recommendation]] 的建模,可与 wiki 中相关 RL4Rec 工作互相参照。
+本文属于 [[recommender-systems|recommender-system]] 的 [[user-simulation]] 与 [[offline-rl]] 评估方向,与 [[recsim]]、[[rl4rs]] 等模拟器形成对照,首次统一覆盖 request/whole-session/cross-session 三层任务并强调 [[user-retention]] 优化。其用到的 [[kuairand]]/[[kuairand-pure]] 数据集、HAC/[[td3]]/[[ddpg]] 等 RL 方法,以及对 [[listwise-recommendation]] 与 [[sequential-recommendation]] 的建模,可与 wiki 中相关 RL4Rec 工作互相参照。

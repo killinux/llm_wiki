@@ -16,7 +16,7 @@ SAGE 是一个由 User、Assistant、Checker 三个 agent 组成、结合迭代�
 
 ## 问题
 
-[[large-language-models]] 在 NLP 上取得显著进展,但作为 [[llm-agent]] 在动态环境中仍面临三类挑战:
+[[large-language-models]] 在 NLP 上取得显著进展,但作为 [[llm-agents|llm-agent]] 在动态环境中仍面临三类挑战:
 
 - 需要在变化的环境中持续决策并适应新情况与任务;
 - 缺乏长期记忆机制,在需要持续与环境交互时尤为明显;

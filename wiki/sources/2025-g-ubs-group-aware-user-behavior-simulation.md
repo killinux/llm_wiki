@@ -18,7 +18,7 @@ G-UBS(Group-aware User Behavior Simulation)提出一个"用户群组管理器 + 
 
 ## 方法
 
-G-UBS 由两个协作的 LLM-based agent 组成,把群组画像注入到基于 RL 的[[user-simulation]]微调中,用群组级先验来过滤个体隐式反馈中的噪声。属于[[llm-multi-agent]]与[[recommender-system]]结合的[[human-behavior-simulation]]方向。
+G-UBS 由两个协作的 LLM-based agent 组成,把群组画像注入到基于 RL 的[[user-simulation]]微调中,用群组级先验来过滤个体隐式反馈中的噪声。属于[[llm-multi-agent]]与[[recommender-systems|recommender-system]]结合的[[human-behavior-simulation]]方向。
 
 - **User Group Manager(UGM)**:负责把大规模用户聚成群组并生成群组画像,采用"summarize-cluster-reflect"工作流,支持 1000+ 用户并生成最多 50 个群组画像。
   - Phase 1 Summarize:把含 1000+ 用户的画像集(ID、职业、年龄、性别、视频偏好标签)输入分组 LLM(用 [[deepseek-r1]]),按指定模式(视频偏好或人口属性)输出 k 个群组及各群组的典型用户。
@@ -41,4 +41,4 @@ G-UBS 由两个协作的 LLM-based agent 组成,把群组画像注入到基于 R
 
 ## 在本 wiki 中的位置
 
-本文是把 [[llm-multi-agent]] 与 RL 用于[[recommender-system]]中[[user-simulation]]的代表性工作,与 [[recagent]]、[[agent4rec]]、[[agentcf]] 等 LLM 驱动的推荐用户模拟一脉相承,但创新在于:用群组画像作为上下文先验来抑制个体隐式反馈噪声,并把 [[supervised-fine-tuning]] + GRPO([[ppo]]系列的 group-relative 变体)的 RL 训练扩展到多模态视频场景。其归因式建模与 [[chain-of-thought]] 推理相关,benchmark IF-VR 可与 [[kuairand]] 等推荐数据集并置参考。
+本文是把 [[llm-multi-agent]] 与 RL 用于[[recommender-systems|recommender-system]]中[[user-simulation]]的代表性工作,与 [[recagent]]、[[agent4rec]]、[[agentcf]] 等 LLM 驱动的推荐用户模拟一脉相承,但创新在于:用群组画像作为上下文先验来抑制个体隐式反馈噪声,并把 [[supervised-fine-tuning]] + GRPO([[ppo]]系列的 group-relative 变体)的 RL 训练扩展到多模态视频场景。其归因式建模与 [[chain-of-thought]] 推理相关,benchmark IF-VR 可与 [[kuairand]] 等推荐数据集并置参考。

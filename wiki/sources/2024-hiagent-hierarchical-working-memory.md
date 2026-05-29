@@ -24,13 +24,13 @@ year: 2024
 
 # HiAgent: Hierarchical Working Memory Management for Solving Long-Horizon Agent Tasks with Large Language Model
 
-HiAgent 借鉴人类问题求解中的"分块(chunking)"思想,用 subgoal 作为 memory chunk 分层管理 [[llm-agent]] 的 working memory(in-trial memory),在五个长程任务上将成功率提升约一倍。
+HiAgent 借鉴人类问题求解中的"分块(chunking)"思想,用 subgoal 作为 memory chunk 分层管理 [[llm-agents|llm-agent]] 的 working memory(in-trial memory),在五个长程任务上将成功率提升约一倍。
 
 ## 问题
 
 [[llm-based-agents]] 作为交互系统处理环境 observation 并生成可执行 action,其表现高度依赖 memory 机制。memory 分为两类:cross-trial memory(跨多次尝试累积,见 [[agent-memory]])与 in-trial memory(即 **working memory**,单次尝试内累积)。已有大量工作优化 cross-trial memory(如 [[reflexion]]),但对 working memory 的高效利用研究不足。
 
-主流范式 STANDARD(如 [[react]] / [[react-reasoning-and-acting]])把**所有历史 action-observation pair** 全部直接塞进 working memory 作为 LLM 上下文。在 long-horizon agent tasks(任务通常需 20 步以上)中,这导致 working memory 冗长冗余,阻碍 LLM 维持连贯策略、做出准确预测,并随步数增加而性能下降。
+主流范式 STANDARD(如 [[react]] / [[react|react-reasoning-and-acting]])把**所有历史 action-observation pair** 全部直接塞进 working memory 作为 LLM 上下文。在 long-horizon agent tasks(任务通常需 20 步以上)中,这导致 working memory 冗长冗余,阻碍 LLM 维持连贯策略、做出准确预测,并随步数增加而性能下降。
 
 ## 方法
 

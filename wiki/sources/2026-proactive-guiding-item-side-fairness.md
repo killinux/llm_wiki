@@ -63,4 +63,4 @@ HRL4PFG([[deep-reinforcement-learning]] 分层框架,基于 [[actor-critic]])把
 
 ## 在本 wiki 中的位置
 
-本文处于 [[recommender-system]] 的 [[provider-fairness]]/item-side 公平与 [[interactive-recommendation]] 交叉,用 [[deep-reinforcement-learning]] 的 [[hierarchical-representation|分层]] [[actor-critic]] 实现。与直接注入长尾物品的公平方法(re-ranking、公平正则、把约束加进 RL)不同,它属于 [[proactive-recommendation|主动推荐]] 思路——渐进引导用户偏好。评测沿用 [[easyrl4rec]] + [[kuairec]]/[[kuairand]] 的 [[rl-based-recsys]] 标准设置,公平用 [[gini-coefficient|Gini Index]] 度量,可与 [[long-term-recommendation]]、[[minimum-exposure-guarantee]]、[[matthew-effect]] 等条目互参。
+本文处于 [[recommender-systems|recommender-system]] 的 [[provider-fairness]]/item-side 公平与 [[interactive-recommendation]] 交叉,用 [[deep-reinforcement-learning]] 的 [[hierarchical-representation|分层]] [[actor-critic]] 实现。与直接注入长尾物品的公平方法(re-ranking、公平正则、把约束加进 RL)不同,它属于 [[proactive-recommendation|主动推荐]] 思路——渐进引导用户偏好。评测沿用 [[easyrl4rec]] + [[kuairec]]/[[kuairand]] 的 [[rl-based-recsys]] 标准设置,公平用 [[gini-coefficient|Gini Index]] 度量,可与 [[long-term-recommendation]]、[[minimum-exposure-guarantee]]、[[matthew-effect]] 等条目互参。

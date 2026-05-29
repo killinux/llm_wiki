@@ -23,4 +23,4 @@ Min Zhang 是活跃于推荐系统与大语言模型交叉领域的研究者,工
 - [[sare]]
 - [[eeg-svrec]]
 - [[llm-agents]]
-- [[recommendation-systems]]
+- [[recommender-systems|recommendation-systems]]

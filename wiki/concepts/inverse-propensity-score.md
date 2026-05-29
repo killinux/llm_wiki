@@ -26,7 +26,7 @@ Inverse Propensity Score(IPS,逆倾向分数)是一种基于倾向分数(propens
 - [[exposure-bias]]
 - [[off-policy-evaluation]]
 - [[inverse-propensity-scoring]]
-- [[recommender-system]]
+- [[recommender-systems|recommender-system]]
 - [[doubly-robust]]
 - [[2023-conservative-doubly-robust]]
 - [[2023-data-heterogeneity-recommendation]]
