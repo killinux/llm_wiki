@@ -4,7 +4,7 @@ subtype: method
 tags: [agent, orchestration, multi-agent, LLM]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 6
 ---
 
 # Agent Orchestration
@@ -15,6 +15,10 @@ Agent Orchestration 指对多个 LLM agent 进行协调、调度与编排,使它
 
 - [[2023-autogen]]:微软提出的开源多 agent 框架,通过可定制、可对话的 agent 之间的会话编程来构建复杂 LLM 应用。在该工作中,Agent Orchestration 体现为以 agent 间会话为核心的编排范式——开发者通过组织和定义多个 agent 的角色与对话流程来驱动任务完成。
 - [[2024-megaagent-large-scale-mas-without-sop]]:借鉴操作系统进程/线程模型、无需预定义 SOP、可自动生成数百 agent 并行协作的大规模 LLM 多智能体系统,800 秒内开发五子棋、2991 秒协调 590 个 agent 生成国家政策。
+- [[2025-multi-agent-collaboration-mechanisms-survey]]:一篇系统综述,沿 actors、types、structures、strategies、coordination protocols 五个维度刻画基于 LLM 的多 agent 系统协作机制,并梳理其跨领域应用与挑战。
+- [[2025-llm-multi-agent-autonomous-driving-survey]]:系统综述 LLM 驱动的多智能体自动驾驶系统,按智能体交互模式与结构分类已有方法,并梳理 agent-human 交互、应用、数据集与未来方向。
+- [[2025-multiagentbench]]:MultiAgentBench 与 MARBLE 框架,在六个交互式场景中评测 LLM 多智能体的协作与竞争,衡量任务完成度与协调质量;gpt-4o-mini 平均任务分最高、graph 协议在研究场景最优、认知规划使里程碑达成率提升约 3%。
+- [[2026-agentorchestra-tea-protocol]]:提出 TEA 协议将工具/环境/智能体建模为带生命周期与版本的一等资源,并构建分层多智能体框架 AgentOrchestra,在 GAIA Test 上达到 89.04% 平均准确率。
 
 ## 相关
 
@@ -23,3 +27,5 @@ Agent Orchestration 指对多个 LLM agent 进行协调、调度与编排,使它
 - [[conversation-programming]]
 - [[2023-autogen]]
 - [[standard-operating-procedure]]
+- [[coordination-protocol]]
+- [[hierarchical-agent-framework]]

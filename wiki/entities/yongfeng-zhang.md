@@ -1,10 +1,10 @@
 ---
 type: entity
 subtype: person
-tags: [recommendation-system, causal-inference, machine-learning, researcher]
+tags: [recommendation-system, causal-inference, machine-learning, researcher, llm-agents]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 3
 ---
 
 # Yongfeng Zhang
@@ -15,6 +15,7 @@ Yongfeng Zhang 是一位从事推荐系统、信息检索与机器学习研究�
 
 - 在 [[2023-causal-inference-for-recommendation]] 中,Yongfeng Zhang 是该系统综述的作者(之一)。该综述梳理了如何将因果推断引入推荐系统,涵盖因果记号、假设、效应及估计方法,并讨论了可解释性、公平性、鲁棒性、uplift 与无偏性等实际问题。
 - [[2023-microlens-micro-video-recommendation-dataset]]:MicroLens 是一个含 10 亿交互、3400 万用户、100 万微视频并提供原始视频/音频/图像/文本内容的内容驱动微视频推荐数据集与基准。
+- [[2025-agentic-memory-llm-agents]]:受 Zettelkasten 启发的 agentic 记忆系统,通过结构化笔记、自主链接生成与记忆演化为 LLM agent 提供可持续演化的长期记忆。
 
 ## 相关
 
@@ -23,3 +24,6 @@ Yongfeng Zhang 是一位从事推荐系统、信息检索与机器学习研究�
 - [[2023-causal-inference-for-recommendation]]
 - [[microlens]]
 - [[micro-video-recommendation]]
+- [[agentic-memory]]
+- [[llm-agent]]
+- [[zettelkasten]]

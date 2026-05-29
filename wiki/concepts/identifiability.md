@@ -4,7 +4,7 @@ subtype: method
 tags: [causal-inference, recommendation, proxy-variable, proximal-causal-inference, latent-confounder]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 4
 ---
 
 # 可识别性
@@ -15,6 +15,8 @@ sources: 2
 
 - [[2023-idcf-debiasing-recommendation]]:可识别性是 iDCF 方法的核心动机与理论保证。文中指出已有的 [[deconfounder|Deconfounder]] 存在固有的非可识别(non-identification)问题——即便替代混杂变量可唯一确定,反事实反馈分布 $p(r^a_{ui})$ 仍可能落在一个区间内取不同值,导致预测不一致。iDCF 借助代理变量(proxy variable,即用户特征)与 [[proximal-causal-inference|近端因果推断]],在存在未观测混杂变量(unobserved confounder)时为推荐场景的反事实反馈提供可识别性的理论保证(Theorem 4.3),并用 [[ivae|iVAE]] 实现潜在混杂变量的可识别学习。该方法在 Coat、Yahoo!R3、KuaiRand 上一致优于现有去混杂方法。
 - [[2024-fairness-recommendation-missing-labels]]:证明大规模推荐系统在缺失标签下 REO 公平性指标不可识别,提出用小比例 random traffic 无偏估计公平性指标并给出误差上界,首次公开 TikTok 公平性数据集。
+- [[2024-mitigating-dual-latent-confounding-biases]]:IViDR 联合工具变量(IV)与 identifiable VAE,同时缓解推荐系统中 item-feedback 与 exposure-feedback 两类潜在混淆偏差。
+- [[2025-causality-constraint-debiasing-recommender]]:LCDR 用 identifiable VAE (iVAE) 作为因果约束去对齐标准 VAE 的潜在表征,即使 proxy variable 低质/有噪声也能恢复 latent confounder,从而缓解推荐系统中的潜在混杂偏差。
 
 ## 相关
 
@@ -25,3 +27,4 @@ sources: 2
 - [[debiasing]]
 - [[potential-outcome-framework]]
 - [[multi-cause-confounders]]
+- [[instrumental-variable]]

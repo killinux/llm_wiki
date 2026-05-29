@@ -4,7 +4,7 @@ subtype: model
 tags: [multi-task-learning, recommendation, mixture-of-experts, MTL]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 5
+sources: 7
 ---
 
 # MMoE
@@ -18,6 +18,8 @@ MMoE(Multi-gate Mixture-of-Experts)是一种多任务学习模型,通过共享�
 - [[2023-multi-task-deep-recommender-systems-survey]]:作为多任务深度推荐系统(MTDRS)的代表性模型被纳入,该综述从任务关系与方法论两个维度建立系统分类体系,梳理代表模型、数据集与未来方向。
 - [[2023-hierrec-scenario-aware-hierarchical-dynamic-network]]:HierRec 用分层 dynamic-weight 网络同时建模显式与隐式场景,在 Ali-CCP/KuaiRand 多场景 CTR 预测上显著超越 MMoE、PLE、STAR 等基线。
 - [[2024-merrec-mercari-c2c-recommendation-dataset]]:首个面向 C2C 电商的大规模推荐数据集 MerRec,来自 Mercari,含约 556 万用户、8307 万商品、12.7 亿交互,配套 CTR/SBR/MLR/IAR 四类任务基准与三塔模型 Mercatran。
+- [[2025-xmtf-formula-free-multi-task-fusion]]:xMTF 用可学习的单调融合单元(MFC)替代多任务融合中的预定义公式,配合 RL 外层 + 监督内层的两阶段混合训练,离线 Total Watch Time 1279.7s 超越全部基线,线上 Daily Watch Time +0.833%,Kuaishou 全量部署服务超 1 亿用户。
+- [[2025-deep-interest-life-cycle-network]]:提出 DILN,显式建模用户兴趣生命周期(emergent/stable/declining)并用 VQ 聚类离散化、注入 MMOE 排序模型,Lofter 线上 CTR +0.38%、CVR +1.04%、时长 +0.25%。
 
 ## 相关
 
@@ -30,3 +32,4 @@ MMoE(Multi-gate Mixture-of-Experts)是一种多任务学习模型,通过共享�
 - [[ple]]
 - [[star]]
 - [[hierrec]]
+- [[multi-task-fusion]]

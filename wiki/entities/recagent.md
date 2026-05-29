@@ -4,7 +4,7 @@ subtype: product
 tags: [LLM-agent, recommender-system, user-simulation, social-simulation]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 6
 ---
 
 # RecAgent
@@ -15,6 +15,10 @@ RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环�
 
 - [[2023-recagent-user-behavior-simulation]]:提出 RecAgent,用 LLM-based agent 在沙盒中近乎零样本地模拟用户的推荐与社交行为,并以此研究信息茧房与从众现象。
 - [[2024-macrec-multi-agent-recommendation]]:清华提出的多 agent 协作推荐框架(SIGIR'24 demo),用 Manager、Analyst、Reflector、Searcher、Task Interpreter 等角色各异的 LLM agent 直接协作完成评分预测、序列推荐、解释生成与对话推荐。
+- [[2024-agentic-feedback-loop-recommendation]]:提出 AFL,让 recommendation agent 与 user agent 通过基于 memory 的多轮文本反馈回路相互协作,同时提升推荐(平均 +11.52%)与用户模拟(平均 +21.12%),且不放大流行度/位置偏差。
+- [[2024-lmagent-multimodal-agents-society]]:基于多模态 LLM 的万级规模 agents 社会,在电商场景模拟多用户的购物、社交、直播行为,复现真实 co-purchase 模式与从众等 emergent behavior。
+- [[2025-llm-agents-for-recommender-systems-survey]]:系统综述 LLM 驱动 agent 在推荐系统中的应用,提出"面向推荐/交互/模拟"三范式,并用 Profile-Memory-Planning-Action 四模块统一架构对比 23 个方法、汇总数据集与评测。
+- [[2025-pub-personality-user-behaviour-simulator]]:PUB 是一个基于 LLM 的用户行为模拟器,把 Big Five 人格特质嵌入用户建模,从行为日志推断人格并生成高保真合成交互,用于推荐系统的离线评估。
 
 ## 相关
 

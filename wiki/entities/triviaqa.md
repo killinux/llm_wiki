@@ -4,7 +4,7 @@ subtype: benchmark
 tags: [benchmark, question-answering, open-domain-qa, factual-knowledge]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 1
+sources: 2
 ---
 
 # TriviaQA
@@ -14,6 +14,7 @@ TriviaQA 是一个大规模的开放域问答(open-domain QA)基准数据集,包
 ## 在本 wiki 中的出现
 
 - [[2023-critic]]:在 CRITIC 的研究中,TriviaQA 作为自由形式问答(free-form QA)任务的评测基准之一,用于检验 LLM 借助搜索引擎等外部工具进行自我验证与迭代修正后,在事实性问答上的表现是否得到改进。
+- [[2024-sage-self-evolving-agents]]:由 User/Assistant/Checker 三 agent 组成、结合迭代反馈、反思与基于 Ebbinghaus 遗忘曲线的记忆优化的自进化 LLM agent 框架,对小模型提升尤为显著。
 
 ## 相关
 

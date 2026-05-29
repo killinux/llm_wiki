@@ -4,7 +4,7 @@ subtype: model
 tags: [llm, foundation-model, openai, gpt, reasoning, agent]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 36
+sources: 42
 ---
 
 # GPT-4
@@ -49,6 +49,12 @@ GPT-4 是 OpenAI 推出的大规模多模态语言模型,凭借强大的推理�
 - [[2024-tree-search-for-language-model-agents]]:作为被 inference-time best-first 树搜索增强的 web agent 模型(GPT-4o),在 VisualWebArena 上成功率相对提升 39.7%。
 - [[2024-recursive-introspection-rise]]:作为讨论递归反思与自我纠错能力的参考大模型,RISE 让 7B 级 LLM 在无外部反馈下学会跨多轮修正答案。
 - [[2024-hiagent-hierarchical-working-memory]]:作为 HiAgent 用 subgoal 分层管理 working memory 的底层 LLM agent。
+- [[2024-aipatient-simulated-patient-llm-agents]]:AIPatient,一个由六个任务专用 LLM 智能体 + Reasoning RAG + 基于 MIMIC-III 真实病历构建的知识图谱驱动的模拟病人系统,EHR-QA 准确率达 94.15%、NER 知识库 F1=0.89,用户研究中匹配或优于真人模拟病人。
+- [[2024-unbounded-generative-infinite-game]]:提出"生成式无限游戏"概念并实现一个角色生活模拟系统:游戏机制、叙事与角色/环境图像全部由 LLM 与 text-to-image 模型实时生成,核心创新是带 Block Drop 的 regional IP-Adapter(保证角色与环境一致性)与将多 LLM 协作能力蒸馏进 Gemma-2B 的实时游戏引擎。
+- [[2024-lmagent-multimodal-agents-society]]:基于多模态 LLM 的万级规模 agents 社会,在电商场景模拟多用户的购物、社交、直播行为,复现真实 co-purchase 模式与从众等 emergent behavior。
+- [[2025-mem0-scalable-long-term-memory]]:Mem0 是一个以记忆为中心的架构,从持续对话中动态抽取、整合与检索关键信息,并提出图记忆变体 Mem0^g,在 LOCOMO 基准上以约 91% 更低延迟和逾 90% token 节省超越多种基线。
+- [[2025-mmoagent-economic-simulation-mmo]]:提出 MMOAgent,一个基于 LLM 的 Generative Agent-Based Modeling 框架,用具备 profile/感知/推理/记忆/行动的 LLM 智能体模拟 MMO 游戏经济,涌现出角色分化与符合供需规律的价格波动。
+- [[2025-ai-agent-behavioral-science]]:立场/综述论文,提出 AI Agent Behavioral Science 范式:把 LLM agent 当作行为实体,通过系统观察、干预与理论解释来研究其在个体、多 agent、人-agent 交互三类场景下的行为、适应与 responsible AI。
 
 ## 相关
 
@@ -66,3 +72,8 @@ GPT-4 是 OpenAI 推出的大规模多模态语言模型,凭借强大的推理�
 - [[multi-agent-system]]
 - [[reasoning]]
 - [[benchmark]]
+- [[gemma-2b]]
+- [[mimic-iii]]
+- [[mem0]]
+- [[generative-agent-based-modeling]]
+- [[ai-agent-behavioral-science]]

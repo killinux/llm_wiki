@@ -4,7 +4,7 @@ subtype: method
 tags: [agents, planning, search, mcts, reasoning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 3
 ---
 
 # 语言智能体树搜索 (LATS, Language Agent Tree Search)
@@ -37,3 +37,4 @@ sources: 2
 ## 在本 wiki 中的出现
 
 - [[2024-tree-search-for-language-model-agents]]:为 LLM web agent 提出 inference-time best-first tree search,在真实 web 环境中显式做探索与多步规划,把 GPT-4o 在 VisualWebArena 上成功率相对提升 39.7% 至 SOTA 26.4%,并展示 test-time compute scaling 的收益。
+- [[2024-rethinkmcts]]:一个面向代码生成的思路搜索框架,用 MCTS 探索写代码的推理过程,并通过 rethink 机制利用块级代码执行反馈直接精炼搜索树中的错误思路。

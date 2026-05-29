@@ -4,7 +4,7 @@ subtype: lab
 tags: [lab, ai-research, google, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 5
+sources: 9
 ---
 
 # Google DeepMind
@@ -18,6 +18,10 @@ Google DeepMind 是 Google 旗下的人工智能研究实验室,专注于机器�
 - [[2023-timesfm-time-series-foundation-model]]:Google Research 的 TimesFM:一个在 O(100B) 时间点真实+合成时序上预训练的 decoder-only 时序预测基础模型,zero-shot 表现接近全监督 SOTA。
 - [[2023-concordia-generative-agent-based-modeling]]:Google DeepMind 提出的库 Concordia,用 LLM 驱动的生成式 agent 在物理/社会/数字空间中扎根交互,通过 Game Master 控制环境,支持 Generative Agent-Based Modeling 的社会仿真与数字服务评估。
 - [[2024-v-star-verifiers-for-self-taught-reasoners]]:V-STaR 在自我提升迭代中复用正确与错误的模型生成解,用 DPO 训练 verifier 在测试时对候选解排序,使 LLaMA2 在数学推理上绝对提升 6%~17%、代码生成 4%~12%。
+- [[2024-score-self-correct-via-rl]]:SCoRe 用完全自生成数据的多轮在线强化学习(两阶段 + 奖励塑形)训练单个 LLM,在 MATH 上把内在自我纠错 Δ(t1,t2) 从 -11.2% 提到 +4.4%(整体提升 15.6%)、HumanEval 上达 12.2%。
+- [[2024-generative-agents-self-reports]]:用基于真人深度访谈与问卷自述构建的 generative agents,可对单个个体在多种社会科学结果上做通用模拟,留出题目预测精度接近个体两周后的重测一致性。
+- [[2025-reflective-memory-management]]:提出 RMM(Reflective Memory Management):用主题粒度的前瞻反思组织对话记忆,并用 LLM 引用信号在线 RL 精炼检索 reranker,在 LongMemEval 上比无记忆基线提升 10%+ 准确率。
+- [[2025-multi-actor-genai-as-game-engine]]:Google DeepMind 的立场/架构论文,主张用游戏引擎式的 Entity-Component 架构统一支撑 Evaluationist/Dramatist/Simulationist 三类多智能体生成式 AI 用户动机,以 Concordia v2 为实例。
 
 ## 相关
 
@@ -30,3 +34,7 @@ Google DeepMind 是 Google 旗下的人工智能研究实验室,专注于机器�
 - [[self-correction]]
 - [[time-series-forecasting]]
 - [[generative-agents]]
+- [[reinforcement-learning]]
+- [[memory-management]]
+- [[multi-agent-systems]]
+- [[concordia]]

@@ -4,7 +4,7 @@ subtype: method
 tags: [causal-inference, confounding, deconfounding, bias]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 1
+sources: 2
 ---
 
 # Deconfounding
@@ -14,6 +14,7 @@ sources: 1
 ## 在本 wiki 中的出现
 
 - [[2022-deep-causal-reasoning-for-recommendations]]:Deep-Deconf 用深度 VAE 推断 substitute confounders,把推荐建模为 MCMO(multi-cause multi-outcome)因果推断问题,以消除混杂偏差并降低方差。
+- [[2025-causality-constraint-debiasing-recommender]]:LCDR 用 identifiable VAE (iVAE) 作为因果约束去对齐标准 VAE 的潜在表征,即使 proxy variable 低质/有噪声也能恢复 latent confounder,从而缓解推荐系统中的潜在混杂偏差。
 
 ## 相关
 

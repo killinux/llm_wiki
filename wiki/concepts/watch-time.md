@@ -4,7 +4,7 @@ subtype: method
 tags: [watch-time, recommendation, interest-signal, debias, video]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 8
+sources: 15
 ---
 
 # Watch Time as Interest Signal

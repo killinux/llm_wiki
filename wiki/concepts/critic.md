@@ -4,7 +4,7 @@ subtype: method
 tags: [self-correction, tool-use, verification, self-improvement]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 5
 ---
 
 # CRITIC
@@ -17,6 +17,7 @@ CRITIC 是一种让 LLM 借助外部工具进行交互式验证与迭代修正�
 - [[2023-shepherd-critic-for-lm-generation]]:Meta AI 用约 8K 高质量社区+人工反馈数据微调出 7B 的 LLaMA critic 模型 Shepherd,能精确批判 LLM 输出并给改进建议,GPT-4 评估 win-rate 53-87%,与 ChatGPT 媲美。
 - [[2024-when-can-llms-correct-mistakes]]:批判性综述,细分自我纠错的三类研究问题并提出实验检查清单,论证 LLM 仅凭 prompting 在一般任务上无法可靠自我纠错,瓶颈在于反馈生成,而外部工具/大规模 fine-tuning 可使其奏效。
 - [[2024-llm-critics-help-catch-llm-bugs]]:OpenAI 用 RLHF 训练 GPT-4 级别的 critic 模型 CriticGPT,让 LLM 写自然语言批评指出代码 bug,以可扩展监督方式帮助人类更准确评估模型生成的代码。
+- [[2025-xmtf-formula-free-multi-task-fusion]]:xMTF 用可学习的单调融合单元(MFC)替代多任务融合中的预定义公式,采用 RL 外层 + 监督内层的两阶段混合训练;在 RL 外层中,critic 评估融合策略所产生的长期价值(如 Total Watch Time),为策略更新提供价值信号。离线 Total Watch Time 达 1279.7s 超越全部基线,线上 Daily Watch Time +0.833%,已在 Kuaishou 全量部署服务超 1 亿用户。
 
 ## 相关
 

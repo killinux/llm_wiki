@@ -4,7 +4,7 @@ subtype: method
 tags: [reasoning, prompting, chain-of-thought, decoding, ensembling]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 12
+sources: 17
 ---
 
 # Self-Consistency
@@ -36,6 +36,16 @@ Self-Consistency 是一种解码与推理策略：对同一道题用 chain-of-th
 - [[2024-recursive-introspection-rise]]：RISE 将单轮问题建模为多轮 MDP 并用 reward-weighted regression 迭代微调，让 7B 级 LLM 在无外部反馈下学会跨多轮递归反思并修正答案。
 
 - [[2024-compute-optimal-inference]]：提出 inference scaling laws / compute-optimal inference 研究问题与新型树搜索算法 REBASE，实证表明固定推理算力下小模型配合高级推理策略比大模型更具性价比（Llemma-7B 约省 2× FLOPs 达到 34B 水平）。
+
+- [[2024-multi-agent-tot-validator]]：将 Tree-of-Thoughts 与多智能体推理结合，新增 Thought Validator agent 过滤无效推理分支后再共识投票，在 GSM8K 上比标准 ToT 平均提升 5.6 个百分点。
+
+- [[2024-score-self-correct-via-rl]]：SCoRe 用完全自生成数据的多轮在线强化学习（两阶段+奖励塑形）训练单个 LLM，在 MATH 上把内在自我纠错 Δ(t1,t2) 从 -11.2% 提到 +4.4%（整体提升 15.6%）、HumanEval 上达 12.2%。
+
+- [[2024-optima-optimizing-llm-multi-agent]]：OPTIMA 通过生成-排序-选择-训练的迭代范式同时优化 LLM 多智能体系统的通信效率与任务有效性，在重信息交换任务上达成 2.8x 性能提升且 token 用量不到 10%。
+
+- [[2024-lmagent-multimodal-agents-society]]：基于多模态 LLM 的万级规模 agents 社会，在电商场景模拟多用户的购物、社交、直播行为，复现真实 co-purchase 模式与从众等 emergent behavior。
+
+- [[2025-ab-mcts-adaptive-branching-tree-search]]：提出 AB-MCTS：在推理时树搜索中用 Thompson sampling 自适应决定"向宽采样新候选"还是"向深用外部反馈细化已有答案"，统一 repeated sampling 与多轮 refinement，实现更高效的 test-time scaling。
 
 ## 相关
 

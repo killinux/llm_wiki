@@ -4,7 +4,7 @@ subtype: method
 tags: [self-improvement, bootstrapping, reasoning, agent, in-context-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 9
+sources: 11
 ---
 
 # Self-Improvement
@@ -31,6 +31,10 @@ Self-Improvement 指 LLM(或基于 LLM 的 Agent)在很少甚至不依赖额外�
 
 - [[2024-recursive-introspection-rise]]:RISE 将单轮问题建模为多轮 MDP 并用 reward-weighted regression 迭代微调,让 7B 级 LLM 在无外部反馈下学会跨多轮递归反思并修正答案。
 
+- [[2026-agentorchestra-tea-protocol]]:提出 TEA 协议将工具/环境/智能体建模为带生命周期与版本的一等资源,并构建分层多智能体框架 AgentOrchestra,在 GAIA Test 上达到 89.04% 平均准确率。
+
+- [[2025-survey-self-evolving-agents]]:首个系统聚焦自进化智能体的综述,沿 what/when/how/where 四维建立统一框架并梳理评测体系与通往 ASI 的路线图。
+
 ## 相关
 
 - [[chain-of-thought]]
@@ -43,3 +47,5 @@ Self-Improvement 指 LLM(或基于 LLM 的 Agent)在很少甚至不依赖额外�
 - [[verifier]]
 - [[reflection]]
 - [[tree-search]]
+- [[self-evolving-agents]]
+- [[multi-agent-system]]

@@ -4,7 +4,7 @@ subtype: method
 tags: [reward-model, rlhf, alignment, preference-learning, ppo]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 6
+sources: 9
 ---
 
 # Reward Model
@@ -19,6 +19,9 @@ Reward Model 是一个从人类偏好数据中训练出来的模型,用于给语
 - [[2024-llm-critics-help-catch-llm-bugs]]:OpenAI 用 RLHF 训练 GPT-4 级别的 critic 模型 CriticGPT,让 LLM 写自然语言批评指出代码 bug,以可扩展监督方式帮助人类更准确评估模型生成的代码。
 - [[2024-conditional-quantile-estimation-watch-time]]:提出 CQE,用 quantile regression 与 pinball loss 建模短视频观看时长的完整条件分布,并设计保守/动态组合/条件期望三种推断策略,在 Kuaishou 数亿日活平台上线获显著收益——其打分/估值模型在推荐排序中扮演奖励信号的角色。
 - [[2024-compute-optimal-inference]]:提出 inference scaling laws / compute-optimal inference 研究问题与新型树搜索算法 REBASE,实证表明固定推理算力下小模型配合高级推理策略比大模型更具性价比(Llemma-7B 约省 2× FLOPs 达到 34B 水平),其中树搜索依赖奖励/价值模型对中间步骤打分。
+- [[2024-agentic-feedback-loop-recommendation]]:提出 AFL,让 recommendation agent 与 user agent 通过基于 memory 的多轮文本反馈回路相互协作,同时提升推荐(平均 +11.52%)与用户模拟(平均 +21.12%),且不放大流行度/位置偏差。
+- [[2025-sotopia-rl-reward-design-social-intelligence]]:SOTOPIA-RL 把 episode 级反馈细化为 utterance 级、多维度 reward,用单轮在线 GRPO 训练社交 agent,在 SOTOPIA 上取得 SOTA goal completion(SOTOPIA-hard 7.17、SOTOPIA-all 8.31)。
+- [[2025-llm-collaboration-marl-magrpo]]:把多 LLM 协作建模为合作式 MARL(Dec-POMDP)并提出 Multi-Agent GRPO(MAGRPO),在写作与编码协作上微调多个 LLM;TLDR/arXiv return 达 94.5%/93.1%,HumanEval/CoopHumanEval return 达 86.7%/88.5%。
 
 ## 相关
 
@@ -32,3 +35,5 @@ Reward Model 是一个从人类偏好数据中训练出来的模型,用于给语
 - [[dpo]]:可直接从偏好数据优化,或用于训练 verifier。
 - [[scalable-oversight]]:用模型辅助人类评估的范式。
 - [[inference-scaling]]:测试时搜索常依赖奖励/价值模型。
+- [[grpo]]:基于 reward 的策略优化算法,SOTOPIA-RL 与 MAGRPO 均采用。
+- [[reward-design]]:如何把粗粒度反馈细化为可优化的多维度奖励。

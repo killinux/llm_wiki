@@ -4,7 +4,7 @@ subtype: method
 tags: [self-improvement, iterative-refinement, feedback, prompting, llm-reasoning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 11
+sources: 13
 ---
 
 # SELF-REFINE
@@ -24,6 +24,8 @@ SELF-REFINE 是一种无需额外训练的测试时方法:用同一个 LLM 对�
 - [[2024-self-reflection-llm-agents]]:在 9 个 LLM、1000 道多选题上对比 8 种自我反思类型,证明所有 self-reflection 都能显著提升 LLM agent 的解题准确率(p<0.001)。
 - [[2024-when-can-llms-correct-mistakes]]:批判性综述:细分自我纠错的三类研究问题并提出实验检查清单,论证 LLM 仅凭 prompting 在一般任务上无法可靠自我纠错,瓶颈在于反馈生成,而外部工具/大规模 fine-tuning 可使其奏效。
 - [[2024-recursive-introspection-rise]]:RISE 将单轮问题建模为多轮 MDP 并用 reward-weighted regression 迭代微调,让 7B 级 LLM 在无外部反馈下学会跨多轮递归反思并修正答案。
+- [[2024-positive-experience-reflection]]:提出 Sweet&Sour,让 LLM agent 在交互式文本环境中不仅从失败、也从成功经验做反思,并配合双缓冲 managed memory,缓解 self-reflection 在初始成功与小模型上失效的问题;ScienceWorld 上 GPT-4o 平均 54.6、Llama 8B 32.5 均超 Reflexion。
+- [[2025-llm-agents-cooperate-social-dilemma]]:让 ChatGPT-4o 与 Claude 3.5 Sonnet 为 iterated Prisoner's Dilemma 写出完整策略(而非逐步出招),用 evolutionary game theory / Moran process 模拟 LLM agent 群体演化,发现多数场景下侵略策略劣势、系统倾向合作,但博弈论 prompt 与 self-refine 会增强侵略策略并提高收敛到侵略均衡的风险。
 
 ## 相关
 
@@ -38,6 +40,8 @@ SELF-REFINE 是一种无需额外训练的测试时方法:用同一个 LLM 对�
 - [[2024-self-reflection-llm-agents]]
 - [[2024-when-can-llms-correct-mistakes]]
 - [[2024-recursive-introspection-rise]]
+- [[2024-positive-experience-reflection]]
+- [[2025-llm-agents-cooperate-social-dilemma]]
 - [[self-debugging]]
 - [[critic]]
 - [[multi-agent-debate]]

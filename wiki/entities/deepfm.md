@@ -4,7 +4,7 @@ subtype: model
 tags: [recommendation, ctr-prediction, factorization-machine, deep-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 9
+sources: 12
 ---
 
 # DeepFM
@@ -22,6 +22,9 @@ DeepFM 是一种用于 CTR 预测的推荐模型,将 Factorization Machine (FM) 
 - [[2024-model-based-multi-agent-short-video-recommender]]:MMRF:协作式多智能体 RL 最大化短视频会话累计 WatchTime,并用 model-based 反馈模拟缓解样本选择偏差,离线 +7.3% GAUC、在线 +0.55% WatchTime,已部署服务数亿用户。
 - [[2024-conditional-quantile-estimation-watch-time]]:提出 CQE,用 quantile regression 与 pinball loss 建模短视频观看时长的完整条件分布,并设计保守/动态组合/条件期望三种推断策略,在 Kuaishou 数亿日活平台上线获显著收益。
 - [[2024-deconfound-release-interval-bias]]:将 release interval 识别为短视频推荐中的 confounder,提出模型无关的因果框架 LDRI,通过 backdoor adjustment 阻断后门路径并按视频自身 recency sensitivity 个性化去偏。
+- [[2026-pdqubo-quantum-feature-selection]]:PDQUBO 用反事实分析量化单特征与特征对的推荐性能影响,构造性能驱动的 QUBO 系数矩阵,在量子退火器上做模型无关、指标无关的推荐系统特征选择。
+- [[2025-self-surrogate-light-feature-selection]]:提出 SELF,用多个 LLM 的世界知识对特征做语义排序、再以轻量 bridge network 融合任务信号,缓解深度推荐系统特征选择对 surrogate model 的依赖。
+- [[2024-prompt-tuning-item-cold-start]]:PROMO 用高价值正反馈(pinnacle feedback)替代内容描述作 prompt,并为每个 item 构造个性化 prompt network,同时缓解 item cold-start 推荐的数据成本与热门偏置,已在快手十亿用户级平台部署。
 
 ## 相关
 
@@ -29,3 +32,4 @@ DeepFM 是一种用于 CTR 预测的推荐模型,将 Factorization Machine (FM) 
 - [[ctr-prediction]]
 - [[recommendation-system]]
 - [[wide-and-deep]]
+- [[feature-selection]]

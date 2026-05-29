@@ -4,7 +4,7 @@ subtype: benchmark
 tags: [social-intelligence, llm-agents, evaluation, simulation, multi-agent]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 3
 ---
 
 # SOTOPIA
@@ -15,6 +15,7 @@ SOTOPIA 是一个开放式社交互动模拟环境与多维评测框架(SOTOPIA-
 
 - [[2023-sotopia-social-intelligence-evaluation]]:SOTOPIA 提出一个开放式社交互动模拟环境与多维评测框架 SOTOPIA-EVAL,交互式地评估 LLM 智能体在目标导向社交场景中的社会智能,发现 GPT-4 在最难子集上的目标完成率显著低于人类。
 - [[2024-sotopia-pi-social-agents]]:通过 behavior cloning 与 self-reinforcement 在 GPT-4 评分过滤的社交对话数据上训练,使 7B LLM 的社交目标完成能力逼近 GPT-4,同时提升安全并保持 MMLU。
+- [[2025-sotopia-s4-social-simulation-system]]:面向非技术用户的快速、灵活、可扩展社会模拟系统,通过模拟引擎 + RESTful API + Web UI,让研究者无需编程即可用自然语言设计、并行运行并自动评估多轮多方 LLM 社会交互。
 
 ## 相关
 

@@ -4,7 +4,7 @@ subtype: person
 tags: [recommendation-system, reinforcement-learning, kuaishou, short-video, author]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 6
+sources: 7
 ---
 
 # Kun Gai
@@ -19,6 +19,7 @@ Kun Gai 是一位活跃于推荐系统与强化学习交叉领域的研究者,�
 - [[2023-gflownet-listwise-recommendation]]:作为作者参与提出 GFN4Rec,用 GFlowNet 流匹配让推荐列表的生成概率正比于其 list-wise 奖励,在保持高质量的同时显著提升列表多样性与在线探索能力。
 - [[2023-kuaisim-recommender-simulator]]:面向推荐系统的综合性用户模拟器,提供 multi-behavior 与 cross-session 反馈,统一支持 request 级 list-wise、whole-session 级 sequential 与 cross-session 级 retention 三类 RL 推荐任务并配套 benchmark。
 - [[2024-future-impact-decomposition-request-level-recommendation]]:提出 ItemA2C 框架,在 request-level MDP 下将 list-wise reward 分解为 item-wise 信用并用 actor-critic 优化每个 item 的长期未来影响,提升推荐长期效果。
+- [[2024-recflow-full-flow-recommendation-dataset]]:首个包含工业推荐系统多级漏斗各阶段未曝光样本的大规模全流程数据集,用于研究分布偏移、选择偏差与多阶段联合优化。
 
 ## 相关
 

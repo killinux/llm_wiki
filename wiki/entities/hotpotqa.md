@@ -4,7 +4,7 @@ subtype: benchmark
 tags: [QA, multi-hop, reasoning, retrieval, benchmark]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 6
+sources: 7
 ---
 
 # HotpotQA
@@ -19,6 +19,7 @@ HotpotQA 是一个基于 Wikipedia 的多跳(multi-hop)问答数据集,要求模
 - [[2023-llms-cannot-self-correct-reasoning-yet]]:本文证明在无外部反馈的"内在自我纠正"设定下,LLM 无法纠正自身推理错误,性能反而往往下降。
 - [[2023-fireact-language-agent-fine-tuning]]:提出用多任务、多 prompting 方法(ReAct/CoT/Reflexion)生成的轨迹微调 backbone LM 来构建语言智能体,在性能、鲁棒性、泛化与成本上全面优于 few-shot prompting。
 - [[2024-when-can-llms-correct-mistakes]]:批判性综述:细分自我纠错的三类研究问题并提出实验检查清单,论证 LLM 仅凭 prompting 在一般任务上无法可靠自我纠错,瓶颈在于反馈生成,而外部工具/大规模 fine-tuning 可使其奏效。
+- [[2024-sage-self-evolving-agents]]:SAGE 自进化 agent 框架(由 User/Assistant/Checker 三 agent 组成,结合迭代反馈、反思与基于 Ebbinghaus 遗忘曲线的记忆优化)在 HotpotQA 等任务上评估,对小模型提升尤为显著。
 
 ## 相关
 

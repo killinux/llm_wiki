@@ -4,7 +4,7 @@ subtype: method
 tags: [causal-inference, debiasing, recommendation, propensity]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 3
+sources: 6
 ---
 
 # Inverse Propensity Score
@@ -16,6 +16,9 @@ Inverse Propensity Score(IPS,逆倾向分数)是一种基于倾向分数(propens
 - [[2023-data-heterogeneity-recommendation]]:该论文提出双层聚类方法 BHE,显式挖掘推荐数据中的预测机制异质性与协变量分布异质性,用于多子模型预测与去偏。IPS 在此作为推荐系统去偏的经典基线/技术背景出现——通过倾向分数加权来缓解曝光偏差,论文工作可视为在异质性建模视角下对这一去偏范式的补充与改进(在 Yelp/MovieLens-1M 上 NFM 骨干 NDCG@20 从 14.01 提升到 22.57)。
 - [[2023-conservative-doubly-robust]]:该论文提出 CDR,通过审查插补值(imputation)的均值与方差过滤 Doubly Robust 推荐去偏中的"毒性插补"。IPS 在此是 Doubly Robust(DR)估计器的两大组成之一——DR 将 IPS 的倾向加权项与 imputation 模型结合,以降低单独使用 IPS 时的高方差;CDR 即针对该框架中的插补质量做保守化改进,从而降低偏差方差并提升性能。
 - [[2024-feature-level-bias-ctr]]:自上而下分析揭示 CTR 模型的 feature-level bias 主要源自线性部分,并提出移除/重建线性权重的极简非侵入式去偏策略。
+- [[2024-mitigating-dual-latent-confounding-biases]]:IViDR 联合工具变量(IV)与 identifiable VAE,同时缓解推荐系统中 item-feedback 与 exposure-feedback 两类潜在混淆偏差。
+- [[2025-caserec-counterfactual-augmentation-system-exposure]]:CaseRec 用 Decision Transformer 式 offline RL 建模完整 system exposure 序列,并通过 user simulator 驱动的反事实数据增强发掘未见用户兴趣,改进 sequential recommendation 并缓解 exposure bias。
+- [[2025-reward-balancing-revisited]]:提出 R3S,用 diffusion world model 显式建模 reward 不确定性并配合带衰减的多样性惩罚,在 offline RL 推荐中同时平衡 world model 偏差与策略多样性,在 Coat/Yahoo/KuaiRand 上超越 DORL、ROLeR 等 11 个 baseline。
 
 ## 相关
 

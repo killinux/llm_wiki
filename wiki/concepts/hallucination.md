@@ -4,7 +4,7 @@ subtype: method
 tags: [hallucination, factuality, reliability, self-correction, retrieval]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 14
+sources: 20
 ---
 
 # Hallucination
@@ -27,6 +27,12 @@ Hallucination 指 LLM 生成看似合理但与事实不符、缺乏依据或无�
 - [[2024-when-can-llms-correct-mistakes]]:批判性综述,论证 LLM 仅凭 prompting 在一般任务上无法可靠自我纠错,瓶颈在于反馈生成,而外部工具/大规模 fine-tuning 可使其奏效,直接关乎 hallucination 的纠正边界。
 - [[2024-llm-critics-help-catch-llm-bugs]]:OpenAI 用 RLHF 训练 GPT-4 级别的 critic 模型 CriticGPT,让 LLM 写自然语言批评指出代码 bug,以可扩展监督辅助人类评估模型生成内容的正确性。
 - [[2024-megaagent-large-scale-mas-without-sop]]:借鉴操作系统进程/线程模型、无需预定义 SOP、可自动生成数百 agent 并行协作的大规模 LLM 多智能体系统,大规模协作中的输出一致性与可靠性面临 hallucination 挑战。
+- [[2024-aipatient-simulated-patient-llm-agents]]:AIPatient 用六个任务专用 LLM 智能体 + Reasoning RAG + 基于 MIMIC-III 真实病历的知识图谱驱动模拟病人系统,以真实病历约束生成、抑制 hallucination,EHR-QA 准确率达 94.15%、NER 知识库 F1=0.89。
+- [[2024-optima-optimizing-llm-multi-agent]]:OPTIMA 通过生成-排序-选择-训练的迭代范式联合优化多智能体系统的通信效率与任务有效性,在重信息交换任务上达成 2.8x 性能提升且 token 用量不到 10%,减少冗余交流带来的错误累积。
+- [[2024-llm-powered-user-simulator-for-recommender-system]]:用 LLM 离线蒸馏用户偏好关键词与情感,在线用逻辑+统计集成模型显式推断 like/dislike,构建可解释、低幻觉、低成本的推荐系统用户模拟器。
+- [[2025-multi-agent-collaboration-mechanisms-survey]]:系统综述沿 actors、types、structures、strategies、coordination protocols 五个维度刻画 LLM 多 agent 协作机制,并将 hallucination 等列为跨领域应用中的关键挑战。
+- [[2025-extended-refusal-defense-against-abliteration]]:通过 extended-refusal 微调把安全信号从单一潜在方向分散到多 token 位置与多维度,使模型在 abliteration 攻击后仍保持 >90% 拒绝率,同时通用性能几乎不变。
+- [[2025-emergent-llm-behaviors-data-leakage]]:批判性短文指出 LLM 多智能体模拟中"自发涌现的社会约定"在观测上等价于 data leakage——模型只是复述预训练中已知的协调博弈知识,而非真正自组织。
 
 ## 相关
 

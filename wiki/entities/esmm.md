@@ -4,7 +4,7 @@ subtype: model
 tags: [multi-task-learning, recommendation, ctr, cvr, deep-learning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 3
 ---
 
 # ESMM
@@ -15,6 +15,7 @@ ESMM(Entire Space Multi-Task Model)是一种用于推荐系统的多任务深度
 
 - [[2023-multi-task-deep-recommender-systems-survey]]:作为级联(cascaded)任务关系的代表模型。ESMM 共享 embedding,在全空间(entire space)上按 impression→click→conversion 的行为序列建模,利用 CTCVR = CTR × CVR 的依赖关系解决样本选择偏差(SSB)与数据稀疏(DS),并被列入综述 Table 1 的级联模型清单(与 ESM²、AITM、ESCM² 等并列)。
 - [[2024-merrec-mercari-c2c-recommendation-dataset]]:首个面向 C2C 电商的大规模推荐数据集 MerRec,来自 Mercari,含约 556 万用户、8307 万商品、12.7 亿交互,配套 CTR/SBR/MLR/IAR 四类任务基准与三塔模型 Mercatran。
+- [[2025-gnolr-progressive-implicit-preference]]:提出 GNOLR,用有序标签映射加嵌套优化把多种隐式反馈编码进统一 embedding 空间,既建模用户参与度递进又把多路检索简化为单次最近邻搜索。
 
 ## 相关
 
@@ -28,3 +29,4 @@ ESMM(Entire Space Multi-Task Model)是一种用于推荐系统的多任务深度
 - [[recommendation]]
 - [[merrec]]
 - [[mercatran]]
+- [[gnolr]]

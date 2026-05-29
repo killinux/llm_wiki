@@ -4,7 +4,7 @@ subtype: method
 tags: [reward-model, reasoning, process-supervision, math, RLHF]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 3
+sources: 4
 ---
 
 # 过程奖励模型 (PRM)
@@ -16,6 +16,7 @@ sources: 3
 - 在 [[2023-lets-verify-step-by-step]] 中,PRM 是论文的核心方法。OpenAI 通过过程监督 (process supervision) 训练 PRM,证明其在 MATH 多步数学推理任务上显著优于结果监督 (ORM):用 PRM 做 best-of-N 重排序,准确率达到 78.2%。论文同时开源了步骤级人工标注数据集 PRM800K,用于训练这类逐步打分的奖励模型。
 - [[2023-ts-llm-tree-search-decoding-training]]:TS-LLM:用学习的 value function 的 AlphaZero 风格树搜索,同时指导 LLM 的推理解码与迭代训练,适配任意规模 LLM 并将搜索深度扩展到 64。
 - [[2024-compute-optimal-inference]]:提出 inference scaling laws / compute-optimal inference 研究问题与新型树搜索算法 REBASE,实证表明固定推理算力下小模型配合高级推理策略比大模型更具性价比(Llemma-7B 约省 2× FLOPs 达到 34B 水平)。
+- [[2025-sotopia-rl-reward-design-social-intelligence]]:SOTOPIA-RL 把 episode 级反馈细化为 utterance 级、多维度 reward,用单轮在线 GRPO 训练社交 agent,在 SOTOPIA 上取得 SOTA goal completion(SOTOPIA-hard 7.17、SOTOPIA-all 8.31)。
 
 ## 相关
 

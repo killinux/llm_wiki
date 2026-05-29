@@ -4,7 +4,7 @@ subtype: model
 tags: [model, llm, openai, gpt, few-shot]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 6
+sources: 7
 ---
 
 # GPT-3
@@ -19,6 +19,7 @@ GPT-3 是 OpenAI 推出的 175B 参数自回归大语言模型,以强大的 few-
 - [[2023-causal-inference-for-recommendation]]:在这篇关于将因果推断引入推荐系统的系统综述中被提及。
 - [[2023-plan-and-solve-prompting]]:作为零样本提示方法所作用的 LLM。该工作提出 Plan-and-Solve (PS/PS+) 提示,让 LLM 先制定计划再执行子任务,改进 Zero-shot-CoT 的多步推理。
 - [[2023-timesfm-time-series-foundation-model]]:Google Research 的 TimesFM 是一个在 O(100B) 时间点真实+合成时序上预训练的 decoder-only 时序预测基础模型,zero-shot 表现接近全监督 SOTA;其 decoder-only 架构与基础模型范式与 GPT-3 一脉相承。
+- [[2024-large-recommendation-models-scaling]]:华为诺亚与 USTC 的工作,系统评估 large recommendation models 的 scaling law,以生成式推荐模型 HSTU 为代表,在多 backbone、复杂用户行为与 ranking 任务上验证可扩展性及其来源组件;GPT-3 作为 NLP 领域 scaling law 的代表性参照。
 
 ## 相关
 
@@ -34,3 +35,6 @@ GPT-3 是 OpenAI 推出的 175B 参数自回归大语言模型,以强大的 few-
 - [[plan-and-solve-prompting]]
 - [[timesfm]]
 - [[foundation-model]]
+- [[scaling-law]]
+- [[hstu]]
+- [[recommendation-system]]

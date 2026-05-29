@@ -1,0 +1,23 @@
+---
+type: concept
+subtype: method
+tags: [refusal, safety, activation-steering, over-refusal, llm]
+created: 2026-05-29
+updated: 2026-05-29
+sources: 1
+---
+
+# refusal vector
+
+拒绝向量(refusal vector)是模型激活空间中代表"拒绝行为"的一个方向向量,可通过对其进行正交化、消融或引导来调控大语言模型在面对请求时的拒绝倾向。
+
+## 在本 wiki 中的出现
+
+- [[2024-mitigating-false-refusal-single-vector-ablation]]:提出 training-free、零推理开销的方法,通过正交化并消融单个 false refusal vector 来缓解 LLM 的过度拒绝,同时保持安全性与通用能力。
+
+## 相关
+
+- [[activation-steering]]
+- [[over-refusal]]
+- [[false-refusal]]
+- [[llm-safety]]

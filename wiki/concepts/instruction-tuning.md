@@ -4,7 +4,7 @@ subtype: method
 tags: [instruction-tuning, alignment, fine-tuning, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 4
+sources: 6
 ---
 
 # Instruction Tuning
@@ -21,6 +21,10 @@ Instruction Tuning 指在带有自然语言指令(及其期望输出)的数据�
 
 - [[2023-agenttuning]]:通过构建跨任务 agent 交互轨迹数据集 AgentInstruct 并与通用指令混合微调,使开源 Llama 2 获得可泛化的 agent 能力且不损害通用能力。
 
+- [[2025-opencharacter-role-playing-synthetic-personas]]:用 Persona Hub 大规模合成 persona 造角色对齐 SFT 数据,微调 LLaMA-3 8B 获得 out-of-domain 角色泛化能力,在 PersonaGym 上比肩 GPT-4o。
+
+- [[2025-extended-refusal-defense-against-abliteration]]:通过 extended-refusal 微调把安全信号从单一潜在方向分散到多 token 位置与多维度,使模型在 abliteration 攻击后仍保持 >90% 拒绝率,同时通用性能几乎不变。
+
 ## 相关
 
 - [[rlhf]]
@@ -36,3 +40,5 @@ Instruction Tuning 指在带有自然语言指令(及其期望输出)的数据�
 - [[2023-agenttuning]]
 - [[hallucination]]
 - [[agent]]
+- [[synthetic-data]]
+- [[abliteration]]

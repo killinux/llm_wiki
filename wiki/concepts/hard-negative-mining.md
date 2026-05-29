@@ -4,7 +4,7 @@ subtype: method
 tags: [retrieval, embedding, training, negative-sampling]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 4
 ---
 
 # Hard negative mining
@@ -15,6 +15,8 @@ Hard negative mining 是一种训练负采样策略,通过挑选那些"与正样
 
 - [[2023-divide-and-conquer-ebr]]:该工作把推荐召回的 embedding-based retrieval 拆成"物料聚类 + 簇内并行检索 + 可控合并",并采用 prompt-like 多任务适配。在这种 EBR 训练范式中,hard negative mining 通常作为提升表征判别力的关键手段——困难负样本往往就来自与目标 query/物料同簇或语义临近的物料,与该工作的聚类结构天然契合。在公开数据集上 Recall 最高提升约 40%,并已在快手线上部署。
 - [[2024-robust-recommendation-decision-boundary-gcl]]:提出 RGCL,用决策边界感知的对抗扰动约束 graph contrastive learning 增强视图,平衡语义不变性与对比难度并最大化间隔,在 5 个数据集上一致超越 12 个 baseline(Kuaishou Recall@10 +14.14%)。
+- [[2025-debias-can-be-unreliable]]:揭示用随机曝光数据集传统评估去偏推荐不可靠,提出 URE 方案无偏估计全曝光数据上的 Recall@K。
+- [[2024-recflow-full-flow-recommendation-dataset]]:首个包含工业推荐系统多级漏斗各阶段未曝光样本的大规模全流程数据集,用于研究分布偏移、选择偏差与多阶段联合优化。
 
 ## 相关
 

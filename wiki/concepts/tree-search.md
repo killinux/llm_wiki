@@ -4,7 +4,7 @@ subtype: method
 tags: [reasoning, search, planning, llm]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 3
+sources: 5
 ---
 
 # Tree Search
@@ -16,6 +16,8 @@ Tree Search 是一类在树状结构的状态空间中通过分支扩展、评�
 - [[2023-tree-of-thoughts]]:将 LLM 推理建模为在「思考」(thought)树上的 Tree Search。每个节点是一段中间思考,模型可以进行前瞻(lookahead)、自评估(self-evaluation)候选分支的优劣,并在死路时回溯(backtracking)到更有希望的分支。借助这种搜索,在 24 点(Game of 24)任务上把 GPT-4 的成功率从 CoT 的 4% 提升到 74%。
 - [[2024-tree-search-for-language-model-agents]]:为 LLM web agent 提出 inference-time best-first tree search,在真实 web 环境中显式做探索与多步规划,把 GPT-4o 在 VisualWebArena 上成功率相对提升 39.7% 至 SOTA 26.4%,并展示 test-time compute scaling 的收益。
 - [[2024-compute-optimal-inference]]:提出 inference scaling laws / compute-optimal inference 研究问题与新型树搜索算法 REBASE,实证表明固定推理算力下小模型配合高级推理策略比大模型更具性价比(Llemma-7B 约省 2× FLOPs 达到 34B 水平)。
+- [[2024-rethinkmcts]]:一个面向代码生成的思路搜索框架,用 MCTS 探索写代码的推理过程,并通过 rethink 机制利用块级代码执行反馈直接精炼搜索树中的错误思路。
+- [[2025-ab-mcts-adaptive-branching-tree-search]]:提出 AB-MCTS,在推理时树搜索中用 Thompson sampling 自适应决定"向宽采样新候选"还是"向深用外部反馈细化已有答案",统一 repeated sampling 与多轮 refinement,实现更高效的 test-time scaling。
 
 ## 相关
 

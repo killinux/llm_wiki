@@ -1,24 +1,23 @@
 ---
 type: entity
 subtype: person
-tags: [recommendation, fairness, watch-time, online-learning]
+tags: [person, researcher, recommender-systems, fairness]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 2
+sources: 1
 ---
 
 # Jun Xu
 
-推荐系统领域的研究者,工作涉及推荐公平性、流量分配建模以及观看时长去偏等方向。
+Jun Xu 是推荐系统与信息检索领域的研究者,与本 wiki 收录的公平性推荐重排工作相关联。
 
 ## 在本 wiki 中的出现
 
-- [[2024-bankfair-fluctuating-traffic-reranking]]:BankFair 借鉴破产问题的 Talmud rule,把两侧推荐的曝光分配建模为序列化破产问题并用在线学习求解,在波动用户流量下同时保证短期用户准确性与长期提供方公平性。
-- [[2024-counterfactual-watch-time]]:提出 counterfactual watch time (CWT) 与 Counterfactual Watch Model (CWM),从经济学视角建模观看行为以消除视频推荐中的 duration bias。
+- [[2025-bankfair-plus-regret-aware-reranking]]:BankFair+(BankFair 的扩展期刊版)把 regret theory 的非线性满意度函数与 fuzzy programming 引入推荐重排,在保证供给侧最低曝光公平与用户平均精度的同时,显著提升被忽视的用户个体公平(KuaiRand-1K 上 MMR 0.741 vs BankFair 0.493)。
 
 ## 相关
 
-- [[two-sided-fairness]]
-- [[duration-bias]]
-- [[online-learning]]
-- [[recommendation-system]]
+- [[bankfair]]
+- [[regret-theory]]
+- [[fairness-in-recommendation]]
+- [[reranking]]

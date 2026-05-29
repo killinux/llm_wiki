@@ -4,7 +4,7 @@ subtype: method
 tags: [agent, tool-use, reasoning]
 created: 2026-05-29
 updated: 2026-05-29
-sources: 11
+sources: 14
 ---
 
 # 工具使用
@@ -24,6 +24,9 @@ sources: 11
 - [[2023-drivemlm-autonomous-driving]]:DriveMLM 通过将多模态 LLM 的语言决策与模块化 AD 系统的行为规划状态对齐,在 CARLA 仿真器实现闭环自动驾驶,Town05 Long 上 DS 达 76.1,优于 Apollo 4.7 点。
 - [[2024-macrec-multi-agent-recommendation]]:清华提出的多 agent 协作推荐框架(SIGIR'24 demo),用 Manager、Analyst、Reflector、Searcher、Task Interpreter 等角色各异的 LLM agent 直接协作完成评分预测、序列推荐、解释生成与对话推荐。
 - [[2024-megaagent-large-scale-mas-without-sop]]:借鉴操作系统进程/线程模型、无需预定义 SOP、可自动生成数百 agent 并行协作的大规模 LLM 多智能体系统,800 秒内开发五子棋、2991 秒协调 590 个 agent 生成国家政策。
+- [[2024-agentic-feedback-loop-recommendation]]:提出 AFL,让 recommendation agent 与 user agent 通过基于 memory 的多轮文本反馈回路相互协作,同时提升推荐(平均 +11.52%)与用户模拟(平均 +21.12%),且不放大流行度/位置偏差。
+- [[2026-agentorchestra-tea-protocol]]:提出 TEA 协议将工具/环境/智能体建模为带生命周期与版本的一等资源,并构建分层多智能体框架 AgentOrchestra,在 GAIA Test 上达到 89.04% 平均准确率。
+- [[2025-llm-agent-evaluation-survey]]:SAP Labs 的 LLM agent 评测综述,提出"评测目标 × 评测过程"二维分类法,并强调企业落地中的可靠性、合规与 RBAC 等挑战。
 
 ## 相关
 
@@ -31,3 +34,4 @@ sources: 11
 - [[llm-agent]] — 工具使用是构建 LLM agent 的核心能力
 - [[multi-agent-systems]] — AutoGen 中工具使用是多 agent 协作完成任务的能力之一
 - [[self-critique]] — CRITIC 中通过工具反馈实现自我验证
+- [[agent-evaluation]] — LLM agent 评测中工具调用能力是关键评测维度
