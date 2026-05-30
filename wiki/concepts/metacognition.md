@@ -19,4 +19,4 @@ sources: 1
 
 - [[generative-agents]]
 - [[self-reflection]]
-- [[planning]]
+- [[llm-planning|planning]]

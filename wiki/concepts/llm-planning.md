@@ -24,7 +24,7 @@ LLM Planning 指利用大语言模型(LLM)将高层目标分解为可执行的�
 
 ## 相关
 
-- [[inner-monologue]]
+- [[2022-inner-monologue|inner-monologue]]
 - [[embodied-reasoning]]
 - [[closed-loop-control]]
 - [[replanning]]

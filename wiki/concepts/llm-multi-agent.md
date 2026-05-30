@@ -58,6 +58,6 @@ LLM 多智能体系统(LLM Multi-Agent System)指由多个基于大语言模型�
 - [[agent-based-modeling]]
 - [[generative-agent-based-modeling]]
 - [[swarm-intelligence]]
-- [[emergent-behavior]]
+- [[emergent-abilities|emergent-behavior]]
 - [[social-simulation]]
 - [[llm-agent-memory]]

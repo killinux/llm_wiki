@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[emergent-behavior]]
+- [[emergent-abilities|emergent-behavior]]
 - [[data-leakage]]
-- [[multi-agent-simulation]]
+- [[multi-agent-systems|multi-agent-simulation]]
 - [[coordination-games]]

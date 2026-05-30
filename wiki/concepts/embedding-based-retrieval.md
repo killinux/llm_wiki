@@ -25,5 +25,5 @@ Embedding-based retrieval(EBR)是一种把 query 与候选物料映射到同一�
 - [[approximate-nearest-neighbor-search]]
 - [[recommendation-retrieval]]
 - [[embedding]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[multi-task-learning]]

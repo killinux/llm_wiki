@@ -23,7 +23,7 @@ PPO(Proximal Policy Optimization,近端策略优化)是一种通过裁剪目标�
 - [[2025-sotopia-rl-reward-design-social-intelligence]]:SOTOPIA-RL 把 episode 级反馈细化为 utterance 级、多维度 reward,用单轮在线 GRPO 训练社交 agent,在 SOTOPIA 上取得 SOTA goal completion(SOTOPIA-hard 7.17、SOTOPIA-all 8.31)。
 - [[2025-llm-collaboration-marl-magrpo]]:把多 LLM 协作建模为合作式 MARL(Dec-POMDP)并提出 Multi-Agent GRPO(MAGRPO),在写作与编码协作上微调多个 LLM;TLDR/arXiv return 达 94.5%/93.1%,HumanEval/CoopHumanEval return 达 86.7%/88.5%。
 - [[reward-model]]
-- [[sft]]
+- [[supervised-fine-tuning|sft]]
 - [[gpt-3]]
 - [[2022-instructgpt]]
 - [[2024-easyrl4rec]]

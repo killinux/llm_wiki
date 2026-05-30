@@ -20,4 +20,4 @@ sources: 1
 - [[activation-steering]]
 - [[refusal-behavior]]
 - [[interpretability]]
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]

@@ -19,5 +19,5 @@ sources: 1
 
 - [[abliteration]]
 - [[extended-refusal]]
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]
 - [[activation-steering]]

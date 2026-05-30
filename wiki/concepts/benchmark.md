@@ -31,7 +31,7 @@ Benchmark 指用于系统、可复现地评估模型在特定能力维度上表�
 
 ## 相关
 
-- [[agent]]
+- [[llm-agents|agent]]
 - [[evaluation]]
 - [[llm-agents|llm-as-agent]]
 - [[2023-agentbench]]

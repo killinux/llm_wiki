@@ -17,6 +17,6 @@ Google Research 是 Google 旗下的研究机构,从事机器学习、自然语�
 
 ## 相关
 
-- [[multi-agent-llm]]
+- [[llm-multi-agent|multi-agent-llm]]
 - [[distributed-computing]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]

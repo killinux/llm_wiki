@@ -27,4 +27,4 @@ LFM-1b 是一个大规模音乐收听记录数据集,包含来自 Last.fm 用户
 - [[mamba]]
 - [[sasrec]]
 - [[kuairand]]
-- [[lifelong-sequential-recommendation]]
+- [[sequential-recommendation|lifelong-sequential-recommendation]]

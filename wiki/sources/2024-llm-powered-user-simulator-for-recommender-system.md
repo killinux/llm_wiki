@@ -48,7 +48,7 @@ LLM 使用 [[chatglm]] ChatGLM-6B。
 
 **数据集**:5 个公开数据集,跨 POI/音乐/游戏/电影/动漫领域——[[yelp-dataset]]、Amazon Music、Amazon Games、Amazon Movie、Anime;评分 ≥3 记为 1,<3 记为 0。规模从约 16 万到 611 万 instances,稀疏度 97.80%–99.99%。
 
-**RL 算法对比(表 2)**:在模拟器上训练 [[a2c]]、[[dqn]]、[[ppo]]、[[trpo]] 四种 RL 算法,报告平均奖励/总奖励/Top-10 中喜欢物品比例(Liking%)。[[dqn]] 在多数数据集上表现最好(离散动作空间优势),例如 Yelp 上 DQN 平均奖励 27.56、总奖励 330.98、Liking% 49.43;所有算法都呈现良好的 liking 比例,说明模拟器能提供一致稳定的训练环境。
+**RL 算法对比(表 2)**:在模拟器上训练 [[actor-critic|a2c]]、[[dqn]]、[[ppo]]、[[trpo]] 四种 RL 算法,报告平均奖励/总奖励/Top-10 中喜欢物品比例(Liking%)。[[dqn]] 在多数数据集上表现最好(离散动作空间优势),例如 Yelp 上 DQN 平均奖励 27.56、总奖励 330.98、Liking% 49.43;所有算法都呈现良好的 liking 比例,说明模拟器能提供一致稳定的训练环境。
 
 **与现有模拟器对比(表 6)**:在 Yelp 上对比 SUBER 与 KuaiSim,本方法在 A.Rwd 27.56、T.Rwd 330.98、AUC 0.674 上均最优;推断时间 0.76s,介于 SUBER(2.42s)与 KuaiSim(0.53s)之间——相比 LLM-based 的 SUBER 大幅提速,精度高于二者。
 

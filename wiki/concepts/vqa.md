@@ -17,7 +17,7 @@ Visual Question Answering (VQA) 是一类多模态任务/方法:给定一张图�
 
 ## 相关
 
-- [[inner-monologue]]
+- [[2022-inner-monologue|inner-monologue]]
 - [[grounded-feedback]]
 - [[multimodal]]
 - [[embodied-reasoning]]

@@ -18,6 +18,6 @@ Schwartz 基本人类价值观理论是一套跨文化心理学框架,识别出�
 ## 相关
 
 - [[value-alignment]]
-- [[multi-agent-simulation]]
+- [[multi-agent-systems|multi-agent-simulation]]
 - [[value-diversity]]
 - [[llm-agents|llm-agent]]

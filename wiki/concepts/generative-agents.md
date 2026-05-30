@@ -15,7 +15,7 @@ Generative Agents 指由 LLM 驱动、能够存储与检索记忆、反思并据
 - [[2024-lmagent-multimodal-agents-society]]:基于多模态 LLM 的万级规模 agents 社会,在电商场景模拟多用户的购物、社交、直播行为,复现真实 co-purchase 模式与从众等 emergent behavior。
 - [[2025-agentsociety-large-scale-social-simulation]]:一个整合 LLM 生成式社会 agent、真实城市-社会-经济环境与大规模分布式仿真引擎的社会模拟器,支持上万 agent 并复现极化、谣言、UBI、飓风、城市可持续性五类真实社会实验。
 - [[social-simulation]]
-- [[emergent-behavior]]
+- [[emergent-abilities|emergent-behavior]]
 - [[multimodal-llm]]
 
 - [[2023-memorybank]]:面向 Generative Agents 所依赖的核心能力——长期记忆。该工作提出 MemoryBank 机制:存储与分层摘要历史对话、按 Ebbinghaus 遗忘曲线动态更新记忆强度、检索相关记忆并构建用户画像,从而让 agent 在长期交互中保持人格与记忆连贯,并据此实现情感陪伴机器人 SiliconFriend。

@@ -20,4 +20,4 @@ MultiAgentBench 是一个用于评测 LLM 多智能体在交互式场景中协�
 - [[marble]]
 - [[gpt-4o-mini]]
 - [[multi-agent-systems]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]

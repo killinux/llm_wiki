@@ -24,5 +24,5 @@ Learning to Rank(LTR)是一类用机器学习方法训练排序模型的技术,�
 - [[pre-ranking]]
 - [[search-ranking]]
 - [[recommender-systems|recommendation-systems]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[inverse-reinforcement-learning]]

@@ -23,7 +23,7 @@ LLM Agents 指以大语言模型为核心决策器、并通过记忆、规划、
 - [[2026-llm-agents-competition-cooperation-games]]:研究 LLM agent 在资源分配博弈与 Cournot 竞争中的策略行为:多轮非零和提示下 agent 倾向合作而非收敛到 Nash 均衡,fairness 推理是核心驱动,并提出 θ/γ 合成收益函数框架刻画其信任建立、报复与 endgame 衰减动态。
 - [[agent-memory]]
 - [[multi-agent-systems|multi-agent-system]]
-- [[planning]]
+- [[llm-planning|planning]]
 - [[agentic-recommendation]]
 - [[game-theory]]
 - [[2023-reflexion]]:将 LLM Agent 作为被强化的主体,用语言化的自我反思反馈(verbal reinforcement)代替梯度更新,使智能体能从失败中迭代改进。

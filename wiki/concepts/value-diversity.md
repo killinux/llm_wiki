@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[schwartz-values]]
-- [[multi-agent-simulation]]
-- [[emergent-behavior]]
+- [[multi-agent-systems|multi-agent-simulation]]
+- [[emergent-abilities|emergent-behavior]]
 - [[social-norm-formation]]

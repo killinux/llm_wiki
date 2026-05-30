@@ -17,7 +17,7 @@ Closed-Loop Feedback 指系统在执行过程中持续接收环境/任务反馈,
 
 ## 相关
 
-- [[inner-monologue]]
+- [[2022-inner-monologue|inner-monologue]]
 - [[grounded-language-feedback]]
 - [[llm-planning]]
 - [[embodied-reasoning]]

@@ -20,4 +20,4 @@ Pythia 是一套规模可扩展的开源自回归语言模型族,常用于研究
 - [[llemma]]
 - [[2024-compute-optimal-inference]]
 - [[rebase]]
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]

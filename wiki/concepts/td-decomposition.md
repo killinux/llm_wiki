@@ -20,6 +20,6 @@ TD Decomposition(时序差分分解)是一种把标准 TD loss 拆分为 state T
 - [[temporal-difference-learning]]
 - [[value-function]]
 - [[reinforcement-learning-recommendation]]
-- [[a2c]]
+- [[actor-critic|a2c]]
 - [[dqn]]
 - [[ddpg]]

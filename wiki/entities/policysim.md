@@ -20,5 +20,5 @@ PolicySim 是一个基于 LLM 智能体的社会模拟沙盒,用于在部署前�
 - [[llm-agents|llm-agent]]
 - [[social-simulation]]
 - [[contextual-bandit]]
-- [[dpo]]
+- [[direct-preference-optimization|dpo]]
 - [[recommender-systems|recommendation-system]]

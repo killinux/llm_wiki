@@ -21,5 +21,5 @@ Persona 指为 LLM agent 赋予的一组角色画像(如偏好、属性、行为
 
 - [[user-simulation]]
 - [[llm-agents|llm-agent]]
-- [[memory]]
+- [[agent-memory|memory]]
 - [[recommender-system-evaluation]]

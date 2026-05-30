@@ -18,7 +18,7 @@ Hyper-Actor-Critic (HAC) 是一类用于(在线)推荐场景的 Actor-Critic 强
 
 ## 相关
 
-- [[a2c]]
+- [[actor-critic|a2c]]
 - [[dqn]]
 - [[ddpg]]
 - [[sqn]]

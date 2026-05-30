@@ -18,5 +18,5 @@ Bryan Perozzi 是一位以图表示学习(graph representation learning)与多 a
 ## 相关
 
 - [[agentsnet]]
-- [[multi-agent-llm]]
+- [[llm-multi-agent|multi-agent-llm]]
 - [[distributed-computing]]

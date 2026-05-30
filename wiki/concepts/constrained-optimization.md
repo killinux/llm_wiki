@@ -19,7 +19,7 @@ sources: 2
 ## 相关
 
 - [[online-learning]]
-- [[fairness-in-recommendation]]
+- [[recommendation-fairness|fairness-in-recommendation]]
 - [[two-sided-marketplace]]
 - [[reranking]]
 - [[bayesian-optimization]]

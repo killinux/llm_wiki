@@ -20,5 +20,5 @@ sources: 2
 
 - [[mamba]]
 - [[transformer]]
-- [[lifelong-sequential-recommendation]]
+- [[sequential-recommendation|lifelong-sequential-recommendation]]
 - [[sasrec]]

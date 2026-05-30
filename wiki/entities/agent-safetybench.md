@@ -17,6 +17,6 @@ Agent SafetyBench 是用于评测 tool-using(工具调用)大模型 agent 安全
 
 ## 相关
 
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]
 - [[tool-using-agent]]
 - [[reinforcement-learning]]

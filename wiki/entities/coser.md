@@ -19,4 +19,4 @@ CoSER 是一个用于角色扮演大语言模型(RPLA)训练与评测的数据�
 
 - [[role-playing-language-agents]]
 - [[given-circumstance-acting]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]

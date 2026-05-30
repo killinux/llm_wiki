@@ -22,4 +22,4 @@ sources: 2
 - [[context-aware-recommendation]]
 - [[user-item-interaction]]
 - [[multi-scenario-recommendation]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]

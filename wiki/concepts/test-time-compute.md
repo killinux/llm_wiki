@@ -32,5 +32,5 @@ Test-time Compute 指在推理(inference)阶段、而非训练阶段额外投入
 - [[chain-of-thought]]
 - [[verifier-models]]
 - [[tree-search]]
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]
 - [[self-correction]]

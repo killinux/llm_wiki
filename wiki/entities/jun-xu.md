@@ -19,5 +19,5 @@ Jun Xu 是推荐系统与信息检索领域的研究者,与本 wiki 收录的公
 
 - [[bankfair]]
 - [[regret-theory]]
-- [[fairness-in-recommendation]]
+- [[recommendation-fairness|fairness-in-recommendation]]
 - [[reranking]]

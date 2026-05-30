@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[2024-compute-optimal-inference]]
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]
 - [[rebase-tree-search]]
 - [[compute-optimal-inference]]

@@ -19,5 +19,5 @@ sources: 1
 
 - [[semantic-id]]
 - [[codebook]]
-- [[vae]]
+- [[variational-autoencoder|vae]]
 - [[generative-recommendation]]

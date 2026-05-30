@@ -18,5 +18,5 @@ Xiaoyuan Yi 是一位从事大语言模型与价值观对齐、多智能体社�
 ## 相关
 
 - [[schwartz-value-theory]]
-- [[multi-agent-simulation]]
+- [[multi-agent-systems|multi-agent-simulation]]
 - [[llm-value-alignment]]

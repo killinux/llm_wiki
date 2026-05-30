@@ -51,6 +51,6 @@ MovieLens 是由 GroupLens 研究团队收集发布的电影评分数据集,广�
 - [[embedding-based-retrieval]]
 - [[multi-task-learning]]
 - [[collaborative-filtering]]
-- [[user-behavior-simulation]]
+- [[user-simulation|user-behavior-simulation]]
 - [[microlens]]
 - [[merrec]]

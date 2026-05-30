@@ -46,7 +46,7 @@ RecoWorld 是 Meta 提出的一套为 agentic recommender system 构建模拟环
 - **用户模拟器(user simulator)**:利用现代 LLM 的推理能力,逐项审阅推荐物品、更新自身"mindset(心态)",并在感知到可能脱离(disengagement)时生成反思式自然语言指令(reflective instruction),如"show me more interesting content"。用户动作空间包含 7 类:Click、Comment、Share、Like、Watch(指定时长)、Skip、Leave。每个物品决策走三步:Think it through(推理)→ Take action(动作)→ Update your mindset(更新心态),示例用 [[gpt-4-1-mini]](GPT-4.1)搭建用户画像生成。
 - **agentic 推荐器(instruction-following recommender)**:作为自主 agent,具备四项核心能力——perception(感知用户状态)、reasoning and planning(将指令拆解为子任务并分派给检索/排序模块)、action/tool use(生成更新后的推荐列表)、memory(记录用户行为)。
 
-**多轮交互(multi-turn interaction)**:模拟用户在一个 session 内跨多轮与 agentic RecSys 交互,产生 interaction trajectory;系统建模为 [[markov-decision-process]],状态 s_t 表示用户 mindset,奖励信号取自轨迹级交互统计(如总停留时间、点击数),用于 RL 训练。可用 [[ppo]](异步奖励)或 [[dpo]](off-policy)优化策略,并引入 LLM-based judge 对轨迹按预定义任务规则评分,仅保留满足成功标准的高质量轨迹用于训练。
+**多轮交互(multi-turn interaction)**:模拟用户在一个 session 内跨多轮与 agentic RecSys 交互,产生 interaction trajectory;系统建模为 [[markov-decision-process]],状态 s_t 表示用户 mindset,奖励信号取自轨迹级交互统计(如总停留时间、点击数),用于 RL 训练。可用 [[ppo]](异步奖励)或 [[direct-preference-optimization|dpo]](off-policy)优化策略,并引入 LLM-based judge 对轨迹按预定义任务规则评分,仅保留满足成功标准的高质量轨迹用于训练。
 
 **参与历史建模(engagement modeling)**:提出三种利用 LLM 推理能力的方案——text-based modeling(文本表示)、multimodal modeling(用 Qwen3-Omni 等 MLLM 或 Gemini-2.5-Pro 等 VLM)、[[semantic-id]] modeling(用语义 ID 表示物品内容)。并定义了 engagement memory(交互级 + session 级双层记忆)、evolving preference modeling(用 recurrent/attention/diffusion 风格函数建模偏好演化与 mindset update)。
 

@@ -19,5 +19,5 @@ semantic ID 是一种通过对内容/物品的语义表示进行量化(如残差
 
 - [[generative-recommendation]]
 - [[residual-quantization]]
-- [[vae]]
+- [[variational-autoencoder|vae]]
 - [[codebook]]

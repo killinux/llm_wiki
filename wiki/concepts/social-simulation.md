@@ -40,4 +40,4 @@ sources: 18
 - [[generative-agents]]
 - [[multi-agent-systems]]
 - [[role-playing-agents]]
-- [[emergent-behavior]]
+- [[emergent-abilities|emergent-behavior]]

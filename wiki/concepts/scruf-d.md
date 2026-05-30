@@ -18,5 +18,5 @@ SCRUF-D(Social Choice for Recommendation Under Fairness – Dynamic)是一种面
 ## 相关
 
 - [[multi-stakeholder-recommendation]]
-- [[fairness-in-recommendation]]
+- [[recommendation-fairness|fairness-in-recommendation]]
 - [[exposure-aware-reranking]]

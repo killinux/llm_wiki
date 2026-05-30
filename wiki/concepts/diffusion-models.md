@@ -29,6 +29,6 @@ sources: 2
 
 ## 相关
 
-- [[two-tower-retrieval]]
+- [[two-tower|two-tower-retrieval]]
 - [[late-interaction]]
 - [[generative-recommendation]]

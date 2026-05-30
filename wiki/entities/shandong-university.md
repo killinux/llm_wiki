@@ -21,7 +21,7 @@ sources: 2
 - [[mamba]]
 - [[state-space-model]]
 - [[sasrec]]
-- [[lifelong-sequential-recommendation]]
+- [[sequential-recommendation|lifelong-sequential-recommendation]]
 - [[sequential-recommendation]]
 - [[offline-rl]]
 - [[exposure-bias]]

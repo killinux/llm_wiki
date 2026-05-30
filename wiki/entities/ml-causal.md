@@ -22,4 +22,4 @@ ML-causal 是用于因果推断式推荐研究的数据集,用于在消除混杂
 - [[substitute-confounders|substitute-confounder]]
 - [[causal-inference]]
 - [[recommender-systems|recommendation-system]]
-- [[vae]]
+- [[variational-autoencoder|vae]]

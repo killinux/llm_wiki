@@ -23,12 +23,12 @@ sources: 9
 - [[2025-llm-collaboration-marl-magrpo]]:把多 LLM 协作建模为合作式 MARL(Dec-POMDP)并提出 Multi-Agent GRPO(MAGRPO),在写作与编码协作上微调多个 LLM;TLDR/arXiv return 达 94.5%/93.1%,HumanEval/CoopHumanEval return 达 86.7%/88.5%。
 - [[rlhf]]:Reward Model 是 RLHF 流程中的关键组件。
 - [[ppo]]:利用 Reward Model 提供的奖励信号进行策略优化。
-- [[sft]]:Reward Model 通常在 SFT 模型的基础上构建并初始化。
+- [[supervised-fine-tuning|sft]]:Reward Model 通常在 SFT 模型的基础上构建并初始化。
 - [[2022-instructgpt]]:本 wiki 中提及 Reward Model 的资料。
 - [[human-preferences]]:Reward Model 的训练数据来源。
 - [[gpt-3]]:InstructGPT 所对齐的基础模型。
 - [[verifier]]:用于对候选解打分排序的奖励模型变体。
-- [[dpo]]:可直接从偏好数据优化,或用于训练 verifier。
+- [[direct-preference-optimization|dpo]]:可直接从偏好数据优化,或用于训练 verifier。
 - [[scalable-oversight]]:用模型辅助人类评估的范式。
 - [[inference-scaling]]:测试时搜索常依赖奖励/价值模型。
 - [[grpo]]:基于 reward 的策略优化算法,SOTOPIA-RL 与 MAGRPO 均采用。

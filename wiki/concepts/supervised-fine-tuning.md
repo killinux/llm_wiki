@@ -23,6 +23,6 @@ sources: 3
 - [[instruction-tuning]]
 - [[role-playing]]
 - [[llama-3]]
-- [[dpo]]
+- [[direct-preference-optimization|dpo]]
 - [[in-context-learning]]
 - [[llm-user-simulator]]

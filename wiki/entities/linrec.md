@@ -26,4 +26,4 @@ LinRec 是一类用于推荐场景的线性复杂度序列建模方法,旨在以
 - [[sasrec]]
 - [[sequential-recommendation]]
 - [[state-space-model]]
-- [[lifelong-sequential-recommendation]]
+- [[sequential-recommendation|lifelong-sequential-recommendation]]

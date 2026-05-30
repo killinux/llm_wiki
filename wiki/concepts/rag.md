@@ -23,7 +23,7 @@ RAG(Retrieval-Augmented Generation,检索增强生成)是一种在生成前先�
 
 ## 相关
 
-- [[memory]]
+- [[agent-memory|memory]]
 - [[in-context-learning]]
 - [[vector-database]]
 - [[embedding]]

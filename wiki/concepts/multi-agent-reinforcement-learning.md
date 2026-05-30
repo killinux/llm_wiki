@@ -25,5 +25,5 @@ sources: 3
 - [[grpo]]
 - [[dec-pomdp]]
 - [[llm-collaboration]]
-- [[emergent-behavior]]
+- [[emergent-abilities|emergent-behavior]]
 - [[ai-agent-behavioral-science]]

@@ -20,4 +20,4 @@ sources: 1
 - [[2025-agentsnet-multi-agent-reasoning]]
 - [[multi-agent-systems]]
 - [[distributed-computing]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]

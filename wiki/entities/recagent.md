@@ -34,7 +34,7 @@ RecAgent 是一个基于 LLM-based agent 的用户行为模拟器,在沙盒环�
 ## 相关
 
 - [[llm-based-agent]]
-- [[user-behavior-simulation]]
+- [[user-simulation|user-behavior-simulation]]
 - [[recommender-systems|recommender-system]]
 - [[information-cocoon]]
 - [[conformity]]

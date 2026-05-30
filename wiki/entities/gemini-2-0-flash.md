@@ -18,5 +18,5 @@ Gemini 2.0 Flash 是 Google 推出的一款轻量高效的大语言模型,常被
 ## 相关
 
 - [[agentsnet-benchmark]]
-- [[multi-agent-llm]]
+- [[llm-multi-agent|multi-agent-llm]]
 - [[google-gemini]]

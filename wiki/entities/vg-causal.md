@@ -20,6 +20,6 @@ VG-causal 是一个用于推荐系统因果推断研究的数据集。
 - [[2022-deep-causal-reasoning-for-recommendations]]
 - [[deep-deconf]]
 - [[substitute-confounders|substitute-confounder]]
-- [[vae]]
+- [[variational-autoencoder|vae]]
 - [[causal-inference]]
 - [[mcmo]]

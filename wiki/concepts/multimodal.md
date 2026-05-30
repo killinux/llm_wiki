@@ -18,6 +18,6 @@ sources: 1
 ## 相关
 
 - [[large-language-models|llm]]
-- [[agent]]
+- [[llm-agents|agent]]
 - [[recommender-systems|recommendation-system]]
 - [[ab-testing]]

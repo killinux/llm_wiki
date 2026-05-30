@@ -19,5 +19,5 @@ TALLRec 是一个基于 LLM 的推荐对齐框架,通过指令微调(instruction
 
 - [[lora]]
 - [[instruction-tuning]]
-- [[llm-recommendation]]
+- [[llm-for-recommendation|llm-recommendation]]
 - [[thinkrec]]

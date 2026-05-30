@@ -77,7 +77,7 @@ Large Language Models(LLM)是在大规模文本语料上训练的深度神经网
 ## 相关
 
 - [[llm-based-agent]]
-- [[user-behavior-simulation]]
+- [[user-simulation|user-behavior-simulation]]
 - [[transformer]]
 - [[zero-shot-learning]]
 - [[recommender-systems]]

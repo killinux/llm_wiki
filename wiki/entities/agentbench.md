@@ -21,9 +21,9 @@ AgentBench 是首个系统评估 LLM-as-Agent 能力的多维基准,横跨 8 个
 ## 相关
 
 - [[llm-agents|llm-as-agent]]
-- [[agent]]
+- [[llm-agents|agent]]
 - [[benchmark]]
-- [[llm-evaluation]]
+- [[agent-evaluation|llm-evaluation]]
 - [[agentinstruct]]
 - [[agenttuning]]
 - [[self-evolving-agents]]

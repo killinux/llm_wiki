@@ -21,4 +21,4 @@ sources: 1
 - [[synthetic-data-generation]]
 - [[role-playing-llm]]
 - [[personagym]]
-- [[sft]]
+- [[supervised-fine-tuning|sft]]

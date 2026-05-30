@@ -19,5 +19,5 @@ Self-Inspiring 是一种用于 LLM agent 的规划算法,它在规划过程中�
 
 - [[recmind]]
 - [[llm-agents|llm-agent]]
-- [[planning]]
+- [[llm-planning|planning]]
 - [[zero-shot-recommendation]]

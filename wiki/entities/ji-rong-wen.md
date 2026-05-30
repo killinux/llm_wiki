@@ -22,7 +22,7 @@ Ji-Rong Wen 是一位信息检索与推荐系统领域的研究者,其工作涉�
 - [[recagent]]
 - [[renmin-university-of-china]]
 - [[llm-agents]]
-- [[user-behavior-simulation]]
+- [[user-simulation|user-behavior-simulation]]
 - [[recommender-systems|recommender-system]]
 - [[information-cocoon]]
 - [[collaborative-filtering]]

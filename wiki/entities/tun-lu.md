@@ -19,5 +19,5 @@ sources: 1
 
 - [[agentcf]]
 - [[recsys-simulation]]
-- [[user-behavior-simulation]]
+- [[user-simulation|user-behavior-simulation]]
 - [[llm-agents|llm-agent]]

@@ -218,3 +218,67 @@ concept 页面并入既有索引(保留原有分组结构与候选主题,未丢�
 - 重建 index.md（基于磁盘实际文件）
 最终：269 source · 429 concept · 475 entity = 1173+ 页；跨目录重复 0；接地 269/269 ✓。
 长尾悬空链接(引用 <8 次)保留为"待写"标记,符合 Karpathy 模式设计。
+
+## [2026-05-30] note | 建综述页:生成式社会模拟(斯坦福小镇线)
+新建 `wiki/topics/generative-social-simulation.md`,首个 topics 页。综述串联约 28 篇 source:范式起点(Smallville 三组件:记忆流/反思/规划)、演化时间线、六个子分支(大规模平台/scale-agency 权衡/经济博弈游戏/社交智能评测与 persona/记忆机制/用户模拟接口),并专设"验证与涌现真伪"核心争议章节(can-llm-simulate 的 11.86% 过程级准确率、emergent-behaviors-data-leakage、generative-social-simulation-validation 综述)。更新 index.md 主题区。
+
+## [2026-05-30] note | 补建 6 篇库外社会模拟代表作占位页(stub-unverified)
+为 generative-social-simulation 综述补全"待 ingest"代表作,新建 6 个 source 占位页(均标 status: stub-unverified,内容源自外部知识,raw/ 暂无原文,数字待核实):2024-generative-agent-simulations-1000-people(Park 1000 真人 agent)、2023-out-of-one-many-llm-simulate-human-samples(Argyle 奠基作)、2023-econagent-macroeconomic-simulation、2023-s3-social-network-simulation、2023-waragent-world-war-simulation、2024-project-sid-minecraft-civilization。已回链入 topics 综述页与 index.md(单列"待 ingest 占位"区,与已核实 source 分开)。
+
+## [2026-05-30] ingest(batch) | 社会模拟线补全:下载并 ingest 5 篇 + 去重 1 篇
+从 arXiv 下载 6 篇原文入 raw/(2411.10109/2310.10436/2307.14984/2311.17227/2411.00114/2209.06899)。
+**去重事故纠正**:上一轮建的占位页 2024-generative-agent-simulations-1000-people 经核实即 arXiv 2411.10109,
+与库中既有 2024-generative-agents-self-reports 同一篇(只是 v1 旧标题 "1000 People"),已删除重复页,
+并在 self-reports 页加旧标题注释、回链综述。
+正式 ingest(核实原文,去 stub 横幅)5 篇:2023-out-of-one-many-llm-simulate-human-samples(Argyle/BYU,
+algorithmic fidelity/silicon sampling)、2023-econagent-macroeconomic-simulation(清华,ACL24,Phillips/Okun)、
+2023-s3-social-network-simulation(清华,AgentSociety 前身)、2023-waragent-world-war-simulation(Rutgers)、
+2024-project-sid-minecraft-civilization(Altera,PIANO)。修正 AgentSociety 内两处悬空链接指向新页;
+综述页时间线/子分支接入 6 篇;index.md 更新。环境:装 pip(ensurepip)+pypdf 抽取 PDF 文本。
+
+## [2026-05-30] ingest(deepen) | 5 篇社会模拟页升级为定量深度页
+读 raw/ 原文结果章节,把 EconAgent / Out-of-One-Many / S³ / WarAgent / Project Sid 的"结果"补成带数字版本:
+EconAgent(Phillips r=-0.619/Okun r=-0.918,通胀-5~5%/失业2-12%,COVID 干预);Out of One Many(图灵测试 61.7% vs 61.2% 不可区分,ANES 投票 0.43 vs 0.48 等,四判据);S³(传播 Cor 0.858/0.892,gender Acc 0.71,Markov 情绪);WarAgent(四基石+秘书agent+六维档案,100% 史实同盟,匿名化测试,战争必然性反事实);Project Sid(单agent需GPT-4o,角色专业化需social awareness,25选民民主投票修税法,宗教/meme传播)。
+
+## [2026-05-30] lint(fill) | 补 7 个高频缺失概念页 + 清 5 组别名悬空链接
+缺口扫描:916 悬空链接。新建 7 个被引用最多且无别名的概念页:game-theory(12 引)、reranking、contextual-bandits、reinforcement-learning-for-recommendation、best-of-n、seq2seq、linear-attention。
+别名重写(34 文件):sft→supervised-fine-tuning、dpo→direct-preference-optimization、two-tower-model→two-tower、emergent-behavior→emergent-abilities、inference-scaling-laws→test-time-scaling(均保留显示词)。index 概念区登记新页。
+
+## [2026-05-30] lint(fill) | 续:再建 3 枢纽概念页 + 清 3 组别名
+新建 attention(全库最核心却缺失的枢纽页)、multi-objective-optimization、implicit-feedback。别名重写(22 文件):planning→llm-planning、two-tower-retrieval→two-tower、agent→llm-agents。本轮累计:10 个新概念页 + 56 文件别名重写 + 5 篇社会模拟 source 页深度化。
+
+## [2026-05-30] lint(fill)+note | 第2批概念页(7) + 第2篇 topic 综述
+新建 7 概念页:item-side-fairness、offline-evaluation、embedding、dense-retrieval、uplift-modeling、exploration-exploitation、personalization。
+新建 topics/rl-for-recommendation(推荐中的强化学习综述),读 6 篇 source 原文摘要核实(DORL/ROLeR/DARLR 谱系、RLUR/TSCAC/UNEX-RL 数字),串联 ~20 篇 source,与社会模拟线在"用户模拟器/离线评估"处交汇。index Topics/Concepts 区登记。
+
+## [2026-05-30] lint(fill)+note | 第3批概念页(3) + 第3篇 topic 综述
+新建 3 概念页:representation-learning、multi-domain-recommendation、hyperparameter-tuning。别名重写(11 文件):safety-alignment→alignment、a2c→actor-critic。
+新建 topics/llm-self-improvement(LLM 自我改进/自我纠错综述),读 7 篇 source 原文核实(Reflexion/Self-Refine/Self-Debugging/CRITIC/MAD + 批判线 llms-cannot-self-correct / when-can-llms-correct),按反馈来源四分 + "内在自我纠错无效"核心争议,串联 ~20 篇 source。index 同步。
+
+## [2026-05-30] lint(fill)+note | 第4批概念页(4) + 第4篇 topic 综述
+新建 4 概念页:retrieval、agent-evaluation、embodied-agent、recommendation-fairness。
+新建 topics/llm-agent-memory(LLM 智能体记忆机制综述),读 9 篇记忆线 source 原文核实(MemGPT/MemoryBank/A-Mem/Mem0/MemoryOS/RMM/HiAgent + StructMemEval/survey),五技术谱系 + "简单检索打败复杂记忆架构"核心争议,串联 ~14 篇 source。index 同步。
+
+## [2026-05-30] lint(fill) | policy-gradient 概念页 + 清 5 组别名
+新建 policy-gradient。别名重写:vae→variational-autoencoder、multi-agent-simulation→multi-agent-systems、llm-recommendation→llm-for-recommendation、llm-benchmark→benchmark、inner-monologue→2022-inner-monologue。
+
+## [2026-05-30] lint(fill) | self-supervised-learning + synthetic-data 概念页 + 2 别名
+新建 self-supervised-learning、synthetic-data。别名:fairness-in-recommendation→recommendation-fairness、multi-agent-llm→llm-multi-agent。
+
+## [2026-05-30] note | 第5篇 topic 综述:推荐去偏与因果推断
+新建 topics/debiasing-causal-recommendation,读 8 篇 source 原文核实(deep-deconf/iDCF/CDR/LCDR/IViDR/CaseRec + 评估争议 debias-can-be-unreliable),三大方法族(IPS/DR/Deconfounder 谱系)+ 短视频时长去偏 + "去偏评估不可靠"争议,串联 ~18 篇 source。index 同步。本会话 topics 累计 0→5。
+
+## [2026-05-30] note | 第6篇 topic 综述:推荐中的 LLM 智能体
+新建 topics/llm-agents-for-recommendation,读 7 篇 source 核实(RecAgent/Agent4Rec/AgentCF 模拟导向 + RecMind/InteRecAgent/MACRec 推荐导向 + survey),两范式分类 + "模拟保真度/集成/成本"张力,缝合社会模拟与推荐两半边,串联 ~18 篇 source。本会话 topics 累计 0→6。
+
+## [2026-05-30] ingest+fill | 补具体系统页:lc-rec / ip-adapter / cournot-competition / fairgame
+转入"具体系统建页"线。下载 2 篇原文入 raw/ 并核实:lc-rec(2311.09049,RUC+腾讯 ICDE24,RQ-VAE 语义ID+对齐微调)、ip-adapter(2308.06721,腾讯,解耦交叉注意力图像prompt适配器);建 entities/lc-rec、entities/ip-adapter。另建 concepts/cournot-competition(经济博弈概念)、entities/fairgame(据引用工作 2025-llm-agent-game-theory-strategy-recognition 整理,标注原文待 ingest)。index 实体区/概念区登记。
+
+## [2026-05-30] lint(fill) | transfer-learning 概念页 + 4 别名(收尾)
+新建 concepts/transfer-learning。别名:user-behavior-simulation→user-simulation、memory→agent-memory、llm-evaluation→agent-evaluation、lifelong-sequential-recommendation→sequential-recommendation。剩余悬空多为 ≤5 引用的"待写标记"(符合 Karpathy 模式设计),停止机械造页。
+
+## [2026-05-30] note | 第7、8篇 topic 综述
+新建 topics/solving-agents-search(求解类智能体:推理时搜索与成本-质量权衡;读 ReAct/ToT/RAP/LATS/TS-LLM/tree-search-web/AB-MCTS/compute-optimal-inference 核实,串 ~18 篇)与 topics/recsys-architectures(推荐架构演进:Transformer×GNN×生成式;读 FuXi-γ/SIGformer/VISTA/transformers-graph-survey 核实,串 ~22 篇)。本会话 topics 累计 0→8,覆盖 wiki 两半边全部主干候选。index 同步。
+
+## [2026-05-30] note | 第9篇 topic 综述:公平性与多边福利(原候选清单收齐)
+新建 topics/fairness-multistakeholder-welfare,读 7 篇 source 核实(BankFair/LHRL/fairness-missing-labels/user-creator-polarization/conformal-risk-control/collective-manipulation),四节(提供方曝光公平/用户群体公平/动态极化/福利安全抗操控)+ 核心张力,串 ~16 篇。至此 index 原候选 ①–⑨ 全部建成,topics 层 0→9。index 候选注释更新为"已全部上线"。

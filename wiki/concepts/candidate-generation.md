@@ -27,7 +27,7 @@ Candidate generation 是推荐/检索系统中的召回阶段,从海量物料库
 - [[recommender-systems|recommendation-system]]
 - [[clustering]]
 - [[multi-task-learning]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[diffusion-models|diffusion-model]]
 - [[multi-scenario-recommendation]]
 - [[late-interaction]]

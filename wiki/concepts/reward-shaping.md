@@ -24,4 +24,4 @@ Reward Shaping(奖励塑形)是指在强化学习中通过修改、精炼或补�
 - [[model-based-rl]]
 - [[reward-model]]
 - [[uncertainty-penalty]]
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]

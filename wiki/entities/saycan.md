@@ -21,7 +21,7 @@ SayCan 是一种将 LLM 的语义知识("say",大模型判断哪些动作对完�
 
 ## 相关
 
-- [[inner-monologue]]
+- [[2022-inner-monologue|inner-monologue]]
 - [[chain-of-thought]]
 - [[llm-planning]]
 - [[embodied-reasoning]]

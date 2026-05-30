@@ -47,6 +47,6 @@ MovieLens-1M 是由 GroupLens 发布的电影评分数据集,包含约 100 万�
 - [[ctr-prediction]]
 - [[collaborative-filtering]]
 - [[diffusion-recommendation]]
-- [[llm-recommendation]]
+- [[llm-for-recommendation|llm-recommendation]]
 - [[kuairand]]
 - [[tenrec]]

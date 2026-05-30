@@ -53,5 +53,5 @@ SASRec(Self-Attentive Sequential Recommendation)是一种基于自注意力机�
 - [[mqsa-ted]]
 - [[hstu]]
 - [[generative-recommendation]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[cross-domain-recommendation]]

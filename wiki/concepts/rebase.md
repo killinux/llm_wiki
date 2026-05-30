@@ -17,7 +17,7 @@ REBASE(REward BAlanced SEarch)是一种新型树搜索算法,用奖励模型对�
 
 ## 相关
 
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]
 - [[compute-optimal-inference]]
 - [[tree-search]]
 - [[reward-model]]

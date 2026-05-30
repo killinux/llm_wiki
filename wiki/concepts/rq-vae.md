@@ -20,4 +20,4 @@ residual-quantized VAE (RQ-VAE) 是一种用多层残差向量量化(逐层量�
 - [[semantic-id]]
 - [[generative-recommendation]]
 - [[vector-quantization]]
-- [[vae]]
+- [[variational-autoencoder|vae]]

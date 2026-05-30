@@ -21,5 +21,5 @@ sources: 3
 
 - [[in-context-learning]]
 - [[llm-agents|llm-agent]]
-- [[memory]]
+- [[agent-memory|memory]]
 - [[self-reflection]]

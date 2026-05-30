@@ -19,5 +19,5 @@ AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算�
 
 - [[multi-agent-systems]]
 - [[distributed-computing]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]
 - [[collaborative-reasoning]]

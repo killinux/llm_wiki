@@ -40,4 +40,4 @@ sources: 13
 - [[self-reflection]]
 - [[multi-agent-systems|multi-agent]]
 - [[reinforcement-learning]]
-- [[memory]]
+- [[agent-memory|memory]]

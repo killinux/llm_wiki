@@ -19,5 +19,5 @@ sources: 1
 
 - [[regret-theory]]
 - [[multi-objective-optimization]]
-- [[fairness-in-recommendation]]
+- [[recommendation-fairness|fairness-in-recommendation]]
 - [[reranking]]

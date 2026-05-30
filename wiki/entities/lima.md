@@ -20,4 +20,4 @@ LIMA(Less Is More for Alignment)是一个用于指令微调/对齐研究的数�
 - [[persona-hub]]
 - [[personagym]]
 - [[llama-3]]
-- [[sft]]
+- [[supervised-fine-tuning|sft]]

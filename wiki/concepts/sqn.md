@@ -20,6 +20,6 @@ SQN(Supervised Q-Network)是一种将监督学习信号与 Q-learning 价值估�
 - [[value-function]]
 - [[td-learning]]
 - [[dqn]]
-- [[a2c]]
+- [[actor-critic|a2c]]
 - [[ddpg]]
 - [[reinforcement-learning-recommendation]]

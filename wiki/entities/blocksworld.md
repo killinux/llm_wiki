@@ -22,4 +22,4 @@ Blocksworld 是一个经典的规划(planning)基准任务,要求智能体通过
 - [[monte-carlo-tree-search|mcts]]
 - [[world-model]]
 - [[llm-reasoning]]
-- [[planning]]
+- [[llm-planning|planning]]

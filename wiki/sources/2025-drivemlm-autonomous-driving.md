@@ -82,7 +82,7 @@ nuScenes 开环规划(L2 / collision / intersection):
 
 本文是「把 LLM 作为规划器嵌入具身/真实控制系统」的代表作,与本 wiki 多条主线相连:
 
-- **LLM 规划与具身**:把 [[large-language-models]] 用作 AD 的 behavioral planner,属于 [[llm-planning]] 与 [[embodied-reasoning]] 在自动驾驶垂直域的落地,可与 [[saycan]]、[[inner-monologue]]、[[voyager]] 等具身/规划 agent 对照。
+- **LLM 规划与具身**:把 [[large-language-models]] 用作 AD 的 behavioral planner,属于 [[llm-planning]] 与 [[embodied-reasoning]] 在自动驾驶垂直域的落地,可与 [[saycan]]、[[2022-inner-monologue|inner-monologue]]、[[voyager]] 等具身/规划 agent 对照。
 - **对齐到可执行接口**:通过把语言输出对齐到离散 decision state 实现 [[grounding]] / [[alignment]],呼应本 wiki 中 LLM 输出落地为可执行动作的设计模式。
 - **多模态 + CLIP 表征**:使用 [[clip]](EVA-CLIP/ViT)做视觉与 LiDAR 的跨模态对齐,体现 [[foundation-models]] 向下游控制任务迁移。
 - **LLM 辅助数据标注**:用 [[gpt-3-5]] 扩充 explanation 多样性,是 LLM 用于数据引擎/合成标注的实例。

@@ -19,7 +19,7 @@ Function calling 是让大语言模型在生成过程中以结构化方式调用
 ## 相关
 
 - [[tool-use]]
-- [[agent]]
+- [[llm-agents|agent]]
 - [[reinforcement-learning]]
 - [[agent-safety]]
 - [[mcp]]

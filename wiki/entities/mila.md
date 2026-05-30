@@ -18,6 +18,6 @@ Mila（Quebec AI Institute）是位于加拿大蒙特利尔的人工智能研究
 ## 相关
 
 - [[self-taught-reasoner]]
-- [[dpo]]
+- [[direct-preference-optimization|dpo]]
 - [[llm-verifier]]
 - [[llama2]]

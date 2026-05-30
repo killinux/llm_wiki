@@ -33,7 +33,7 @@ Zhejiang University(浙江大学)是一所位于中国杭州的综合性研究�
 - [[offline-reinforcement-learning]]
 - [[cross-domain-recommendation]]
 - [[knowledge-distillation]]
-- [[llm-recommendation]]
+- [[llm-for-recommendation|llm-recommendation]]
 - [[lora]]
 - [[llm-agents|llm-agent]]
 - [[social-simulation]]

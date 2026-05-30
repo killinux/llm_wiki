@@ -19,5 +19,5 @@ Abliteration 是一种推理时干预技术,通过在模型激活空间中识别
 
 - [[refusal-direction]]
 - [[activation-steering]]
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]
 - [[jailbreak]]

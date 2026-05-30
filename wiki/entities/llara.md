@@ -21,4 +21,4 @@ LLaRA 是一种将大语言模型(LLM)与推荐系统对齐的方法/模型,通�
 - [[agentic-feedback-loop]]
 - [[recommendation-agent]]
 - [[user-agent]]
-- [[llm-recommendation]]
+- [[llm-for-recommendation|llm-recommendation]]

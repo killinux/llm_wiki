@@ -18,5 +18,5 @@ Llama 4 Scout 是 Meta 发布的 Llama 4 系列中的开源大语言模型,常�
 ## 相关
 
 - [[agentsnet-benchmark]]
-- [[multi-agent-llm]]
+- [[llm-multi-agent|multi-agent-llm]]
 - [[meta-llama-4]]

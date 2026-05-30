@@ -23,5 +23,5 @@ Xing Xie 是一位研究者,工作涉及大语言模型与推荐系统结合的�
 - [[llm-agents|llm-agent]]
 - [[recommender-systems|recommender-system]]
 - [[schwartz-values]]
-- [[multi-agent-simulation]]
+- [[multi-agent-systems|multi-agent-simulation]]
 - [[value-alignment]]

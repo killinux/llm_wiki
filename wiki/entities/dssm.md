@@ -16,9 +16,9 @@ DSSM(Deep Structured Semantic Model)是一种典型的双塔(two-tower)深度模
 - [[mmoe]]
 - [[moe]]
 - [[knowledge-distillation]]
-- [[two-tower-retrieval]]
+- [[two-tower|two-tower-retrieval]]
 - [[2024-recflow-full-flow-recommendation-dataset]]:首个包含工业推荐系统多级漏斗各阶段未曝光样本的大规模全流程数据集,用于研究分布偏移、选择偏差与多阶段联合优化。
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[recommender-systems|recommendation-system]]
 - [[selection-bias]]
 

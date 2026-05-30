@@ -43,4 +43,4 @@ MMO 游戏的数值系统(numerical system)与机制设计直接决定玩家体�
 
 ## 在本 wiki 中的位置
 
-本文属于 [[human-behavior-simulation]] 与 [[social-simulation]] / [[agent-based-modeling]] 在游戏领域的应用,延续 [[generative-agents]]、[[generative-agents]] 与 [[s3-social-network-simulation]] 等"用 LLM agent 模拟人类社会"的脉络,但更强调用真实行为数据做 SFT+RL 微调与数值校验,而非纯 prompt 驱动。与 [[recommendation-simulator]]、[[agent4rec]]、[[oasis]] 等用户/社会仿真器一样,其价值在于提供一个低成本、可解释的离线"沙盒"来评估干预效果;不同之处是聚焦 MMO 游戏的数值系统与机制设计。技术上结合了 [[supervised-fine-tuning]]、[[lora]]、GRPO([[reinforcement-learning]])、[[react]] 规划与 [[memory-module]],基座为 [[qwen2-5-instruct]] 系列,并用 [[deepseek-v3]] 作合成数据生成与基线对比。
+本文属于 [[human-behavior-simulation]] 与 [[social-simulation]] / [[agent-based-modeling]] 在游戏领域的应用,延续 [[generative-agents]] 与 [[2023-s3-social-network-simulation]] 等"用 LLM agent 模拟人类社会"的脉络,但更强调用真实行为数据做 SFT+RL 微调与数值校验,而非纯 prompt 驱动。与 [[recommendation-simulator]]、[[agent4rec]]、[[oasis]] 等用户/社会仿真器一样,其价值在于提供一个低成本、可解释的离线"沙盒"来评估干预效果;不同之处是聚焦 MMO 游戏的数值系统与机制设计。技术上结合了 [[supervised-fine-tuning]]、[[lora]]、GRPO([[reinforcement-learning]])、[[react]] 规划与 [[memory-module]],基座为 [[qwen2-5-instruct]] 系列,并用 [[deepseek-v3]] 作合成数据生成与基线对比。

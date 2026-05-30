@@ -29,4 +29,4 @@ sources: 10
 - [[long-term-recommendation]]
 - [[llm-agents|llm-agent]]
 - [[reinforcement-learning]]
-- [[planning]]
+- [[llm-planning|planning]]

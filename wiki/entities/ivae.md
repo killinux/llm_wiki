@@ -23,7 +23,7 @@ iVAE(identifiable VAE)是一类引入辅助变量以获得潜变量可识别性�
 
 ## 相关
 
-- [[vae]]
+- [[variational-autoencoder|vae]]
 - [[identifiability]]
 - [[proximal-causal-inference]]
 - [[unobserved-confounders]]

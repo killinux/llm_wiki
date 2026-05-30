@@ -34,5 +34,5 @@ Peng Jiang 是一位从事推荐系统与 embedding-based retrieval(EBR)研究�
 - [[graph-contrastive-learning]]
 - [[offline-rl]]
 - [[diffusion-world-model]]
-- [[two-tower-retrieval]]
+- [[two-tower|two-tower-retrieval]]
 - [[cascade-ranking]]

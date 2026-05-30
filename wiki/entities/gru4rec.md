@@ -31,7 +31,7 @@ GRU4Rec 是一种基于门控循环单元(GRU)的会话/序列推荐模型,通�
 - [[sequential-recommendation]]
 - [[mamba]]
 - [[session-based-recommendation]]
-- [[two-tower-model]]
+- [[two-tower|two-tower-model]]
 - [[cross-domain-sequential-recommendation]]
 - [[user-behaviour-simulation]]
 - [[grasp]]

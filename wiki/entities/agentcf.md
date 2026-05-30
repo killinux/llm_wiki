@@ -27,7 +27,7 @@ AgentCF 是一种基于 LLM agent 的协同过滤推荐方法,将用户和物品
 ## 相关
 
 - [[macrec]]
-- [[llm-recommendation]]
+- [[llm-for-recommendation|llm-recommendation]]
 - [[collaborative-filtering]]
 - [[llm-agents|llm-agent]]
 - [[agentic-feedback-loop]]

@@ -35,7 +35,7 @@ sources: 18
 ## 相关
 
 - [[llm-agents|llm-agent]]
-- [[planning]]
+- [[llm-planning|planning]]
 - [[zero-shot-learning]]
 - [[personalization]]
 - [[generative-recommendation]]

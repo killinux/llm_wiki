@@ -3,7 +3,7 @@ type: source
 subtype: paper
 tags: [generative-agents, llm-agent, social-simulation, user-simulation, interactive-evaluation]
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 arxiv: 2411.10109
 raw: raw/2411.10109.pdf
 authors: [Joon Sung Park, Carolyn Q. Zou, Jonne Kamphorst, Niles Egan, Aaron Shaw, Benjamin Mako Hill, Carrie Cai, Meredith Ringel Morris, Percy Liang, Robb Willer, Michael S. Bernstein]
@@ -11,6 +11,9 @@ year: 2024
 ---
 
 # LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals
+
+> 注:本文 v1 旧标题为《**Generative Agent Simulations of 1,000 People**》(广为流传的名字),修订后改为现标题;arXiv 同号
+> 2411.10109。属 [[generative-social-simulation]] 综述中的"个体高保真"代表作。
 
 用基于真人自述(深度访谈 + 结构化问卷)构建的 [[generative-agents]],可对单个个体在多种社会科学结果上进行通用模拟,在留出题目上的预测精度可接近个体自身两周后的重测一致性。
 

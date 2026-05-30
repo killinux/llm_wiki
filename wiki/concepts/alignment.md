@@ -21,7 +21,7 @@ Alignment 指通过训练手段让语言模型的行为符合人类意图与价�
 ## 相关
 
 - [[rlhf]]:本页中实现 Alignment 的主要技术手段。
-- [[sft]]:RLHF 流程的第一步(监督微调)。
+- [[supervised-fine-tuning|sft]]:RLHF 流程的第一步(监督微调)。
 - [[reward-model]]:用于建模人类偏好。
 - [[ppo]]:用于按奖励模型优化策略的强化学习算法。
 - [[human-preference]]:Alignment 优化所依据的信号。
@@ -29,4 +29,4 @@ Alignment 指通过训练手段让语言模型的行为符合人类意图与价�
 - [[2022-instructgpt]]:提及本概念的资料。
 - [[refusal]]:拒绝有害请求是无害性对齐的核心行为。
 - [[abliteration]]:针对拒绝方向的攻击,extended-refusal 是其防御手段。
-- [[multi-agent-llm]]:多智能体场景下的合作与对齐问题。
+- [[llm-multi-agent|multi-agent-llm]]:多智能体场景下的合作与对齐问题。

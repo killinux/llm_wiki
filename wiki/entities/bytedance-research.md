@@ -26,5 +26,5 @@ ByteDance Research 是字节跳动旗下的研究机构,在机器学习、推荐
 - [[yahoo-r3]]
 - [[kuairand]]
 - [[bytedance]]
-- [[fairness-in-recommendation]]
+- [[recommendation-fairness|fairness-in-recommendation]]
 - [[tiktok]]

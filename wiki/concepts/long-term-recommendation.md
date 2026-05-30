@@ -27,7 +27,7 @@ sources: 9
 
 - [[reinforcement-learning]]
 - [[llm-agents|llm-agent]]
-- [[planning]]
+- [[llm-planning|planning]]
 - [[decision-transformer]]
 - [[contextual-bandits]]
 - [[multi-task-fusion]]

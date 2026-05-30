@@ -19,5 +19,5 @@ false refusal(过度拒绝)指 LLM 错误地拒绝本应安全、合理的用户
 
 - [[refusal-direction]]
 - [[activation-steering]]
-- [[safety-alignment]]
+- [[alignment|safety-alignment]]
 - [[over-refusal]]

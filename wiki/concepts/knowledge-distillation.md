@@ -24,5 +24,5 @@ sources: 4
 - [[knowledge-transfer]]
 - [[domain-adaptation]]
 - [[cross-domain-recommendation]]
-- [[two-tower-retrieval]]
+- [[two-tower|two-tower-retrieval]]
 - [[mixture-of-experts]]

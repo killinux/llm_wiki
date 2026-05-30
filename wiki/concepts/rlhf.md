@@ -36,7 +36,7 @@ RLHF(Reinforcement Learning from Human Feedback)是一种用人类偏好信号�
 
 - [[ppo]]
 - [[reward-model]]
-- [[sft]]
+- [[supervised-fine-tuning|sft]]
 - [[rlaif]]
 - [[constitutional-ai]]
 - [[process-supervision]]

@@ -24,6 +24,6 @@ InstructGPT 是 OpenAI 通过 RLHF(基于人类反馈的强化学习)对齐 GPT-
 - [[rlhf]]:InstructGPT 所采用的核心对齐方法。
 - [[ppo]]:RLHF 中用于策略优化的强化学习算法。
 - [[reward-model]]:RLHF 流程中用于建模人类偏好的组件。
-- [[sft]]:RLHF 第一阶段的监督微调。
+- [[supervised-fine-tuning|sft]]:RLHF 第一阶段的监督微调。
 - [[constitutional-ai]]:以 AI 反馈(RLAIF)替代人类标注的对齐路线。
 - [[alignment]]:InstructGPT 所属的研究主题。

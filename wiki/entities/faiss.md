@@ -26,4 +26,4 @@ FAISS(Facebook AI Similarity Search)是用于稠密向量高效相似度搜索�
 - [[vector-database]]
 - [[approximate-nearest-neighbor]]
 - [[embedding-retrieval]]
-- [[two-tower-retrieval]]
+- [[two-tower|two-tower-retrieval]]

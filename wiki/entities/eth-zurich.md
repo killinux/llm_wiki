@@ -18,5 +18,5 @@ sources: 1
 ## 相关
 
 - [[multi-agent-systems]]
-- [[llm-benchmark]]
+- [[benchmark|llm-benchmark]]
 - [[distributed-computing]]

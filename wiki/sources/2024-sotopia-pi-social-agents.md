@@ -39,4 +39,4 @@ SOTOPIA-π 基于 [[sotopia]] 环境(社交任务由场景、两个角色 profil
 
 ## 在本 wiki 中的位置
 
-本文是 [[llm-agents|llm-agent]] 在社交智能方向的代表工作,与 [[generative-agents]]、[[role-playing-agent]] 同属 agent 行为/对话研究脉络。其训练方法属 offline [[self-improvement]]:behavior cloning + self-reinforcement,与 [[expert-iteration]]、ReST、RAFT([[rejection-sampling-fine-tuning]])、SIL 等离线 self-training 同源,区别于在线 [[rlhf]]/[[ppo]]/[[dpo]]。使用 [[gpt-4]] 作为评分器属 [[rlaif]]/[[llm-as-judge]] 思路,并实证揭示其作为训练信号的局限。来自 [[stanford-university]] 之外的 Carnegie Mellon University(Language Technologies Institute)。
+本文是 [[llm-agents|llm-agent]] 在社交智能方向的代表工作,与 [[generative-agents]]、[[role-playing-agent]] 同属 agent 行为/对话研究脉络。其训练方法属 offline [[self-improvement]]:behavior cloning + self-reinforcement,与 [[expert-iteration]]、ReST、RAFT([[rejection-sampling-fine-tuning]])、SIL 等离线 self-training 同源,区别于在线 [[rlhf]]/[[ppo]]/[[direct-preference-optimization|dpo]]。使用 [[gpt-4]] 作为评分器属 [[rlaif]]/[[llm-as-judge]] 思路,并实证揭示其作为训练信号的局限。来自 [[stanford-university]] 之外的 Carnegie Mellon University(Language Technologies Institute)。

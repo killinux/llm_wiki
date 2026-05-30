@@ -18,5 +18,5 @@ sources: 1
 ## 相关
 
 - [[compute-optimal-inference]]
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]
 - [[rebase]]

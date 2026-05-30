@@ -5,10 +5,26 @@ wiki 中所有页面的目录,按类别分组;每行是一个链接加一句话�
 
 ## 主题 (Topics)
 <!-- 跨多份资料的综述与演化中的论点 -->
-_(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能体两分支:任务求解 vs 社会模拟";③ "推荐系统去偏:因果推断与 Doubly Robust 家族";④ "短视频推荐中的强化学习:留存/时长/多目标";⑤ "LLM 自我改进:反思、调试、辩论与工具反馈";⑥ "LLM 驱动的社会模拟与生成式 ABM:可信度与验证";⑦ "推荐系统中的 LLM 智能体:模拟器、对话推荐与多智能体";⑧ "公平性与多边福利:用户/创作者/提供方";⑨ "Transformer/图神经网络在推荐中的融合")_
+- [[generative-social-simulation]] —— "斯坦福小镇"这条线的综述:从 Smallville 三组件架构,到百万级社会模拟平台、scale-agency 权衡、社交智能评测与记忆机制,以及"验证/涌现真伪"这一核心争议(串联 ~28 篇 source)。
+- [[rl-for-recommendation]] —— 推荐中的强化学习综述:长期价值 vs 即时指标、offline RL 的 OOD 难题、model-based 奖励修正谱系(DORL→ROLeR→DARLR)、多阶段 MARL、Decision Transformer、仿真器评估(与社会模拟线交汇,串联 ~20 篇 source)。
+- [[llm-self-improvement]] —— LLM 自我改进/自我纠错综述:按反馈来源四分(内在自反馈/外部工具/多智能体辩论/训练时蒸馏),核心争议"内在自我纠错其实无效",厘清"有可靠误差信号才有效"的边界(串联 ~20 篇 source)。
+- [[llm-agent-memory]] —— LLM 智能体记忆机制综述:无状态难题与"长上下文只是延缓",五条技术谱系(OS 隐喻/人类记忆/结构化 agentic/抽取整合/反思检索),核心争议"简单检索基线打败复杂记忆架构、StructMemEval 重定义"(串联 ~14 篇 source)。
+- [[debiasing-causal-recommendation]] —— 推荐去偏与因果推断综述:观察数据偏差 → 因果框架,三大方法族(IPS / Doubly Robust+毒性插补 / Deconfounder 谱系 deep-deconf→iDCF→LCDR),短视频时长去偏,核心争议"去偏评估本身不可靠"(串联 ~18 篇 source)。
+- [[llm-agents-for-recommendation]] —— 推荐中的 LLM 智能体综述:两范式(模拟导向用户/物品 agent vs 推荐导向单/多 agent),wiki 两半边的缝合点,核心张力"模拟保真度+集成难度+成本+ID 鸿沟"(串联 ~18 篇 source)。
+- [[solving-agents-search]] —— 求解类智能体综述:从 CoT 单链到树搜索(ToT/RAP/LATS/TS-LLM)的 System 2 化,环境中的搜索,核心张力"推理时算力的成本-质量权衡 + verifier 可靠性"(串联 ~18 篇 source)。
+- [[recsys-architectures]] —— 推荐架构演进综述:序列(RNN→自注意力→生成式 HSTU)、特征交互(FM→AutoInt)、图(LightGCN/SIGformer)三线交汇,语义 ID 生成式转向 + 效率(线性注意力/Mamba/历史压缩)(串联 ~22 篇 source)。
+- [[fairness-multistakeholder-welfare]] —— 推荐公平性与多边福利综述:用户/创作者/平台多边市场,提供方曝光公平(BankFair/LHRL)、动态极化(user-creator dual influence)、福利安全与抗操控(conformal risk control),核心张力"短期vs长期/个性化vs极化/保证vs可操控"(串联 ~16 篇 source)。
+
+_(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可继续新增。)_
 
 ## 实体 (Entities)
 <!-- 模型 · 实验室/机构 · 人物 · 数据集 · benchmark · 产品 -->
+
+<!-- 2026-05-30 新增实体页(补具体系统悬空)。下次按字母重排时并入。 -->
+- [[lc-rec]] —— LLM 生成式推荐模型(RUC+腾讯,ICDE24):RQ-VAE 语义 ID + 对齐微调,直接从全物品集生成,融合语言与协同语义。
+- [[ip-adapter]] —— 文生图扩散的图像 prompt 适配器(腾讯,2308.06721):解耦交叉注意力,不动基模即插即用,文本兼容。
+- [[fairgame]] —— 用博弈论审计 LLM agent 策略行为的框架(2×2 对称矩阵博弈/平均合作率);据引用工作整理,原文待 ingest。
+
 ### 模型
 - [[adagin]] —— AdaGIN 是一种用于短视频推荐的片段级用户兴趣建模方法,通过将短视频拆成时间片段,建模用户沿时间线动态演变的兴趣。
 - [[alphaevolve]] —— AlphaEvolve 是一种由大语言模型驱动的进化式智能体,通过自动生成、评测并迭代改进代码/算法,体现了"自进化智能体"在算法发现与优化方向上的能力。
@@ -492,6 +508,34 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 
 ## 概念 (Concepts)
 <!-- 方法与思想:attention、RLHF、MoE、scaling law、量化…… -->
+
+<!-- 2026-05-30 新增概念页(补全高频悬空链接)。下次按字母重排 index 时并入各子区。 -->
+- [[game-theory]] —— 博弈论:多玩家策略互动框架(均衡/囚徒困境/协调博弈),社会模拟与多智能体合作竞争的分析语言。
+- [[reranking]] —— 重排:推荐流水线末段,按列表上下文/多目标/多样性/公平/约束调整最终顺序。
+- [[contextual-bandits]] —— 上下文老虎机:介于监督与完整 RL 的在线决策,探索-利用权衡(UCB/Thompson),冷启动主力。
+- [[reinforcement-learning-for-recommendation]] —— 推荐中的 RL:把推荐建模为 MDP 优化长期价值,核心难点是 offline RL 的 OOD 外推。
+- [[best-of-n]] —— Best-of-N:采 N 个候选用奖励模型选最优,推理时换算力提质量的扩展基线。
+- [[seq2seq]] —— 序列到序列:encoder-decoder 自回归生成范式,从 RNN+attention 到 Transformer/T5/BART。
+- [[linear-attention]] —— 线性注意力:把 O(N²) 注意力降到 O(N),与 Mamba/SSM 同构,服务长序列与长上下文。
+- [[attention]] —— 注意力机制:scaled dot-product + 多头,Transformer/LLM 的计算核心(枢纽页)。
+- [[multi-objective-optimization]] —— 多目标优化:Pareto 前沿,推荐中 CTR/CVR/时长/留存的冲突平衡(标量化/MTL/约束)。
+- [[implicit-feedback]] —— 隐式反馈:从行为推断偏好,只有正例 + MNAR 曝光偏差,去偏与 BPR 的根源。
+- [[item-side-fairness]] —— 物品侧公平:创作者/提供方的曝光分配,多边公平的供给侧(重排约束)。
+- [[offline-evaluation]] —— 离线评估:用日志/仿真器评估策略,off-policy 估计与仿真器两路,离线-在线一致性难题。
+- [[embedding]] —— 嵌入:离散对象→低维稠密向量,检索/推荐/多模态的通用底座。
+- [[dense-retrieval]] —— 稠密检索:学习向量做语义匹配(bi-encoder),RAG 与开放域问答的召回核心。
+- [[uplift-modeling]] —— 增益建模:估计干预的因果增量(CATE),只投放"可说服者"。
+- [[exploration-exploitation]] —— 探索-利用权衡:序贯决策根本矛盾,bandit/RL/冷启动的共同主题。
+- [[personalization]] —— 个性化:按个体定制推荐/生成,与公平/多样性/信息茧房的张力。
+- [[representation-learning]] —— 表示学习:自动学可迁移特征(自监督/对比/预训练),embedding 与大模型通用能力之源。
+- [[multi-domain-recommendation]] —— 多域推荐:统一模型服务多场景,共享共性+保留特性,防负迁移。
+- [[hyperparameter-tuning]] —— 超参数调优:搜索学习率/损失权重/RL 系数等,深度推荐与 RL 的敏感且昂贵环节。
+- [[retrieval]] —— 检索:稀疏(BM25)vs 稠密(向量)两范式 + 召回→重排级联,搜索/RAG/推荐召回的底座。
+- [[agent-evaluation]] —— 智能体评测:交互式多步任务的能力衡量,评判可靠性/过程vs结果/基准是否测到点子上。
+- [[embodied-agent]] —— 具身智能体:物理/仿真环境中感知-行动,语言计划接地到可执行动作。
+- [[recommendation-fairness]] —— 推荐公平性:用户/物品/平台多边公平,与去偏因果一脉相承。
+- [[cournot-competition]] —— 古诺竞争:寡头同时选产量的经典博弈,Cournot–Nash 均衡,用于 LLM agent 经济模拟。
+
 ### LLM 智能体与推理
 - [[llm-agents|llm-agent]] —— LLM 智能体枢纽页;分"任务求解+搜索"与"社会模拟"两分支
 - [[llm-based-agents]] —— 以 LLM 为决策核心、感知环境并行动的智能体
@@ -890,7 +934,6 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 - [[reward-shaping]] —— Reward Shaping(奖励塑形)是指在强化学习中通过修改、精炼或补充原始奖励信号,引导智能体更高效、更稳健地学习到期望策略的一类方法。
 - [[rope]] —— 旋转位置编码(Rotary Position Embedding),一种通过对 query 和 key 向量按位置施加旋转变换、从而在注意力计算中隐式注入相对位置信息的位置编码方法。
 - [[rq-vae]] —— residual-quantized VAE (RQ-VAE) 是一种用多层残差向量量化(逐层量化上一层的量化残差)将连续表征编码为一串离散码元(即 semantic ID)的自编码器,常用于为物品生成可作为生成式模型输入的层次化离散标识。
-- [[s3-social-network-simulation]] —— 一种以 LLM 生成式社会 agent 为核心、结合真实社会环境与大规模仿真引擎的社会网络仿真方法,用于在可控环境中复现并研究群体层面的社会现象。
 - [[sample-efficiency]] —— 样本效率指模型或智能体在给定数量的交互或训练样本下达到目标性能的能力,样本效率越高意味着用更少的数据即可学好。
 - [[sandbox-reinforcement-learning]] —— Sandbox 强化学习是一种在隔离的受控环境(sandbox)中让 agent 执行动作、获得反馈并据此进行强化学习的方法,使模型能在安全可控的前提下学习工具调用与安全对齐策略。
 - [[scaling-law]] —— Scaling Law(扩展定律)描述模型性能随模型规模、数据量与计算量的增长而可预测地提升的经验规律。
@@ -936,6 +979,14 @@ _(暂无——候选:① "求解类智能体:成本 vs 质量";② "LLM 智能�
 
 ## 资料 (Sources)
 <!-- 每份已 ingest 的原始资料一页,以年份为前缀 -->
+
+<!-- 2026-05-30 新增 ingest(社会模拟线;原文已下载入 raw/ 并核实)。下次按字母重排 index 时并入主列表。 -->
+- [[2023-out-of-one-many-llm-simulate-human-samples]] —— Argyle/BYU 2022,LLM 社会模拟奠基作;GPT-3"硅样本"+ algorithmic fidelity。
+- [[2023-econagent-macroeconomic-simulation]] —— 清华 EconAgent(ACL24);LLM agent 逐月工作/消费决策,复现通胀/失业、Phillips 曲线、Okun 定律。
+- [[2023-s3-social-network-simulation]] —— 清华 S³;LLM agent 模拟社交网络情绪/态度/行为传播([[2025-agentsociety-large-scale-social-simulation]] 前身)。
+- [[2023-waragent-world-war-simulation]] —— Rutgers WarAgent;国家级 agent 模拟一战/二战/战国,研究开战触发与"战争必然性"。
+- [[2024-project-sid-minecraft-civilization]] —— Altera;Minecraft 500–1000+ agent 涌现文明(PIANO 架构,解决多 agent coherence)。
+
 - [[2020-rag]] —— Lewis 等 2020,RAG;参数化 seq2seq+可检索 Wikipedia 稠密索引,知识密集型 NLP 多项 SOTA
 - [[2022-chain-of-thought]] —— Wei 等 2022,CoT prompting;few-shot 中间推理步骤,推理增益随规模涌现
 - [[2022-constitutional-ai]] —— Bai 等 2022,Constitutional AI;用原则替代有害性标注,自我批评+RLAIF

@@ -17,7 +17,7 @@ Google 内部专注于机器人学习与具身智能研究的团队,推动将大
 
 ## 相关
 
-- [[inner-monologue]]
+- [[2022-inner-monologue|inner-monologue]]
 - [[large-language-models|large-language-model]]
 - [[embodied-reasoning]]
 - [[google]]

@@ -21,4 +21,4 @@ ConvApparel 是 Google 提出的人-AI 服装购物对话数据集,包含 4,146 
 - [[hls-human-likeness-score]]
 - [[plsa]]
 - [[counterfactual-validation]]
-- [[llm-evaluation]]
+- [[agent-evaluation|llm-evaluation]]

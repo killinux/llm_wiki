@@ -39,6 +39,6 @@ Instruction Tuning 指在带有自然语言指令(及其期望输出)的数据�
 - [[2023-chain-of-verification]]
 - [[2023-agenttuning]]
 - [[hallucination]]
-- [[agent]]
+- [[llm-agents|agent]]
 - [[synthetic-data]]
 - [[abliteration]]

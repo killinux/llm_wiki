@@ -46,7 +46,7 @@ year: 2025
 
 此外针对在线 RL 中"采样时的旧策略"与"当前策略"动作分布不一致(action discrepancy)的问题,引入 **debias 项 β = π(a_t|s_t)/p(a_t|s_t)** 得到 L_{β-stateTD} = β(V(s_t)−Q(s_t,a_t))^2 (Eq.18),通过重要性加权把 V 的学习拉向当前策略对应的正确目标 V^*。
 
-实验在模拟在线环境中进行(传统离线评估不适合在线 RL):数据集为 [[movielens-1m]]、[[amazon-book]](Amazon book)与 [[kuairand]](KuaiRand1K);仿真器参照 [[kuaisim]],click 奖励 +1.0、miss 为 −0.2,最大 episode 深度 20,由 temper-based user leave 模型控制离开。指标含 average total reward、session depth、minimum reward 与 reward variance;所有方法 30,000 步内收敛,取最后 100 步均值,5 个随机种子。baseline 含 Supervision(Non-RL)、[[a2c]]、[[dqn]]、[[ddpg]]、[[hac]](Hyper-Actor-Critic)、[[sqn]] 与 Dueling DQN(D-DQN)。
+实验在模拟在线环境中进行(传统离线评估不适合在线 RL):数据集为 [[movielens-1m]]、[[amazon-book]](Amazon book)与 [[kuairand]](KuaiRand1K);仿真器参照 [[kuaisim]],click 奖励 +1.0、miss 为 −0.2,最大 episode 深度 20,由 temper-based user leave 模型控制离开。指标含 average total reward、session depth、minimum reward 与 reward variance;所有方法 30,000 步内收敛,取最后 100 步均值,5 个随机种子。baseline 含 Supervision(Non-RL)、[[actor-critic|a2c]]、[[dqn]]、[[ddpg]]、[[hac]](Hyper-Actor-Critic)、[[sqn]] 与 Dueling DQN(D-DQN)。
 
 ## 结果
 
@@ -63,4 +63,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[rl-based-recsys]] / [[reinforcement-learning]] for recommendation 主题,聚焦 [[temporal-difference]] 学习中 [[value-function]] 估计的偏差与方差问题,提出的 TD 分解是一项可叠加到 [[actor-critic]] 及 value-based 方法上的通用技术,与 [[hac]]、[[a2c]]、[[ddpg]]、[[dqn]]、[[sqn]] 等骨干互补。它建立在 [[markov-decision-process]] 的推荐建模(MRP)之上,实验依托 [[kuaisim]] 模拟器与 [[movielens-1m]]、[[amazon-book]]、[[kuairand]] 数据集,可与本 wiki 中 [[long-term-recommendation]]、[[off-policy-evaluation]]、[[easyrl4rec]] 等条目关联。研究由 [[kuaishou]]([[qingpeng-cai]] 等)与 [[peking-university]] 合作完成,发表于 WWW '25。
+本文属于 [[rl-based-recsys]] / [[reinforcement-learning]] for recommendation 主题,聚焦 [[temporal-difference]] 学习中 [[value-function]] 估计的偏差与方差问题,提出的 TD 分解是一项可叠加到 [[actor-critic]] 及 value-based 方法上的通用技术,与 [[hac]]、[[actor-critic|a2c]]、[[ddpg]]、[[dqn]]、[[sqn]] 等骨干互补。它建立在 [[markov-decision-process]] 的推荐建模(MRP)之上,实验依托 [[kuaisim]] 模拟器与 [[movielens-1m]]、[[amazon-book]]、[[kuairand]] 数据集,可与本 wiki 中 [[long-term-recommendation]]、[[off-policy-evaluation]]、[[easyrl4rec]] 等条目关联。研究由 [[kuaishou]]([[qingpeng-cai]] 等)与 [[peking-university]] 合作完成,发表于 WWW '25。

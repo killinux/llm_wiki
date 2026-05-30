@@ -17,7 +17,7 @@ sources: 1
 
 ## 相关
 
-- [[inference-scaling-laws]]
+- [[test-time-scaling|inference-scaling-laws]]
 - [[test-time-compute]]
 - [[tree-search]]
 - [[rebase]]

@@ -19,5 +19,5 @@ MMLU(Massive Multitask Language Understanding)是一个覆盖多学科、多任�
 
 - [[abliteration]]
 - [[extended-refusal]]
-- [[llm-evaluation]]
+- [[agent-evaluation|llm-evaluation]]
 - [[benchmark]]

@@ -27,4 +27,4 @@ Mamba 是一种带选择机制(selective mechanism)的状态空间模型(State S
 - [[state-space-model]]
 - [[transformer]]
 - [[sasrec]]
-- [[lifelong-sequential-recommendation]]
+- [[sequential-recommendation|lifelong-sequential-recommendation]]
