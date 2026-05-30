@@ -282,3 +282,6 @@ EconAgent(Phillips r=-0.619/Okun r=-0.918,通胀-5~5%/失业2-12%,COVID 干预);
 
 ## [2026-05-30] note | 第9篇 topic 综述:公平性与多边福利(原候选清单收齐)
 新建 topics/fairness-multistakeholder-welfare,读 7 篇 source 核实(BankFair/LHRL/fairness-missing-labels/user-creator-polarization/conformal-risk-control/collective-manipulation),四节(提供方曝光公平/用户群体公平/动态极化/福利安全抗操控)+ 核心张力,串 ~16 篇。至此 index 原候选 ①–⑨ 全部建成,topics 层 0→9。index 候选注释更新为"已全部上线"。
+
+## [2026-05-30] note | 新建 README.md
+新建仓库根 README,说明本库采用 Karpathy "LLM Wiki" 思路(人类策展、LLM 维护;Obsidian=IDE、LLM=程序员、wiki=代码库),介绍三层架构(raw 不可变源 / wiki 生成层 / CLAUDE.md schema)、wiki 四类子目录、9 篇 topic 导航入口、页面约定与三种操作(ingest/query/lint),附当前规模。
