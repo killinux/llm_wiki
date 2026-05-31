@@ -34,6 +34,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[bard]] —— Google 推出的对话式大语言模型产品
 - [[bart]] —— 基于 Transformer 的 seq2seq 去噪自编码预训练模型
 - [[bcq]] —— 约束策略只取数据内动作的 offline RL 算法,缓解 OOD 外推误差
+- [[bert]] —— Google 双向 Transformer 编码器预训练模型,MLM+NSP 奠定 NLP 预训练范式
 - [[belle]] —— 开源大语言模型,被用作底层对话模型
 - [[bert4rec]] —— BERT4Rec 是一种用于序列推荐的模型,采用双向 Transformer 编码器,通过掩码物品预测(Cloze 任务)从用户历史行为中学习物品表示。
 - [[bpr]] —— 贝叶斯个性化排序,隐式反馈下成对优化的推荐基线
@@ -586,6 +587,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[user-simulation]] —— 用模型模拟用户交互行为以训练/评估系统
 - [[generative-agents]] —— 用记忆流+反思+规划模拟可信人类行为
 - [[social-simulation]] —— 用 LLM 智能体模拟社会互动与群体行为
+- [[s3-social-network-simulation]] —— LLM 生成式社会 agent 大规模社会网络仿真方法
 - [[social-intelligence]] —— 智能体在社交目标下感知/推断/协作的能力
 - [[agent-based-modeling]] —— 自下而上以个体 agent 规则模拟系统涌现行为
 - [[metacognition]] —— 智能体观察反思自身思考与行动并调整策略
@@ -652,6 +654,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[lstm]] —— 带门控缓解梯度消失、擅长长期依赖的 RNN
 - [[adversarial-robustness]] —— 抵御对抗扰动保持稳定预测的能力
 ### 训练与推理范式
+- [[pretraining]] —— 在大规模无标注数据上自监督训练通用表示,下游再微调
 - [[fine-tuning]] —— 用任务数据继续训练调整预训练模型参数
 - [[prompt-tuning]] —— 只学少量连续提示向量的参数高效微调
 - [[mixture-of-experts]] —— 门控稀疏选择组合专家子网络扩容控算
@@ -660,8 +663,12 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[process-supervision]] —— 对推理每步提供正误反馈训练
 - [[outcome-reward-model]] —— 仅按最终答案打分的奖励模型(ORM)
 - [[process-reward-model]] —— 对推理每步打分的奖励模型(PRM)
+- [[self-supervised-learning]] —— 从无标签数据自动构造监督信号进行预训练的学习范式
+- [[transfer-learning]] —— 将源任务/领域学到的知识迁移到目标任务/领域以提升泛化
 ### 强化学习
 - [[reinforcement-learning]] —— 与环境交互依奖励学最大化累积回报策略
+- [[policy-gradient]] —— 直接对策略参数求梯度优化期望回报的 RL 方法族
+- [[q-learning]] —— 经典无模型 off-policy RL 算法,学 Q(s,a) 逼近最优动作价值
 - [[markov-decision-process]] —— 状态/动作/转移/奖励刻画序列决策的框架
 - [[constrained-mdp]] —— 在奖励最大化外加累积代价约束的 MDP
 - [[constrained-optimization]] —— 在约束条件下求最优解的优化
@@ -726,6 +733,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[eeg-signal]] —— 脑电信号,用作情感参与度反馈
 - [[hyper-actor-critic]] —— 解耦 hyper-action 推断+effect-action 选择的 RL 推荐
 ### 因果推断与去偏
+- [[debiasing-recommendation]] —— 推荐系统中消除曝光/位置/流行度等偏差的方法总称
 - [[causal-inference]] —— 从观测数据估计因果效应而非相关的方法论
 - [[causal-discovery]] —— 从观测数据自动推断因果结构(DAG/方向)
 - [[counterfactual-reasoning]] —— 推断条件改变后"本会发生什么"的因果推断
@@ -785,6 +793,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[cirs]] —— 因果干预缓解过滤气泡的交互式推荐方法
 - [[pareto]] —— 多目标优化的权衡前沿与最优解集
 - [[pareto-optimality]] —— 无法不损一目标改进其他目标的状态
+- [[graph-neural-network]] —— 在图结构数据上消息传递与表示学习的深度学习方法族
 ### 其他(后续批次新增,待归类)
 - [[ab-testing]] —— A/B Testing(A/B 测试)是一种在线对照实验方法,通过将用户随机分配到不同实验组(如对照组与实验组),比较各组在关键指标上的差异,从而评估某项改动(如新模型、新策略)的真实效果。
 - [[abliteration]] —— Abliteration 是一种推理时干预技术,通过在模型激活空间中识别并移除(消融)与"拒绝"行为相关的单一潜在方向,从而绕过对齐模型的安全拒绝机制。
@@ -812,7 +821,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[conformal-risk-control]] —— 一种 distribution-free 的统计框架,通过校准在分布无关假设下为某个可监控的风险(损失)期望提供可证明的上界,是 conformal prediction 在一般化风险控制场景下的推广。
 - [[consensus]] —— Consensus 指多个 agent(或节点)在去中心化、可能受限的通信条件下,就某个共同决策或状态达成一致的过程,是分布式计算中的经典问题之一。
 - [[context-engineering]] —— 上下文工程(Context Engineering)是指系统性地设计、组织、检索与管理输入给大语言模型的上下文信息,以在有限上下文窗口内为模型提供最相关、最有效的内容,从而提升其推理与生成质量的方法。
-- [[contextual-bandit]] —— Contextual Bandit(情境老虎机)是一类在线决策方法:在每一步根据观察到的上下文(context)从若干动作中选择一个,并仅获得所选动作的反馈(奖励),目标是学习一个将上下文映射到动作的策略以最大化累计奖励。
+- [[contextual-bandits]] —— Contextual Bandit(情境老虎机)是一类在线决策方法:在每一步根据观察到的上下文(context)从若干动作中选择一个,并仅获得所选动作的反馈(奖励),目标是学习一个将上下文映射到动作的策略以最大化累计奖励。
 - [[contrastive-learning]] —— 对比学习是一种表示学习方法,通过拉近正样本对、推远负样本对,在无需大量标注的情况下学习判别性强的特征表示。
 - [[conversational-recommendation]] —— 对话式推荐(Conversational Recommendation System, CRS)是一种通过多轮自然语言交互逐步澄清用户偏好、并据此动态生成、排序与呈现推荐结果的推荐范式。
 - [[cooperation]] —— 合作(Cooperation)指多个智能体在存在个体利益与集体利益冲突的情境(如社会困境)中,选择相互配合而非相互背叛,以达成更优集体结果的行为。
@@ -1188,7 +1197,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2025-multi-agent-reflexion-mar]] —— 一句话:本文复现了 [[reflexion]] 框架,指出其"同一模型既行动又自评又反思"导致确认偏误与思维退化,并提出 Multi-Agent Reflexion(MAR)——用一组多 persona 的批评者加一个 judge 来合成反思,从而在 [[hotpotqa]] 与 [[humaneval]] 上稳定超过单 Agent Reflexion。
 - [[2025-multi-objective-controllable-decision-transformer]] —— 提出 MocDT,一种基于 [[decision-transformer]] 的离线 RL 推荐方法,通过把"未来多目标"作为控制信号(类似 prompt),在推理阶段自回归生成对齐指定目标(如累积评分与多样性)的物品序列,无需为目标变化重新训练。
 - [[2025-multiagentbench]] —— MultiAgentBench 是一个用于评测 LLM-based 多智能体系统的 benchmark,它在六个交互式场景中同时衡量任务完成度与协作/竞争质量,并配套提出 MARBLE 框架,支持 star/tree/graph/chain 多种协调拓扑与多种规划策略。
-- [[2025-multiscale-contextual-bandits-long-term]] —— 提出 MultiScale Policy Learning 框架与其实例化算法 MSBL,用分层的 off-policy [[contextual-bandit]] 在多个相互依赖的时间尺度上协调短期反馈(点击/参与)与长期目标(用户留存/订阅续费),让低尺度的丰富数据作为高尺度稀疏数据的先验,从而更快地为长期目标优化策略。
+- [[2025-multiscale-contextual-bandits-long-term]] —— 提出 MultiScale Policy Learning 框架与其实例化算法 MSBL,用分层的 off-policy [[contextual-bandits]] 在多个相互依赖的时间尺度上协调短期反馈(点击/参与)与长期目标(用户留存/订阅续费),让低尺度的丰富数据作为高尺度稀疏数据的先验,从而更快地为长期目标优化策略。
 - [[2025-no-one-left-behind-asymmetric-multi-label-cvr]] —— KAML 是一个面向在线广告 CVR(conversion rate)预测的 [[multi-task-learning]] 框架,针对广告主只提交部分转化行为所导致的"不完整且偏斜的多标签数据(asymmetric multi-label data)",用归因驱动的掩码策略 ADM、层级知识抽取 HKE 与基于排序的标签利用 RLU 三件套挖掘未标注样本的信息,在工业数据集与线上 A/B 测试上显著超越现有 MTL 基线。
 - [[2025-opencharacter-role-playing-synthetic-personas]] —— 用大规模合成 persona 造数据,对 [[llama-3]] 8B 做 [[supervised-fine-tuning]]([[fine-tuning]]),让 LLM 获得「角色泛化」(character generalization)能力,即可即时扮演训练时未见过的任意用户自定义角色,效果可与 [[gpt-4o-mini]]/GPT-4o 相当。
 - [[2025-perscen-multi-scenario-matching]] —— PERSCEN 是首个把"用户个性化建模"直接引入多场景匹配(multi-scenario matching)阶段的两塔召回方法,通过 user-specific 特征图 + 轻量 GNN、向量量化(vector quantization)的场景感知偏好,以及渐进式场景自适应 GLU,在保持高检索效率的同时显著提升召回性能。
@@ -1242,7 +1251,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2026-orchestration-multi-agent-systems]] —— 一篇来自 Skan AI 的工程蓝图式综述,把编排式(orchestrated)[[multi-agent-systems]] 的技术构成统一为一套架构框架:专门化 agent + 编排层 + 两个互补通信协议(MCP 与 A2A)+ 治理/可观测性,面向企业级落地。
 - [[2026-orgagent-company-style-mas]] —— 把 [[llm-multi-agent]] 系统按"公司式层级"组织——拆成治理(governance)、执行(execution)、合规(compliance)三层——并系统验证这种组织结构相比扁平协作能同时提升推理效果与降低 token 成本。
 - [[2026-pdqubo-quantum-feature-selection]] —— PDQUBO 是一种面向[[recommender-systems|推荐系统]]特征选择的「性能驱动」QUBO 构造方法,它用[[counterfactual-reasoning|反事实分析]]来量化单个特征与特征对对推荐性能的影响,从而让量子退火器(quantum annealer)的优化方向直接对齐推荐质量。
-- [[2026-policysim-proactive-policy-optimization]] —— PolicySim 是一个基于 [[large-language-models]] 智能体的社会模拟沙盒,通过 [[supervised-fine-tuning]]+[[direct-preference-optimization]] 训练用户智能体、并用带消息传递的 [[contextual-bandit]] 自适应优化平台干预策略,从而在部署前(proactive)评估与优化推荐、曝光控制等平台干预政策。
+- [[2026-policysim-proactive-policy-optimization]] —— PolicySim 是一个基于 [[large-language-models]] 智能体的社会模拟沙盒,通过 [[supervised-fine-tuning]]+[[direct-preference-optimization]] 训练用户智能体、并用带消息传递的 [[contextual-bandits]] 自适应优化平台干预策略,从而在部署前(proactive)评估与优化推荐、曝光控制等平台干预政策。
 - [[2026-proactive-guiding-item-side-fairness]] —— 本文提出 HRL4PFG,一个分层强化学习框架,通过"主动引导"用户偏好逐步转向长尾物品,在不损害用户满意度的前提下提升交互式推荐中的 item-side 公平。
 - [[2026-self-evolving-multi-agent-rts]] —— SEMA(Self-Evolving Multi-Agent)是一个面向实时策略(RTS)游戏的 LLM 多智能体框架,用结构熵驱动的观测剪枝降低推理延迟,并通过闭环自演化抑制 LLM 的决策随机性,在 StarCraft II 上实现高胜率与低延迟。
 - [[2026-self-organizing-llm-agents]] —— 一句话:一项 25,000 任务的大规模实验发现"内生性悖论"(endogeneity paradox)——固定智能体顺序但让角色自主选择的混合协议(Sequential),在质量上同时超越中心化的 Coordinator(+14%)和完全自主的 Shared(+44%),前提是底层模型足够强。

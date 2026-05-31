@@ -43,4 +43,4 @@ LLM-based Agents 是以 large language model 为推理与决策核心的自主�
 - [[retrieval-augmented-generation]]
 - [[agent-evaluation]]
 - [[social-simulation]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]

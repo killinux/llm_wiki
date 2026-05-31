@@ -12,7 +12,7 @@ year: 2025
 
 # MultiScale Contextual Bandits for Long Term Objectives
 
-提出 MultiScale Policy Learning 框架与其实例化算法 MSBL,用分层的 off-policy [[contextual-bandit]] 在多个相互依赖的时间尺度上协调短期反馈(点击/参与)与长期目标(用户留存/订阅续费),让低尺度的丰富数据作为高尺度稀疏数据的先验,从而更快地为长期目标优化策略。
+提出 MultiScale Policy Learning 框架与其实例化算法 MSBL,用分层的 off-policy [[contextual-bandits]] 在多个相互依赖的时间尺度上协调短期反馈(点击/参与)与长期目标(用户留存/订阅续费),让低尺度的丰富数据作为高尺度稀疏数据的先验,从而更快地为长期目标优化策略。
 
 ## 问题
 

@@ -19,6 +19,6 @@ Open Bandit Dataset 是一个用于离线策略评估(off-policy evaluation)与 
 
 - [[2022-kuairand]]
 - [[off-policy-evaluation]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]
 - [[debiasing]]
 - [[offline-evaluation]]

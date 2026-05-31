@@ -12,7 +12,7 @@ year: 2026
 
 # PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization
 
-PolicySim 是一个基于 [[large-language-models]] 智能体的社会模拟沙盒,通过 [[supervised-fine-tuning]]+[[direct-preference-optimization]] 训练用户智能体、并用带消息传递的 [[contextual-bandit]] 自适应优化平台干预策略,从而在部署前(proactive)评估与优化推荐、曝光控制等平台干预政策。
+PolicySim 是一个基于 [[large-language-models]] 智能体的社会模拟沙盒,通过 [[supervised-fine-tuning]]+[[direct-preference-optimization]] 训练用户智能体、并用带消息传递的 [[contextual-bandits]] 自适应优化平台干预策略,从而在部署前(proactive)评估与优化推荐、曝光控制等平台干预政策。
 
 ## 问题
 
@@ -29,7 +29,7 @@ PolicySim 沿用 [[human-behavior-simulation|HiSim]] 架构,由两大模块构�
   - **Memory**:短期记忆 + 长期记忆(按语义相关性与时间衰减 e^{-λΔt} 检索),短帖低于阈值直接入池以省算力。
   - **Agent Training**:不靠 prompt 工程,而用两阶段 **SFT→DPO**。SFT 作为冷启动,在 (event, user, action) 元组上最小化响应序列的负对数似然;DPO 以 SFT 模型为参考策略 π_ref,用偏好对 (y⁺, y⁻)(负样本通过 base model 采样出低相似/动作不一致的 J 个样本)进一步对齐真实社交行为。还用 [[chain-of-thought|CoT]] 增强行为可解释性。
 - **Intervention Policy Module(干预策略模块)**:实例化两类典型干预——[[recommender-systems|推荐系统]](relational / personalized / headline 三种推荐源)与 **exposure control**(曝光控制,用 exp(u_i)∈[0,1] 调节帖子可见性,模拟审核、内容优先级或公平干预)。
-- **Adaptive Intervention Policy(自适应干预)**:把干预建模为 [[contextual-bandit]],每个 arm 是 user-post 对(推荐)或 user-probability 对(曝光控制)。Context 由用户 profile+近期记忆 embedding,并通过 label propagation 在社交图上做 k 跳邻居聚合(X_user^k = γX^{k-1} + (1-γ)D⁻¹AX^{k-1})。优化采用 exploitation(神经网络 g 学 context→reward)+ exploration(神经网络估计 potential gain,即观测 reward 与预测 reward 的差),按 g+ĝ(∇g) 排序选 arm。Reward 对应两个目标:目标1 促进 cross-viewpoint 交互(reward 平衡立场分歧、用 [[perspective-api|Perspective API]] 惩罚 toxicity、按 engagement 加权),目标2 抑制 [[hallucination|misinformation]] 传播。
+- **Adaptive Intervention Policy(自适应干预)**:把干预建模为 [[contextual-bandits]],每个 arm 是 user-post 对(推荐)或 user-probability 对(曝光控制)。Context 由用户 profile+近期记忆 embedding,并通过 label propagation 在社交图上做 k 跳邻居聚合(X_user^k = γX^{k-1} + (1-γ)D⁻¹AX^{k-1})。优化采用 exploitation(神经网络 g 学 context→reward)+ exploration(神经网络估计 potential gain,即观测 reward 与预测 reward 的差),按 g+ĝ(∇g) 排序选 arm。Reward 对应两个目标:目标1 促进 cross-viewpoint 交互(reward 平衡立场分歧、用 [[perspective-api|Perspective API]] 惩罚 toxicity、按 engagement 加权),目标2 抑制 [[hallucination|misinformation]] 传播。
 
 ## 结果
 
@@ -41,4 +41,4 @@ PolicySim 沿用 [[human-behavior-simulation|HiSim]] 架构,由两大模块构�
 
 ## 在本 wiki 中的位置
 
-PolicySim 属于 [[llm-based-agents|LLM 社会模拟]] 与 [[social-simulation]] 方向,定位与 [[oasis|OASIS]]、[[agent4rec|Agent4Rec]]、[[human-behavior-simulation|HiSim]]、[[s3-social-network-simulation|S³]]、[[generative-agents]] 同属社交平台多智能体模拟系统(见论文 Table 1 的对比),其差异在于**显式建模平台干预政策 + 用反馈自适应优化策略**。方法层面把 [[supervised-fine-tuning]]→[[direct-preference-optimization]] 的训练范式从对齐场景迁移到社会智能体训练,并用 [[contextual-bandit]]+消息传递做 [[recommender-systems|recommender-system]] 与曝光控制的策略学习,衔接 [[reinforcement-learning]] 在 [[recommender-systems|recommender-system]] 的应用。研究主题(去 [[echo-chamber]]、抑制 [[polarization]] 与 misinformation、促进 cross-viewpoint 交互)对应 [[computational-social-science]] 与 [[ai-agent-behavioral-science]]。作者来自 [[zhejiang-university]]、[[fudan-university]]、[[hkust]] 与 MyBank/[[ant-group]]。
+PolicySim 属于 [[llm-based-agents|LLM 社会模拟]] 与 [[social-simulation]] 方向,定位与 [[oasis|OASIS]]、[[agent4rec|Agent4Rec]]、[[human-behavior-simulation|HiSim]]、[[s3-social-network-simulation|S³]]、[[generative-agents]] 同属社交平台多智能体模拟系统(见论文 Table 1 的对比),其差异在于**显式建模平台干预政策 + 用反馈自适应优化策略**。方法层面把 [[supervised-fine-tuning]]→[[direct-preference-optimization]] 的训练范式从对齐场景迁移到社会智能体训练,并用 [[contextual-bandits]]+消息传递做 [[recommender-systems|recommender-system]] 与曝光控制的策略学习,衔接 [[reinforcement-learning]] 在 [[recommender-systems|recommender-system]] 的应用。研究主题(去 [[echo-chamber]]、抑制 [[polarization]] 与 misinformation、促进 cross-viewpoint 交互)对应 [[computational-social-science]] 与 [[ai-agent-behavioral-science]]。作者来自 [[zhejiang-university]]、[[fudan-university]]、[[hkust]] 与 MyBank/[[ant-group]]。

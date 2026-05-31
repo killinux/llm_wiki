@@ -39,4 +39,4 @@ year: 2025
 
 ## 在本 wiki 中的位置
 
-本文属于 [[recommender-systems]] 中的 exploration / 无偏数据收集方向,核心动机是缓解 [[exposure-bias]](presentation bias)与 feedback loop,从而服务 [[debiasing]] 与 [[off-policy-evaluation]]。它在相关工作中对比了算法级探索方法 [[contextual-bandit]]、[[thompson-sampling]]、[[active-learning]] 与 epsilon-greedy/UCB 等,定位为 UI 级、成本敏感的互补方案;其无偏召回器服务于 [[candidate-generation]]。与 [[kuairand]] 等通过随机曝光获取 [[missing-at-random]] 数据的工作思路相通,但本文强调"在哪里/如何交付探索"的部署工程层面,部署平台为 [[tubi]] 旗下流媒体电视产品。
+本文属于 [[recommender-systems]] 中的 exploration / 无偏数据收集方向,核心动机是缓解 [[exposure-bias]](presentation bias)与 feedback loop,从而服务 [[debiasing]] 与 [[off-policy-evaluation]]。它在相关工作中对比了算法级探索方法 [[contextual-bandits]]、[[thompson-sampling]]、[[active-learning]] 与 epsilon-greedy/UCB 等,定位为 UI 级、成本敏感的互补方案;其无偏召回器服务于 [[candidate-generation]]。与 [[kuairand]] 等通过随机曝光获取 [[missing-at-random]] 数据的工作思路相通,但本文强调"在哪里/如何交付探索"的部署工程层面,部署平台为 [[tubi]] 旗下流媒体电视产品。

@@ -23,4 +23,4 @@ AI Agent Behavioral Science 是一种研究范式：把 LLM agent 当作具有�
 - [[human-agent-interaction]]
 - [[responsible-ai]]
 - [[social-simulation]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]

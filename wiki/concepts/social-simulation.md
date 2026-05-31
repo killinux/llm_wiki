@@ -38,6 +38,7 @@ sources: 18
 - [[llm-agents]]
 - [[model-validation]]
 - [[generative-agents]]
+- [[s3-social-network-simulation]]
 - [[multi-agent-systems]]
 - [[role-playing-agents]]
 - [[emergent-abilities|emergent-behavior]]

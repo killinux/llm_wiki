@@ -285,3 +285,7 @@ EconAgent(Phillips r=-0.619/Okun r=-0.918,通胀-5~5%/失业2-12%,COVID 干预);
 
 ## [2026-05-30] note | 新建 README.md
 新建仓库根 README,说明本库采用 Karpathy "LLM Wiki" 思路(人类策展、LLM 维护;Obsidian=IDE、LLM=程序员、wiki=代码库),介绍三层架构(raw 不可变源 / wiki 生成层 / CLAUDE.md schema)、wiki 四类子目录、9 篇 topic 导航入口、页面约定与三种操作(ingest/query/lint),附当前规模。
+
+## [2026-05-31] lint | 全量 lint + 修复
+扫描 1220 页,报告:874 悬挂链接、1 孤立页、1 组近似重复、5 页未入 index、frontmatter 100% 完整。
+修复内容:(1) 合并 contextual-bandit → contextual-bandits 并全局替换链接(11 文件);(2) 补录 debiasing-recommendation / policy-gradient / self-supervised-learning / transfer-learning / s3-social-network-simulation 进 index;(3) 为 s3-social-network-simulation 从 social-simulation 加入链;(4) 新建 4 个高频悬挂链接页:bert(entity)、graph-neural-network / q-learning / pretraining(concepts),均入 index。

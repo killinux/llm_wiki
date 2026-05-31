@@ -20,4 +20,4 @@ Weibo(微博)是中国主流的社交媒体微博客平台,用户可发布短内
 - [[llm-agents|llm-agent]]
 - [[social-simulation]]
 - [[recommender-systems|recommendation-system]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]

@@ -20,5 +20,5 @@ sources: 1
 - [[social-simulation]]
 - [[llm-agents|llm-agent]]
 - [[recommender-systems|recommendation-system]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]
 - [[polarization]]

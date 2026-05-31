@@ -37,4 +37,4 @@ Zhejiang University(浙江大学)是一所位于中国杭州的综合性研究�
 - [[lora]]
 - [[llm-agents|llm-agent]]
 - [[social-simulation]]
-- [[contextual-bandit]]
+- [[contextual-bandits]]
