@@ -401,6 +401,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 ### Benchmark
 - [[agent-safetybench]] —— Agent SafetyBench 是用于评测 tool-using(工具调用)大模型 agent 安全性的基准,关注 agent 在面对用户侧与工具侧威胁时能否做出安全决策。
 - [[agentbench]] —— 首个系统评估 LLM-as-Agent 的多维基准(8 个交互环境)
+- [[agentboard]] —— 多轮 LLM agent 的分析式评估面板(NeurIPS 2024 Oral)
 - [[agentsnet]] —— AGENTSNET 是一个可任意扩展的多 agent LLM 基准,借鉴分布式计算的五个经典问题来衡量 agent 网络在给定通信拓扑下的自组织、去中心化通信与协作推理能力。
 - [[alfworld]] —— 文本化交互式具身任务基准
 - [[ambignq]] —— 聚焦歧义问题的开放域问答基准
@@ -410,6 +411,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[blocksworld]] —— 经典积木重排规划基准
 - [[carla]] —— 开源自动驾驶仿真器,闭环驾驶评测平台
 - [[cogbench]] —— CogBench 是一个面向 LLM / LLM agent 的基准,从认知科学与行为科学的视角,用受控的认知任务和行为范式来评测模型的认知与行为表现。
+- [[colbench]] —— LLM 协作式迭代开发工作流基准(后端+前端协作)
 - [[commongen]] —— 生成式常识推理的约束文本生成基准
 - [[commonsenseqa]] —— 常识推理多项选择问答基准
 - [[fever]] —— 事实核查基准(SUPPORTED/REFUTED/NEI)
@@ -431,6 +433,8 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[mbpp]] —— 入门级 Python 编程问题代码生成基准
 - [[mind2web]] —— 通用网页智能体真实网站任务基准
 - [[minedojo]] —— 基于 Minecraft 的开放式具身智能体框架与基准
+- [[metatool]] —— 测试 LLM 何时使用工具、选择哪个工具的基准(21000+ prompts)
+- [[mint-benchmark]] —— 多轮交互中使用工具与自然语言反馈的 LLM agent 评估基准
 - [[mini-crosswords]] —— 5×5 小型纵横填字推理基准
 - [[mle-bench]] —— MLE-Bench 是一个用于衡量 AI 智能体机器学习工程(ML engineering)能力的基准,通过一组 Kaggle 风格的竞赛任务,考察智能体端到端完成数据处理、建模、训练与提交的综合能力。
 - [[mmlu]] —— 多学科多选题基准,衡量广泛知识与综合理解
@@ -441,6 +445,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[ndcg]] —— 衡量排序质量的归一化折损累积增益指标
 - [[omnibehavior]] —— OmniBehavior 是首个完全基于真实工业日志(快手)构建的用户模拟基准,用于刻画长时程、跨场景、异质的用户行为轨迹,并评估 LLM 用户模拟器的保真度。
 - [[orbench]] —— OR-Bench 是用于评测大语言模型过度拒绝(over-refusal / false refusal)现象的基准,衡量模型在面对看似敏感但实际无害的提示时被错误拒绝的程度。
+- [[osworld]] —— 真实计算机环境中的多模态 agent 开放式任务基准(NeurIPS 2024)
 - [[personagym]] —— PersonaGym 是一个用于评估大语言模型角色扮演(persona/role-playing)能力的基准,衡量模型在给定人物设定下保持一致性、贴合角色的表现。
 - [[prontoqa]] —— 本体生成的可控演绎多步逻辑推理问答基准
 - [[realtoxicityprompts]] —— 衡量续写毒性倾向的安全性基准
@@ -455,7 +460,10 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[svamp]] —— 小学算术应用题变体测试基准
 - [[swe-bench]] —— SWE-bench 是一个用于评测大语言模型与智能体解决真实软件工程问题能力的基准,任务取自真实代码仓库的 issue,要求模型生成可通过测试的代码补丁。
 - [[tabmwp]] —— 表格数学应用题多步推理基准
+- [[tau-bench]] —— 工具-Agent-用户三方交互基准,提出 pass^k 可靠性指标
 - [[toolbench]] —— ToolBench 是用于评测大语言模型(LLM)智能体工具调用与多工具规划能力的基准测试集。
+- [[toolemu]] —— LLM agent 工具使用安全风险评估沙箱(36 工具,144 测试)
+- [[toolllm]] —— 基于 16000+ 真实 API 的工具使用训练与评估框架
 - [[transcoder]] —— 编程语言间代码翻译基准
 - [[triviaqa]] —— 大规模琐事类开放域问答基准
 - [[truthfulqa]] —— 衡量回答真实性、考察是否复述常见错误信念
@@ -1005,6 +1013,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2022-kuairand]] —— KuaiRand;快手随机插入视频的无偏序列推荐数据集
 - [[2022-react-reasoning-and-acting]] —— Yao 等 2022,ReAct;推理+行动交替(arXiv 2210.03629)
 - [[2022-star-self-taught-reasoner]] —— STaR;自生成 rationale 保留答对者反复微调 bootstrap 推理
+- [[2022-webshop]] —— WebShop;118 万真实商品+12087 条指令的电商网页交互基准
 - [[2023-agentbench]] —— AgentBench;8 环境系统评估 LLM-as-Agent,揭示商业/开源差距
 - [[2023-agentcf-collaborative-learning-agents-recsys]] —— AgentCF;把用户与物品都建模为 LLM agent,自主交互+协同反思做无梯度协同过滤
 - [[2023-agenttuning]] —— AgentTuning;AgentInstruct 轨迹+通用指令混合微调赋予开源模型可泛化 agent 能力
@@ -1024,6 +1033,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2023-drivemlm-autonomous-driving]] —— DriveMLM;多模态 LLM 决策对齐 AD 行为规划,CARLA Town05 Long DS 76.1
 - [[2023-expel]] —— ExpeL;不更新参数从跨任务经验抽洞见、召回成功轨迹
 - [[2023-fireact-language-agent-fine-tuning]] —— FireAct;多任务多 prompting 轨迹微调 backbone 构建语言智能体
+- [[2023-gaia-benchmark]] —— GAIA;466 道需推理+多模态+工具使用的通用 AI 助手基准,人类 92% vs GPT-4 15%
 - [[2023-generative-agents]] —— Park 等 2023,Generative Agents(arXiv 2304.03442,UIST 2023)
 - [[2023-gflownet-listwise-recommendation]] —— GFN4Rec;GFlowNet 流匹配做 listwise 推荐提多样性
 - [[2023-hierrec-scenario-aware-hierarchical-dynamic-network]] —— HierRec;分层 dynamic-weight 同建显式与隐式场景的多场景 CTR
@@ -1035,7 +1045,9 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2023-llms-cannot-self-correct-reasoning-yet]] —— 论证内在自我纠正下 LLM 无法纠正推理错误,性能反降
 - [[2023-memgpt-llms-as-operating-systems]] —— MemGPT;借 OS 分层内存与分页用函数调用造"无限上下文"
 - [[2023-memorybank]] —— MemoryBank;类人长期记忆+遗忘曲线,实现 SiliconFriend
+- [[2023-metatool]] —— MetaTool;21000+ prompts 测试 LLM 何时用工具与工具选择
 - [[2023-metagpt]] —— MetaGPT;把 SOP 编码进 prompt 的多智能体软件框架
+- [[2023-mint-benchmark]] —— MINT;多轮交互使用工具与自然语言反馈的 agent 评估
 - [[2023-microlens-micro-video-recommendation-dataset]] —— MicroLens;10 亿交互含原始内容的内容驱动微视频推荐数据集
 - [[2023-multi-agent-debate]] —— MAD;多 agent 针锋相对辩论+裁判,缓解 DoT
 - [[2023-multi-task-deep-recommender-systems-survey]] —— MTDRS 综述;任务关系与方法论两维分类
@@ -1050,15 +1062,20 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2023-self-debugging]] —— SELF-DEBUGGING;few-shot 让 LLM 执行解释自身代码自调试
 - [[2023-self-rag]] —— Self-RAG;reflection token 实现按需检索与自我反思批判
 - [[2023-self-refine]] —— SELF-REFINE;测试时自我反馈→自我修正,7 任务平均 +20%
+- [[2023-swe-bench]] —— SWE-bench;2294 个真实 GitHub issue 解决基准(ICLR 2024 Oral)
 - [[2023-shepherd-critic-for-lm-generation]] —— Shepherd;7B LLaMA critic 精确批判 LLM 输出,win-rate 媲美 ChatGPT
 - [[2023-sotopia-social-intelligence-evaluation]] —— SOTOPIA;开放式社交模拟环境+多维社会智能评测,GPT-4 难集逊于人类
 - [[2023-timesfm-time-series-foundation-model]] —— TimesFM;O(100B) 时序预训练 decoder-only 时序预测基础模型
+- [[2023-toolemu]] —— ToolEmu;LM 仿真沙箱评估 agent 工具使用安全风险(36 工具,144 测试)
+- [[2023-toolllm]] —— ToolLLM;16464 真实 API 训练+ToolBench+ToolLLaMA+ToolEval
 - [[2023-tree-of-thoughts]] —— ToT;思考树搜索,24 点 GPT-4 4%→74%
 - [[2023-ts-llm-tree-search-decoding-training]] —— TS-LLM;AlphaZero 式树搜索同导 LLM 解码与迭代训练,搜索深度达 64
 - [[2023-two-stage-constrained-actor-critic]] —— TSCAC;两阶段约束 actor-critic 平衡 WatchTime 与稀疏交互
 - [[2023-uncertain-random-geometric-programming]] —— 几何规划含不确定+随机系数的线性正态框架(运筹/优化,非 LLM)
 - [[2023-video-length-debiasing-microvideo-rec]] —— VLDRec;play-progress 去偏+长度条件采样+多任务缓解视频长度偏差
 - [[2023-voyager]] —— VOYAGER;GPT-4 驱动 Minecraft 终身学习具身智能体
+- [[2023-webarena]] —— WebArena;4 个真实网站域 812 个自主 Web 任务基准,GPT-4 仅 14.41%
+- [[2024-agentboard]] —— AgentBoard;多轮 LLM agent 分析式评估面板(NeurIPS 2024 Oral)
 - [[2024-agentic-feedback-loop-recommendation]] —— 提出 Agentic Feedback Loop(AFL):让 [[llm-for-recommendation]] 中的 recommendation agent 与 user agent 通过基于 [[memory-module]] 的多轮文本反馈相互协作,从而同时提升推荐与 [[user-simulation]],并且不放大流行度/位置偏差。
 - [[2024-aipatient-simulated-patient-llm-agents]] —— AIPatient 是一个由六个任务专用 [[llm-based-agents]] 驱动、结合 Reasoning RAG 工作流与基于 MIMIC-III 真实病历构建的知识图谱(AIPatient KG)的模拟病人系统,可用于医学教育中的高保真、可扩展病史采集训练。
 - [[2024-autoguide-context-aware-guidelines]] —— AutoGuide;从经验自动归纳上下文相关指南指导智能体
@@ -1103,6 +1120,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2024-multi-agent-tot-validator]] —— 将 [[tree-of-thoughts]] 与多智能体推理结合,引入一个 Thought Validator agent 对各 Reasoner 的推理分支做有效性校验,只有逻辑成立的分支才参与共识投票,从而在 [[gsm8k]] 上稳定提升 [[large-language-models]] 的算术推理表现。
 - [[2024-oasis-million-agent-social-simulation]] —— OASIS 是一个通用、可扩展的基于 [[large-language-models]] 的社交媒体模拟器,能在 X 与 Reddit 等平台上模拟最多 100 万个 [[llm-agents]],用以复现信息传播、群体极化、从众效应等社会现象。
 - [[2024-online-item-cold-start-popularity-aware-meta-learning]] —— 提出 PAM:一种 model-agnostic 的 popularity-aware meta-learning 框架,用预设的物品热度阈值把流式数据切分成固定的 meta-learning 任务,在线流式训练中解决新物品 [[cold-start]] 问题,并在三个公开数据集与 Kuaishou 亿级用户在线 A/B 上验证有效。
+- [[2024-osworld]] —— OSWorld;真实 OS 环境 369 任务多模态 agent 基准,人类 72% vs 最佳模型 12%(NeurIPS 2024)
 - [[2024-opencity-urban-llm-agents]] —— OpenCity 通过「LLM 请求调度器」+「group-and-distill 提示优化」两层系统级与提示级优化,把大规模城市 [[llm-agents|llm-agent]] 模拟的单 agent 耗时加速约 600 倍,使得 10,000 个 agent 的一天活动可在 1 小时内于普通硬件上完成。
 - [[2024-optima-optimizing-llm-multi-agent]] —— OPTIMA 是一个面向 LLM 多智能体系统(MAS)的训练框架,通过"生成-排序-选择-训练"的迭代范式,同时优化智能体间的通信效率与任务有效性,在重信息交换任务上实现最高 2.8x 的性能提升且只用不到 10% 的 token。
 - [[2024-positive-experience-reflection]] —— 提出 Sweet&Sour:让 [[llm-agents|llm-agent]] 在交互式文本环境中不仅从失败中反思,还从**成功经验**(positive experience)中反思,并配合双缓冲“managed memory”管理短期/长期记忆,从而缓解既有 [[self-reflection]] 方法“初始成功后失效”和“小模型上效果差”的两大局限。
@@ -1121,6 +1139,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2024-scenario-wise-rec]] —— Scenario-Wise Rec 是首个专门面向 Multi-Scenario Recommendation(MSR,多场景推荐)的开源 [[benchmark]],它整合了 6 个公开数据集、12 个 MSR 基线模型,以及统一的数据处理、训练与评测流水线,并在工业广告数据集上验证其鲁棒性。
 - [[2024-score-self-correct-via-rl]] —— SCoRe(Self-Correction via Reinforcement Learning)是 [[google-deepmind]] 提出的方法,用完全自生成数据的多轮在线 [[reinforcement-learning]] 训练单个模型,使其无需外部反馈即可显著提升内在 [[self-correction]] 能力。
 - [[2024-self-reflection-llm-agents]] —— 系统研究 LLM 智能体的自我反思机制
+- [[2024-tau-bench]] —— τ-bench;工具-Agent-用户交互基准,pass^k 可靠性指标,gpt-4o <50%
 - [[2024-sigformer-sign-aware-graph-transformer]] —— SIGformer;符号感知图 Transformer(含负反馈)做推荐
 - [[2024-situation-aware-recommender-enhancer]] —— 场景感知推荐增强器
 - [[2024-sotopia-pi-social-agents]] —— SOTOPIA-π;改进社交智能体的社会智能
@@ -1146,6 +1165,7 @@ _(原候选 ①–⑨ 已全部建成上线;后续如有跨多源的新论点可
 - [[2025-blueprint-social-media-persona-dataset]] —— 提出隐私保护框架 SIMPACT 及其落地数据集 BluePrint(来自 Bluesky 2025 加拿大联邦大选讨论,683 万条 action、23.6 万用户),把社交媒体用户行为建模为"下一动作预测"任务,用行为 persona 聚类替代个体身份,用于训练和评估 LLM 社交媒体 agent。
 - [[2025-can-llm-agents-simulate-human-behavior]] —— 第一项大规模、过程级(process-centric)定量评测,用真实在线购物数据检验 LLM Agent 能否逐步精确模拟人类行为,结论是 prompt-only LLM 行为准确率仅约 11.86%,而在真人点击数据 + 合成 reasoning trace 上微调可显著提升。
 - [[2025-caserec-counterfactual-augmentation-system-exposure]] —— CaseRec 通过对 system exposure(系统曝光序列)做 counterfactual augmentation,并用 Decision Transformer 式的 offline RL 建模不同用户反馈,从而改进 [[sequential-recommendation]] 并缓解 exposure bias。
+- [[2025-colbench]] —— ColBench;LLM 协作式迭代开发工作流基准(后端+前端)
 - [[2025-causality-constraint-debiasing-recommender]] —— 提出 LCDR:用一个 identifiable VAE([[ivae]])作为因果约束,去对齐标准 [[variational-autoencoder]] 学到的潜在表征,即使代理变量(proxy variable)质量低/有噪声也能有效恢复潜在混杂因子([[deconfounder]]),从而缓解 [[recommender-systems|recommender-system]] 中的偏差。
 - [[2025-contrastive-representation-interactive-recommendation]] —— 本文提出 CRIR,用一个并行的对比学习辅助任务(PRCL)从用户-物品交互中抽取高层偏好排序特征,以增强 [[interactive-recommendation]] 中 [[deep-reinforcement-learning]] agent 的状态表示,从而显著提升其样本效率(sample efficiency)。
 - [[2025-coser-literary-roleplay-dataset]] —— CoSER 是一个面向"已知文学角色"的高质量角色扮演数据集与框架,从 771 部名著中抽取 17,966 个角色的真实多角色对话,并提出 given-circumstance acting(GCA)来训练与评测角色扮演 LLM,据此训练出 CoSER 8B/70B 开源模型。

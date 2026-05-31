@@ -289,3 +289,8 @@ EconAgent(Phillips r=-0.619/Okun r=-0.918,通胀-5~5%/失业2-12%,COVID 干预);
 ## [2026-05-31] lint | 全量 lint + 修复
 扫描 1220 页,报告:874 悬挂链接、1 孤立页、1 组近似重复、5 页未入 index、frontmatter 100% 完整。
 修复内容:(1) 合并 contextual-bandit → contextual-bandits 并全局替换链接(11 文件);(2) 补录 debiasing-recommendation / policy-gradient / self-supervised-learning / transfer-learning / s3-social-network-simulation 进 index;(3) 为 s3-social-network-simulation 从 social-simulation 加入链;(4) 新建 4 个高频悬挂链接页:bert(entity)、graph-neural-network / q-learning / pretraining(concepts),均入 index。
+
+## [2026-05-31] ingest | 批量补录 13 篇 LLM agent 评估论文
+PDF 下载至 ~/work/doc/,创建 12 个 source 页 + 8 个 entity 页,全部入 index。
+论文:AgentBench(已有)、GAIA、MINT、WebArena、WebShop、OSWorld、SWE-bench、τ-bench、AgentBoard、ColBench、ToolLLM、MetaTool、ToolEmu。
+覆盖方向:综合多环境评估、Web/OS 操控、软件工程、工具使用、安全。
